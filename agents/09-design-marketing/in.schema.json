@@ -1,0 +1,45 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "card-studio/agents/design_marketing/in.schema.json",
+  "title": "design_marketing payload",
+  "type": "object",
+  "required": ["brief", "guard_open_items", "required_disclosures", "twin_facts", "trend_signals", "existing_card_names", "banned_words", "formats"],
+  "additionalProperties": false,
+  "properties": {
+    "brief": {
+      "type": "object",
+      "required": ["text", "card_type", "target", "card_summary", "special_point", "mechanics", "benefits", "working_title"],
+      "properties": {
+        "text": {"type": "string", "description": "E 원래 입력과 같은 자유 형식 브리프 1~3문장(코드가 조립)"},
+        "card_type": {"enum": ["check", "credit", "prepaid", "membership"]},
+        "target": {"type": "string"},
+        "card_summary": {"type": "string", "description": "winner.card.one_liner"},
+        "special_point": {"type": "object", "required": ["hook", "proof_mechanism"], "properties": {"hook": {"type": "string"}, "why_unusual": {"type": "string"}, "proof_mechanism": {"type": "string"}, "not_like": {"type": "string"}}},
+        "mechanics": {"type": "array", "items": {"type": "string"}},
+        "benefits": {
+          "type": "array",
+          "maxItems": 6,
+          "description": "코드가 rates·mechanics에서 변환. E card_boards.benefits와 같은 모양",
+          "items": {"type": "object", "required": ["category", "headline", "condition", "source"], "properties": {"category": {"type": "string", "maxLength": 16}, "headline": {"type": "string", "maxLength": 24}, "condition": {"type": "string", "maxLength": 60}, "source": {"type": "string", "maxLength": 80}}}
+        },
+        "working_title": {"type": "string"},
+        "mood_hints": {"type": "array", "items": {"type": "string"}}
+      }
+    },
+    "guard_open_items": {"type": "array", "items": {"type": "object", "required": ["id", "item", "status"], "properties": {"id": {"type": "string"}, "item": {"type": "string"}, "status": {"enum": ["needs_human", "fix"]}, "suggestion": {"type": "string"}}}},
+    "required_disclosures": {"type": "array", "items": {"type": "string"}},
+    "twin_facts": {
+      "type": "object",
+      "required": ["target_adopt", "by_type"],
+      "description": "validation.result.twin 요약(시뮬레이션 값)",
+      "properties": {"target_adopt": {"type": "number"}, "by_type": {"type": "object"}, "scenarios": {"type": "array"}}
+    },
+    "voices_summary": {"type": "string"},
+    "trend_signals": {"type": "array", "items": {"type": "object", "required": ["id", "title", "impl", "source_ids"], "properties": {"id": {"type": "string"}, "title": {"type": "string"}, "impl": {"type": "string"}, "reliability": {"type": "number"}, "source_ids": {"type": "array", "items": {"type": "string"}}}}},
+    "research_pack": {"type": "array", "items": {"type": "object", "required": ["id", "title", "url", "published", "reliability", "facts"], "properties": {"id": {"type": "string", "pattern": "^S[0-9]+$"}, "title": {"type": "string"}, "url": {"type": "string"}, "published": {"type": ["string", "null"]}, "reliability": {"type": "number"}, "facts": {"type": "array", "items": {"type": "string"}}}}},
+    "existing_card_names": {"type": "array", "items": {"type": "string"}},
+    "banned_words": {"type": "array", "items": {"type": "string"}},
+    "launch_date": {"type": ["string", "null"], "format": "date"},
+    "formats": {"type": "array", "items": {"enum": ["reels", "youtube", "promo"]}, "default": ["reels", "youtube", "promo"]}
+  }
+}

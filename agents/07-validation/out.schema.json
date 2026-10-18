@@ -1,0 +1,55 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "card-studio/agents/validation/out.schema.json",
+  "title": "validation result",
+  "type": "object",
+  "required": ["twin", "voices", "summary"],
+  "additionalProperties": false,
+  "properties": {
+    "twin": {"$ref": "#/$defs/twin"},
+    "voices": {
+      "type": "array",
+      "minItems": 4,
+      "maxItems": 4,
+      "items": {
+        "type": "object",
+        "required": ["type", "quote", "would_adopt", "main_concern"],
+        "additionalProperties": false,
+        "properties": {
+          "type": {"enum": ["일반형", "체리피커", "충성형", "휴면 위험형"]},
+          "quote": {"type": "string"},
+          "would_adopt": {"type": "boolean"},
+          "main_concern": {"type": "string"},
+          "exploit_or_risk": {"type": "string"}
+        },
+        "if": {"properties": {"type": {"const": "체리피커"}}},
+        "then": {"required": ["exploit_or_risk"]}
+      }
+    },
+    "summary": {"type": "string"}
+  },
+  "$defs": {
+    "twin": {
+      "type": "object",
+      "description": "코드 시뮬레이션 결과. A twin_result.json 기준이며 by_type_in_target은 by_type으로, profit_만원은 profit으로 이름을 정리했다. 수치는 PM 가정 기반 모형의 값",
+      "required": ["n_personas", "seed", "target_adopt", "all_segments_adopt", "by_type", "adopter_profit", "static_profit", "behav_floor", "scenarios", "top_reject"],
+      "additionalProperties": false,
+      "properties": {
+        "n_personas": {"type": "integer", "minimum": 100},
+        "seed": {"type": "integer"},
+        "target_adopt": {"type": "number", "minimum": 0, "maximum": 1},
+        "all_segments_adopt": {"type": "object", "additionalProperties": {"type": "number", "minimum": 0, "maximum": 1}},
+        "by_type": {
+          "type": "object",
+          "description": "채택자 유형 → 비중과 손익(만원/인/년)",
+          "additionalProperties": {"type": "object", "required": ["share_of_adopters", "profit"], "properties": {"share_of_adopters": {"type": "number", "minimum": 0, "maximum": 1}, "profit": {"type": "number"}}}
+        },
+        "adopter_profit": {"type": "number"},
+        "static_profit": {"type": "number"},
+        "behav_floor": {"type": "number", "description": "채택 고객 손익 하한 기준"},
+        "scenarios": {"type": "array", "minItems": 1, "items": {"type": "object", "required": ["name", "adopt"], "properties": {"name": {"type": "string"}, "adopt": {"type": "number", "minimum": 0, "maximum": 1}}}},
+        "top_reject": {"type": "string", "description": "최다 거절 사유. 예: inertia"}
+      }
+    }
+  }
+}

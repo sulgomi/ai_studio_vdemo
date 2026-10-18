@@ -1,0 +1,35 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "card-studio/agents/guardrail/out.schema.json",
+  "title": "guardrail result",
+  "type": "object",
+  "required": ["checks", "name_mechanism_consistent", "overall", "required_disclosures"],
+  "additionalProperties": false,
+  "properties": {
+    "checks": {
+      "type": "array",
+      "minItems": 6,
+      "maxItems": 6,
+      "items": {
+        "type": "object",
+        "required": ["id", "item", "status", "finding"],
+        "additionalProperties": false,
+        "properties": {
+          "id": {"enum": ["G1", "G2", "G3", "G4", "G5", "G6"]},
+          "item": {"type": "string"},
+          "status": {"enum": ["pass", "needs_human", "fix"]},
+          "finding": {"type": "string"},
+          "suggestion": {"type": "string"},
+          "owner_dept": {"enum": ["법무", "준법", "광고심의", "개인정보", "상품", "재무"]}
+        },
+        "allOf": [
+          {"if": {"properties": {"status": {"const": "fix"}}}, "then": {"required": ["suggestion"]}},
+          {"if": {"properties": {"status": {"const": "needs_human"}}}, "then": {"required": ["owner_dept"]}}
+        ]
+      }
+    },
+    "name_mechanism_consistent": {"type": "boolean"},
+    "overall": {"type": "string"},
+    "required_disclosures": {"type": "array", "items": {"type": "string"}}
+  }
+}

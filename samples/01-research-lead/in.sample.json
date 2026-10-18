@@ -1,0 +1,40 @@
+{
+  "run_id": "sample-research-lead-001",
+  "request_id": "sample-research-lead-001-r1",
+  "agent": "research_lead",
+  "contract_version": "1.0",
+  "mode": "standalone",
+  "today": "2026-10-17",
+  "question": "2030 투자 입문자용 신용카드를 기획하려는데, 트렌드·경쟁·소비자 관점에서 시장 상황을 종합해줘",
+  "conversation": {
+    "summary": "",
+    "segment": "2030 투자 입문자",
+    "card_type": "신용카드",
+    "period": "지정 없음",
+    "assumptions": [],
+    "own_cards": []
+  },
+  "output_mode": "conversational",
+  "depth": "detail",
+  "payload": {
+    "scope": {
+      "target_segment": "2030 투자 입문자",
+      "target_segment_id": "investor",
+      "card_type": "credit",
+      "constraints": [],
+      "assumptions": [
+        "자사 카드는 지정하지 않음"
+      ]
+    },
+    "prior_turn_findings": [],
+    "handoff_from": null,
+    "report_requested": false,
+    "purpose": "research",
+    "consult_question": null,
+    "limits": {
+      "max_calls": 7,
+      "max_judgments": 5,
+      "max_seconds": 240
+    }
+  }
+}

@@ -1,0 +1,247 @@
+{
+  "run_id": "sample-consumer-001",
+  "request_id": "sample-consumer-001-r1",
+  "agent": "consumer",
+  "contract_version": "1.0",
+  "model": "claude-haiku-4-5",
+  "status": "ok",
+  "answer": "투자·자산형성이 1순위(니즈 점수 0.95), 구독·디지털과 단순함이 2~3순위입니다. 장벽은 기존 주식투자 전용 PLCC·소수점 투자 서비스와의 경쟁, 혜택 축소 우려, 앱 중심 결제 습관입니다. 꼭 필요한 것은 증권 계좌 연계와 소액 투자 전환, 포기해도 되는 것은 여행·고정비·보장 혜택입니다.",
+  "result": {
+    "top_needs": [
+      {
+        "need": "invest",
+        "priority": 1,
+        "evidence": "세그먼트 니즈 점수 0.95로 최상위. 주식투자 전용 PLCC(T1)와 소수점 해외주식 경쟁(T2)이 이미 나타나, 투자 연계가 핵심 구매 동기이자 차별화 지점임을 시사한다.",
+        "signal_ids": [
+          "T1",
+          "T2"
+        ]
+      },
+      {
+        "need": "digital",
+        "priority": 2,
+        "evidence": "니즈 점수 0.7. 결제 접점이 간편결제 앱으로 이동하는 흐름(T5)이 있어 모바일 우선 발급과 앱 내 투자 연동이 중요하다(T5는 신뢰도 낮음).",
+        "signal_ids": [
+          "T5"
+        ]
+      },
+      {
+        "need": "simple",
+        "priority": 3,
+        "evidence": "니즈 점수 0.7이며 복잡성 허용도 0.7로 중상 수준. 혜택 구조는 이해하기 쉬워야 하며, 잔돈·포인트의 소액 투자 전환처럼 단순한 경험이 입문자 진입장벽을 낮출 수 있다(T2).",
+        "signal_ids": [
+          "T2"
+        ]
+      },
+      {
+        "need": "saving",
+        "priority": 4,
+        "evidence": "니즈 점수 0.6. 월 소비는 외식 30만원, 온라인 25만원 순으로 커서 이 영역의 캐시백·적립이 투자 재원 마련 수단이 된다. 다만 고혜택 구조의 지속성은 불확실하다(T4).",
+        "signal_ids": [
+          "T4"
+        ]
+      },
+      {
+        "need": "social",
+        "priority": 5,
+        "evidence": "니즈 점수 0.6. 2030이 자주 쓰는 플랫폼 특화 제휴를 선호하는 흐름(T3)과 맞닿아 있으며, 투자 플랫폼과 생활 소비처를 묶는 제휴로 소속감을 줄 수 있다.",
+        "signal_ids": [
+          "T3"
+        ]
+      }
+    ],
+    "must_have": [
+      "증권 계좌 연계와 소액·소수점 투자 전환 기능(결제 후 잔돈이나 포인트의 투자 전환)",
+      "모바일 우선 발급과 앱 내 투자·결제 연동",
+      "외식·온라인 등 주 소비처에서 체감되는 적립 혜택",
+      "이해하기 쉬운 혜택 구조와 변경 가능성의 투명한 고지"
+    ],
+    "can_give_up": [
+      "여행·해외 특화 혜택(니즈 점수 0.4)",
+      "고정비 절감 혜택(니즈 점수 0.3)",
+      "보장·안전 부가서비스(니즈 점수 0.3)",
+      "다수 항목에 걸친 광범위한 부가혜택"
+    ],
+    "barriers": [
+      "기존 주식투자 전용 PLCC와 증권사 소수점 투자 서비스가 이미 경쟁 중이라 단순 적립만으로는 전환 동기가 약하다(T1, T2).",
+      "고혜택 카드의 재원 부담과 수수료 인하 압력으로 혜택 축소 가능성이 있어 신뢰 형성이 어렵다(T4).",
+      "간편결제·후불결제 앱 중심의 결제 습관 때문에 실물 카드 발급 자체가 진입장벽이 될 수 있다(T5).",
+      "투자 입문자는 상품 구조가 복잡하면 이탈할 수 있다. 복잡성 허용도는 0.7로 중상 수준이다."
+    ],
+    "evidence_signal_ids": [
+      "T1",
+      "T2",
+      "T3",
+      "T4",
+      "T5"
+    ],
+    "sentiment": null,
+    "bias_warning": "세그먼트 수치는 PM 가정치이며 공개 웹 반응 데이터는 연동 전이라 반응 비율을 내지 않았습니다."
+  },
+  "findings": [
+    {
+      "id": "consumer#0",
+      "claim": "투자·자산형성 니즈 점수 0.95로 최상위. 주식투자 전용 PLCC(T1)와 소수점 해외주식 경쟁(T2)이 이미 나타났다.",
+      "type": "estimate",
+      "source_id": null,
+      "confidence": "medium"
+    },
+    {
+      "id": "consumer#1",
+      "claim": "구독·디지털 0.7과 단순함 0.7이 뒤를 잇고 복잡성 허용도는 0.7이다. 결제 접점이 간편결제 앱으로 이동하는 흐름(T5)은 신뢰도가 낮다.",
+      "type": "estimate",
+      "source_id": null,
+      "confidence": "low"
+    },
+    {
+      "id": "consumer#2",
+      "claim": "고혜택 구조의 지속성이 불확실해(T4) 혜택 변경 가능성의 투명한 고지가 필요하다.",
+      "type": "estimate",
+      "source_id": null,
+      "confidence": "low"
+    },
+    {
+      "id": "consumer#3",
+      "claim": "여행·해외 0.4, 고정비 절감 0.3, 보장·안전 0.3으로 포기 가능성이 높다.",
+      "type": "estimate",
+      "source_id": null,
+      "confidence": "medium"
+    }
+  ],
+  "sources": [
+    {
+      "id": "U-s1",
+      "title": "주식투자 전용카드(PLCC) '미래에셋 현대카드' 출시 (이투데이)",
+      "url": "https://www.etoday.co.kr/news/view/2238095",
+      "kind": "news",
+      "published": "2023-04-06",
+      "retrieved_at": "2026-10-17",
+      "reliability": 0.6,
+      "stale": true
+    },
+    {
+      "id": "U-s2",
+      "title": "미래에셋증권, 주식 소액 적립식 투자서비스 오픈 (스마트투데이)",
+      "url": "https://www.smarttoday.co.kr/ko-kr/articles/30193",
+      "kind": "news",
+      "published": "2023-05-22",
+      "retrieved_at": "2026-10-17",
+      "reliability": 0.6,
+      "stale": true
+    },
+    {
+      "id": "U-s3",
+      "title": "미래에셋, 서학개미 소수점 거래 늘린다 (SBS Biz)",
+      "url": "https://biz.sbs.co.kr/amp/article/20000252586",
+      "kind": "news",
+      "published": "2025-08-11",
+      "retrieved_at": "2026-10-17",
+      "reliability": 0.55,
+      "stale": false
+    },
+    {
+      "id": "U-s4",
+      "title": "진화하는 서학개미...삼성·토스증권 서비스 혁신 물결 (데일리안)",
+      "url": "https://www.dailian.co.kr/news/view/1094581/",
+      "kind": "news",
+      "published": "2022-03-21",
+      "retrieved_at": "2026-10-17",
+      "reliability": 0.55,
+      "stale": true
+    },
+    {
+      "id": "U-s5",
+      "title": "삼성카드, 2030 겨냥한 '무신사 전용 카드' 출시한다 (헤럴드경제)",
+      "url": "https://www.heraldk.com/article/2026041516245749478",
+      "kind": "news",
+      "published": null,
+      "retrieved_at": "2026-10-17",
+      "reliability": 0.7
+    },
+    {
+      "id": "U-s6",
+      "title": "무신사 뉴스룸 2026-04-16",
+      "url": "https://newsroom.musinsa.com/newsroom-menu/2026-0416-01",
+      "kind": "official",
+      "published": null,
+      "retrieved_at": "2026-10-17",
+      "reliability": 0.7
+    },
+    {
+      "id": "U-s7",
+      "title": "수수료 인하 어렵다면서…마케팅 못 줄이는 카드업계 (뉴스토마토)",
+      "url": "https://newstomato.com/ReadNews.aspx?no=809737",
+      "kind": "news",
+      "published": "2018-03-05",
+      "retrieved_at": "2026-10-17",
+      "reliability": 0.4,
+      "stale": true
+    },
+    {
+      "id": "U-s8",
+      "title": "카드 부가혜택 연말까지 70% 축소 (조선/JKN)",
+      "url": "https://news.jkn.co.kr/post/711265",
+      "kind": "news",
+      "published": "2012-07-05",
+      "retrieved_at": "2026-10-17",
+      "reliability": 0.4,
+      "stale": true
+    },
+    {
+      "id": "U-s9",
+      "title": "카드산업 건전화TF 출범 (EKN)",
+      "url": "https://m.ekn.kr/view.php?key=402028",
+      "kind": "news",
+      "published": "2018-12-06",
+      "retrieved_at": "2026-10-17",
+      "reliability": 0.4,
+      "stale": true
+    },
+    {
+      "id": "U-s10",
+      "title": "카카오페이에서 계좌 만들고, 토스에선 후불결제가 가능해진다? (카드고릴라)",
+      "url": "https://www.card-gorilla.com/contents/detail/1624",
+      "kind": "web",
+      "published": "2020-12-01",
+      "retrieved_at": "2026-10-17",
+      "reliability": 0.4,
+      "stale": true
+    },
+    {
+      "id": "U-s11",
+      "title": "토스페이 15% 할인되는 토스 삼성카드 출시 (카드고릴라)",
+      "url": "https://m.card-gorilla.com/contents/detail/3958",
+      "kind": "web",
+      "published": "2025-08-19",
+      "retrieved_at": "2026-10-17",
+      "reliability": 0.4,
+      "stale": false
+    }
+  ],
+  "assumptions": [
+    "세그먼트 수치(월 소비, 니즈 점수, 복잡성 허용도)는 PM 가정치"
+  ],
+  "unresolved": [
+    "공개 웹·커뮤니티 반응(sentiment, themes, purchase_drivers, churn_reasons) 연동 전이라 비어 있음",
+    "T1·T3 일부 출처는 발행일 확인 불가"
+  ],
+  "limits": [
+    "니즈 우선순위는 가정치와 트렌드 시그널 제목 위주 근거에 기댐",
+    "T4·T5는 신뢰도가 낮은 출처 위주이고 일부 기사는 18개월을 넘은 자료임"
+  ],
+  "clarifications": [],
+  "out_of_scope": {
+    "detected": false,
+    "suggested_agent": null
+  },
+  "followups": [
+    "투자 연계 혜택의 경쟁 현황은 03 competitor에서 확인해 줘",
+    "이 니즈 중 우리가 비워 둔 영역은?",
+    "공개 웹 반응으로 장벽을 더 확인할 수 있어?"
+  ],
+  "input_refs": [
+    "payload.segment",
+    "payload.need_labels",
+    "payload.trend_signals"
+  ]
+}

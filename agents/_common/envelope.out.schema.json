@@ -1,0 +1,90 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "card-studio/common/envelope.out.schema.json",
+  "title": "공통 출력 봉투",
+  "description": "모든 에이전트 출력. LLM은 status, answer, result, findings, assumptions, unresolved, limits, clarifications, out_of_scope, followups를 쓰고, 코드는 run_id·request_id·agent·contract_version·model·sources·input_refs·usage·validation을 채운다.",
+  "type": "object",
+  "required": ["run_id", "request_id", "agent", "contract_version", "model", "status", "answer", "result", "findings", "sources", "assumptions", "unresolved", "limits", "clarifications", "out_of_scope", "input_refs"],
+  "additionalProperties": false,
+  "properties": {
+    "run_id": {"type": "string"},
+    "request_id": {"type": "string"},
+    "agent": {"$ref": "envelope.in.schema.json#/$defs/agent_id"},
+    "contract_version": {"type": "string", "pattern": "^[0-9]+\\.[0-9]+$"},
+    "model": {"type": "string", "description": "실제 호출 모델 id. 코드 단계는 code"},
+    "status": {"enum": ["ok", "needs_clarification", "out_of_scope", "failed"]},
+    "answer": {"type": "string", "maxLength": 600, "description": "핵심 답 3문장 이내"},
+    "result": {"type": "object", "description": "에이전트별 출력. agents/<폴더>/out.schema.json"},
+    "findings": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "claim", "type", "confidence"],
+        "additionalProperties": false,
+        "properties": {
+          "id": {"type": "string", "pattern": "^[a-z_]+#[0-9]+$", "description": "예: trend#0. 종합·검증이 가리키는 키"},
+          "claim": {"type": "string"},
+          "type": {"enum": ["fact", "estimate", "background"]},
+          "source_id": {"type": ["string", "null"], "description": "sources[].id. fact면 필수(코드 검사)"},
+          "confidence": {"enum": ["high", "medium", "low"]}
+        }
+      }
+    },
+    "sources": {"type": "array", "items": {"$ref": "#/$defs/source"}},
+    "assumptions": {"type": "array", "items": {"type": "string"}},
+    "unresolved": {"type": "array", "items": {"type": "string"}},
+    "limits": {"type": "array", "items": {"type": "string"}},
+    "clarifications": {"type": "array", "maxItems": 1, "items": {"type": "string"}},
+    "out_of_scope": {
+      "type": "object",
+      "required": ["detected"],
+      "additionalProperties": false,
+      "properties": {
+        "detected": {"type": "boolean"},
+        "suggested_agent": {"oneOf": [{"$ref": "envelope.in.schema.json#/$defs/agent_id"}, {"type": "null"}]}
+      }
+    },
+    "followups": {"type": "array", "maxItems": 3, "items": {"type": "string"}},
+    "input_refs": {"type": "array", "items": {"type": "string"}},
+    "usage": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "input_tokens": {"type": "integer", "minimum": 0},
+        "output_tokens": {"type": "integer", "minimum": 0},
+        "seconds": {"type": "number", "minimum": 0},
+        "tool_calls": {"type": "integer", "minimum": 0},
+        "cached": {"type": "boolean", "description": "LLM·검색 저장본 재사용 여부"}
+      }
+    },
+    "validation": {
+      "type": "object",
+      "required": ["passed", "warnings", "rejects"],
+      "additionalProperties": false,
+      "properties": {
+        "passed": {"type": "boolean"},
+        "warnings": {"type": "array", "items": {"$ref": "envelope.in.schema.json#/$defs/reject_reason"}},
+        "rejects": {"type": "array", "items": {"$ref": "envelope.in.schema.json#/$defs/reject_reason"}}
+      }
+    }
+  },
+  "$defs": {
+    "source": {
+      "type": "object",
+      "required": ["id", "title", "url", "kind", "published", "retrieved_at", "reliability"],
+      "additionalProperties": false,
+      "properties": {
+        "id": {"type": "string", "description": "에이전트 접두어 + 번호. 예: T1-s1, C-s3, U-s2, S4"},
+        "title": {"type": "string"},
+        "url": {"type": "string", "pattern": "^https?://"},
+        "publisher": {"type": "string"},
+        "kind": {"enum": ["db", "disclosure", "official", "news", "report", "web", "community", "sentiment"]},
+        "published": {"type": ["string", "null"], "pattern": "^[0-9]{4}-[0-9]{2}(-[0-9]{2})?$", "description": "YYYY-MM 또는 YYYY-MM-DD. 확인 못 하면 null"},
+        "retrieved_at": {"type": "string", "format": "date"},
+        "reliability": {"type": "number", "minimum": 0, "maximum": 1},
+        "tier": {"enum": ["A", "B", "C", "D"]},
+        "stale": {"type": "boolean", "description": "today 기준 18개월 초과면 true. published가 null이면 이 키를 넣지 않는다"}
+      }
+    }
+  }
+}

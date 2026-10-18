@@ -1,0 +1,305 @@
+{
+  "run_id": "sample-whitespace-001",
+  "request_id": "sample-whitespace-001-r1",
+  "agent": "whitespace",
+  "contract_version": "1.0",
+  "mode": "standalone",
+  "today": "2026-10-17",
+  "question": "2030 투자 입문자 신용카드로 어느 시장 기회부터 파야 할지, 후보 셀 3개만 골라서 근거랑 같이 알려줘.",
+  "conversation": {
+    "summary": "사용자는 2030 투자 입문자 대상 신규 신용카드 기획을 요청했고, 시장조사(트렌드·경쟁사·소비자) 결과와 코드의 기회 점수가 준비된 상태.",
+    "segment": "2030 투자입문자",
+    "card_type": "신용카드",
+    "period": "최근 6개월",
+    "assumptions": [
+      "목표 채택 의향은 0.38 이상"
+    ],
+    "own_cards": []
+  },
+  "output_mode": "conversational",
+  "depth": "detail",
+  "payload": {
+    "target_segment_id": "investor",
+    "target_adopt": 0.38,
+    "segments": [
+      {
+        "id": "young",
+        "name": "사회초년생(25-29)"
+      },
+      {
+        "id": "single",
+        "name": "1인가구 직장인(30-39)"
+      },
+      {
+        "id": "family",
+        "name": "맞벌이·육아 가구(35-49)"
+      },
+      {
+        "id": "investor",
+        "name": "2030 투자입문자"
+      },
+      {
+        "id": "senior",
+        "name": "액티브 시니어(55+)"
+      },
+      {
+        "id": "free",
+        "name": "프리랜서·N잡러"
+      }
+    ],
+    "need_labels": {
+      "saving": "절약·적립",
+      "invest": "투자 연계",
+      "travel": "여행·해외",
+      "digital": "디지털",
+      "fixed_cost": "고정비 절감",
+      "safety": "보장·안전",
+      "social": "소셜",
+      "simple": "단순함"
+    },
+    "research": {
+      "trend": [
+        {
+          "id": "T1",
+          "title": "증권사 연계 주식투자 전용 PLCC 카드 등장 (미래에셋 현대카드)",
+          "impl": "주식투자 전용 PLCC가 이미 출시된 만큼, 투자 입문자 카드는 단순 적립이 아니라 계좌 연계와 소액 투자 전환 경험으로 차별화해야 한다. 제목만 확인했고 출시 시점과 세부 혜택은 확인하지 못해 검증이 필요하다.",
+          "topic": "stock_plcc"
+        },
+        {
+          "id": "T2",
+          "title": "소액·소수점 해외주식 거래 서비스 경쟁 (미래에셋, 삼성증권, 토스증권)",
+          "impl": "카드 결제 후 잔돈이나 포인트를 소수점 투자로 전환하는 구조가 입문자 진입장벽을 낮출 수 있다. 서비스별 구체 수치는 확인하지 못했으므로 기획 단계에서 원문 확인이 필요하다.",
+          "topic": "micro_invest"
+        },
+        {
+          "id": "T3",
+          "title": "2030 겨냥 브랜드 제휴 전용 카드 확산 (삼성카드 무신사 카드, 2026-04)",
+          "impl": "2030은 자주 쓰는 플랫폼에 특화된 제휴 혜택을 선호하는 흐름이므로, 투자 플랫폼과 생활 소비처를 묶은 제휴 설계가 필요하다. 무신사 카드의 구체 혜택과 흥행 수치는 확인하지 못했다.",
+          "topic": "brand_partner_card"
+        },
+        {
+          "id": "T4",
+          "title": "카드사 마케팅·부가혜택 비용 부담과 수수료 인하 압력",
+          "impl": "고혜택 구조의 지속성이 불확실하므로, 혜택 재원과 약관상 변경 가능성을 처음부터 설계에 반영해야 한다. 제목 위주로만 확인했고 일부 기사는 과거 자료일 수 있어 최신 여부를 별도로 검증해야 한다.",
+          "topic": "benefit_cost_pressure"
+        },
+        {
+          "id": "T5",
+          "title": "핀테크·플랫폼 결제 연계 카드 및 후불결제 확대 (토스, 카카오페이)",
+          "impl": "2030의 결제 접점이 간편결제 앱으로 이동하고 있어, 모바일 우선 발급과 앱 내 투자 연동이 중요하다. 카드고릴라와 블로그형 출처 위주라 신뢰도를 낮게 두었다.",
+          "topic": "fintech_payment"
+        }
+      ],
+      "competitor": {
+        "crowded": [
+          {
+            "tag": "reward_discount",
+            "reason": "34종 중 15종이 청구할인형으로 가장 많음. 신한·삼성·롯데·농협 등 다수 발급사가 채택"
+          },
+          {
+            "tag": "travel_fx",
+            "reason": "34종 중 14종이 해외결제·환전 태그 보유. 현대·삼성·우리·BC·NH 등 신용카드와 체크카드에 폭넓게 분포"
+          },
+          {
+            "tag": "dining_cafe",
+            "reason": "34종 중 12종이 외식·카페 혜택 보유"
+          },
+          {
+            "tag": "mart_daily",
+            "reason": "34종 중 11종이 편의점·마트 혜택 보유"
+          },
+          {
+            "tag": "online_shop",
+            "reason": "34종 중 10종이 온라인쇼핑 혜택 보유"
+          },
+          {
+            "tag": "tiered_perf",
+            "reason": "34종 중 10종이 실적 구간제를 채택해 조건 구조가 비슷함"
+          }
+        ],
+        "empty": [
+          {
+            "tag": "invest_reward",
+            "reason": "34종 중 0종. investor를 타깃으로 표기한 카드가 다수인데도 투자 리워드 태그를 가진 카드는 없음"
+          },
+          {
+            "tag": "point_to_stock",
+            "reason": "34종 중 0종. 포인트를 주식으로 연결하는 카드가 없음"
+          },
+          {
+            "tag": "miss_refund",
+            "reason": "34종 중 0종. 놓친 혜택 환급형은 없음"
+          },
+          {
+            "tag": "anti_cap",
+            "reason": "34종 중 0종. 실적조건 완화 태그는 없음. perf_recharge(실적 부족분 보전)는 2종뿐"
+          },
+          {
+            "tag": "ai_personalize",
+            "reason": "34종 중 0종. auto_best(자동 최적 혜택)도 1종뿐"
+          },
+          {
+            "tag": "life_event",
+            "reason": "34종 중 0종"
+          },
+          {
+            "tag": "group_pooling",
+            "reason": "34종 중 0종"
+          },
+          {
+            "tag": "social",
+            "reason": "34종 중 0종"
+          },
+          {
+            "tag": "insurance_link",
+            "reason": "34종 중 0종"
+          },
+          {
+            "tag": "benefit_rental",
+            "reason": "34종 중 0종. monthly_switch(월 변경형)는 체크카드 2종뿐이고 신용카드에는 없음"
+          },
+          {
+            "tag": "challenge",
+            "reason": "34종 중 1종(처음(ANNIVERSE))뿐"
+          }
+        ],
+        "nearest": [
+          {
+            "name": "ZERO Edition3(할인형)",
+            "why": "targets에 investor가 있고 simple_flat, spend_free, no_cap, travel_fx를 가진 신용카드로, 단순·무실적 구조가 투자 입문자 타깃과 가장 겹침. invest_reward 태그는 없음"
+          },
+          {
+            "name": "현대카드 M",
+            "why": "targets가 single, investor, free이고 simple_flat, no_cap, reward_point, travel_fx를 가짐. 포인트 적립과 한도 없음 구조가 겹침"
+          },
+          {
+            "name": "LOCA LIKIT 1.2",
+            "why": "targets가 single, investor, free이고 simple_flat, spend_free, no_cap, online_shop을 가진 신용카드. 단순 정률과 무실적 구조가 겹침"
+          }
+        ]
+      },
+      "consumer": {
+        "top_needs": [
+          {
+            "need": "invest",
+            "priority": 1,
+            "evidence": "세그먼트 니즈 점수 0.95로 최상위. 주식투자 전용 PLCC(T1)와 소수점 해외주식 경쟁(T2)이 이미 나타나, 투자 연계가 핵심 구매 동기이자 차별화 지점임을 시사한다."
+          },
+          {
+            "need": "digital",
+            "priority": 2,
+            "evidence": "니즈 점수 0.7. 결제 접점이 간편결제 앱으로 이동하는 흐름(T5)이 있어 모바일 우선 발급과 앱 내 투자 연동이 중요하다(T5는 신뢰도 낮음)."
+          },
+          {
+            "need": "simple",
+            "priority": 3,
+            "evidence": "니즈 점수 0.7이며 복잡성 허용도 0.7로 중상 수준. 혜택 구조는 이해하기 쉬워야 하며, 잔돈·포인트의 소액 투자 전환처럼 단순한 경험이 입문자 진입장벽을 낮출 수 있다(T2)."
+          },
+          {
+            "need": "saving",
+            "priority": 4,
+            "evidence": "니즈 점수 0.6. 월 소비는 외식 30만원, 온라인 25만원 순으로 커서 이 영역의 캐시백·적립이 투자 재원 마련 수단이 된다. 다만 고혜택 구조의 지속성은 불확실하다(T4)."
+          },
+          {
+            "need": "social",
+            "priority": 5,
+            "evidence": "니즈 점수 0.6. 2030이 자주 쓰는 플랫폼 특화 제휴를 선호하는 흐름(T3)과 맞닿아 있으며, 투자 플랫폼과 생활 소비처를 묶는 제휴로 소속감을 줄 수 있다."
+          }
+        ],
+        "must_have": [
+          "증권 계좌 연계와 소액·소수점 투자 전환 기능(결제 후 잔돈이나 포인트의 투자 전환)",
+          "모바일 우선 발급과 앱 내 투자·결제 연동",
+          "외식·온라인 등 주 소비처에서 체감되는 적립 혜택",
+          "이해하기 쉬운 혜택 구조와 변경 가능성의 투명한 고지"
+        ],
+        "can_give_up": [
+          "여행·해외 특화 혜택(니즈 점수 0.4)",
+          "고정비 절감 혜택(니즈 점수 0.3)",
+          "보장·안전 부가서비스(니즈 점수 0.3)",
+          "다수 항목에 걸친 광범위한 부가혜택"
+        ],
+        "evidence_signal_ids": [
+          "T1",
+          "T2",
+          "T3",
+          "T4",
+          "T5"
+        ]
+      }
+    },
+    "cells_top": [
+      {
+        "seg": "investor",
+        "need": "invest",
+        "score": 0.633,
+        "rank": 1
+      },
+      {
+        "seg": "young",
+        "need": "invest",
+        "score": 0.622,
+        "rank": 2
+      },
+      {
+        "seg": "young",
+        "need": "social",
+        "score": 0.622,
+        "rank": 3
+      },
+      {
+        "seg": "family",
+        "need": "safety",
+        "score": 0.612,
+        "rank": 4
+      },
+      {
+        "seg": "single",
+        "need": "invest",
+        "score": 0.6,
+        "rank": 5
+      },
+      {
+        "seg": "family",
+        "need": "invest",
+        "score": 0.5,
+        "rank": 6
+      },
+      {
+        "seg": "family",
+        "need": "social",
+        "score": 0.438,
+        "rank": 7
+      },
+      {
+        "seg": "investor",
+        "need": "social",
+        "score": 0.4,
+        "rank": 8
+      },
+      {
+        "seg": "single",
+        "need": "safety",
+        "score": 0.375,
+        "rank": 9
+      },
+      {
+        "seg": "young",
+        "need": "simple",
+        "score": 0.356,
+        "rank": 10
+      },
+      {
+        "seg": "free",
+        "need": "invest",
+        "score": 0.333,
+        "rank": 11
+      },
+      {
+        "seg": "free",
+        "need": "safety",
+        "score": 0.292,
+        "rank": 12
+      }
+    ]
+  }
+}

@@ -1,0 +1,555 @@
+{
+  "run_id": "sample-research-lead-001",
+  "request_id": "sample-research-lead-001-r1",
+  "agent": "research_lead",
+  "contract_version": "1.0",
+  "model": "claude-sonnet-5-5",
+  "status": "ok",
+  "answer": "투자·자산형성 니즈가 0.95로 가장 높고(consumer#0) 시판 카드 34종에는 투자 리워드·포인트→주식 카드가 0종이라(competitor#1) 기회로 보인다. 다만 증권사 연계 주식투자 카드와 소수점 투자 서비스 경쟁 기사가 있어(trend#0, trend#1) 두 결과가 엇갈리며, 해당 기사 일부는 2023년 자료라 현재 판매 여부 확인이 먼저다.",
+  "result": {
+    "headline": "투자 연계는 니즈 1순위이자 시판 카드의 빈칸이지만, 증권사 연계 선례가 있어 차별화와 제휴 확보가 관건이다",
+    "answer_body": "소비자 분석에서 투자·자산형성 니즈가 0.95로 가장 높고(consumer#0), 경쟁사 DB 34종에는 투자 리워드·포인트→주식 카드가 0종이다(competitor#1). 다만 트렌드는 증권사 연계 카드와 소수점 투자 경쟁이 이미 있다고 보여 서로 엇갈린다(trend#0, trend#1).",
+    "key_findings": [
+      {
+        "claim": "투자·자산형성 니즈 점수 0.95로 세그먼트 최상위이고 증권 계좌 연계·소액 투자 전환이 필수 항목이다.",
+        "finding_ids": [
+          "consumer#0"
+        ],
+        "agents": [
+          "consumer"
+        ]
+      },
+      {
+        "claim": "시판 카드 34종 중 투자 리워드·포인트→주식 카드는 0종이다.",
+        "finding_ids": [
+          "competitor#1"
+        ],
+        "agents": [
+          "competitor"
+        ]
+      },
+      {
+        "claim": "증권사 연계 주식투자 전용 카드와 소수점 투자 서비스 경쟁이 이미 기사로 확인된다(근거 일부는 2023년 자료).",
+        "finding_ids": [
+          "trend#0",
+          "trend#1"
+        ],
+        "agents": [
+          "trend"
+        ],
+        "source_ids": [
+          "T-s1",
+          "T-s3"
+        ]
+      },
+      {
+        "claim": "혜택 경쟁은 청구할인·해외결제·외식에 몰려 있고 입문자의 해외 니즈는 0.4로 낮다.",
+        "finding_ids": [
+          "competitor#0",
+          "consumer#3"
+        ],
+        "agents": [
+          "competitor",
+          "consumer"
+        ]
+      },
+      {
+        "claim": "가장 가까운 카드 3종도 투자 리워드가 없고 단순·무실적 구조만 겹친다.",
+        "finding_ids": [
+          "competitor#2"
+        ],
+        "agents": [
+          "competitor"
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "claim": "주식투자 전용 PLCC '미래에셋 현대카드' 출시 기사가 있다(제목 기준, 발행 2023-04-06).",
+        "finding_ids": [
+          "trend#0"
+        ],
+        "agents": [
+          "trend"
+        ],
+        "source_ids": [
+          "T-s1"
+        ],
+        "area": "trend"
+      },
+      {
+        "claim": "미래에셋·삼성증권·토스증권이 소액·소수점 해외주식 거래 서비스를 두고 경쟁한다는 기사가 있다(발행 2025-08-11).",
+        "finding_ids": [
+          "trend#1"
+        ],
+        "agents": [
+          "trend"
+        ],
+        "source_ids": [
+          "T-s3"
+        ],
+        "area": "trend"
+      },
+      {
+        "claim": "삼성카드가 2030 겨냥 무신사 전용 카드를 출시한다는 기사가 있다. 기사 URL상 2026-04로 보이나 발행일은 확인하지 못했다.",
+        "finding_ids": [
+          "trend#2"
+        ],
+        "agents": [
+          "trend"
+        ],
+        "source_ids": [
+          "T-s5"
+        ],
+        "area": "trend"
+      },
+      {
+        "claim": "카드업계의 마케팅·부가혜택 비용 부담과 수수료 인하 압력을 다룬 기사가 있으나 모두 2012~2018년 자료다.",
+        "finding_ids": [
+          "trend#3"
+        ],
+        "agents": [
+          "trend"
+        ],
+        "source_ids": [
+          "T-s7"
+        ],
+        "area": "trend"
+      },
+      {
+        "claim": "토스·카카오페이 등 간편결제 앱 중심으로 카드·후불결제 연계가 확대된다는 기사가 있다(최신 1건 발행 2025-08-19, 나머지 2020-12).",
+        "finding_ids": [
+          "trend#4"
+        ],
+        "agents": [
+          "trend"
+        ],
+        "source_ids": [
+          "T-s11"
+        ],
+        "area": "trend"
+      },
+      {
+        "claim": "청구할인형 15종, 해외결제·환전 14종, 외식·카페 12종으로 혜택 경쟁이 이 영역에 몰려 있다(34종 기준).",
+        "finding_ids": [
+          "competitor#0"
+        ],
+        "agents": [
+          "competitor"
+        ],
+        "area": "competitor"
+      },
+      {
+        "claim": "시판 카드 34종 중 투자 리워드(invest_reward)와 포인트→주식(point_to_stock) 태그 카드는 0종이다.",
+        "finding_ids": [
+          "competitor#1"
+        ],
+        "agents": [
+          "competitor"
+        ],
+        "area": "competitor"
+      },
+      {
+        "claim": "가장 가까운 카드 3종(ZERO Edition3, 현대카드 M, LOCA LIKIT 1.2)은 투자자 타깃 표기와 단순·무실적 구조만 겹치고 투자 리워드 태그는 없다.",
+        "finding_ids": [
+          "competitor#2"
+        ],
+        "agents": [
+          "competitor"
+        ],
+        "area": "competitor"
+      },
+      {
+        "claim": "투자 리워드 혜택 구조는 증권사·플랫폼 제휴만 확보되면 경쟁사가 따라 하기 쉬울 수 있으나, 제휴 독점 여부는 이 데이터로 판단할 수 없다.",
+        "finding_ids": [
+          "competitor#3"
+        ],
+        "agents": [
+          "competitor"
+        ],
+        "area": "competitor"
+      },
+      {
+        "claim": "투자·자산형성 니즈 점수가 0.95로 세그먼트 최상위이며, 증권 계좌 연계와 소액·소수점 투자 전환 기능이 필수 항목으로 꼽힌다.",
+        "finding_ids": [
+          "consumer#0"
+        ],
+        "agents": [
+          "consumer"
+        ],
+        "area": "consumer"
+      },
+      {
+        "claim": "구독·디지털 니즈(0.7)와 단순함 니즈(0.7)가 이어 높아 모바일 우선 발급과 이해하기 쉬운 혜택 구조가 중요하다.",
+        "finding_ids": [
+          "consumer#1"
+        ],
+        "agents": [
+          "consumer"
+        ],
+        "area": "consumer"
+      },
+      {
+        "claim": "고혜택 카드의 재원 부담으로 혜택 축소 가능성이 있어 신뢰 형성이 어렵다(근거 신뢰도 낮음).",
+        "finding_ids": [
+          "consumer#2"
+        ],
+        "agents": [
+          "consumer"
+        ],
+        "area": "consumer"
+      },
+      {
+        "claim": "여행·해외 특화 혜택은 니즈 점수 0.4로 포기 가능 항목에 속한다.",
+        "finding_ids": [
+          "consumer#3"
+        ],
+        "agents": [
+          "consumer"
+        ],
+        "area": "consumer"
+      }
+    ],
+    "conflicts": [
+      {
+        "topic": "투자 연계 카드가 이미 있는가, 시장에 비어 있는가",
+        "positions": [
+          {
+            "agent": "trend",
+            "view": "주식투자 전용 PLCC와 소수점 투자 서비스가 이미 시장에 나와 있다.",
+            "basis": "이투데이 기사 제목(발행 2023-04-06), SBS Biz(2025-08-11)",
+            "limits": "제목 위주로 확인, 출시 시점·세부 혜택 미확인, 일부 근거가 18개월 초과"
+          },
+          {
+            "agent": "competitor",
+            "view": "카드 DB 34종 중 투자 리워드·포인트→주식 카드는 0종이다.",
+            "basis": "엔진 DB 태그 집계",
+            "limits": "DB에 수록되지 않은 카드는 판단하지 않았고 DB 기준일은 확인되지 않음"
+          }
+        ],
+        "if_assumptions": [
+          "DB에 미래에셋 현대카드가 없다면 두 결과는 양립하며 DB 보강이 필요하다.",
+          "기사 속 카드가 이미 판매 종료됐다면 현재 시장은 비어 있다고 볼 수 있다."
+        ]
+      }
+    ],
+    "uncertainties": [
+      "미래에셋 현대카드의 현재 판매 여부와 혜택(제목만 확인, 근거 2023년).",
+      "투자 연계 혜택의 제휴 독점 가능성은 데이터로 판단할 수 없다.",
+      "무신사 카드 기사 2건은 발행일을 확인하지 못했다.",
+      "시행 예정 규제 변화는 이번 조사에서 확인하지 못했다."
+    ],
+    "opportunities": [
+      "투자 리워드·포인트→주식은 DB상 비어 있는 영역이라, 계좌 연계 소액 투자 전환을 핵심 혜택으로 두면 선점 여지가 있다.",
+      "단순 정률·무실적 구조는 입문자의 단순함 니즈(0.7)와 맞고 이미 채택 사례가 있어 설계 부담이 낮다."
+    ],
+    "risks": [
+      "증권사 연계 카드와 소수점 투자가 이미 있어 단순 적립만으로는 차별이 약하다.",
+      "혜택 구조는 제휴만 확보되면 경쟁사가 따라 하기 쉬울 수 있고, 제휴 독점 여부는 판단할 수 없다.",
+      "고혜택 지속성 근거가 2012~2018년 자료뿐이라 재원 부담 판단 근거가 약하다."
+    ],
+    "recommendations": [
+      "증권사·플랫폼 제휴 후보와 조건을 먼저 확인한 뒤 투자 연계 혜택을 설계한다.",
+      "미래에셋 현대카드의 현재 판매 상태와 혜택을 최신 자료로 재확인한다.",
+      "해외결제·할인형처럼 혼잡한 영역은 줄이고 외식·온라인 등 주 소비처 적립에 집중한다."
+    ],
+    "calls": [
+      {
+        "agent": "trend",
+        "question": "2030 투자 입문자 대상 신용카드 기획에 의미 있는 시장·결제·규제 트렌드는?",
+        "round": 1,
+        "reason": "새 주제라 세 영역을 동시에 호출",
+        "ok": true,
+        "rerouted_from": null,
+        "error": null
+      },
+      {
+        "agent": "competitor",
+        "question": "시판 카드 중 투자 입문자 타깃과 겹치는 카드와 비어 있는 혜택 영역은?",
+        "depth": "overview",
+        "round": 1,
+        "reason": "새 주제라 경쟁사는 overview로 넓게",
+        "ok": true,
+        "rerouted_from": null,
+        "error": null
+      },
+      {
+        "agent": "consumer",
+        "question": "2030 투자 입문자의 카드 니즈 우선순위와 채택 장벽은?",
+        "round": 1,
+        "reason": "새 주제라 세 영역을 동시에 호출",
+        "ok": true,
+        "rerouted_from": null,
+        "error": null
+      }
+    ],
+    "agent_outputs": {
+      "trend": "sample-trend-001-r1",
+      "competitor": "sample-competitor-001-r1",
+      "consumer": "sample-consumer-001-r1"
+    },
+    "verification": {
+      "supported": 4,
+      "partial": 1,
+      "unsupported": 0,
+      "contradicted": 0,
+      "passed": true
+    },
+    "report_markdown": null
+  },
+  "findings": [
+    {
+      "id": "trend#0",
+      "claim": "주식투자 전용 PLCC '미래에셋 현대카드' 출시 기사가 있다(제목 기준, 발행 2023-04-06).",
+      "type": "fact",
+      "source_id": "T-s1",
+      "confidence": "medium"
+    },
+    {
+      "id": "trend#1",
+      "claim": "미래에셋·삼성증권·토스증권이 소액·소수점 해외주식 거래 서비스를 두고 경쟁한다는 기사가 있다(발행 2025-08-11).",
+      "type": "fact",
+      "source_id": "T-s3",
+      "confidence": "medium"
+    },
+    {
+      "id": "trend#2",
+      "claim": "삼성카드가 2030 겨냥 무신사 전용 카드를 출시한다는 기사가 있다. 기사 URL상 2026-04로 보이나 발행일은 확인하지 못했다.",
+      "type": "estimate",
+      "source_id": "T-s5",
+      "confidence": "medium"
+    },
+    {
+      "id": "trend#3",
+      "claim": "카드업계의 마케팅·부가혜택 비용 부담과 수수료 인하 압력을 다룬 기사가 있으나 모두 2012~2018년 자료다.",
+      "type": "fact",
+      "source_id": "T-s7",
+      "confidence": "low"
+    },
+    {
+      "id": "trend#4",
+      "claim": "토스·카카오페이 등 간편결제 앱 중심으로 카드·후불결제 연계가 확대된다는 기사가 있다(최신 1건 발행 2025-08-19, 나머지 2020-12).",
+      "type": "fact",
+      "source_id": "T-s11",
+      "confidence": "low"
+    },
+    {
+      "id": "competitor#1",
+      "claim": "시판 카드 34종 중 투자 리워드(invest_reward)와 포인트→주식(point_to_stock) 태그 카드는 0종이다.",
+      "type": "estimate",
+      "source_id": null,
+      "confidence": "medium"
+    },
+    {
+      "id": "competitor#0",
+      "claim": "청구할인형 15종, 해외결제·환전 14종, 외식·카페 12종으로 혜택 경쟁이 이 영역에 몰려 있다(34종 기준).",
+      "type": "estimate",
+      "source_id": null,
+      "confidence": "medium"
+    },
+    {
+      "id": "competitor#2",
+      "claim": "가장 가까운 카드 3종(ZERO Edition3, 현대카드 M, LOCA LIKIT 1.2)은 투자자 타깃 표기와 단순·무실적 구조만 겹치고 투자 리워드 태그는 없다.",
+      "type": "estimate",
+      "source_id": null,
+      "confidence": "medium"
+    },
+    {
+      "id": "competitor#3",
+      "claim": "투자 리워드 혜택 구조는 증권사·플랫폼 제휴만 확보되면 경쟁사가 따라 하기 쉬울 수 있으나, 제휴 독점 여부는 이 데이터로 판단할 수 없다.",
+      "type": "estimate",
+      "source_id": null,
+      "confidence": "low"
+    },
+    {
+      "id": "consumer#0",
+      "claim": "투자·자산형성 니즈 점수가 0.95로 세그먼트 최상위이며, 증권 계좌 연계와 소액·소수점 투자 전환 기능이 필수 항목으로 꼽힌다.",
+      "type": "estimate",
+      "source_id": null,
+      "confidence": "medium"
+    },
+    {
+      "id": "consumer#1",
+      "claim": "구독·디지털 니즈(0.7)와 단순함 니즈(0.7)가 이어 높아 모바일 우선 발급과 이해하기 쉬운 혜택 구조가 중요하다.",
+      "type": "estimate",
+      "source_id": null,
+      "confidence": "medium"
+    },
+    {
+      "id": "consumer#2",
+      "claim": "고혜택 카드의 재원 부담으로 혜택 축소 가능성이 있어 신뢰 형성이 어렵다(근거 신뢰도 낮음).",
+      "type": "estimate",
+      "source_id": null,
+      "confidence": "low"
+    },
+    {
+      "id": "consumer#3",
+      "claim": "여행·해외 특화 혜택은 니즈 점수 0.4로 포기 가능 항목에 속한다.",
+      "type": "estimate",
+      "source_id": null,
+      "confidence": "medium"
+    }
+  ],
+  "sources": [
+    {
+      "id": "T-s1",
+      "title": "주식투자 전용카드(PLCC) '미래에셋 현대카드' 출시",
+      "url": "https://www.etoday.co.kr/news/view/2238095",
+      "publisher": "이투데이",
+      "kind": "news",
+      "published": "2023-04-06",
+      "retrieved_at": "2026-10-16",
+      "reliability": 0.6,
+      "tier": "B",
+      "stale": true
+    },
+    {
+      "id": "T-s2",
+      "title": "미래에셋증권, 주식 소액 적립식 투자서비스 오픈",
+      "url": "https://www.smarttoday.co.kr/ko-kr/articles/30193",
+      "publisher": "스마트투데이",
+      "kind": "news",
+      "published": "2023-05-22",
+      "retrieved_at": "2026-10-16",
+      "reliability": 0.6,
+      "tier": "B",
+      "stale": true
+    },
+    {
+      "id": "T-s3",
+      "title": "미래에셋, 서학개미 소수점 거래 늘린다",
+      "url": "https://biz.sbs.co.kr/amp/article/20000252586",
+      "publisher": "SBS Biz",
+      "kind": "news",
+      "published": "2025-08-11",
+      "retrieved_at": "2026-10-16",
+      "reliability": 0.55,
+      "tier": "B",
+      "stale": false
+    },
+    {
+      "id": "T-s4",
+      "title": "진화하는 서학개미...삼성·토스증권 서비스 혁신 물결",
+      "url": "https://www.dailian.co.kr/news/view/1094581/",
+      "publisher": "데일리안",
+      "kind": "news",
+      "published": "2022-03-21",
+      "retrieved_at": "2026-10-16",
+      "reliability": 0.55,
+      "tier": "B",
+      "stale": true
+    },
+    {
+      "id": "T-s5",
+      "title": "삼성카드, 2030 겨냥한 '무신사 전용 카드' 출시한다",
+      "url": "https://www.heraldk.com/article/2026041516245749478",
+      "publisher": "헤럴드경제",
+      "kind": "news",
+      "published": null,
+      "retrieved_at": "2026-10-16",
+      "reliability": 0.7,
+      "tier": "B"
+    },
+    {
+      "id": "T-s6",
+      "title": "무신사 뉴스룸 2026-04-16",
+      "url": "https://newsroom.musinsa.com/newsroom-menu/2026-0416-01",
+      "publisher": "무신사",
+      "kind": "official",
+      "published": null,
+      "retrieved_at": "2026-10-16",
+      "reliability": 0.7,
+      "tier": "B"
+    },
+    {
+      "id": "T-s7",
+      "title": "수수료 인하 어렵다면서…마케팅 못 줄이는 카드업계",
+      "url": "https://newstomato.com/ReadNews.aspx?no=809737",
+      "publisher": "뉴스토마토",
+      "kind": "news",
+      "published": "2018-03-05",
+      "retrieved_at": "2026-10-16",
+      "reliability": 0.4,
+      "tier": "C",
+      "stale": true
+    },
+    {
+      "id": "T-s8",
+      "title": "카드 부가혜택 연말까지 70% 축소",
+      "url": "https://news.jkn.co.kr/post/711265",
+      "publisher": "JKN",
+      "kind": "news",
+      "published": "2012-07-05",
+      "retrieved_at": "2026-10-16",
+      "reliability": 0.4,
+      "tier": "C",
+      "stale": true
+    },
+    {
+      "id": "T-s9",
+      "title": "카드산업 건전화TF 출범",
+      "url": "https://m.ekn.kr/view.php?key=402028",
+      "publisher": "EKN",
+      "kind": "news",
+      "published": "2018-12-06",
+      "retrieved_at": "2026-10-16",
+      "reliability": 0.4,
+      "tier": "C",
+      "stale": true
+    },
+    {
+      "id": "T-s10",
+      "title": "카카오페이에서 계좌 만들고, 토스에선 후불결제가 가능해진다?",
+      "url": "https://www.card-gorilla.com/contents/detail/1624",
+      "publisher": "카드고릴라",
+      "kind": "web",
+      "published": "2020-12-01",
+      "retrieved_at": "2026-10-16",
+      "reliability": 0.4,
+      "tier": "C",
+      "stale": true
+    },
+    {
+      "id": "T-s11",
+      "title": "토스페이 15% 할인되는 토스 삼성카드 출시",
+      "url": "https://m.card-gorilla.com/contents/detail/3958",
+      "publisher": "카드고릴라",
+      "kind": "web",
+      "published": "2025-08-19",
+      "retrieved_at": "2026-10-16",
+      "reliability": 0.4,
+      "tier": "C",
+      "stale": false
+    }
+  ],
+  "assumptions": [
+    "타깃은 2030 투자 입문자, 카드 유형은 신용카드로 가정했다.",
+    "자사 카드는 지정되지 않아 자사 비교는 하지 않았다."
+  ],
+  "unresolved": [
+    "미래에셋 현대카드의 현재 판매 여부와 혜택(제목만 확인, 근거 2023년).",
+    "투자 연계 혜택의 제휴 독점 가능성은 데이터로 판단할 수 없다.",
+    "무신사 카드 기사 2건은 발행일을 확인하지 못했다.",
+    "시행 예정 규제 변화는 이번 조사에서 확인하지 못했다."
+  ],
+  "limits": [
+    "[답 검증] 받침 4건, 부분 1건, 근거 없음 0건, 반대 0건 (합격)",
+    "경쟁사 DB와 소비자 세그먼트 점수는 URL 출처가 없어 competitor·consumer finding은 source_id가 없다.",
+    "소비자 분석이 인용한 시그널 T1~T5의 신뢰도는 0.4~0.7로 낮거나 중간이다."
+  ],
+  "clarifications": [],
+  "out_of_scope": {
+    "detected": false,
+    "suggested_agent": null
+  },
+  "followups": [
+    "미래에셋 현대카드가 지금도 판매 중인지 트렌드 쪽에서 다시 확인해줘",
+    "투자 연계 혜택 중 제휴 없이 만들 수 있는 구조가 있는지 경쟁사 기준으로 봐줘",
+    "이 결과로 시장기회 정리 단계로 넘어가자"
+  ],
+  "input_refs": [
+    "sample-trend-001-r1",
+    "sample-competitor-001-r1",
+    "sample-consumer-001-r1"
+  ]
+}

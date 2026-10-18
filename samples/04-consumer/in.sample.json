@@ -1,0 +1,92 @@
+{
+  "run_id": "sample-consumer-001",
+  "request_id": "sample-consumer-001-r1",
+  "agent": "consumer",
+  "contract_version": "1.0",
+  "mode": "standalone",
+  "today": "2026-10-17",
+  "question": "2030 투자 입문자가 신용카드에서 뭘 제일 원하고, 뭐가 발급을 막는지 정리해 줘.",
+  "conversation": {
+    "summary": "",
+    "segment": "2030 투자 입문자",
+    "card_type": "신용카드",
+    "period": "",
+    "assumptions": [
+      "세그먼트 수치는 PM 가정치"
+    ],
+    "own_cards": []
+  },
+  "output_mode": "conversational",
+  "depth": "detail",
+  "payload": {
+    "segment": {
+      "id": "investor",
+      "name": "2030 투자입문자",
+      "monthly_spend": {
+        "dining": 30,
+        "online": 25,
+        "sub": 8,
+        "trans": 8,
+        "travel": 12,
+        "daily": 10,
+        "fixed": 8
+      },
+      "complexity_tolerance": 0.7,
+      "need_weights": {
+        "saving": 0.6,
+        "invest": 0.95,
+        "travel": 0.4,
+        "digital": 0.7,
+        "fixed_cost": 0.3,
+        "safety": 0.3,
+        "social": 0.6,
+        "simple": 0.7
+      },
+      "is_assumption": true
+    },
+    "need_labels": {
+      "saving": "절약·캐시백",
+      "invest": "투자·자산형성",
+      "travel": "여행·해외",
+      "digital": "구독·디지털",
+      "fixed_cost": "고정비 절감",
+      "safety": "보장·안전",
+      "social": "소속감·소셜",
+      "simple": "단순함"
+    },
+    "trend_signals": [
+      {
+        "id": "T1",
+        "title": "증권사 연계 주식투자 전용 PLCC 카드 등장 (미래에셋 현대카드)",
+        "impl": "주식투자 전용 PLCC가 이미 출시된 만큼, 투자 입문자 카드는 계좌 연계와 소액 투자 전환 경험으로 기존 적립형과 구분해야 한다. 제목만 확인했고 출시 시점과 세부 혜택은 확인하지 못해 검증이 필요하다.",
+        "topic": "invest"
+      },
+      {
+        "id": "T2",
+        "title": "소액·소수점 해외주식 거래 서비스 경쟁 (미래에셋, 삼성증권, 토스증권)",
+        "impl": "카드 결제 후 잔돈이나 포인트를 소수점 투자로 전환하는 구조가 입문자 진입장벽을 낮출 수 있다. 서비스별 구체 수치는 확인하지 못했으므로 기획 단계에서 원문 확인이 필요하다.",
+        "topic": "invest"
+      },
+      {
+        "id": "T3",
+        "title": "2030 겨냥 브랜드 제휴 전용 카드 확산 (삼성카드 무신사 카드, 2026-04)",
+        "impl": "2030은 자주 쓰는 플랫폼에 특화된 제휴 혜택을 선호하는 흐름이므로, 투자 플랫폼과 생활 소비처를 묶은 제휴 설계가 필요하다. 무신사 카드의 구체 혜택과 흥행 수치는 확인하지 못했다.",
+        "topic": "group"
+      },
+      {
+        "id": "T4",
+        "title": "카드사 마케팅·부가혜택 비용 부담과 수수료 인하 압력",
+        "impl": "고혜택 구조의 지속성이 불확실하므로, 혜택 재원과 약관상 변경 가능성을 처음부터 설계에 반영해야 한다. 제목 위주로만 확인했고 일부 기사는 과거 자료일 수 있어 최신 여부를 별도로 검증해야 한다.",
+        "topic": "regulation"
+      },
+      {
+        "id": "T5",
+        "title": "핀테크·플랫폼 결제 연계 카드 및 후불결제 확대 (토스, 카카오페이)",
+        "impl": "2030의 결제 접점이 간편결제 앱으로 이동하고 있어, 모바일 우선 발급과 앱 내 투자 연동이 중요하다. 카드고릴라와 블로그형 출처 위주라 신뢰도를 낮게 두었다.",
+        "topic": "digital"
+      }
+    ],
+    "public_sources_enabled": false,
+    "sentiment_source": "none"
+  }
+}

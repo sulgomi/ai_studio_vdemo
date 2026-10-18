@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 856 540" width="856" height="540" role="img" aria-label="함께쌓기 카드 디자인 C안: 친구들이 블록을 올리는 장면">
+  <defs>
+    <linearGradient id="bgC" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FCF5E8"/>
+      <stop offset="1" stop-color="#F6EAD3"/>
+    </linearGradient>
+    <linearGradient id="chipC" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#EBD38A"/>
+      <stop offset="1" stop-color="#C9A84A"/>
+    </linearGradient>
+    <radialGradient id="glowC" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity="0.9"/>
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- 카드 배경 -->
+  <rect x="0" y="0" width="856" height="540" rx="36" fill="url(#bgC)"/>
+  <ellipse cx="620" cy="300" rx="220" ry="200" fill="url(#glowC)"/>
+
+  <!-- 발급사 자리표시 -->
+  <text x="64" y="84" font-family="'Noto Sans KR','Apple SD Gothic Neo',sans-serif" font-size="22" font-weight="700" letter-spacing="4" fill="#3B4A5E">ISSUER</text>
+
+  <!-- 접촉식 칩 -->
+  <g>
+    <rect x="64" y="168" width="92" height="70" rx="12" fill="url(#chipC)" stroke="#A88A35" stroke-width="1.5"/>
+    <path d="M64 191H94M64 215H94M126 191H156M126 215H156M94 168V238M126 168V238M94 203H126" fill="none" stroke="#8C6F24" stroke-width="2"/>
+  </g>
+  <!-- 비접촉 아이콘 -->
+  <g fill="none" stroke="#1F3A5F" stroke-width="4" stroke-linecap="round">
+    <path d="M184 188Q191 203 184 218"/>
+    <path d="M196 180Q206 203 196 226"/>
+    <path d="M208 172Q221 203 208 234"/>
+  </g>
+
+  <!-- 탁자 -->
+  <rect x="420" y="430" width="400" height="10" rx="5" fill="#1F3A5F"/>
+
+  <!-- 친구 1 (왼쪽 앞) -->
+  <path d="M442 430V352Q442 326 468 326Q494 326 494 352V430Z" fill="#E07A5F"/>
+  <circle cx="468" cy="300" r="21" fill="#1F3A5F"/>
+  <!-- 친구 2 (왼쪽 뒤, 탑을 받쳐 줌) -->
+  <path d="M506 430V340Q506 314 532 314Q558 314 558 340V430Z" fill="#3FA796"/>
+  <circle cx="532" cy="288" r="21" fill="#1F3A5F"/>
+  <path d="M552 356Q566 362 578 362" fill="none" stroke="#3FA796" stroke-width="12" stroke-linecap="round"/>
+
+  <!-- 함께 쌓은 블록 탑: 구성원 색 그대로 -->
+  <rect x="584" y="392" width="82" height="36" rx="10" fill="#E07A5F"/>
+  <rect x="584" y="354" width="82" height="36" rx="10" fill="#3FA796"/>
+  <rect x="584" y="316" width="82" height="36" rx="10" fill="#F2C94C"/>
+  <!-- 지금 올리는 블록 -->
+  <rect x="588" y="262" width="82" height="36" rx="10" fill="#1F3A5F" transform="rotate(-6 629 280)"/>
+
+  <!-- 친구 3 (오른쪽 뒤, 블록을 올리는 중) -->
+  <path d="M690 430V340Q690 314 716 314Q742 314 742 340V430Z" fill="#1F3A5F"/>
+  <circle cx="716" cy="288" r="21" fill="#E07A5F"/>
+  <path d="M700 340Q690 314 664 292" fill="none" stroke="#1F3A5F" stroke-width="12" stroke-linecap="round"/>
+  <!-- 친구 4 (오른쪽 앞) -->
+  <path d="M754 430V352Q754 326 780 326Q806 326 806 352V430Z" fill="#F2C94C"/>
+  <circle cx="780" cy="300" r="21" fill="#1F3A5F"/>
+
+  <!-- 작은 연결 점: 모두가 한 탑을 바라봄 -->
+  <g fill="#1F3A5F">
+    <circle cx="500" cy="248" r="4"/>
+    <circle cx="520" cy="234" r="4"/>
+    <circle cx="742" cy="234" r="4"/>
+    <circle cx="762" cy="248" r="4"/>
+  </g>
+
+  <!-- 카드 이름 -->
+  <text x="64" y="420" font-family="'Noto Sans KR','Apple SD Gothic Neo',sans-serif" font-size="18" font-weight="500" fill="#3B4A5E">한 칸씩, 다 같이</text>
+  <text x="64" y="472" font-family="'Noto Sans KR','Apple SD Gothic Neo',sans-serif" font-size="42" font-weight="800" fill="#1F3A5F">함께쌓기 카드</text>
+</svg>

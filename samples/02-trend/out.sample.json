@@ -1,0 +1,293 @@
+{
+  "run_id": "sample-trend-001",
+  "request_id": "sample-trend-001-r1",
+  "agent": "trend",
+  "contract_version": "1.0",
+  "model": "claude-sonnet-5-5",
+  "status": "ok",
+  "answer": "2030 투자 입문자 카드에 의미 있는 시그널 5개를 찾았다. 가장 강한 것은 증권사 연계 주식투자 전용 카드(T1, 강도 0.8)와 소액·소수점 투자 경쟁(T2, 0.7)이지만, T1의 근거 기사는 2023년 자료라 현재 상태 확인이 필요하다. 혜택 재원 부담(T4)과 결제 앱 이동(T5)은 신뢰도 0.4라 하향 수용했고, 시행 예정 규제 변화는 확인하지 못했다.",
+  "result": {
+    "signals": [
+      {
+        "id": "T1",
+        "title": "증권사 연계 주식투자 전용 PLCC 카드 등장 (미래에셋 현대카드)",
+        "topic": "invest",
+        "strength": 0.8,
+        "reliability": 0.6,
+        "impl": "주식투자 전용 PLCC가 이미 출시된 만큼, 투자 입문자 카드는 계좌 연계와 소액 투자 전환 경험으로 기존 적립형과 구분해야 한다. 제목만 확인했고 출시 시점과 세부 혜택은 확인하지 못해 검증이 필요하다. 근거가 모두 18개월 초과(오래된 근거)다.",
+        "source_ids": [
+          "T-s1",
+          "T-s2"
+        ],
+        "stale": true
+      },
+      {
+        "id": "T2",
+        "title": "소액·소수점 해외주식 거래 서비스 경쟁 (미래에셋, 삼성증권, 토스증권)",
+        "topic": "invest",
+        "strength": 0.7,
+        "reliability": 0.55,
+        "impl": "카드 결제 후 잔돈이나 포인트를 소수점 투자로 전환하는 구조가 입문자 진입장벽을 낮출 수 있다. 서비스별 구체 수치는 확인하지 못했으므로 기획 단계에서 원문 확인이 필요하다.",
+        "source_ids": [
+          "T-s3",
+          "T-s4",
+          "T-s2"
+        ],
+        "stale": false
+      },
+      {
+        "id": "T3",
+        "title": "2030 겨냥 브랜드 제휴 전용 카드 확산 (삼성카드 무신사 카드, 2026-04)",
+        "topic": "group",
+        "strength": 0.6,
+        "reliability": 0.7,
+        "impl": "2030은 자주 쓰는 플랫폼에 특화된 제휴 혜택을 선호하는 흐름이므로, 투자 플랫폼과 생활 소비처를 묶은 제휴 설계가 필요하다. 무신사 카드의 구체 혜택과 흥행 수치는 확인하지 못했다.",
+        "source_ids": [
+          "T-s5",
+          "T-s6"
+        ]
+      },
+      {
+        "id": "T4",
+        "title": "카드사 마케팅·부가혜택 비용 부담과 수수료 인하 압력",
+        "topic": "regulation",
+        "strength": 0.65,
+        "reliability": 0.4,
+        "impl": "고혜택 구조의 지속성이 불확실하므로, 혜택 재원과 약관상 변경 가능성을 처음부터 설계에 반영해야 한다. 제목 위주로만 확인했고 근거가 모두 18개월 초과(오래된 근거)라 최신 여부를 별도로 검증해야 한다.",
+        "source_ids": [
+          "T-s7",
+          "T-s8",
+          "T-s9"
+        ],
+        "downgraded": true,
+        "stale": true
+      },
+      {
+        "id": "T5",
+        "title": "핀테크·플랫폼 결제 연계 카드 및 후불결제 확대 (토스, 카카오페이)",
+        "topic": "digital",
+        "strength": 0.55,
+        "reliability": 0.4,
+        "impl": "2030의 결제 접점이 간편결제 앱으로 이동하고 있어, 모바일 우선 발급과 앱 내 투자 연동이 중요하다. 카드고릴라 등 블로그형 출처 위주라 신뢰도를 낮게 두었다(하향 수용).",
+        "source_ids": [
+          "T-s10",
+          "T-s11"
+        ],
+        "downgraded": true,
+        "stale": false
+      }
+    ],
+    "regulatory_changes": []
+  },
+  "findings": [
+    {
+      "id": "trend#0",
+      "claim": "주식투자 전용 PLCC '미래에셋 현대카드' 출시 기사가 있다(제목 기준, 발행 2023-04-06).",
+      "type": "fact",
+      "source_id": "T-s1",
+      "confidence": "medium"
+    },
+    {
+      "id": "trend#1",
+      "claim": "미래에셋·삼성증권·토스증권이 소액·소수점 해외주식 거래 서비스를 두고 경쟁한다는 기사가 있다(발행 2025-08-11).",
+      "type": "fact",
+      "source_id": "T-s3",
+      "confidence": "medium"
+    },
+    {
+      "id": "trend#2",
+      "claim": "삼성카드가 2030 겨냥 무신사 전용 카드를 출시한다는 기사가 있다. 기사 URL상 2026-04로 보이나 발행일은 확인하지 못했다.",
+      "type": "estimate",
+      "source_id": "T-s5",
+      "confidence": "medium"
+    },
+    {
+      "id": "trend#3",
+      "claim": "카드업계의 마케팅·부가혜택 비용 부담과 수수료 인하 압력을 다룬 기사가 있으나 모두 2012~2018년 자료다.",
+      "type": "fact",
+      "source_id": "T-s7",
+      "confidence": "low"
+    },
+    {
+      "id": "trend#4",
+      "claim": "토스·카카오페이 등 간편결제 앱 중심으로 카드·후불결제 연계가 확대된다는 기사가 있다(최신 1건 발행 2025-08-19, 나머지 2020-12).",
+      "type": "fact",
+      "source_id": "T-s11",
+      "confidence": "low"
+    }
+  ],
+  "sources": [
+    {
+      "id": "T-s1",
+      "title": "주식투자 전용카드(PLCC) '미래에셋 현대카드' 출시",
+      "url": "https://www.etoday.co.kr/news/view/2238095",
+      "publisher": "이투데이",
+      "kind": "news",
+      "published": "2023-04-06",
+      "retrieved_at": "2026-10-16",
+      "reliability": 0.6,
+      "tier": "B",
+      "stale": true
+    },
+    {
+      "id": "T-s2",
+      "title": "미래에셋증권, 주식 소액 적립식 투자서비스 오픈",
+      "url": "https://www.smarttoday.co.kr/ko-kr/articles/30193",
+      "publisher": "스마트투데이",
+      "kind": "news",
+      "published": "2023-05-22",
+      "retrieved_at": "2026-10-16",
+      "reliability": 0.6,
+      "tier": "B",
+      "stale": true
+    },
+    {
+      "id": "T-s3",
+      "title": "미래에셋, 서학개미 소수점 거래 늘린다",
+      "url": "https://biz.sbs.co.kr/amp/article/20000252586",
+      "publisher": "SBS Biz",
+      "kind": "news",
+      "published": "2025-08-11",
+      "retrieved_at": "2026-10-16",
+      "reliability": 0.55,
+      "tier": "B",
+      "stale": false
+    },
+    {
+      "id": "T-s4",
+      "title": "진화하는 서학개미...삼성·토스증권 서비스 혁신 물결",
+      "url": "https://www.dailian.co.kr/news/view/1094581/",
+      "publisher": "데일리안",
+      "kind": "news",
+      "published": "2022-03-21",
+      "retrieved_at": "2026-10-16",
+      "reliability": 0.55,
+      "tier": "B",
+      "stale": true
+    },
+    {
+      "id": "T-s5",
+      "title": "삼성카드, 2030 겨냥한 '무신사 전용 카드' 출시한다",
+      "url": "https://www.heraldk.com/article/2026041516245749478",
+      "publisher": "헤럴드경제",
+      "kind": "news",
+      "published": null,
+      "retrieved_at": "2026-10-16",
+      "reliability": 0.7,
+      "tier": "B"
+    },
+    {
+      "id": "T-s6",
+      "title": "무신사 뉴스룸 2026-04-16",
+      "url": "https://newsroom.musinsa.com/newsroom-menu/2026-0416-01",
+      "publisher": "무신사",
+      "kind": "official",
+      "published": null,
+      "retrieved_at": "2026-10-16",
+      "reliability": 0.7,
+      "tier": "B"
+    },
+    {
+      "id": "T-s7",
+      "title": "수수료 인하 어렵다면서…마케팅 못 줄이는 카드업계",
+      "url": "https://newstomato.com/ReadNews.aspx?no=809737",
+      "publisher": "뉴스토마토",
+      "kind": "news",
+      "published": "2018-03-05",
+      "retrieved_at": "2026-10-16",
+      "reliability": 0.4,
+      "tier": "C",
+      "stale": true
+    },
+    {
+      "id": "T-s8",
+      "title": "카드 부가혜택 연말까지 70% 축소",
+      "url": "https://news.jkn.co.kr/post/711265",
+      "publisher": "JKN",
+      "kind": "news",
+      "published": "2012-07-05",
+      "retrieved_at": "2026-10-16",
+      "reliability": 0.4,
+      "tier": "C",
+      "stale": true
+    },
+    {
+      "id": "T-s9",
+      "title": "카드산업 건전화TF 출범",
+      "url": "https://m.ekn.kr/view.php?key=402028",
+      "publisher": "EKN",
+      "kind": "news",
+      "published": "2018-12-06",
+      "retrieved_at": "2026-10-16",
+      "reliability": 0.4,
+      "tier": "C",
+      "stale": true
+    },
+    {
+      "id": "T-s10",
+      "title": "카카오페이에서 계좌 만들고, 토스에선 후불결제가 가능해진다?",
+      "url": "https://www.card-gorilla.com/contents/detail/1624",
+      "publisher": "카드고릴라",
+      "kind": "web",
+      "published": "2020-12-01",
+      "retrieved_at": "2026-10-16",
+      "reliability": 0.4,
+      "tier": "C",
+      "stale": true
+    },
+    {
+      "id": "T-s11",
+      "title": "토스페이 15% 할인되는 토스 삼성카드 출시",
+      "url": "https://m.card-gorilla.com/contents/detail/3958",
+      "publisher": "카드고릴라",
+      "kind": "web",
+      "published": "2025-08-19",
+      "retrieved_at": "2026-10-16",
+      "reliability": 0.4,
+      "tier": "C",
+      "stale": false
+    }
+  ],
+  "assumptions": [
+    "타깃은 2030 투자 입문자로 가정했다.",
+    "카드 유형은 지정되지 않아 신용·체크를 구분하지 않았다."
+  ],
+  "unresolved": [
+    "T1: 미래에셋 현대카드의 출시 시점과 세부 혜택은 제목만 확인해 알 수 없다.",
+    "T3: 헤럴드경제·무신사 뉴스룸 2건은 발행일을 확인하지 못했다(null).",
+    "T4: 혜택 비용·수수료 압력 근거가 2012~2018년 자료뿐이라 현재 상황은 확인 불가.",
+    "규제·정책: 기준일 이후 시행되는 규제 변화 항목을 검색 결과에서 찾지 못해 regulatory_changes를 비웠다."
+  ],
+  "limits": [
+    "발행일은 본문이나 메타에서 확인된 값만 적었고 확인하지 못한 2건은 null이다.",
+    "시그널 강도·신뢰도는 모델 판단값이며 채택률·손익 같은 수치 추정은 하지 않았다.",
+    "검색 결과 11건 중 일부는 제목 위주로만 읽었다."
+  ],
+  "clarifications": [],
+  "out_of_scope": {
+    "detected": false,
+    "suggested_agent": null
+  },
+  "followups": [
+    "미래에셋 현대카드가 지금도 판매 중인지 최신 자료로 다시 확인해줘",
+    "기준일 이후 시행되는 규제·정책 변화만 따로 찾아줘",
+    "2025년 이후 나온 투자 연계 카드 사례를 더 찾아줘"
+  ],
+  "input_refs": [],
+  "validation": {
+    "passed": true,
+    "warnings": [
+      {
+        "code": "SOURCE_STALE",
+        "path": "/result/signals/0",
+        "message": "T1의 출처 2건이 모두 기준일(2026-10-17)로부터 18개월 초과"
+      },
+      {
+        "code": "SOURCE_STALE",
+        "path": "/result/signals/3",
+        "message": "T4의 출처 3건이 모두 기준일로부터 18개월 초과"
+      }
+    ],
+    "rejects": []
+  }
+}

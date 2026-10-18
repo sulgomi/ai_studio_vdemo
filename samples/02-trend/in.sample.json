@@ -1,0 +1,31 @@
+{
+  "run_id": "sample-trend-001",
+  "request_id": "sample-trend-001-r1",
+  "agent": "trend",
+  "contract_version": "1.0",
+  "mode": "standalone",
+  "today": "2026-10-17",
+  "question": "2030 투자 입문자를 위한 신용카드를 기획하려는데, 지금 시장에서 눈여겨볼 트렌드가 뭐야?",
+  "conversation": {
+    "summary": "",
+    "segment": "2030 투자 입문자",
+    "card_type": "신용카드",
+    "period": "지정 없음",
+    "assumptions": [],
+    "own_cards": []
+  },
+  "output_mode": "conversational",
+  "depth": "detail",
+  "payload": {
+    "purpose": "conversation",
+    "target": "2030 투자 입문자",
+    "topics_hint": [
+      "invest",
+      "digital",
+      "group"
+    ],
+    "signal_count": 5,
+    "known_doc_ids": [],
+    "max_queries": 5
+  }
+}

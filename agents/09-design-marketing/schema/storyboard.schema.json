@@ -1,0 +1,81 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "storyboard",
+  "description": "One video. Scenes are presets the Remotion project implements; the LLM only orders them and writes the copy.",
+  "type": "object",
+  "required": ["format", "aspect", "fps", "duration_s", "scenes", "ending"],
+  "additionalProperties": false,
+  "properties": {
+    "format": { "type": "string", "enum": ["reels", "youtube", "promo"] },
+    "aspect": { "type": "string", "enum": ["9:16", "16:9", "1:1"] },
+    "fps": { "type": "integer", "enum": [30] },
+    "duration_s": { "type": "number", "minimum": 6, "maximum": 60 },
+    "bpm": { "type": "integer", "minimum": 70, "maximum": 160, "description": "Cut tempo. Required for promo." },
+    "hero_variant": { "type": "string", "description": "Variant code the reel focuses on" },
+    "scenes": {
+      "type": "array",
+      "minItems": 2,
+      "maxItems": 16,
+      "items": {
+        "type": "object",
+        "required": ["id", "preset", "start_s", "duration_s"],
+        "additionalProperties": false,
+        "properties": {
+          "id": { "type": "string", "pattern": "^[a-z0-9_]{1,24}$" },
+          "preset": {
+            "type": "string",
+            "enum": ["heartbeat_intro", "hero_reveal", "hero_float", "detail_closeup", "flip", "fan_merge",
+                     "life_night_light", "life_daylight_seethrough", "life_tap_pay", "split_merge",
+                     "beat_words", "material_marquee", "lineup_pulse", "benefit_card", "stack_lockup"]
+          },
+          "start_s": { "type": "number", "minimum": 0 },
+          "duration_s": { "type": "number", "minimum": 0.5, "maximum": 15 },
+          "variant": { "type": "string", "description": "Variant code shown in this scene; omit for multi-card scenes" },
+          "label": { "type": "string", "maxLength": 32, "description": "Chapter label, e.g. '01 · FESTIVAL NIGHT'" },
+          "params": {
+            "type": "object",
+            "description": "Preset-specific knobs. detail_closeup: {focus: logo|chip|material}. beat_words: {words: [...], card_every: 4}. split_merge: {panels: [scene ids]}.",
+            "additionalProperties": true
+          },
+          "transition_in": { "type": "string", "enum": ["cut", "crossfade", "flash"], "default": "cut" },
+          "captions": {
+            "type": "array",
+            "maxItems": 3,
+            "items": {
+              "type": "object",
+              "required": ["words", "start_s", "end_s", "position"],
+              "additionalProperties": false,
+              "properties": {
+                "words": { "type": "array", "minItems": 1, "maxItems": 6, "items": { "type": "string", "maxLength": 12 } },
+                "emphasis": { "type": "array", "items": { "type": "integer", "minimum": 0 }, "description": "Indexes of words drawn in the accent / marker" },
+                "style": { "type": "string", "enum": ["plain", "pill", "marker"], "default": "plain" },
+                "start_s": { "type": "number", "description": "Relative to the scene start" },
+                "end_s": { "type": "number" },
+                "position": { "type": "string", "enum": ["top", "bottom", "left", "center"] }
+              }
+            }
+          }
+        }
+      }
+    },
+    "ending": {
+      "type": "object",
+      "required": ["type", "copy_words", "cta"],
+      "additionalProperties": false,
+      "properties": {
+        "type": { "type": "string", "enum": ["stack_lockup"] },
+        "copy_words": { "type": "array", "maxItems": 8, "items": { "type": "string", "maxLength": 12 } },
+        "cta": { "type": "string", "maxLength": 20, "description": "e.g. COMING SOON, or a real launch line given by the user" }
+      }
+    },
+    "audio": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "mood": { "type": "string", "maxLength": 40 },
+        "file": { "type": ["string", "null"], "description": "Licensed track added by a person; null = silent master" }
+      }
+    },
+    "legal_footer": { "type": "string", "maxLength": 120, "description": "Benefit conditions shown as a footer when benefits appear" }
+  }
+}

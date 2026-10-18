@@ -1,0 +1,51 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "card-studio/agents/design_marketing/out.schema.json",
+  "title": "design_marketing result",
+  "description": "E의 스키마 3종(schema/)을 그대로 감싸는 래퍼. 도구 호출 결과를 코드가 모아 이 모양으로 저장한다.",
+  "type": "object",
+  "required": ["naming", "strategy", "boards", "storyboards", "segment_plays", "compliance", "needs_research"],
+  "additionalProperties": false,
+  "properties": {
+    "naming": {
+      "type": "object",
+      "required": ["candidates", "recommended"],
+      "additionalProperties": false,
+      "properties": {
+        "candidates": {
+          "type": "array",
+          "minItems": 3,
+          "maxItems": 3,
+          "items": {"type": "object", "required": ["name", "rationale"], "additionalProperties": false, "properties": {"name": {"type": "string", "minLength": 2, "maxLength": 14}, "rationale": {"type": "string"}, "similarity_max": {"type": "number", "minimum": 0, "maximum": 1, "description": "코드: 기존 카드명과 최대 글자쌍 유사도"}, "similar_to": {"type": ["string", "null"]}}}
+        },
+        "recommended": {"type": "string"}
+      }
+    },
+    "strategy": {"$ref": "schema/marketing_strategy.schema.json"},
+    "boards": {"$ref": "schema/card_boards.schema.json"},
+    "storyboards": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "reels": {"$ref": "schema/storyboard.schema.json"},
+        "youtube": {"$ref": "schema/storyboard.schema.json"},
+        "promo": {"$ref": "schema/storyboard.schema.json"}
+      }
+    },
+    "segment_plays": {
+      "type": "array",
+      "minItems": 2,
+      "items": {"type": "object", "required": ["type", "play", "guardrail"], "additionalProperties": false, "properties": {"type": {"enum": ["일반형", "체리피커", "충성형", "휴면 위험형"]}, "share_and_profit": {"type": "string", "description": "입력 twin 값 그대로 인용(시뮬레이션)"}, "play": {"type": "string"}, "guardrail": {"type": "string", "description": "이 대응이 넘지 말아야 할 선(혜택 남용 방지, 고지)"}}}
+    },
+    "compliance": {
+      "type": "array",
+      "items": {"type": "object", "required": ["item", "handling", "needs_human"], "additionalProperties": false, "properties": {"item": {"type": "string"}, "handling": {"type": "string"}, "needs_human": {"type": "boolean"}, "guard_ref": {"type": ["string", "null"], "description": "가드레일 항목 id(G1~G6)"}}}
+    },
+    "needs_research": {"type": "array", "maxItems": 3, "items": {"type": "string"}},
+    "render_jobs": {
+      "type": "array",
+      "description": "H5 승인 후에만",
+      "items": {"type": "object", "required": ["format", "approval_quote", "status"], "properties": {"format": {"enum": ["reels", "youtube", "promo"]}, "approval_quote": {"type": "string", "minLength": 2}, "job_id": {"type": "string"}, "status": {"enum": ["queued", "rendering", "done", "failed"]}, "url": {"type": ["string", "null"]}}}
+    }
+  }
+}

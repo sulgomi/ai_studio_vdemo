@@ -1,0 +1,47 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "card-studio/agents/competitor/in.schema.json",
+  "title": "competitor payload",
+  "type": "object",
+  "required": ["allowed_tags", "competitor_db", "target_segment"],
+  "additionalProperties": false,
+  "properties": {
+    "allowed_tags": {
+      "type": "object",
+      "description": "태그 키 → 한국어 라벨(택소노미 v5 기준, 고객과 확정 필요)",
+      "minProperties": 10,
+      "additionalProperties": {"type": "string"}
+    },
+    "competitor_db": {
+      "type": "object",
+      "required": ["as_of", "cards"],
+      "properties": {
+        "as_of": {"type": ["string", "null"], "format": "date", "description": "DB 기준일. null이면 경고"},
+        "cards": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "object",
+            "required": ["id", "name", "issuer", "type", "tags"],
+            "properties": {
+              "id": {"type": "string"},
+              "name": {"type": "string"},
+              "issuer": {"type": "string"},
+              "type": {"enum": ["credit", "debit", "hybrid", "prepaid"]},
+              "tags": {"type": "array", "items": {"type": "string"}},
+              "target": {"type": "string"},
+              "annual_fee": {"type": ["string", "null"]},
+              "is_own": {"type": "boolean", "default": false, "description": "자사 상품은 경쟁 집계에서 제외"},
+              "source_url": {"type": ["string", "null"]}
+            }
+          }
+        }
+      }
+    },
+    "tag_counts": {"type": "object", "additionalProperties": {"type": "integer", "minimum": 0}, "description": "코드 집계: 태그 → 사용 카드 수(자사 제외)"},
+    "target_segment": {"type": "string"},
+    "own_issuer": {"type": "string", "description": "설정값. 예: 신한카드"},
+    "card_names": {"type": "array", "items": {"type": "string"}, "description": "사용자가 말한 카드명(타사·자사)"},
+    "topic": {"type": ["string", "null"], "description": "depth=overview에서 시장 검색 주제"}
+  }
+}

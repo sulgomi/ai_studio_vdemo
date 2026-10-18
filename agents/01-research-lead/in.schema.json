@@ -1,0 +1,42 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "card-studio/agents/research_lead/in.schema.json",
+  "title": "research_lead payload",
+  "type": "object",
+  "required": ["scope", "report_requested"],
+  "additionalProperties": false,
+  "properties": {
+    "scope": {
+      "type": "object",
+      "required": ["target_segment", "card_type", "assumptions"],
+      "additionalProperties": false,
+      "properties": {
+        "target_segment": {"type": "string", "description": "예: 2030 투자 입문자"},
+        "target_segment_id": {"type": "string", "description": "세그먼트 팩 id. 예: investor"},
+        "card_type": {"enum": ["credit", "debit", "hybrid", "any"]},
+        "target_adopt": {"type": "number", "minimum": 0, "maximum": 1, "default": 0.38},
+        "constraints": {"type": "array", "items": {"type": "string"}},
+        "assumptions": {"type": "array", "items": {"type": "string"}}
+      }
+    },
+    "prior_turn_findings": {
+      "type": "array",
+      "description": "앞 턴 근거 메모리. 후속 질문에서 다시 쓸 수 있다",
+      "items": {"type": "object", "required": ["id", "claim"], "properties": {"id": {"type": "string"}, "claim": {"type": "string"}, "source_id": {"type": ["string", "null"]}}}
+    },
+    "handoff_from": {
+      "type": ["object", "null"],
+      "description": "단독 대화에서 넘어온 경우",
+      "required": ["agent", "thread", "summary"],
+      "properties": {"agent": {"enum": ["trend", "competitor", "consumer"]}, "thread": {"type": "string"}, "summary": {"type": "string"}, "own_cards": {"type": "array", "items": {"type": "string"}}}
+    },
+    "report_requested": {"type": "boolean"},
+    "purpose": {"enum": ["research", "consult"], "default": "research", "description": "consult는 기획서 보강 요청 자문(호출 1~2회)"},
+    "consult_question": {"type": ["string", "null"]},
+    "limits": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {"max_calls": {"type": "integer", "default": 7}, "max_judgments": {"type": "integer", "default": 5}, "max_seconds": {"type": "integer", "default": 240}}
+    }
+  }
+}

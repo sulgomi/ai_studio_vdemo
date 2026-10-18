@@ -1,0 +1,25 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "card-studio/agents/plan_doc/out.schema.json",
+  "title": "plan_doc result",
+  "type": "object",
+  "required": ["title", "tagline", "markdown", "sources_used", "unverified_items", "section_index"],
+  "additionalProperties": false,
+  "properties": {
+    "title": {"type": "string"},
+    "tagline": {"type": "string"},
+    "markdown": {"type": "string", "minLength": 2000},
+    "sources_used": {"type": "array", "items": {"type": "string", "pattern": "^https?://"}},
+    "unverified_items": {
+      "type": "array",
+      "items": {"type": "object", "required": ["item", "reason"], "additionalProperties": false, "properties": {"item": {"type": "string"}, "reason": {"enum": ["시뮬레이션", "가드레일 사람 확인", "고객 데이터 필요", "근거 약함", "보강 확인"]}, "needed_data": {"type": "string"}}}
+    },
+    "section_index": {"type": "array", "minItems": 8, "items": {"type": "string"}},
+    "backup_requests": {
+      "type": "array",
+      "maxItems": 3,
+      "items": {"type": "object", "required": ["part", "section", "question"], "additionalProperties": false, "properties": {"part": {"enum": ["research_lead", "whitespace", "concept"]}, "section": {"type": "string"}, "question": {"type": "string"}, "decision": {"enum": ["approved", "rejected"]}, "reject_reason": {"type": "string"}}}
+    },
+    "strongest_objection": {"type": "string"}
+  }
+}

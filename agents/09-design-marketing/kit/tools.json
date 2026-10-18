@@ -1,0 +1,170 @@
+{
+  "tools": [
+    {
+      "name": "create_strategy",
+      "description": "First call for a new brief: the marketing direction (positioning, target insight, 3 personas tied to the 3 variant codes you plan, message pillars, tone, channels, launch phases relative to launch day, KPIs, risks, next steps). Boards and videos must follow it. Unknown numbers stay as [placeholders].",
+      "schema_file": "marketing_strategy.schema.json"
+    },
+    {
+      "name": "update_strategy",
+      "description": "Change part of the marketing strategy. Send only the paths that change, e.g. pillars/1/message or phases/0/end_day.",
+      "inline_schema": {
+        "type": "object",
+        "required": [
+          "ops",
+          "reason"
+        ],
+        "properties": {
+          "reason": {
+            "type": "string"
+          },
+          "ops": {
+            "type": "array",
+            "minItems": 1,
+            "maxItems": 30,
+            "items": {
+              "type": "object",
+              "required": [
+                "path"
+              ],
+              "properties": {
+                "path": {
+                  "type": "string"
+                },
+                "value": {
+                  "description": "New value (any JSON type)"
+                },
+                "remove": {
+                  "type": "boolean"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "create_card_boards",
+      "description": "Create a complete card concept: concept, palette, typography and three distinct variants with design points. Use for a new brief or a completely new direction. The result is validated; fix any returned errors and call again.",
+      "schema_file": "card_boards.schema.json"
+    },
+    {
+      "name": "update_card_boards",
+      "description": "Change part of the current card concept. Send only the paths that change, e.g. variants/1/material/tint or palette/1/hex. Other fields stay as they are.",
+      "inline_schema": {
+        "type": "object",
+        "required": [
+          "ops",
+          "reason"
+        ],
+        "properties": {
+          "reason": {
+            "type": "string",
+            "description": "One line: what the customer asked for"
+          },
+          "ops": {
+            "type": "array",
+            "minItems": 1,
+            "maxItems": 30,
+            "items": {
+              "type": "object",
+              "required": [
+                "path"
+              ],
+              "properties": {
+                "path": {
+                  "type": "string",
+                  "description": "Slash path into card_boards, list items by index"
+                },
+                "value": {
+                  "description": "New value (any JSON type)"
+                },
+                "remove": {
+                  "type": "boolean"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "create_storyboard",
+      "description": "Create one video storyboard (reels, youtube or promo) for the current card concept. One call per video. It plays immediately as a live preview in the customer's page; it is NOT rendered to MP4 until render_video. Scenes must tile the whole duration and end with stack_lockup.",
+      "schema_file": "storyboard.schema.json"
+    },
+    {
+      "name": "update_storyboard",
+      "description": "Change part of an existing storyboard: timing, captions, scene order or params.",
+      "inline_schema": {
+        "type": "object",
+        "required": [
+          "format",
+          "ops",
+          "reason"
+        ],
+        "properties": {
+          "format": {
+            "type": "string",
+            "enum": [
+              "reels",
+              "youtube",
+              "promo"
+            ]
+          },
+          "reason": {
+            "type": "string"
+          },
+          "ops": {
+            "type": "array",
+            "minItems": 1,
+            "maxItems": 30,
+            "items": {
+              "type": "object",
+              "required": [
+                "path"
+              ],
+              "properties": {
+                "path": {
+                  "type": "string"
+                },
+                "value": {
+                  "description": "New value (any JSON type)"
+                },
+                "remove": {
+                  "type": "boolean"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "render_video",
+      "description": "Render the final MP4 of one storyboard. Call ONLY after the customer has watched the live preview and clearly approved it (e.g. '이대로 확정', 'MP4로 뽑아줘'). Never call it right after creating or editing a storyboard.",
+      "inline_schema": {
+        "type": "object",
+        "required": [
+          "format",
+          "approval_quote"
+        ],
+        "properties": {
+          "format": {
+            "type": "string",
+            "enum": [
+              "reels",
+              "youtube",
+              "promo"
+            ]
+          },
+          "approval_quote": {
+            "type": "string",
+            "maxLength": 120,
+            "description": "The customer's own words approving the render"
+          }
+        }
+      }
+    }
+  ]
+}

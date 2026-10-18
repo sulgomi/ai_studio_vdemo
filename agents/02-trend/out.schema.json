@@ -1,0 +1,139 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "card-studio/agents/trend/out.schema.json",
+  "title": "trend result",
+  "type": "object",
+  "required": [
+    "signals",
+    "regulatory_changes"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "signals": {
+      "type": "array",
+      "minItems": 1,
+      "maxItems": 8,
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "title",
+          "topic",
+          "strength",
+          "reliability",
+          "impl",
+          "source_ids"
+        ],
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^T[0-9]+$"
+          },
+          "title": {
+            "type": "string",
+            "maxLength": 240
+          },
+          "topic": {
+            "enum": [
+              "invest",
+              "benefit",
+              "digital",
+              "group",
+              "promo",
+              "regulation",
+              "etc"
+            ]
+          },
+          "direction": {
+            "enum": [
+              "rising",
+              "stable",
+              "declining",
+              "unknown"
+            ],
+            "default": "unknown"
+          },
+          "period": {
+            "type": "string",
+            "description": "트렌드 기준 기간. 예: 2025-10~2026-09",
+            "maxLength": 240
+          },
+          "strength": {
+            "type": "number",
+            "minimum": 0,
+            "maximum": 1
+          },
+          "reliability": {
+            "type": "number",
+            "minimum": 0,
+            "maximum": 1
+          },
+          "impl": {
+            "type": "string",
+            "minLength": 10,
+            "description": "카드 기획 시사점",
+            "maxLength": 240
+          },
+          "source_ids": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "type": "string",
+              "maxLength": 240
+            }
+          },
+          "downgraded": {
+            "type": "boolean",
+            "description": "코드: reliability < 0.5로 하향 수용"
+          },
+          "stale": {
+            "type": "boolean",
+            "description": "코드: 출처가 모두 18개월 초과"
+          },
+          "research_topic": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "description": "evidence_pack일 때 어느 주제에 대한 근거인지"
+          }
+        }
+      }
+    },
+    "regulatory_changes": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "title",
+          "effective_date",
+          "scope",
+          "source_id"
+        ],
+        "additionalProperties": false,
+        "properties": {
+          "title": {
+            "type": "string",
+            "maxLength": 240
+          },
+          "effective_date": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "format": "date"
+          },
+          "scope": {
+            "type": "string",
+            "maxLength": 240
+          },
+          "source_id": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  },
+  "x-report-template": "../_common/report_templates.md"
+}

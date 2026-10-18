@@ -1,0 +1,175 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "card-studio/agents/consumer/out.schema.json",
+  "title": "consumer result",
+  "type": "object",
+  "required": [
+    "top_needs",
+    "must_have",
+    "can_give_up",
+    "barriers",
+    "evidence_signal_ids"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "top_needs": {
+      "type": "array",
+      "minItems": 1,
+      "maxItems": 7,
+      "items": {
+        "type": "object",
+        "required": [
+          "need",
+          "priority",
+          "evidence"
+        ],
+        "additionalProperties": false,
+        "properties": {
+          "need": {
+            "type": "string",
+            "maxLength": 240
+          },
+          "priority": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "evidence": {
+            "type": "string",
+            "maxLength": 240
+          },
+          "signal_ids": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "pattern": "^T[0-9]+$",
+              "maxLength": 240
+            }
+          }
+        }
+      }
+    },
+    "must_have": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string",
+        "maxLength": 240
+      }
+    },
+    "can_give_up": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "maxLength": 240
+      }
+    },
+    "barriers": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "maxLength": 240
+      }
+    },
+    "evidence_signal_ids": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^T[0-9]+$",
+        "maxLength": 240
+      }
+    },
+    "sentiment": {
+      "type": [
+        "object",
+        "null"
+      ],
+      "required": [
+        "sample_size",
+        "period",
+        "sources"
+      ],
+      "properties": {
+        "positive_ratio": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "minimum": 0,
+          "maximum": 1
+        },
+        "negative_ratio": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "minimum": 0,
+          "maximum": 1
+        },
+        "sample_size": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "코드가 센 근거 문서 수"
+        },
+        "period": {
+          "type": "string",
+          "maxLength": 240
+        },
+        "sources": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "maxLength": 240
+          }
+        }
+      }
+    },
+    "themes": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "theme",
+          "mention_trend"
+        ],
+        "properties": {
+          "theme": {
+            "type": "string",
+            "maxLength": 240
+          },
+          "mention_trend": {
+            "enum": [
+              "rising",
+              "stable",
+              "declining",
+              "unknown"
+            ]
+          },
+          "representative_opinion": {
+            "type": "string",
+            "maxLength": 240
+          }
+        }
+      }
+    },
+    "purchase_drivers": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "maxLength": 240
+      }
+    },
+    "churn_reasons": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "maxLength": 240
+      }
+    },
+    "bias_warning": {
+      "type": "string",
+      "description": "코드가 붙임",
+      "maxLength": 240
+    }
+  },
+  "x-report-template": "../_common/report_templates.md"
+}

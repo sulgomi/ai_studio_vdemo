@@ -1,0 +1,27 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "card-studio/agents/guardrail/in.schema.json",
+  "title": "guardrail payload",
+  "type": "object",
+  "required": ["card", "metrics", "twin", "check_items", "review_level"],
+  "additionalProperties": false,
+  "properties": {
+    "card": {"type": "object", "description": "winner.card", "required": ["working_title", "hook", "one_liner", "rates", "capPerCat", "fee", "minPerf", "links", "mechanics"]},
+    "metrics": {"type": "object", "description": "winner.metrics", "required": ["profit", "adopt", "adopterProfit", "cherry"]},
+    "twin": {
+      "type": "object",
+      "description": "validation.result.twin 중 필요한 것",
+      "required": ["target_adopt", "by_type", "adopter_profit", "static_profit", "scenarios"],
+      "properties": {"target_adopt": {"type": "number"}, "by_type": {"type": "object"}, "adopter_profit": {"type": "number"}, "static_profit": {"type": "number"}, "scenarios": {"type": "array"}}
+    },
+    "check_items": {
+      "type": "array",
+      "minItems": 6,
+      "maxItems": 6,
+      "items": {"type": "object", "required": ["id", "item"], "properties": {"id": {"enum": ["G1", "G2", "G3", "G4", "G5", "G6"]}, "item": {"type": "string"}}}
+    },
+    "precheck_flags": {"type": "array", "items": {"type": "object", "required": ["check_id", "flag"], "properties": {"check_id": {"enum": ["G1", "G2", "G3", "G4", "G5", "G6"]}, "flag": {"type": "string"}}}, "description": "코드 사전 점검 결과"},
+    "review_level": {"enum": ["standard", "pre_legal"]},
+    "allowed_numbers": {"type": "array", "items": {"type": "string"}, "description": "코드: 인용 허용 수치(적립률 등 오탐 방지)"}
+  }
+}

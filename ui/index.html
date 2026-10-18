@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>상품기획 AI 최종 체크</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 32 32%27%3E%3Crect width=%2732%27 height=%2732%27 rx=%277%27 fill=%27%231f6b60%27/%3E%3Crect x=%277%27 y=%2711%27 width=%2718%27 height=%2712%27 rx=%272%27 fill=%27none%27 stroke=%27white%27 stroke-width=%272%27/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f4f6f8;--surface:#fff;--surface2:#eef1f5;--line:#d7dde4;--ink:#14212e;--mute:#5d6b7a;--accent:#0f6b63;--accent-soft:#d9efec;--ok:#17734a;--ok-soft:#dbf2e5;--font:"Apple SD Gothic Neo","Noto Sans KR","Malgun Gothic",system-ui,sans-serif}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0f161d;--surface:#17212b;--surface2:#1f2c38;--line:#2e3e4d;--ink:#e7edf3;--mute:#9aabbb;--accent:#55cfc0;--accent-soft:#163a37;--ok:#62d497;--ok-soft:#143324}}
+:root[data-theme="dark"]{--bg:#0f161d;--surface:#17212b;--surface2:#1f2c38;--line:#2e3e4d;--ink:#e7edf3;--mute:#9aabbb;--accent:#55cfc0;--accent-soft:#163a37;--ok:#62d497;--ok-soft:#143324}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:14px/1.6 var(--font)}
+main{max-width:1000px;margin:0 auto;padding:20px 16px 48px}
+h1{font-size:20px;margin:0 0 4px}h2{font-size:16px;margin:0 0 8px}
+.sub{color:var(--mute);font-size:13px}
+a{color:var(--accent)}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px;margin:16px 0}
+.tile{display:block;text-decoration:none;color:inherit;background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:14px;min-width:0}
+.tile:hover,.tile:focus-visible{border-color:var(--accent);outline:none}
+.tile b{display:block;font-size:15px;color:var(--accent)}
+.tile.main{border-width:2px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:16px;margin:0 0 14px}
+.prog{height:10px;border-radius:5px;background:var(--surface2);overflow:hidden;margin:6px 0 10px}
+.prog i{display:block;height:100%;background:var(--ok);width:0}
+table{border-collapse:collapse;width:100%;font-size:13px}
+th,td{text-align:left;padding:7px 8px;border-bottom:1px solid var(--line);vertical-align:top}
+th{background:var(--surface2);color:var(--mute);font-size:12px}
+td.c{width:36px;text-align:center}
+tr.done td{color:var(--mute)}
+input[type=checkbox]{width:18px;height:18px;cursor:pointer}
+input[type=text]{width:100%;font:13px var(--font);padding:4px 6px;border:1px solid var(--line);border-radius:6px;background:var(--surface2);color:var(--ink)}
+.row{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+button{font:600 13px var(--font);padding:7px 12px;border-radius:8px;border:1px solid var(--accent);background:transparent;color:var(--accent);cursor:pointer}
+button.primary{background:var(--accent);color:#fff}
+.tw{overflow-x:auto}
+ul.docs{margin:0;padding-left:18px}
+
+/* taste-pass: 덮어쓰기 레이어 (기능·마크업은 그대로) */
+:root{--font:"Pretendard","Noto Sans KR","Apple SD Gothic Neo",system-ui,sans-serif;--mono:"JetBrains Mono",ui-monospace,Menlo,monospace;--ease:cubic-bezier(.2,.8,.2,1)}
+body{font-family:var(--font);font-feature-settings:"tnum";letter-spacing:-.005em;line-height:1.65;-webkit-font-smoothing:antialiased}
+h1,h2,h3{text-wrap:balance;letter-spacing:-.02em}p,li{text-wrap:pretty}
+.sub p,p.sub{max-width:68ch}
+button,a,.tile,.seg button,.tabs button{transition:background-color .2s var(--ease),color .2s var(--ease),transform .15s var(--ease),border-color .2s var(--ease),box-shadow .2s var(--ease)}
+button:active{transform:translateY(1px) scale(.985)}
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px;border-radius:4px}
+.skip{position:absolute;left:-999px;top:8px;background:var(--accent);color:#fff;padding:8px 12px;border-radius:6px;z-index:20}.skip:focus{left:8px}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+
+:root{--bg:#f6f4ef;--surface:#fffefb;--surface2:#efece5;--line:#e3dfd6;--ink:#1d2421;--mute:#69716c;--accent:#1f6b60;--accent-soft:#dcebe6;--shadow:0 1px 2px rgba(60,50,30,.05),0 8px 24px -12px rgba(60,50,30,.12)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#13171a;--surface:#1a2024;--surface2:#222a2f;--line:#2f383e;--ink:#e9ece8;--mute:#9aa5a0;--accent:#6fcdb9;--accent-soft:#1c3a34;--shadow:0 8px 24px -12px rgba(0,0,0,.6)}}
+header{background:color-mix(in srgb,var(--surface) 86%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+header h1{font-size:15px;font-weight:700}
+main{max-width:1120px;padding:32px 20px 72px}
+.card{border:0;border-radius:16px;box-shadow:var(--shadow);padding:24px 28px;margin-bottom:20px}
+.card h2{font-size:20px;font-weight:700;margin-bottom:6px}
+.mini{border:0;border-radius:10px;background:var(--surface2);padding:14px}
+.badge{border-radius:4px;font-weight:600;letter-spacing:0}
+.seg{border-radius:10px;background:var(--surface2);border:0;padding:3px}.seg button{background:transparent;border-radius:8px}.seg button:hover{color:var(--ink)}
+.seg button[aria-pressed="true"]{background:var(--surface);color:var(--accent);box-shadow:0 1px 3px rgba(0,0,0,.12)}
+button.primary{border-radius:10px;padding:10px 20px}button.primary:hover{filter:brightness(1.08);box-shadow:0 6px 16px -8px var(--accent)}
+button.ghost{border-radius:10px;border-color:var(--line);color:var(--ink)}button.ghost:hover{background:var(--surface2)}
+textarea{border-radius:10px;border-color:var(--line)}
+.rail{gap:0;margin-top:20px}.rail div{background:transparent;border-radius:0;border-top:3px solid var(--line);padding:8px 2px 0;text-align:left;transition:border-color .3s var(--ease),color .3s}
+.rail div.on{border-top-color:var(--accent);background:transparent}.rail div.done{border-top-color:var(--ok);background:transparent}
+.big{font-family:var(--mono);font-weight:500;letter-spacing:-.04em;font-size:34px}
+table{font-variant-numeric:tabular-nums}th{background:transparent;border-bottom:1px solid var(--ink);color:var(--mute);font-weight:600}td{border-bottom:1px solid var(--line)}
+.human{border:1.5px solid var(--accent);background:var(--accent-soft);border-radius:16px;box-shadow:none}
+.note{border-radius:10px}
+.svgs img{border-radius:14px;box-shadow:var(--shadow)}
+.chip{border-radius:4px}
+#stream>*{animation:rise .5s var(--ease) both}@keyframes rise{from{opacity:0;transform:translateY(8px)}}
+
+.tile{border-radius:16px;border:0;box-shadow:var(--shadow)}.tile:hover,.tile:focus-visible{transform:translateY(-2px)}
+.prog{border-radius:99px}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">본문으로 건너뛰기</a>
+<main id="main">
+  <h1>카드 신상품 기획 AI · MVP 최종 체크</h1>
+  <p class="sub">이 화면에서 사용자 뷰와 개발 뷰를 열어 보고, 아래 최종 점검표(PM 완결판 10절과 같은 목록)를 체크합니다. 체크와 메모는 이 브라우저에 저장되고 JSON으로 내보낼 수 있습니다.</p>
+  <div class="grid">
+    <a class="tile main" href="user-view.html"><b>사용자 뷰</b><span class="sub">상품기획 담당자가 보는 채팅 화면. 에이전트와 대화하며 진행 로그를 보고, 사람 확인 H1~H5에 답하고, “리포트로 정리해줘”로 오른쪽에 HTML 리포트를 엽니다. 개별 에이전트 샘플 10종 포함</span></a>
+    <a class="tile main" href="dev-view.html"><b>개발 뷰</b><span class="sub">파이프라인·게이트, 에이전트 레지스트리, 실행 기록 121건, 계약 이음매, 모델 실측</span></a>
+    <a class="tile" href="reference/agent-live.html"><b>원본 재생 뷰어</b><span class="sub">실제 LLM 리허설 재생(사용자 뷰/개발자 뷰 전환, 2.2MB)</span></a>
+    <a class="tile" href="reference/campaign-report.html"><b>캠페인 보고서 원형</b><span class="sub">디자인·마케팅 에이전트의 최종 화면(PULSE 샘플)</span></a>
+    <a class="tile" href="reference/video-preview.html"><b>영상 미리보기 원형</b><span class="sub">릴스·유튜브·홍보 스토리보드 실시간 재생</span></a>
+    <a class="tile" href="reference/pm-hub.html"><b>기존 PM 허브</b><span class="sub">12주 계획, 의사결정 D1~D11, 고객 접점 원본</span></a>
+  </div>
+  <section class="card">
+    <h2>문서</h2>
+    <ul class="docs">
+      <li><a href="../README.md">README</a> · <a href="../00_선별근거.md">선별 근거</a> · <a href="../01_서비스_개요와_아키텍처.md">서비스 개요와 아키텍처</a></li>
+      <li><a href="../02_공통_계약과_검증규칙.md">공통 계약과 검증 규칙</a> · <a href="../03_모델_추천.md">모델 추천</a> · <a href="../04_PM_서비스기획_완결판.md">PM 서비스기획 완결판</a></li>
+      <li>에이전트 폴더: <a href="../agents/01-research-lead/설계서.md">01</a> <a href="../agents/02-trend/설계서.md">02</a> <a href="../agents/03-competitor/설계서.md">03</a> <a href="../agents/04-consumer/설계서.md">04</a> <a href="../agents/05-whitespace/설계서.md">05</a> <a href="../agents/06-concept/설계서.md">06</a> <a href="../agents/07-validation/설계서.md">07</a> <a href="../agents/08-guardrail/설계서.md">08</a> <a href="../agents/09-design-marketing/설계서.md">09</a> <a href="../agents/10-plan-doc/설계서.md">10</a> · <a href="../agents/00-orchestrator/설계서.md">오케스트레이터</a></li>
+    </ul>
+    <p class="sub">브라우저가 .md 파일을 내려받기로 처리하면 편집기로 여세요.</p>
+  </section>
+  <section class="card">
+    <h2>최종 점검표</h2>
+    <div class="row"><span id="cnt" class="sub"></span></div>
+    <div class="prog" aria-hidden="true"><i id="bar"></i></div>
+    <div class="tw"><table id="fc"></table></div>
+    <div class="row" style="margin-top:10px">
+      <button type="button" class="primary" id="exp">JSON 내보내기</button>
+      <button type="button" id="copy">클립보드 복사</button>
+      <button type="button" id="reset">모두 지우기</button>
+      <span id="msg" class="sub" role="status"></span>
+    </div>
+  </section>
+</main>
+<script>
+(function(){
+"use strict";
+var KEY="cardstudio.final.checks";
+var FC=[
+["FC-01","에이전트 10개의 설계서·system prompt·in/out schema가 있고 스키마 검증 통과","계약 테스트"],
+["FC-02","모든 호출이 공통 봉투를 쓰고 입력도 검증","개발 뷰 레지스트리, 단위 테스트"],
+["FC-03","E2E 시나리오 10개 완주 90% 이상, 상한 도달은 기록","평가 리포트"],
+["FC-04","사람 확인 H1~H5가 채팅 버튼으로 나와 대기·재개·기본값이 동작","사용자 뷰 시연"],
+["FC-05","모든 사실 주장에 출처, 도구 결과 외 URL 0, 18개월 규칙","검증기 로그, 표본 열람"],
+["FC-06","기획서·화면·카피에 입력에 없는 수치 0","수치 대조 검증기, 변조 주입 테스트"],
+["FC-07","시뮬레이션 수치 인용 시 고지 누락 0","검증기"],
+["FC-08","금칙어·수익 암시 0, 투자 연계 시 원금 손실 고지","검증기, 디자인 검수"],
+["FC-09","가드레일 needs_human 담당 부서 배정, 기획서 부록 반영","사용자 뷰 H3, 기획서"],
+["FC-10","디자인 시안 차별화, 대비 4.5:1, 자막 대비 전 프레임","디자인 키트 테스트"],
+["FC-11","영상 렌더는 승인 문구가 있을 때만","실행 기록"],
+["FC-12","내부 필드명 노출 0","검증기"],
+["FC-13","기획서 7섹션 + 부록, 첫 시도 통과율 80% 이상","평가 리포트"],
+["FC-14","에이전트별 모델 키 설정, W1 재비교 결과 반영","설정 파일, 모델 추천 문서 갱신"],
+["FC-15","시나리오당 토큰·시간 예산 상한 내 95%","비용 리포트"],
+["FC-16","한 실행을 trace만으로 재현 가능","개발 뷰 실행 기록"],
+["FC-17","프롬프트 인젝션 레드팀 통과, PII 미수집, 키 노출 0","보안 점검 리포트"],
+["FC-18","상품개발부 UAT 통과, 결함 트리아지 완료","UAT 결과"],
+["FC-19","고객 운영 담당이 개발 뷰로 실패 실행 원인을 찾는 시연","인수 세션"],
+["FC-20","운영 가이드, 기능 정의서, 최종 보고서, 인수 문서 전달","전달 기록"],
+["FC-21","고객 질문 Q1~Q16 답변 또는 기본안 진행 기록","결정 로그"],
+["FC-22","데모 영상 2회, 최종 발표 자료","제출 기록"],
+["FC-23","사용자 뷰: 왼쪽 대화 기록, 가운데 에이전트 대화와 처리 로그, 끝나면 채팅에 최종 요약","사용자 뷰 시연"],
+["FC-24","“리포트로 정리해줘”를 보내면 오른쪽에 HTML 리포트가 열리고 HTML 저장·인쇄가 된다","사용자 뷰 시연, 저장 파일 열기"],
+["FC-25","개별 에이전트 10종마다 입력·출력 샘플이 스키마 검증을 통과(validate.py)","samples/validate.py"],
+["FC-26","개별 에이전트 10종마다 대화 샘플과 리포트 샘플을 사용자 뷰에서 재생·열람","사용자 뷰 개별 에이전트 모드, samples/index.html"]
+];
+var st={};try{st=JSON.parse(localStorage.getItem(KEY)||"{}")||{};}catch(e){st={};}
+function save(){try{localStorage.setItem(KEY,JSON.stringify(st));}catch(e){}}
+var tb=document.getElementById("fc");
+function esc(s){return String(s).replace(/[&<>"']/g,function(c){return {"&":"&amp;","<":"&lt;",">":"&gt;","\"":"&quot;","'":"&#39;"}[c];});}
+function draw(){
+  tb.innerHTML="<tr><th>완료</th><th>ID</th><th>점검</th><th>확인 방법</th><th>메모</th></tr>";
+  var done=0;
+  FC.forEach(function(f){var s=st[f[0]]||{};if(s.ok)done++;
+    var tr=document.createElement("tr");if(s.ok)tr.className="done";
+    tr.innerHTML='<td class="c"><input type="checkbox" aria-label="'+esc(f[0])+' 완료"'+(s.ok?" checked":"")+'></td><td>'+esc(f[0])+'</td><td>'+esc(f[1])+'</td><td class="sub">'+esc(f[2])+'</td><td><input type="text" aria-label="'+esc(f[0])+' 메모" value="'+esc(s.note||"")+'"></td>';
+    tr.querySelector("input[type=checkbox]").onchange=function(e){st[f[0]]=st[f[0]]||{};st[f[0]].ok=e.target.checked;st[f[0]].at=new Date().toISOString();save();draw();};
+    tr.querySelector("input[type=text]").onchange=function(e){st[f[0]]=st[f[0]]||{};st[f[0]].note=e.target.value;save();};
+    tb.appendChild(tr);});
+  document.getElementById("cnt").textContent=done+" / "+FC.length+" 완료";
+  document.getElementById("bar").style.width=(done/FC.length*100)+"%";
+}
+function payload(){return JSON.stringify({exported_at:new Date().toISOString(),items:FC.map(function(f){var s=st[f[0]]||{};return {id:f[0],check:f[1],ok:!!s.ok,note:s.note||"",checked_at:s.at||null};})},null,2);}
+document.getElementById("exp").onclick=function(){var b=new Blob([payload()],{type:"application/json"}),a=document.createElement("a");a.href=URL.createObjectURL(b);a.download="final-check.json";document.body.appendChild(a);a.click();setTimeout(function(){URL.revokeObjectURL(a.href);a.remove();},0);};
+document.getElementById("copy").onclick=function(){var m=document.getElementById("msg");try{navigator.clipboard.writeText(payload()).then(function(){m.textContent="복사했습니다.";},function(){m.textContent="복사하지 못했습니다. JSON 내보내기를 쓰세요.";});}catch(e){m.textContent="복사하지 못했습니다. JSON 내보내기를 쓰세요.";}};
+document.getElementById("reset").onclick=function(){if(confirm("체크와 메모를 모두 지울까요?")){st={};save();draw();}};
+draw();
+})();
+</script>
+</body>
+</html>

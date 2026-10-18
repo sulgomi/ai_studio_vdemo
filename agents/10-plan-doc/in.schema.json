@@ -1,0 +1,40 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "card-studio/agents/plan_doc/in.schema.json",
+  "title": "plan_doc payload",
+  "type": "object",
+  "required": ["research", "opportunity", "final_card", "final_metrics", "alternatives", "twin", "voices", "guardrail", "design_marketing", "template", "style", "needs_client_data", "rr_teams", "schedule_note", "allowed_urls", "allowed_numbers", "decision_log"],
+  "additionalProperties": false,
+  "properties": {
+    "research": {
+      "type": "object",
+      "required": ["headline", "key_findings", "signals", "competitor", "consumer"],
+      "properties": {
+        "headline": {"type": "string"},
+        "key_findings": {"type": "array"},
+        "conflicts": {"type": "array"},
+        "uncertainties": {"type": "array", "items": {"type": "string"}},
+        "signals": {"type": "array", "items": {"type": "object", "required": ["id", "title", "impl", "reliability"], "properties": {"id": {"type": "string"}, "title": {"type": "string"}, "impl": {"type": "string"}, "reliability": {"type": "number"}, "stale": {"type": "boolean"}}}},
+        "competitor": {"type": "object", "required": ["crowded", "empty", "nearest"]},
+        "consumer": {"type": "object", "required": ["top_needs", "must_have", "can_give_up"]}
+      }
+    },
+    "opportunity": {"type": "object", "required": ["picks", "chosen"], "properties": {"picks": {"type": "array"}, "chosen": {"type": "object"}}},
+    "final_card": {"type": "object", "description": "winner.card를 한국어 라벨로 치환한 것"},
+    "final_metrics": {"type": "object", "required": ["profit", "sim", "nearest", "adopt", "adopterProfit"]},
+    "alternatives": {"type": "array", "items": {"type": "object", "required": ["working_title", "reason_dropped"], "properties": {"working_title": {"type": "string"}, "reason_dropped": {"type": "string"}, "metrics": {"type": "object"}}}},
+    "twin": {"type": "object", "required": ["target_adopt", "by_type", "adopter_profit", "static_profit", "scenarios"]},
+    "voices": {"type": "array", "minItems": 4},
+    "guardrail": {"type": "object", "required": ["checks", "name_mechanism_consistent", "overall"]},
+    "design_marketing": {"type": "object", "required": ["naming", "strategy", "boards", "segment_plays", "compliance"], "properties": {"naming": {"type": "object"}, "strategy": {"type": "object"}, "boards": {"type": "object"}, "storyboards": {"type": "object"}, "segment_plays": {"type": "array"}, "compliance": {"type": "array"}, "needs_research": {"type": "array"}}},
+    "template": {"type": "object", "required": ["header_format", "sections"], "properties": {"header_format": {"type": "string"}, "sections": {"type": "array", "minItems": 7, "items": {"type": "object", "required": ["title"], "properties": {"title": {"type": "string"}, "subsections": {"type": "array", "items": {"type": "string"}}}}}}},
+    "style": {"type": "array", "items": {"type": "string"}},
+    "needs_client_data": {"type": "array", "items": {"type": "object", "required": ["item", "purpose"], "properties": {"item": {"type": "string"}, "purpose": {"type": "string"}, "fallback": {"type": "string"}}}},
+    "rr_teams": {"type": "array", "minItems": 5, "maxItems": 5, "items": {"type": "string"}},
+    "schedule_note": {"type": "string"},
+    "allowed_urls": {"type": "array", "items": {"type": "string", "pattern": "^https?://"}},
+    "allowed_numbers": {"type": "array", "items": {"type": "string"}},
+    "decision_log": {"type": "array", "items": {"type": "object", "required": ["step", "event"], "properties": {"step": {"type": "string"}, "event": {"type": "string"}, "effect": {"type": "string"}}}},
+    "backup_memos": {"type": "array", "items": {"type": "object", "required": ["part", "section", "memo"], "properties": {"part": {"type": "string"}, "section": {"type": "string"}, "memo": {"type": "string"}, "source_ids": {"type": "array", "items": {"type": "string"}}}}}
+  }
+}

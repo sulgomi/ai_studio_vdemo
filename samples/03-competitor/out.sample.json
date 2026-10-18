@@ -1,0 +1,187 @@
+{
+  "run_id": "sample-competitor-001",
+  "request_id": "sample-competitor-001-r1",
+  "agent": "competitor",
+  "contract_version": "1.0",
+  "model": "claude-haiku-4-5",
+  "status": "ok",
+  "answer": "청구할인형(15종), 해외결제·환전(14종), 외식·카페(12종)가 가장 붐빕니다. 투자 리워드와 포인트→주식은 34종 중 0종이라 비어 있습니다. 타깃과 가장 가까운 카드는 ZERO Edition3(할인형), 현대카드 M, LOCA LIKIT 1.2이며 모두 투자 태그는 없습니다. DB 기준일은 확인 불가입니다.",
+  "result": {
+    "crowded": [
+      {
+        "tag": "reward_discount",
+        "reason": "34종 중 15종이 청구할인형으로 가장 많음. 신한·삼성·롯데·농협 등 다수 발급사가 채택",
+        "count": 15
+      },
+      {
+        "tag": "travel_fx",
+        "reason": "34종 중 14종이 해외결제·환전 태그 보유. 현대·삼성·우리·BC·NH 등 신용카드와 체크카드에 폭넓게 분포",
+        "count": 14
+      },
+      {
+        "tag": "dining_cafe",
+        "reason": "34종 중 12종이 외식·카페 혜택 보유",
+        "count": 12
+      },
+      {
+        "tag": "mart_daily",
+        "reason": "34종 중 11종이 편의점·마트 혜택 보유",
+        "count": 11
+      },
+      {
+        "tag": "online_shop",
+        "reason": "34종 중 10종이 온라인쇼핑 혜택 보유",
+        "count": 10
+      },
+      {
+        "tag": "tiered_perf",
+        "reason": "34종 중 10종이 실적 구간제를 채택해 조건 구조가 비슷함",
+        "count": 10
+      }
+    ],
+    "empty": [
+      {
+        "tag": "invest_reward",
+        "reason": "34종 중 0종. investor를 타깃으로 표기한 카드가 다수인데도 투자 리워드 태그를 가진 카드는 없음",
+        "count": 0
+      },
+      {
+        "tag": "point_to_stock",
+        "reason": "34종 중 0종. 포인트를 주식으로 연결하는 카드가 없음",
+        "count": 0
+      },
+      {
+        "tag": "miss_refund",
+        "reason": "34종 중 0종. 놓친 혜택 환급형은 없음",
+        "count": 0
+      },
+      {
+        "tag": "anti_cap",
+        "reason": "34종 중 0종. 실적조건 완화 태그는 없음. perf_recharge(실적 부족분 보전)는 2종뿐",
+        "count": 0
+      },
+      {
+        "tag": "ai_personalize",
+        "reason": "34종 중 0종. auto_best(자동 최적 혜택)도 1종뿐",
+        "count": 0
+      },
+      {
+        "tag": "life_event",
+        "reason": "34종 중 0종",
+        "count": 0
+      },
+      {
+        "tag": "group_pooling",
+        "reason": "34종 중 0종",
+        "count": 0
+      },
+      {
+        "tag": "social",
+        "reason": "34종 중 0종",
+        "count": 0
+      },
+      {
+        "tag": "insurance_link",
+        "reason": "34종 중 0종",
+        "count": 0
+      },
+      {
+        "tag": "benefit_rental",
+        "reason": "34종 중 0종. monthly_switch(월 변경형)는 체크카드 2종뿐이고 신용카드에는 없음",
+        "count": 0
+      },
+      {
+        "tag": "challenge",
+        "reason": "34종 중 1종(처음(ANNIVERSE))뿐",
+        "count": 1
+      }
+    ],
+    "nearest": [
+      {
+        "name": "ZERO Edition3(할인형)",
+        "why": "targets에 investor가 있고 simple_flat, spend_free, no_cap, travel_fx를 가진 신용카드로, 단순·무실적 구조가 투자 입문자 타깃과 가장 겹침. invest_reward 태그는 없음",
+        "card_id": "c10"
+      },
+      {
+        "name": "현대카드 M",
+        "why": "targets가 single, investor, free이고 simple_flat, no_cap, reward_point, travel_fx를 가짐. 포인트 적립과 한도 없음 구조가 겹침",
+        "card_id": "c09"
+      },
+      {
+        "name": "LOCA LIKIT 1.2",
+        "why": "targets가 single, investor, free이고 simple_flat, spend_free, no_cap, online_shop을 가진 신용카드. 단순 정률과 무실적 구조가 겹침",
+        "card_id": "c24"
+      }
+    ],
+    "easy_to_copy": [
+      "simple_flat(단순 정률): 현대 2종, 우리, 롯데, 케이뱅크 등 5종이 이미 채택해 구조가 단순하고 따라 하기 쉬움",
+      "reward_discount(청구할인형): 15종이 채택한 가장 흔한 보상 방식",
+      "travel_fx(해외결제·환전): 14종이 채택해 이미 보편화됨",
+      "spend_free와 no_cap(무실적·한도 없음): 각각 8종, 7종이 채택해 조건 설계만으로 모방 가능",
+      "dining_cafe, mart_daily, online_shop 같은 생활 가맹점 혜택: 10종 이상이 보유해 차별점이 되기 어려움",
+      "invest_reward와 point_to_stock은 현재 0종이라 먼저 내놓으면 선점할 수 있으나, 혜택 구조 자체는 증권사·플랫폼 제휴만 확보되면 경쟁사가 따라 하기 쉬울 수 있음(제휴 독점 여부는 이 데이터로 판단 불가)"
+    ],
+    "products": [],
+    "comparison_with_own_card": null,
+    "db_as_of": null
+  },
+  "findings": [
+    {
+      "id": "competitor#0",
+      "claim": "청구할인형(reward_discount) 15종, 해외결제·환전(travel_fx) 14종, 외식·카페(dining_cafe) 12종이 태그 집계 상위다.",
+      "type": "estimate",
+      "source_id": null,
+      "confidence": "high"
+    },
+    {
+      "id": "competitor#1",
+      "claim": "invest_reward, point_to_stock 등 11개 태그는 34종 중 0종이고 challenge는 1종이다.",
+      "type": "estimate",
+      "source_id": null,
+      "confidence": "high"
+    },
+    {
+      "id": "competitor#2",
+      "claim": "ZERO Edition3(할인형), 현대카드 M, LOCA LIKIT 1.2가 투자 입문자 타깃 표기와 단순·무실적 구조가 겹친다. 투자 관련 태그는 없다.",
+      "type": "estimate",
+      "source_id": null,
+      "confidence": "medium"
+    },
+    {
+      "id": "competitor#3",
+      "claim": "투자 리워드 구조는 증권사·플랫폼 제휴만 확보되면 따라 하기 쉬울 수 있으나, 제휴 독점 여부는 이 데이터로 판단할 수 없다.",
+      "type": "estimate",
+      "source_id": null,
+      "confidence": "low"
+    }
+  ],
+  "sources": [],
+  "assumptions": [
+    "경쟁 카드 DB 34종의 태그를 직접 집계한 결과이며 채택률·손익 등 수치 추정은 하지 않음"
+  ],
+  "unresolved": [
+    "DB 기준일 없음(db_as_of 확인 불가)",
+    "상품 비교표(products): 이번 호출에서는 상세 조회를 하지 않아 비어 있음",
+    "자사 카드명 미지정으로 자사 비교 없음"
+  ],
+  "limits": [
+    "경쟁 카드 DB 34종은 기준일이 없어 현재 상품 구성과 같은지 공시 재확인이 필요함",
+    "제휴 계약, 시장 규모 등 데이터에 없는 사항은 판단하지 않음",
+    "bank_bundle(3종)과 govt_link(2종)는 체크카드 위주라 신용카드 기획에서는 상대적으로 비어 있음"
+  ],
+  "clarifications": [],
+  "out_of_scope": {
+    "detected": false,
+    "suggested_agent": null
+  },
+  "followups": [
+    "자사 카드와 나란히 비교해 줘",
+    "투자 리워드 공백을 메우는 컨셉 방향은?",
+    "nearest 3종의 연회비와 혜택 한도를 조회해 줘"
+  ],
+  "input_refs": [
+    "payload.competitor_db",
+    "payload.tag_counts",
+    "payload.allowed_tags"
+  ]
+}

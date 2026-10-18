@@ -1,0 +1,748 @@
+{
+  "run_id": "sample-competitor-001",
+  "request_id": "sample-competitor-001-r1",
+  "agent": "competitor",
+  "contract_version": "1.0",
+  "mode": "standalone",
+  "today": "2026-10-17",
+  "question": "2030 투자 입문자용 신용카드를 기획 중인데, 시판 카드 34종 중에 어디가 붐비고 어디가 비어 있는지, 우리 타깃이랑 제일 가까운 카드가 뭔지 알려줘.",
+  "conversation": {
+    "summary": "",
+    "segment": "2030 투자 입문자",
+    "card_type": "신용카드",
+    "period": "",
+    "assumptions": [],
+    "own_cards": []
+  },
+  "output_mode": "conversational",
+  "depth": "detail",
+  "payload": {
+    "allowed_tags": {
+      "plcc_brand": "브랜드 제휴(PLCC)",
+      "delivery": "배달",
+      "subscription_ott": "구독/OTT",
+      "travel_fx": "해외결제·환전",
+      "lounge": "공항라운지",
+      "premium_voucher": "프리미엄 바우처",
+      "bank_bundle": "은행 결합",
+      "simple_flat": "단순 정률",
+      "miss_refund": "놓친혜택 환급",
+      "anti_cap": "실적조건 완화",
+      "life_event": "라이프이벤트 전환",
+      "ai_personalize": "AI 개인화",
+      "group_pooling": "혜택 풀 공유",
+      "social": "소셜",
+      "invest_reward": "투자 리워드",
+      "point_to_stock": "포인트→주식",
+      "insurance_link": "보험 연계",
+      "challenge": "챌린지",
+      "time_slot": "시간대 선택",
+      "esg_green": "친환경",
+      "benefit_rental": "혜택 교체 구독",
+      "dining_cafe": "외식·카페",
+      "fuel": "주유",
+      "transit": "대중교통·모빌리티",
+      "fixed_bills": "공과금·통신·관리비",
+      "mart_daily": "편의점·마트",
+      "check_card": "체크카드",
+      "govt_link": "정부 환급 연계(K-패스 등)",
+      "online_shop": "온라인쇼핑",
+      "reward_cashback": "환급(캐시백)형",
+      "reward_discount": "청구할인형",
+      "reward_point": "포인트 적립형",
+      "reward_mileage": "마일리지형",
+      "reward_flat_refund": "건당 정액 환급형",
+      "tiered_perf": "실적 구간제",
+      "spend_free": "무실적",
+      "no_cap": "한도 없음",
+      "discount_counts": "할인액 실적 인정",
+      "perf_recharge": "실적 부족분 보전",
+      "txn_threshold": "결제 건당 최소금액",
+      "select_item": "항목 택1",
+      "select_pack": "팩 택1",
+      "common_plus_select": "공통+선택",
+      "paymethod_bonus": "결제수단 가산",
+      "period_bonus": "기간 보너스",
+      "target_special": "대상 한정",
+      "monthly_switch": "월 변경형",
+      "count_based": "횟수 기준 혜택",
+      "auto_best": "자동 최적 혜택"
+    },
+    "competitor_db": {
+      "as_of": null,
+      "cards": [
+        {
+          "id": "c01",
+          "name": "Mr.Life",
+          "issuer": "신한",
+          "type": "credit",
+          "tags": [
+            "time_slot",
+            "fuel",
+            "fixed_bills",
+            "mart_daily",
+            "online_shop",
+            "reward_discount",
+            "tiered_perf",
+            "discount_counts"
+          ],
+          "target": "single/family/investor/free/senior",
+          "annual_fee": null,
+          "is_own": false,
+          "source_url": null
+        },
+        {
+          "id": "c02",
+          "name": "Discount Plan+",
+          "issuer": "신한",
+          "type": "credit",
+          "tags": [
+            "delivery",
+            "subscription_ott",
+            "time_slot",
+            "dining_cafe",
+            "fuel",
+            "fixed_bills",
+            "mart_daily",
+            "online_shop",
+            "reward_discount",
+            "tiered_perf",
+            "select_pack",
+            "period_bonus"
+          ],
+          "target": "young/single/family/investor/free/senior",
+          "annual_fee": null,
+          "is_own": false,
+          "source_url": null
+        },
+        {
+          "id": "c03",
+          "name": "처음(ANNIVERSE)",
+          "issuer": "신한",
+          "type": "credit",
+          "tags": [
+            "subscription_ott",
+            "challenge",
+            "dining_cafe",
+            "mart_daily",
+            "reward_point",
+            "tiered_perf"
+          ],
+          "target": "single/family/free",
+          "annual_fee": null,
+          "is_own": false,
+          "source_url": null
+        },
+        {
+          "id": "c04",
+          "name": "SOL트래블 체크",
+          "issuer": "신한",
+          "type": "debit",
+          "tags": [
+            "travel_fx",
+            "lounge",
+            "transit",
+            "mart_daily",
+            "check_card",
+            "reward_point"
+          ],
+          "target": "young/single/family/investor/free",
+          "annual_fee": null,
+          "is_own": false,
+          "source_url": null
+        },
+        {
+          "id": "c05",
+          "name": "RPM+ Platinum#",
+          "issuer": "신한",
+          "type": "credit",
+          "tags": [
+            "fuel",
+            "reward_point",
+            "tiered_perf",
+            "spend_free"
+          ],
+          "target": "family/free/senior",
+          "annual_fee": null,
+          "is_own": false,
+          "source_url": null
+        },
+        {
+          "id": "c06",
+          "name": "taptap O",
+          "issuer": "삼성",
+          "type": "credit",
+          "tags": [
+            "travel_fx",
+            "dining_cafe",
+            "transit",
+            "fixed_bills",
+            "online_shop",
+            "reward_discount",
+            "spend_free",
+            "select_pack"
+          ],
+          "target": "single/family/investor/free/senior",
+          "annual_fee": null,
+          "is_own": false,
+          "source_url": null
+        },
+        {
+          "id": "c07",
+          "name": "iD SELECT ALL",
+          "issuer": "삼성",
+          "type": "credit",
+          "tags": [
+            "delivery",
+            "travel_fx",
+            "dining_cafe",
+            "fuel",
+            "fixed_bills",
+            "mart_daily",
+            "online_shop",
+            "reward_discount",
+            "select_item"
+          ],
+          "target": "young/single/family/investor/free/senior",
+          "annual_fee": null,
+          "is_own": false,
+          "source_url": null
+        },
+        {
+          "id": "c08",
+          "name": "MILEAGE PLATINUM(스카이패스)",
+          "issuer": "삼성",
+          "type": "credit",
+          "tags": [
+            "travel_fx",
+            "dining_cafe",
+            "fuel",
+            "mart_daily",
+            "reward_mileage",
+            "spend_free",
+            "select_item"
+          ],
+          "target": "single/family/investor/free/senior",
+          "annual_fee": null,
+          "is_own": false,
+          "source_url": null
+        },
+        {
+          "id": "c09",
+          "name": "현대카드 M",
+          "issuer": "현대",
+          "type": "credit",
+          "tags": [
+            "travel_fx",
+            "simple_flat",
+            "dining_cafe",
+            "online_shop",
+            "reward_point",
+            "tiered_perf",
+            "no_cap",
+            "discount_counts"
+          ],
+          "target": "single/investor/free",
+          "annual_fee": null,
+          "is_own": false,
+          "source_url": null
+        },
+        {
+          "id": "c10",
+          "name": "ZERO Edition3(할인형)",
+          "issuer": "현대",
+          "type": "credit",
+          "tags": [
+            "travel_fx",
+            "simple_flat",
+            "reward_discount",
+            "spend_free",
+            "no_cap"
+          ],
+          "target": "investor/free",
+          "annual_fee": null,
+          "is_own": false,
+          "source_url": null
+        },
+        {
+          "id": "c11",
+          "name": "American Express Gold Edition2",
+          "issuer": "현대",
+          "type": "credit",
+          "tags": [
+            "travel_fx",
+            "lounge",
+            "premium_voucher",
+            "dining_cafe",
+            "reward_point"
+          ],
+          "target": "investor/free",
+          "annual_fee": null,
+          "is_own": false,
+          "source_url": null
+        },
+        {
+          "id": "c12",
+          "name": "에너지플러스",
+          "issuer": "현대",
+          "type": "credit",
+          "tags": [
+            "fuel",
+            "reward_discount",
+            "paymethod_bonus"
+          ],
+          "target": "family/senior",
+          "annual_fee": null,
+          "is_own": false,
+          "source_url": null
+        },
+        {
+          "id": "c13",
+          "name": "노리2 체크",
+          "issuer": "KB국민",
+          "type": "debit",
+          "tags": [
+            "dining_cafe",
+            "mart_daily",
+            "check_card",
+            "reward_cashback",
+            "tiered_perf",
+            "paymethod_bonus"
+          ],
+          "target": "young/single/family",
+          "annual_fee": null,
+          "is_own": false,
+          "source_url": null
+        },
+        {
+          "id": "c14",
+          "name": "Youth Club 체크",
+          "issuer": "KB국민",
+          "type": "debit",
+          "tags": [
+            "check_card",
+            "reward_discount",
+            "select_pack",
+            "target_special"
+          ],
+          "target": "young",
+          "annual_fee": null,
+          "is_own": false,
+          "source_url": null
+        },
+        {
+          "id": "c15",
+          "name": "토심이 첵첵",
+          "issuer": "KB국민",
+          "type": "debit",
+          "tags": [
+            "check_card",
+            "reward_flat_refund",
+            "txn_threshold",
+            "target_special"
+          ],
+          "target": "young",
+          "annual_fee": null,
+          "is_own": false,
+          "source_url": null
+        },
+        {
+          "id": "c16",
+          "name": "My WE:SH",
+          "issuer": "KB국민",
+          "type": "credit",
+          "tags": [
+            "subscription_ott",
+            "dining_cafe",
+            "fixed_bills",
+            "mart_daily",
+            "perf_recharge",
+            "select_pack",
+            "common_plus_select",
+            "paymethod_bonus",
+            "period_bonus"
+          ],
+          "target": "single/family/free/senior",
+          "annual_fee": null,
+          "is_own": false,
+          "source_url": null
+        },
+        {
+          "id": "c17",
+          "name": "굿데이카드",
+          "issuer": "KB국민",
+          "type": "credit",
+          "tags": [
+            "fuel",
+            "transit",
+            "fixed_bills",
+            "reward_discount",
+            "tiered_perf"
+          ],
+          "target": "single/family/senior",
+          "annual_fee": null,
+          "is_own": false,
+          "source_url": null
+        },
+        {
+          "id": "c18",
+          "name": "쿠팡 와우카드",
+          "issuer": "KB국민",
+          "type": "credit",
+          "tags": [
+            "plcc_brand",
+            "subscription_ott",
+            "mart_daily",
+            "online_shop",
+            "reward_point",
+            "spend_free"
+          ],
+          "target": "single/family/investor/free",
+          "annual_fee": null,
+          "is_own": false,
+          "source_url": null
+        },
+        {
+          "id": "c19",
+          "name": "NEED Pay",
+          "issuer": "KB국민",
+          "type": "credit",
+          "tags": [
+            "subscription_ott",
+            "travel_fx",
+            "no_cap",
+            "perf_recharge",
+            "select_item",
+            "paymethod_bonus"
+          ],
+          "target": "single/investor/free",
+          "annual_fee": null,
+          "is_own": false,
+          "source_url": null
+        },
+        {
+          "id": "c20",
+          "name": "카드의정석2 SHOPPING+",
+          "issuer": "우리",
+          "type": "credit",
+          "tags": [
+            "fuel",
+            "online_shop",
+            "reward_discount",
+            "discount_counts",
+            "paymethod_bonus"
+          ],
+          "target": "single/family/investor/free/senior",
+          "annual_fee": null,
+          "is_own": false,
+          "source_url": null
+        },
+        {
+          "id": "c21",
+          "name": "카드의정석2",
+          "issuer": "우리",
+          "type": "credit",
+          "tags": [
+            "travel_fx",
+            "simple_flat",
+            "reward_discount",
+            "tiered_perf",
+            "period_bonus"
+          ],
+          "target": "investor/free",
+          "annual_fee": null,
+          "is_own": false,
+          "source_url": null
+        },
+        {
+          "id": "c22",
+          "name": "카드의정석2 MILE&POINT",
+          "issuer": "우리",
+          "type": "credit",
+          "tags": [
+            "travel_fx",
+            "reward_point",
+            "reward_mileage"
+          ],
+          "target": "investor/free",
+          "annual_fee": null,
+          "is_own": false,
+          "source_url": null
+        },
+        {
+          "id": "c23",
+          "name": "LOCA 365",
+          "issuer": "롯데",
+          "type": "credit",
+          "tags": [
+            "delivery",
+            "subscription_ott",
+            "transit",
+            "fixed_bills",
+            "reward_discount",
+            "discount_counts"
+          ],
+          "target": "young/single/family/free/senior",
+          "annual_fee": null,
+          "is_own": false,
+          "source_url": null
+        },
+        {
+          "id": "c24",
+          "name": "LOCA LIKIT 1.2",
+          "issuer": "롯데",
+          "type": "credit",
+          "tags": [
+            "simple_flat",
+            "online_shop",
+            "reward_discount",
+            "spend_free",
+            "no_cap"
+          ],
+          "target": "single/investor/free",
+          "annual_fee": null,
+          "is_own": false,
+          "source_url": null
+        },
+        {
+          "id": "c25",
+          "name": "디지로카 London",
+          "issuer": "롯데",
+          "type": "credit",
+          "tags": [
+            "reward_cashback",
+            "spend_free",
+            "no_cap",
+            "paymethod_bonus"
+          ],
+          "target": "free",
+          "annual_fee": null,
+          "is_own": false,
+          "source_url": null
+        },
+        {
+          "id": "c26",
+          "name": "올바른 FLEX",
+          "issuer": "NH농협",
+          "type": "credit",
+          "tags": [
+            "delivery",
+            "subscription_ott",
+            "dining_cafe",
+            "transit",
+            "fixed_bills",
+            "mart_daily",
+            "online_shop",
+            "reward_discount",
+            "paymethod_bonus"
+          ],
+          "target": "young/single/family/investor/free/senior",
+          "annual_fee": null,
+          "is_own": false,
+          "source_url": null
+        },
+        {
+          "id": "c27",
+          "name": "클래시 트래블카드",
+          "issuer": "NH농협",
+          "type": "credit",
+          "tags": [
+            "travel_fx",
+            "reward_point",
+            "tiered_perf",
+            "period_bonus"
+          ],
+          "target": "investor/free",
+          "annual_fee": null,
+          "is_own": false,
+          "source_url": null
+        },
+        {
+          "id": "c28",
+          "name": "zgm.streaming",
+          "issuer": "NH농협",
+          "type": "credit",
+          "tags": [
+            "subscription_ott",
+            "dining_cafe",
+            "reward_discount",
+            "paymethod_bonus"
+          ],
+          "target": "single/free",
+          "annual_fee": null,
+          "is_own": false,
+          "source_url": null
+        },
+        {
+          "id": "c29",
+          "name": "BC 바로 에어 마스터",
+          "issuer": "BC",
+          "type": "credit",
+          "tags": [
+            "travel_fx",
+            "fuel",
+            "transit",
+            "reward_mileage"
+          ],
+          "target": "family/investor/free/senior",
+          "annual_fee": null,
+          "is_own": false,
+          "source_url": null
+        },
+        {
+          "id": "c30",
+          "name": "BC 바로 에어 맥스",
+          "issuer": "BC",
+          "type": "credit",
+          "tags": [
+            "travel_fx",
+            "dining_cafe",
+            "fixed_bills",
+            "online_shop",
+            "reward_mileage"
+          ],
+          "target": "single/family/investor/free/senior",
+          "annual_fee": null,
+          "is_own": false,
+          "source_url": null
+        },
+        {
+          "id": "c31",
+          "name": "토스뱅크 체크카드",
+          "issuer": "토스뱅크",
+          "type": "debit",
+          "tags": [
+            "travel_fx",
+            "bank_bundle",
+            "check_card",
+            "reward_cashback",
+            "reward_flat_refund",
+            "no_cap",
+            "txn_threshold",
+            "select_pack",
+            "monthly_switch"
+          ],
+          "target": "young/investor/free",
+          "annual_fee": null,
+          "is_own": false,
+          "source_url": null
+        },
+        {
+          "id": "c32",
+          "name": "케이뱅크 ONE 체크",
+          "issuer": "케이뱅크",
+          "type": "debit",
+          "tags": [
+            "bank_bundle",
+            "simple_flat",
+            "transit",
+            "check_card",
+            "govt_link",
+            "reward_cashback",
+            "no_cap",
+            "select_pack",
+            "monthly_switch",
+            "count_based"
+          ],
+          "target": "young",
+          "annual_fee": null,
+          "is_own": false,
+          "source_url": null
+        },
+        {
+          "id": "c33",
+          "name": "카카오뱅크 K-패스 프렌즈 체크",
+          "issuer": "카카오뱅크",
+          "type": "debit",
+          "tags": [
+            "bank_bundle",
+            "transit",
+            "check_card",
+            "govt_link",
+            "reward_cashback",
+            "tiered_perf",
+            "auto_best"
+          ],
+          "target": "young",
+          "annual_fee": null,
+          "is_own": false,
+          "source_url": null
+        },
+        {
+          "id": "c34",
+          "name": "하나 나라사랑카드 체크",
+          "issuer": "하나",
+          "type": "debit",
+          "tags": [
+            "delivery",
+            "transit",
+            "mart_daily",
+            "check_card",
+            "reward_discount",
+            "spend_free",
+            "target_special"
+          ],
+          "target": "young/single/family/free",
+          "annual_fee": null,
+          "is_own": false,
+          "source_url": null
+        }
+      ]
+    },
+    "tag_counts": {
+      "plcc_brand": 1,
+      "delivery": 5,
+      "subscription_ott": 8,
+      "travel_fx": 14,
+      "lounge": 2,
+      "premium_voucher": 1,
+      "bank_bundle": 3,
+      "simple_flat": 5,
+      "miss_refund": 0,
+      "anti_cap": 0,
+      "life_event": 0,
+      "ai_personalize": 0,
+      "group_pooling": 0,
+      "social": 0,
+      "invest_reward": 0,
+      "point_to_stock": 0,
+      "insurance_link": 0,
+      "challenge": 1,
+      "time_slot": 2,
+      "esg_green": 0,
+      "benefit_rental": 0,
+      "dining_cafe": 12,
+      "fuel": 9,
+      "transit": 9,
+      "fixed_bills": 9,
+      "mart_daily": 11,
+      "check_card": 8,
+      "govt_link": 2,
+      "online_shop": 10,
+      "reward_cashback": 5,
+      "reward_discount": 15,
+      "reward_point": 8,
+      "reward_mileage": 4,
+      "reward_flat_refund": 2,
+      "tiered_perf": 10,
+      "spend_free": 8,
+      "no_cap": 7,
+      "discount_counts": 4,
+      "perf_recharge": 2,
+      "txn_threshold": 2,
+      "select_item": 3,
+      "select_pack": 6,
+      "common_plus_select": 1,
+      "paymethod_bonus": 8,
+      "period_bonus": 4,
+      "target_special": 3,
+      "monthly_switch": 2,
+      "count_based": 1,
+      "auto_best": 1
+    },
+    "target_segment": "2030 투자 입문자",
+    "own_issuer": "신한카드",
+    "card_names": [],
+    "topic": null
+  }
+}

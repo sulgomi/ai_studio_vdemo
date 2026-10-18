@@ -1,0 +1,246 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "card-studio/agents/competitor/out.schema.json",
+  "title": "competitor result",
+  "type": "object",
+  "required": [
+    "crowded",
+    "empty",
+    "nearest",
+    "easy_to_copy",
+    "products"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "crowded": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": [
+          "tag",
+          "reason"
+        ],
+        "additionalProperties": false,
+        "properties": {
+          "tag": {
+            "type": "string"
+          },
+          "count": {
+            "type": "integer",
+            "description": "코드가 채움"
+          },
+          "reason": {
+            "type": "string",
+            "maxLength": 240
+          }
+        }
+      }
+    },
+    "empty": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": [
+          "tag",
+          "reason"
+        ],
+        "additionalProperties": false,
+        "properties": {
+          "tag": {
+            "type": "string"
+          },
+          "count": {
+            "type": "integer",
+            "description": "코드가 채움"
+          },
+          "reason": {
+            "type": "string",
+            "maxLength": 240
+          }
+        }
+      }
+    },
+    "nearest": {
+      "type": "array",
+      "minItems": 1,
+      "maxItems": 5,
+      "items": {
+        "type": "object",
+        "required": [
+          "name",
+          "why"
+        ],
+        "additionalProperties": false,
+        "properties": {
+          "name": {
+            "type": "string"
+          },
+          "card_id": {
+            "type": "string",
+            "description": "코드가 DB id로 맞춤"
+          },
+          "why": {
+            "type": "string",
+            "maxLength": 240
+          }
+        }
+      }
+    },
+    "easy_to_copy": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "maxLength": 240
+      }
+    },
+    "products": {
+      "type": "array",
+      "description": "코드가 조회 결과에서 옮김(LLM은 비워 둠)",
+      "items": {
+        "type": "object",
+        "required": [
+          "issuer",
+          "name",
+          "lookup_path",
+          "checked_at"
+        ],
+        "properties": {
+          "issuer": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          },
+          "annual_fee": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "min_monthly_spend": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "benefits": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": [
+                "category"
+              ],
+              "properties": {
+                "category": {
+                  "type": "string"
+                },
+                "rate": {
+                  "type": [
+                    "string",
+                    "null"
+                  ]
+                },
+                "monthly_cap": {
+                  "type": [
+                    "string",
+                    "null"
+                  ]
+                }
+              }
+            }
+          },
+          "promotions": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": [
+                "description",
+                "status"
+              ],
+              "properties": {
+                "description": {
+                  "type": "string",
+                  "maxLength": 240
+                },
+                "start_date": {
+                  "type": [
+                    "string",
+                    "null"
+                  ]
+                },
+                "end_date": {
+                  "type": [
+                    "string",
+                    "null"
+                  ]
+                },
+                "status": {
+                  "enum": [
+                    "active",
+                    "ended",
+                    "unknown"
+                  ]
+                }
+              }
+            }
+          },
+          "lookup_path": {
+            "enum": [
+              "db",
+              "disclosure",
+              "web"
+            ]
+          },
+          "checked_at": {
+            "type": "string",
+            "format": "date"
+          },
+          "is_own": {
+            "type": "boolean"
+          }
+        }
+      }
+    },
+    "comparison_with_own_card": {
+      "type": [
+        "object",
+        "null"
+      ],
+      "required": [
+        "own_card",
+        "differences",
+        "gaps"
+      ],
+      "properties": {
+        "own_card": {
+          "type": "string",
+          "maxLength": 240
+        },
+        "differences": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "maxLength": 240
+          }
+        },
+        "gaps": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "maxLength": 240
+          }
+        }
+      }
+    },
+    "db_as_of": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "코드가 입력에서 옮김"
+    }
+  },
+  "x-report-template": "../_common/report_templates.md"
+}

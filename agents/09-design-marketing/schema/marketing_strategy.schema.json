@@ -1,0 +1,123 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "marketing_strategy",
+  "description": "Marketing direction for one card concept. Written before the boards; the boards and videos must follow it. No invented statistics, prices, dates or targets: unknown values stay as [placeholders].",
+  "type": "object",
+  "required": ["positioning", "insight", "personas", "pillars", "tone", "channels", "phases", "kpis", "risks", "next_steps"],
+  "additionalProperties": false,
+  "properties": {
+    "positioning": {
+      "type": "object",
+      "required": ["statement", "for_whom", "what_it_is", "why_different"],
+      "additionalProperties": false,
+      "properties": {
+        "statement": { "type": "string", "maxLength": 120, "description": "One sentence: for whom, what it is, why it is different." },
+        "for_whom": { "type": "string", "maxLength": 40 },
+        "what_it_is": { "type": "string", "maxLength": 40 },
+        "why_different": { "type": "string", "maxLength": 60, "description": "Never names a competitor." }
+      }
+    },
+    "insight": {
+      "type": "object",
+      "required": ["tension", "truth", "assumed"],
+      "additionalProperties": false,
+      "properties": {
+        "tension": { "type": "string", "maxLength": 80, "description": "What is frustrating or missing today" },
+        "truth": { "type": "string", "maxLength": 80, "description": "What the target actually wants" },
+        "assumed": { "type": "boolean", "description": "true unless the customer supplied research. Shown as a hypothesis to validate." },
+        "validate_with": { "type": "string", "maxLength": 80 }
+      }
+    },
+    "personas": {
+      "type": "array", "minItems": 3, "maxItems": 3,
+      "items": {
+        "type": "object",
+        "required": ["name", "variant", "moment", "need"],
+        "additionalProperties": false,
+        "properties": {
+          "name": { "type": "string", "maxLength": 20, "description": "A label, not a real person (e.g. '기록하는 페스티벌러')" },
+          "variant": { "type": "string", "description": "Variant code this persona picks" },
+          "moment": { "type": "string", "maxLength": 50, "description": "The everyday moment they take the card out" },
+          "need": { "type": "string", "maxLength": 50 }
+        }
+      }
+    },
+    "pillars": {
+      "type": "array", "minItems": 3, "maxItems": 3,
+      "items": {
+        "type": "object",
+        "required": ["title", "message", "proof"],
+        "additionalProperties": false,
+        "properties": {
+          "title": { "type": "string", "maxLength": 16 },
+          "message": { "type": "string", "maxLength": 50, "description": "What we say" },
+          "proof": { "type": "string", "maxLength": 60, "description": "What in the product backs it (design detail, feature given by the customer)" }
+        }
+      }
+    },
+    "tone": {
+      "type": "object",
+      "required": ["summary", "do", "dont"],
+      "additionalProperties": false,
+      "properties": {
+        "summary": { "type": "string", "maxLength": 50 },
+        "do": { "type": "array", "minItems": 2, "maxItems": 4, "items": { "type": "string", "maxLength": 40 } },
+        "dont": { "type": "array", "minItems": 2, "maxItems": 4, "items": { "type": "string", "maxLength": 40 } }
+      }
+    },
+    "channels": {
+      "type": "array", "minItems": 3, "maxItems": 7,
+      "items": {
+        "type": "object",
+        "required": ["channel", "role", "asset", "phase"],
+        "additionalProperties": false,
+        "properties": {
+          "channel": { "type": "string", "maxLength": 24 },
+          "role": { "type": "string", "maxLength": 50 },
+          "asset": { "type": "string", "maxLength": 40, "description": "reels | youtube | promo | boards | or a short description of another asset" },
+          "phase": { "type": "string", "description": "Phase name this channel leads in" }
+        }
+      }
+    },
+    "phases": {
+      "type": "array", "minItems": 2, "maxItems": 4,
+      "items": {
+        "type": "object",
+        "required": ["name", "start_day", "end_day", "goal", "actions"],
+        "additionalProperties": false,
+        "properties": {
+          "name": { "type": "string", "maxLength": 12 },
+          "start_day": { "type": "integer", "minimum": -90, "maximum": 180, "description": "Days relative to launch day 0" },
+          "end_day": { "type": "integer", "minimum": -90, "maximum": 180 },
+          "goal": { "type": "string", "maxLength": 40 },
+          "actions": { "type": "array", "minItems": 1, "maxItems": 4, "items": { "type": "string", "maxLength": 50 } }
+        }
+      }
+    },
+    "kpis": {
+      "type": "array", "minItems": 3, "maxItems": 8,
+      "items": {
+        "type": "object",
+        "required": ["stage", "metric", "target"],
+        "additionalProperties": false,
+        "properties": {
+          "stage": { "type": "string", "enum": ["인지", "관심", "전환", "확산"] },
+          "metric": { "type": "string", "maxLength": 40 },
+          "target": { "type": "string", "maxLength": 24, "description": "A [placeholder] unless the customer gave the number" },
+          "source": { "type": "string", "maxLength": 30, "description": "Where it is measured" }
+        }
+      }
+    },
+    "risks": {
+      "type": "array", "minItems": 2, "maxItems": 5,
+      "items": {
+        "type": "object",
+        "required": ["risk", "mitigation"],
+        "additionalProperties": false,
+        "properties": { "risk": { "type": "string", "maxLength": 50 }, "mitigation": { "type": "string", "maxLength": 70 } }
+      }
+    },
+    "next_steps": { "type": "array", "minItems": 2, "maxItems": 6, "items": { "type": "string", "maxLength": 60 } },
+    "targets_from_customer": { "type": "boolean", "description": "true only when the customer supplied KPI numbers" }
+  }
+}

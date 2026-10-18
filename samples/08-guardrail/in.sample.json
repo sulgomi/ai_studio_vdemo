@@ -1,0 +1,146 @@
+{
+  "run_id": "sample-guardrail-001",
+  "request_id": "sample-guardrail-001-r1",
+  "agent": "guardrail",
+  "contract_version": "1.0",
+  "mode": "standalone",
+  "today": "2026-10-17",
+  "question": "같이굴려요 카드 재무랑 준법 관점에서 문제 없는지 점검해줘. 고칠 것과 법무에 확인받을 것을 나눠서.",
+  "conversation": {
+    "summary": "",
+    "segment": "2030 투자입문자",
+    "card_type": "신용카드",
+    "period": "해당 없음",
+    "assumptions": [
+      "연회비가 있는 카드이므로 신용카드로 가정"
+    ],
+    "own_cards": []
+  },
+  "output_mode": "report",
+  "depth": "detail",
+  "payload": {
+    "card": {
+      "segId": "investor",
+      "need": "social",
+      "hook": "친구 모임 단위로 챌린지를 달성하면 모임 공동 투자 보너스가 쌓이는 카드",
+      "tags": [
+        "social",
+        "group_pooling",
+        "challenge",
+        "invest_reward",
+        "point_to_stock"
+      ],
+      "rates": {
+        "dining": 0.012,
+        "online": 0.008
+      },
+      "capPerCat": 3,
+      "fee": 1.5,
+      "cx": 0.45,
+      "links": [
+        "sec"
+      ],
+      "mechanics": [
+        "2~5명이 모임을 만들면 외식·온라인 적립 포인트의 일부를 모임 공동 풀에 합산(개인 적립은 별도 유지)",
+        "월 챌린지(예: 모임 전원 투자 계좌 자동이체 유지)를 달성하면 풀에 보너스 포인트 추가",
+        "풀은 모임 합의로 선택한 ETF 소수점 매수에 사용하며 개인 지분은 앱에서 각자 확인",
+        "챌린지 조건과 보너스 한도는 가입 화면에 명시"
+      ],
+      "evidence_ids": [
+        "T3",
+        "T2"
+      ],
+      "rationale": "social·group_pooling·challenge 태그는 경쟁 카드에서 0~1종으로 비어 있고 2030 플랫폼 특화 제휴 흐름(T3)이 있다. 다만 social 니즈는 5순위라 투자 전환을 결합해 핵심 동기를 유지했고, 복잡도는 상한 아래로 관리했다.",
+      "working_title": "같이굴려요 카드",
+      "one_liner": "친구 모임 단위로 챌린지를 달성하면 모임 공동 투자 보너스가 쌓이는 카드",
+      "minPerf": 0
+    },
+    "metrics": {
+      "i": 1,
+      "name": "같이굴려요 카드",
+      "profit": 7.95,
+      "novelty": 0.81,
+      "sim": 0.19,
+      "nearest": "처음(ANNIVERSE)",
+      "adopt": 0.393,
+      "adopterProfit": 5.4,
+      "cherry": 0.21,
+      "cx": 0.45,
+      "indepCx": 0.43,
+      "appliedCx": 0.45,
+      "topReject": "inertia",
+      "errs": [],
+      "pass": true
+    },
+    "twin": {
+      "target_adopt": 0.393,
+      "by_type": {
+        "휴면 위험형": {
+          "share_of_adopters": 0.15,
+          "profit": 0.5
+        },
+        "일반형": {
+          "share_of_adopters": 0.58,
+          "profit": 7.41
+        },
+        "혜택 사냥꾼(체리피커)": {
+          "share_of_adopters": 0.21,
+          "profit": 2.47
+        },
+        "충성형": {
+          "share_of_adopters": 0.06,
+          "profit": 8.33
+        }
+      },
+      "adopter_profit": 5.4,
+      "static_profit": 7.95,
+      "scenarios": [
+        {
+          "name": "기본",
+          "adopt": 0.393
+        }
+      ]
+    },
+    "check_items": [
+      {
+        "id": "G1",
+        "item": "이름·한 줄 약속과 실제 작동 방식 일치(과장·불일치)"
+      },
+      {
+        "id": "G2",
+        "item": "광고 표현 위험(단정·과장·오인 소지, 합산 혜택 오인)"
+      },
+      {
+        "id": "G3",
+        "item": "부가서비스 변경 제한·혜택 지급 조건 고지"
+      },
+      {
+        "id": "G4",
+        "item": "그룹사(증권·보험·은행) 연계 시 개인정보 결합·제3자 제공 동의"
+      },
+      {
+        "id": "G5",
+        "item": "투자 연계 상품의 투자권유·원금 손실 오인"
+      },
+      {
+        "id": "G6",
+        "item": "체리피킹·역선택 대비(채택 고객 유형별 손익 참고)"
+      }
+    ],
+    "precheck_flags": [
+      {
+        "check_id": "G5",
+        "flag": "links에 증권(sec) 연계가 있고 mechanics에 원금 손실 고지가 없음"
+      },
+      {
+        "check_id": "G6",
+        "flag": "체리피커가 채택자의 0.21로 20% 이상이면서 손익 2.47로 3 미만"
+      }
+    ],
+    "review_level": "standard",
+    "allowed_numbers": [
+      "1.2%",
+      "0.8%"
+    ]
+  }
+}

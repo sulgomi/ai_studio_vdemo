@@ -1,0 +1,20 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "card-studio/agents/validation/in.schema.json",
+  "title": "validation payload",
+  "type": "object",
+  "required": ["card", "metrics", "persona_types", "twin"],
+  "additionalProperties": false,
+  "properties": {
+    "card": {"type": "object", "description": "winner.card = concept.result.options[i] 원문", "required": ["working_title", "segId", "need", "hook", "rates", "capPerCat", "fee", "minPerf", "mechanics"]},
+    "metrics": {"type": "object", "description": "winner.metrics", "required": ["profit", "sim", "nearest", "appliedCx", "adopt", "adopterProfit", "cherry", "pass"]},
+    "persona_types": {
+      "type": "array",
+      "minItems": 4,
+      "maxItems": 4,
+      "items": {"type": "object", "required": ["type", "traits"], "properties": {"type": {"enum": ["일반형", "체리피커", "충성형", "휴면 위험형"]}, "traits": {"type": "string"}}}
+    },
+    "twin": {"$ref": "out.schema.json#/$defs/twin"},
+    "target_adopt": {"type": "number", "default": 0.38}
+  }
+}
