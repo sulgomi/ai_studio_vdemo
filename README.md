@@ -14,6 +14,7 @@
 | 에이전트별 단독 실행 샘플(입력·출력·대화·리포트 10종) | `samples/index.html`, `samples/<에이전트>/`, 검증 `python3 samples/validate.py` |
 | 시장조사 리포트 템플릿(칸 채우기 + UI 렌더) | `agents/_common/report_templates.md` |
 | 화면으로 최종 체크 | `ui/index.html` 을 브라우저로 연다 |
+| 고객 검토용 설계서·템플릿, 데모영상 스토리보드·시나리오·제작 고려사항 | `05_고객_전달자료/` |
 | 버전 간 선별 근거 | `00_선별근거.md` |
 
 ## 화면 여는 법
