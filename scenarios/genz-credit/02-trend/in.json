@@ -1,0 +1,37 @@
+{
+  "run_id": "genz-credit-001",
+  "request_id": "genz-credit-001-trend-r1",
+  "agent": "trend",
+  "contract_version": "1.0",
+  "mode": "orchestrated",
+  "today": "2026-10-20",
+  "question": "GenZ(만 19~29세) 대상 신용카드를 기획하려 한다. 투자상품과 관계없이 GenZ의 소비·결제·혜택 이용 트렌드와 관련 규제 변화를 시그널로 정리해줘.",
+  "conversation": {
+    "summary": "사용자 요청: GenZ 특화 신용카드 만들어줘. H1에서 범위 확인됨: GenZ(만 19~29세), 신용카드, 투자 연계 제외, 목표 채택 의향 0.38(가정치).",
+    "segment": "GenZ(만 19~29세)",
+    "card_type": "신용카드",
+    "period": "최근 18개월(2025-04~2026-10)",
+    "assumptions": [
+      "GenZ를 기준일 2026-10-20 기준 1997~2007년생 중 신용카드 발급이 가능한 만 19~29세로 해석",
+      "고객사 회원·결제 데이터 없이 공개 자료와 PM 가정치로 진행",
+      "목표 채택 의향 0.38은 기존 리허설과 같은 PM 가정치"
+    ],
+    "own_cards": []
+  },
+  "output_mode": "json",
+  "depth": "detail",
+  "payload": {
+    "purpose": "signals",
+    "target": "GenZ(만 19~29세), 투자 연계 제외",
+    "topics_hint": [
+      "benefit",
+      "digital",
+      "group",
+      "promo",
+      "regulation"
+    ],
+    "signal_count": 5,
+    "known_doc_ids": [],
+    "max_queries": 5
+  }
+}
