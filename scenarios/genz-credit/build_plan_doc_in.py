@@ -11,6 +11,7 @@ rl, tr, cp, cs = (L(f"{p}/out.json") for p in ("01-research-lead", "02-trend", "
 ws, co, ev = L("05-whitespace/out.json"), L("06-concept/out.json"), L("06-concept/eval.json")
 va, gr, dm = L("07-validation/out.json"), L("08-guardrail/out.json"), L("09-design-marketing/out.json")
 ws_in = L("05-whitespace/in.json")
+te = L("02-trend-evidence/out.json")
 win = ev["winner"]
 
 LABEL = {"segId": "타깃 세그먼트", "need": "니즈", "tags": "혜택 유형", "rates": "영역별 캐시백률", "capPerCat": "영역별 월 한도(만원)",
@@ -44,7 +45,7 @@ alternatives.append({"working_title": first["name"], "reason_dropped": "1차 승
 
 research = {"headline": rl["result"]["headline"], "key_findings": rl["result"]["key_findings"],
             "conflicts": rl["result"]["conflicts"], "uncertainties": rl["result"].get("uncertainties", []),
-            "trend_signals": [{k: s.get(k) for k in ("id", "title", "impl", "reliability")} for s in tr["result"]["signals"]],
+            "signals": [{k: s[k] for k in ("id", "title", "impl", "reliability", "stale", "research_topic") if k in s} for s in tr["result"]["signals"] + te["result"]["signals"]],
             "competitor": {k: cp["result"][k] for k in ("crowded", "empty", "nearest")},
             "consumer": {k: cs["result"][k] for k in ("top_needs", "must_have", "can_give_up")}}
 dmr = dm["result"]
@@ -78,9 +79,9 @@ def urls(o):
     return {s["url"] for s in o.get("sources", []) if s.get("url") and not s["url"].startswith("https://card-studio.invalid")}
 
 
-allowed_urls = sorted(set().union(*(urls(x) for x in (rl, tr, cp, cs, ws, co, va, gr, dm))))
+allowed_urls = sorted(set().union(*(urls(x) for x in (rl, tr, te, cp, cs, ws, co, va, gr, dm))))
 
-payload_core = {"research": research, "opportunity": {"picks": ws["result"]["picks"], "chosen_pick": ws["result"]["picks"][0]},
+payload_core = {"research": research, "opportunity": {"picks": ws["result"]["picks"], "chosen": ws["result"]["picks"][0]},
                 "final_card": label_card(win["card"]), "final_metrics": win["metrics"], "alternatives": alternatives,
                 "twin": va["result"]["twin"], "voices": va["result"]["voices"], "guardrail": gr["result"], "design_marketing": design}
 

@@ -502,5 +502,40 @@
   "event": "call",
   "agent": "design_marketing",
   "detail": "update_strategy 1회(근거 팩 반영)"
+ },
+ {
+  "seq": 73,
+  "at": "2026-10-20T11:38:00+00:00",
+  "event": "result",
+  "agent": "design_marketing",
+  "detail": "update_strategy 1회: 간편결제 등록 채널 근거(T7), 숏폼·동영상 시험 집행(T6 약한 근거), G2 SNS 소재 심의(T8 약한 근거). needs_research 3건은 근거 없음으로 유지"
+ },
+ {
+  "seq": 74,
+  "at": "2026-10-20T11:38:00+00:00",
+  "event": "validate",
+  "agent": "design_marketing",
+  "detail": "통과, qa check_strategy 통과"
+ },
+ {
+  "seq": 75,
+  "at": "2026-10-20T11:38:00+00:00",
+  "event": "human_wait",
+  "agent": null,
+  "detail": "H5 영상 렌더 확정"
+ },
+ {
+  "seq": 76,
+  "at": "2026-10-20T11:38:00+00:00",
+  "event": "human_decision",
+  "agent": null,
+  "detail": "H5: 렌더하지 않음(MVP 범위, 스토리보드 미리보기로 대체). 기획서 6절은 스토리보드로 작성"
+ },
+ {
+  "seq": 77,
+  "at": "2026-10-20T11:38:00+00:00",
+  "event": "call",
+  "agent": "plan_doc",
+  "detail": "7개 섹션 기획서"
  }
 ]
