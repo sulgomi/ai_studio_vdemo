@@ -159,5 +159,40 @@
   "event": "call",
   "agent": "whitespace",
   "detail": "feasible 셀 8개 + excluded 4개 + tensions 3건"
+ },
+ {
+  "seq": 24,
+  "at": "2026-10-20T11:07:17+00:00",
+  "event": "result",
+  "agent": "whitespace",
+  "detail": "picks: 1 young×digital(천장 0.45), 2 young×saving(0.453), 3 young×simple(0.435). 엔진 순서 그대로"
+ },
+ {
+  "seq": 25,
+  "at": "2026-10-20T11:07:17+00:00",
+  "event": "validate",
+  "agent": "whitespace",
+  "detail": "통과(첫 시도)"
+ },
+ {
+  "seq": 26,
+  "at": "2026-10-20T11:07:17+00:00",
+  "event": "human_wait",
+  "agent": null,
+  "detail": "H2 기회 선택"
+ },
+ {
+  "seq": 27,
+  "at": "2026-10-20T11:07:17+00:00",
+  "event": "human_decision",
+  "agent": null,
+  "detail": "H2: 1순위 young×digital(구독·디지털) 선택(무응답 기본값과 같음)"
+ },
+ {
+  "seq": 28,
+  "at": "2026-10-20T11:07:17+00:00",
+  "event": "call",
+  "agent": "concept",
+  "detail": "3안, pick young×digital"
  }
 ]
