@@ -47,5 +47,19 @@
   "event": "call",
   "agent": "competitor",
   "detail": "overview, 34종 DB"
+ },
+ {
+  "seq": 8,
+  "at": "2026-10-20T10:59:39+00:00",
+  "event": "result",
+  "agent": "competitor",
+  "detail": "crowded 8, empty 9(투자 태그 범위 밖 제외), nearest 올바른 FLEX·Discount Plan+·iD SELECT ALL"
+ },
+ {
+  "seq": 9,
+  "at": "2026-10-20T10:59:39+00:00",
+  "event": "validate",
+  "agent": "competitor",
+  "detail": "통과(첫 시도)"
  }
 ]
