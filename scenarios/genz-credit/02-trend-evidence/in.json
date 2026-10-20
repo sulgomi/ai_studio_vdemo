@@ -1,0 +1,47 @@
+{
+  "run_id": "genz-credit-001",
+  "request_id": "genz-credit-001-trend-evidence-r1",
+  "agent": "trend",
+  "contract_version": "1.0",
+  "mode": "orchestrated",
+  "today": "2026-10-20",
+  "question": "디자인·마케팅 단계가 요청한 근거 보강 주제만 찾아줘.",
+  "conversation": {
+    "summary": "사용자 요청: GenZ 특화 신용카드 만들어줘. H1에서 범위 확인됨: GenZ(만 19~29세), 신용카드, 투자 연계 제외, 목표 채택 의향 0.38(가정치).",
+    "segment": "GenZ(만 19~29세)",
+    "card_type": "신용카드",
+    "period": "최근 18개월(2025-04~2026-10)",
+    "assumptions": [
+      "GenZ를 기준일 2026-10-20 기준 1997~2007년생 중 신용카드 발급이 가능한 만 19~29세로 해석",
+      "고객사 회원·결제 데이터 없이 공개 자료와 PM 가정치로 진행",
+      "목표 채택 의향 0.38은 기존 리허설과 같은 PM 가정치"
+    ],
+    "own_cards": []
+  },
+  "output_mode": "json",
+  "depth": "detail",
+  "payload": {
+    "purpose": "evidence_pack",
+    "target": "GenZ(만 19~29세), 투자 연계 제외",
+    "research_topics": [
+      "만 19~29세 신용카드 신규 발급자의 숏폼·동영상 플랫폼별 이용 비중과 카드 광고 반응",
+      "간편결제 앱 내 카드 등록·추천 화면의 노출 방식과 20대 연령별 이용 수치",
+      "조건부 캐시백·환급 혜택의 소셜 미디어 광고 표기 심의 사례"
+    ],
+    "signal_count": 4,
+    "known_doc_ids": [
+      "S1",
+      "S2",
+      "S3",
+      "S4",
+      "S5",
+      "S6",
+      "S7",
+      "S8",
+      "S9",
+      "S10",
+      "S11"
+    ],
+    "max_queries": 5
+  }
+}

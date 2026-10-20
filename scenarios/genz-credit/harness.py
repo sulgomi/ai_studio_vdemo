@@ -66,8 +66,9 @@ def schema_errors(stage):
                       Resource.from_contents(load(f), default_specification=DRAFT202012)))
     reg = reg.with_resources(extra)
     out = []
-    a_in = load(f"{ROOT}/agents/{stage}/in.schema.json")
-    a_out = load(f"{ROOT}/agents/{stage}/out.schema.json")
+    agent_dir = agent_of(stage)
+    a_in = load(f"{ROOT}/agents/{agent_dir}/in.schema.json")
+    a_out = load(f"{ROOT}/agents/{agent_dir}/out.schema.json")
     i = load(f"{HERE}/{stage}/in.json")
     o = load(f"{HERE}/{stage}/out.json")
     for label, schema, data in [("in", env_in, i), ("in.payload", a_in, i.get("payload", {})),
@@ -75,6 +76,11 @@ def schema_errors(stage):
         for e in Draft202012Validator(schema, registry=reg).iter_errors(data):
             out.append({"code": "SCHEMA_INVALID", "path": label + ":" + "/".join(map(str, e.path)), "message": e.message[:200]})
     return out, i, o
+
+
+def agent_of(stage):
+    """폴더 이름 → agents/ 폴더. 02-trend-evidence 처럼 같은 에이전트를 다른 모드로 부른 폴더도 처리한다."""
+    return stage if os.path.isdir(f"{ROOT}/agents/{stage}") else "-".join(stage.split("-")[:2])
 
 
 def months_between(d1, d2):
@@ -95,7 +101,7 @@ def code_checks(stage, i, o):
             err.append(("SOURCE_URL_UNKNOWN", f"findings/{f['id']}", f"없는 출처 {f['source_id']}"))
     if stage == "02-trend":
         sig = r.get("signals", [])
-        if not 4 <= len(sig) <= 6:
+        if i["payload"].get("purpose") != "evidence_pack" and not 4 <= len(sig) <= 6:
             err.append(("COUNT_OUT_OF_RANGE", "result/signals", f"{len(sig)}개(TR-R1)"))
         pub = {s["id"]: s.get("published") for s in o.get("sources", [])}
         for s in sig:
@@ -206,7 +212,7 @@ def numbers_in(obj):
 
 def validate(stage):
     errs, i, o = schema_errors(stage)
-    e2, warn = code_checks(stage, i, o) if not errs else ([], [])
+    e2, warn = code_checks(agent_of(stage), i, o) if not errs else ([], [])
     errs += [{"code": c, "path": p, "message": m} for c, p, m in e2]
     rep = {"stage": stage, "ok": not errs, "errors": errs, "warnings": [{"code": c, "path": p, "message": m} for c, p, m in warn]}
     print(json.dumps(rep, ensure_ascii=False, indent=1))

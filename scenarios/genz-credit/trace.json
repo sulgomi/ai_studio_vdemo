@@ -453,5 +453,33 @@
   "event": "call",
   "agent": "design_marketing",
   "detail": "전략→보드→스토리보드 3종"
+ },
+ {
+  "seq": 66,
+  "at": "2026-10-20T11:33:36+00:00",
+  "event": "result",
+  "agent": "design_marketing",
+  "detail": "이름 후보 세칸(추천)·석달결산·칸순위, 시안 NOON·CLEAR·NIGHT, 스토리보드 릴스 20초·유튜브 25초·홍보 20초, needs_research 3주제"
+ },
+ {
+  "seq": 67,
+  "at": "2026-10-20T11:33:36+00:00",
+  "event": "validate",
+  "agent": "design_marketing",
+  "detail": "통과, qa.py 검수 통과"
+ },
+ {
+  "seq": 68,
+  "at": "2026-10-20T11:33:37+00:00",
+  "event": "route",
+  "agent": "design_marketing",
+  "detail": "needs_research 3주제 → trend evidence_pack 1회(기록 우선 재조사)"
+ },
+ {
+  "seq": 69,
+  "at": "2026-10-20T11:33:37+00:00",
+  "event": "call",
+  "agent": "trend",
+  "detail": "evidence_pack, 3주제"
  }
 ]
