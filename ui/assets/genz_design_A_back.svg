@@ -1,0 +1,103 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 560" width="360" height="560">
+  <defs>
+    <clipPath id="card"><rect x="0" y="0" width="360" height="560" rx="28"/></clipPath>
+    <clipPath id="tile"><rect x="0" y="0" width="17" height="21" rx="3.5"/></clipPath>
+    <filter id="grain" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" seed="11" result="n"/>
+      <feColorMatrix in="n" type="matrix" values="0 0 0 0 0.35  0 0 0 0 0.31  0 0 0 0 0.24  0 0 0 0.10 0"/>
+    </filter>
+    <linearGradient id="base" x1="1" y1="0" x2="0.65" y2="1">
+      <stop offset="0" stop-color="#F7F4EE"/>
+      <stop offset="1" stop-color="#EFEBE2"/>
+    </linearGradient>
+    <filter id="emboss" x="-10%" y="-10%" width="120%" height="120%">
+      <feOffset in="SourceAlpha" dx="0.6" dy="0.6" result="hi"/>
+      <feFlood flood-color="#FFFFFF" flood-opacity="0.9"/><feComposite in2="hi" operator="in" result="hiC"/>
+      <feOffset in="SourceAlpha" dx="-0.6" dy="-0.6" result="lo"/>
+      <feFlood flood-color="#8C8270" flood-opacity="0.35"/><feComposite in2="lo" operator="in" result="loC"/>
+      <feMerge><feMergeNode in="hiC"/><feMergeNode in="loC"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <pattern id="sig" width="4" height="4" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+      <line x1="0" y1="0" x2="0" y2="4" stroke="#16181D" stroke-opacity="0.07" stroke-width="1"/>
+    </pattern>
+  </defs>
+
+  <g clip-path="url(#card)">
+    <rect width="360" height="560" fill="url(#base)"/>
+    <rect width="360" height="560" filter="url(#grain)"/>
+    <!-- same grooves as the front (debossed from this side) -->
+    <g filter="url(#emboss)" fill="none" stroke="#ECE7DD" stroke-width="1.1">
+      <line x1="0" y1="186.7" x2="360" y2="186.7"/>
+      <line x1="0" y1="373.3" x2="360" y2="373.3"/>
+    </g>
+  </g>
+  <rect x="0.5" y="0.5" width="359" height="559" rx="27.5" fill="none" stroke="#D9D3C6" stroke-width="1"/>
+  <rect x="2" y="2" width="356" height="556" rx="26" fill="none" stroke="#FFFFFF" stroke-opacity="0.7" stroke-width="1"/>
+
+  <g font-family="Pretendard Variable, Pretendard, Apple SD Gothic Neo, Noto Sans KR, sans-serif" fill="#16181D">
+    <!-- header: issuer + small lockup -->
+    <text x="40" y="58" font-size="11" font-weight="600" letter-spacing="2.2" fill-opacity="0.72">[ISSUER]</text>
+    <g transform="translate(272 42)">
+      <g clip-path="url(#tile)">
+        <rect width="17" height="21" fill="#16181D"/>
+        <rect width="17" height="6.6" fill="#C8F25A"/>
+        <rect y="6.6" width="17" height="0.9" fill="#F2EEE6"/>
+        <rect y="13.6" width="17" height="0.9" fill="#F2EEE6"/>
+      </g>
+      <text x="23" y="17" font-size="17" font-weight="800" letter-spacing="-0.4">세칸</text>
+    </g>
+
+    <!-- card details: placeholders only -->
+    <text x="40" y="98" font-family="Space Mono, Menlo, monospace" font-size="7" letter-spacing="1.8" fill-opacity="0.5">CARD NUMBER</text>
+    <text x="40" y="124" font-family="Space Mono, Menlo, monospace" font-size="17.5" letter-spacing="1.6" fill-opacity="0.82">0000 0000 0000 0000</text>
+
+    <text x="40" y="152" font-family="Space Mono, Menlo, monospace" font-size="7" letter-spacing="1.8" fill-opacity="0.5">VALID THRU</text>
+    <text x="40" y="170" font-family="Space Mono, Menlo, monospace" font-size="13" letter-spacing="1.4" fill-opacity="0.82">MM/YY</text>
+    <text x="132" y="152" font-family="Space Mono, Menlo, monospace" font-size="7" letter-spacing="1.8" fill-opacity="0.5">CVC</text>
+    <text x="132" y="170" font-family="Space Mono, Menlo, monospace" font-size="13" letter-spacing="1.4" fill-opacity="0.82">000</text>
+    <text x="320" y="152" text-anchor="end" font-family="Space Mono, Menlo, monospace" font-size="7" letter-spacing="1.8" fill-opacity="0.5">CARDHOLDER</text>
+    <text x="320" y="170" text-anchor="end" font-family="Space Mono, Menlo, monospace" font-size="11" letter-spacing="1.4" fill-opacity="0.82">NAME SURNAME</text>
+
+    <!-- middle cell: signature + rule -->
+    <text x="40" y="216" font-family="Space Mono, Menlo, monospace" font-size="7" letter-spacing="1.8" fill-opacity="0.5">AUTHORIZED SIGNATURE</text><text x="166" y="216" font-family="Pretendard Variable, Pretendard, Apple SD Gothic Neo, Noto Sans KR, sans-serif" font-size="7.5" fill-opacity="0.5">·&#160;&#160;서명</text>
+    <rect x="40" y="224" width="280" height="40" rx="5" fill="#FBF9F5"/>
+    <rect x="40" y="224" width="280" height="40" rx="5" fill="url(#sig)"/>
+    <rect x="40.5" y="224.5" width="279" height="39" rx="4.5" fill="none" stroke="#16181D" stroke-opacity="0.18"/>
+    <text x="312" y="257" text-anchor="end" font-size="6.5" fill-opacity="0.35">서명하지 않은 카드는 사용할 수 없습니다</text>
+
+    <!-- rule line: the one sentence that explains the card -->
+    <g transform="translate(40 292)">
+      <rect x="0" y="0" width="3" height="46" rx="1.5" fill="#C8F25A"/><rect x="0" y="0" width="3" height="46" rx="1.5" fill="none" stroke="#9DBF3F" stroke-opacity="0.5" stroke-width="0.5"/>
+      <text x="14" y="9" font-family="Space Mono, Menlo, monospace" font-size="7" letter-spacing="1.8" fill-opacity="0.5">RULE</text><text x="44" y="9" font-family="Pretendard Variable, Pretendard, Apple SD Gothic Neo, Noto Sans KR, sans-serif" font-size="7.5" fill-opacity="0.5">·&#160;&#160;판정 규칙</text>
+      <text x="14" y="27" font-size="11.5" font-weight="600" letter-spacing="-0.2" fill-opacity="0.9">직전 3개월 이용액 합계 1위 영역 자동 배정</text>
+      <text x="14" y="43" font-size="9.5" letter-spacing="-0.1" fill-opacity="0.62">외식·배달 / 온라인쇼핑 / 구독·디지털 · 조건과 한도는 앱에서 확인</text>
+    </g>
+
+    <!-- bottom cell: legal + service -->
+    <g font-size="7.4" letter-spacing="-0.1" fill-opacity="0.62">
+      <text x="40" y="404">이 카드는 [ISSUER]의 소유이며 본인 외 양도·대여할 수 없습니다.</text>
+      <text x="40" y="416">분실·도난 시 즉시 고객센터 또는 앱에서 정지해 주세요.</text>
+      <text x="40" y="428">습득하신 분은 가까운 [ISSUER] 영업점으로 전해 주세요.</text>
+    </g>
+
+    <line x1="40" y1="446" x2="320" y2="446" stroke="#16181D" stroke-opacity="0.14" stroke-width="0.6"/>
+
+    <text x="40" y="468" font-family="Pretendard Variable, Pretendard, Apple SD Gothic Neo, Noto Sans KR, sans-serif" font-size="7.5" fill-opacity="0.5">고객센터&#160;&#160;·</text><text x="77" y="468" font-family="Space Mono, Menlo, monospace" font-size="7" letter-spacing="1.8" fill-opacity="0.5">CUSTOMER CENTER</text>
+    <text x="40" y="486" font-size="12" font-weight="600" fill-opacity="0.85">[0000-0000]</text>
+    <text x="40" y="502" font-size="7.4" fill-opacity="0.6">해외 [+82-0-0000-0000] · 연중무휴 24시간</text>
+  </g>
+
+  <g transform="translate(254 458)">
+    <rect width="66" height="44" rx="6" fill="none" stroke="#16181D" stroke-opacity="0.35" stroke-width="0.9" stroke-dasharray="2.5 2"/>
+    <text x="33" y="25.5" text-anchor="middle" font-family="Space Mono, Menlo, monospace" font-size="8.5" letter-spacing="1.5" fill="#16181D" fill-opacity="0.5">NETWORK</text>
+  </g>
+
+  <!-- corner engraving -->
+  <g transform="translate(320 528)" fill="#16181D" fill-opacity="0.45">
+    <text x="-14" y="0" text-anchor="end" font-family="Space Mono, Menlo, monospace" font-size="7.5" letter-spacing="1.6">NOON</text>
+    <rect x="-9" y="-7.5" width="9" height="2" rx="0.6"/>
+    <rect x="-9" y="-4.3" width="9" height="2" rx="0.6" fill-opacity="0.5"/>
+    <rect x="-9" y="-1.1" width="9" height="2" rx="0.6" fill-opacity="0.5"/>
+  </g>
+  <text x="40" y="528" font-family="Space Mono, Menlo, monospace" font-size="7" letter-spacing="1.6" fill="#16181D" fill-opacity="0.4">CREDIT · [ISSUER]</text>
+</svg>

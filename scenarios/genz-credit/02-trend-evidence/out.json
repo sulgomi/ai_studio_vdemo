@@ -1,0 +1,259 @@
+{
+  "run_id": "genz-credit-001",
+  "request_id": "genz-credit-001-trend-evidence-r1",
+  "agent": "trend",
+  "contract_version": "1.0",
+  "model": "claude-opus-5-5",
+  "status": "ok",
+  "answer": "요청된 3개 주제에 각 1개씩 시그널(T6~T8)을 정리했으나 모두 간접 근거라 신뢰도가 0.4~0.55 수준이다. 숏폼은 유튜브 중심, 청년층 릴스 이용이 높다는 보도(T6), 페이 플랫폼 중심의 결제 접점 이동(T7), SNS 광고 점검과 혜택 조건 표기 흐름(T8)을 확인했다. 신규 발급자 기준 플랫폼 비중과 카드 광고 반응, 페이 앱 카드 추천 화면 노출 방식과 20대 수치, 조건부 캐시백 SNS 광고의 직접 심의 사례는 찾지 못했다.",
+  "result": {
+    "signals": [
+      {
+        "id": "T6",
+        "title": "숏폼 시청은 유튜브 중심, 청년층은 인스타그램 릴스 이용이 높다는 조사 보도(2025)",
+        "topic": "promo",
+        "direction": "rising",
+        "period": "2025-08",
+        "strength": 0.4,
+        "reliability": 0.45,
+        "impl": "확인한 것: 숏폼 이용자는 한 번 보기 시작하면 20분 넘게 보고 주로 유튜브로 보며 청년층은 릴스 이용이 높다고 보도됐다(S12, S13). 해석: 쇼츠와 릴스를 함께 쓰는 소재 설계를 검토할 만하나 신규 발급자 기준 비중과 카드 광고 반응은 확인하지 못했다.",
+        "source_ids": [
+          "S12",
+          "S13"
+        ],
+        "downgraded": true,
+        "research_topic": "만 19~29세 신용카드 신규 발급자의 숏폼·동영상 플랫폼별 이용 비중과 카드 광고 반응"
+      },
+      {
+        "id": "T7",
+        "title": "네이버페이·카카오페이·토스페이 중심 간편결제 확대와 카드사 결제 접점 축소",
+        "topic": "digital",
+        "direction": "rising",
+        "period": "2024-01~2025-08",
+        "strength": 0.6,
+        "reliability": 0.55,
+        "impl": "확인한 것: 2024년 간편결제 이용액은 351조원으로 보도됐고 전자금융업자 간편결제 비중은 55.1%였다(S14, S2). 해석: 카드는 페이 앱 안에서 고르는 결제 수단이 되므로 등록 유도 설계가 필요하며, 앱 내 추천 화면 노출 방식과 20대 수치는 확인하지 못했다.",
+        "source_ids": [
+          "S14",
+          "S2",
+          "S3"
+        ],
+        "research_topic": "간편결제 앱 내 카드 등록·추천 화면의 노출 방식과 20대 연령별 이용 수치"
+      },
+      {
+        "id": "T8",
+        "title": "금융당국의 SNS·이용 후기 광고 점검과 혜택 조건 표기 강화 흐름(간접 사례)",
+        "topic": "regulation",
+        "direction": "rising",
+        "period": "시점 미확인",
+        "strength": 0.45,
+        "reliability": 0.4,
+        "impl": "확인한 것: 금감원이 SNS·이용 후기 광고를 점검했고, 누락된 포인트·캐시백·청구할인 환급과 예적금 광고의 기본금리 병기 요구가 보도됐다(S15, S16, S17). 해석: 조건부 캐시백 SNS 광고에는 조건과 기본 혜택을 같은 화면에 표기해야 하며 세부 기준은 사람 확인 필요다.",
+        "source_ids": [
+          "S15",
+          "S16",
+          "S17"
+        ],
+        "downgraded": true,
+        "research_topic": "조건부 캐시백·환급 혜택의 소셜 미디어 광고 표기 심의 사례"
+      }
+    ],
+    "regulatory_changes": []
+  },
+  "findings": [
+    {
+      "id": "trend#20",
+      "claim": "2025년 8월 보도에 따르면 숏폼 이용자는 한 번 보기 시작하면 20분 넘게 시청하며 주로 유튜브로 본다.",
+      "type": "fact",
+      "source_id": "S12",
+      "confidence": "medium"
+    },
+    {
+      "id": "trend#21",
+      "claim": "같은 보도는 청년층에서 인스타그램 릴스 이용률이 높다고 전했다.",
+      "type": "fact",
+      "source_id": "S12",
+      "confidence": "low"
+    },
+    {
+      "id": "trend#22",
+      "claim": "마케팅 분석 글은 소비자가 가장 많이 쓰는 숏폼 채널로 유튜브 쇼츠를 제시했고 숏폼 이용시간이 특히 많은 집단으로 10대를 들었다.",
+      "type": "fact",
+      "source_id": "S13",
+      "confidence": "low"
+    },
+    {
+      "id": "trend#23",
+      "claim": "2025년 8월 보도는 2024년 간편결제 이용액이 351조원이며 카드사가 자체 결제 앱을 키우는 가운데 입지가 줄고 있다고 전했다.",
+      "type": "fact",
+      "source_id": "S14",
+      "confidence": "medium"
+    },
+    {
+      "id": "trend#24",
+      "claim": "한국은행 2025년 상반기 자료에서 네이버페이, 카카오페이, 페이코, 토스페이 등 전자금융업자가 제공하는 간편결제 비중은 55.1%였다.",
+      "type": "fact",
+      "source_id": "S2",
+      "confidence": "high"
+    },
+    {
+      "id": "trend#25",
+      "claim": "오픈서베이 2026 결제 서비스 조사에서 간편결제 이용률은 89.3%로 결제 수단 중 가장 높았다.",
+      "type": "fact",
+      "source_id": "S3",
+      "confidence": "medium"
+    },
+    {
+      "id": "trend#26",
+      "claim": "금감원은 SNS 공식 계정과 이용 후기 광고가 금융소비자보호법 등 광고 규정을 지켰는지 점검했고, 앞서 ETF 광고에서 중요사항 미기재 등을 지적했다고 보도됐다.",
+      "type": "fact",
+      "source_id": "S15",
+      "confidence": "medium"
+    },
+    {
+      "id": "trend#27",
+      "claim": "카드 이용자에게 누락된 포인트·캐시백·청구할인 30억원이 환급된다고 보도됐다.",
+      "type": "fact",
+      "source_id": "S16",
+      "confidence": "medium"
+    },
+    {
+      "id": "trend#28",
+      "claim": "당국은 특판 예적금 광고에 기본금리를 함께 표기하고 추첨 우대금리는 당첨 확률을 제시하도록 했다고 보도됐다.",
+      "type": "fact",
+      "source_id": "S17",
+      "confidence": "medium"
+    },
+    {
+      "id": "trend#29",
+      "claim": "예적금 광고의 기본금리 병기 원칙은 조건부 캐시백 광고에서 기본 혜택과 조건을 함께 표기하는 데 참고할 수 있으나 카드 광고에 대한 직접 기준은 아니다.",
+      "type": "estimate",
+      "source_id": null,
+      "confidence": "low"
+    }
+  ],
+  "sources": [
+    {
+      "id": "S2",
+      "title": "핸드폰 열고 '터치'…간편결제 이용액 하루 1조원 넘었다",
+      "url": "https://www.hankyung.com/article/202509294322i",
+      "publisher": "한국경제",
+      "kind": "news",
+      "published": "2025-09-29",
+      "retrieved_at": "2026-10-20",
+      "reliability": 0.75,
+      "tier": "B",
+      "stale": false
+    },
+    {
+      "id": "S3",
+      "title": "네이버·카카오·토스페이 각축전, 다음 승부처는 페이스페이가 될까? 2026 결제 서비스 트렌드",
+      "url": "https://blog.opensurvey.co.kr/article/payment-2026-2/",
+      "publisher": "오픈서베이",
+      "kind": "report",
+      "published": null,
+      "retrieved_at": "2026-10-20",
+      "reliability": 0.45,
+      "tier": "C"
+    },
+    {
+      "id": "S12",
+      "title": "숏폼 한 번 보면 20분 넘게...주로 유튜브로 시청",
+      "url": "https://v.daum.net/v/20250817073212400",
+      "publisher": "다음뉴스(지디넷코리아 보도 전재)",
+      "kind": "news",
+      "published": "2025-08-17",
+      "retrieved_at": "2026-10-20",
+      "reliability": 0.5,
+      "tier": "B",
+      "stale": false
+    },
+    {
+      "id": "S13",
+      "title": "AMPM 인사이트: 숏폼 마케팅 분석",
+      "url": "https://inside.ampm.co.kr/insight/10985",
+      "publisher": "AMPM",
+      "kind": "web",
+      "published": null,
+      "retrieved_at": "2026-10-20",
+      "reliability": 0.35,
+      "tier": "C"
+    },
+    {
+      "id": "S14",
+      "title": "치고 올라오는 '네·카·토' 간편결제…속타는 카드사",
+      "url": "https://v.daum.net/v/20250826060247234",
+      "publisher": "다음뉴스",
+      "kind": "news",
+      "published": "2025-08-26",
+      "retrieved_at": "2026-10-20",
+      "reliability": 0.55,
+      "tier": "B",
+      "stale": false
+    },
+    {
+      "id": "S15",
+      "title": "[단독] 알고 보니 돈 받고 해외계좌 만들라? 금감원, 'SNS·이용 후기 광고' 점검",
+      "url": "https://biz.sbs.co.kr/amp/article/20000251947",
+      "publisher": "SBS Biz",
+      "kind": "news",
+      "published": null,
+      "retrieved_at": "2026-10-20",
+      "reliability": 0.55,
+      "tier": "B"
+    },
+    {
+      "id": "S16",
+      "title": "'누락된' 포인트·캐시백·청구할인 30억...환급받는다",
+      "url": "https://biz.sbs.co.kr/amp/article/20000194899",
+      "publisher": "SBS Biz",
+      "kind": "news",
+      "published": null,
+      "retrieved_at": "2026-10-20",
+      "reliability": 0.5,
+      "tier": "B"
+    },
+    {
+      "id": "S17",
+      "title": "은행, 고금리 특판 예ㆍ적금 광고에 '기본금리'까지 표기해야",
+      "url": "https://www.etoday.co.kr/news/view/2284207",
+      "publisher": "이투데이",
+      "kind": "news",
+      "published": null,
+      "retrieved_at": "2026-10-20",
+      "reliability": 0.5,
+      "tier": "B"
+    }
+  ],
+  "assumptions": [
+    "GenZ를 기준일 2026-10-20 기준 만 19~29세로 보고, 청년층·전 연령 지표를 대리 지표로 사용",
+    "주제 2는 앞 실행 출처 S2, S3을 다시 검색하지 않고 재사용",
+    "원문 열람이 네트워크 차단으로 되지 않아 검색 결과 요약과 URL로 내용과 발행일을 확인"
+  ],
+  "unresolved": [
+    "근거 없음: 만 19~29세 신용카드 신규 발급자의 숏폼·동영상 플랫폼별 이용 비중과 카드 광고 반응(청년층 일반 보도만 확인)",
+    "근거 없음: 간편결제 앱 내 카드 등록·추천 화면의 노출 방식과 20대 연령별 이용 수치(시장 전체 지표만 확인)",
+    "근거 없음: 조건부 캐시백·환급 혜택의 소셜 미디어 광고 표기 심의 사례(카드 광고 직접 사례 없음, 간접 사례만 확인)"
+  ],
+  "limits": [
+    "WebFetch로 원문 열기가 막혀(도메인 해석 실패) 검색 결과 요약과 URL만 근거로 썼다.",
+    "S13, S15, S16, S17은 발행일을 확인하지 못해 null로 두었다. S17은 2023년 무렵 자료로 요약됐으나 원문 확인 필요.",
+    "S12, S13은 청년층·전체 이용자 기준이라 만 19~29세 신용카드 신규 발급자 표본과 다르다.",
+    "S15는 해외계좌 개설 등 금융투자 광고 점검이고 S17은 예적금 광고 기준이라 신용카드 캐시백 광고에 바로 적용할 수 없다. 적용 여부는 사람 확인 필요.",
+    "여신금융협회 광고 심의 기준과 금융소비자보호법 광고 조항 원문은 확인하지 못했다."
+  ],
+  "clarifications": [],
+  "out_of_scope": {
+    "detected": false,
+    "suggested_agent": null
+  },
+  "followups": [
+    "여신금융협회 광고 심의 가이드라인에서 조건부 캐시백 표기 기준 확인",
+    "한국언론진흥재단·메조미디어 2026 보고서에서 20대 숏폼 플랫폼별 이용률 확인",
+    "카드 광고에 대한 20대 반응은 consumer 에이전트 시뮬레이션으로 보완"
+  ],
+  "input_refs": [
+    "02-trend-evidence/in.json",
+    "02-trend/out.json"
+  ]
+}

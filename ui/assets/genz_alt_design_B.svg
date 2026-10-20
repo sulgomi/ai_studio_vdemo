@@ -1,0 +1,101 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 560" width="360" height="560">
+  <defs>
+    <clipPath id="card"><rect x="0" y="0" width="360" height="560" rx="28"/></clipPath>
+    <linearGradient id="base" x1="0" y1="0" x2="0.35" y2="1">
+      <stop offset="0" stop-color="#F7F2E9"/>
+      <stop offset="1" stop-color="#F1EBDF"/>
+    </linearGradient>
+    <filter id="grain" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" seed="7" result="n"/>
+      <feColorMatrix in="n" type="matrix" values="0 0 0 0 0.42  0 0 0 0 0.36  0 0 0 0 0.26  0 0 0 0.09 0"/>
+    </filter>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#E2C88E"/>
+      <stop offset="0.5" stop-color="#C9A766"/>
+      <stop offset="1" stop-color="#B38F4F"/>
+    </linearGradient>
+    <linearGradient id="foil" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#B8954F"/>
+      <stop offset="0.5" stop-color="#D9BE84"/>
+      <stop offset="1" stop-color="#B8954F"/>
+    </linearGradient>
+    <radialGradient id="fadeg" gradientUnits="userSpaceOnUse" cx="360" cy="560" r="330">
+      <stop offset="0" stop-color="#fff" stop-opacity="1"/>
+      <stop offset="0.55" stop-color="#fff" stop-opacity="0.8"/>
+      <stop offset="1" stop-color="#fff" stop-opacity="0"/>
+    </radialGradient>
+    <mask id="fade"><rect x="0" y="0" width="360" height="560" fill="url(#fadeg)"/></mask>
+    <pattern id="laid" width="3" height="3" patternUnits="userSpaceOnUse">
+      <line x1="0" y1="0.5" x2="3" y2="0.5" stroke="#141A2E" stroke-width="0.35" stroke-opacity="0.07"/>
+    </pattern>
+  </defs>
+
+  <g clip-path="url(#card)">
+    <rect width="360" height="560" fill="url(#base)"/>
+    <rect width="360" height="560" filter="url(#grain)"/>
+
+    <!-- micro-line print block (lower right), tone on tone -->
+    <rect x="0" y="0" width="360" height="560" fill="url(#laid)" mask="url(#fade)"/>
+
+    <!-- blind emboss: large ring echoing the symbol -->
+    <g fill="none" stroke-width="1.1">
+      <circle cx="350" cy="300" r="120" stroke="#FFFFFF" stroke-opacity="0.75" transform="translate(-0.6,-0.6)"/>
+      <circle cx="350" cy="300" r="120" stroke="#9C8F74" stroke-opacity="0.22" transform="translate(0.6,0.6)"/>
+      <circle cx="350" cy="300" r="120" stroke="#E9E1D2" stroke-opacity="0.9"/>
+    </g>
+
+    <!-- mint edge (side line wraps the card) -->
+    <rect x="0.9" y="0.9" width="358.2" height="558.2" rx="27.1" fill="none" stroke="#7FE0C2" stroke-width="1.8"/>
+    <rect x="2.6" y="2.6" width="354.8" height="554.8" rx="25.4" fill="none" stroke="#FFFFFF" stroke-opacity="0.5" stroke-width="0.6"/>
+  </g>
+
+  <!-- top row -->
+  <text x="40" y="54" font-family="Pretendard Variable, Pretendard, Apple SD Gothic Neo, Noto Sans KR, sans-serif" font-size="10" letter-spacing="2.4" fill="#141A2E" fill-opacity="0.72" font-weight="500">[ISSUER]</text>
+  <g transform="translate(306,46)" fill="none" stroke="#141A2E" stroke-opacity="0.45" stroke-width="1.4" stroke-linecap="round">
+    <path d="M0,-6 A8,8 0 0 1 0,6"/>
+    <path d="M4.5,-10.5 A13,13 0 0 1 4.5,10.5"/>
+    <path d="M9,-15 A18.5,18.5 0 0 1 9,15"/>
+  </g>
+
+  <!-- gold chip -->
+  <g transform="translate(40,92)">
+    <rect width="52" height="40" rx="7" fill="url(#gold)"/>
+    <rect x="0.4" y="0.4" width="51.2" height="39.2" rx="6.6" fill="none" stroke="#8C6C35" stroke-opacity="0.45" stroke-width="0.8"/>
+    <g fill="none" stroke="#8C6C35" stroke-opacity="0.5" stroke-width="0.8">
+      <rect x="17" y="11" width="18" height="18" rx="3.5"/>
+      <path d="M0,13 H17 M0,27 H17 M35,13 H52 M35,27 H52 M26,0 V11 M26,29 V40"/>
+    </g>
+    <rect x="1" y="1" width="50" height="14" rx="6" fill="#FFFFFF" fill-opacity="0.12"/>
+  </g>
+
+  <!-- mint line: from chip down to the mark -->
+  <line x1="66" y1="132" x2="66" y2="352" stroke="#7FE0C2" stroke-width="1.6"/>
+  <text transform="translate(74,346) rotate(-90)" font-family="Pretendard Variable, Pretendard, Apple SD Gothic Neo, Noto Sans KR, sans-serif" font-size="5.2" letter-spacing="2" fill="#1F6F6B" fill-opacity="0.75">MY ACCOUNT · MY FIRST CARD</text>
+
+  <!-- symbol: account ring + card dot, linked -->
+  <g>
+    <circle cx="66" cy="364" r="11" fill="none" stroke="#141A2E" stroke-width="2.6"/>
+    <circle cx="66" cy="364" r="3.6" fill="#7FE0C2"/>
+  </g>
+
+  <!-- vertical two-character wordmark, embossed in ink navy -->
+  <g font-family="Pretendard Variable, Pretendard, Apple SD Gothic Neo, Noto Sans KR, sans-serif" font-size="50" font-weight="700" letter-spacing="0">
+    <g fill="#FFFFFF" fill-opacity="0.85" transform="translate(-0.7,-0.7)">
+      <text x="40" y="436">첫</text><text x="40" y="492">장</text>
+    </g>
+    <g fill="#141A2E">
+      <text x="40" y="436">첫</text><text x="40" y="492">장</text>
+    </g>
+  </g>
+
+  <!-- thin foil rule + labels -->
+  <rect x="40" y="512" width="22" height="1" fill="url(#foil)"/>
+  <text x="40" y="530" font-family="Pretendard Variable, Pretendard, Apple SD Gothic Neo, Noto Sans KR, sans-serif" font-size="9" letter-spacing="3" fill="#141A2E" fill-opacity="0.7" font-weight="500">CREDIT</text>
+
+  <!-- network placeholder -->
+  <g transform="translate(244,470)">
+    <rect width="76" height="44" rx="8" fill="none" stroke="#141A2E" stroke-opacity="0.3" stroke-width="0.9" stroke-dasharray="3 2.5"/>
+    <text x="38" y="26" text-anchor="middle" font-family="Pretendard Variable, Pretendard, Apple SD Gothic Neo, Noto Sans KR, sans-serif" font-size="8.5" letter-spacing="1.6" fill="#141A2E" fill-opacity="0.5">NETWORK</text>
+  </g>
+  <text x="320" y="530" text-anchor="end" font-family="Pretendard Variable, Pretendard, Apple SD Gothic Neo, Noto Sans KR, sans-serif" font-size="7" letter-spacing="2.4" fill="#141A2E" fill-opacity="0.45">DESK · 01</text>
+</svg>

@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 560" width="360" height="560">
+  <defs>
+    <clipPath id="card"><rect x="0" y="0" width="360" height="560" rx="28"/></clipPath>
+    <linearGradient id="base" x1="0" y1="0" x2="0.35" y2="1">
+      <stop offset="0" stop-color="#F6F1E7"/>
+      <stop offset="1" stop-color="#F0EADE"/>
+    </linearGradient>
+    <filter id="grain" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" seed="11" result="n"/>
+      <feColorMatrix in="n" type="matrix" values="0 0 0 0 0.42  0 0 0 0 0.36  0 0 0 0 0.26  0 0 0 0.09 0"/>
+    </filter>
+    <pattern id="sig" width="4" height="4" patternUnits="userSpaceOnUse" patternTransform="rotate(35)">
+      <line x1="0" y1="0" x2="0" y2="4" stroke="#141A2E" stroke-width="0.4" stroke-opacity="0.08"/>
+    </pattern>
+    <linearGradient id="foil" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#B8954F"/>
+      <stop offset="0.5" stop-color="#D9BE84"/>
+      <stop offset="1" stop-color="#B8954F"/>
+    </linearGradient>
+  </defs>
+
+  <g clip-path="url(#card)">
+    <rect width="360" height="560" fill="url(#base)"/>
+    <rect width="360" height="560" filter="url(#grain)"/>
+    <rect x="0.9" y="0.9" width="358.2" height="558.2" rx="27.1" fill="none" stroke="#7FE0C2" stroke-width="1.8"/>
+    <rect x="2.6" y="2.6" width="354.8" height="554.8" rx="25.4" fill="none" stroke="#FFFFFF" stroke-opacity="0.5" stroke-width="0.6"/>
+  </g>
+
+  <g font-family="Pretendard Variable, Pretendard, Apple SD Gothic Neo, Noto Sans KR, sans-serif" fill="#141A2E">
+    <!-- header: small lockup + issuer -->
+    <circle cx="47" cy="50" r="6.5" fill="none" stroke="#141A2E" stroke-width="1.8"/>
+    <circle cx="47" cy="50" r="2.2" fill="#7FE0C2"/>
+    <text x="60" y="55" font-size="14" font-weight="700">첫장</text>
+    <text x="320" y="54" text-anchor="end" font-size="9" letter-spacing="2.2" fill-opacity="0.65" font-weight="500">[ISSUER]</text>
+
+    <!-- mint line continues from the front -->
+    <line x1="40" y1="82" x2="320" y2="82" stroke="#7FE0C2" stroke-width="1"/>
+
+    <!-- card number block -->
+    <text x="40" y="116" font-size="7.5" letter-spacing="2" fill-opacity="0.5">CARD NUMBER</text>
+    <text x="40" y="140" font-family="SF Mono, Menlo, Consolas, monospace" font-size="17" letter-spacing="1.6" fill-opacity="0.85">0000 0000 0000 0000</text>
+
+    <text x="40" y="176" font-size="7.5" letter-spacing="2" fill-opacity="0.5">VALID THRU</text>
+    <text x="40" y="194" font-family="SF Mono, Menlo, Consolas, monospace" font-size="13" letter-spacing="1.2" fill-opacity="0.85">MM/YY</text>
+    <text x="150" y="176" font-size="7.5" letter-spacing="2" fill-opacity="0.5">CVC</text>
+    <text x="150" y="194" font-family="SF Mono, Menlo, Consolas, monospace" font-size="13" letter-spacing="1.2" fill-opacity="0.85">000</text>
+
+    <text x="40" y="228" font-size="7.5" letter-spacing="2" fill-opacity="0.5">NAME</text>
+    <text x="40" y="246" font-size="12" letter-spacing="1.8" fill-opacity="0.85" font-weight="500">CARDHOLDER NAME</text>
+
+    <!-- signature panel -->
+    <text x="40" y="284" font-size="7.5" letter-spacing="2" fill-opacity="0.5">AUTHORIZED SIGNATURE</text>
+    <rect x="40" y="292" width="280" height="40" rx="4" fill="#FBF8F2"/>
+    <rect x="40" y="292" width="280" height="40" rx="4" fill="url(#sig)"/>
+    <rect x="40.4" y="292.4" width="279.2" height="39.2" rx="3.6" fill="none" stroke="#141A2E" stroke-opacity="0.14" stroke-width="0.8"/>
+    <text x="40" y="344" font-size="7" fill-opacity="0.5">서명하지 않은 카드는 사용할 수 없으며, 본인 외 사용을 금합니다.</text>
+
+    <!-- condition note (one line) -->
+    <circle cx="43" cy="378" r="2.6" fill="#7FE0C2"/>
+    <text x="52" y="381.5" font-size="8.6" font-weight="600" fill-opacity="0.85">혜택 안내</text>
+    <text x="40" y="398" font-size="8.2" fill-opacity="0.7">제휴 은행 결제계좌 지정 시 적용 · 조건과 한도는 앱에서 확인</text>
+
+    <!-- service info -->
+    <line x1="40" y1="424" x2="320" y2="424" stroke="#141A2E" stroke-opacity="0.12" stroke-width="0.8"/>
+    <text x="40" y="446" font-size="7.6" fill-opacity="0.6">고객센터</text>
+    <text x="100" y="446" font-size="7.6" fill-opacity="0.8">[ISSUER] 0000-0000</text>
+    <text x="40" y="462" font-size="7.6" fill-opacity="0.6">분실·도난</text>
+    <text x="100" y="462" font-size="7.6" fill-opacity="0.8">0000-0000 (24시간)</text>
+    <text x="40" y="478" font-size="7.6" fill-opacity="0.6">해외</text>
+    <text x="100" y="478" font-size="7.6" fill-opacity="0.8">+00-0-0000-0000</text>
+    <text x="40" y="498" font-size="6.6" fill-opacity="0.45">이 카드는 [ISSUER]의 자산입니다. 습득 시 고객센터로 알려 주세요.</text>
+
+    <!-- footer -->
+    <rect x="40" y="516" width="22" height="1" fill="url(#foil)"/>
+    <text x="40" y="532" font-size="7" letter-spacing="2.4" fill-opacity="0.5">CREDIT · DESK</text>
+    <g transform="translate(260,500)">
+      <rect width="60" height="34" rx="7" fill="none" stroke="#141A2E" stroke-opacity="0.3" stroke-width="0.9" stroke-dasharray="3 2.5"/>
+      <text x="30" y="20" text-anchor="middle" font-size="7" letter-spacing="1.4" fill-opacity="0.5">NETWORK</text>
+    </g>
+  </g>
+</svg>

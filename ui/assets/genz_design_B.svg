@@ -1,0 +1,117 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 560" width="360" height="560">
+  <defs>
+    <clipPath id="card"><rect x="0" y="0" width="360" height="560" rx="28"/></clipPath>
+    <linearGradient id="tint" x1="0" y1="0" x2="0.35" y2="1">
+      <stop offset="0" stop-color="#E4F9A6" stop-opacity="0.34"/>
+      <stop offset="0.55" stop-color="#C8F25A" stop-opacity="0.22"/>
+      <stop offset="1" stop-color="#9CC43A" stop-opacity="0.30"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.22" cy="0.12" r="0.6">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity="0.38"/>
+      <stop offset="0.5" stop-color="#FFFFFF" stop-opacity="0.08"/>
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="chip" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#E3E6EA"/>
+      <stop offset="0.5" stop-color="#B8BDC4"/>
+      <stop offset="1" stop-color="#8E949C"/>
+    </linearGradient>
+    <filter id="soft" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="14"/></filter>
+    <filter id="soft2" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="3"/></filter>
+    <filter id="grain" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" seed="7" result="n"/>
+      <feColorMatrix in="n" type="matrix" values="0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  0 0 0 0.05 0"/>
+    </filter>
+    <filter id="paper" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="1.4" numOctaves="2" seed="3" result="n"/>
+      <feColorMatrix in="n" type="matrix" values="0 0 0 0 0.09  0 0 0 0 0.09  0 0 0 0 0.11  0 0 0 0.05 0"/>
+    </filter>
+  </defs>
+
+  <g clip-path="url(#card)">
+    <!-- clear polycarbonate body -->
+    <rect width="360" height="560" fill="url(#tint)"/>
+    <rect width="360" height="560" fill="url(#glow)"/>
+    <!-- reflection sheen -->
+    <path d="M-40 250 L250 -40 L300 -40 L10 250 Z" fill="#FFFFFF" opacity="0.16" filter="url(#soft)"/>
+    <path d="M150 600 L420 330 L440 350 L170 620 Z" fill="#FFFFFF" opacity="0.10" filter="url(#soft)"/>
+
+    <!-- embedded antenna coil (seen through) -->
+    <g fill="none" stroke="#5E6A3A" stroke-opacity="0.34" stroke-width="0.7">
+      <rect x="13" y="13" width="334" height="534" rx="17"/>
+      <rect x="16.5" y="16.5" width="327" height="527" rx="14"/>
+      <rect x="20" y="20" width="320" height="520" rx="11"/>
+      <path d="M20 272 H31 M20 298 H31"/>
+    </g>
+    <!-- chip carrier footprint inside -->
+    <rect x="27" y="263" width="58" height="46" rx="9" fill="#FFFFFF" fill-opacity="0.08" stroke="#5E6A3A" stroke-opacity="0.3" stroke-width="0.6"/>
+
+    <!-- printed white layer: bottom cell (opaque) -->
+    <path d="M0 382 H360 V560 H0 Z" fill="#F4F1EA"/>
+    <path d="M0 382 H360 V560 H0 Z" filter="url(#paper)"/>
+    <!-- cell dividers printed in white -->
+    <line x1="0" y1="191" x2="360" y2="191" stroke="#FFFFFF" stroke-opacity="0.85" stroke-width="1"/>
+
+    <!-- three cells: middle zone split in columns; one cell printed lime -->
+    <rect x="240" y="191" width="120" height="191" fill="#C8F25A"/>
+    <line x1="120" y1="191" x2="120" y2="382" stroke="#FFFFFF" stroke-opacity="0.85" stroke-width="1"/>
+    <line x1="240" y1="191" x2="240" y2="382" stroke="#FFFFFF" stroke-opacity="0.85" stroke-width="1"/>
+
+    <!-- surface grain -->
+    <rect width="360" height="560" filter="url(#grain)"/>
+  </g>
+
+  <!-- logo lockup -->
+  <g transform="translate(30 42)">
+    <rect x="-1.5" y="-1.5" width="37" height="37" rx="9.5" fill="#FFFFFF" fill-opacity="0.9"/>
+    <rect x="0" y="0" width="34" height="34" rx="8" fill="#16181D"/>
+    <rect x="4.5" y="4.5" width="7" height="25" rx="2" fill="none" stroke="#F4F1EA" stroke-width="1.3"/>
+    <rect x="13.5" y="4.5" width="7" height="25" rx="2" fill="none" stroke="#F4F1EA" stroke-width="1.3"/>
+    <rect x="22.5" y="4.5" width="7" height="25" rx="2" fill="#C8F25A"/>
+    <text x="46" y="28" stroke="#FFFFFF" stroke-width="3" stroke-opacity="0.9" stroke-linejoin="round" paint-order="stroke" font-family="Pretendard Variable, Pretendard, Apple SD Gothic Neo, Noto Sans KR, sans-serif" font-size="30" font-weight="800" letter-spacing="-0.5" fill="#16181D">세칸</text>
+  </g>
+  <text x="330" y="62" text-anchor="end" font-family="Pretendard Variable, Pretendard, Apple SD Gothic Neo, Noto Sans KR, sans-serif" font-size="11" font-weight="600" letter-spacing="1.2" fill="#16181D" fill-opacity="0.8">[ISSUER]</text>
+  <text x="30" y="166" font-family="Space Mono, Menlo, monospace" font-size="8.5" letter-spacing="2" fill="#16181D" fill-opacity="0.6">CLEAR EDITION</text>
+
+  <!-- chip -->
+  <g transform="translate(32 267)" >
+    <g transform="scale(0.92)">
+    <rect width="52" height="40" rx="7" fill="url(#chip)"/>
+    <g fill="none" stroke="#6E747C" stroke-width="0.8">
+      <path d="M0 13.5 H17 M0 26.5 H17 M35 13.5 H52 M35 26.5 H52"/>
+      <path d="M17 0 V40 M35 0 V40"/>
+      <rect x="17" y="10" width="18" height="20" rx="3"/>
+    </g>
+    <rect width="52" height="40" rx="7" fill="none" stroke="#FFFFFF" stroke-opacity="0.6" stroke-width="0.6"/>
+  </g></g>
+  <!-- contactless -->
+  <g transform="translate(92 285.5)" fill="none" stroke="#FFFFFF" stroke-opacity="0.95" stroke-width="1.8" stroke-linecap="round">
+    <path d="M0 -6 A8 8 0 0 1 0 6"/>
+    <path d="M5 -10.5 A13 13 0 0 1 5 10.5"/>
+    
+  </g>
+
+  <text x="330" y="368" text-anchor="end" font-family="Space Mono, Menlo, monospace" font-size="7.5" letter-spacing="1.4" fill="#16181D" fill-opacity="0.6">03</text>
+  <!-- bottom cell content (on white print) -->
+  <text x="30" y="424" font-family="Pretendard Variable, Pretendard, Apple SD Gothic Neo, Noto Sans KR, sans-serif" font-size="13" font-weight="700" letter-spacing="3" fill="#16181D">CREDIT</text>
+  <text x="30" y="442" font-family="Space Mono, Menlo, monospace" font-size="8" letter-spacing="1.4" fill="#16181D" fill-opacity="0.5">CLEAR · 03 / 03</text>
+
+  <g transform="translate(246 494)">
+    <rect width="84" height="38" rx="7" fill="none" stroke="#16181D" stroke-opacity="0.45" stroke-width="1" stroke-dasharray="3 2.5"/>
+    <text x="42" y="23" text-anchor="middle" font-family="Space Mono, Menlo, monospace" font-size="9" letter-spacing="1.6" fill="#16181D" fill-opacity="0.6">NETWORK</text>
+  </g>
+
+  <!-- corner engraving -->
+  <g transform="translate(30 508)" fill="none" stroke="#16181D" stroke-opacity="0.55" stroke-width="0.9">
+    <rect x="0" y="0" width="7" height="16" rx="1.5"/>
+    <rect x="9.5" y="0" width="7" height="16" rx="1.5"/>
+    <rect x="19" y="0" width="7" height="16" rx="1.5" fill="#16181D" fill-opacity="0.55"/>
+  </g>
+  <text x="64" y="520" font-family="Space Mono, Menlo, monospace" font-size="7.5" letter-spacing="1.2" fill="#16181D" fill-opacity="0.5">SEKAN—CLR</text>
+
+  <!-- edge: light piping + highlight -->
+  <rect x="1" y="1" width="358" height="558" rx="27" fill="none" stroke="#8DBA25" stroke-opacity="0.75" stroke-width="2"/>
+  <rect x="2.6" y="2.6" width="354.8" height="554.8" rx="25.4" fill="none" stroke="#FFFFFF" stroke-opacity="0.7" stroke-width="0.9"/>
+  <path d="M28 2.6 H200" stroke="#FFFFFF" stroke-opacity="0.9" stroke-width="1.4" stroke-linecap="round" filter="url(#soft2)"/>
+  <path d="M2.6 40 V180" stroke="#FFFFFF" stroke-opacity="0.8" stroke-width="1.4" stroke-linecap="round" filter="url(#soft2)"/>
+</svg>

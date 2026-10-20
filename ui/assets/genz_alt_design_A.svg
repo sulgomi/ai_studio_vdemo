@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 560" width="360" height="560">
+  <defs>
+    <clipPath id="card"><rect x="0" y="0" width="360" height="560" rx="28"/></clipPath>
+    <!-- clear PET body: faint mint tint, slightly denser toward lower edge -->
+    <linearGradient id="body" x1="0" y1="0" x2="0.35" y2="1">
+      <stop offset="0" stop-color="#E9FAF4" stop-opacity="0.80"/>
+      <stop offset="0.55" stop-color="#C9F1E4" stop-opacity="0.74"/>
+      <stop offset="1" stop-color="#A9E8D4" stop-opacity="0.82"/>
+    </linearGradient>
+    <!-- window sunlight passing through: soft diagonal shaft -->
+    <linearGradient id="shaft" x1="0" y1="0" x2="1" y2="0.62">
+      <stop offset="0.18" stop-color="#FFFFFF" stop-opacity="0"/>
+      <stop offset="0.30" stop-color="#FFFFFF" stop-opacity="0.38"/>
+      <stop offset="0.36" stop-color="#FFFFFF" stop-opacity="0.12"/>
+      <stop offset="0.44" stop-color="#FFFFFF" stop-opacity="0.2"/>
+      <stop offset="0.52" stop-color="#FFFFFF" stop-opacity="0"/>
+    </linearGradient>
+    <radialGradient id="caustic" cx="0.78" cy="0.78" r="0.5">
+      <stop offset="0" stop-color="#7FE0C2" stop-opacity="0.55"/>
+      <stop offset="1" stop-color="#7FE0C2" stop-opacity="0"/>
+    </radialGradient>
+    <!-- silver chip -->
+    <linearGradient id="chip" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#EEF1F4"/>
+      <stop offset="0.45" stop-color="#C3C8CF"/>
+      <stop offset="0.7" stop-color="#E3E7EB"/>
+      <stop offset="1" stop-color="#A9B0B9"/>
+    </linearGradient>
+    <filter id="grain" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" seed="7" result="n"/>
+      <feColorMatrix in="n" type="matrix" values="0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  0 0 0 0.10 0"/>
+    </filter>
+    <filter id="soft"><feGaussianBlur stdDeviation="0.5"/></filter>
+  </defs>
+
+  <g clip-path="url(#card)">
+    <!-- transparent body -->
+    <rect width="360" height="560" fill="url(#body)"/>
+    <rect width="360" height="560" fill="url(#caustic)"/>
+    <rect width="360" height="560" fill="url(#shaft)"/>
+    <rect width="360" height="560" filter="url(#grain)"/>
+
+    <!-- clear-body depth cue: the printed line casts a faint shadow through the thickness -->
+    <path d="M67.5 158 V 405.5 Q 67.5 425.5 87.5 425.5 H 362" fill="none" stroke="#1F6F6B" stroke-width="1.4" opacity="0.18"/>
+
+    <!-- printed white-ink backing under chip (opaque layer on clear body) -->
+    <rect x="37" y="107" width="58" height="46" rx="9" fill="#F5F0E6" opacity="0.95"/>
+
+    <!-- the one line: chip → down → turns to right edge (continues on the card edge) -->
+    <path d="M66 156 V 404 Q 66 424 86 424 H 362" fill="none" stroke="#141A2E" stroke-width="1.6" stroke-linecap="round"/>
+    <!-- end point at the edge: mint dot sitting on the line where it meets the edge -->
+    <rect x="354" y="398" width="8" height="52" rx="3" fill="#7FE0C2" stroke="#1F6F6B" stroke-width="0.6"/>
+
+    <!-- chip -->
+    <g transform="translate(40 110)">
+      <rect width="52" height="40" rx="7" fill="url(#chip)" stroke="#98A0AA" stroke-width="0.8"/>
+      <g fill="none" stroke="#8E959F" stroke-width="0.8">
+        <path d="M0 13 H16 M0 27 H16 M36 13 H52 M36 27 H52"/>
+        <path d="M16 0 V40 M36 0 V40"/>
+        <rect x="16" y="11" width="20" height="18" rx="3"/>
+      </g>
+      <rect x="1" y="1" width="50" height="10" rx="6" fill="#FFFFFF" opacity="0.35"/>
+    </g>
+
+    <!-- contactless mark -->
+    <g transform="translate(300 116)" fill="none" stroke="#141A2E" stroke-width="1.8" stroke-linecap="round">
+      <path d="M0 6 A8 8 0 0 1 0 22"/>
+      <path d="M6 1 A14 14 0 0 1 6 27"/>
+      <path d="M12 -4 A20 20 0 0 1 12 32"/>
+    </g>
+
+    <!-- issuer placeholder -->
+    <text x="40" y="62" font-family="Pretendard Variable, Pretendard, Apple SD Gothic Neo, Noto Sans KR, sans-serif" font-size="11" font-weight="600" letter-spacing="2.2" fill="#141A2E" opacity="0.72">[ISSUER]</text>
+
+    <!-- logo lockup: symbol (dot — line — ring) + 첫장 -->
+    <g transform="translate(96 312)">
+      <circle cx="5" cy="0" r="5" fill="#141A2E"/>
+      <path d="M10 0 H30" stroke="#141A2E" stroke-width="2.2"/>
+      <circle cx="37" cy="0" r="6" fill="none" stroke="#141A2E" stroke-width="2.2"/>
+    </g>
+    <text x="94" y="368" font-family="Pretendard Variable, Pretendard, Apple SD Gothic Neo, Noto Sans KR, sans-serif" font-size="44" font-weight="800" letter-spacing="-1.5" fill="#141A2E">첫장</text>
+
+    <!-- type label + network placeholder -->
+    <text x="96" y="394" font-family="Pretendard Variable, Pretendard, Apple SD Gothic Neo, Noto Sans KR, sans-serif" font-size="9.5" font-weight="600" letter-spacing="3" fill="#141A2E" opacity="0.7">CREDIT</text>
+
+    <g transform="translate(252 494)">
+      <rect x="0.5" y="0.5" width="71" height="33" rx="5" fill="none" stroke="#141A2E" stroke-width="0.8" stroke-dasharray="2 2" opacity="0.5"/>
+      <text x="36" y="20.5" text-anchor="middle" font-family="Pretendard Variable, Pretendard, Apple SD Gothic Neo, Noto Sans KR, sans-serif" font-size="9" font-weight="700" letter-spacing="1.6" fill="#141A2E" opacity="0.75">NETWORK</text>
+    </g>
+
+    <!-- corner engraving / variant code -->
+    <text x="40" y="520" font-family="Pretendard Variable, Pretendard, Apple SD Gothic Neo, Noto Sans KR, sans-serif" font-size="8" font-weight="600" letter-spacing="2.4" fill="#1F6F6B" opacity="0.8">LINK · 01</text>
+  </g>
+
+  <!-- polished edge: thicker, brighter rim like a clear card's cut edge -->
+  <rect x="0.8" y="0.8" width="358.4" height="558.4" rx="27.2" fill="none" stroke="#7FE0C2" stroke-width="1.6" opacity="0.9"/>
+  <rect x="2.6" y="2.6" width="354.8" height="554.8" rx="25.4" fill="none" stroke="#FFFFFF" stroke-width="0.8" opacity="0.7"/>
+</svg>

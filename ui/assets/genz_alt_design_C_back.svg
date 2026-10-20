@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 560" width="360" height="560">
+<defs>
+ <clipPath id="card"><rect width="360" height="560" rx="28"/></clipPath>
+ <linearGradient id="floor" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#181c33"/><stop offset="1" stop-color="#141A2E"/></linearGradient>
+ <linearGradient id="foil" x1="0" y1="0" x2="1" y2="0.6"><stop offset="0" stop-color="#9DEFD6"/><stop offset="0.45" stop-color="#7FE0C2"/><stop offset="0.7" stop-color="#5EC3A6"/><stop offset="1" stop-color="#A9F2DC"/></linearGradient>
+ <linearGradient id="sig" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#F5F0E6"/><stop offset="1" stop-color="#E6E1D8"/></linearGradient>
+ <pattern id="sigp" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="6" height="0.6" fill="#5B4B8A" fill-opacity="0.10"/></pattern>
+ <filter id="grain" x="0" y="0" width="100%" height="100%"><feTurbulence type="fractalNoise" baseFrequency="1.1" numOctaves="2" seed="9"/><feColorMatrix values="0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  0 0 0 0.9 -0.38"/></filter>
+</defs>
+<g clip-path="url(#card)">
+ <rect x="0" y="0" width="360" height="22" fill="#493f73"/><rect x="0" y="21.2" width="360" height="0.8" fill="#0E1222" fill-opacity="0.35"/><rect x="0" y="22" width="360" height="18" fill="#403867"/><rect x="0" y="39.2" width="360" height="0.8" fill="#0E1222" fill-opacity="0.35"/><rect x="0" y="40" width="360" height="15" fill="#37325b"/><rect x="0" y="54.2" width="360" height="0.8" fill="#0E1222" fill-opacity="0.35"/><rect x="0" y="55" width="360" height="12" fill="#2e2c4f"/><rect x="0" y="66.2" width="360" height="0.8" fill="#0E1222" fill-opacity="0.35"/><rect x="0" y="67" width="360" height="10" fill="#242543"/><rect x="0" y="76.2" width="360" height="0.8" fill="#0E1222" fill-opacity="0.35"/><rect x="0" y="77" width="360" height="8" fill="#1b1f37"/><rect x="0" y="84.2" width="360" height="0.8" fill="#0E1222" fill-opacity="0.35"/>
+ <rect x="0" y="85" width="360" height="475" fill="url(#floor)"/>
+ <rect width="360" height="560" filter="url(#grain)" opacity="0.3"/>
+</g>
+
+<!-- header -->
+<g>
+ <circle cx="41" cy="122" r="5.2" fill="none" stroke="url(#foil)" stroke-width="1.6"/>
+ <circle cx="41" cy="122" r="1.5" fill="#7FE0C2"/>
+ <text x="53" y="127.5" font-family="Pretendard Variable, Pretendard, Apple SD Gothic Neo, Noto Sans KR, sans-serif" font-size="15" font-weight="700" fill="url(#foil)">첫장</text>
+ <text x="324" y="126" text-anchor="end" font-family="Pretendard Variable, Pretendard, Apple SD Gothic Neo, Noto Sans KR, sans-serif" font-size="9" font-weight="600" letter-spacing="1.4" fill="#ECE8F3" fill-opacity="0.75">[ISSUER]</text>
+</g>
+<rect x="36" y="146" width="288" height="0.6" fill="#C3C8CF" fill-opacity="0.22"/>
+
+<!-- card data -->
+<text letter-spacing="1.8" x="36" y="176" font-family="Pretendard Variable, Pretendard, Apple SD Gothic Neo, Noto Sans KR, sans-serif" font-size="7" font-weight="600" fill="#C3C8CF" fill-opacity="0.62">CARD NUMBER</text>
+<text x="36" y="199" font-family="Pretendard Variable, Pretendard, Apple SD Gothic Neo, Noto Sans KR, sans-serif" font-size="16.5" font-weight="500" fill="#ECE8F3" fill-opacity="0.92" letter-spacing="1.2" font-feature-settings="tnum">0000  0000  0000  0000</text>
+<text letter-spacing="1.8" x="36" y="232" font-family="Pretendard Variable, Pretendard, Apple SD Gothic Neo, Noto Sans KR, sans-serif" font-size="7" font-weight="600" fill="#C3C8CF" fill-opacity="0.62">VALID THRU</text>
+<text x="36" y="251" font-family="Pretendard Variable, Pretendard, Apple SD Gothic Neo, Noto Sans KR, sans-serif" font-size="13" font-weight="500" fill="#ECE8F3" fill-opacity="0.92" letter-spacing="1">MM / YY</text>
+<text letter-spacing="1.8" x="132" y="232" font-family="Pretendard Variable, Pretendard, Apple SD Gothic Neo, Noto Sans KR, sans-serif" font-size="7" font-weight="600" fill="#C3C8CF" fill-opacity="0.62">CVC</text>
+<text x="132" y="251" font-family="Pretendard Variable, Pretendard, Apple SD Gothic Neo, Noto Sans KR, sans-serif" font-size="13" font-weight="500" fill="#ECE8F3" fill-opacity="0.92" letter-spacing="1.5">000</text>
+<text letter-spacing="1.8" x="36" y="284" font-family="Pretendard Variable, Pretendard, Apple SD Gothic Neo, Noto Sans KR, sans-serif" font-size="7" font-weight="600" fill="#C3C8CF" fill-opacity="0.62">CARDHOLDER</text>
+<text x="36" y="303" font-family="Pretendard Variable, Pretendard, Apple SD Gothic Neo, Noto Sans KR, sans-serif" font-size="12" font-weight="500" fill="#ECE8F3" fill-opacity="0.92" letter-spacing="1.6">NAME SURNAME</text>
+
+<!-- signature -->
+<text letter-spacing="1.8" x="36" y="340" font-family="Pretendard Variable, Pretendard, Apple SD Gothic Neo, Noto Sans KR, sans-serif" font-size="7" font-weight="600" fill="#C3C8CF" fill-opacity="0.62">AUTHORIZED SIGNATURE · 서명</text>
+<rect x="36" y="348" width="288" height="34" rx="4" fill="url(#sig)"/>
+<rect x="36" y="348" width="288" height="34" rx="4" fill="url(#sigp)"/>
+<text x="316" y="377" text-anchor="end" font-family="Pretendard Variable, Pretendard, Apple SD Gothic Neo, Noto Sans KR, sans-serif" font-size="6" letter-spacing="1" fill="#141A2E" fill-opacity="0.35">NOT VALID UNLESS SIGNED</text>
+
+<!-- condition line -->
+<line x1="41" y1="410" x2="41" y2="432" stroke="#7FE0C2" stroke-opacity="0.8" stroke-width="1"/>
+<text x="52" y="418" font-family="Pretendard Variable, Pretendard, Apple SD Gothic Neo, Noto Sans KR, sans-serif" font-size="9.6" font-weight="500" fill="#ECE8F3" fill-opacity="0.9">제휴 은행 결제계좌 지정 시 적용</text>
+<text x="52" y="432" font-family="Pretendard Variable, Pretendard, Apple SD Gothic Neo, Noto Sans KR, sans-serif" font-size="9.6" font-weight="500" fill="#ECE8F3" fill-opacity="0.9">조건과 한도는 앱에서 확인</text>
+
+<!-- security -->
+<text x="36" y="460" font-family="Pretendard Variable, Pretendard, Apple SD Gothic Neo, Noto Sans KR, sans-serif" font-size="7.2" fill="#C3C8CF" fill-opacity="0.55">이 카드는 서명한 본인만 사용할 수 있으며 타인에게 양도·대여할 수 없습니다.</text>
+<text x="36" y="472" font-family="Pretendard Variable, Pretendard, Apple SD Gothic Neo, Noto Sans KR, sans-serif" font-size="7.2" fill="#C3C8CF" fill-opacity="0.55">분실·도난 시 즉시 신고해 주세요. 습득하신 분은 가까운 은행 창구에 맡겨 주세요.</text>
+<rect x="36" y="488" width="288" height="0.6" fill="#C3C8CF" fill-opacity="0.18"/>
+
+<!-- contact + network -->
+<text letter-spacing="0.4" x="36" y="507" font-family="Pretendard Variable, Pretendard, Apple SD Gothic Neo, Noto Sans KR, sans-serif" font-size="7" font-weight="600" fill="#C3C8CF" fill-opacity="0.62">고객센터</text>
+<text x="36" y="523" font-family="Pretendard Variable, Pretendard, Apple SD Gothic Neo, Noto Sans KR, sans-serif" font-size="11" font-weight="500" fill="#ECE8F3" fill-opacity="0.92" letter-spacing="1">0000-0000</text>
+<text letter-spacing="0.4" x="140" y="507" font-family="Pretendard Variable, Pretendard, Apple SD Gothic Neo, Noto Sans KR, sans-serif" font-size="7" font-weight="600" fill="#C3C8CF" fill-opacity="0.62">분실 신고</text>
+<text x="140" y="523" font-family="Pretendard Variable, Pretendard, Apple SD Gothic Neo, Noto Sans KR, sans-serif" font-size="11" font-weight="500" fill="#ECE8F3" fill-opacity="0.92" letter-spacing="1">0000-0000</text>
+<text x="36" y="538" font-family="Pretendard Variable, Pretendard, Apple SD Gothic Neo, Noto Sans KR, sans-serif" font-size="6.8" fill="#C3C8CF" fill-opacity="0.45">[ISSUER] · 앱에서 24시간 신고 가능</text>
+<g transform="translate(262 500)">
+ <rect width="62" height="34" rx="5" fill="#C3C8CF" fill-opacity="0.08" stroke="#C3C8CF" stroke-opacity="0.45" stroke-width="0.8"/>
+ <text x="31" y="20.5" text-anchor="middle" font-family="Pretendard Variable, Pretendard, Apple SD Gothic Neo, Noto Sans KR, sans-serif" font-size="7.8" font-weight="600" letter-spacing="1.2" fill="#C3C8CF" fill-opacity="0.75">NETWORK</text>
+</g>
+
+<rect x="0.6" y="0.6" width="358.8" height="558.8" rx="27.4" fill="none" stroke="#7FE0C2" stroke-opacity="0.55" stroke-width="1.2"/>
+<rect x="2.2" y="2.2" width="355.6" height="555.6" rx="25.8" fill="none" stroke="#000" stroke-opacity="0.18" stroke-width="0.8"/>
+</svg>

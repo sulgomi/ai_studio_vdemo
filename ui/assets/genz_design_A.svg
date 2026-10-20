@@ -1,0 +1,101 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 560" width="360" height="560">
+  <defs>
+    <clipPath id="tile"><rect x="0" y="0" width="34" height="42" rx="7"/></clipPath>
+    <clipPath id="card"><rect x="0" y="0" width="360" height="560" rx="28"/></clipPath>
+    <filter id="grain" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" seed="7" result="n"/>
+      <feColorMatrix in="n" type="matrix" values="0 0 0 0 0.35  0 0 0 0 0.31  0 0 0 0 0.24  0 0 0 0.10 0"/>
+    </filter>
+    <linearGradient id="base" x1="0" y1="0" x2="0.35" y2="1">
+      <stop offset="0" stop-color="#F7F4EE"/>
+      <stop offset="1" stop-color="#EFEBE2"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#D9C08A"/>
+      <stop offset="0.45" stop-color="#C6A766"/>
+      <stop offset="0.7" stop-color="#E2CC98"/>
+      <stop offset="1" stop-color="#B8975A"/>
+    </linearGradient>
+    <linearGradient id="foil" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#B8975A"/>
+      <stop offset="0.5" stop-color="#D8BF88"/>
+      <stop offset="1" stop-color="#B8975A"/>
+    </linearGradient>
+    <!-- blind emboss: light top-left edge, shade bottom-right edge -->
+    <filter id="emboss" x="-10%" y="-10%" width="120%" height="120%">
+      <feOffset in="SourceAlpha" dx="-0.6" dy="-0.6" result="hi"/>
+      <feFlood flood-color="#FFFFFF" flood-opacity="0.9"/><feComposite in2="hi" operator="in" result="hiC"/>
+      <feOffset in="SourceAlpha" dx="0.6" dy="0.6" result="lo"/>
+      <feFlood flood-color="#8C8270" flood-opacity="0.35"/><feComposite in2="lo" operator="in" result="loC"/>
+      <feMerge><feMergeNode in="hiC"/><feMergeNode in="loC"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <g clip-path="url(#card)">
+    <rect width="360" height="560" fill="url(#base)"/>
+    <rect width="360" height="560" filter="url(#grain)"/>
+
+    <!-- blind-embossed full-bleed grooves: the card itself is three cells -->
+    <g filter="url(#emboss)" fill="none" stroke="#ECE7DD" stroke-width="1.1">
+      <line x1="0" y1="186.7" x2="360" y2="186.7"/>
+      <line x1="0" y1="373.3" x2="360" y2="373.3"/>
+    </g>
+    <!-- thin hot-foil tick where the groove meets the edge -->
+    <line x1="0" y1="186.7" x2="40" y2="186.7" stroke="#B89A5E" stroke-width="1.6"/>
+    <line x1="320" y1="373.3" x2="360" y2="373.3" stroke="#B89A5E" stroke-width="1.6"/>
+    <!-- microprint along the lower groove -->
+    <text x="312" y="369" text-anchor="end" font-family="Space Mono, Menlo, monospace" font-size="4.2" letter-spacing="1.2" fill="#16181D" fill-opacity="0.22">SEKAN · ONE CARD · THREE CELLS</text>
+  </g>
+
+  <!-- edge: printed hairline + soft bevel -->
+  <rect x="0.5" y="0.5" width="359" height="559" rx="27.5" fill="none" stroke="#D9D3C6" stroke-width="1"/>
+  <rect x="2" y="2" width="356" height="556" rx="26" fill="none" stroke="#FFFFFF" stroke-opacity="0.7" stroke-width="1"/>
+
+  <!-- issuer -->
+  <text x="40" y="58" font-family="Pretendard Variable, Pretendard, Apple SD Gothic Neo, Noto Sans KR, sans-serif" font-size="11" font-weight="600" letter-spacing="2.2" fill="#16181D" fill-opacity="0.72">[ISSUER]</text>
+
+  <!-- contactless -->
+  <g transform="translate(306 50)" fill="none" stroke="#16181D" stroke-opacity="0.62" stroke-width="1.6" stroke-linecap="round">
+    <path d="M0 -5 A6 6 0 0 1 0 5"/>
+    <path d="M4.5 -9 A11 11 0 0 1 4.5 9"/>
+    <path d="M9 -13 A16 16 0 0 1 9 13"/>
+  </g>
+
+  <!-- chip -->
+  <g transform="translate(40 100)">
+    <rect width="50" height="38" rx="7" fill="url(#gold)"/>
+    <rect x="0.5" y="0.5" width="49" height="37" rx="6.5" fill="none" stroke="#9E8150" stroke-opacity="0.55"/>
+    <g fill="none" stroke="#8F7444" stroke-opacity="0.6" stroke-width="0.9">
+      <path d="M0 13 H15 M0 25 H15 M35 13 H50 M35 25 H50"/>
+      <path d="M15 0 V38 M35 0 V38"/>
+      <rect x="15" y="10" width="20" height="18" rx="3"/>
+    </g>
+  </g>
+
+  <!-- logo lockup: symbol + 세칸 -->
+  <g transform="translate(40 452)">
+    <!-- symbol: an ink tile cut into three cells; the picked (top) cell is lime -->
+    <g clip-path="url(#tile)">
+      <rect x="0" y="0" width="34" height="42" fill="#16181D"/>
+      <rect x="0" y="0" width="34" height="13.2" fill="#C8F25A"/>
+      <rect x="0" y="13.2" width="34" height="1.8" fill="#F2EEE6"/>
+      <rect x="0" y="27.2" width="34" height="1.8" fill="#F2EEE6"/>
+    </g>
+    <text x="46" y="35" font-family="Pretendard Variable, Pretendard, Apple SD Gothic Neo, Noto Sans KR, sans-serif" font-size="35" font-weight="800" letter-spacing="-0.8" fill="#16181D">세칸</text>
+  </g>
+
+  <!-- card type + network placeholder -->
+  <text x="40" y="522" font-family="Space Mono, Menlo, monospace" font-size="9.5" letter-spacing="3" fill="#16181D" fill-opacity="0.6">CREDIT</text>
+  <g transform="translate(254 450)">
+    <rect width="66" height="44" rx="6" fill="none" stroke="#16181D" stroke-opacity="0.35" stroke-width="0.9" stroke-dasharray="2.5 2"/>
+    <text x="33" y="25.5" text-anchor="middle" font-family="Space Mono, Menlo, monospace" font-size="8.5" letter-spacing="1.5" fill="#16181D" fill-opacity="0.5">NETWORK</text>
+  </g>
+
+  <!-- corner engraving: cell mark + code -->
+  <g transform="translate(320 522)" fill="#16181D" fill-opacity="0.45">
+    <text x="-14" y="0" text-anchor="end" font-family="Space Mono, Menlo, monospace" font-size="7.5" letter-spacing="1.6">NOON</text>
+    <rect x="-9" y="-7.5" width="9" height="2" rx="0.6"/>
+    <rect x="-9" y="-4.3" width="9" height="2" rx="0.6" fill-opacity="0.5"/>
+    <rect x="-9" y="-1.1" width="9" height="2" rx="0.6" fill-opacity="0.5"/>
+  </g>
+</svg>

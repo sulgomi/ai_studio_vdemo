@@ -1,0 +1,177 @@
+{
+  "eval": [
+    {
+      "i": 0,
+      "name": "이번 달 내 영역 카드(가칭)",
+      "profit": 3.23,
+      "novelty": 0.75,
+      "sim": 0.17,
+      "nearest": "카드의정석2 MILE&POINT",
+      "cx": 0.4,
+      "indepCx": 0.53,
+      "appliedCx": 0.4,
+      "adopt": 0.65,
+      "adopterProfit": 2.59,
+      "cherry": 0.29,
+      "topReject": "inertia",
+      "special_point_ok": true,
+      "errs": [],
+      "pass": true,
+      "fails": [],
+      "score": 0.631
+    },
+    {
+      "i": 1,
+      "name": "구독 점검 챌린지 카드(가칭)",
+      "profit": 3.84,
+      "novelty": 0.25,
+      "sim": 0.43,
+      "nearest": "처음(ANNIVERSE)",
+      "cx": 0.45,
+      "indepCx": 0.53,
+      "appliedCx": 0.45,
+      "adopt": 0.375,
+      "adopterProfit": 2.88,
+      "cherry": 0.5,
+      "topReject": "inertia",
+      "special_point_ok": true,
+      "errs": [],
+      "pass": false,
+      "fails": [
+        "adopt<0.38"
+      ],
+      "score": 0.426
+    },
+    {
+      "i": 2,
+      "name": "구독 나눠내기 그룹 카드(가칭)",
+      "profit": 3.59,
+      "novelty": 0.5,
+      "sim": 0.14,
+      "nearest": "디지로카 London",
+      "cx": 0.45,
+      "indepCx": 0.53,
+      "appliedCx": 0.45,
+      "adopt": 0.485,
+      "adopterProfit": 2.86,
+      "cherry": 0.39,
+      "topReject": "inertia",
+      "special_point_ok": true,
+      "errs": [],
+      "pass": true,
+      "fails": [],
+      "score": 0.551
+    }
+  ],
+  "winner": {
+    "card": {
+      "working_title": "이번 달 내 영역 카드(가칭)",
+      "lever": "benefit_structure",
+      "variation": "적립 영역을 고객이 고르지 않고 앱이 지난달 결제 내역으로 매월 자동 배정하는 혜택 구조 안이다. 둘째 안은 구독 점검 챌린지 경험, 셋째 안은 구독을 나눠 내는 친구 그룹이라는 타깃 세분이 중심이다.",
+      "one_liner": "외식·배달, 온라인쇼핑, 구독·디지털 중 지난달 가장 많이 쓴 영역에 이번 달 1.2%를, 나머지 두 영역에 0.8%를 앱이 자동으로 배정해 주는 카드",
+      "segId": "young",
+      "need": "digital",
+      "hook": "고르지 않아도 지난달 소비가 이번 달 적립 영역을 정해 주는 카드",
+      "special_point": {
+        "hook": "지난달 결제 내역으로 이번 달 집중 적립 영역을 앱이 자동 배정",
+        "why_unusual": "경쟁 카드 34종 중 AI 개인화(ai_personalize) 태그를 가진 카드는 0종이고, 자동 최적 혜택(auto_best)도 체크카드 1종뿐이라 신용카드에서 영역 배정을 자동으로 바꿔 주는 구조가 없다.",
+        "proof_mechanism": "매월 1일 앱이 지난달 이 카드 결제를 세 영역으로 집계해 비중 1위 영역을 집중 영역(1.2%)으로, 나머지 두 영역을 기본 영역(0.8%)으로 지정하고, 배정 근거(영역별 결제액)를 앱 첫 화면에 보여 준다.",
+        "not_like": "고객이 매월 직접 팩을 골라야 하는 항목 택1·월 변경형 카드와 다르게 선택 행위가 없고, 실적 구간마다 할인율이 달라지는 구간제와도 다르게 조건은 전월실적 20만원 하나다."
+      },
+      "cvp": {
+        "target": "카드 혜택 조건을 매달 확인하기 번거로운 GenZ 사회초년생(25-29)",
+        "need": "구독·디지털(need:digital)과 절약(need:saving), 단순함(need:simple)",
+        "offer": "앱이 지난달 소비로 집중 적립 영역을 자동 배정하고 간편결제 등록 결제도 같은 기준으로 적립",
+        "key_benefit": "영역을 고르거나 바꾸는 수고 없이 자기 소비 비중이 큰 영역에서 적립을 더 받는다",
+        "alternative": "항목 택1·월 변경형 체크카드, 외식·온라인 청구할인 신용카드",
+        "differentiator": "신용카드에서 영역 배정을 자동으로 하고 배정 근거를 앱에서 보여 준다",
+        "reason_to_believe": "T1, T2, tag:ai_personalize, tag:auto_best, need:digital"
+      },
+      "tags": [
+        "ai_personalize",
+        "auto_best",
+        "reward_point",
+        "anti_cap"
+      ],
+      "rates": {
+        "dining": 0.012,
+        "online": 0.008,
+        "sub": 0.008
+      },
+      "capPerCat": 0.5,
+      "fee": 1,
+      "minPerf": 20,
+      "cx": 0.4,
+      "links": [],
+      "mechanics": [
+        "대상: 만 25~29세 개인 신용카드 회원이며 앱에서 발급 신청 후 네이버페이·카카오페이·토스페이 등록 결제도 적립 대상에 포함한다.",
+        "적립: 매월 1일 지난달 이 카드 결제액 기준 1위 영역(외식·배달, 온라인쇼핑, 구독·디지털 중)에 1.2%, 나머지 두 영역에 0.8%를 포인트로 적립하고, 첫 달은 외식·배달을 집중 영역으로 둔다.",
+        "조건과 한도: 전월 이용실적 20만원 이상인 달에만 적립하며, 영역별 월 적립 한도는 5천원이고 배정은 월 1회만 바뀌어 월중 영역을 옮겨 적립을 늘릴 수 없다.",
+        "고지: 배정 결과와 영역별 결제액을 매월 1일 앱 알림으로 안내하고, 적립률·한도를 바꿀 때는 앱과 문자로 사전 고지한다."
+      ],
+      "evidence_ids": [
+        "T1",
+        "T2",
+        "T5",
+        "tag:ai_personalize",
+        "tag:auto_best",
+        "tag:anti_cap",
+        "need:digital"
+      ],
+      "assumptions": [
+        "사회초년생 대다수의 지난달 1위 영역이 외식·배달 또는 온라인쇼핑이라 집중 영역이 자주 바뀌지 않는다.",
+        "고객은 자동 배정 근거가 앱 첫 화면에 보이면 배정 결과를 신뢰한다."
+      ],
+      "hypotheses": [
+        "적립 영역을 직접 고르지 않고 앱이 지난달 소비로 정해 주는 방식이 편하다고 느낍니까, 통제할 수 없어 불안하다고 느낍니까?",
+        "지금 쓰는 카드를 두고 이 카드로 주 결제를 옮길 만큼 집중 영역 1.2% 적립이 체감됩니까?",
+        "전월실적 20만원 조건이 첫 신용카드 사용자에게 부담으로 느껴집니까?"
+      ],
+      "risks": [
+        "자동 배정 알고리즘의 설명 가능성과 결제 데이터 활용 동의 범위는 사내 확인 필요.",
+        "적립률과 한도는 설계값이며 원가 검증 전이다.",
+        "경쟁사가 자동 최적 혜택을 신용카드로 옮기면 차별성이 줄어든다."
+      ],
+      "rationale": "pick(young×digital)의 차별 축인 개인화 혜택 추천(tag:ai_personalize 0종)을 혜택 산정 방식 자체로 구현했다. 조건은 전월실적 20만원과 영역별 월 한도 하나로 줄여 단순함 니즈와 혜택 변경 우려(T5)에 맞췄고, 혜택률은 원가를 고려해 1.2%와 0.8%로 두었다. rates는 사회초년생 다수의 집중 영역을 외식·배달로 놓은 기준값이다."
+    },
+    "metrics": {
+      "i": 0,
+      "name": "이번 달 내 영역 카드(가칭)",
+      "profit": 3.23,
+      "novelty": 0.75,
+      "sim": 0.17,
+      "nearest": "카드의정석2 MILE&POINT",
+      "cx": 0.4,
+      "indepCx": 0.53,
+      "appliedCx": 0.4,
+      "adopt": 0.65,
+      "adopterProfit": 2.59,
+      "cherry": 0.29,
+      "topReject": "inertia",
+      "special_point_ok": true,
+      "errs": [],
+      "pass": true,
+      "score": 0.631
+    },
+    "ranking": [
+      {
+        "i": 0,
+        "name": "이번 달 내 영역 카드(가칭)",
+        "score": 0.631,
+        "pass": true
+      },
+      {
+        "i": 2,
+        "name": "구독 나눠내기 그룹 카드(가칭)",
+        "score": 0.551,
+        "pass": true
+      },
+      {
+        "i": 1,
+        "name": "구독 점검 챌린지 카드(가칭)",
+        "score": 0.426,
+        "pass": false
+      }
+    ]
+  }
+}

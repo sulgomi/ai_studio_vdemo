@@ -1,0 +1,119 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 560" width="360" height="560">
+  <defs>
+    <clipPath id="card"><rect x="0" y="0" width="360" height="560" rx="28"/></clipPath>
+    <linearGradient id="base" x1="0.85" y1="0" x2="0.45" y2="1">
+      <stop offset="0" stop-color="#222D56"/>
+      <stop offset="0.4" stop-color="#1C2443"/>
+      <stop offset="0.8" stop-color="#171A26"/>
+      <stop offset="1" stop-color="#15171C"/>
+    </linearGradient>
+    <radialGradient id="lamp" cx="0.92" cy="0.04" r="0.7">
+      <stop offset="0" stop-color="#9AA8D6" stop-opacity="0.12"/>
+      <stop offset="1" stop-color="#23305C" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="h3" width="8" height="3" patternUnits="userSpaceOnUse"><rect width="8" height="0.5" fill="#C9D2F0" fill-opacity="0.04"/></pattern>
+    <pattern id="h4" width="8" height="4" patternUnits="userSpaceOnUse"><rect width="8" height="0.5" fill="#C9D2F0" fill-opacity="0.035"/></pattern>
+    <pattern id="h5" width="8" height="5.5" patternUnits="userSpaceOnUse"><rect width="8" height="0.5" fill="#C9D2F0" fill-opacity="0.03"/></pattern>
+    <filter id="grain" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" seed="11" result="n"/>
+      <feColorMatrix in="n" type="matrix" values="0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  0 0 0 0.06 0"/>
+    </filter>
+    <linearGradient id="foil" x1="0" y1="0" x2="1" y2="0.35">
+      <stop offset="0" stop-color="#B6DE4C"/>
+      <stop offset="0.3" stop-color="#E6FFA6"/>
+      <stop offset="0.5" stop-color="#C8F25A"/>
+      <stop offset="0.75" stop-color="#9DC23C"/>
+      <stop offset="1" stop-color="#CDEF6A"/>
+    </linearGradient>
+    <pattern id="sig" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+      <rect width="6" height="6" fill="#ECE8DE"/>
+      <rect width="3" height="6" fill="#E3DED2"/>
+    </pattern>
+    <linearGradient id="edge" x1="0" y1="0" x2="0.4" y2="1">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity="0.2"/>
+      <stop offset="0.5" stop-color="#FFFFFF" stop-opacity="0.04"/>
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0.1"/>
+    </linearGradient>
+  </defs>
+
+  <g clip-path="url(#card)">
+    <rect width="360" height="560" fill="url(#base)"/>
+    <rect x="0" width="120" height="560" fill="url(#h5)"/>
+    <rect x="120" width="120" height="560" fill="url(#h4)"/>
+    <rect x="240" width="120" height="560" fill="url(#h3)"/>
+    <rect width="360" height="560" fill="url(#lamp)"/>
+    <rect width="360" height="560" filter="url(#grain)"/>
+  </g>
+
+  <g font-family="Pretendard Variable, Pretendard, Apple SD Gothic Neo, Noto Sans KR, sans-serif">
+    <!-- header -->
+    <g transform="translate(32 34)">
+      <rect x="0.6" y="0.6" width="18.8" height="18.8" rx="4" fill="none" stroke="url(#foil)" stroke-width="1.2"/>
+      <rect x="6.3" y="1.2" width="1.2" height="17.6" fill="#C8F25A"/>
+      <rect x="12.5" y="1.2" width="1.2" height="17.6" fill="#B4DC4C"/>
+      <path d="M13.1 1.2 H15.6 A3.2 3.2 0 0 1 18.8 4.4 V15.6 A3.2 3.2 0 0 1 15.6 18.8 H13.1 Z" fill="url(#foil)"/>
+      <text x="27" y="15.6" font-size="16" font-weight="800" letter-spacing="-0.4" fill="url(#foil)">세칸</text>
+    </g>
+    <text x="328" y="49" text-anchor="end" font-size="11" font-weight="600" letter-spacing="1.2" fill="#B8BDC4" fill-opacity="0.85">[ISSUER]</text>
+
+    <!-- card data (placeholders) -->
+    <g font-family="Space Mono, SF Mono, Menlo, monospace">
+      <text x="32" y="98" font-size="7.5" letter-spacing="1.8" fill="#B8BDC4" fill-opacity="0.6">CARD NUMBER</text>
+      <text x="32" y="122" font-size="17" letter-spacing="1.2" fill="#E9ECF2">0000 0000 0000 0000</text>
+
+      <text x="32" y="158" font-size="7.5" letter-spacing="1.8" fill="#B8BDC4" fill-opacity="0.6">VALID THRU</text>
+      <text x="32" y="178" font-size="14" letter-spacing="1" fill="#E9ECF2">00/00</text>
+      <text x="140" y="158" font-size="7.5" letter-spacing="1.8" fill="#B8BDC4" fill-opacity="0.6">CVC</text>
+      <text x="140" y="178" font-size="14" letter-spacing="1" fill="#E9ECF2">000</text>
+
+      <text x="32" y="212" font-size="7.5" letter-spacing="1.8" fill="#B8BDC4" fill-opacity="0.6">NAME</text>
+      <text x="32" y="230" font-size="11" letter-spacing="1.6" fill="#E9ECF2" fill-opacity="0.9">YOUR NAME</text>
+    </g>
+
+    <!-- signature -->
+    <text x="32" y="266" font-family="Space Mono, SF Mono, Menlo, monospace" font-size="7.5" letter-spacing="1.8" fill="#B8BDC4" fill-opacity="0.6">AUTHORIZED SIGNATURE</text>
+    <rect x="32" y="274" width="296" height="34" rx="4" fill="url(#sig)"/>
+    <rect x="32" y="274" width="296" height="34" rx="4" fill="none" stroke="#000" stroke-opacity="0.25"/>
+    <text x="320" y="295" text-anchor="end" font-size="8" fill="#16181D" fill-opacity="0.45">서명하지 않은 카드는 사용할 수 없습니다</text>
+
+    <!-- rule -->
+    <line x1="32" y1="336" x2="328" y2="336" stroke="#B8BDC4" stroke-opacity="0.18" stroke-width="0.6"/>
+    <rect x="32" y="352" width="3" height="34" rx="1.5" fill="#C8F25A"/>
+    <text x="45" y="363" font-size="10.5" font-weight="600" fill="#F4F1EA">외식·배달, 온라인쇼핑, 구독·디지털 중</text>
+    <text x="45" y="379" font-size="10.5" font-weight="600" fill="#F4F1EA">직전 3개월 이용액 합계 1위 영역에 자동 배정</text>
+    <text x="45" y="398" font-size="9" fill="#B8BDC4" fill-opacity="0.85">조건과 한도는 앱에서 확인하세요.</text>
+    <line x1="32" y1="420" x2="328" y2="420" stroke="#B8BDC4" stroke-opacity="0.18" stroke-width="0.6"/>
+
+    <!-- security + service -->
+    <g font-size="8" fill="#B8BDC4" fill-opacity="0.7">
+      <text x="32" y="442">이 카드는 회원 본인만 사용할 수 있으며 양도·대여할 수 없습니다.</text>
+      <text x="32" y="455">분실·도난 시 즉시 고객센터로 신고해 주세요.</text>
+    </g>
+    <g font-family="Space Mono, SF Mono, Menlo, monospace" font-size="8" letter-spacing="0.6" fill="#E9ECF2" fill-opacity="0.85">
+      <text x="32" y="478"><tspan font-family="Pretendard Variable, Pretendard, Apple SD Gothic Neo, Noto Sans KR, sans-serif" fill="#B8BDC4">고객센터</tspan>  0000-0000</text>
+      <text x="170" y="478"><tspan font-family="Pretendard Variable, Pretendard, Apple SD Gothic Neo, Noto Sans KR, sans-serif" fill="#B8BDC4">해외</tspan>  +00-0-0000-0000</text>
+    </g>
+  </g>
+
+  <!-- bottom row -->
+  <text x="32" y="504" font-family="Space Mono, SF Mono, Menlo, monospace" font-size="8" letter-spacing="2" fill="#B8BDC4" fill-opacity="0.5">NIGHT · 03</text>
+  <g transform="translate(256 492)">
+    <rect width="72" height="30" rx="6" fill="#FFFFFF" fill-opacity="0.04" stroke="#B8BDC4" stroke-opacity="0.45" stroke-width="0.8" stroke-dasharray="2 2"/>
+    <text x="36" y="18.5" text-anchor="middle" font-family="Space Mono, SF Mono, Menlo, monospace" font-size="8" letter-spacing="1.6" fill="#B8BDC4" fill-opacity="0.75">NETWORK</text>
+  </g>
+
+  <!-- corner deboss, mirrored (seen from the back) -->
+  <g fill="none" stroke-width="1">
+    <g stroke="#05070C" stroke-opacity="0.55" transform="translate(0 -0.7)">
+      <path d="M14 520 V532 A14 14 0 0 0 28 546 H40"/>
+      <path d="M20 520 V532 A8 8 0 0 0 28 540 H40"/>
+    </g>
+    <g stroke="#C9D2F0" stroke-opacity="0.18">
+      <path d="M14 520 V532 A14 14 0 0 0 28 546 H40"/>
+      <path d="M20 520 V532 A8 8 0 0 0 28 540 H40"/>
+    </g>
+  </g>
+
+  <rect x="0.5" y="0.5" width="359" height="559" rx="27.5" fill="none" stroke="url(#edge)"/>
+  <rect x="1.5" y="1.5" width="357" height="557" rx="26.5" fill="none" stroke="#000" stroke-opacity="0.25"/>
+</svg>

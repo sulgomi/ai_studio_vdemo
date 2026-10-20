@@ -1,0 +1,158 @@
+[
+  {
+    "seg": "genz",
+    "need": "digital",
+    "score": 0.437,
+    "parts": {
+      "need_weight": 0.85,
+      "gap": 0.603,
+      "trend": 0.488
+    },
+    "rank": 1,
+    "ceiling": 0.233,
+    "feasible": false
+  },
+  {
+    "seg": "young",
+    "need": "digital",
+    "score": 0.385,
+    "parts": {
+      "need_weight": 0.75,
+      "gap": 0.603,
+      "trend": 0.488
+    },
+    "rank": 2,
+    "ceiling": 0.45,
+    "feasible": true
+  },
+  {
+    "seg": "young",
+    "need": "saving",
+    "score": 0.351,
+    "parts": {
+      "need_weight": 0.8,
+      "gap": 0.559,
+      "trend": 0.36
+    },
+    "rank": 3,
+    "ceiling": 0.453,
+    "feasible": true
+  },
+  {
+    "seg": "genz",
+    "need": "social",
+    "score": 0.338,
+    "parts": {
+      "need_weight": 0.7,
+      "gap": 0.975,
+      "trend": 0.15
+    },
+    "rank": 4,
+    "ceiling": 0.222,
+    "feasible": false
+  },
+  {
+    "seg": "genz",
+    "need": "simple",
+    "score": 0.338,
+    "parts": {
+      "need_weight": 0.7,
+      "gap": 0.632,
+      "trend": 0.39
+    },
+    "rank": 5,
+    "ceiling": 0.225,
+    "feasible": false
+  },
+  {
+    "seg": "genz",
+    "need": "saving",
+    "score": 0.33,
+    "parts": {
+      "need_weight": 0.75,
+      "gap": 0.559,
+      "trend": 0.36
+    },
+    "rank": 6,
+    "ceiling": 0.227,
+    "feasible": false
+  },
+  {
+    "seg": "young",
+    "need": "simple",
+    "score": 0.314,
+    "parts": {
+      "need_weight": 0.65,
+      "gap": 0.632,
+      "trend": 0.39
+    },
+    "rank": 7,
+    "ceiling": 0.435,
+    "feasible": true
+  },
+  {
+    "seg": "single",
+    "need": "saving",
+    "score": 0.308,
+    "parts": {
+      "need_weight": 0.7,
+      "gap": 0.559,
+      "trend": 0.36
+    },
+    "rank": 8,
+    "ceiling": 0.762,
+    "feasible": true
+  },
+  {
+    "seg": "single",
+    "need": "digital",
+    "score": 0.308,
+    "parts": {
+      "need_weight": 0.6,
+      "gap": 0.603,
+      "trend": 0.488
+    },
+    "rank": 9,
+    "ceiling": 0.747,
+    "feasible": true
+  },
+  {
+    "seg": "young",
+    "need": "social",
+    "score": 0.289,
+    "parts": {
+      "need_weight": 0.6,
+      "gap": 0.975,
+      "trend": 0.15
+    },
+    "rank": 10,
+    "ceiling": 0.435,
+    "feasible": true
+  },
+  {
+    "seg": "single",
+    "need": "simple",
+    "score": 0.289,
+    "parts": {
+      "need_weight": 0.6,
+      "gap": 0.632,
+      "trend": 0.39
+    },
+    "rank": 11,
+    "ceiling": 0.758,
+    "feasible": true
+  },
+  {
+    "seg": "single",
+    "need": "travel",
+    "score": 0.244,
+    "parts": {
+      "need_weight": 0.6,
+      "gap": 0.51,
+      "trend": 0.33
+    },
+    "rank": 12,
+    "ceiling": 0.752,
+    "feasible": true
+  }
+]

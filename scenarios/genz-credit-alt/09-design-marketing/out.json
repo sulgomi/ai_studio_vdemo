@@ -1,0 +1,1179 @@
+{
+  "run_id": "genz-credit-alt-001",
+  "request_id": "genz-credit-alt-001-design_marketing-r1",
+  "agent": "design_marketing",
+  "contract_version": "1.0",
+  "model": "claude-opus-5-5",
+  "status": "ok",
+  "answer": "이름 후보 3개 중 '첫장'을 추천하고, 제휴 은행 결제계좌 지정 하나를 캐시백 적용 조건으로 둔 첫 신용카드 전략, 세로형 시안 3종(LINK, DESK, DUSK), 릴스 20초·유튜브 25초·홍보 20초 스토리보드를 만들었습니다. 가드레일 fix 4건은 보증금 경로 대외 제외, 정책 인용 금지, 비율은 영역별 한도와 같은 줄, '실적 계산 없이' 미사용, 중단 시점 단일 표현으로 반영했고 중단 기준일·동의 항목·한도 구조는 사람 확인으로 남겼습니다. 채널 근거는 간편결제 자료(T2)뿐이라 숏폼·동영상은 시험 집행으로 두고 조사 주제 3개를 남겼으며, 영상은 H5 승인 전이라 렌더하지 않았습니다.",
+  "result": {
+    "naming": {
+      "candidates": [
+        {
+          "name": "첫장",
+          "rationale": "처음 받는 신용카드 한 장이라는 장면만 담고 비율이나 발급 조건을 약속하지 않아 실제 작동보다 강하게 읽히지 않는다(G1). 보증금 발급 경로를 이름에 담지 않았고, 두 글자라 세로 카드 로고와 영상 끝 화면에 쓰기 쉽다.",
+          "similarity_max": 0.0,
+          "similar_to": null
+        },
+        {
+          "name": "계좌하나",
+          "rationale": "캐시백 적용 조건이 제휴 은행 결제계좌 지정이라는 작동 방식을 이름에 담는다. 다만 계좌만 지정하면 모든 이용에 혜택이 붙는다고 읽힐 소지가 있어 제외 거래 병기가 늘 필요하다(G2).",
+          "similarity_max": 0.17,
+          "similar_to": "하나 나라사랑카드 체크"
+        },
+        {
+          "name": "이음",
+          "rationale": "은행 계좌와 카드를 잇는 구조를 짧게 말한다. 흔한 단어라 상표 조회 부담이 크고, 무엇을 잇는지가 이름만으로는 드러나지 않는다.",
+          "similarity_max": 0.0,
+          "similar_to": null
+        }
+      ],
+      "recommended": "첫장"
+    },
+    "strategy": {
+      "positioning": {
+        "statement": "첫 신용카드를 받는 만 19~29세에게, 제휴 은행 결제계좌 지정 하나를 캐시백 적용 조건으로 둔 연회비 없는 은행 결합 신용카드.",
+        "for_whom": "첫 신용카드를 받는 만 19~29세",
+        "what_it_is": "제휴 은행 결제계좌 연결 캐시백 신용카드",
+        "why_different": "이용금액 구간 대신 결제계좌 지정 유지를 캐시백 적용 조건으로 둔 구조"
+      },
+      "insight": {
+        "tension": "첫 신용카드는 이용금액 구간 같은 혜택 조건이 낯설고, 이번 달 혜택이 붙는지 따져 보기 어렵다.",
+        "truth": "평소 쓰는 은행 계좌에 카드를 이어 두고, 혜택 조건을 한 묶음으로 알고 싶다.",
+        "assumed": true,
+        "validate_with": "만 19~29세 소수 인원 대상 발급 화면 조건 묶음 시안 비교 테스트와 짧은 설문"
+      },
+      "personas": [
+        {
+          "name": "은행 앱 쓰는 졸업반",
+          "variant": "LINK",
+          "moment": "제휴 은행 앱에서 결제계좌를 지정하고 카드를 신청할 때",
+          "need": "평소 쓰던 은행 앱에서 첫 신용카드를 이어 받기"
+        },
+        {
+          "name": "첫 출근 주 신입",
+          "variant": "DESK",
+          "moment": "첫 출근 주 동기들과 점심 계산대에서 카드를 탭할 때",
+          "need": "외식 결제를 한 장으로 모으고 조건을 한 번에 알기"
+        },
+        {
+          "name": "첫 자취방 살림꾼",
+          "variant": "DUSK",
+          "moment": "퇴근 후 자취방에서 생활용품 장바구니를 결제할 때",
+          "need": "온라인쇼핑과 배달 결제를 결제계좌 하나에 묶어 두기"
+        }
+      ],
+      "pillars": [
+        {
+          "title": "계좌로 정한 조건",
+          "message": "캐시백 적용 조건은 제휴 은행 결제계좌 지정 유지로 정해진다.",
+          "proof": "결제계좌 지정이 유지되는 달의 이용분에 다음 달 청구 시 캐시백 적용(mechanics 2)"
+        },
+        {
+          "title": "첫 카드의 일상",
+          "message": "점심 외식, 배달 저녁, 자취방 장보기처럼 첫 카드를 쓰는 장면에 맞춘다.",
+          "proof": "외식·배달, 온라인쇼핑 두 영역 캐시백과 영역별 월 한도(mechanics 2)"
+        },
+        {
+          "title": "미리 알리는 조건",
+          "message": "계좌를 바꾸면 캐시백이 멈춘다는 점과 혜택 변경을 미리 알린다.",
+          "proof": "결제계좌 지정 해제와 혜택 변경 시 앱·문자 사전 고지(mechanics 4)"
+        }
+      ],
+      "tone": {
+        "summary": "담백하고 친절하게, 조건을 혜택과 같은 줄에 쓴다.",
+        "do": [
+          "비율은 영역별 한도와 같은 줄에 쓴다",
+          "결제계좌 지정 유지 조건을 함께 쓴다",
+          "첫 카드를 받는 생활 장면으로 설명한다"
+        ],
+        "dont": [
+          "두 영역 비율을 더한 값 쓰기",
+          "조건 없이 혜택만 읽히는 문장",
+          "발급이나 전환을 약속하는 말",
+          "정책 기관 발표 인용"
+        ]
+      },
+      "channels": [
+        {
+          "channel": "제휴 은행 앱 신청 화면",
+          "role": "결제계좌 지정과 캐시백 조건 묶음을 신청 전에 한 화면에서 보여 준다",
+          "asset": "boards",
+          "phase": "런칭"
+        },
+        {
+          "channel": "카드사 앱 발급 화면",
+          "role": "같은 조건 묶음과 제외 거래를 발급 신청 전에 보여 준다",
+          "asset": "boards",
+          "phase": "런칭"
+        },
+        {
+          "channel": "간편결제 등록 안내",
+          "role": "간편결제 일상화(T2)에 맞춰 발급 직후 등록을 안내한다",
+          "asset": "앱 안내 화면",
+          "phase": "정착"
+        },
+        {
+          "channel": "브랜드 페이지·앱 배너",
+          "role": "세 시안과 결제계좌 연결 구조를 런칭 시점에 알린다",
+          "asset": "promo",
+          "phase": "런칭"
+        },
+        {
+          "channel": "숏폼 영상(시험 집행)",
+          "role": "카드 실물과 칩으로 이어진 선을 짧게 보인다. 채널 근거 없음",
+          "asset": "reels",
+          "phase": "예열"
+        },
+        {
+          "channel": "동영상 채널(시험 집행)",
+          "role": "첫 카드의 생활 장면 세 개를 보인다. 채널 근거 없음",
+          "asset": "youtube",
+          "phase": "런칭"
+        }
+      ],
+      "phases": [
+        {
+          "name": "예열",
+          "start_day": -28,
+          "end_day": -1,
+          "goal": "결제계좌 연결 구조와 시안을 미리 알린다",
+          "actions": [
+            "광고심의 완료 소재만 집행",
+            "숏폼 소재 소규모 시험 집행",
+            "신청 화면 조건 묶음 문안 정리"
+          ]
+        },
+        {
+          "name": "런칭",
+          "start_day": 0,
+          "end_day": 14,
+          "goal": "은행 앱과 카드사 앱에서 신청을 받는다",
+          "actions": [
+            "브랜드 페이지와 앱 배너 공개",
+            "신청 화면에 적용 조건·한도·제외 거래 병기",
+            "생활 장면 영상 공개"
+          ]
+        },
+        {
+          "name": "정착",
+          "start_day": 15,
+          "end_day": 90,
+          "goal": "결제계좌 지정을 유지하며 주 카드로 쓴다",
+          "actions": [
+            "간편결제 등록 안내 발송(수신 동의 고객)",
+            "이용이 없는 회원에게 혜택 조건 안내",
+            "결제계좌 변경 사전 고지 운영 점검"
+          ]
+        }
+      ],
+      "kpis": [
+        {
+          "stage": "인지",
+          "metric": "숏폼 소재 완주율",
+          "target": "[목표값]",
+          "source": "광고 집행 관리 화면"
+        },
+        {
+          "stage": "관심",
+          "metric": "신청 화면 진입 대비 조건 묶음 확인 비율",
+          "target": "[목표값]",
+          "source": "자사·제휴 은행 앱 로그"
+        },
+        {
+          "stage": "전환",
+          "metric": "신청 경로별 발급 완료 수(은행 앱, 카드사 앱)",
+          "target": "[목표값]",
+          "source": "발급 시스템"
+        },
+        {
+          "stage": "전환",
+          "metric": "발급 후 결제계좌 지정 유지 비율",
+          "target": "[목표값]",
+          "source": "내부 데이터 확인 필요"
+        },
+        {
+          "stage": "전환",
+          "metric": "발급 후 간편결제 등록 비율",
+          "target": "[목표값]",
+          "source": "내부 데이터 확인 필요"
+        },
+        {
+          "stage": "확산",
+          "metric": "브랜드 자발 언급 수",
+          "target": "[목표값]",
+          "source": "소셜 리스닝"
+        }
+      ],
+      "risks": [
+        {
+          "risk": "G1·G2 보증금 경로 노출, 합산 비율, 조건 없이 읽히는 표현",
+          "mitigation": "보증금 경로는 대외 문구에서 빼고 비율은 영역별 한도와 같은 줄, 정책 인용 없이 전 소재 광고심의"
+        },
+        {
+          "risk": "G3 혜택 중단 시점이 문서마다 다르게 적힘",
+          "mitigation": "소재에는 '정해진 기준 시점부터 미적용' 한 표현만 쓰고 기준일이 정해진 뒤 모든 고지 문구를 일괄 교체"
+        },
+        {
+          "risk": "G4 은행·카드사 간 정보 제공 동의 범위 미정",
+          "mitigation": "개인정보·준법 확인 전에는 소재에서 동의 항목과 제휴 은행 마케팅을 언급하지 않고 신청 화면 문안 보류"
+        },
+        {
+          "risk": "G6 체리피커 비중 0.46, 손익 1.27(시뮬레이션)로 비교 유입 위험",
+          "mitigation": "비교형 메시지 대신 결제계좌 연결 일상 메시지, 통합 한도·출금 완료 조건이 정해지면 고지 문구 교체"
+        },
+        {
+          "risk": "실존 은행·결제 앱 화면 연상, 숏폼 채널 근거 부족",
+          "mitigation": "실존 로고·앱 화면 미사용, 은행명은 [제휴 은행] 자리표시, 숏폼은 시험 집행 반응 확인 후 확대"
+        }
+      ],
+      "next_steps": [
+        "광고심의에 이름·태그라인·세 영상 카피와 legal_footer 제출(G2)",
+        "상품팀의 혜택 중단 기준 시점 결정 후 고지 문구 일괄 교체(G3)",
+        "개인정보·준법의 정보 제공 동의 항목 결정 후 신청 화면 문안 작성(G4)",
+        "재무의 통합 한도 검토와 출금 완료 조건 결정 반영(G6)",
+        "기존 신용카드 보유자 신청 가능 여부 결정 후 '첫 신용카드' 표현 범위 점검(G1)",
+        "채널 근거 조사 후 숏폼·동영상 시험 집행 유지 여부 결정"
+      ],
+      "targets_from_customer": false
+    },
+    "boards": {
+      "brand": {
+        "name": "첫장",
+        "card_type": "credit",
+        "issuer_placeholder": "[ISSUER]"
+      },
+      "target": {
+        "segment": "만 19~29세, 첫 신용카드를 받는 사회초년생",
+        "contexts": [
+          "은행 앱에서 계좌 지정",
+          "첫 출근 주 점심",
+          "자취방 온라인 장보기",
+          "퇴근 후 배달 저녁",
+          "간편결제 등록"
+        ],
+        "assumed": true
+      },
+      "concept": {
+        "tagline": "내 계좌에 이어진 첫 장.",
+        "statement": "카드대금이 나가는 계좌를 제휴 은행 계좌로 정해 두고 쓰는 첫 신용카드. 처음 받는 카드를 평소 쓰던 은행 계좌 옆에 둔다.",
+        "keywords": [
+          "세로형",
+          "번호 없는 앞면",
+          "민트 포인트 1색",
+          "옆면 한 줄",
+          "뒷면 조건 묶음",
+          "칩으로 이어진 선"
+        ],
+        "front_rule_note": "앞면에는 혜택 숫자를 넣지 않는다. 비율은 영역별 한도와 같은 줄로 뒷면과 앱 안내에만 쓴다."
+      },
+      "palette": [
+        {
+          "name": "새벽크림",
+          "hex": "#F5F0E6",
+          "role": "ground"
+        },
+        {
+          "name": "먹남색",
+          "hex": "#141A2E",
+          "role": "ink"
+        },
+        {
+          "name": "연결민트",
+          "hex": "#7FE0C2",
+          "role": "accent"
+        },
+        {
+          "name": "계좌청록",
+          "hex": "#1F6F6B",
+          "role": "support"
+        },
+        {
+          "name": "저녁보라",
+          "hex": "#5B4B8A",
+          "role": "support"
+        },
+        {
+          "name": "은빛",
+          "hex": "#C3C8CF",
+          "role": "metal"
+        }
+      ],
+      "typography": {
+        "display": "Unbounded",
+        "body": "Noto Sans KR",
+        "mono": "Space Mono"
+      },
+      "layout": {
+        "orientation": "vertical",
+        "front_shows": [
+          "chip",
+          "contactless",
+          "logo",
+          "type_label"
+        ],
+        "orientation_reason": "만 19~29세가 앱으로 신청하고 탭 결제로 꺼내 쓰는 첫 카드라 세로형"
+      },
+      "variants": [
+        {
+          "code": "LINK",
+          "name": "이어진 선",
+          "material": {
+            "preset": "clear",
+            "tint": "연결민트",
+            "chip": "silver",
+            "logo_color": "먹남색"
+          },
+          "story": {
+            "headline": "은행 앱에서 이어 받은 첫 장.",
+            "lead": "민트 빛이 비치는 투명 카드에 칩까지 이어진 한 줄. 은행 앱에서 결제계좌를 지정하고 받는 첫 장이다.",
+            "points": [
+              {
+                "title": "칩으로 이어진 선",
+                "body": "로고에서 칩까지 이어지는 얇은 선 한 줄. 결제계좌와 카드가 연결된 구조를 그림으로만 보여 준다.",
+                "anchor": "front"
+              },
+              {
+                "title": "비치는 민트",
+                "body": "햇빛에 비추면 민트 빛이 도는 투명 소재. 처음 받은 카드를 창가에서 들여다보는 순간에 맞췄다.",
+                "anchor": "material"
+              },
+              {
+                "title": "선이 닿는 은색 칩",
+                "body": "투명 바탕 위 은색 칩이 연결선의 끝점이 된다. 선이 칩에서 멈춰 카드 한 장의 중심을 잡는다.",
+                "anchor": "chip"
+              },
+              {
+                "title": "뒷면 조건 한 묶음",
+                "body": "뒷면에 결제계좌 지정 유지, 영역별 월 한도, 제외 거래를 한 묶음으로 적는다. 앞면에는 숫자가 없다.",
+                "anchor": "back"
+              }
+            ],
+            "persona": "평소 쓰던 은행 앱으로 첫 신용카드를 신청하는 졸업반",
+            "mood": [
+              "맑음",
+              "산뜻",
+              "설렘"
+            ],
+            "life_scene": "은행 앱으로 신청해 받은 카드를 창가 햇빛에 비춰 보는 순간"
+          }
+        },
+        {
+          "code": "DESK",
+          "name": "첫 출근",
+          "material": {
+            "preset": "matte",
+            "tint": "새벽크림",
+            "chip": "gold",
+            "logo_color": "먹남색"
+          },
+          "story": {
+            "headline": "첫 출근 주 점심도 한 장으로.",
+            "lead": "크림색 무광 위에 민트 선 한 줄. 첫 출근 주 동기들과 점심 계산대에 설 때 담백하게 꺼내는 시안이다.",
+            "points": [
+              {
+                "title": "무광 크림",
+                "body": "지문이 덜 남는 크림색 무광 소재. 사원증 옆에 두어도 튀지 않는 차분한 촉감이다.",
+                "anchor": "material"
+              },
+              {
+                "title": "금색 칩",
+                "body": "크림 바탕에 금색 칩을 둬 계산대 조명 아래서도 손에 쥔 카드가 또렷하다.",
+                "anchor": "chip"
+              },
+              {
+                "title": "옆면 민트 한 줄",
+                "body": "카드 옆면에 민트 한 줄을 둘렀다. 지갑에 꽂아 두면 옆선만 보여도 첫 카드를 알아본다.",
+                "anchor": "edge"
+              },
+              {
+                "title": "세로 두 글자 로고",
+                "body": "세로로 세운 두 글자 로고. 탭 결제 때 손에 쥔 방향 그대로 이름이 읽힌다.",
+                "anchor": "logo"
+              }
+            ],
+            "persona": "첫 출근 주에 동기들과 점심을 먼저 계산하는 신입",
+            "mood": [
+              "담백",
+              "단정",
+              "따뜻"
+            ],
+            "life_scene": "첫 출근 주 점심 식당 계산대에서 카드를 탭하는 순간"
+          }
+        },
+        {
+          "code": "DUSK",
+          "name": "퇴근 노을",
+          "material": {
+            "preset": "gradient",
+            "stops": [
+              "저녁보라",
+              "먹남색"
+            ],
+            "chip": "graphite",
+            "logo_color": "연결민트"
+          },
+          "story": {
+            "headline": "퇴근 후 자취방의 첫 장.",
+            "lead": "보랏빛에서 남색으로 저무는 그라데이션 위 민트 로고. 첫 자취방 스탠드 아래 살림을 채우는 밤의 시안이다.",
+            "points": [
+              {
+                "title": "저무는 그라데이션",
+                "body": "보라에서 남색으로 내려앉는 앞면. 퇴근 후 불을 낮춘 자취방 조명 아래서 차분하게 보인다.",
+                "anchor": "material"
+              },
+              {
+                "title": "민트 로고",
+                "body": "어두운 바탕에 민트 로고만 밝게 남겼다. 스탠드 불빛 아래 휴대폰 옆에 둬도 이름이 읽힌다.",
+                "anchor": "logo"
+              },
+              {
+                "title": "흑연색 칩",
+                "body": "칩도 흑연색으로 낮춰 앞면의 밤 분위기를 깨지 않는다.",
+                "anchor": "chip"
+              },
+              {
+                "title": "위쪽 비접촉 표시",
+                "body": "비접촉 표시를 로고 반대편 위쪽에 두어 세로로 쥔 채 단말에 대기 쉽게 했다.",
+                "anchor": "contactless"
+              }
+            ],
+            "persona": "첫 자취방 살림을 온라인으로 하나씩 채우는 20대 초반",
+            "mood": [
+              "고요",
+              "나른",
+              "포근"
+            ],
+            "life_scene": "퇴근 후 자취방 스탠드 아래 생활용품 장바구니를 결제하는 밤"
+          }
+        }
+      ],
+      "benefits": [
+        {
+          "category": "외식·배달 캐시백",
+          "headline": "외식·배달 0.7% 캐시백",
+          "condition": "결제계좌 지정 유지 달, 영역별 월 캐시백 한도 4천원",
+          "source": "card.mechanics[1]",
+          "variant": "DESK"
+        },
+        {
+          "category": "온라인쇼핑 캐시백",
+          "headline": "온라인쇼핑 0.6% 캐시백",
+          "condition": "결제계좌 지정 유지 달, 영역별 월 캐시백 한도 4천원",
+          "source": "card.mechanics[1]",
+          "variant": "DUSK"
+        },
+        {
+          "category": "발급 조건",
+          "headline": "연회비 없음",
+          "condition": "제휴 은행 결제계좌 지정 시 발급, 전월 이용금액 조건 없음",
+          "source": "card.mechanics[0]",
+          "variant": "LINK"
+        },
+        {
+          "category": "혜택 조건·고지",
+          "headline": "계좌 변경 시 혜택 중단",
+          "condition": "결제계좌 변경 시 혜택 중단, 앱·문자로 사전 고지",
+          "source": "card.mechanics[3]",
+          "variant": "LINK"
+        }
+      ],
+      "needs_compliance_review": true,
+      "assumptions": [
+        "타깃 일상 맥락과 페르소나 3명은 브리프에서 추론한 값이다",
+        "만 19~29세 타깃이고 앱 신청·탭 결제 중심이라 세로형으로 정했다",
+        "보증금 발급 경로는 G1에 따라 대외 혜택 목록에서 뺐다(입력 benefits 5개 중 4개 사용)",
+        "카드 번호는 앞면에 넣지 않고 자리표시 0427 1017 2026 000N만 뒷면에 쓴다",
+        "발급사는 [ISSUER], 제휴 은행명은 [제휴 은행] 자리표시로 둔다"
+      ]
+    },
+    "storyboards": {
+      "reels": {
+        "format": "reels",
+        "aspect": "9:16",
+        "fps": 30,
+        "duration_s": 20,
+        "hero_variant": "LINK",
+        "scenes": [
+          {
+            "id": "reveal",
+            "preset": "hero_reveal",
+            "start_s": 0,
+            "duration_s": 2.0,
+            "variant": "LINK",
+            "captions": [
+              {
+                "words": [
+                  "계좌에",
+                  "이어진",
+                  "첫 장"
+                ],
+                "start_s": 0.3,
+                "end_s": 1.9,
+                "position": "top",
+                "emphasis": [
+                  2
+                ]
+              }
+            ]
+          },
+          {
+            "id": "float",
+            "preset": "hero_float",
+            "start_s": 2.0,
+            "duration_s": 2.5,
+            "variant": "LINK",
+            "captions": [
+              {
+                "words": [
+                  "은행 앱에서",
+                  "결제계좌",
+                  "지정하고"
+                ],
+                "start_s": 0.2,
+                "end_s": 2.3,
+                "position": "top",
+                "emphasis": [
+                  2
+                ]
+              }
+            ]
+          },
+          {
+            "id": "close_line",
+            "preset": "detail_closeup",
+            "start_s": 4.5,
+            "duration_s": 2.0,
+            "variant": "LINK",
+            "params": {
+              "focus": "logo"
+            },
+            "captions": [
+              {
+                "words": [
+                  "칩까지",
+                  "이어진",
+                  "한 줄"
+                ],
+                "start_s": 0.2,
+                "end_s": 1.8,
+                "position": "top",
+                "emphasis": [
+                  2
+                ],
+                "style": "pill"
+              }
+            ]
+          },
+          {
+            "id": "close_mat",
+            "preset": "detail_closeup",
+            "start_s": 6.5,
+            "duration_s": 2.0,
+            "variant": "LINK",
+            "params": {
+              "focus": "material"
+            },
+            "captions": [
+              {
+                "words": [
+                  "번호",
+                  "없는",
+                  "앞면"
+                ],
+                "start_s": 0.2,
+                "end_s": 1.8,
+                "position": "top",
+                "emphasis": [
+                  2
+                ],
+                "style": "pill"
+              }
+            ]
+          },
+          {
+            "id": "flip",
+            "preset": "flip",
+            "start_s": 8.5,
+            "duration_s": 2.5,
+            "variant": "LINK",
+            "captions": [
+              {
+                "words": [
+                  "조건은",
+                  "뒷면에",
+                  "한 묶음"
+                ],
+                "start_s": 0.3,
+                "end_s": 2.3,
+                "position": "top",
+                "emphasis": [
+                  2
+                ]
+              }
+            ]
+          },
+          {
+            "id": "fan",
+            "preset": "fan_merge",
+            "start_s": 11.0,
+            "duration_s": 2.5,
+            "captions": [
+              {
+                "words": [
+                  "낮에도",
+                  "밤에도",
+                  "한 장으로"
+                ],
+                "start_s": 0.3,
+                "end_s": 2.3,
+                "position": "top",
+                "emphasis": [
+                  2
+                ]
+              }
+            ]
+          },
+          {
+            "id": "benefit",
+            "preset": "benefit_card",
+            "start_s": 13.5,
+            "duration_s": 3.5,
+            "variant": "LINK",
+            "params": {
+              "benefits": [
+                {
+                  "headline": "외식·배달 0.7% 캐시백",
+                  "condition": "결제계좌 지정 유지 달, 영역별 월 캐시백 한도 4천원"
+                },
+                {
+                  "headline": "온라인쇼핑 0.6% 캐시백",
+                  "condition": "결제계좌 지정 유지 달, 영역별 월 캐시백 한도 4천원"
+                },
+                {
+                  "headline": "연회비 없음",
+                  "condition": "제휴 은행 결제계좌 지정 시 발급, 전월 이용금액 조건 없음"
+                }
+              ],
+              "note": "비율은 영역별 한도와 같은 줄에 표시하고 두 비율을 더한 값을 쓰지 않는다. 제외 거래(상품권·선불충전 등)를 같은 화면 하단에 둔다. 가드레일 G1이 대외 문구에서 뺀 발급 경로 항목은 넣지 않는다(G1, G2)"
+            },
+            "captions": [
+              {
+                "words": [
+                  "조건과",
+                  "함께",
+                  "확인하세요"
+                ],
+                "start_s": 0.3,
+                "end_s": 3.3,
+                "position": "bottom",
+                "emphasis": [
+                  2
+                ]
+              }
+            ]
+          },
+          {
+            "id": "end",
+            "preset": "stack_lockup",
+            "start_s": 17.0,
+            "duration_s": 3.0
+          }
+        ],
+        "ending": {
+          "type": "stack_lockup",
+          "copy_words": [
+            "내",
+            "계좌에",
+            "이어진",
+            "첫 장."
+          ],
+          "cta": "COMING SOON"
+        },
+        "audio": {
+          "mood": "맑은 기타 루프의 가벼운 팝",
+          "file": null
+        },
+        "legal_footer": "외식·배달 0.7%(월 4천원 한도), 온라인쇼핑 0.6%(월 4천원 한도) 캐시백. 제휴 은행 결제계좌 지정 유지 달 적용, 상품권·선불충전 등 제외. 연회비 없음. 계좌 변경 시 정해진 기준 시점부터 미적용."
+      },
+      "youtube": {
+        "format": "youtube",
+        "aspect": "16:9",
+        "fps": 30,
+        "duration_s": 25,
+        "scenes": [
+          {
+            "id": "link",
+            "preset": "life_daylight_seethrough",
+            "start_s": 0,
+            "duration_s": 6.5,
+            "variant": "LINK",
+            "label": "01 신청 다음 날 창가",
+            "params": {
+              "note": "은행 앱에서 결제계좌를 지정하고 신청한 뒤 받은 투명 카드를 창가 햇빛에 비춰 보는 장면. 실존 은행 앱 화면·로고 없음, 은행명은 [제휴 은행] 자리표시"
+            },
+            "captions": [
+              {
+                "words": [
+                  "은행 앱으로",
+                  "신청한",
+                  "첫 장"
+                ],
+                "start_s": 0.5,
+                "end_s": 3.0,
+                "position": "left",
+                "emphasis": [
+                  2
+                ]
+              },
+              {
+                "words": [
+                  "연회비",
+                  "없는",
+                  "첫 장"
+                ],
+                "start_s": 3.2,
+                "end_s": 6.2,
+                "position": "left",
+                "emphasis": [
+                  2
+                ]
+              }
+            ]
+          },
+          {
+            "id": "desk",
+            "preset": "life_tap_pay",
+            "start_s": 6.5,
+            "duration_s": 6.5,
+            "variant": "DESK",
+            "label": "02 첫 출근 주 점심",
+            "params": {
+              "note": "첫 출근 주 동기들과 점심 식당 계산대에서 세로 카드를 탭하는 장면. 실존 결제 단말 로고 없음"
+            },
+            "captions": [
+              {
+                "words": [
+                  "첫 출근 주",
+                  "점심 계산"
+                ],
+                "start_s": 0.5,
+                "end_s": 3.0,
+                "position": "left",
+                "emphasis": [
+                  1
+                ]
+              },
+              {
+                "words": [
+                  "계좌 지정 달",
+                  "외식·배달",
+                  "캐시백"
+                ],
+                "start_s": 3.2,
+                "end_s": 6.2,
+                "position": "left",
+                "emphasis": [
+                  2
+                ]
+              }
+            ]
+          },
+          {
+            "id": "dusk",
+            "preset": "life_night_light",
+            "start_s": 13.0,
+            "duration_s": 6.5,
+            "variant": "DUSK",
+            "label": "03 자취방 밤 장바구니",
+            "params": {
+              "note": "퇴근 후 첫 자취방 스탠드 아래에서 생활용품 장바구니를 결제하는 장면. 실존 쇼핑몰·결제 앱 화면 없음"
+            },
+            "captions": [
+              {
+                "words": [
+                  "퇴근 후",
+                  "자취방 살림"
+                ],
+                "start_s": 0.5,
+                "end_s": 3.0,
+                "position": "left",
+                "emphasis": [
+                  1
+                ]
+              },
+              {
+                "words": [
+                  "계좌 지정 달",
+                  "온라인쇼핑",
+                  "캐시백"
+                ],
+                "start_s": 3.2,
+                "end_s": 6.2,
+                "position": "left",
+                "emphasis": [
+                  2
+                ]
+              }
+            ]
+          },
+          {
+            "id": "merge",
+            "preset": "split_merge",
+            "start_s": 19.5,
+            "duration_s": 2.5,
+            "params": {
+              "panels": [
+                "link",
+                "desk",
+                "dusk"
+              ]
+            },
+            "captions": [
+              {
+                "words": [
+                  "세 장면,",
+                  "한 장으로"
+                ],
+                "start_s": 0.3,
+                "end_s": 2.3,
+                "position": "center",
+                "emphasis": [
+                  1
+                ]
+              }
+            ]
+          },
+          {
+            "id": "end",
+            "preset": "stack_lockup",
+            "start_s": 22.0,
+            "duration_s": 3.0
+          }
+        ],
+        "ending": {
+          "type": "stack_lockup",
+          "copy_words": [
+            "내",
+            "계좌에",
+            "이어진",
+            "첫 장."
+          ],
+          "cta": "COMING SOON"
+        },
+        "audio": {
+          "mood": "따뜻한 어쿠스틱 팝",
+          "file": null
+        },
+        "legal_footer": "외식·배달 0.7%(월 4천원 한도), 온라인쇼핑 0.6%(월 4천원 한도) 캐시백. 제휴 은행 결제계좌 지정 유지 달 적용, 상품권·선불충전 등 제외. 연회비 없음. 계좌 변경 시 정해진 기준 시점부터 미적용."
+      },
+      "promo": {
+        "format": "promo",
+        "aspect": "16:9",
+        "fps": 30,
+        "duration_s": 20,
+        "bpm": 120,
+        "hero_variant": "LINK",
+        "scenes": [
+          {
+            "id": "intro",
+            "preset": "heartbeat_intro",
+            "start_s": 0,
+            "duration_s": 2.0,
+            "variant": "LINK"
+          },
+          {
+            "id": "beats",
+            "preset": "beat_words",
+            "start_s": 2.0,
+            "duration_s": 6.0,
+            "params": {
+              "words": [
+                "첫 출근",
+                "첫 자취방",
+                "첫 장",
+                "은행 앱",
+                "결제계좌",
+                "지정 유지",
+                "외식·배달",
+                "온라인쇼핑",
+                "캐시백",
+                "조건은",
+                "한 묶음",
+                "첫장"
+              ],
+              "card_every": 4,
+              "benefit_words": [
+                "외식·배달",
+                "온라인쇼핑",
+                "캐시백"
+              ]
+            }
+          },
+          {
+            "id": "mq_link",
+            "preset": "material_marquee",
+            "start_s": 8.0,
+            "duration_s": 2.5,
+            "variant": "LINK",
+            "label": "LINK 이어진 선"
+          },
+          {
+            "id": "mq_desk",
+            "preset": "material_marquee",
+            "start_s": 10.5,
+            "duration_s": 2.5,
+            "variant": "DESK",
+            "label": "DESK 첫 출근"
+          },
+          {
+            "id": "mq_dusk",
+            "preset": "material_marquee",
+            "start_s": 13.0,
+            "duration_s": 2.5,
+            "variant": "DUSK",
+            "label": "DUSK 퇴근 노을"
+          },
+          {
+            "id": "lineup",
+            "preset": "lineup_pulse",
+            "start_s": 15.5,
+            "duration_s": 2.0,
+            "captions": [
+              {
+                "words": [
+                  "세 시안,",
+                  "같은 선"
+                ],
+                "start_s": 0.2,
+                "end_s": 1.8,
+                "position": "bottom",
+                "emphasis": [
+                  1
+                ]
+              }
+            ]
+          },
+          {
+            "id": "end",
+            "preset": "stack_lockup",
+            "start_s": 17.5,
+            "duration_s": 2.5
+          }
+        ],
+        "ending": {
+          "type": "stack_lockup",
+          "copy_words": [
+            "내",
+            "계좌에",
+            "이어진",
+            "첫 장."
+          ],
+          "cta": "COMING SOON"
+        },
+        "audio": {
+          "mood": "또렷한 미니멀 하우스",
+          "file": null
+        },
+        "legal_footer": "외식·배달 0.7%(월 4천원 한도), 온라인쇼핑 0.6%(월 4천원 한도) 캐시백. 제휴 은행 결제계좌 지정 유지 달 적용, 상품권·선불충전 등 제외. 연회비 없음. 계좌 변경 시 정해진 기준 시점부터 미적용."
+      }
+    },
+    "segment_plays": [
+      {
+        "type": "일반형",
+        "share_and_profit": "채택자 중 비중 0.33, 손익 3.51(만원/년, 가상 고객 시뮬레이션, 가정 기반)",
+        "play": "발급 직후 간편결제 등록과 결제계좌 지정 상태 확인을 안내해 주 결제수단으로 자리 잡게 한다. 메시지는 첫 카드를 쓰는 생활 장면 중심으로 쓴다.",
+        "guardrail": "비율은 영역별 한도와 같은 줄에만 쓰고 두 비율을 더한 값을 쓰지 않는다(G2)."
+      },
+      {
+        "type": "체리피커",
+        "share_and_profit": "채택자 중 비중 0.46, 손익 1.27(만원/년, 가상 고객 시뮬레이션, 가정 기반)",
+        "play": "혜택 비교 커뮤니티용 메시지, 비율 단독 강조, 신규 발급 혜택 중심 노출을 하지 않고 결제계좌 연결 일상 메시지만 쓴다.",
+        "guardrail": "상품권·선불충전·할부 취소 제외를 혜택과 함께 쓴다. 통합 한도 전환과 출금 완료 조건은 재무·상품 결정을 따른다(G6). 시뮬레이션 모형은 결제계좌 지정 조건과 중단 규칙을 반영하지 않은 값이다."
+      },
+      {
+        "type": "충성형",
+        "share_and_profit": "채택자 중 비중 0.04, 손익 5.55(만원/년, 가상 고객 시뮬레이션, 가정 기반)",
+        "play": "결제계좌 변경과 혜택 변경 사전 고지를 빠짐없이 보내 조건에 대한 신뢰를 유지한다.",
+        "guardrail": "추천·초대 보상은 입력에 없으므로 만들지 않는다. 전환 심사는 G2 고정 문구 외의 표현으로 쓰지 않는다."
+      },
+      {
+        "type": "휴면 위험형",
+        "share_and_profit": "채택자 중 비중 0.17, 손익 1.11(만원/년, 가상 고객 시뮬레이션, 가정 기반)",
+        "play": "일정 기간 이용이 없는 회원에게 혜택 조건(결제계좌 지정 유지, 영역별 한도, 제외 거래)을 안내한다. 기간 값은 상품팀이 정한다(G6).",
+        "guardrail": "마케팅 수신 동의가 없는 고객에게 마케팅성 메시지를 보내지 않는다. 보증금 경로 회원은 일반 경로와 손익을 나눠 보도록 시뮬레이션 유형 분리를 요청한다(G6)."
+      }
+    ],
+    "compliance": [
+      {
+        "item": "보증금 발급 경로를 대외 약속에서 제외, 이름·한 줄 약속과 작동 일치",
+        "handling": "이름 '첫장', 태그라인, 보드 카피, 세 영상 자막, legal_footer에서 보증금 담보 발급 경로를 빼고 내부 로드맵 항목으로만 두었다. 입력 benefits의 '금융이력이 짧아도 발급 경로'는 boards.benefits에 옮기지 않았고 태그라인에 '은행 계좌로 시작하는'을 쓰지 않았다.",
+        "needs_human": false,
+        "guard_ref": "G1"
+      },
+      {
+        "item": "'첫 신용카드' 표현과 기존 신용카드 보유자 신청 가능 여부",
+        "handling": "'첫 신용카드'는 타깃의 생활 장면을 그리는 말로만 쓰고 발급 자격이나 발급을 약속하는 문장에 쓰지 않았다. 기존 보유자 신청 가능 여부가 mechanics에 정해지면 표현 범위를 다시 점검한다.",
+        "needs_human": true,
+        "guard_ref": "G1"
+      },
+      {
+        "item": "신용·전환 관련 단정 표현과 정책 기관 인용",
+        "handling": "G2가 대외 문구에서 금지한 신용·전환 관련 세 표현을 쓰지 않았고 전환 심사 문구는 소재에 넣지 않았다. 필요할 때는 G2 고정 문구(심사 결과에 따라 전환되지 않을 수 있음)만 쓴다. 금융당국 정책과 T4(S8, S9)는 전략·소재·근거 어디에도 인용하지 않았다.",
+        "needs_human": false,
+        "guard_ref": "G2"
+      },
+      {
+        "item": "두 비율 합산 금지, 조건 없이 읽히는 표현 금지",
+        "handling": "비율은 '외식·배달 0.7%(월 4천원 한도), 온라인쇼핑 0.6%(월 4천원 한도)'처럼 영역별로 한도와 같은 줄에만 썼다(boards 혜택 목록, 릴스 benefit_card, legal_footer). 두 비율을 더한 값과 금칙어를 쓰지 않았고 자막·박자 단어에는 비율을 넣지 않았다. '실적 계산 없이'는 쓰지 않고, 연회비 없음은 결제계좌 지정 유지·제외 거래와 같은 문장에 둔다.",
+        "needs_human": false,
+        "guard_ref": "G2"
+      },
+      {
+        "item": "집행 전 광고심의",
+        "handling": "이름, 태그라인, 세 영상 카피, legal_footer 전체를 집행 전 광고심의에 제출한다. 경쟁 카드 비교 수치는 소재에 넣지 않았다.",
+        "needs_human": true,
+        "guard_ref": "G2"
+      },
+      {
+        "item": "혜택 중단 시점 일관 표기",
+        "handling": "mechanics 2('그 달부터')와 mechanics 4('다음 청구일부터')의 시점이 달라 소재에는 '계좌 변경 시 정해진 기준 시점부터 미적용' 한 표현만 썼다. 기준 시점(가드레일 예시: 변경 후 도래하는 청구 기준 월)과 월 중간 변경·재지정 판정 기준이 정해지면 모든 legal_footer와 보드 뒷면 문구를 같은 문장으로 교체한다.",
+        "needs_human": true,
+        "guard_ref": "G3"
+      },
+      {
+        "item": "신청 화면 조건 묶음과 부가서비스 변경 고지",
+        "handling": "보드 뒷면과 신청 화면 채널에 적용 조건(결제계좌 지정 유지), 영역별 월 한도, 제외 거래, 중단 시점, 변경 가능성을 한 묶음으로 보이게 했다. 변경 고지 시점·유지 기간 값은 준법 확인 뒤 기재한다.",
+        "needs_human": true,
+        "guard_ref": "G3"
+      },
+      {
+        "item": "은행·카드사 간 정보 제공 동의",
+        "handling": "소재에 제휴 은행 마케팅 활용 동의나 정보 제공 항목을 언급하지 않았다. '제휴 은행 계좌가 없어도 발급(캐시백 미적용)' 안내는 판매 방식 결정 전이라 소재에 넣지 않았다. 개인정보·준법 확인 결과로 신청 화면 문안을 만든다.",
+        "needs_human": true,
+        "guard_ref": "G4"
+      },
+      {
+        "item": "체리피킹 대비 메시지와 한도 구조",
+        "handling": "혜택 비교형 메시지와 비율 단독 강조를 쓰지 않고 결제계좌 연결 일상 메시지를 썼다. 통합 월 한도 전환, 출금 완료 조건, 간편결제 머니 충전 제외 여부는 재무·상품 결정 후 legal_footer와 혜택 목록에 반영한다.",
+        "needs_human": true,
+        "guard_ref": "G6"
+      },
+      {
+        "item": "혜택 표기와 심의 필요 표시",
+        "handling": "boards.needs_compliance_review를 true로 두고 세 스토리보드 모두 조건을 담은 legal_footer를 넣었다. 혜택 headline·condition은 입력 그대로 복사했다.",
+        "needs_human": false,
+        "guard_ref": null
+      }
+    ],
+    "needs_research": [
+      "만 19~29세 첫 신용카드 신청자의 은행 앱·카드사 앱 신청 경로 비중과 정보 탐색 채널",
+      "만 19~29세 대상 숏폼·동영상 플랫폼별 이용 비중과 카드 광고 반응",
+      "은행 결합 신용카드 광고에서 결제계좌 지정 조건·혜택 중단 시점 표기 심의 사례"
+    ],
+    "render_jobs": []
+  },
+  "findings": [
+    {
+      "id": "design_marketing#0",
+      "claim": "이름 후보 3개의 기존 카드명과의 글자쌍 유사도는 추천 이름 '첫장'과 '이음'이 0.0, '계좌하나'가 0.17('하나 나라사랑카드 체크')로 모두 반려선 0.5와 경고선 0.3 아래다.",
+      "type": "estimate",
+      "source_id": null,
+      "confidence": "medium"
+    },
+    {
+      "id": "design_marketing#1",
+      "claim": "2025년 상반기 간편결제 일평균 이용금액이 처음 1조원을 넘었다는 보도를 근거로 발급 직후 간편결제 등록 안내를 정착 단계 채널로 두었다.",
+      "type": "fact",
+      "source_id": "S2",
+      "confidence": "medium"
+    },
+    {
+      "id": "design_marketing#2",
+      "claim": "전자지급서비스 이용 현황 자료를 함께 참고해 실물 카드보다 앱 신청 화면과 간편결제 등록 경험을 먼저 설계했다. 20대 연령별 수치는 확인하지 못했다.",
+      "type": "fact",
+      "source_id": "S4",
+      "confidence": "medium"
+    },
+    {
+      "id": "design_marketing#3",
+      "claim": "제휴 은행 앱 신청 경로는 입력 mechanics에 있는 작동 방식이라 LINK 시안과 신청 화면 채널을 은행 앱 경험 중심으로 설계했다. 은행 앱 이용 행태에 대한 외부 근거는 입력에 없다.",
+      "type": "estimate",
+      "source_id": null,
+      "confidence": "medium"
+    },
+    {
+      "id": "design_marketing#4",
+      "claim": "채택자 중 체리피커 비중 0.46, 손익 1.27로 하한 1.5에 못 미친다는 가상 고객 시뮬레이션 결과에 맞춰 혜택 비교형 메시지를 빼고 결제계좌 연결 일상 메시지로 썼다. 실제 전환율·손익이 아니다.",
+      "type": "estimate",
+      "source_id": null,
+      "confidence": "low"
+    },
+    {
+      "id": "design_marketing#5",
+      "claim": "시뮬레이션 모형은 결제계좌 지정 조건, 계좌 변경 시 캐시백 중단, 보증금 경로를 반영하지 않아 채널·소재 성과 예측 근거로 쓰지 않았다.",
+      "type": "estimate",
+      "source_id": null,
+      "confidence": "medium"
+    }
+  ],
+  "sources": [
+    {
+      "id": "S2",
+      "title": "핸드폰 열고 '터치'…간편결제 이용액 하루 1조원 넘었다",
+      "url": "https://www.hankyung.com/article/202509294322i",
+      "publisher": "한국경제",
+      "kind": "news",
+      "published": "2025-09-29",
+      "retrieved_at": "2026-10-20",
+      "reliability": 0.75,
+      "tier": "B",
+      "stale": false
+    },
+    {
+      "id": "S4",
+      "title": "한국은행 2026년 상반기 전자지급서비스 이용 현황(KDI 경제교육·정보센터 게재)",
+      "url": "https://eiec.kdi.re.kr/policy/materialView.do?num=287115",
+      "publisher": "KDI 경제교육·정보센터",
+      "kind": "official",
+      "published": null,
+      "retrieved_at": "2026-10-20",
+      "reliability": 0.8,
+      "tier": "A"
+    }
+  ],
+  "assumptions": [
+    "대상 일상 맥락과 페르소나 3명은 브리프에서 추론한 값이다(assumed)",
+    "30세 미만 타깃과 앱 신청·탭 결제 중심이라 카드 방향은 세로형으로 정했다",
+    "출시일이 없어 단계는 D-day 상대 일수로 썼고 영상 끝 화면은 COMING SOON으로 두었다",
+    "고객 리서치가 없어 인사이트는 가설(assumed)이다",
+    "보증금 발급 경로는 G1에 따라 대외 소재에서 빼고 내부 로드맵 항목으로만 두었다"
+  ],
+  "unresolved": [
+    "혜택 중단 기준 시점과 월 중간 변경·재지정 판정 기준(G3, 상품팀·준법)",
+    "은행·카드사 간 제공 정보 항목과 필수·선택 동의 구분(G4, 개인정보·준법)",
+    "통합 월 한도 전환, 출금 완료 조건, 간편결제 머니 충전 제외 여부(G6, 재무·상품)",
+    "기존 신용카드 보유자 신청 가능 여부(G1, 상품팀)",
+    "KPI 목표값(자사 과거 신상품 데이터 필요)과 숏폼·동영상 채널 선택 근거"
+  ],
+  "limits": [
+    "영상 MP4는 H5 승인 전이라 렌더하지 않았다(render_jobs 비어 있음)",
+    "이름 유사도는 글자쌍 기준이라 상표 조회를 대신하지 못한다",
+    "시뮬레이션 수치는 가정 기반 가상 고객 모형이며 실제 전환율·손익이 아니다",
+    "스토리보드의 bpm과 장면 길이 배분은 템플릿 값이며 시장 근거가 없다",
+    "이번 분기는 트렌드 재조사를 실행하지 않아 research_pack 근거만 썼다"
+  ],
+  "clarifications": [],
+  "out_of_scope": {
+    "detected": false,
+    "suggested_agent": null
+  },
+  "followups": [
+    "스토리보드 미리보기를 보고 MP4로 렌더할까요?",
+    "혜택 중단 기준 시점이 정해지면 legal_footer를 바꿀까요?",
+    "추천 이름을 '계좌하나'로 바꿔 시안을 다시 볼까요?"
+  ],
+  "input_refs": [
+    "09-design-marketing/in.json"
+  ]
+}
