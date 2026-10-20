@@ -82,5 +82,61 @@
   "event": "call",
   "agent": "consumer",
   "detail": "trend 결과(T1~T5) 받아 호출, 공개 웹 사용"
+ },
+ {
+  "seq": 13,
+  "at": "2026-10-20T11:02:44+00:00",
+  "event": "result",
+  "agent": "consumer",
+  "detail": "니즈 순위 digital > saving > simple > social > travel > fixed_cost > invest(범위 밖), 장벽 5개, 공개 웹 출처 8건"
+ },
+ {
+  "seq": 14,
+  "at": "2026-10-20T11:02:44+00:00",
+  "event": "validate",
+  "agent": "consumer",
+  "detail": "통과(첫 시도)"
+ },
+ {
+  "seq": 15,
+  "at": "2026-10-20T11:02:44+00:00",
+  "event": "route",
+  "agent": "research_lead",
+  "detail": "결과 3건 수신 → 추가 호출 없이 종합(판단 1회)"
+ },
+ {
+  "seq": 16,
+  "at": "2026-10-20T11:02:44+00:00",
+  "event": "call",
+  "agent": "research_lead",
+  "detail": "synthesize"
+ },
+ {
+  "seq": 17,
+  "at": "2026-10-20T11:04:00+00:00",
+  "event": "code",
+  "agent": "score_cells",
+  "detail": "기회 점수 상위 12(투자 니즈 제외). 1순위 genz×digital 0.437"
+ },
+ {
+  "seq": 18,
+  "at": "2026-10-20T11:04:00+00:00",
+  "event": "gate",
+  "agent": "feasibility_gate",
+  "detail": "GenZ 전체 셀 4개(digital, social, simple, saving) 천장 0.222~0.233 < 목표 0.38 → 제외. young 셀 천장 0.435~0.453, single 0.747~0.975 통과. 타깃 셀이 모두 빠져 H1 재확인"
+ },
+ {
+  "seq": 19,
+  "at": "2026-10-20T11:04:00+00:00",
+  "event": "human_wait",
+  "agent": null,
+  "detail": "H1 범위 재확인: GenZ 전체로는 원가 기준(정적 손익 3)을 지키며 목표 채택 의향에 닿는 카드가 없음(가정치 기준)"
+ },
+ {
+  "seq": 20,
+  "at": "2026-10-20T11:04:00+00:00",
+  "event": "human_decision",
+  "agent": null,
+  "detail": "H1 재확인(데모 진행자 대리 결정): 핵심 타깃을 소득이 생긴 GenZ 25~29세(사회초년생, young)로 좁히고 19~24세는 2차 확장 대상으로 둠. 목표 채택 의향 0.38 유지"
  }
 ]

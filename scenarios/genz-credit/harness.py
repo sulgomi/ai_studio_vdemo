@@ -242,13 +242,21 @@ def score():
 
 
 def ceiling(seg_id, need):
-    """셀의 최대 도달 채택률: 그 니즈를 정면으로 겨냥한 이상적 카드로 계산한 채택 의향."""
+    """셀의 최대 도달 채택률. 그 니즈 태그를 달고 소비 상위 2개 카테고리에 혜택을 주는 카드 중
+    정적 손익 ≥ 3(후보 통과 기준)을 지키는 것들을 격자로 만들어, 그중 가장 높은 채택 의향을 쓴다.
+    격자: 혜택률 0.5~3%, 카테고리당 월 한도 0.5~1.5만원, 연회비 0~2만원, 전월실적 30만원, 복잡도 0.3, 새로움 1."""
     seg = SEG[seg_id]
     top2 = sorted(seg["monthly_spend"], key=lambda c: -seg["monthly_spend"][c])[:2]
-    tags = [t for t in SC["need_tag_map"][need]][:2]
-    card = {"rates": {c: 0.03 for c in top2}, "capPerCat": 3, "fee": 0, "minPerf": 0, "cx": 0.2, "tags": tags}
-    res = simulate_card(card, novelty=1.0, segs=[seg_id])
-    return round(res["by_seg"][seg_id], 3)
+    tags = list(SC["need_tag_map"][need])[:2]
+    best = 0.0
+    for r in (0.005, 0.01, 0.015, 0.02, 0.03):
+        for cap in (0.5, 1.0, 1.5):
+            for fee in (0, 1, 2):
+                card = {"rates": {c: r for c in top2}, "capPerCat": cap, "fee": fee, "minPerf": 30, "cx": 0.3, "tags": tags}
+                if static_profit(card, seg_id) < 3:
+                    continue
+                best = max(best, simulate_card(card, novelty=1.0, segs=[seg_id])["by_seg"][seg_id])
+    return round(best, 3)
 
 
 # ---------------- 가상 고객 시뮬레이션(S5) ----------------

@@ -5,8 +5,8 @@
   "mode": "workflow",
   "note": "E2E 상품기획 시나리오. 시장조사 단계는 투자상품과 관계없이 GenZ 소비 트렌드와 경쟁 카드를 본다.",
   "scope": {
-    "target_segment": "genz",
-    "target_segment_name": "GenZ(만 19~29세)",
+    "target_segment": "young",
+    "target_segment_name": "GenZ 사회초년생(25-29)",
     "card_type": "신용카드",
     "target_adopt": 0.38,
     "constraints": [
@@ -17,8 +17,13 @@
     "assumptions": [
       "GenZ를 기준일 2026-10-20 기준 1997~2007년생 중 신용카드 발급이 가능한 만 19~29세로 해석",
       "고객사 회원·결제 데이터 없이 공개 자료와 PM 가정치로 진행",
-      "목표 채택 의향 0.38은 기존 리허설과 같은 PM 가정치"
-    ]
+      "목표 채택 의향 0.38은 기존 리허설과 같은 PM 가정치",
+      "H1 재확인: 실현가능성 게이트에서 GenZ 전체 셀이 모두 빠져 핵심 타깃을 GenZ 25~29세(사회초년생)로 좁힘. 19~24세는 2차 확장 대상이며 시뮬레이션에서 따로 본다"
+    ],
+    "initial_target": {
+      "target_segment": "genz",
+      "target_segment_name": "GenZ(만 19~29세)"
+    }
   },
   "need_labels": {
     "saving": "절약·캐시백",
