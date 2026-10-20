@@ -194,5 +194,47 @@
   "event": "call",
   "agent": "concept",
   "detail": "3안, pick young×digital"
+ },
+ {
+  "seq": 29,
+  "at": "2026-10-20T11:11:43+00:00",
+  "event": "code",
+  "agent": "eval_concepts",
+  "detail": "1차(young) 3안 평가: 1안 통과(채택 0.65), 2안 탈락(채택 0.375), 3안 통과. 승자 1안의 채택 의향이 셀 천장 0.45를 넘는 모순 발견"
+ },
+ {
+  "seq": 30,
+  "at": "2026-10-20T11:11:43+00:00",
+  "event": "code_fix",
+  "agent": "feasibility_gate",
+  "detail": "천장 계산 결함: 니즈 태그 2개·카테고리 2개짜리 카드만 탐색. 탐색 범위를 넓혀 수정. GenZ 셀 천장 0.56~0.68로 게이트 통과"
+ },
+ {
+  "seq": 31,
+  "at": "2026-10-20T11:11:43+00:00",
+  "event": "rework",
+  "agent": null,
+  "detail": "H1 재확인 결정 취소, 원래 범위(GenZ 만 19~29세)로 복귀. score_cells부터 재실행. 1차 05·06 결과는 _superseded/run1-young 보관"
+ },
+ {
+  "seq": 32,
+  "at": "2026-10-20T11:12:01+00:00",
+  "event": "code",
+  "agent": "score_cells",
+  "detail": "재실행: 상위 12셀 모두 게이트 통과. 1순위 genz×digital 0.437(천장 0.56)"
+ },
+ {
+  "seq": 33,
+  "at": "2026-10-20T11:12:01+00:00",
+  "event": "gate",
+  "agent": "feasibility_gate",
+  "detail": "통과 12/12"
+ },
+ {
+  "seq": 34,
+  "at": "2026-10-20T11:12:09+00:00",
+  "event": "call",
+  "agent": "whitespace",
+  "detail": "재실행(r2), 타깃 genz, 셀 12개, tensions 3건"
  }
 ]

@@ -9,8 +9,8 @@
       "trend": 0.488
     },
     "rank": 1,
-    "ceiling": 0.233,
-    "feasible": false
+    "ceiling": 0.56,
+    "feasible": true
   },
   {
     "seg": "young",
@@ -22,7 +22,7 @@
       "trend": 0.488
     },
     "rank": 2,
-    "ceiling": 0.45,
+    "ceiling": 0.635,
     "feasible": true
   },
   {
@@ -35,7 +35,7 @@
       "trend": 0.36
     },
     "rank": 3,
-    "ceiling": 0.453,
+    "ceiling": 0.635,
     "feasible": true
   },
   {
@@ -48,8 +48,8 @@
       "trend": 0.15
     },
     "rank": 4,
-    "ceiling": 0.222,
-    "feasible": false
+    "ceiling": 0.56,
+    "feasible": true
   },
   {
     "seg": "genz",
@@ -61,8 +61,8 @@
       "trend": 0.39
     },
     "rank": 5,
-    "ceiling": 0.225,
-    "feasible": false
+    "ceiling": 0.68,
+    "feasible": true
   },
   {
     "seg": "genz",
@@ -74,8 +74,8 @@
       "trend": 0.36
     },
     "rank": 6,
-    "ceiling": 0.227,
-    "feasible": false
+    "ceiling": 0.56,
+    "feasible": true
   },
   {
     "seg": "young",
@@ -87,7 +87,7 @@
       "trend": 0.39
     },
     "rank": 7,
-    "ceiling": 0.435,
+    "ceiling": 0.635,
     "feasible": true
   },
   {
@@ -100,7 +100,7 @@
       "trend": 0.36
     },
     "rank": 8,
-    "ceiling": 0.762,
+    "ceiling": 0.887,
     "feasible": true
   },
   {
@@ -113,7 +113,7 @@
       "trend": 0.488
     },
     "rank": 9,
-    "ceiling": 0.747,
+    "ceiling": 0.928,
     "feasible": true
   },
   {
@@ -126,7 +126,7 @@
       "trend": 0.15
     },
     "rank": 10,
-    "ceiling": 0.435,
+    "ceiling": 0.728,
     "feasible": true
   },
   {
@@ -139,7 +139,7 @@
       "trend": 0.39
     },
     "rank": 11,
-    "ceiling": 0.758,
+    "ceiling": 0.933,
     "feasible": true
   },
   {
@@ -152,7 +152,7 @@
       "trend": 0.33
     },
     "rank": 12,
-    "ceiling": 0.752,
+    "ceiling": 0.887,
     "feasible": true
   }
 ]
