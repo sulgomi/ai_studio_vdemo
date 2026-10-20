@@ -182,7 +182,7 @@ def code_checks(stage, i, o):
             if u.rstrip(".,") not in allowed_urls:
                 err.append(("SOURCE_URL_UNKNOWN", "markdown", u[:120]))
         allowed_nums = set(i["payload"].get("allowed_numbers", []))
-        for m in re.findall(r"\d+(?:\.\d+)?%", md):
+        for m in re.findall(r"\d+(?:\.\d+)?%", re.sub(r"https?://\S+", "", md)):  # URL의 퍼센트 인코딩은 수치가 아니다
             if m not in allowed_nums:
                 err.append(("NUMBER_NOT_IN_INPUT", "markdown", m))
         for w in INTERNAL:

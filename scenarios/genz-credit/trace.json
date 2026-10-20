@@ -537,5 +537,33 @@
   "event": "call",
   "agent": "plan_doc",
   "detail": "7개 섹션 기획서"
+ },
+ {
+  "seq": 78,
+  "at": "2026-10-20T11:44:28+00:00",
+  "event": "result",
+  "agent": "plan_doc",
+  "detail": "기획서 '세칸' 7개 섹션 + 부록, 결정 요청 5건, 미검증 항목 16개, 보강 요청 2건(미승인, 리스크에 [보강 확인])"
+ },
+ {
+  "seq": 79,
+  "at": "2026-10-20T11:44:28+00:00",
+  "event": "reject",
+  "agent": "plan_doc",
+  "detail": "1차 검증 반려 NUMBER_NOT_IN_INPUT 9건: 원인은 퍼센트 인코딩 URL(검증기 오탐). 재작업 1회로 통과. 검증기는 이후 URL을 제외하고 대조하도록 수정"
+ },
+ {
+  "seq": 80,
+  "at": "2026-10-20T11:44:28+00:00",
+  "event": "validate",
+  "agent": "plan_doc",
+  "detail": "통과(재작업 1회)"
+ },
+ {
+  "seq": 81,
+  "at": "2026-10-20T11:44:28+00:00",
+  "event": "run_end",
+  "agent": null,
+  "detail": "산출물: 기획서_세칸카드.md, 단계별 in/out JSON, trace.json"
  }
 ]
