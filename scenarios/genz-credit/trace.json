@@ -236,5 +236,40 @@
   "event": "call",
   "agent": "whitespace",
   "detail": "재실행(r2), 타깃 genz, 셀 12개, tensions 3건"
+ },
+ {
+  "seq": 35,
+  "at": "2026-10-20T11:13:57+00:00",
+  "event": "result",
+  "agent": "whitespace",
+  "detail": "r2 picks: 1 genz×digital(천장 0.56), 2 genz×simple(엔진 5위, 0.68), 3 genz×social(엔진 4위, tension, 0.56). young 셀은 genz와 겹쳐 제외(deviation_reason 기록)"
+ },
+ {
+  "seq": 36,
+  "at": "2026-10-20T11:13:57+00:00",
+  "event": "validate",
+  "agent": "whitespace",
+  "detail": "통과(첫 시도)"
+ },
+ {
+  "seq": 37,
+  "at": "2026-10-20T11:13:57+00:00",
+  "event": "human_wait",
+  "agent": null,
+  "detail": "H2 기회 선택"
+ },
+ {
+  "seq": 38,
+  "at": "2026-10-20T11:13:57+00:00",
+  "event": "human_decision",
+  "agent": null,
+  "detail": "H2: 1순위 genz×digital(구독·디지털) 선택(무응답 기본값과 같음)"
+ },
+ {
+  "seq": 39,
+  "at": "2026-10-20T11:13:57+00:00",
+  "event": "call",
+  "agent": "concept",
+  "detail": "재실행(r2), 3안, pick genz×digital"
  }
 ]
