@@ -320,5 +320,26 @@
   "event": "call",
   "agent": "guardrail",
   "detail": "standard, precheck G6 플래그"
+ },
+ {
+  "seq": 47,
+  "at": "2026-10-20T11:21:45+00:00",
+  "event": "result",
+  "agent": "guardrail",
+  "detail": "fix 3(G1 이름·약속 과장, G2 오인 소지 표현, G6 체리피킹 45.0%), needs_human 2(G3 준법, G4 개인정보), pass 1(G5)"
+ },
+ {
+  "seq": 48,
+  "at": "2026-10-20T11:21:45+00:00",
+  "event": "validate",
+  "agent": "guardrail",
+  "detail": "통과(첫 시도)"
+ },
+ {
+  "seq": 49,
+  "at": "2026-10-20T11:21:45+00:00",
+  "event": "rework",
+  "agent": "concept",
+  "detail": "가드레일 fix 3건 → 컨셉 재작업 1/1(상한 1회). 1차 06·07·08 결과는 *.attempt1.json으로 보관"
  }
 ]
