@@ -61,5 +61,26 @@
   "event": "validate",
   "agent": "competitor",
   "detail": "통과(첫 시도)"
+ },
+ {
+  "seq": 10,
+  "at": "2026-10-20T11:00:42+00:00",
+  "event": "result",
+  "agent": "trend",
+  "detail": "시그널 5개(T1 가격 최적화, T2 간편결제, T3 해외결제·트래블카드, T4 청년 발급 문턱 완화, T5 부가서비스 약관), 출처 11건"
+ },
+ {
+  "seq": 11,
+  "at": "2026-10-20T11:00:42+00:00",
+  "event": "validate",
+  "agent": "trend",
+  "detail": "통과, 경고 1(T5 SOURCE_STALE). group 관점 근거 부족은 unresolved"
+ },
+ {
+  "seq": 12,
+  "at": "2026-10-20T11:00:42+00:00",
+  "event": "call",
+  "agent": "consumer",
+  "detail": "trend 결과(T1~T5) 받아 호출, 공개 웹 사용"
  }
 ]
