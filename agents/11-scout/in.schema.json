@@ -1,0 +1,98 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "card-studio/agents/scout/in.schema.json",
+  "title": "scout payload",
+  "type": "object",
+  "required": [
+    "topic",
+    "topic_brief",
+    "target",
+    "id_prefix"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "topic": {
+      "type": "string",
+      "description": "조사 주제 id. 예: learning, performance, foresight"
+    },
+    "topic_brief": {
+      "type": "string",
+      "description": "무엇을 찾을지 서술(찾을 것 목록, 이미 모은 것과 겹치지 않을 범위)"
+    },
+    "target": {
+      "type": "object",
+      "required": [
+        "segment"
+      ],
+      "properties": {
+        "segment": {
+          "type": "string"
+        },
+        "age_focus": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "constraints": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "id_prefix": {
+      "type": "string",
+      "pattern": "^[A-Z]{2,3}$",
+      "description": "사실·출처 id 접두. 예: LN → LNF1, LNS1"
+    },
+    "kinds_requested": {
+      "type": "array",
+      "items": {
+        "enum": [
+          "facts",
+          "trend_items",
+          "cases",
+          "constraints",
+          "predictions",
+          "design_analogues"
+        ]
+      }
+    },
+    "min_counts": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "integer",
+        "minimum": 0
+      }
+    },
+    "known_source_urls": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "이미 모은 출처 URL. 다시 쓰지 않는다"
+    },
+    "known_fact_ids": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "이미 있는 사실 id(중복 조사 방지)"
+    },
+    "search_budget": {
+      "type": "object",
+      "properties": {
+        "max_queries": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "max_fetches": {
+          "type": "integer",
+          "minimum": 0
+        }
+      }
+    }
+  }
+}

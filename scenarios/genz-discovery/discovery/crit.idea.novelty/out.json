@@ -1,0 +1,666 @@
+{
+ "run_id": "genz-discovery-001",
+ "request_id": "genz-discovery-001-idea-novelty",
+ "agent": "critic",
+ "contract_version": "1.0",
+ "model": "recorded",
+ "status": "ok",
+ "answer": "critic idea-novelty 기록",
+ "result": {
+  "lens": "novelty",
+  "search_available": true,
+  "checks": [
+   {
+    "subject_id": "GRI1",
+    "vote": "weaken",
+    "grade": "B",
+    "findings": [
+     "DB 50종 전체 대조: 기간에 따라 실적 조건이 달라지는 구조는 이미 여럿 있다. BC 바로 에어 마스터 note '최초 신규 발급 회원은 전월실적 무관', LOCA 365 '최초 발급 고객은 발급일부터 다음 달 말일까지 실적 무관', American Express Gold Edition2 '발급 첫해 누적 250만원, 2차년도 이후 전년 2,400만원'(연차별 조건 분리), 에너지플러스 '발급일 1만 + 7개월차 1만' 신규 우대. 다만 모두 '처음에 쉽고 나중에 어렵다'는 방향이고 GRI1은 반대 방향(처음에 실적, 나중에 해제)이다.",
+     "졸업 후 상태는 카카오뱅크 줍줍 신한카드('전월 실적 조건없이 최대 2%를 월 4만원까지')나 ZERO Edition3(실적·한도 없음 0.8%)와 같은 무실적 정액 한도 카드다. 도착점은 이미 있고 새로운 것은 도착 경로(행동 기반 영구 해제)뿐이다.",
+     "WebSearch로 '전월실적 졸업' 구조는 따로 찾지 않았다(검색 한도). 국내외에서 실적 조건이 보유 이력으로 영구 해제되는 카드는 이번 조사에서 확인되지 않았다."
+    ],
+    "corrections": [
+     "'실적이 처음부터 없는 카드도, 매달 있는 카드도 아닌' 구조라는 주장은 맞지만, 발급 초기 무실적 관행(PFF10)과 정반대 순서라 고객에게는 '처음 1년만 실적이 있는 카드'로 보일 수 있다. 이 역순이 매력인지는 가상 고객 검증이 필요하다.",
+     "nearest_cards에 LOCA 365·BC 바로 에어 마스터의 '최초 발급 실적 무관'과 Amex Gold의 연차별 조건을 추가해야 한다."
+    ],
+    "confidence_in_vote": "medium",
+    "lens_fields": {
+     "closest_real_card": "카카오뱅크 줍줍 신한카드(졸업 후 상태), LOCA 365(기간 기반 실적 면제)",
+     "novelty_verdict": "부분 참신",
+     "what_remains_new": "실적 조건이 금액이 아니라 정시 납부·꾸준한 사용 이력으로 '한 번 풀리면 되돌아가지 않게' 해제되는 경로 자체."
+    }
+   },
+   {
+    "subject_id": "GRI2",
+    "vote": "confirm",
+    "grade": "B",
+    "findings": [
+     "DB 50종 대조: 체크카드 이력을 신용카드 혜택·기간으로 넘기는 문구는 없다(W-ENC1과 같은 결론). 체크카드 15종 가량(SOL트래블 체크, Youth Club 체크, 토스뱅크 체크카드 등) 어디에도 신용 전환 승계가 없다.",
+     "합산 실적 자체는 이미 있다: LOCA 365 '본인·가족카드 합산', 현대카드 M '본인+가족 합산'. 그러나 체크+신용 합산은 DB에 없다.",
+     "카카오뱅크 줍줍 신한카드는 앱 원스톱으로 '통로'를 줄 뿐 이력 승계는 없다. 웹 검색은 이 항목에 쓰지 않았다."
+    ],
+    "corrections": [
+     "승계 2(혜택 팩)는 Youth Club 체크의 팩 구조를 그대로 옮긴 것이라 새로움이 아니다. 새로움은 '기간 승계'와 '공존 기간 합산 실적' 두 가지로 줄여 써야 한다.",
+     "GRI1과 결합할 때만 기간 승계가 의미가 있으므로 독립 아이디어로 내기보다 GRI1의 진입 경로로 묶는 것이 맞다."
+    ],
+    "confidence_in_vote": "medium",
+    "lens_fields": {
+     "closest_real_card": "Youth Club 체크 + 카카오뱅크 줍줍 신한카드",
+     "novelty_verdict": "부분 참신",
+     "what_remains_new": "체크카드 이용 개월이 신용카드의 단계 기간으로 인정되고 전환 직후 체크·신용 이용액이 한 실적으로 합산되는 승계 규칙."
+    }
+   },
+   {
+    "subject_id": "GRI3",
+    "vote": "weaken",
+    "grade": "B",
+    "findings": [
+     "DB 50종에 보증금형 신용카드는 없다. DB 밖에서는 Capital One Platinum Secured가 보증금 환급과 무보증 전환(LNF40)을, 국내에서는 신한카드 보증금 기반 비대면 신용카드가 혁신금융서비스로 지정됐다(STF66). 영역은 이미 선점 중이다.",
+     "단계별 혜택 해금은 DB의 select_pack·tiered_perf 구조(예: RPM+ Platinum# 실적 4구간에 따라 0.2%→2.0%)를 '실적' 대신 '환급 단계'에 건 변형이다.",
+     "계단식(3분할) 환급 일정 공개는 이번 조사에서 국내외 사례를 확인하지 못했다(해외 secured card 졸업 조건은 검색 한도로 추가 확인하지 않음)."
+    ],
+    "corrections": [
+     "'보증금 환급 = 업그레이드'는 Capital One이 이미 하는 것이므로 새로움을 '분할 환급 일정 공개 + 환급 단계마다 혜택 영역 1개 추가'로 좁혀야 한다.",
+     "신한카드 지정 서비스(STF66)의 세부가 미확인이라, 신한이 단계형 환급을 넣으면 새로움이 사라질 수 있다는 점을 risk에 적어야 한다."
+    ],
+    "confidence_in_vote": "medium",
+    "lens_fields": {
+     "closest_real_card": "Capital One Platinum Secured(DB 밖, LNF40) / 신한카드 보증금 기반 비대면 신용카드(STF66)",
+     "novelty_verdict": "부분 참신",
+     "what_remains_new": "보증금을 한 번에가 아니라 공개된 일정에 따라 3번 나눠 돌려받고, 돌려받을 때마다 혜택 영역이 하나씩 열리는 단계 설계."
+    }
+   },
+   {
+    "subject_id": "GRI4",
+    "vote": "weaken",
+    "grade": "B",
+    "findings": [
+     "DB 대조에서 작성자가 놓친 유사 카드: Discount Plan+ 'Monthly Plan 피트니스 5%', 토스뱅크 하나카드 Day '학원' 포함 8개 업종, Discount Plan+ '온라인서점 5%'. 배움 업종 할인은 흔하다.",
+     "고객이 업종을 직접 묶는 구조는 삼성 iD SELECT ON('택1, 매월 변경'), My WE:SH(common_plus_select), 토스뱅크 체크카드 스위치 캐시백으로 이미 있다. 업종 3개를 고르는 것은 선택형 카드의 확장이다.",
+     "DB 밖 Citi Custom Cash는 fitness clubs를 포함한 상위 지출 범주에 자동으로 5%를 준다(검색 확인). 배움 업종 우대 자체는 해외에도 있다."
+    ],
+    "corrections": [
+     "'코스'라는 이름을 빼면 '업종 3개 선택 + 예산 상한 + 3개월 완주 시 한도 단계 상승'이다. 앞의 두 요소는 기존 선택형 카드의 변형이고, 새로움은 기간 단위 완주와 다음 단계 한도 상승에만 있다.",
+     "완주 판정이 '매달 결제 1건'이라 배움의 성장이 아니라 결제 지속을 보상한다. 컨셉 문구('완주할수록 다음 배움이 더 싸진다')가 실제 판정보다 크다."
+    ],
+    "confidence_in_vote": "medium",
+    "lens_fields": {
+     "closest_real_card": "굿데이카드(학원·피트니스 10%) + 삼성 iD SELECT ON(선택형)",
+     "novelty_verdict": "부분 참신",
+     "what_remains_new": "고객이 이름 붙인 3개월 기간 단위 '코스'를 완주하면 다음 코스의 적립 한도가 오르는 기간형 단계 구조."
+    }
+   },
+   {
+    "subject_id": "GRI5",
+    "vote": "confirm",
+    "grade": "A",
+    "findings": [
+     "DB 50종 대조: '그 고객에게 처음인 업종'을 판정해 보상하는 문구는 없다. 가장 가까운 것은 토스뱅크 체크카드 스위치 캐시백(업종 정액 500원, 시즌 교체), 케이뱅크 ONE 체크 369 캐시백(횟수), 하나 MOVING ALLDAY 3일 연속(PFF15). 모두 카드사가 정한 업종·횟수 기준이다.",
+     "정착 보상(같은 곳 3번째)은 단골 적립·스탬프와 비슷한 구조이지만 DB 헤드라인에는 없다.",
+     "카드사 맞춤 쿠폰·제휴 오퍼가 신규 가맹점 방문을 유도하는 관행은 일반적으로 알려져 있으나 이번에 원문을 읽지 않아 근거로 쓰지 않는다. 이 점이 confidence를 medium으로 낮춘다."
+    ],
+    "corrections": [
+     "TDI6와 사실상 같은 아이디어다(처음 결제 정액 보상). 둘 중 하나로 합치고, GRI5의 12개월 이력 판정과 정착 보상을 남기는 쪽이 새로움이 더 크다."
+    ],
+    "confidence_in_vote": "medium",
+    "lens_fields": {
+     "closest_real_card": "토스뱅크 체크카드(스위치 캐시백) / 케이뱅크 ONE 체크(369 캐시백)",
+     "novelty_verdict": "참신",
+     "what_remains_new": "혜택 대상이 카드사가 정한 업종이 아니라 '이 고객의 최근 12개월 이력에 없던 업종'이고, 탐색(첫 결제)과 정착(세 번째 방문)을 둘 다 보상하는 구조."
+    }
+   },
+   {
+    "subject_id": "GRI6",
+    "vote": "weaken",
+    "grade": "C",
+    "findings": [
+     "DB 대조: 디지로카 London 'LOCA 나누기: 추가수수료 없는 분할납부(30만원 이상 3개월 또는 6개월), 이용일로부터 10일 이내 앱 신청'은 GRI6의 분할 메커니즘(30만원 이상, 10일 안 신청, 3·6개월 무수수료)과 사실상 같다. 업종을 배움으로 좁힌 것만 다르다.",
+     "LOCA 365·BC 바로 에어 마스터·BC 바로 에어 맥스도 '국내 가맹점 2~3개월 무이자 할부'를 상시 제공한다.",
+     "결제 시점 표준약관 안내(FSF51)와 폐업 신호 알림은 DB에 없다. 다만 이것은 혜택 구조라기보다 앱 정보 기능이다."
+    ],
+    "corrections": [
+     "what_is_new가 분할을 새로움처럼 앞세우는데 분할 자체는 디지로카 London과 같다. 새로움은 '배움 선결제 업종 한정 + 위험 안내·알림'뿐이다.",
+     "TDI4와 거의 같은 아이디어다. TDI4가 '월 분할 청구 전환(제휴)'까지 있어 더 구체적이므로 GRI6은 TDI4에 합치는 것이 맞다."
+    ],
+    "confidence_in_vote": "high",
+    "lens_fields": {
+     "closest_real_card": "디지로카 London(LOCA 나누기)",
+     "novelty_verdict": "부분 참신",
+     "what_remains_new": "분할 결제를 배움·회원권 업종에 묶고 결제 직후 환급 기준과 폐업 위험 신호를 알려 주는 정보 장치."
+    }
+   },
+   {
+    "subject_id": "GRI7",
+    "vote": "weaken",
+    "grade": "B",
+    "findings": [
+     "DB 대조: 선택 슬롯 수가 조건에 따라 늘어나는 카드는 없다. 처음(ANNIVERSE) 소비관리 보너스와 줍줍·디지로카 London 선결제 보상은 매달 끝나는 보너스다.",
+     "다만 '조건을 쌓으면 혜택 폭이 넓어진다'는 틀은 RPM+ Platinum#(실적 4구간에 따라 0.2%→2.0%), Discount Plan+(실적 구간별 통합한도 3만→10만)처럼 실적 구간형 카드의 기본 구조다. GRI7은 구간의 입력을 금액에서 건전 행동 점수로 바꾸고 출력을 한도·율에서 슬롯 수로 바꾼 변형이다.",
+     "DB 밖 Petal은 정시 납부 6개월로 한도 상향(PFF48)을 준다. 행동→단계 연결은 해외에 있다."
+    ],
+    "corrections": [
+     "PRI4(제때 갚는 사람 레벨업)와 입력(정시 납부·즉시결제 누적)이 같고 출력만 다르다(슬롯 수 vs 기본률). 하나로 합치거나 출력을 하나로 정해야 한다.",
+     "예산 지키기 점수는 FRI1·PRI5와 겹친다."
+    ],
+    "confidence_in_vote": "medium",
+    "lens_fields": {
+     "closest_real_card": "처음(ANNIVERSE) 소비관리 보너스 + 삼성 iD SELECT ON(선택형)",
+     "novelty_verdict": "부분 참신",
+     "what_remains_new": "누적 건전 행동 점수로 '고를 수 있는 혜택 영역의 개수'가 영구히 늘고 연체 때만 줄어드는 슬롯 레벨 구조."
+    }
+   },
+   {
+    "subject_id": "GRI8",
+    "vote": "weaken",
+    "grade": "B",
+    "findings": [
+     "DB 대조: 하나 나라사랑카드 체크의 'Desire: 군 급여이체 시' 혜택이 급여 입금을 혜택 조건으로 쓰는 구조로 이미 있다. 은행 급여이체 우대는 흔한 관행이다.",
+     "학생→직장인 단계 전환에 맞춰 같은 카드의 혜택 팩을 바꾸는 카드는 DB 50종에 없다. Capital One 학생 카드는 졸업 후 혜택이 그대로 유지된다(LNF42).",
+     "웹 검색은 이 항목에 쓰지 않았다. 국내 대학생 카드의 전환 구조는 작성자도 조사하지 못했다."
+    ],
+    "corrections": [
+     "새로움은 혜택 구조보다 컨셉(졸업식 이벤트)에 있다. 팩 2종 전환은 Youth Club 체크의 A/B팩 선택을 '자동 제안'으로 바꾼 것에 가깝다.",
+     "학생 인증 없이 누구나 학생 팩을 고를 수 있게 했으므로 사실상 '팩 2종 중 선택 + 첫 급여 시 1회 선물'이다. 컨셉 대비 구조가 얇다."
+    ],
+    "confidence_in_vote": "medium",
+    "lens_fields": {
+     "closest_real_card": "하나 나라사랑카드 체크(급여이체 연동) / 청춘대로 톡톡카드",
+     "novelty_verdict": "부분 참신",
+     "what_remains_new": "첫 급여 입금이라는 생애 사건을 감지해 같은 카드 번호로 혜택 팩을 바꾸고 그 순간을 1회성 보상으로 기념하는 컨셉."
+    }
+   },
+   {
+    "subject_id": "PRI1",
+    "vote": "weaken",
+    "grade": "B",
+    "findings": [
+     "DB 대조에서 작성자가 놓친 카드: NEED Pay note '전월 35~40만원 미만은 전월실적 채워드림 신청 가능(반기 1회, 연 최대 2회)'. 실적 미달을 구제하는 장치는 My WE:SH 외에도 현행 카드에 있다.",
+     "구조 분석: 기준 20만원, 이번 달 15만원이면 다음 달 25만원이라는 규칙은 결국 '2개월 누적 40만원'을 판정하는 것과 같다. 즉 PRI2(3개월 평균)의 2개월판이고, 이름('실적 빚')만 다른 기간 합산 판정이다.",
+     "웹 검색(3개월 기준 실적)에서 '직전 3개월 매월 50만원 이상 연속 이용 시 우대할인' 카드가 확인됐다(https://www.banksalad.com/product/cards/CARD004438 (검색 요약)). 다개월 판정은 이미 있다. 선지급 후정산 형태는 확인되지 않았다."
+    ],
+    "corrections": [
+     "'선지급 후정산'은 고객 입장에서 '2개월 합산 실적'과 같으므로 새로움을 과장하지 말고 PRI2와 합쳐 '다개월 실적 판정' 한 아이디어로 정리해야 한다.",
+     "nearest_cards에 NEED Pay(채워드림)를 추가해야 한다."
+    ],
+    "confidence_in_vote": "high",
+    "lens_fields": {
+     "closest_real_card": "NEED Pay(전월실적 채워드림) / My WE:SH",
+     "novelty_verdict": "부분 참신",
+     "what_remains_new": "실적 미달 첫 달에 혜택을 끊지 않고 먼저 준 뒤 부족분을 다음 달로 넘기는 '사후 정산' 표현 방식(실질은 2개월 합산)."
+    }
+   },
+   {
+    "subject_id": "PRI2",
+    "vote": "weaken",
+    "grade": "C",
+    "findings": [
+     "웹 검색: 뱅크샐러드 상품 페이지 2건에서 '카드 이용월 직전 3개월 동안 매월 50만원 이상 연속 이용 시 우대할인'을 확인했다(https://www.banksalad.com/product/cards/CARD004438 (검색 요약)). 3개월 단위 판정은 이미 있다(다만 연속 충족이지 평균은 아님).",
+     "DB 대조: 카드의정석2 분기 추가(매월 10만원 + 분기 누적), 신한 Simple Plan+ 분기 조건(PFF19). 다개월 판정 자체는 흔하다.",
+     "이동평균으로 기본 자격을 판정하는 카드는 이번 조사에서 찾지 못했다."
+    ],
+    "corrections": [
+     "판정 창을 1개월에서 3개월로 바꾸는 것은 실적 규칙의 파라미터 변경이라 '이름만 다른 기존 구조'에 가깝다. 고객이 체감하는 차이가 커서 실용성은 있지만 참신성 근거로는 약하다.",
+     "PRI1과 같은 문제(한 달 미달 시 급락)를 같은 방식(다개월 합산)으로 푼다. 하나로 합쳐야 한다."
+    ],
+    "confidence_in_vote": "high",
+    "lens_fields": {
+     "closest_real_card": "카드의정석2(분기 추가) / 직전 3개월 연속 이용 우대할인 카드(뱅크샐러드 페이지)",
+     "novelty_verdict": "부분 참신",
+     "what_remains_new": "기본 혜택 자격을 매달 갱신되는 3개월 이동평균으로 판정한다는 판정 방식 하나."
+    }
+   },
+   {
+    "subject_id": "PRI3",
+    "vote": "weaken",
+    "grade": "B",
+    "findings": [
+     "DB 대조: Mr.Life와 LOCA 365가 관리비·공과금·할인액을 실적에 넣는다(PFC15). 실적 인정 범위를 넓히는 것은 이미 있다.",
+     "은행권 대출금리 감면용 실적 개선(PFF22 등)은 카드 혜택 실적이 아니라는 점을 작성자가 바르게 적었다. 카드 혜택 실적에 '제외 1개'를 스스로 약속한 카드는 DB에 없다.",
+     "결제 직후 실적 반영 O/X 표시와 미달 예보는 W-CTC6(진행 표시·미달 완충 비어 있음)과 같은 방향이다."
+    ],
+    "corrections": [
+     "새로움의 대부분은 혜택 구조가 아니라 '산정 규칙 공개 약속'과 앱 표시 기능이다. 경쟁사가 약관 표기만 바꾸면 따라 할 수 있다.",
+     "Mr.Life가 '할인액 전부 실적 인정'으로 이미 제외 항목을 크게 줄였으므로 '제외 1개'와의 실제 차이는 할부 분할 인정과 취소 귀속월 안내 정도다."
+    ],
+    "confidence_in_vote": "medium",
+    "lens_fields": {
+     "closest_real_card": "Mr.Life(할인액·관리비 실적 인정)",
+     "novelty_verdict": "부분 참신",
+     "what_remains_new": "제외 항목을 1개로 약관에 고정하고 할부·취소·결제일 변경의 실적 귀속 규칙을 결제 시점에 보여 주는 투명 실적 약속."
+    }
+   },
+   {
+    "subject_id": "PRI4",
+    "vote": "weaken",
+    "grade": "B",
+    "findings": [
+     "DB 대조: 디지로카 London 즉시결제 1%, 줍줍 선결제 1%, 처음(ANNIVERSE) 즉시결제 0.3%는 건별 보상이다. 누적 개월로 기본률이 오르는 카드는 DB에 없다.",
+     "DB 밖 Petal은 정시 납부 6개월이면 한도 상향을 받을 수 있게 한다(PFF48). PRI4의 '레벨 3 도달 시 한도 재심사 신청'은 Petal과 같은 구조다.",
+     "기본률이 단계적으로 오르는 틀은 RPM+ Platinum#(국내외 0.2%→0.5%→1.0%→2.0%, 실적 구간)과 같고 입력만 금액에서 건전 개월로 바뀌었다."
+    ],
+    "corrections": [
+     "GRI7과 입력이 같다. 출력(기본률 vs 슬롯 수)만 다르므로 하나로 합쳐야 한다.",
+     "한도 재심사 연결은 Petal 선례가 있으므로 '새로운 점'에서 빼야 한다."
+    ],
+    "confidence_in_vote": "medium",
+    "lens_fields": {
+     "closest_real_card": "RPM+ Platinum#(단계 기본률) + Petal Leap(DB 밖, PFF48)",
+     "novelty_verdict": "부분 참신",
+     "what_remains_new": "연체 없음·리볼빙 미사용 개월 수를 누적해 전 가맹점 기본률 단계를 올리는, 금액이 아닌 상환 행동 기반 레벨."
+    }
+   },
+   {
+    "subject_id": "PRI5",
+    "vote": "weaken",
+    "grade": "B",
+    "findings": [
+     "DB 대조: 처음(ANNIVERSE) '목표 입력 500P, 달성 5천P'가 소비 목표 보상을 이미 한다. 모든 카드 실적이 하한만 둔다는 작성자 주장은 50종 대조에서 맞다.",
+     "웹 검색: Monzo는 카테고리별 월 지출 목표와 임박·초과 알림을 제공한다(https://monzo.com/blog/2017/03/31/budget-targets (검색 요약)). 예산 설정·알림은 해외 앱에 이미 있다. 예산 준수를 혜택 자격으로 쓰는 카드는 찾지 못했다.",
+     "FRI1(셀프캡)과 메커니즘이 거의 같다(예산 지킴 → 혜택, 직전 3개월 평균 이하 예산만 인정 같은 방어 규칙까지 같음)."
+    ],
+    "corrections": [
+     "FRI1과 합쳐야 한다. FRI1은 하드캡 선택지가 더 있고, PRI5는 '하한~상한 밴드'라는 표현이 더 명확하다.",
+     "'시판 카드 실적은 모두 하한만 둔다'는 DB 50종 기준 사실로만 쓰고 시장 전체로 일반화하지 않는다."
+    ],
+    "confidence_in_vote": "medium",
+    "lens_fields": {
+     "closest_real_card": "처음(ANNIVERSE) 소비관리 보너스",
+     "novelty_verdict": "부분 참신",
+     "what_remains_new": "혜택 자격을 '하한 이상, 본인이 미리 정한 예산 이하'라는 밴드로 정해 덜 쓰는 것이 혜택 조건이 되는 실적 역전."
+    }
+   },
+   {
+    "subject_id": "PRI6",
+    "vote": "weaken",
+    "grade": "B",
+    "findings": [
+     "DB 대조에서 작성자가 놓친 카드: Discount Plan+ 'Annual Plan: 2차년도부터 전년 이용 1,000만원 이상 시 연 3만원 캐시백'. 연 1회 보너스 층은 Amex Gold 외에도 있다(둘 다 금액 기준).",
+     "DB 밖 Discover it은 첫해 적립 전액을 연말에 매치한다(PFF50, LNF44). 연말 매치 구조 자체는 해외에서 이미 시판 중이다.",
+     "활성 개월 수로 매치 비율을 정하는 카드는 이번 조사에서 찾지 못했다."
+    ],
+    "corrections": [
+     "'연말 매치'는 Discover의 구조이므로 새로움을 '매년 반복 + 금액 대신 활성 개월 수 기준'으로 좁혀야 한다.",
+     "nearest_cards에 Discount Plan+ Annual Plan을 추가해야 한다."
+    ],
+    "confidence_in_vote": "high",
+    "lens_fields": {
+     "closest_real_card": "Discover it(DB 밖, PFF50) / Discount Plan+ Annual Plan",
+     "novelty_verdict": "부분 참신",
+     "what_remains_new": "연말 보너스 기준을 이용 금액이 아니라 1년 중 이용한 달 수로 정해 매년 반복하는 연간 매치."
+    }
+   },
+   {
+    "subject_id": "PRI7",
+    "vote": "weaken",
+    "grade": "C",
+    "findings": [
+     "DB 대조: 같은 정률에서 연회비가 다른 상품이 이미 따로 나와 있다. 카드의정석2(1.2%, 22,000원)와 카드의정석2 SUPER(2% 월 10만원, 연회비 3만원, PFF14), ZERO Edition3 할인형·포인트형(15,000원, 0.8%/1.2%). 고객은 카드를 고르는 방식으로 이미 '상한·연회비 단계'를 고르고 있다.",
+     "줍줍(월 4만원), 토스뱅크 하나카드 WIDE(월 10만원)도 무실적·상한형이다.",
+     "한 카드 안에서 상한 단계를 해마다 바꾸는 카드는 찾지 못했다."
+    ],
+    "corrections": [
+     "새로움은 '상품 라인업을 한 카드 안의 옵션으로 접은 것'이다. 이름만 다른 기존 구조에 가깝고, 연 1회 단계 변경과 '가장 유리했을 단계' 안내가 실제 차이다.",
+     "무실적 혜택률 근거(PFF11)는 0.7~1%라 설명글 서술이며, 높은 정률을 연회비로 사는 구조의 수익성은 다른 렌즈 확인이 필요하다."
+    ],
+    "confidence_in_vote": "high",
+    "lens_fields": {
+     "closest_real_card": "카드의정석2 / 카드의정석2 SUPER(PFF14), ZERO Edition3",
+     "novelty_verdict": "부분 참신",
+     "what_remains_new": "같은 카드 안에서 월 혜택 상한과 연회비 단계를 고객이 해마다 바꾸고, 지난 12개월 기준 최적 단계를 안내받는 것."
+    }
+   },
+   {
+    "subject_id": "PRI8",
+    "vote": "weaken",
+    "grade": "C",
+    "findings": [
+     "DB 밖 Bilt Card 2.0이 '일상 구매 → Bilt Cash → 주거비 포인트 해금'(PFF43~PFF45)으로 같은 구조를 이미 운영한다. 작성자도 이를 옮긴다고 밝혔다.",
+     "DB 대조: 적립 포인트를 쌓아 특정 결제에 쓰는 것은 처음(ANNIVERSE)·현대카드 M·RPM+ 같은 포인트 적립형의 기본 구조다. '해금 코인'은 사용처를 고정비 1개로 제한한 포인트이고, 이름만 다르다.",
+     "LOCA 365(전월 50만원 문턱)와 비교한 '부분 해금(문턱 없음)'은 무실적 적립형(줍줍·ZERO)과 결과가 같다."
+    ],
+    "corrections": [
+     "코인이 '현금화 불가 내부 단위'라도 고객에게는 사용처가 제한된 포인트다. 새로움을 '고정비 할인 사용처 지정'으로 낮춰 써야 한다.",
+     "Bilt는 월세라는 큰 고정비에 해금을 붙였는데, 국내 안의 대상(통신·교통·OTT·관리비)은 금액이 작아 해금 경험이 약하다는 점을 open_questions에 넣어야 한다."
+    ],
+    "confidence_in_vote": "high",
+    "lens_fields": {
+     "closest_real_card": "Bilt Card 2.0(DB 밖, PFF44) / 포인트 적립형 카드 전반",
+     "novelty_verdict": "이미 있음",
+     "what_remains_new": "국내 고정비 할인에 '모은 만큼 부분 해금' 방식을 붙인 현지화. 구조 자체의 새로움은 거의 없다."
+    }
+   },
+   {
+    "subject_id": "TDI1",
+    "vote": "weaken",
+    "grade": "B",
+    "findings": [
+     "DB 대조: 토스뱅크 체크카드 '스위치 캐시백 시즌 6'(시즌별 업종 교체, 즉석사진 같은 유행 업종 포함), 삼성 iD SELECT ON(택1, 매월 변경), 케이뱅크 ONE 체크(매월 3종 중 1개 선택, monthly_switch), 카카오뱅크 K-패스 프렌즈 체크(택1, 하루 한 번 변경). 시즌 교체와 월 선택은 모두 있다.",
+     "작성자도 '구조 자체는 이미 있다'고 인정했다. 남는 것은 교체 주기를 유행 수명에 맞추는 운영 규칙과, 슬롯 형식 고정·제휴처 교체로 부가서비스 유지 의무를 피하는 규제 해석(PFF40, 확인 필요)이다.",
+     "신용카드 시즌 슬롯은 DB에 없지만, 체크→신용으로 옮긴 것만으로는 혜택 구조가 새롭지 않다."
+    ],
+    "corrections": [
+     "'세 가지 새로운 점' 중 (1) 교체 주기, (3) 가맹점 비용 분담(PFF36)은 운영 방식이고 고객이 느끼는 혜택 구조는 토스뱅크 체크카드+iD SELECT ON의 결합이다.",
+     "제철 풀 갱신 주기 근거(FSF15·FSF17)는 검색량·F&B 유행 수명이지 카드 결제 수명이 아니다."
+    ],
+    "confidence_in_vote": "high",
+    "lens_fields": {
+     "closest_real_card": "토스뱅크 체크카드(스위치 캐시백 시즌) + 삼성 iD SELECT ON(월 택1)",
+     "novelty_verdict": "부분 참신",
+     "what_remains_new": "슬롯 형식은 약관에 고정하고 제휴처 풀만 유행 수명 주기로 바꾸는 신용카드 운영 설계(규제 해석 확인 전제)."
+    }
+   },
+   {
+    "subject_id": "TDI2",
+    "vote": "weaken",
+    "grade": "C",
+    "findings": [
+     "이것은 카드 혜택이 아니라 기획 도구다. DB 50종의 headline_benefits·note에는 혜택 선정 근거가 공개되지 않으므로 대조 대상 자체가 없다.",
+     "토스뱅크 체크카드가 시즌 6까지 업종을 바꿔 온 것은 카드사가 내부적으로 교체 판단을 하고 있다는 뜻이다. 판단 근거를 문서화·채점하는지 여부는 공개 자료로 확인할 수 없어 '없다'고 말할 수 없다.",
+     "웹 검색은 이 항목에 쓰지 않았다."
+    ],
+    "corrections": [
+     "카드 컨셉 후보 32개에 섞이면 비교가 왜곡된다. 플랫폼 기능(TDI1·TDI6의 운영 수단)으로 분리해야 한다.",
+     "'다른 카드사에 이런 흐름이 없다'는 공개 자료로 입증할 수 없는 주장이다."
+    ],
+    "confidence_in_vote": "low",
+    "lens_fields": {
+     "closest_real_card": "토스뱅크 체크카드(시즌 교체 운영)",
+     "novelty_verdict": "부분 참신",
+     "what_remains_new": "유행 위상·진입/종료 신호·반증 조건을 근거 id와 함께 남기고 사후 채점하는 기획 프로세스. 고객 혜택의 새로움은 아니다."
+    }
+   },
+   {
+    "subject_id": "TDI3",
+    "vote": "weaken",
+    "grade": "C",
+    "findings": [
+     "웹 검색: 카카오 러너스 카드는 신용카드가 아니라 톡디지털카드이며 대회 기록 인증과 2026 JTBC 서울마라톤 선등록 기회를 제공했고, JTBC 마라톤 본접수 자격이 러너스 카드 소지자로 공지됐다(https://www.kakaocorp.com/page/detail/11646 , https://runningwikii.com/entry/2026-jtbc-marathon/ (검색 요약)). '다음 대회 선등록'은 이미 시장에 있다.",
+     "DB 밖 KB 마라톤카드는 이용 실적 + 응모 추첨으로 도쿄 마라톤 참가 자격을 준다(FSF40). 카드 결제와 대회 참가권 연결도 이미 있다.",
+     "DB 대조: 굿데이카드 학원·피트니스, Discount Plan+ 피트니스 5%만 가깝다. 러닝 특화는 DB에 없다(W-VLC4)."
+    ],
+    "corrections": [
+     "핵심 혜택(선등록)이 카카오에 이미 있고, 카드 결제와 대회 참가권의 결합은 KB가 이미 했다. 남는 것은 '참가비 결제 1건'이라는 조건과 완주 단계뿐이다.",
+     "FST11(러닝 카드 3종)을 근거로 쓴 만큼 영역은 포화에 가깝다는 점을 what_is_new 앞에 써야 한다."
+    ],
+    "confidence_in_vote": "high",
+    "lens_fields": {
+     "closest_real_card": "카카오 러너스 카드(DB 밖, FSF45) + KB 마라톤카드(DB 밖, FSF40)",
+     "novelty_verdict": "이미 있음",
+     "what_remains_new": "선등록 자격을 추첨·이용금액이 아니라 참가비 결제 1건으로 열고, 완주 인증 단계마다 대회 당일 혜택을 늘리는 결합 방식."
+    }
+   },
+   {
+    "subject_id": "TDI4",
+    "vote": "weaken",
+    "grade": "B",
+    "findings": [
+     "DB 대조: 디지로카 London(무수수료 분할), LOCA 365·BC 바로 에어 마스터·BC 바로 에어 맥스(2~3개월 무이자 할부)가 결제 분할을 이미 준다. 굿데이카드·Discount Plan+는 운동 업종 할인을 준다.",
+     "선결제 손실 회피를 혜택으로 내세운 카드는 DB 50종에 없다. 폐업 피해 증가(FSF47)와 낮은 환급률(FSF49)은 문제의 근거로 맞다.",
+     "할부 항변권은 법정 권리라 카드 혜택이 아니다. 이를 '안내'하는 것은 어느 카드사든 할 수 있다."
+    ],
+    "corrections": [
+     "'영역' 참신성 주장은 DB 헤드라인 기준으로만 맞다. 할부·분할은 기존 구조이고, 새로움은 제휴 업체의 월 정기결제 전환과 위험 알림이다.",
+     "GRI6과 합쳐야 한다."
+    ],
+    "confidence_in_vote": "medium",
+    "lens_fields": {
+     "closest_real_card": "디지로카 London(LOCA 나누기) + 굿데이카드(학원·피트니스 10%)",
+     "novelty_verdict": "부분 참신",
+     "what_remains_new": "장기 회원권을 제휴 업체 월 정기결제로 바꿔 미래분 손실을 줄이고, 표준약관 채택 표시·폐업 신호 알림을 혜택의 중심에 둔 손실 회피형 설계."
+    }
+   },
+   {
+    "subject_id": "TDI5",
+    "vote": "weaken",
+    "grade": "C",
+    "findings": [
+     "DB 대조: 팝업 언급은 50종 헤드라인에 없다(W-VLC3). 올바른 FLEX '영화/공연 20%', 토스뱅크 체크카드 '즉석사진·영화관' 캐시백이 가장 가깝다.",
+     "작성자가 제안한 운영 형태(제휴처 1회 정액 환급, 시즌 한시 이벤트)는 카드사 제휴 캐시백 이벤트의 일반적인 형식이다. 검색 결과에도 하나카드 '해외직구 캐시백 이벤트' 같은 한시 제휴 캐시백 기사가 나온다(https://www.sateconomy.co.kr/news/view/179587161486585, 제목만 확인). 이벤트로 운영하면 상품 구조의 새로움이 아니다.",
+     "한정 굿즈를 명시적으로 제외하는 규칙은 DB·검색에서 찾지 못했다."
+    ],
+    "corrections": [
+     "새로움은 '팝업'이라는 대상과 '굿즈 제외' 규칙이며, 정액 1회 환급 구조는 기존 이벤트 형식이다.",
+     "TDI1 풀 후보로 넣는다면 독립 아이디어가 아니라 TDI1의 콘텐츠다."
+    ],
+    "confidence_in_vote": "medium",
+    "lens_fields": {
+     "closest_real_card": "올바른 FLEX(영화/공연 20%) / 토스뱅크 체크카드(즉석사진·영화관)",
+     "novelty_verdict": "부분 참신",
+     "what_remains_new": "혜택을 팝업의 입장·예약·체험에만 붙이고 리셀 대상 한정 굿즈는 명시적으로 빼는 대상 설정 규칙."
+    }
+   },
+   {
+    "subject_id": "TDI6",
+    "vote": "weaken",
+    "grade": "B",
+    "findings": [
+     "DB 대조: 케이뱅크 ONE 체크 369 캐시백(횟수), 하나 MOVING ALLDAY 3일 연속(PFF15), 처음(ANNIVERSE) 목표 보상. 새로움 기준 보상은 DB에 없다.",
+     "GRI5와 핵심(새 업종 첫 결제 정액 보상)이 같다. TDI6은 대상이 '시즌 목록'이라 카드사가 정한 업종 안에서의 첫 결제이고, 고객 이력 기준 '처음'인 GRI5보다 개인화가 약하다.",
+     "시즌 목록 + 정액 소액 보상은 토스뱅크 체크카드 스위치 캐시백(업종별 500원)과 형태가 매우 가깝다."
+    ],
+    "corrections": [
+     "'시즌에 처음 결제한 업종'은 고객 이력과 무관하므로 매 시즌 같은 업종을 다시 '처음'으로 셀 수 있다. 사실상 '시즌 목록 업종 첫 결제 정액 캐시백'이라 스위치 캐시백의 변형이다.",
+     "GRI5와 합치고 판정 기준은 GRI5의 12개월 이력 방식을 택해야 새로움이 남는다."
+    ],
+    "confidence_in_vote": "high",
+    "lens_fields": {
+     "closest_real_card": "토스뱅크 체크카드(스위치 캐시백) / 케이뱅크 ONE 체크(369 캐시백)",
+     "novelty_verdict": "부분 참신",
+     "what_remains_new": "횟수·금액 대신 시즌 목록의 업종별 첫 결제에만 1회 보상하고 반복 결제는 보상하지 않는 쪼개기 방지 설계."
+    }
+   },
+   {
+    "subject_id": "TDI7",
+    "vote": "refute",
+    "grade": "C",
+    "findings": [
+     "웹 검색: 카카오뱅크 착붙 신한카드(2026-08-21 출시)가 ChatGPT·Claude 구독을 10% 할인한다(https://biz.sbs.co.kr/amp/article/20000329951 , https://www.inews24.com/view/2013352 (검색 요약)). 생성형 AI 구독 할인 카드는 이미 시판 중이며 작성자가 이 카드를 놓쳤다. FRI2 작성자는 이 카드를 적었다.",
+     "DB 대조: NEED Pay '간편결제 택1, 월 1회 변경'은 대상 하나를 고르고 월 1회 바꾸는 구조를 이미 갖고 있다. '한 자리 + 갈아타기'는 이 선택 규칙을 AI 구독에 적용한 것이다.",
+     "남는 것은 '빠진 구독이 계속 결제되면 알림'인데 이는 FRI2의 구독 장부(중복 알림)와 같은 기능이다."
+    ],
+    "corrections": [
+     "what_is_new의 '모두 여러 구독을 동시에 할인'은 착붙 신한카드를 빠뜨린 상태의 비교다. AI 구독 할인은 새롭지 않다.",
+     "독립 아이디어로 두지 말고 FRI2의 슬롯·장부 기능 안에 '같은 종류 구독 중복 알림'으로 흡수해야 한다."
+    ],
+    "confidence_in_vote": "high",
+    "lens_fields": {
+     "closest_real_card": "카카오뱅크 착붙 신한카드(DB 밖, ChatGPT·Claude 10%)",
+     "novelty_verdict": "이미 있음",
+     "what_remains_new": "AI 구독 할인을 한 자리로 제한하고 갈아탄 뒤 이전 구독 결제를 알려 주는 관리 기능. 이 기능은 FRI2와 겹친다."
+    }
+   },
+   {
+    "subject_id": "FRI1",
+    "vote": "confirm",
+    "grade": "A",
+    "findings": [
+     "DB 대조: 처음(ANNIVERSE) '목표 입력 500P, 달성 5천P'가 가장 가깝다. 예산 지킴 여부로 다음 달 적립률을 바꾸는 카드는 50종에 없다. 50종의 tiered_perf 카드(WIDE, RPM+, Discount Plan+ 등)는 모두 많이 쓸수록 상위 구간이다.",
+     "웹 검색: Monzo는 카테고리별 월 목표와 임박·초과 알림을 제공한다(https://monzo.com/blog/2017/03/31/budget-targets (검색 요약)). 예산 설정·알림 자체는 해외 앱 기능으로 이미 있다. 국내 카드사 앱의 예산·한도 설정 기능은 검색으로 확인하지 못했다.",
+     "예산 준수를 혜택률에 연결한 카드는 국내외 검색에서 찾지 못했다."
+    ],
+    "corrections": [
+     "예산 알림과 본인 한도 하향 자체는 새로움이 아니다(Monzo 사례, 카드 이용한도 조정은 일반 기능으로 알려져 있으나 이번에 원문 미확인). 새로움을 '예산 지킴 → 다음 달 상위 적립률'로 좁혀 써야 한다.",
+     "PRI5와 같은 아이디어이므로 하나로 합친다."
+    ],
+    "confidence_in_vote": "medium",
+    "lens_fields": {
+     "closest_real_card": "처음(ANNIVERSE) 소비관리 보너스 / Monzo 예산 목표(DB 밖, 앱 기능)",
+     "novelty_verdict": "부분 참신",
+     "what_remains_new": "실적 방향을 뒤집어 전월에 스스로 정한 예산을 지킨 것이 다음 달 상위 적립률의 조건이 되는 구조."
+    }
+   },
+   {
+    "subject_id": "FRI2",
+    "vote": "weaken",
+    "grade": "B",
+    "findings": [
+     "DB 대조: NEED Pay(지정 OTT·멤버십 30%), zgm.streaming(멤버십·스트리밍), Discount Plan+(디지털구독·멤버십 20%), 처음(ANNIVERSE)(멤버십 20%·OTT 15%), BC 바로 K-패스(OTT 15%), 삼성 iD SELECT ON(디지털콘텐츠 50%). 구독 할인은 매우 흔하다.",
+     "웹 검색: 카카오뱅크 착붙 신한카드는 ChatGPT·Claude 10%, 네이버플러스·쿠팡와우 최대 50%를 준다(https://biz.sbs.co.kr/amp/article/20000329951 , https://www.inews24.com/view/2013352 (검색 요약)). 고정 목록 할인이지만 목록이 넓어지고 있다.",
+     "고객 지정 슬롯은 삼성 iD SELECT ON 택1 구조의 확장이다. 구독 장부(예정·중복·인상 알림)는 DB에 없고 W-CTC4와 같다. 핀테크 앱의 정기결제 모아보기는 일반적으로 알려져 있으나 이번에 원문을 읽지 않았다."
+    ],
+    "corrections": [
+     "새로움의 중심은 할인이 아니라 장부이며, 장부는 카드 혜택이 아니라 앱 기능이라 경쟁사·핀테크가 쉽게 따라 할 수 있다는 점을 적어야 한다.",
+     "TDI7의 중복 알림을 흡수해 하나로 정리한다."
+    ],
+    "confidence_in_vote": "medium",
+    "lens_fields": {
+     "closest_real_card": "NEED Pay(구독 30%) / 카카오뱅크 착붙 신한카드(DB 밖)",
+     "novelty_verdict": "부분 참신",
+     "what_remains_new": "할인 대상을 고객이 고른 정기결제 3개로 두고, 그 카드로 나가는 모든 구독의 예정·중복·인상 알림을 혜택과 한 화면에 묶는 것."
+    }
+   },
+   {
+    "subject_id": "FRI3",
+    "vote": "weaken",
+    "grade": "B",
+    "findings": [
+     "웹 검색: 2017년 신한카드·우리카드가 '신용카드 더치페이'를 내놓았다. 대표 결제 뒤 앱으로 분담 금액을 요청하고 상대가 수락하면 분담 결제되는 방식이었고, 같은 카드사 앱·카드가 있어야 하는 한계가 지적됐다(https://www.card-gorilla.com/contents/detail/448 , https://www.twig24.com/news/finance/2017/09/19/20170919500162 (검색 요약)). 결제 건 단위 정산 요청 자체는 이미 있었다.",
+     "신한카드 'My송금'(신용카드 결제로 송금, 링크로 수취)도 있다(검색 요약, 2021 기사). 현재 판매·운영 여부는 확인하지 못했다.",
+     "DB 대조: 줍줍·디지로카 London은 본인 선결제 보상, 카카오뱅크 모임 체크카드(GTF17)는 체크 구조다. 친구 송금으로 해당 건을 자동 선결제하고 정산 완료 건에 캐시백을 주는 구조는 찾지 못했다."
+    ],
+    "corrections": [
+     "'결제 건별 정산 요청'은 2017년 신용카드 더치페이로 이미 있었다. 새로움은 친구가 카드 없이 송금만 하면 해당 건이 자동 선결제되는 점과 정산 완료 보상이다.",
+     "과거 더치페이가 같은 카드사 회원 한정이라 확산되지 않았다는 보도는 이 아이디어가 수취 측 제약을 없애야 한다는 근거가 된다."
+    ],
+    "confidence_in_vote": "medium",
+    "lens_fields": {
+     "closest_real_card": "신한·우리 신용카드 더치페이(2017, DB 밖) / 카카오뱅크 줍줍 신한카드(선결제 캐시백)",
+     "novelty_verdict": "부분 참신",
+     "what_remains_new": "모임원의 계좌 송금이 총무 카드의 해당 승인 건을 자동 선결제하고, 정산이 끝난 건에만 캐시백을 주는 정산 연동 선결제."
+    }
+   },
+   {
+    "subject_id": "FRI4",
+    "vote": "confirm",
+    "grade": "A",
+    "findings": [
+     "DB 50종 대조: 선택형 카드(삼성 iD SELECT ON, Youth Club 체크, 토스뱅크 체크카드, 케이뱅크 ONE 체크, K-패스 프렌즈 체크)는 모두 개인이 고른다. 친구 묶음이 혜택 영역을 투표로 정하는 카드는 없다.",
+     "관계 기반 혜택은 신한카드 친구추천(GTF25, 1회성 모집 보상)과 카카오뱅크 모임 체크카드(GTF17, 모임통장 기반 무작위 캐시백)뿐이며 구조가 다르다.",
+     "웹 검색은 이 항목에 쓰지 않았다(검색 한도). 해외 사례는 확인하지 못했다."
+    ],
+    "corrections": [
+     "새로움은 확인되지만 혼자서도 '1인 크루'로 쓸 수 있게 해 둔 탓에 실제로는 iD SELECT ON과 같은 개인 선택 카드로 쓰일 수 있다. 크루가 실제로 만들어질지가 새로움의 전제다.",
+     "결과 공유 범위(이용 여부 예/아니오)도 개인정보 렌즈 확인이 필요하다."
+    ],
+    "confidence_in_vote": "medium",
+    "lens_fields": {
+     "closest_real_card": "삼성 iD SELECT ON(개인 월 택1)",
+     "novelty_verdict": "참신",
+     "what_remains_new": "혜택 영역을 고르는 단위가 개인이 아니라 친구 묶음이고, 투표 결과가 각자 카드의 같은 영역 할인이 되는 공동 선택 구조."
+    }
+   },
+   {
+    "subject_id": "FRI5",
+    "vote": "weaken",
+    "grade": "B",
+    "findings": [
+     "DB 대조: 결제 데이터로 혜택을 정하는 카드는 카카오뱅크 K-패스 프렌즈 체크(auto_best 태그) 1종이 DB에 있다.",
+     "웹 검색: 신한카드 Deep Dream은 DREAM 영역 중 가장 많이 쓴 1개 영역에 자동으로 높은 적립을 준다(https://www.shinhancard.com/pconts/html/card/apply/credit/1199703_2207.html , https://m.card-gorilla.com/contents/detail/1712 (검색 요약)). IBK기업은행 카드는 전월 지출이 가장 많았던 분야에 1% 캐시백(https://www.card-gorilla.com/contents/detail/3815 (검색 요약)), 해외 Citi Custom Cash는 상위 범주 자동 5%(https://www.cnbc.com/select/citi-custom-cash-credit-card-review/ , https://awardwallet.com/blog/citi-custom-cash-review/ (검색 요약)). 결제 분석으로 혜택을 맞추는 것은 이미 있고, FRI5의 '추천 → 수락'은 이들보다 오히려 한 단계 수동이다.",
+     "공유용 소비 유형 리포트는 DB에 없다. 핀테크 앱 소비 리포트는 일반적으로 알려져 있으나 이번에 원문을 읽지 않았다."
+    ],
+    "corrections": [
+     "'50종 중 AI 개인화 0종'은 DB 태그 기준으로만 맞다. DB 밖 국내 카드(Deep Dream)가 사용 패턴 기반 자동 영역 선택을 이미 한다.",
+     "새로움은 혜택 구조가 아니라 공유 가능한 리포트라는 콘텐츠 경험이다."
+    ],
+    "confidence_in_vote": "medium",
+    "lens_fields": {
+     "closest_real_card": "신한카드 Deep Dream(DB 밖, 최다 이용 영역 자동 적립)",
+     "novelty_verdict": "부분 참신",
+     "what_remains_new": "분기 결제로 만든 공유용 소비 유형 리포트를 상품 경험의 중심에 두고, 그 끝에서 다음 분기 팩을 고르게 하는 콘텐츠형 선택 흐름."
+    }
+   },
+   {
+    "subject_id": "FRI6",
+    "vote": "confirm",
+    "grade": "B",
+    "findings": [
+     "DB 대조: 줍줍 note '메탈라이언 디자인은 발급 수수료 7만원 추가'(디자인 1회 유료), 신한 SOL트래블J 체크(치이카와 디자인), 카카오뱅크 프렌즈 체크(춘식이, VRF22). 캐릭터 플레이트는 있지만 연회비에 연 1회 교체권을 넣은 카드는 없다.",
+     "무실적 기본 적립 0.8%는 ZERO Edition3(0.8%)와 같아 혜택 자체는 새롭지 않다.",
+     "웹 검색은 이 항목에 쓰지 않았다. 해외 메탈·디자인 교체 서비스는 확인하지 못했다."
+    ],
+    "corrections": [
+     "새로움은 전적으로 컨셉(시즌제 플레이트 구독)이다. 혜택 구조는 ZERO와 같다는 점을 what_is_new에 적어야 한다.",
+     "W-VLC2와 ENC5(병합)에서 이미 다룬 공백이며, 그 공백은 '무실적 캐릭터 신용카드'였다. 교체권이 추가된 것이 이 아이디어의 실제 기여다."
+    ],
+    "confidence_in_vote": "medium",
+    "lens_fields": {
+     "closest_real_card": "카카오뱅크 줍줍 신한카드(메탈라이언 유료 디자인) / ZERO Edition3(무실적 0.8%)",
+     "novelty_verdict": "부분 참신",
+     "what_remains_new": "연회비 안에 연 1회 IP 에디션 플레이트 교체권을 넣어 캐릭터 카드를 해마다 바뀌는 시즌제 무실적 주력 카드로 만드는 컨셉."
+    }
+   },
+   {
+    "subject_id": "FRI7",
+    "vote": "confirm",
+    "grade": "B",
+    "findings": [
+     "DB 대조: 처음(ANNIVERSE) 목표 보상(덜 쓰기 목표), 신한카드 하루(해외 즉시 적립), 카드의정석2(분기 구간). 적립을 목표 단위로 잠그는 카드는 DB에 없다.",
+     "DB 밖 Discover it(PFF50·LNF44)은 연말 1:1 매치를 하지만 목표·용도와 연결되지 않는다.",
+     "웹 검색은 이 항목에 쓰지 않았다. 예금 쪽 '목표 저금통'은 일반적이나 카드 포인트 목표 매칭은 확인하지 못했다."
+    ],
+    "corrections": [
+     "'50종 중 없다'는 DB 기준으로 맞지만, 실질은 '목표 업종 결제 시 포인트 1.5배 사용'이다. 목표 업종이 항공·숙박 등 큰 결제라 매칭 보너스가 사실상 업종 할인 이벤트처럼 보일 수 있다.",
+     "목표 '병'은 적금의 저금통 경험을 카드에 옮긴 컨셉이므로 novelty_type을 혜택 구조보다 컨셉 쪽에 두는 것이 정확하다."
+    ],
+    "confidence_in_vote": "medium",
+    "lens_fields": {
+     "closest_real_card": "처음(ANNIVERSE) 소비관리 보너스 / Discover it(DB 밖)",
+     "novelty_verdict": "부분 참신",
+     "what_remains_new": "평소 적립을 고객이 이름 붙인 목표 병에 잠그고, 기간 후 그 목표 업종 결제에 쓰면 매칭 보너스를 얹는 '모아서 쓰는' 적립."
+    }
+   },
+   {
+    "subject_id": "FRI8",
+    "vote": "confirm",
+    "grade": "A",
+    "findings": [
+     "DB 50종 대조: 선택형은 모두 결제 전 업종 선택(iD SELECT ON, Youth Club, 케이뱅크 ONE, K-패스 프렌즈), 균일형은 고르는 요소가 없다(ZERO, 줍줍, WIDE, 디지로카 London). 결제 후 거래 1건 지정은 없다.",
+     "웹 검색: '결제 후 결제건 선택 캐시백'으로 찾았을 때 건별 사후 선택 카드는 나오지 않았고 IBK 카드의 '전월 최다 지출 분야 1%'만 나왔다(https://www.card-gorilla.com/contents/detail/3815 (검색 요약)). 해외 Citi Custom Cash는 사후 자동 범주 선택이지 고객의 건 지정이 아니다(https://www.cnbc.com/select/citi-custom-cash-credit-card-review/ , https://awardwallet.com/blog/citi-custom-cash-review/ (검색 요약)).",
+     "포인트로 이미 결제한 금액을 차감하는 기능은 일반적이나 이는 사용(redemption)이지 적립률 지정이 아니다(이번에 원문 확인하지 않음)."
+    ],
+    "corrections": [
+     "건당 최대 2만원(10%)이라 20만원 이상 결제를 고르게 되므로 '한 번 크게 쓰는 소비'를 부추길 수 있다는 점은 다른 렌즈 확인 대상이다.",
+     "새로움은 확인되나 국내 전 카드를 조사한 것이 아니므로 '50종에 없다'와 '검색에서 찾지 못했다'로 나눠 써야 한다."
+    ],
+    "confidence_in_vote": "medium",
+    "lens_fields": {
+     "closest_real_card": "삼성 iD SELECT ON(사전 업종 선택) / Citi Custom Cash(DB 밖, 사후 자동 범주)",
+     "novelty_verdict": "참신",
+     "what_remains_new": "혜택 대상을 결제가 끝난 뒤 고객이 거래 1건 단위로 지정하는 사후 지정형 보상."
+    }
+   },
+   {
+    "subject_id": "FRI9",
+    "vote": "refute",
+    "grade": "C",
+    "findings": [
+     "웹 검색: 신한카드 Deep Dream은 DREAM 영역 중 당월 가장 많이 이용한 1개 영역에 자동으로 높은 적립(일반형 3.5%, 플래티넘+ 4.0~5.5%)을 주고 '매월 자동으로 산출·적립(Auto Selection)'된다(https://www.shinhancard.com/pconts/html/card/apply/credit/1199703_2207.html , https://m.card-gorilla.com/contents/detail/1712 (검색 요약)). '월말 사후 최적 영역 자동 적용'이라는 핵심 구조가 국내 시판 카드에 이미 있다.",
+     "웹 검색: IBK기업은행 카드 '전월 지출이 가장 많았던 분야 1% 캐시백'(https://www.card-gorilla.com/contents/detail/3815 (검색 요약)), 해외 Citi Custom Cash '청구 주기마다 상위 범주 자동 5%, 활성화 불필요'(https://www.cnbc.com/select/citi-custom-cash-credit-card-review/ , https://awardwallet.com/blog/citi-custom-cash-review/ (검색 요약)). 같은 구조가 국내외에 여럿 있다.",
+     "DB 대조: K-패스 프렌즈 체크는 수동 택1이지만, 작성자가 인용한 K-패스 제도 자체(STF67)도 유리한 방식 자동 적용이다. 혜택 축소 시 해지·환급 선택권(W-CTC3)은 DB에 없다."
+    ],
+    "corrections": [
+     "'50종 중 자동 최적 1종'이라는 비교는 DB 밖의 Deep Dream을 놓쳤다. 소급 최적화는 새로움이 아니다.",
+     "남는 새로움은 혜택 변경 시 '바뀐 구성 유지 vs 연회비 일할 환급 후 해지' 선택권을 약관에 넣는 것뿐이다. 이는 CTC3 신뢰 장치로 따로 떼어 다른 아이디어에 붙이는 편이 낫다."
+    ],
+    "confidence_in_vote": "high",
+    "lens_fields": {
+     "closest_real_card": "신한카드 Deep Dream(DB 밖, 최다 이용 영역 자동 적립) / Citi Custom Cash(DB 밖)",
+     "novelty_verdict": "이미 있음",
+     "what_remains_new": "혜택 축소 때 고객에게 '유지 또는 연회비 일할 환급 후 해지' 선택권을 약관으로 주는 신뢰 조항."
+    }
+   }
+  ],
+  "cross_notes": "중복: GRI5≈TDI6(처음 결제 보상), GRI6≈TDI4(회원권 보호), GRI7≈PRI4(건전 행동 레벨), PRI5≈FRI1(예산 지킴), PRI1≈PRI2(다개월 실적 판정), TDI7⊂FRI2(구독 중복 알림)는 각각 하나로 합쳐야 한다. DB 밖에서 찾은 기존 사례(신한 Deep Dream 자동 영역, 카카오뱅크 착붙 신한카드 AI 구독 할인, 2017 신용카드 더치페이, 카카오 러너스 카드 선등록, 3개월 연속 이용 우대할인)는 작성자들이 '50종에 없다'로 판정한 근거가 DB 경계에 갇혀 있었음을 보여 준다. 한계: WebSearch 8회 한도로 DB 밖 검증은 10여 개 아이디어에만 했고, 검색 결과는 요약본을 읽은 것이라 공식 약관 원문 대조가 아니다."
+ },
+ "findings": [],
+ "sources": [],
+ "assumptions": [],
+ "unresolved": [],
+ "limits": [],
+ "clarifications": [],
+ "out_of_scope": {
+  "detected": false,
+  "suggested_agent": null
+ },
+ "input_refs": []
+}

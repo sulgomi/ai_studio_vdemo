@@ -1,0 +1,257 @@
+{
+  "run_id": "v2rec",
+  "request_id": "v2rec-whitespace-r1",
+  "agent": "whitespace",
+  "contract_version": "1.0",
+  "model": "claude-sonnet-5-5",
+  "status": "ok",
+  "answer": "컨셉 개발로 넘길 기회영역으로 GenZ×구독·디지털×자동 최적 혜택(외식·배달, 코드 1위), GenZ×절약·캐시백×놓친 혜택 환급(온라인쇼핑, 코드 4위), GenZ×소비 통제×셀프 예산 한도와 예산 지킴 보상(컨셉 아이디어 FRI1, 코드 11위)을 골랐습니다. 코드 2·3위는 1순위와 겹치거나 방식 연결이 가정이라 빼고, 5~10위 아이디어는 모두 방식 연결이 가정이라 가정 연결이 없고 소비자 조사 must_have에 직접 대응하는 소비 통제 영역을 올렸습니다. 2·3순위는 rank_stability 0.0이고 미충족 점수는 해당 방식 카드가 적다는 뜻일 뿐 고객 불만을 확인한 근거가 아니므로 가설 검증이 먼저 필요합니다.",
+  "result": {
+    "picks": [
+      {
+        "rank": 1,
+        "seg": "genz",
+        "need": "digital",
+        "engine_rank": 1,
+        "rationale": "코드 1위이고 흔들림 검사에서 상위 3에 든 비율(rank_stability)이 1.0으로 12개 영역 중 가장 안정적이며 위험 R은 0.0이다. 구독·디지털은 소비자 조사 1순위 니즈이고 must_have 첫 항목이 간편결제 등록과 앱 내 발급·관리다. 경쟁 DB 50종 중 auto_best 카드는 1종이고 가장 비슷한 카카오뱅크 K-패스 프렌즈 체크와의 유사도는 0.29다. 외식·배달은 세그먼트 월 소비 가정치 24로 가장 큰 영역이다.",
+        "evidence_ids": [
+          "T2",
+          "T4",
+          "tag:auto_best",
+          "need:digital",
+          "tag:dining_cafe",
+          "ev:STF15",
+          "ev:TRF15"
+        ],
+        "deviates_from_engine": false,
+        "deviation_reason": null,
+        "risk": "외식·카페는 50종 중 17종이 혜택을 주는 붐비는 영역이고, 간편결제 앱 자체 할인을 신용카드 못지않다고 보는 사례(ev:TRF15, 신뢰도 낮음)처럼 페이 앱 혜택과 구별되지 않으면 카드가 휴면화될 수 있으며, 자동 적용 규칙이 불투명하면 단순함 니즈와 부딪힌다.",
+        "origin": "score",
+        "area_id": "A-genz-digital-auto_best-dining",
+        "mechanisms": [
+          "auto_best"
+        ],
+        "domain": "dining",
+        "statement": "외식·배달을 간편결제로 자주 결제하는 GenZ가 결제 때마다 어떤 혜택이 유리한지 따지지 않아도 되도록, 이용 내역에 맞춰 외식·배달 결제에 유리한 혜택을 자동으로 적용하는 방식이 시장에 거의 없다.",
+        "unmet_gap": "경쟁 DB 50종 중 auto_best 카드는 1종이고 가장 비슷한 카카오뱅크 K-패스 프렌즈 체크와 유사도 0.29다. 외식·카페 혜택은 17종이 주지만 모두 정해진 업종 할인이다. must_have는 간편결제 등록과 앱 내 관리를 요구하나, 혜택을 고르는 수고에 대한 고객 불만을 직접 확인한 근거는 없다.",
+        "why_now": "20대 간편결제 이용자의 90.6%가 주 지급수단으로 카드를 쓰고 간편지급 이용이 늘었다(T2). 20대는 지급수단 선택에서 편리성 44.8%를 가장 중시한다(ev:STF15). 외식 비중 확대(T4)는 30대 이하·전연령 범위라 근거는 중간 수준이다.",
+        "hypotheses_to_validate": [
+          "GenZ는 외식·배달 결제에서 혜택을 직접 고르는 구조보다 자동 적용 구조를 더 선호한다(가상 고객이 직접 선택형을 더 높게 평가하면 기각).",
+          "자동 적용 혜택이 간편결제 앱 자체 할인과 구별되어, 카드를 페이 앱의 주 결제수단으로 등록할 이유가 된다(이탈 사유 1위가 '페이 혜택과 차이 없음'이면 기각).",
+          "어떤 혜택이 왜 적용됐는지를 앱에서 한 화면으로 설명할 수 있고 고객이 이해한다(이해도가 낮으면 단순함과 충돌하므로 기각)."
+        ],
+        "kill_criteria": "컨셉 3안 모두 가상 고객 채택 의향이 목표 0.38 미만이거나, 가장 비슷한 기존 카드와의 유사도가 0.5를 넘는 안만 나오거나, 이탈 사유 1위가 '페이 앱 혜택과 차이 없음'으로 나오면 접는다.",
+        "confidence": "medium",
+        "ceiling": 0.528,
+        "feasible": true
+      },
+      {
+        "rank": 2,
+        "seg": "genz",
+        "need": "saving",
+        "engine_rank": 4,
+        "rationale": "절약·캐시백은 소비자 조사 2순위 니즈이고 must_have에 '주 소비 영역에서 체감되는 할인·적립과 실적 조건의 명확한 안내'가 있다. 경쟁 DB 50종 중 miss_refund 카드는 0종이고 가장 비슷한 zgm.streaming과 유사도 0.2이며, 이 영역은 방식과 니즈의 연결이 PM 가정(assumed_links)에 기대지 않는다. Z세대가 구매 채널을 가격 78.5%, 쿠폰·할인 45.7% 기준으로 고른다는 조사(ev:MHF3)가 온라인쇼핑 영역과 맞닿는다.",
+        "evidence_ids": [
+          "T4",
+          "tag:miss_refund",
+          "need:saving",
+          "tag:online_shop",
+          "ev:MHF3",
+          "ev:MHT2",
+          "ev:PFC10"
+        ],
+        "deviates_from_engine": true,
+        "deviation_reason": "코드 2위 A-genz-digital-ai_personalize-dining은 1순위와 세그먼트·니즈·혜택 영역이 같고, 경쟁조사도 ai_personalize를 auto_best와 유사한 방식으로 묶어 컨셉이 겹친다(WS-R11 취지). 코드 3위 A-genz-saving-life_event-dining은 life_event와 절약 니즈의 연결이 PM 가정이고 연결된 근거(ev:SNF23, ev:LNC10)가 10대·청소년 대상이라 GenZ(만 19~29세) 근거로 약하다. 그래서 같은 절약 니즈에서 가정 연결이 없는 4위를 2순위로 올렸다.",
+        "risk": "rank_stability가 0.0이라 가중치를 바꾸면 상위 3에 들지 못하는 영역이고, 환급 원가가 이용 행태에 따라 달라 혜택 수준을 지속 가능하게 잡기 어려우며, 온라인쇼핑은 online_shop 19종이 몰려 있고 무실적 온라인 1.5% 정률 카드(ev:PFC10)처럼 단순한 대안과 비교될 수 있다.",
+        "origin": "score",
+        "area_id": "A-genz-saving-miss_refund-online",
+        "mechanisms": [
+          "miss_refund"
+        ],
+        "domain": "online",
+        "statement": "온라인쇼핑에서 가격과 쿠폰을 따져 사는 GenZ(근거는 Z세대 범위 조사)가 조건을 놓쳐 받지 못한 할인·적립을 사후에 돌려받는 방식이 시장에 없다. 혜택 시점을 놓쳐도 손해를 줄여 주는 장치로 절약 니즈를 채울 수 있다.",
+        "unmet_gap": "경쟁 DB 50종 중 miss_refund 카드는 0종이고 가장 비슷한 zgm.streaming과 유사도 0.2다. 반면 청구할인형 24종, 온라인쇼핑 19종으로 혜택 자체는 많다. must_have는 실적 조건의 명확한 안내를 요구하지만, 놓친 혜택 때문에 불만이 있다는 직접 근거는 입력에 없다.",
+        "why_now": "Z세대는 프로모션 문구로 구매한 경험이 73.8%, 타임세일 반응이 39.2%다(ev:MHT2, Z세대 범위). 2026년 8월 온라인쇼핑 구성비 1위는 음식서비스 16.4%다(T4, 전연령). 코드가 연결한 T3(교통 환급·청년 체크카드)은 이 방식과 관련이 약해 근거는 중간 이하다.",
+        "hypotheses_to_validate": [
+          "같은 원가라면 GenZ는 온라인쇼핑 상시 정률 할인보다 놓친 혜택 사후 환급을 더 가치 있게 본다(가상 고객이 정률 할인 안을 더 높게 평가하면 기각).",
+          "무엇을 '놓친 혜택'으로 볼지를 한 문장으로 설명할 수 있고 고객이 이해한다(이해도가 낮으면 기각).",
+          "정적 손익 기준을 지키는 환급 수준에서도 체감 혜택이 무실적 정률 할인 카드와 구별된다."
+        ],
+        "kill_criteria": "손익 기준을 지키는 환급 수준으로 만든 컨셉 3안이 모두 목표 채택 의향 0.38에 못 미치거나, 가상 고객이 환급 안을 무실적 정률 할인 안보다 낮게 평가하면 접는다.",
+        "confidence": "low",
+        "ceiling": 0.528,
+        "feasible": true
+      },
+      {
+        "rank": 3,
+        "seg": "genz",
+        "need": "control",
+        "engine_rank": 11,
+        "rationale": "탐색 파이프라인이 낸 컨셉 아이디어(셀프캡 카드) 영역이다. 소비 통제는 소비자 조사 3순위 니즈이고 must_have에 '한도 설정, 결제일 알림 등 소비 통제 장치'가 있으며, 방식과 니즈의 연결이 PM 가정(assumed_links)에 기대지 않는다. 경쟁 DB 50종 중 self_budget_cap·budget_keep_bonus 카드는 0종이고, 통제를 혜택 조건으로 쓴 사례는 challenge 1종(처음(ANNIVERSE)의 사후 소비관리 보너스)뿐이다. 앞의 두 영역과 니즈가 달라 다른 컨셉이 나올 수 있다.",
+        "evidence_ids": [
+          "T5",
+          "tag:self_budget_cap",
+          "tag:budget_keep_bonus",
+          "tag:challenge",
+          "need:control",
+          "ev:CST1",
+          "ev:MHT6"
+        ],
+        "deviates_from_engine": true,
+        "deviation_reason": "5~10위 아이디어 영역(TDI1, FRI8, PRI3, GRI1, FRI4, GRI5)은 모두 방식과 니즈의 연결이 PM 가정(assumed_links)이고, 4위까지의 일반 영역은 1·2순위와 니즈가 겹친다. 11위 FRI1은 가정 연결이 없고 소비자 조사 must_have의 소비 통제 장치에 직접 대응하며 니즈 순위(3위)도 단순함(4위)·소셜(5위)보다 높아 3순위로 올렸다. 모멘텀 M 0.15와 confidence low는 risk에 반영했다.",
+        "risk": "코드 confidence low, rank_stability 0.0이고 근거 설문이 출처·표본 불명 1건이며 같은 설문의 혜택 동기(실적·할인 44.0%)와 함께 읽어야 한다. 이용액을 줄이는 구조라 수수료 수입과 부딪히고, 알림·한도는 경쟁사가 따라 하기 쉬워 새로움은 '예산 지킴이 다음 달 적립률을 정한다'로 좁혀야 하며, 직전 평균 기준 판정은 조작될 수 있다.",
+        "origin": "score",
+        "area_id": "IDEA-FRI1",
+        "mechanisms": [
+          "self_budget_cap",
+          "budget_keep_bonus"
+        ],
+        "domain": null,
+        "statement": "결제일 부담을 겪는 GenZ가 신용카드를 쓰며 스스로 정한 월 예산을 지키도록 돕는 혜택 구조가 비어 있다. 본인 예산을 이용한도로 걸 수 있게 하고, 예산을 지킨 달에 다음 달 적립을 높여, 많이 쓸수록 혜택이 커지는 일반 실적 구조와 반대 방향의 동기를 줄 수 있다.",
+        "unmet_gap": "50종 중 self_budget_cap·budget_keep_bonus 카드는 0종이고 코드 기준 가장 비슷한 zgm.streaming과 유사도 0.17이다. MZ 설문 1건(출처·표본 불명)에서 필요 요소로 소비 통제 64.4%가 혜택 설계 19.2%보다 높았다(ev:CST1). 통제 장치가 없어 불만이라는 직접 근거는 없다.",
+        "why_now": "신규 회원 2.2% 감소, 해지 7.4% 증가와 20대 카드론 연체율 상승 신호가 있고(T5), 20대가 소액 후불결제 잔액의 63%를 차지한다(ev:MHT6). 코드가 연결한 시그널은 없어(모멘텀 0.15) 근거가 약하다.",
+        "hypotheses_to_validate": [
+          "GenZ는 본인 예산을 이용한도로 거는 구조를 실제로 원한다(가상 고객 다수가 알림만 고르거나 하드캡을 불편으로 꼽으면 기각).",
+          "예산 지킴 보상이 있는 안이 알림만 있는 안보다 발급 의향을 높인다(차이가 없으면 보상 축 기각).",
+          "가산 적립을 연회비와 월 적립 한도 안에 묶어도 정적 손익 기준을 지키면서 체감 차이가 남는다."
+        ],
+        "kill_criteria": "가상 고객 검증에서 예산 지킴 보상 안과 알림만 있는 안의 채택 의향 차이가 없거나, 컨셉 3안 모두 목표 0.38 미만이거나, 정적 손익 기준을 지키는 가산 수준에서 기존 무실적 적립 카드와 구별되지 않으면 접는다.",
+        "confidence": "low",
+        "ceiling": 0.602,
+        "feasible": true
+      }
+    ],
+    "not_chosen": [
+      {
+        "area_id": "A-genz-digital-ai_personalize-dining",
+        "reason": "코드 2위지만 1순위와 세그먼트·니즈·혜택 영역이 같고 경쟁조사가 auto_best와 유사한 방식으로 묶어 컨셉이 겹친다. 위험 R 0.25로 1순위(0.0)보다 높다. 1순위 컨셉의 변형안으로 다룰 수 있다."
+      },
+      {
+        "area_id": "A-genz-saving-life_event-dining",
+        "reason": "코드 3위지만 life_event와 절약 니즈의 연결이 PM 가정이고 rank_stability 0.0이며, 연결된 근거가 10대·청소년 대상(ev:SNF23, ev:LNC10)이라 GenZ 근거로 약하다."
+      },
+      {
+        "area_id": "IDEA-TDI1",
+        "reason": "코드 5위 아이디어로 2순위와 니즈가 같고 두 방식 모두 가정 연결이다. 검증이 '부분 참신'으로 보고 혜택 구조는 기존 시즌제·월 변경형의 결합이며, 제휴처 변경이 약관 개정 예외에 드는지 확인되지 않았다."
+      },
+      {
+        "area_id": "IDEA-GRI1",
+        "reason": "단순함 아이디어(6·7·8위) 중 천장이 0.707로 가장 높으나 zero_floor 연결이 가정이고, 검증이 졸업형 실적 구조에 대한 20대 선호 근거가 없다고 지적했다. 6위 FRI8은 근거·위험 등급이 1이다."
+      }
+    ]
+  },
+  "findings": [
+    {
+      "id": "whitespace#0",
+      "claim": "경쟁 카드 DB 50종 중 auto_best 카드는 1종, miss_refund·self_budget_cap·budget_keep_bonus 카드는 각각 0종이고, 외식·카페 17종, 온라인쇼핑 19종, 청구할인형 24종이다.",
+      "type": "fact",
+      "source_id": "DB1",
+      "confidence": "medium"
+    },
+    {
+      "id": "whitespace#1",
+      "claim": "20대 간편결제 이용자의 90.6%가 주 지급수단으로 카드를 쓰고, 2025년 간편지급 일평균 이용은 건수 14.9%, 금액 14.6% 늘었다.",
+      "type": "fact",
+      "source_id": "TR1",
+      "confidence": "high"
+    },
+    {
+      "id": "whitespace#2",
+      "claim": "Z세대의 구매 채널 선택 기준은 가격 78.5%, 쿠폰·할인 45.7% 순이다(Z세대 범위).",
+      "type": "fact",
+      "source_id": "EV1",
+      "confidence": "high"
+    },
+    {
+      "id": "whitespace#3",
+      "claim": "MZ세대 설문에서 카드 사용에 필요한 요소로 소비 통제가 64.4%로 혜택 설계 19.2%보다 높았다. 출처·표본이 불명확한 설문 1건이다.",
+      "type": "fact",
+      "source_id": "EV1",
+      "confidence": "low"
+    },
+    {
+      "id": "whitespace#4",
+      "claim": "2026년 1~5월 신용카드 신규 회원은 2.2% 줄고 해지 회원은 7.4% 늘었으며, 카드론 연체율의 20대 상승폭은 0.41%p다.",
+      "type": "fact",
+      "source_id": "TR1",
+      "confidence": "medium"
+    },
+    {
+      "id": "whitespace#5",
+      "claim": "코드 1위(auto_best)와 2위(ai_personalize) 영역은 같은 니즈·혜택 영역의 유사 방식이라 컨셉이 겹칠 것으로 판단해 하나만 골랐다.",
+      "type": "estimate",
+      "source_id": null,
+      "confidence": "medium"
+    },
+    {
+      "id": "whitespace#6",
+      "claim": "3순위(FRI1) 선택 근거는 소비자 조사 must_have와의 직접 대응이며, 모멘텀과 근거 두께가 얇아 가상 고객 검증 전까지 우선순위가 바뀔 수 있다.",
+      "type": "estimate",
+      "source_id": null,
+      "confidence": "low"
+    }
+  ],
+  "sources": [
+    {
+      "id": "DB1",
+      "title": "경쟁 카드 DB 50종과 태그 집계(입력 payload research.competitor, cells_top facts, 기준일 없음)",
+      "url": "https://card-studio.invalid/scenarios/genz-credit-v2/competitor_db.json",
+      "publisher": "card-studio 입력 데이터",
+      "kind": "db",
+      "published": null,
+      "retrieved_at": "2026-10-23",
+      "reliability": 0.6
+    },
+    {
+      "id": "TR1",
+      "title": "시장조사 트렌드 시그널 T1~T5(입력 payload research.trend)",
+      "url": "https://card-studio.invalid/scenarios/genz-credit-v2/02-trend/out.json",
+      "publisher": "card-studio 입력 데이터",
+      "kind": "db",
+      "published": null,
+      "retrieved_at": "2026-10-23",
+      "reliability": 0.7
+    },
+    {
+      "id": "EV1",
+      "title": "근거 팩 항목(입력 payload evidence, ev:MHF3, ev:CST1 등)",
+      "url": "https://card-studio.invalid/scenarios/genz-credit-v2/evidence",
+      "publisher": "card-studio 입력 데이터",
+      "kind": "db",
+      "published": null,
+      "retrieved_at": "2026-10-23",
+      "reliability": 0.6
+    }
+  ],
+  "assumptions": [
+    "코드가 계산한 영역 점수, 순위, 천장, rank_stability, confidence를 그대로 사용했고 점수를 다시 매기지 않았다.",
+    "목표 채택 의향 0.38은 PM 가정치이며 채택 의향은 이후 가상 고객 시뮬레이션 결과로만 다루고 실제 전환율로 보지 않는다.",
+    "ai_personalize와 auto_best는 경쟁조사 분류(유사 방식)를 따라 컨셉이 겹치는 방식으로 보았다.",
+    "IDEA 영역의 새로움은 아이디어 검증의 교정 사항을 반영해 좁혀 썼다(FRI1은 '예산 지킴이 다음 달 적립률을 정한다'로 한정)."
+  ],
+  "unresolved": [
+    "자동 최적 혜택, 놓친 혜택 환급, 셀프 예산 한도에 대한 GenZ의 실제 선호(소비자 검증 필요)",
+    "간편결제 앱 자체 할인과 카드 혜택의 크기 비교(내부 데이터 확인 필요)",
+    "이용액을 줄이는 소비 통제형 구조의 수익성과 환급 구조의 원가 수준(내부 데이터 확인 필요)",
+    "부가서비스 의무유지기간 현행 조문과 적립률 조건 구조의 약관 처리(사람 확인 필요)"
+  ],
+  "limits": [
+    "미충족 점수는 해당 방식의 카드가 적다는 뜻이며 고객 불만을 직접 보여 주는 근거가 아니다.",
+    "점수식 가중치, 니즈 가중치, 세그먼트 월 소비 수치는 PM 가정치이고 rank_stability는 가중치만 흔든 결과다.",
+    "입력 payload에 URL이 있는 출처 문서가 없어 sources는 입력 데이터 묶음(경쟁 DB, 트렌드 시그널, 근거 팩)을 가리키는 내부 표기로 적었다. 원문 출처는 이전 단계 출력에서 확인해야 한다.",
+    "근거 상당수가 Z세대·MZ·30대 이하·전연령 범위라 만 19~29세 수치와 다를 수 있다."
+  ],
+  "clarifications": [],
+  "out_of_scope": {
+    "detected": false,
+    "suggested_agent": null
+  },
+  "followups": [
+    "1순위 영역(GenZ×구독·디지털×자동 최적 혜택, 외식·배달)으로 컨셉 3안을 만들어줘",
+    "셀프 예산 한도 영역의 수익성 위험을 줄이는 구조는 무엇이 있어?",
+    "빠진 실적 졸업 아이디어(GRI1)를 검증하려면 무엇을 확인해야 해?"
+  ],
+  "input_refs": [
+    "05-whitespace/in.json"
+  ]
+}

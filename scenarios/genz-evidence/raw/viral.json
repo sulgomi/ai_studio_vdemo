@@ -1,0 +1,1274 @@
+{
+ "agent": "viral",
+ "retrieved_at": "2026-10-23",
+ "sources": [
+  {
+   "id": "VRS1",
+   "title": "[주말&] 두바이엔 없는 K디저트 '두쫀쿠' 열풍…오픈런·품절 대란",
+   "publisher": "매일신문",
+   "url": "https://www.imaeil.com/page/view/2026010615030567259",
+   "published": "2026-01-07",
+   "tier": "B",
+   "kind": "press",
+   "stale": false,
+   "promotional": false,
+   "note": ""
+  },
+  {
+   "id": "VRS2",
+   "title": "'가격 거품' 논란에도 연일 오픈런·인증샷 (두바이 쫀득 쿠키)",
+   "publisher": "헤럴드경제",
+   "url": "https://www.heraldk.com/article/2025122715000061262",
+   "published": "2025-12",
+   "tier": "B",
+   "kind": "press",
+   "stale": false,
+   "promotional": false,
+   "note": "날짜는 URL 번호(20251227)로 추정, 본문 확인 못함"
+  },
+  {
+   "id": "VRS3",
+   "title": "'두쫀쿠'가 뭐길래···오픈런·조기품절·DIY까지 국내 열풍 이유는",
+   "publisher": "경향신문",
+   "url": "https://www.khan.co.kr/article/202601121003001/amp",
+   "published": "2026-01-12",
+   "tier": "B",
+   "kind": "press",
+   "stale": false,
+   "promotional": false,
+   "note": ""
+  },
+  {
+   "id": "VRS4",
+   "title": "당근에서 3000원 웃돈 거래…'두바이 초콜릿' 인기에 품절 지속",
+   "publisher": "파이낸셜뉴스(뉴스1)",
+   "url": "https://www.fnnews.com/news/202511251538454084",
+   "published": "2025-11-25",
+   "tier": "B",
+   "kind": "press",
+   "stale": false,
+   "promotional": false,
+   "note": ""
+  },
+  {
+   "id": "VRS5",
+   "title": "\"쿠키 하나에 7천원? 그래도 품절\" 두바이 쫀득쿠키 열풍",
+   "publisher": "파이낸셜뉴스",
+   "url": "https://www.fnnews.com/news/202512031846130410",
+   "published": "2025-12-03",
+   "tier": "B",
+   "kind": "press",
+   "stale": false,
+   "promotional": false,
+   "note": ""
+  },
+  {
+   "id": "VRS6",
+   "title": "MZ들은 없어서 못 먹는다는데?... '두바이 쫀득 쿠키' 열풍",
+   "publisher": "YTN",
+   "url": "https://www.ytn.co.kr/_ln/0115_202512232322161656",
+   "published": "2025-12-23",
+   "tier": "B",
+   "kind": "news",
+   "stale": false,
+   "promotional": false,
+   "note": ""
+  },
+  {
+   "id": "VRS7",
+   "title": "그깟 '종이카드' 값이 16배 뛰었다…주말밤 불타는 리셀 거래 (크림 2026 상반기 트렌드 리포트)",
+   "publisher": "한국경제",
+   "url": "https://www.hankyung.com/article/202607094900i",
+   "published": "2026-07-09",
+   "tier": "B",
+   "kind": "press",
+   "stale": false,
+   "promotional": false,
+   "note": ""
+  },
+  {
+   "id": "VRS8",
+   "title": "'티니핑부터 키티까지'···카드사 캐릭터 마케팅 열풍",
+   "publisher": "뉴스웨이",
+   "url": "https://newsway.co.kr/news/view?ud=2026073113151527180",
+   "published": "2026-08-02",
+   "tier": "B",
+   "kind": "press",
+   "stale": false,
+   "promotional": false,
+   "note": ""
+  },
+  {
+   "id": "VRS9",
+   "title": "여전히 인기 높은 '캐릭터 체크카드'…전월 실적 조건 불만도",
+   "publisher": "KPI뉴스",
+   "url": "https://www.kpinews.kr/newsView/1065599798360581",
+   "published": "2025-04-07",
+   "tier": "B",
+   "kind": "press",
+   "stale": false,
+   "promotional": false,
+   "note": ""
+  },
+  {
+   "id": "VRS10",
+   "title": "케이뱅크, '깜자' 체크카드 1만장 추가 판매..3주 만에 완판",
+   "publisher": "스마트투데이",
+   "url": "https://www.smarttoday.co.kr/ko-kr/articles/70416",
+   "published": "2025-01-20",
+   "tier": "B",
+   "kind": "press",
+   "stale": true,
+   "promotional": false,
+   "note": "발행 21개월 경과"
+  },
+  {
+   "id": "VRS11",
+   "title": "카카오뱅크, 'K-패스 프렌즈 체크카드' 출시 8개월 만에 100만장 돌파",
+   "publisher": "SBS Biz",
+   "url": "https://biz.sbs.co.kr/amp/article/20000263888",
+   "published": "2025-10-02",
+   "tier": "B",
+   "kind": "press",
+   "stale": false,
+   "promotional": false,
+   "note": ""
+  },
+  {
+   "id": "VRS12",
+   "title": "카카오뱅크, '모임 체크카드' 출시 1년여 만에 누적 100만장 돌파",
+   "publisher": "헤럴드경제",
+   "url": "https://www.heraldk.com/article/2025081317211700327",
+   "published": "2025-08-13",
+   "tier": "B",
+   "kind": "press",
+   "stale": false,
+   "promotional": false,
+   "note": ""
+  },
+  {
+   "id": "VRS13",
+   "title": "게임 같은 저축, 보상은 덤…'도파민 뱅킹'이 떴다",
+   "publisher": "노컷뉴스",
+   "url": "https://www.nocutnews.co.kr/news/6348143",
+   "published": "2025-06-01",
+   "tier": "B",
+   "kind": "press",
+   "stale": false,
+   "promotional": false,
+   "note": ""
+  },
+  {
+   "id": "VRS14",
+   "title": "연 10% 적금에 미성년자까지 몰렸다…무슨 통장이길래?",
+   "publisher": "SBS Biz",
+   "url": "https://biz.sbs.co.kr/amp/article/20000328581",
+   "published": "2026-08-13",
+   "tier": "B",
+   "kind": "press",
+   "stale": false,
+   "promotional": false,
+   "note": ""
+  },
+  {
+   "id": "VRS15",
+   "title": "\"매일 저금하면 연 10%\"…토스뱅크 31일적금에 30만명 몰렸다",
+   "publisher": "이코노미스트",
+   "url": "https://economist.co.kr/article/view/ecn202609080010",
+   "published": "2026-09-08",
+   "tier": "B",
+   "kind": "press",
+   "stale": false,
+   "promotional": false,
+   "note": ""
+  },
+  {
+   "id": "VRS16",
+   "title": "인스타 vs 엑스, 트렌드가 가장 빠른 곳은? 2026 트렌드의 흐름 지도",
+   "publisher": "캐릿(대학내일)",
+   "url": "https://www.careet.net/1770",
+   "published": "2025",
+   "tier": "C",
+   "kind": "news",
+   "stale": false,
+   "promotional": false,
+   "note": "발행일 미표기(2026 트렌드 준비 시점), 본문 일부 유료. 대학내일 자체 패널 205명 조사"
+  },
+  {
+   "id": "VRS17",
+   "title": "Z세대 37.4%는 직접 숏폼 영상을 찍어본 경험이 있다고?",
+   "publisher": "캐릿(대학내일)",
+   "url": "https://www.careet.net/1039",
+   "published": "2023",
+   "tier": "C",
+   "kind": "survey",
+   "stale": true,
+   "promotional": false,
+   "note": "페이지 내 2023.03 날짜 있으나 발행일 확정 못함. 인용 조사는 대학내일20대연구소 2022년 7월(추정) 설문"
+  },
+  {
+   "id": "VRS18",
+   "title": "디자인 카드 열광한 MZ·알파세대…신한 '산리오' 체크카드 동났다",
+   "publisher": "전자신문",
+   "url": "https://m.etnews.com/20230317000160",
+   "published": "2023-03-19",
+   "tier": "B",
+   "kind": "press",
+   "stale": true,
+   "promotional": false,
+   "note": "본문 '19일' 기준, 연월은 URL(20230317)로 추정"
+  },
+  {
+   "id": "VRS19",
+   "title": "'플레이트 디자인' 카드 발급 주된 이유…캐릭터 '덕후'들에게 굿즈 역할",
+   "publisher": "직썰",
+   "url": "https://www.ziksir.com/news/articleView.html?idxno=54328",
+   "published": "2024-03-22",
+   "tier": "B",
+   "kind": "press",
+   "stale": true,
+   "promotional": false,
+   "note": ""
+  },
+  {
+   "id": "VRS20",
+   "title": "하이트진로음료X고스티, 캐릭터 카드커버 출시",
+   "publisher": "메트로서울(기업 보도자료성)",
+   "url": "https://www.metroseoul.co.kr/article/20251016500169",
+   "published": "2025-10-16",
+   "tier": "D",
+   "kind": "press",
+   "stale": false,
+   "promotional": true,
+   "note": "브랜드 협업 홍보 기사. 수치 근거로 쓰지 않음"
+  }
+ ],
+ "facts": [
+  {
+   "id": "VRF1",
+   "topic": "두쫀쿠 검색량",
+   "claim": "네이버 데이터랩 조회 결과 두쫀쿠 검색량이 3개월 만에 20배 이상 급증했고 배달앱 검색량은 약 1천500배 폭증했다고 보도됐다.",
+   "value": 20,
+   "unit": "배(이상)",
+   "population": "2030 중심(기사 표현: 2030세대를 중심으로)",
+   "age_scope": "20대",
+   "period": "2025-10~2026-01",
+   "source_id": "VRS1",
+   "quote": "검색량이 3개월 만에 20배 이상 급증했고, 배달앱 검색량은 약 1천500배 폭증했다",
+   "confidence": "high",
+   "note": "",
+   "quote_verified": true
+  },
+  {
+   "id": "VRF2",
+   "topic": "두쫀쿠 확산 경로",
+   "claim": "기사는 아이브 장원영 등 연예인의 언급과 직접 만들어 보는 유명인들이 두쫀쿠 열풍 확산에 영향을 줬다고 전한다.",
+   "value": null,
+   "unit": null,
+   "population": "2030 중심",
+   "age_scope": "20대",
+   "period": "2025-12~2026-01",
+   "source_id": "VRS1",
+   "quote": "두쫀쿠에 빠졌다고 밝히거나 직접 만들어보는 유명인들의 영향도 적지 않다",
+   "confidence": "high",
+   "note": "",
+   "quote_verified": true
+  },
+  {
+   "id": "VRF3",
+   "topic": "두바이 초콜릿 기원",
+   "claim": "두바이 초콜릿은 2021년 UAE 업체가 출시했고 2년 뒤 한 틱톡커의 영상으로 세계적 인기를 끌었다고 기사는 설명한다.",
+   "value": null,
+   "unit": null,
+   "population": "전 세계(한국 사례 맥락)",
+   "age_scope": "전연령",
+   "period": "2021~2023",
+   "source_id": "VRS1",
+   "quote": "2년 뒤 한 틱톡커의 영상으로 전 세계적인 인기를 끌었다",
+   "confidence": "high",
+   "note": "",
+   "quote_verified": true
+  },
+  {
+   "id": "VRF4",
+   "topic": "두쫀쿠 오픈런",
+   "claim": "인기 매장에서 오픈 30분 전 50명 정도가 줄을 서 있다는 후기가 보도됐고, 일부 카페는 손바닥보다 작은 제품을 개당 5000원~1만원에 팔아 논란이 됐다.",
+   "value": null,
+   "unit": null,
+   "population": "소비자 후기(연령 미기재)",
+   "age_scope": "젊은층(범위 미기재)",
+   "period": "2025-12",
+   "source_id": "VRS2",
+   "quote": "오픈 30분 전인데 50명 정도가 줄을 서 있다",
+   "confidence": "high",
+   "note": "",
+   "quote_verified": true
+  },
+  {
+   "id": "VRF5",
+   "topic": "두쫀쿠 수명 전망",
+   "claim": "업계는 두쫀쿠 열풍 지속 기간을 짧게는 3개월 길게는 6개월로 본다고 경향신문이 보도했다.",
+   "value": null,
+   "unit": null,
+   "population": "업계 전망",
+   "age_scope": "젊은층(범위 미기재)",
+   "period": "2026-01",
+   "source_id": "VRS3",
+   "quote": "지속 기간을 짧게는 3개월, 길게는 6개월로 보는 이유다",
+   "confidence": "high",
+   "note": "",
+   "quote_verified": true
+  },
+  {
+   "id": "VRF6",
+   "topic": "SNS 유행 디저트의 성격",
+   "claim": "트렌드스케이프 박영한 소장은 마카롱·탕후루·허니버터칩처럼 SNS를 탄 디저트는 상품보다 '이벤트'에 가깝고 관심 집중 순간이 짧다고 분석했다.",
+   "value": null,
+   "unit": null,
+   "population": "전문가 분석",
+   "age_scope": "전연령",
+   "period": "2026-01",
+   "source_id": "VRS3",
+   "quote": "SNS를 타고 번진 디저트는 하나의 맛이나 상품이라기보다 ‘이벤트’에 가깝다",
+   "confidence": "high",
+   "note": "발화자 인용(전문가 의견), 통계 아님",
+   "quote_verified": true
+  },
+  {
+   "id": "VRF7",
+   "topic": "두쫀쿠 미끼 상품화",
+   "claim": "일부 매장은 두쫀쿠를 한정 수량·낮은 마진 또는 검색 노출용 메뉴로 올려 다른 메뉴 소비로 연결하는 미끼 상품으로 쓴다고 보도됐다.",
+   "value": null,
+   "unit": null,
+   "population": "매장 운영 사례",
+   "age_scope": "젊은층(범위 미기재)",
+   "period": "2026-01",
+   "source_id": "VRS3",
+   "quote": "일부 매장은 ‘두쫀쿠’를 일종의 미끼 상품으로 활용하기도 한다",
+   "confidence": "high",
+   "note": "",
+   "quote_verified": true
+  },
+  {
+   "id": "VRF8",
+   "topic": "GS25 두바이 디저트 매출",
+   "claim": "GS25의 11월 1~24일 두바이 관련 디저트 매출이 지난 1월 동일 기간보다 144.9% 증가했다.",
+   "value": 144.9,
+   "unit": "%",
+   "population": "GS25 판매(고객 연령 미기재)",
+   "age_scope": "Z세대",
+   "period": "2025-11-01~24",
+   "source_id": "VRS4",
+   "quote": "두바이 관련 디저트 매출은 지난 1월 동일 기간과 비교해 144.9% 증가한 것으로 나타났다",
+   "confidence": "high",
+   "note": "기사 도입부는 'Z세대를 중심으로 다시 열풍'이라고 서술",
+   "quote_verified": true
+  },
+  {
+   "id": "VRF9",
+   "topic": "CU 두바이 초콜릿 판매",
+   "claim": "CU가 10월 15일 출시한 두바이 초콜릿 3종은 11월 24일까지 누적 판매량이 82만 개라고 보도됐다.",
+   "value": 82,
+   "unit": "만 개",
+   "population": "CU 판매(연령 미기재)",
+   "age_scope": "Z세대",
+   "period": "2025-10-15~11-24",
+   "source_id": "VRS4",
+   "quote": "11월 24일까지 누적 판매량이 총 82만 개에 달한다",
+   "confidence": "high",
+   "note": "",
+   "quote_verified": true
+  },
+  {
+   "id": "VRF10",
+   "topic": "SNS 게시와 리셀",
+   "claim": "아이돌 장원영이 SNS에 두바이 쫀득 쿠키 사진을 올린 뒤 팬들 사이에 퍼졌고, 정가 5300원 상품이 중고 시장에서 7500~8000원에 재판매됐다.",
+   "value": 8000,
+   "unit": "원(재판매 상단)",
+   "population": "당근마켓 재판매",
+   "age_scope": "Z세대",
+   "period": "2025-11",
+   "source_id": "VRS4",
+   "quote": "정가 5300원인 상품이 중고 시장에서 7500~8000원에 재판매되는 상황이다",
+   "confidence": "high",
+   "note": "",
+   "quote_verified": true
+  },
+  {
+   "id": "VRF11",
+   "topic": "CU 쫀득 마카롱",
+   "claim": "CU 두바이 쫀득 마카롱은 출시 18일 만에 12만 개가 판매됐다고 보도됐다.",
+   "value": 12,
+   "unit": "만 개",
+   "population": "CU 판매",
+   "age_scope": "MZ",
+   "period": "2025-11-13~",
+   "source_id": "VRS5",
+   "quote": "출시 18일 만에 12만개가 판매되며 인기를 입증했다",
+   "confidence": "high",
+   "note": "",
+   "quote_verified": true
+  },
+  {
+   "id": "VRF12",
+   "topic": "배달앱 품절",
+   "claim": "쿠팡이츠 검색어 1위를 차지한 두바이 쫀득 쿠키 입점 카페 대부분이 구매 수량을 2~4개로 제한했고 품절 표시가 대다수였다.",
+   "value": null,
+   "unit": null,
+   "population": "배달앱 입점 카페",
+   "age_scope": "MZ",
+   "period": "2025-12",
+   "source_id": "VRS5",
+   "quote": "입점 카페 대부분이 구매 수량을 2~4개로 제한했지만 품절 표시가 뜬 곳이 대다수였다",
+   "confidence": "high",
+   "note": "",
+   "quote_verified": true
+  },
+  {
+   "id": "VRF13",
+   "topic": "SNS 인증샷 최적화",
+   "claim": "YTN 앵커리포트는 두바이 쫀득 쿠키의 생김새도 SNS 인증샷에 최적화돼 열풍을 더한다는 분석이라고 전했다.",
+   "value": null,
+   "unit": null,
+   "population": "MZ(기사 표현)",
+   "age_scope": "MZ",
+   "period": "2025-12",
+   "source_id": "VRS6",
+   "quote": "생김새도 SNS 인증샷에 최적화돼 열풍을 더한다는 분석입니다",
+   "confidence": "high",
+   "note": "",
+   "quote_verified": true
+  },
+  {
+   "id": "VRF14",
+   "topic": "희소성·인증 심리",
+   "claim": "YTN은 희소성을 즐기고 SNS에 인증하려는 MZ세대 심리 속에 없어서 못 파는 품절 대란이 이어진다고 전했다.",
+   "value": null,
+   "unit": null,
+   "population": "MZ(기사 표현)",
+   "age_scope": "MZ",
+   "period": "2025-12",
+   "source_id": "VRS6",
+   "quote": "희소성을 즐기고, SNS에 인증하려는 MZ세대들의 심리에",
+   "confidence": "high",
+   "note": "",
+   "quote_verified": true
+  },
+  {
+   "id": "VRF15",
+   "topic": "두바이 초콜릿 반짝 인기",
+   "claim": "두바이 초콜릿은 지난해 말 유행한 뒤 올해 인기가 다소 식었다가 2세대(쫀득 쿠키 등) 상품 등장으로 Z세대 중심 재열풍이 불었다고 보도됐다.",
+   "value": null,
+   "unit": null,
+   "population": "Z세대(기사 표현)",
+   "age_scope": "Z세대",
+   "period": "2024-말~2025-11",
+   "source_id": "VRS4",
+   "quote": "두바이 초콜릿은 지난해 말 국내에서 유행한 이후 올해 인기가 다소 식었다",
+   "confidence": "high",
+   "note": "수명 사례: 약 1년 후 변주 상품으로 재점화",
+   "quote_verified": true
+  },
+  {
+   "id": "VRF16",
+   "topic": "포켓몬 TCG 거래액",
+   "claim": "크림 2026 상반기 트렌드 리포트에 따르면 포켓몬 TCG 카테고리 거래액은 직전 반기의 약 35배 늘었다.",
+   "value": 35,
+   "unit": "배",
+   "population": "크림 거래 데이터(연령 미기재)",
+   "age_scope": "젊은층(범위 미기재)",
+   "period": "2026 상반기",
+   "source_id": "VRS7",
+   "quote": "올해 상반기 포켓몬 TCG 카테고리 거래액은 직전 반기의 약 35배 늘었다",
+   "confidence": "high",
+   "note": "연령 미기재라 젊은층으로 분류하지 않고 보수적으로 표기",
+   "quote_verified": true
+  },
+  {
+   "id": "VRF17",
+   "topic": "원피스 TCG 프리미엄",
+   "claim": "원피스 TCG 프리미엄 카드 컬렉션 쿠마모토 현 스페셜은 발매가 대비 최고 거래가가 16배 이상 높았고 관심상품 저장 1576만 회, 드로우 응모 249만 건에 육박했다.",
+   "value": 16,
+   "unit": "배(이상)",
+   "population": "크림 이용자",
+   "age_scope": "젊은층(범위 미기재)",
+   "period": "2026 상반기",
+   "source_id": "VRS7",
+   "quote": "발매가 대비 최고 거래가가 16배 이상 높았다",
+   "confidence": "high",
+   "note": "",
+   "quote_verified": true
+  },
+  {
+   "id": "VRF18",
+   "topic": "크림 Z세대 선호 브랜드",
+   "claim": "크림 리포트는 젠지(Z세대) 선호도가 높은 국내 디자이너 브랜드 '아모우'의 거래액이 직전 반기 대비 11배 이상 뛰었다고 전했다.",
+   "value": 11,
+   "unit": "배(이상)",
+   "population": "크림 이용자",
+   "age_scope": "Z세대",
+   "period": "2026 상반기",
+   "source_id": "VRS7",
+   "quote": "‘아모우’의 거래액도 직전 반기 대비 11배 이상 뛰었다",
+   "confidence": "high",
+   "note": "",
+   "quote_verified": true
+  },
+  {
+   "id": "VRF19",
+   "topic": "플랫폼별 유행 분야",
+   "claim": "캐릿은 Z세대 205명 조사·인터뷰에서 '플랫폼별로 파생되는 트렌드가 다르다'는 점이 공통으로 나왔고, 인스타는 핫플, 엑스는 밈, 틱톡은 글로벌 트렌드를 본다는 응답이 있었다고 전한다.",
+   "value": 205,
+   "unit": "명(조사 표본)",
+   "population": "캐릿 트렌드 디깅 크루 2011~1996년생 205명",
+   "age_scope": "Z세대",
+   "period": "2025 하반기(추정)",
+   "source_id": "VRS16",
+   "quote": "인스타그램에서, 유행하는 밈은 엑스에서, 글로벌 트렌드는 틱톡에서 보는 편이에요",
+   "confidence": "medium",
+   "note": "1인 응답 사례 문장. 표본은 매체 자체 패널(비확률)",
+   "quote_verified": true
+  },
+  {
+   "id": "VRF20",
+   "topic": "라이프스타일 기반 트렌드 공유",
+   "claim": "캐릿 조사에서 Z세대 91.7%가 나이가 달라도 비슷한 라이프스타일이면 같은 트렌드를 공유한다는 의견에 동의했다.",
+   "value": 91.7,
+   "unit": "%",
+   "population": "캐릿 트렌드 디깅 크루 205명",
+   "age_scope": "Z세대",
+   "period": "2025 하반기(추정)",
+   "source_id": "VRS16",
+   "quote": "Z세대 91.7%가 ‘나이가 달라도 비슷한 라이프스타일을 가졌다면, 같은 트렌드를 공유한다’",
+   "confidence": "medium",
+   "note": "비확률 패널",
+   "quote_verified": true
+  },
+  {
+   "id": "VRF21",
+   "topic": "숏폼 이용·촬영 경험",
+   "claim": "대학내일20대연구소 설문에서 Z세대 81.6%가 6개월 이내 숏폼 이용 경험이 있고 37.4%가 직접 숏폼을 찍어본 경험이 있다고 캐릿이 전했다.",
+   "value": 81.6,
+   "unit": "%",
+   "population": "Z세대(대학내일20대연구소 설문)",
+   "age_scope": "Z세대",
+   "period": "2022(추정)",
+   "source_id": "VRS17",
+   "quote": "Z세대 81.6%가 6개월 이내 숏폼 플랫폼 이용 경험이 있다고 답했습니다",
+   "confidence": "low",
+   "note": "stale. 설문 시점 불확실(기사 내 '지난해 7월'). 촬영 경험 37.4%는 같은 기사 제목",
+   "quote_verified": true
+  },
+  {
+   "id": "VRF22",
+   "topic": "카뱅 프렌즈 체크카드(춘식이)",
+   "claim": "춘식이 캐릭터를 내세운 카카오뱅크 '프렌즈 체크카드'는 2월 출시 후 두 달 만에 누적 발급 30만 장을 돌파했다.",
+   "value": 30,
+   "unit": "만 장",
+   "population": "발급량(연령 미기재)",
+   "age_scope": "젊은층(범위 미기재)",
+   "period": "2025-02~04",
+   "source_id": "VRS9",
+   "quote": "출시 후 두 달 만에 누적 발급량 30만 장을 돌파했다",
+   "confidence": "high",
+   "note": "",
+   "quote_verified": true
+  },
+  {
+   "id": "VRF23",
+   "topic": "캐릭터 체크카드 전월실적 불만",
+   "claim": "KPI뉴스는 은행·카드사가 캐릭터 체크카드에 전월 실적 조건을 다는 경우가 많아 '소장용'으로만 발급받는다는 불만이 있다고 전했다.",
+   "value": null,
+   "unit": null,
+   "population": "소비자 인터뷰(20대·30대 직장인 각 1명)",
+   "age_scope": "MZ",
+   "period": "2025-04",
+   "source_id": "VRS9",
+   "quote": "주변에 물어보니 전월 실적 조건 탓에 그냥 소장용으로만 발급받는 사람도 여럿",
+   "confidence": "medium",
+   "note": "개인 발언 인용. 전체 비율 아님",
+   "quote_verified": true
+  },
+  {
+   "id": "VRF24",
+   "topic": "케이뱅크 깜자 에디션",
+   "claim": "케이뱅크 깜자 에디션 ONE 체크카드는 4만장 한정 출시 후 3주 만에 완판됐고 1만장을 추가 판매한다고 밝혔다.",
+   "value": 4,
+   "unit": "만 장(한정 수량)",
+   "population": "케이뱅크 발급",
+   "age_scope": "젊은층(범위 미기재)",
+   "period": "2024-12~2025-01",
+   "source_id": "VRS10",
+   "quote": "출시 3주 만에 완판됐다",
+   "confidence": "high",
+   "note": "",
+   "quote_verified": true
+  },
+  {
+   "id": "VRF25",
+   "topic": "깜자 에디션 발급자 구성",
+   "claim": "깜자 에디션 발급자의 70%가 여성이었고 2030 여성이 전체의 44%였다.",
+   "value": 44,
+   "unit": "%(2030 여성 비중)",
+   "population": "깜자 에디션 발급자",
+   "age_scope": "20대",
+   "period": "2024-12~2025-01",
+   "source_id": "VRS10",
+   "quote": "2030 여성이 전체의 44%로 높은 비율을 기록했다",
+   "confidence": "high",
+   "note": "30대 포함 '2030' 합산 표기. 20대만의 수치 아님",
+   "quote_verified": true
+  },
+  {
+   "id": "VRF26",
+   "topic": "K-패스 프렌즈 체크카드",
+   "claim": "카카오뱅크가 2월 출시한 K-패스 프렌즈 체크카드의 누적 발급량이 출시 8개월 만에 100만 장을 돌파했다.",
+   "value": 100,
+   "unit": "만 장",
+   "population": "발급량(연령 미기재)",
+   "age_scope": "젊은층(범위 미기재)",
+   "period": "2025-02~10",
+   "source_id": "VRS11",
+   "quote": "누적 발급량이 출시 8개월 만에 100만 장을 돌파했다",
+   "confidence": "high",
+   "note": "K-패스 대중교통 환급이 결합된 혜택형 카드",
+   "quote_verified": true
+  },
+  {
+   "id": "VRF27",
+   "topic": "카뱅 모임 체크카드",
+   "claim": "카카오뱅크 모임 체크카드는 출시 3주 만에 10만장, 2달 만에 20만장, 1년 3개월 만에 100만장을 넘었다.",
+   "value": 100,
+   "unit": "만 장",
+   "population": "모임통장 고객",
+   "age_scope": "젊은층(범위 미기재)",
+   "period": "2024-04~2025-07",
+   "source_id": "VRS12",
+   "quote": "3주 만에 10만장, 2달 만에 20만장을 달성하는 등 가파른 증가세",
+   "confidence": "high",
+   "note": "",
+   "quote_verified": true
+  },
+  {
+   "id": "VRF28",
+   "topic": "토스뱅크 게임 저금통",
+   "claim": "토스뱅크 '게임 저금통'은 출시 후 약 15시간 동안 1초에 2명꼴로 가입해 10만 계좌를 달성했다.",
+   "value": 10,
+   "unit": "만 계좌",
+   "population": "토스뱅크 가입",
+   "age_scope": "Z세대",
+   "period": "2025-05-22~",
+   "source_id": "VRS13",
+   "quote": "출시 후 약 15시간 동안 1초에 2명꼴로 가입해 10만 계좌를 달성했다",
+   "confidence": "high",
+   "note": "기사는 Z세대 겨냥 서비스라고 서술. 가입자 연령 분포는 미공개",
+   "quote_verified": true
+  },
+  {
+   "id": "VRF29",
+   "topic": "케이뱅크 돈나무 키우기",
+   "claim": "케이뱅크 게임형 앱테크 '돈나무 키우기'는 출시 1년 만에 누적 2천만 그루를 넘어섰고 232만 고객이 1인당 평균 8.6그루를 키웠다.",
+   "value": 2000,
+   "unit": "만 그루",
+   "population": "케이뱅크 고객",
+   "age_scope": "Z세대",
+   "period": "출시~1년(2025-06 기준)",
+   "source_id": "VRS13",
+   "quote": "출시 1년 만에 누적 2천만 그루를 넘어섰다",
+   "confidence": "high",
+   "note": "",
+   "quote_verified": true
+  },
+  {
+   "id": "VRF30",
+   "topic": "KB금융 도파민 뱅킹 보고서",
+   "claim": "KB금융 경영연구소는 보고서 '금융에 즐거움을 더하는 도파민 뱅킹의 부상'에서 Z세대 대상 재미·보상 결합 금융 사례를 정리했다.",
+   "value": null,
+   "unit": null,
+   "population": "Z세대 겨냥 서비스",
+   "age_scope": "Z세대",
+   "period": "2025-05",
+   "source_id": "VRS13",
+   "quote": "금융에 즐거움을 더하는 도파민 뱅킹의 부상",
+   "confidence": "medium",
+   "note": "보고서 원문 미확인, 기사 경유",
+   "quote_verified": true
+  },
+  {
+   "id": "VRF31",
+   "topic": "토스뱅크 31일적금 4일 10만",
+   "claim": "토스뱅크 '키워봐요 31일 적금'은 12일 기준 누적 가입 계좌 10만 개를 넘었고 만 17세 미만 계좌가 약 2만 개였다.",
+   "value": 10,
+   "unit": "만 계좌",
+   "population": "토스뱅크 가입 계좌",
+   "age_scope": "10대",
+   "period": "2026-08",
+   "source_id": "VRS14",
+   "quote": "전체 가입 계좌 가운데 만 17세 미만이 가입한 계좌가 약 2만 개에 달했습니다",
+   "confidence": "high",
+   "note": "",
+   "quote_verified": true
+  },
+  {
+   "id": "VRF32",
+   "topic": "토스뱅크 31일적금 30만",
+   "claim": "토스뱅크 키워봐요 31일적금은 첫 만기 시점인 9월 5일 누적 개설 30만좌를 돌파했다고 8일 밝혔고, 가장 많은 저금 시간은 오전 9시였다.",
+   "value": 30,
+   "unit": "만 좌",
+   "population": "토스뱅크 가입 계좌",
+   "age_scope": "젊은층(범위 미기재)",
+   "period": "2026-08~09",
+   "source_id": "VRS15",
+   "quote": "출시 한 달 만에 누적 30만좌를 넘어섰다",
+   "confidence": "high",
+   "note": "최고 연 10%(세전) 우대금리 구조라는 금리 유인이 함께 작용. 바이럴 단독 효과로 해석하지 말 것",
+   "quote_verified": true
+  },
+  {
+   "id": "VRF33",
+   "topic": "티니핑 틴업 체크카드",
+   "claim": "KB국민카드 '캐치! 티니핑' 틴업 체크카드는 출시 한 달이 채 되지 않아 10만 장 이상 발급된 것으로 알려졌다.",
+   "value": 10,
+   "unit": "만 장(이상)",
+   "population": "KB국민카드 발급",
+   "age_scope": "잘파(Z+알파)",
+   "period": "2025-05~06",
+   "source_id": "VRS8",
+   "quote": "출시 한 달이 채 되지 않아 10만 장 이상 발급된 것으로 알려졌다",
+   "confidence": "medium",
+   "note": "'알려졌다' 형 전언",
+   "quote_verified": true
+  },
+  {
+   "id": "VRF34",
+   "topic": "체크카드 연령 하향",
+   "claim": "5월 여신전문금융업법 시행령 개정으로 체크카드 발급 가능 연령이 만 12세에서 만 7세 이상으로 낮아졌다.",
+   "value": 7,
+   "unit": "세",
+   "population": "체크카드 발급",
+   "age_scope": "10대",
+   "period": "2026-05",
+   "source_id": "VRS8",
+   "quote": "체크카드 발급 가능 연령이 기존 만 12세 이상에서 만 7세 이상으로 낮아졌다",
+   "confidence": "high",
+   "note": "",
+   "quote_verified": true
+  },
+  {
+   "id": "VRF35",
+   "topic": "산리오 플리 체크 (stale)",
+   "claim": "신한카드 플리 체크(산리오캐릭터즈)는 출시 4영업일 만에 5만장 이상 신청이 몰려 배송이 일시 중단됐다.",
+   "value": 5,
+   "unit": "만 장(이상)",
+   "population": "신청 건수",
+   "age_scope": "잘파(Z+알파)",
+   "period": "2023-03",
+   "source_id": "VRS18",
+   "quote": "출시 4영업일 만에 5만장 이상 신청이 몰렸다",
+   "confidence": "high",
+   "note": "stale(2023)",
+   "quote_verified": true
+  },
+  {
+   "id": "VRF36",
+   "topic": "카드 플레이트 발급 동기 설문 (stale)",
+   "claim": "카드고릴라 설문에서 소비자 10명 중 7명은 플레이트 디자인 때문에 카드를 발급한 경험이 있다고 직썰이 전했다.",
+   "value": null,
+   "unit": null,
+   "population": "카드고릴라 설문 응답자(전연령 추정)",
+   "age_scope": "전연령",
+   "period": "2024-03",
+   "source_id": "VRS19",
+   "quote": "10명 중 7명은 카드의 플레이트 디자인 때문에 카드 발급을 한 경험이 있는",
+   "confidence": "medium",
+   "note": "stale. 원 설문 미확인",
+   "quote_verified": true
+  },
+  {
+   "id": "VRF37",
+   "topic": "캐릭터 카드 MZ 발급 비중 (stale)",
+   "claim": "KB 마이 위시카드의 MZ세대 발급 비중은 79.8%로 기본 디자인(60.0%)보다 19.8%p 높았다고 직썰이 전했다.",
+   "value": 79.8,
+   "unit": "%",
+   "population": "KB국민 마이 위시카드 발급자",
+   "age_scope": "MZ",
+   "period": "2023(추정)",
+   "source_id": "VRS19",
+   "quote": "MZ세대의 발급 비중이 79.8%로 기본 디자인(60.0%) 대비 19.8%가 높아",
+   "confidence": "medium",
+   "note": "stale. 카드사 제공 수치 전언",
+   "quote_verified": true
+  },
+  {
+   "id": "VRF38",
+   "topic": "카드커버 캐릭터 소비 (홍보)",
+   "claim": "하이트진로음료가 진토니 카드커버 굿즈 12종을 출시하며 MZ세대 캐릭터 소비 열풍에 합류했다고 밝혔다.",
+   "value": null,
+   "unit": null,
+   "population": "기업 보도자료성",
+   "age_scope": "MZ",
+   "period": "2025-10",
+   "source_id": "VRS20",
+   "quote": "최근 MZ세대를 중심으로 불고 있는 캐릭터 소비 열풍에 합류했다",
+   "confidence": "low",
+   "note": "tier D 홍보. 수치 근거 아님",
+   "promotional": true,
+   "quote_verified": true
+  }
+ ],
+ "trend_items": [
+  {
+   "id": "VRT1",
+   "title": "두바이 초콜릿이 2024년 말 유행한 뒤 식었다가 2025년 변주 상품으로 재점화",
+   "categories": [
+    "소비"
+   ],
+   "age_scope": "Z세대",
+   "what": "UAE 업체가 2021년 출시한 초콜릿이 틱톡 영상으로 확산된 뒤 한국에서 2024년 말 유행했고 올해 인기가 다소 식었다가 2세대 상품으로 다시 열풍이 됐다.",
+   "when": "2024-12~2025-11",
+   "virality": {
+    "channel": "숏폼(틱톡)·뉴스",
+    "evidence": "기사가 틱톡커 영상과 2세대 상품 등장을 확산 계기로 설명",
+    "metric": "없음(정성)"
+   },
+   "durability": "한시 유행",
+   "fact_ids": [
+    "VRF3",
+    "VRF15"
+   ],
+   "card_relevance": "해석: 유행은 한 번 꺼져도 변주 상품으로 재점화되므로, 혜택 설계는 특정 품목 의존보다 유행 교체 주기를 전제로 해야 할 수 있다."
+  },
+  {
+   "id": "VRT2",
+   "title": "두바이 쫀득 쿠키(두쫀쿠) 오픈런과 검색량 급증",
+   "categories": [
+    "소비"
+   ],
+   "age_scope": "20대",
+   "what": "마시멜로 피에 피스타치오·카다이프를 넣은 디저트가 2030 중심으로 오픈런·품절을 일으켰다.",
+   "when": "2025-10~2026-01",
+   "virality": {
+    "channel": "오프라인 줄서기+SNS+배달앱",
+    "evidence": "네이버 데이터랩 검색량과 배달앱 검색량 증가 보도, 오픈 30분 전 50명 대기 후기",
+    "metric": "검색량 3개월 20배 이상, 배달앱 검색량 약 1천500배"
+   },
+   "durability": "한시 유행",
+   "fact_ids": [
+    "VRF1",
+    "VRF4",
+    "VRF14"
+   ],
+   "card_relevance": "해석: 희소성·인증 욕구 소비는 건당 5천~1만원대 소액 결제가 집중되므로 간편결제·편의점·배달앱 결제 접점이 중요할 수 있다."
+  },
+  {
+   "id": "VRT3",
+   "title": "편의점이 두바이 시리즈로 유행을 흡수해 수십만 개 판매",
+   "categories": [
+    "소비"
+   ],
+   "age_scope": "Z세대",
+   "what": "CU는 두바이 초콜릿 3종을 11월 24일까지 82만 개, 쫀득 마카롱을 18일 만에 12만 개 판매했고 GS25 두바이 디저트 매출은 144.9% 증가했다.",
+   "when": "2025-10~11",
+   "virality": {
+    "channel": "오프라인(편의점)·뉴스",
+    "evidence": "CU·GS25 판매량 보도",
+    "metric": "CU 82만 개, 마카롱 18일 12만 개, GS25 +144.9%"
+   },
+   "durability": "한시 유행",
+   "fact_ids": [
+    "VRF8",
+    "VRF9",
+    "VRF11"
+   ],
+   "card_relevance": "해석: 유행이 편의점 PB로 빠르게 내려오는 경로이므로 편의점 혜택이 젊은층 결제 빈도와 닿는다."
+  },
+  {
+   "id": "VRT4",
+   "title": "아이돌 SNS 게시가 쿠키 팬덤 확산과 당근 리셀로 이어짐",
+   "categories": [
+    "소비"
+   ],
+   "age_scope": "Z세대",
+   "what": "장원영이 SNS에 두바이 쫀득 쿠키 사진을 올린 뒤 팬들 사이에 퍼졌고 정가 5300원 상품이 7500~8000원에 재판매됐다.",
+   "when": "2025-11",
+   "virality": {
+    "channel": "SNS(인스타)·중고거래 앱",
+    "evidence": "기사가 SNS 게시 후 급속 확산과 재판매 가격을 서술",
+    "metric": "정가 5300원 대비 재판매 7500~8000원"
+   },
+   "durability": "한시 유행",
+   "fact_ids": [
+    "VRF10",
+    "VRF2"
+   ],
+   "card_relevance": "해석: 연예인 게시→팬덤 확산 경로이므로 아티스트 협업 카드의 발급 촉진 논리와 닿는다."
+  },
+  {
+   "id": "VRT5",
+   "title": "두쫀쿠 배달앱 품절과 구매 수량 제한",
+   "categories": [
+    "소비"
+   ],
+   "age_scope": "MZ",
+   "what": "쿠팡이츠 검색어 1위 두쫀쿠 입점 카페 대부분이 구매 수량을 2~4개로 제한하고 품절이었으며, 일부 매장은 두쫀쿠를 미끼 상품으로 썼다.",
+   "when": "2025-12~2026-01",
+   "virality": {
+    "channel": "배달앱·커뮤니티",
+    "evidence": "배달앱 검색어 1위 및 품절 표시",
+    "metric": "수량 제한 2~4개"
+   },
+   "durability": "한시 유행",
+   "fact_ids": [
+    "VRF12",
+    "VRF7"
+   ],
+   "card_relevance": "해석: 품절·수량 제한이 희소성 신호가 되는 구조는 한정 발급 카드에도 적용되는지 따져볼 수 있다."
+  },
+  {
+   "id": "VRT6",
+   "title": "SNS 확산 디저트는 '이벤트'에 가깝다는 수명 분석",
+   "categories": [
+    "소비"
+   ],
+   "age_scope": "젊은층(범위 미기재)",
+   "what": "트렌드스케이프 소장은 마카롱·탕후루·허니버터칩 같은 SNS 디저트를 이벤트에 가깝다고 분석했고 업계는 두쫀쿠 지속을 3~6개월로 본다.",
+   "when": "2026-01",
+   "virality": {
+    "channel": "뉴스(전문가 분석)",
+    "evidence": "경향신문이 전문가 발언과 업계 전망을 보도",
+    "metric": "지속 3~6개월(업계 전망)"
+   },
+   "durability": "한시 유행",
+   "fact_ids": [
+    "VRF5",
+    "VRF6"
+   ],
+   "card_relevance": "해석: 품목 유행에 맞춘 카드 혜택은 수명이 짧아 상시 혜택과 분리해 설계할 필요가 있을 수 있다."
+  },
+  {
+   "id": "VRT7",
+   "title": "크림 거래에서 포켓몬 TCG 거래액이 직전 반기 약 35배",
+   "categories": [
+    "소비"
+   ],
+   "age_scope": "젊은층(범위 미기재)",
+   "what": "한정판 거래 플랫폼 크림 리포트에서 포켓몬 TCG 카테고리 거래액이 2026 상반기에 직전 반기의 약 35배가 됐다.",
+   "when": "2026 상반기",
+   "virality": {
+    "channel": "한정판 거래 플랫폼",
+    "evidence": "크림 거래 데이터 기반 리포트",
+    "metric": "직전 반기의 약 35배"
+   },
+   "durability": "불명",
+   "fact_ids": [
+    "VRF16"
+   ],
+   "card_relevance": "해석: 팬덤 수집품 소비는 단건 고액 결제이고 리셀 플랫폼 결제가 따라붙는다."
+  },
+  {
+   "id": "VRT8",
+   "title": "원피스 TCG 프리미엄 컬렉션 최고 거래가 16배, 드로우 응모 249만 건",
+   "categories": [
+    "소비"
+   ],
+   "age_scope": "젊은층(범위 미기재)",
+   "what": "크림에서 원피스 TCG 프리미엄 카드 컬렉션이 발매가 대비 최고 거래가 16배 이상이었고 관심상품 저장 1576만 회였다.",
+   "when": "2026 상반기",
+   "virality": {
+    "channel": "한정판 거래 플랫폼(드로우)",
+    "evidence": "관심상품 저장 횟수와 드로우 응모 건수 보도",
+    "metric": "16배 이상, 저장 1576만 회, 응모 249만 건"
+   },
+   "durability": "불명",
+   "fact_ids": [
+    "VRF17"
+   ],
+   "card_relevance": "해석: 추첨(드로우) 응모 문화는 한정 발급 카드의 신청 방식과 닮았다."
+  },
+  {
+   "id": "VRT9",
+   "title": "Z세대 선호 국내 디자이너 브랜드 아모우 거래액 11배",
+   "categories": [
+    "소비"
+   ],
+   "age_scope": "Z세대",
+   "what": "크림 리포트에서 아모우 거래액이 직전 반기 대비 11배 이상 뛰었다.",
+   "when": "2026 상반기",
+   "virality": {
+    "channel": "한정판 거래 플랫폼",
+    "evidence": "크림 거래 데이터 기반 리포트",
+    "metric": "직전 반기 대비 11배 이상"
+   },
+   "durability": "불명",
+   "fact_ids": [
+    "VRF18"
+   ],
+   "card_relevance": "해석: 가심비 브랜드 선호는 고가 프리미엄 카드보다 소액 결제 중심 혜택과 맞을 수 있다."
+  },
+  {
+   "id": "VRT10",
+   "title": "Z세대 유행은 플랫폼마다 시작 분야가 다름",
+   "categories": [
+    "콘텐츠",
+    "디지털"
+   ],
+   "age_scope": "Z세대",
+   "what": "캐릿 조사에서 인스타는 핫플, 엑스는 밈, 틱톡은 글로벌 트렌드를 본다는 응답이 나왔고 91.7%가 라이프스타일이 같으면 같은 트렌드를 공유한다고 동의했다.",
+   "when": "2025 하반기(추정)",
+   "virality": {
+    "channel": "SNS(인스타·엑스·틱톡)",
+    "evidence": "대학내일 자체 패널 205명 조사(비확률)",
+    "metric": "91.7%(동의), 표본 205명"
+   },
+   "durability": "지속 추세",
+   "fact_ids": [
+    "VRF19",
+    "VRF20"
+   ],
+   "card_relevance": "해석: 채널별로 유행 분야가 달라 카드 마케팅도 채널과 소재를 맞춰야 할 수 있다."
+  },
+  {
+   "id": "VRT11",
+   "title": "Z세대 숏폼 이용률 81.6%, 직접 촬영 37.4% (stale)",
+   "categories": [
+    "콘텐츠",
+    "디지털"
+   ],
+   "age_scope": "Z세대",
+   "what": "대학내일20대연구소 설문 인용 수치로, Z세대 81.6%가 6개월 내 숏폼을 이용했다.",
+   "when": "2022(추정)",
+   "virality": {
+    "channel": "숏폼",
+    "evidence": "캐릭 기사 인용, 원 설문 미확인",
+    "metric": "81.6%"
+   },
+   "durability": "불명",
+   "fact_ids": [
+    "VRF21"
+   ],
+   "card_relevance": "해석: 최신 수치가 아니므로 참고 수준이며 숏폼 이용 자체가 유행 확산 통로라는 점만 시사한다."
+  },
+  {
+   "id": "VRT12",
+   "title": "카카오뱅크 프렌즈 체크카드(춘식이) 출시 두 달 30만 장",
+   "categories": [
+    "금융",
+    "소비"
+   ],
+   "age_scope": "젊은층(범위 미기재)",
+   "what": "춘식이 캐릭터 프렌즈 체크카드가 2월 출시 후 두 달 만에 30만 장 발급을 넘었다.",
+   "when": "2025-02~04",
+   "virality": {
+    "channel": "뉴스(발급량 보도)",
+    "evidence": "KPI뉴스가 카드업계 취재로 발급 장수 보도",
+    "metric": "두 달 30만 장"
+   },
+   "durability": "불명",
+   "fact_ids": [
+    "VRF22"
+   ],
+   "card_relevance": "해석: 캐릭터 체크카드는 짧은 기간 대량 발급이 가능한 상품군이다."
+  },
+  {
+   "id": "VRT13",
+   "title": "카카오뱅크 K-패스 프렌즈 체크카드 8개월 100만 장",
+   "categories": [
+    "금융"
+   ],
+   "age_scope": "젊은층(범위 미기재)",
+   "what": "프렌즈 체크카드에 대중교통 환급 K-패스를 더한 카드가 8개월 만에 100만 장을 넘었다.",
+   "when": "2025-02~10",
+   "virality": {
+    "channel": "뉴스(발급량 보도)",
+    "evidence": "SBS Biz 보도",
+    "metric": "8개월 100만 장"
+   },
+   "durability": "불명",
+   "fact_ids": [
+    "VRF26"
+   ],
+   "card_relevance": "해석: 캐릭터 디자인에 실질 혜택(교통 환급)을 결합한 카드가 발급 규모로 확인됐다."
+  },
+  {
+   "id": "VRT14",
+   "title": "케이뱅크 깜자 에디션 4만장 한정 3주 완판 후 추가 판매",
+   "categories": [
+    "금융"
+   ],
+   "age_scope": "젊은층(범위 미기재)",
+   "what": "소심한 강아지 깜자 캐릭터 한정판 체크카드가 3주 만에 완판되어 1만장 추가 판매했고 발급자의 70%가 여성이었다.",
+   "when": "2024-12~2025-01",
+   "virality": {
+    "channel": "앱 선착순 한정판·뉴스",
+    "evidence": "케이뱅크 발표를 스마트투데이가 보도",
+    "metric": "4만장 3주 완판, 추가 1만장, 2030 여성 44%"
+   },
+   "durability": "불명",
+   "fact_ids": [
+    "VRF24",
+    "VRF25"
+   ],
+   "card_relevance": "해석: 한정 수량 선착순이 완판 보도 자체로 화제를 만드는 구조를 보여준다. 단 stale 출처."
+  },
+  {
+   "id": "VRT15",
+   "title": "KB국민카드 티니핑 틴업 체크카드 한 달 안에 10만 장, 발급 연령 만 7세로",
+   "categories": [
+    "금융"
+   ],
+   "age_scope": "잘파(Z+알파)",
+   "what": "티니핑 IP 틴업 체크카드가 한 달이 채 되지 않아 10만 장 이상 발급됐다고 알려졌고, 2026년 5월 시행령 개정으로 체크카드 발급 가능 연령이 만 7세로 낮아졌다.",
+   "when": "2025-05~2026-08",
+   "virality": {
+    "channel": "뉴스",
+    "evidence": "뉴스웨이가 카드사 캐릭터 마케팅 사례로 정리",
+    "metric": "한 달 미만 10만 장 이상(전언)"
+   },
+   "durability": "불명",
+   "fact_ids": [
+    "VRF33",
+    "VRF34"
+   ],
+   "card_relevance": "해석: 연령 하향으로 캐릭터 카드 시장이 어린 이용자까지 확대돼, 대상 연령 정의를 먼저 정해야 할 수 있다."
+  },
+  {
+   "id": "VRT16",
+   "title": "카카오뱅크 모임 체크카드 3주 10만, 1년 3개월 100만",
+   "categories": [
+    "금융",
+    "모임"
+   ],
+   "age_scope": "젊은층(범위 미기재)",
+   "what": "모임통장 전용 카드가 첫 3주에 10만 장, 1년 3개월에 100만 장을 넘었다.",
+   "when": "2024-04~2025-07",
+   "virality": {
+    "channel": "뉴스",
+    "evidence": "카카오뱅크 발표를 헤럴드경제가 보도",
+    "metric": "3주 10만, 2달 20만, 1년 3개월 100만"
+   },
+   "durability": "불명",
+   "fact_ids": [
+    "VRF27"
+   ],
+   "card_relevance": "해석: 모임 단위 결제 상품이 개인 카드와 별도로 수요가 있음을 보여준다."
+  },
+  {
+   "id": "VRT17",
+   "title": "토스뱅크 게임 저금통 15시간 10만 계좌",
+   "categories": [
+    "금융",
+    "디지털"
+   ],
+   "age_scope": "Z세대",
+   "what": "블록을 깨 100원씩 저금하는 게임 저금통이 출시 약 15시간 동안 1초에 2명꼴로 가입해 10만 계좌를 달성했다.",
+   "when": "2025-05",
+   "virality": {
+    "channel": "앱 푸시·뉴스",
+    "evidence": "토스뱅크 발표를 노컷뉴스가 보도",
+    "metric": "15시간 10만 계좌"
+   },
+   "durability": "불명",
+   "fact_ids": [
+    "VRF28",
+    "VRF30"
+   ],
+   "card_relevance": "해석: 게임형 저금은 앱 내 짧은 기간 대량 가입이 가능해, 카드 혜택에 게임 요소를 붙이는 발상의 근거가 된다."
+  },
+  {
+   "id": "VRT18",
+   "title": "토스뱅크 키워봐요 31일적금 4일 10만, 한 달 30만 좌",
+   "categories": [
+    "금융"
+   ],
+   "age_scope": "10대",
+   "what": "매일 저금하며 다람쥐를 키우는 챌린지 적금이 4일 만에 10만, 한 달 만에 30만 좌를 넘었고 17세 미만 계좌가 약 2만 개였다.",
+   "when": "2026-08~09",
+   "virality": {
+    "channel": "앱·뉴스",
+    "evidence": "토스뱅크 발표를 SBS Biz와 이코노미스트가 보도",
+    "metric": "4일 10만 좌, 한 달 30만 좌"
+   },
+   "durability": "불명",
+   "fact_ids": [
+    "VRF31",
+    "VRF32"
+   ],
+   "card_relevance": "해석: 최고 연 10% 금리가 함께 걸려 있어 바이럴과 금리 유인을 분리해서 볼 수 없다."
+  },
+  {
+   "id": "VRT19",
+   "title": "케이뱅크 돈나무 키우기 1년 누적 2천만 그루",
+   "categories": [
+    "금융",
+    "디지털"
+   ],
+   "age_scope": "Z세대",
+   "what": "출석 임무형 앱테크가 출시 1년 만에 누적 2천만 그루, 232만 고객이 평균 8.6그루를 키웠다.",
+   "when": "2024-06~2025-06(추정)",
+   "virality": {
+    "channel": "앱",
+    "evidence": "케이뱅크 수치를 노컷뉴스가 보도",
+    "metric": "2천만 그루, 232만 명"
+   },
+   "durability": "불명",
+   "fact_ids": [
+    "VRF29"
+   ],
+   "card_relevance": "해석: 반복 출석형 장치가 체류를 늘린다는 사례이나 결제 전환 효과는 확인되지 않았다."
+  },
+  {
+   "id": "VRT20",
+   "title": "캐릭터 체크카드의 전월 실적 조건에 대한 소비자 불만",
+   "categories": [
+    "금융"
+   ],
+   "age_scope": "MZ",
+   "what": "KPI뉴스는 캐릭터 체크카드에 전월 실적 조건을 다는 경우가 많아 '소장용'으로만 발급받는다는 20·30대 직장인 발언을 전했다.",
+   "when": "2025-04",
+   "virality": {
+    "channel": "뉴스(인터뷰)",
+    "evidence": "언론이 소비자 인터뷰 2건을 인용",
+    "metric": "없음(정성)"
+   },
+   "durability": "불명",
+   "fact_ids": [
+    "VRF23"
+   ],
+   "card_relevance": "해석: 디자인 바이럴로 발급을 얻고도 혜택 조건이 불만을 만들면 이용 활성화로 이어지지 않을 위험이 있다."
+  },
+  {
+   "id": "VRT21",
+   "title": "신한카드 플리 체크(산리오) 4영업일 5만장 신청, 배송 중단 (stale)",
+   "categories": [
+    "금융"
+   ],
+   "age_scope": "잘파(Z+알파)",
+   "what": "산리오 체크카드 신청이 폭주해 배송이 일시 중단됐고, 카드고릴라 설문에선 10명 중 7명이 플레이트 때문에 발급한 경험이 있다고 한다.",
+   "when": "2023-03",
+   "virality": {
+    "channel": "뉴스",
+    "evidence": "전자신문 보도와 카드사 발표",
+    "metric": "4영업일 5만장 이상"
+   },
+   "durability": "불명",
+   "fact_ids": [
+    "VRF35",
+    "VRF36",
+    "VRF37"
+   ],
+   "card_relevance": "해석: 2023년 사례라 최신성은 낮지만 캐릭터 카드 수요 신호의 기준점으로는 쓸 수 있다."
+  }
+ ],
+ "gaps": [
+  "검색 도구 호출 한도(세션 200회)가 소진돼 조사 중간에 추가 검색을 못 했다. 아래 항목은 찾지 못한 것이지 없다는 뜻이 아니다.",
+  "팝업스토어·핫플 방문자 수, 문구·캐릭터 굿즈, 패션·뷰티, 앱 서비스, 밈·챌린지 사례를 출처 본문 기준으로 확보하지 못했다. 소비 유행 사례는 두바이 디저트와 크림 거래(TCG·브랜드) 중심이다.",
+  "카드 플레이트 자체가 SNS에서 바이럴된 2025~2026 사례(릴스 조회수, 오픈런)의 본문을 확인하지 못했다. 현대카드 한정판·메탈카드 신규 사례도 확인하지 못했다. 카드 사례는 캐릭터 체크카드와 토스뱅크·케이뱅크·카카오뱅크 상품 위주다.",
+  "혜택 악용(체리피킹)이 SNS로 퍼진 2025~2026 사례와 논란으로 번진 금융권 Z세대 마케팅 실패 사례는 확인하지 못했다. 캐릭터 체크카드 전월 실적 불만(VRF23)만 확인했다.",
+  "토스 행운퀴즈·만보기 등 핀테크 이벤트의 참여자 수는 공식 자료를 찾지 못했다(광고대행사·개인 블로그만 검색됨, 수치 근거로 쓰지 않음).",
+  "탕후루 등 과거 유행 이후의 폐업·매출 하락 같은 지속성 지표를 확인하지 못했다. 수명 근거는 업계 전망(3~6개월)과 전문가 발언뿐이며 통계가 아니다.",
+  "연령별(10대 vs 20대) 검색량·판매 비중은 두쫀쿠, 편의점 두바이 상품 모두 미확인이다. 기사는 2030, Z세대, MZ를 섞어 썼다.",
+  "VRF21(숏폼 81.6%)과 VRS17은 stale이고 설문 시점이 불확실하다. VRF35~VRF37(산리오·플레이트 설문)도 2023~2024년 자료다.",
+  "토스뱅크 31일적금(VRT18)은 최고 연 10% 금리가 함께 있어 바이럴 효과로 단정할 수 없다. 17세 미만 2만 계좌가 악용·부정 가입인지는 확인되지 않았다.",
+  "원문 확인은 curl로 받은 HTML 텍스트 기준이다. 캐릿 기사(VRS16)는 본문 일부가 유료라 앞부분만 읽었다. 공식 통계(KOSIS·금감원)는 이번 담당에서 다루지 않았다."
+ ]
+}

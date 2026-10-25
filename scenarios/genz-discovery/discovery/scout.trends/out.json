@@ -1,0 +1,636 @@
+{
+ "run_id": "genz-discovery-001",
+ "request_id": "genz-discovery-001-trends",
+ "agent": "scout",
+ "contract_version": "1.0",
+ "model": "recorded",
+ "status": "ok",
+ "answer": "trends 근거 조사 기록",
+ "result": {
+  "topic": "trends",
+  "facts": [
+   {
+    "id": "TRF1",
+    "topic": "결제수단",
+    "claim": "20~30대의 선호 지급수단 중 모바일카드 비중은 각각 36.8%, 34.9%(20대 36.8%, 30대 34.9%)",
+    "value": 36.8,
+    "unit": "%",
+    "population": "만 20대(30대는 34.9%)",
+    "period": "2024 조사(2025.3 발표)",
+    "source_id": "TRS1",
+    "quote": "20~30대는 모바일카드(각각 36.8%, 34.9%)",
+    "confidence": "medium",
+    "note": "순서상 20대 36.8, 30대 34.9로 읽힘. 한국은행 만 19세 이상 3,551명 조사 인용"
+   },
+   {
+    "id": "TRF2",
+    "topic": "결제수단",
+    "claim": "선호 지급수단은 20~30대 모바일카드, 40~50대 신용카드, 60대 이상 현금이 상대적으로 높다",
+    "value": null,
+    "unit": null,
+    "population": "연령대 비교",
+    "period": "2024 조사(2025.3 발표)",
+    "source_id": "TRS2",
+    "quote": "20~30대는 모바일카드, 40~50대는 신용카드, 60대 이상에서는 현금이 상대적으로 높게 나타나는",
+    "confidence": "high",
+    "note": "수치 없이 서술형으로 TRF1과 같은 조사 확인"
+   },
+   {
+    "id": "TRF3",
+    "topic": "신용카드 이용",
+    "claim": "20대 이하 신용카드 이용 금액은 전년 동기 대비 9.0%(12주 이동평균) 감소했다",
+    "value": -9.0,
+    "unit": "%",
+    "population": "20대 이하",
+    "period": "2024.8.3~9 전년 동기 대비",
+    "source_id": "TRS3",
+    "quote": "20대 이하의 신용카드 이용 금액은 전년 동기 대비 9.0%(12주 이동평균) 감소했다.",
+    "confidence": "high",
+    "note": "우리금융경영연구소가 통계청 빅데이터 분석. 발행 18개월 초과(stale)"
+   },
+   {
+    "id": "TRF4",
+    "topic": "체크카드",
+    "claim": "8개 카드사 체크카드 발급은 전년 대비 약 92만8000장 늘어 6236만9000장",
+    "value": 62369000,
+    "unit": "장",
+    "population": "전 연령(8개 카드사)",
+    "period": "2024.2Q",
+    "source_id": "TRS4",
+    "quote": "약 92만8000장이 늘어 6236만9000장이 발급됐다고 해요.",
+    "confidence": "medium",
+    "note": "전 연령 수치. 20대 체크카드 수치는 찾지 못함. stale"
+   },
+   {
+    "id": "TRF5",
+    "topic": "트래블카드",
+    "claim": "트래블월렛 누적 결제 건수 중 20대가 40.8%, 30대가 32.8%",
+    "value": 40.8,
+    "unit": "%",
+    "population": "트래블월렛 이용자(연령별 결제 건수 비중)",
+    "period": "출시~2026.9",
+    "source_id": "TRS6",
+    "quote": "누적 결제 건수 가운데 20대가 40.8%, 30대가 32.8%를 차지해",
+    "confidence": "high",
+    "note": "TRS5와 같은 회사 발표를 다룬 보도(독립 출처 아님)"
+   },
+   {
+    "id": "TRF6",
+    "topic": "트래블카드",
+    "claim": "트래블월렛 20대와 30대 합산 비중이 73.6%로 보도됐다",
+    "value": 73.6,
+    "unit": "%",
+    "population": "트래블월렛 20~30대",
+    "period": "출시~2026.9",
+    "source_id": "TRS6",
+    "quote": "두 연령대의 비중이 총 73.6%에 달했다.",
+    "confidence": "high",
+    "note": "기사에 명시된 수치"
+   },
+   {
+    "id": "TRF7",
+    "topic": "트래블카드",
+    "claim": "트래블월렛 누적 거래액 10조원, 누적 카드 발급 1000만장, 결제 경험자 1인당 평균 52.6건",
+    "value": 52.6,
+    "unit": "건",
+    "population": "트래블월렛 전체 이용자",
+    "period": "출시~2026.9",
+    "source_id": "TRS5",
+    "quote": "결제 경험이 있는 사용자의 1인당 평균 결제 건수는 52.6건",
+    "confidence": "medium",
+    "note": "원문 수치는 52.6건 외 10조원, 1000만장도 보도. 인용구는 52.6건 부분(재구성 없이 기록 단순화)"
+   },
+   {
+    "id": "TRF8",
+    "topic": "해외결제",
+    "claim": "2025년 말 9개 카드사 개인 해외 직불·체크카드 결제액은 7조58억원, 전년(5조7635억원) 대비 21.55% 증가",
+    "value": 21.55,
+    "unit": "%",
+    "population": "전 연령(9개 카드사 개인)",
+    "period": "2025년",
+    "source_id": "TRS7",
+    "quote": "전년(5조7635억원) 대비 21.55% 증가한 규모다.",
+    "confidence": "high",
+    "note": "20대 수치 없음"
+   },
+   {
+    "id": "TRF9",
+    "topic": "트래블카드",
+    "claim": "직장인 이모씨(28)는 환전 수수료로 나갈 돈을 아껴 맛집이나 쇼핑에 쓰는 편이 낫다고 말했다",
+    "value": null,
+    "unit": null,
+    "population": "20대 후반 1인(사례)",
+    "period": "2026.8",
+    "source_id": "TRS8",
+    "quote": "수수료로 나갈 돈을 아껴 맛집이나 쇼핑에 쓰는 편이 훨씬 낫다",
+    "confidence": "low",
+    "note": "개인 발언 사례. 통계 아님"
+   },
+   {
+    "id": "TRF10",
+    "topic": "구독",
+    "claim": "2025 콘텐츠 이용행태 조사에서 OTT 이용률은 20대가 99.1%로 가장 높다",
+    "value": 99.1,
+    "unit": "%",
+    "population": "20대",
+    "period": "2025 조사(7월~약 3개월)",
+    "source_id": "TRS9",
+    "quote": "OTT 이용률은 99.1%로 가장 높은 20대를 포함해",
+    "confidence": "high",
+    "note": "한국콘텐츠진흥원, 만 10세 이상 6,554명 대면 면접"
+   },
+   {
+    "id": "TRF11",
+    "topic": "구독",
+    "claim": "유료 구독형 OTT 이용률은 20대(83.6%)가 가장 높다",
+    "value": 83.6,
+    "unit": "%",
+    "population": "20대",
+    "period": "최근 1년(2025 조사)",
+    "source_id": "TRS9",
+    "quote": "20대 이용률(83.6%)이 가장 높았다",
+    "confidence": "high",
+    "note": ""
+   },
+   {
+    "id": "TRF12",
+    "topic": "구독",
+    "claim": "유료 구독형 OTT 이용률은 전체 54.2%",
+    "value": 54.2,
+    "unit": "%",
+    "population": "전 연령(10세 이상)",
+    "period": "2025 조사",
+    "source_id": "TRS10",
+    "quote": "유료 구독형 OTT 이용률은 54.2%로",
+    "confidence": "high",
+    "note": "TRF11과 비교용 전체 값"
+   },
+   {
+    "id": "TRF13",
+    "topic": "구독",
+    "claim": "가장 다양한 카테고리를 유료 구독하는 연령은 20~30대이며 생성형 AI·클라우드에도 지갑을 연다",
+    "value": null,
+    "unit": null,
+    "population": "20~30대(조사 대상 만 20~59세)",
+    "period": "2025.6.25~6.30",
+    "source_id": "TRS11",
+    "quote": "가장 다양한 카테고리를 유료 구독하는 연령은 20~30대로",
+    "confidence": "medium",
+    "note": "20대 단독 수치 아님. 오픈서베이 자체 조사"
+   },
+   {
+    "id": "TRF14",
+    "topic": "간편결제",
+    "claim": "간편결제 서비스 선호 비중은 네이버페이 51.5%, 카카오페이 25.1%, 토스페이 13.2%",
+    "value": 51.5,
+    "unit": "%",
+    "population": "만 20~64세 최근 1개월 모바일 결제 경험자 1,000명(전체)",
+    "period": "2025 조사(2025.8 발행)",
+    "source_id": "TRS12",
+    "quote": "네이버페이가 51.5%로 1위를 차지했습니다.",
+    "confidence": "medium",
+    "note": "20대 수치는 본문에 없음(그래프만). 네이버페이 포인트·할인, 카카오 간단함, 토스 습관·본인인증이 이유로 서술"
+   },
+   {
+    "id": "TRF15",
+    "topic": "간편결제",
+    "claim": "대학생 A씨는 1만7200원 커피·케이크를 카카오페이 굿딜 타임어택으로 8600원에 결제하고 신용카드 못지않은 혜택이라고 말했다",
+    "value": 8600,
+    "unit": "원",
+    "population": "대학생 1인(사례)",
+    "period": "2025.8",
+    "source_id": "TRS13",
+    "quote": "페이 앱을 활용해 신용카드 못지않은 혜택을 받을 수 있어 좋다",
+    "confidence": "low",
+    "note": "사례 인용. 기사 제목은 20·30 짠테크족. 통계 아님"
+   },
+   {
+    "id": "TRF16",
+    "topic": "가격 최적화",
+    "claim": "신한카드 2026 트렌드: 고물가 속에서 소비를 줄이기보다 최대한 저렴하게 구매할 방법을 찾는 방식으로 바뀐다",
+    "value": null,
+    "unit": null,
+    "population": "신한카드 이용고객(연령 구분 없음)",
+    "period": "2025.1~10월",
+    "source_id": "TRS14",
+    "quote": "최대한 저렴하게 구매할 수 있는 방법을 찾는 방식으로 변한다",
+    "confidence": "medium",
+    "note": "기존 시그널과 중복. 해당 섹션에 20대 언급 없음"
+   },
+   {
+    "id": "TRF17",
+    "topic": "가격 최적화",
+    "claim": "2025년 1~10월 신한카드 이용건수는 온라인 명품플랫폼 3사 27% 감소, 백화점 4사 2% 감소, 뷰티 아울렛 B사 5055% 증가",
+    "value": 5055,
+    "unit": "%",
+    "population": "신한카드 이용고객(연령 구분 없음)",
+    "period": "2025.1~10월 전년 동기 대비",
+    "source_id": "TRS14",
+    "quote": "가격 알림앱 연관어",
+    "confidence": "low",
+    "note": "인용구를 찾기 어려워 연관 구절만 기록. 수치는 본문 확인"
+   },
+   {
+    "id": "TRF18",
+    "topic": "여행",
+    "claim": "강원 묵호 소품샵 결제 건수가 2024년 대비 2113% 증가했고 이용객의 74%가 20~30대",
+    "value": 74,
+    "unit": "%",
+    "population": "묵호 소품샵 이용객 20~30대",
+    "period": "2026.1~5월",
+    "source_id": "TRS15",
+    "quote": "이용객의 74%는 20~30대였다.",
+    "confidence": "medium",
+    "note": "신한카드 빅데이터연구소 분석, 특정 지역 사례"
+   },
+   {
+    "id": "TRF19",
+    "topic": "혜택 축소",
+    "claim": "2024~2025년 단종된 신용카드는 총 1120종",
+    "value": 1120,
+    "unit": "종",
+    "population": "전 연령(전업카드사)",
+    "period": "2024~2025년",
+    "source_id": "TRS16",
+    "quote": "지난 2024~2025년 단종된 신용카드는 총 1120종이다.",
+    "confidence": "high",
+    "note": "여신금융협회 자료 인용"
+   },
+   {
+    "id": "TRF20",
+    "topic": "혜택 축소",
+    "claim": "2025년 8개 전업카드사 단종 카드는 525종(신용 421종, 체크 104종), 2022년은 101종",
+    "value": 525,
+    "unit": "종",
+    "population": "전 연령(8개 전업카드사)",
+    "period": "2025년",
+    "source_id": "TRS17",
+    "quote": "2년 새 1000종",
+    "confidence": "medium",
+    "note": "인용구는 제목 계열 요약어. 수치는 본문 확인"
+   },
+   {
+    "id": "TRF21",
+    "topic": "혜택 축소",
+    "claim": "카드사 8곳의 연회비 수익은 올 1분기 3910억원으로 최근 5년간 약 32% 증가",
+    "value": 3910,
+    "unit": "억원",
+    "population": "전 연령(8개 카드사)",
+    "period": "2026.1Q",
+    "source_id": "TRS16",
+    "quote": "벌어들인 연회비 수익은 3910억원이다.",
+    "confidence": "high",
+    "note": "금융감독원 자료 인용"
+   },
+   {
+    "id": "TRF22",
+    "topic": "청년 금융",
+    "claim": "청년미래적금은 만 19~34세 대상, 월 최대 50만원 저축, 최고 연 19.4%로 보도됐다",
+    "value": 19.4,
+    "unit": "%",
+    "population": "만 19~34세",
+    "period": "2026.7 보도",
+    "source_id": "TRS18",
+    "quote": "최고 연 19.4퍼센트",
+    "confidence": "low",
+    "note": "저축 상품(투자 아님). 공식 공고 링크는 본문에 없어 확인 필요"
+   }
+  ],
+  "gaps": [
+   "20대 체크카드 대 신용카드 보유·이용 비중(2025~2026): 20대 수치를 찾지 못함. 체크카드 수치는 전 연령(TRF4)과 2024년 자료뿐",
+   "20대 간편결제 이용률·브랜드별 비중: 오픈서베이 본문에 20대 수치 없음(그래프만). TRF14는 전체 기준",
+   "무지출·짠테크 챌린지: 2025년 이후 20대 설문 수치 없음. 확인된 수치는 2021년 엠브레인 직장인 조사(20대 56.8%)뿐이라 미채택",
+   "스몰 럭셔리·소비 양극화, 중고·배달·패션 플랫폼 결제 혜택: 20대 수치로 확인되는 근거 없음",
+   "20대 해외여행·직구 규모: 연령별 출국자·직구 통계를 찾지 못함",
+   "쇼핑·배달 멤버십의 20대 가입률: 오픈서베이 전체 수치만 확인(20대 교차표 미공개)",
+   "포인트·캐시백 체감 중시, 카드 혜택 축소에 대한 20대 불신: 20대 대상 조사 없음. TR6은 업계 사실 중심",
+   "쇼트폼·SNS 영향, 모바일 앱 중심 카드 관리: 근거 미확인",
+   "TRF1의 20대/30대 순서 해석(36.8/34.9)은 뉴시스 한 건의 괄호 표기 기준. 아주경제는 서술형만 확인. 한국은행 원문 확인 권장",
+   "TRF7, TRF17, TRF20은 quote가 수치 문장이 아니라 인접 구절임. 수치는 본문 확인했으나 인용구 보강 필요",
+   "TRS5와 TRS6은 같은 트래블월렛 발표 기반으로 독립 출처가 아님",
+   "청년미래적금(TRF22)은 세계일보 단일 출처, 공식 공고 미확인이라 시그널로 채택하지 않음",
+   "카드고릴라 등 카드 비교 사이트 글은 홍보성이라 수치 근거에서 제외"
+  ],
+  "trend_items": [
+   {
+    "id": "TR1",
+    "title": "20~30대는 선호 지급수단으로 모바일카드를 꼽는다(20대 36.8%)",
+    "categories": [
+     "digital"
+    ],
+    "age_scope": "high(20대 수치 있음)",
+    "what": "한국은행 2024년 조사에서 20~30대는 모바일카드, 40~50대는 신용카드를 선호했고 20대 모바일카드 비중은 36.8%로 보도됐다. 간편결제는 네이버페이 51.5%가 1위이며 이유로 포인트·할인, 간편함, 습관이 언급된다.",
+    "fact_ids": [
+     "TRF1",
+     "TRF2",
+     "TRF14"
+    ],
+    "card_relevance": "해석: 카드가 간편결제 앱에 등록된 상태로 쓰이는 일이 많다고 보면 실물 카드보다 앱 안의 혜택 노출이 중요하다."
+   },
+   {
+    "id": "TR2",
+    "title": "20대 이하 신용카드 이용액이 전년 대비 9.0% 줄었다(2024.8, stale)",
+    "categories": [
+     "regulation"
+    ],
+    "age_scope": "high(20대 수치 있음)",
+    "what": "우리금융경영연구소 분석에서 20대 이하 신용카드 이용 금액이 전년 동기 대비 9.0% 감소했다. 같은 시기 체크카드 발급은 전체 기준으로 늘었으나 20대 수치는 없다.",
+    "fact_ids": [
+     "TRF3",
+     "TRF4"
+    ],
+    "card_relevance": "해석: 20대에게 신용카드는 기본 선택이 아닐 수 있어 체크카드 대비 신용카드를 쓸 이유를 설명해야 한다. 2024년 자료이므로 최신 확인 필요."
+   },
+   {
+    "id": "TR3",
+    "title": "트래블월렛 결제 건수의 40.8%가 20대",
+    "categories": [
+     "benefit"
+    ],
+    "age_scope": "high(20대 수치 있음)",
+    "what": "트래블월렛 누적 결제 건수 중 20대 40.8%, 30대 32.8%로 2030이 73.6%다. 해외 체크카드 결제액은 2025년 말 7조58억원으로 전년 대비 21.55% 늘었다.",
+    "fact_ids": [
+     "TRF5",
+     "TRF6",
+     "TRF7",
+     "TRF8"
+    ],
+    "card_relevance": "해석: 해외결제 수수료 면제 상품의 핵심 이용층이 20대일 수 있어 경쟁 상품 비교 시 20대 비중을 기준으로 삼을 수 있다. TRF5~6은 같은 발표를 다룬 보도다."
+   },
+   {
+    "id": "TR4",
+    "title": "20대 OTT 이용률 99.1%, 유료 구독형 83.6%로 전 연령 최고",
+    "categories": [
+     "digital"
+    ],
+    "age_scope": "high(20대 수치 있음)",
+    "what": "2025 콘텐츠 이용행태 조사에서 20대 OTT 이용률은 99.1%, 유료 구독형 OTT 이용률은 83.6%로 가장 높았고 전체는 54.2%다. 오픈서베이는 20~30대가 가장 다양한 카테고리를 유료 구독한다고 정리했다.",
+    "fact_ids": [
+     "TRF10",
+     "TRF11",
+     "TRF12",
+     "TRF13"
+    ],
+    "card_relevance": "해석: 정기결제가 많은 연령이라 구독 결제 혜택이나 해지 안내가 카드 선택 이유가 될 수 있다."
+   },
+   {
+    "id": "TR5",
+    "title": "가격을 따지는 소비와 페이 앱 혜택 활용이 함께 보도됨",
+    "categories": [
+     "promo"
+    ],
+    "age_scope": "medium(청년/MZ 언급)",
+    "what": "신한카드 2026 키워드에서 고물가 속 소비자가 최대한 저렴하게 사는 방법을 찾는다고 했고 온라인 명품플랫폼 이용건수는 27% 감소했다. 매일경제는 20·30 소비자가 페이 앱 쿠폰·타임어택으로 혜택을 얻는 사례를 보도했다.",
+    "fact_ids": [
+     "TRF16",
+     "TRF17",
+     "TRF15"
+    ],
+    "card_relevance": "해석: 카드 자체 혜택과 간편결제 앱 프로모션이 경쟁하므로 앱 쿠폰과 겹치지 않는 혜택 설계가 필요하다. 기존 가격 최적화 시그널의 보강이며 20대 수치는 없다."
+   },
+   {
+    "id": "TR6",
+    "title": "카드 단종 확대와 연회비 수익 증가가 함께 나타남",
+    "categories": [
+     "benefit"
+    ],
+    "age_scope": "low(전 연령)",
+    "what": "2024~2025년 단종된 신용카드는 1120종이고 2025년 단종은 525종이다. 8개 카드사 연회비 수익은 올 1분기 3910억원으로 5년간 약 32% 늘었다.",
+    "fact_ids": [
+     "TRF19",
+     "TRF20",
+     "TRF21"
+    ],
+    "card_relevance": "해석: 혜택이 중간에 사라지는 경험이 쌓이면 신규 카드에 대한 신뢰가 낮을 수 있다. 20대 반응 자료는 찾지 못했다."
+   }
+  ]
+ },
+ "findings": [],
+ "sources": [
+  {
+   "id": "TRS1",
+   "title": "모바일금융, 5명 중 4명이 이용…60대도 절반이 활용(한국은행 2024년 지급수단 조사 보도)",
+   "url": "https://www.newsis.com/view/NISX20250325_0003111896",
+   "publisher": "뉴시스",
+   "kind": "news",
+   "published": "2025-03-25",
+   "retrieved_at": "2026-10-23",
+   "reliability": 0.7,
+   "tier": "B",
+   "stale": false
+  },
+  {
+   "id": "TRS2",
+   "title": "한국은행 지급수단·모바일금융 이용행태 조사 보도",
+   "url": "https://www.ajunews.com/view/20250325105045842",
+   "publisher": "아주경제",
+   "kind": "news",
+   "published": "2025-03-25",
+   "retrieved_at": "2026-10-23",
+   "reliability": 0.7,
+   "tier": "B",
+   "stale": false
+  },
+  {
+   "id": "TRS3",
+   "title": "20대 이하 신용카드 이용 감소(우리금융경영연구소 분석)",
+   "url": "https://www.fnnews.com/news/202409020801436768",
+   "publisher": "파이낸셜뉴스",
+   "kind": "news",
+   "published": "2024-09-02",
+   "retrieved_at": "2026-10-23",
+   "reliability": 0.7,
+   "tier": "B",
+   "stale": true
+  },
+  {
+   "id": "TRS4",
+   "title": "고물가 속 2030 체크카드 사용 증가",
+   "url": "https://www.fnnews.com/news/202410251707079747",
+   "publisher": "파이낸셜뉴스",
+   "kind": "news",
+   "published": "2024-10-26",
+   "retrieved_at": "2026-10-23",
+   "reliability": 0.7,
+   "tier": "B",
+   "stale": true
+  },
+  {
+   "id": "TRS5",
+   "title": "트래블월렛, 거래액 10조·카드발급 1000만장 돌파",
+   "url": "https://biz.sbs.co.kr/amp/article/20000336136",
+   "publisher": "SBS Biz",
+   "kind": "news",
+   "published": "2026-09-22",
+   "retrieved_at": "2026-10-23",
+   "reliability": 0.7,
+   "tier": "B",
+   "stale": false
+  },
+  {
+   "id": "TRS6",
+   "title": "트래블월렛 연령별 결제 비중 보도",
+   "url": "https://economist.co.kr/article/view/ecn202609220045",
+   "publisher": "이코노미스트",
+   "kind": "news",
+   "published": "2026-09-22",
+   "retrieved_at": "2026-10-23",
+   "reliability": 0.7,
+   "tier": "B",
+   "stale": false
+  },
+  {
+   "id": "TRS7",
+   "title": "트래블카드 인기에 해외 체크카드 결제액 1년새 22%↑",
+   "url": "https://ceoscoredaily.com/page/view/2026020214381110640",
+   "publisher": "CEO스코어데일리",
+   "kind": "news",
+   "published": "2026-02-02",
+   "retrieved_at": "2026-10-23",
+   "reliability": 0.7,
+   "tier": "B",
+   "stale": false
+  },
+  {
+   "id": "TRS8",
+   "title": "환전 수수료 아껴 맛집 가요…현금 환전 대신 트래블카드",
+   "url": "https://www.ddaily.co.kr/page/view/2026073114052212426",
+   "publisher": "디지털데일리",
+   "kind": "news",
+   "published": "2026-08-01",
+   "retrieved_at": "2026-10-23",
+   "reliability": 0.7,
+   "tier": "B",
+   "stale": false
+  },
+  {
+   "id": "TRS9",
+   "title": "사실상 전 국민 보는 OTT(2025 콘텐츠 이용행태 조사 인용)",
+   "url": "https://www.journalist.or.kr/ezview/article_main.html?no=59893",
+   "publisher": "한국기자협회보",
+   "kind": "news",
+   "published": "2025-12-17",
+   "retrieved_at": "2026-10-23",
+   "reliability": 0.7,
+   "tier": "B",
+   "stale": false
+  },
+  {
+   "id": "TRS10",
+   "title": "2025 콘텐츠 이용행태 조사 OTT 이용률 보도",
+   "url": "https://www.newsis.com/view/NISX20251215_0003440687",
+   "publisher": "뉴시스",
+   "kind": "news",
+   "published": "2025-12-15",
+   "retrieved_at": "2026-10-23",
+   "reliability": 0.7,
+   "tier": "B",
+   "stale": false
+  },
+  {
+   "id": "TRS11",
+   "title": "구독서비스 트렌드 리포트 2025",
+   "url": "https://blog.opensurvey.co.kr/trendreport/subscription-service-2025/",
+   "publisher": "오픈서베이",
+   "kind": "report",
+   "published": "2025-07-21",
+   "retrieved_at": "2026-10-23",
+   "reliability": 0.7,
+   "tier": "B",
+   "stale": false
+  },
+  {
+   "id": "TRS12",
+   "title": "간편결제 경쟁 네이버페이 vs 카카오페이 vs 토스페이",
+   "url": "https://blog.opensurvey.co.kr/article/ds-payment-2025-2/",
+   "publisher": "오픈서베이",
+   "kind": "report",
+   "published": "2025-08-11",
+   "retrieved_at": "2026-10-23",
+   "reliability": 0.7,
+   "tier": "B",
+   "stale": false
+  },
+  {
+   "id": "TRS13",
+   "title": "\"몇만원 아꼈네요\" 20·30 짠테크족 '페이'에 꽂혔다",
+   "url": "https://v.daum.net/v/20250822161204798",
+   "publisher": "매일경제(Daum)",
+   "kind": "news",
+   "published": "2025-08-22",
+   "retrieved_at": "2026-10-23",
+   "reliability": 0.7,
+   "tier": "B",
+   "stale": false
+  },
+  {
+   "id": "TRS14",
+   "title": "신한카드, 2026년 소비 트렌드 키워드 WISE UP 제시",
+   "url": "https://www.heraldk.com/article/2026012016464308714",
+   "publisher": "미주헤럴드경제",
+   "kind": "news",
+   "published": "2026-01-20",
+   "retrieved_at": "2026-10-23",
+   "reliability": 0.7,
+   "tier": "B",
+   "stale": false
+  },
+  {
+   "id": "TRS15",
+   "title": "여행 소비 휴식형·체험형 분화(신한카드 빅데이터연구소)",
+   "url": "https://www.fnnews.com/news/202607200916485057",
+   "publisher": "파이낸셜뉴스",
+   "kind": "news",
+   "published": "2026-07-20",
+   "retrieved_at": "2026-10-23",
+   "reliability": 0.7,
+   "tier": "B",
+   "stale": false
+  },
+  {
+   "id": "TRS16",
+   "title": "굿바이 더모아…알짜카드 역사 속으로",
+   "url": "https://news.tf.co.kr/read/economy/2343586.htm",
+   "publisher": "더팩트",
+   "kind": "news",
+   "published": "2026-07-15",
+   "retrieved_at": "2026-10-23",
+   "reliability": 0.7,
+   "tier": "B",
+   "stale": false
+  },
+  {
+   "id": "TRS17",
+   "title": "카드 단종 2년 새 1100종(여신금융협회 자료)",
+   "url": "https://www.hankyung.com/article/2026011997061",
+   "publisher": "한국경제",
+   "kind": "news",
+   "published": "2026-01-19",
+   "retrieved_at": "2026-10-23",
+   "reliability": 0.7,
+   "tier": "B",
+   "stale": false
+  },
+  {
+   "id": "TRS18",
+   "title": "텅장 막는 7월 방어전…2026년 하반기 청년 금융 지형도",
+   "url": "https://www.segye.com/newsView/20260705505061",
+   "publisher": "세계일보",
+   "kind": "news",
+   "published": "2026-07-05",
+   "retrieved_at": "2026-10-23",
+   "reliability": 0.7,
+   "tier": "B",
+   "stale": false
+  }
+ ],
+ "assumptions": [],
+ "unresolved": [],
+ "limits": [],
+ "clarifications": [],
+ "out_of_scope": {
+  "detected": false,
+  "suggested_agent": null
+ },
+ "input_refs": []
+}

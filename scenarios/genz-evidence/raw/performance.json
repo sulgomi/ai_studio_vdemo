@@ -1,0 +1,1598 @@
+{
+ "agent": "performance",
+ "retrieved_at": "2026-10-23",
+ "sources": [
+  {
+   "id": "PFS1",
+   "title": "은행 대출금리 감면 카드 이용실적 산정 기준 개선 (체크카드 써도 대출금리 낮아진다)",
+   "publisher": "파이낸셜뉴스",
+   "url": "https://www.fnnews.com/news/202607221419101661",
+   "published": "2026-07-22",
+   "tier": "B 언론·리서치",
+   "kind": "press",
+   "stale": false,
+   "promotional": false
+  },
+  {
+   "id": "PFS2",
+   "title": "카드이용실적 산정방식·제외대상 등 소비자 안내 대폭 강화",
+   "publisher": "한경매거진",
+   "url": "https://magazine.hankyung.com/business/article/202607229673b",
+   "published": "2026-07-22",
+   "tier": "B 언론·리서치",
+   "kind": "press",
+   "stale": false,
+   "promotional": false
+  },
+  {
+   "id": "PFS3",
+   "title": "카드 우대금리 문턱 낮춘다 실적 제외항목 대폭 축소",
+   "publisher": "디지털데일리",
+   "url": "https://www.ddaily.co.kr/page/view/2026072216010484256",
+   "published": "2026-07-22",
+   "tier": "B 언론·리서치",
+   "kind": "press",
+   "stale": false,
+   "promotional": false
+  },
+  {
+   "id": "PFS4",
+   "title": "'할인된 카드 결제, 전월 실적서 제외'…소비자 혼란",
+   "publisher": "뉴스토마토",
+   "url": "https://newstomato.com/ReadNews.aspx?no=1233514",
+   "published": "2024-06-25",
+   "tier": "B 언론·리서치",
+   "kind": "press",
+   "stale": null,
+   "promotional": false
+  },
+  {
+   "id": "PFS5",
+   "title": "카드고릴라 '월말에 확인한 카드 실적, 부족하다면 어떻게?' 설문조사 결과 발표",
+   "publisher": "카드고릴라",
+   "url": "https://www.card-gorilla.com/contents/detail/2465",
+   "published": null,
+   "tier": "C 업계",
+   "kind": "survey",
+   "stale": null,
+   "promotional": false,
+   "stale_note": "발행연도 미확인(본문에 '2월 16일~3월 1일', '지난 1월 출시'만 있음). 18개월 초과 여부 불명."
+  },
+  {
+   "id": "PFS6",
+   "title": "신용카드 전월실적 제외항목 모르면, 카드 혜택 못 받아요! 전월실적 핵심 개념 완벽 정리",
+   "publisher": "카드고릴라",
+   "url": "https://www.card-gorilla.com/contents/detail/1165",
+   "published": null,
+   "tier": "D 블로그·홍보",
+   "kind": "blog",
+   "stale": null,
+   "promotional": false,
+   "stale_note": "발행일 본문 미확인. 카드고릴라/뱅크샐러드 글은 비교·추천성이라 수치 근거는 상품 조건 서술에 한정."
+  },
+  {
+   "id": "PFS7",
+   "title": "2026 카드고릴라 추천 할인·적립률 1% 이상인 무실적 X 모든 가맹점 할인카드 BEST 4",
+   "publisher": "카드고릴라",
+   "url": "https://www.card-gorilla.com/contents/detail/3756",
+   "published": null,
+   "tier": "D 블로그·홍보",
+   "kind": "blog",
+   "stale": null,
+   "promotional": true,
+   "stale_note": "발행일 본문 미확인. 카드고릴라/뱅크샐러드 글은 비교·추천성이라 수치 근거는 상품 조건 서술에 한정."
+  },
+  {
+   "id": "PFS8",
+   "title": "전월실적 없는 신용카드 추천 BEST 5",
+   "publisher": "카드고릴라",
+   "url": "https://www.card-gorilla.com/contents/detail/2939",
+   "published": null,
+   "tier": "D 블로그·홍보",
+   "kind": "blog",
+   "stale": null,
+   "promotional": true,
+   "stale_note": "발행일 본문 미확인. 카드고릴라/뱅크샐러드 글은 비교·추천성이라 수치 근거는 상품 조건 서술에 한정."
+  },
+  {
+   "id": "PFS9",
+   "title": "전월실적 없는 신용카드 인기 순위 TOP5 (2026 카드고릴라)",
+   "publisher": "카드고릴라",
+   "url": "https://www.card-gorilla.com/contents/detail/4260",
+   "published": "2026-09",
+   "tier": "D 블로그·홍보",
+   "kind": "blog",
+   "stale": false,
+   "promotional": true,
+   "stale_note": "published 는 본문의 순위 집계 기간(2026.09.01~09.30) 기준."
+  },
+  {
+   "id": "PFS10",
+   "title": "여신전문금융업법 시행령 (시행 2026-05-06)",
+   "publisher": "국가법령정보센터(법제처)",
+   "url": "https://www.law.go.kr/DRF/lawService.do?OC=test&target=law&type=XML&LM=여신전문금융업법 시행령",
+   "published": "2026-05-06",
+   "tier": "A 공시·정부통계",
+   "kind": "stat",
+   "stale": false,
+   "promotional": false,
+   "stale_note": "국가법령정보 공동활용 API(OC=test)로 받은 XML. published 는 시행일자."
+  },
+  {
+   "id": "PFS11",
+   "title": "여신전문금융업감독규정 (금융위원회 고시 제2026-17호, 시행 2026-05-06)",
+   "publisher": "국가법령정보센터(법제처)",
+   "url": "https://www.law.go.kr/DRF/lawService.do?OC=test&target=admrul&ID=2100000279156&type=XML",
+   "published": "2026-05-06",
+   "tier": "A 공시·정부통계",
+   "kind": "stat",
+   "stale": false,
+   "promotional": false,
+   "stale_note": "국가법령정보 공동활용 API(OC=test)로 받은 XML. published 는 시행일자."
+  },
+  {
+   "id": "PFS12",
+   "title": "여신전문금융업법 (시행 2025-10-01)",
+   "publisher": "국가법령정보센터(법제처)",
+   "url": "https://www.law.go.kr/DRF/lawService.do?OC=test&target=law&type=XML&LM=여신전문금융업법",
+   "published": "2025-10-01",
+   "tier": "A 공시·정부통계",
+   "kind": "stat",
+   "stale": false,
+   "promotional": false,
+   "stale_note": "국가법령정보 공동활용 API(OC=test)로 받은 XML. published 는 시행일자."
+  },
+  {
+   "id": "PFS13",
+   "title": "금융위, 카드사 부가서비스 의무 '3년 유지' 방안 추진",
+   "publisher": "토요경제",
+   "url": "https://www.sateconomy.co.kr/news/view/179588822895104",
+   "published": null,
+   "tier": "B 언론·리서치",
+   "kind": "press",
+   "stale": true,
+   "promotional": false,
+   "stale_note": "발행일 미확인이나 내용이 '1년→3년 검토' 단계로 현행 규정이 아닌 과거 논의(2013년경)로 보임. 본문에 연도 없음."
+  },
+  {
+   "id": "PFS14",
+   "title": "Bilt Mastercard / Bilt Card 2.0 공식 페이지",
+   "publisher": "Bilt Rewards",
+   "url": "https://www.biltrewards.com/card",
+   "published": null,
+   "tier": "C 업계",
+   "kind": "issuer_page",
+   "stale": null,
+   "promotional": false
+  },
+  {
+   "id": "PFS15",
+   "title": "Apple Card 공식 페이지",
+   "publisher": "Apple",
+   "url": "https://www.apple.com/apple-card/",
+   "published": null,
+   "tier": "C 업계",
+   "kind": "issuer_page",
+   "stale": null,
+   "promotional": false
+  },
+  {
+   "id": "PFS16",
+   "title": "Petal 공식 페이지",
+   "publisher": "Petal",
+   "url": "https://www.petalcard.com/",
+   "published": null,
+   "tier": "C 업계",
+   "kind": "issuer_page",
+   "stale": null,
+   "promotional": false
+  },
+  {
+   "id": "PFS17",
+   "title": "Chime Credit Builder / Chime Card 공식 페이지",
+   "publisher": "Chime",
+   "url": "https://www.chime.com/credit-builder/",
+   "published": null,
+   "tier": "C 업계",
+   "kind": "issuer_page",
+   "stale": null,
+   "promotional": false,
+   "stale_note": "curl 로는 본문이 받아지지 않아 WebFetch 요약으로만 확인. 인용문은 미검증."
+  },
+  {
+   "id": "PFS18",
+   "title": "Discover it Cash Back 공식 페이지",
+   "publisher": "Discover",
+   "url": "https://www.discover.com/credit-cards/cash-back/it-card.html",
+   "published": null,
+   "tier": "C 업계",
+   "kind": "issuer_page",
+   "stale": null,
+   "promotional": false
+  },
+  {
+   "id": "PFS19",
+   "title": "Capital One Quicksilver 공식 페이지",
+   "publisher": "Capital One",
+   "url": "https://www.capitalone.com/credit-cards/quicksilver/",
+   "published": null,
+   "tier": "C 업계",
+   "kind": "issuer_page",
+   "stale": null,
+   "promotional": false
+  },
+  {
+   "id": "PFS20",
+   "title": "2026 전월실적 없는 카드 추천 TOP 3 (무실적 신용카드)",
+   "publisher": "뱅크샐러드",
+   "url": "https://www.banksalad.com/articles/%EC%A0%84%EC%9B%94%EC%8B%A4%EC%A0%81-%EC%97%86%EB%8A%94-%EC%8B%A0%EC%9A%A9%EC%B9%B4%EB%93%9C",
+   "published": "2026",
+   "tier": "D 블로그·홍보",
+   "kind": "blog",
+   "stale": false,
+   "promotional": true,
+   "stale_note": "발행일 본문 미확인. 카드고릴라/뱅크샐러드 글은 비교·추천성이라 수치 근거는 상품 조건 서술에 한정."
+  }
+ ],
+ "facts": [
+  {
+   "id": "PFF1",
+   "topic": "전월실적 정의",
+   "claim": "전월실적은 카드사가 전월 1일부터 말일까지 승인한 금액으로, 혜택을 받기 위해 전달에 채워야 하는 최소 사용 금액 기준이다.",
+   "value": null,
+   "unit": null,
+   "population": "신용카드 일반 설명",
+   "age_scope": "전연령",
+   "period": "2026 열람",
+   "source_id": "PFS6",
+   "quote": "전월실적이란 카드사가 '전월 1일부터 말일까지 승인한 금액'을 말한다",
+   "confidence": "medium",
+   "note": "카드고릴라 설명글(D). 공식 정의 문서는 못 찾음(gaps).",
+   "quote_verified": true
+  },
+  {
+   "id": "PFF2",
+   "topic": "미충족 시 혜택 0",
+   "claim": "전월실적 조건을 채우지 못하면 해당 월에는 혜택을 전혀 받지 못한다고 설명한다(예: 29만원 사용 시 30만원 조건 커피 50% 할인 불가).",
+   "value": null,
+   "unit": null,
+   "population": "신용카드 일반 설명",
+   "age_scope": "전연령",
+   "period": "2026 열람",
+   "source_id": "PFS6",
+   "quote": "조건을 충족하지 못하면, 해당 월에는 단 1원의 혜택도 받지 못하기 때문이다",
+   "confidence": "medium",
+   "note": "",
+   "quote_verified": true
+  },
+  {
+   "id": "PFF3",
+   "topic": "실적 구간제",
+   "claim": "카드사는 카드마다 전월실적 금액 구간별로 혜택 크기를 다르게 설정하며, 전월실적이 높을수록 혜택도 커지는 편이다.",
+   "value": null,
+   "unit": null,
+   "population": "신용카드 일반 설명",
+   "age_scope": "전연령",
+   "period": "2026 열람",
+   "source_id": "PFS6",
+   "quote": "전월실적 금액 구간 별로 제공하는 혜택의 크기를 다르게 설정한다",
+   "confidence": "medium",
+   "note": "",
+   "quote_verified": true
+  },
+  {
+   "id": "PFF4",
+   "topic": "실적 제외 항목",
+   "claim": "전월실적에서 흔히 제외되는 항목은 국세·지방세·공과금, 아파트 관리비, 대학 등록금, 상품권 구매, 선불카드 충전, 무이자 할부 거래 등이다.",
+   "value": null,
+   "unit": null,
+   "population": "신용카드 일반(카드마다 상이)",
+   "age_scope": "전연령",
+   "period": "2024-06",
+   "source_id": "PFS4",
+   "quote": "국세·지방세·공과금, 아파트 관리비, 대학 등록금, 상품권 구매, 선불카드 충전, 무이자 할부 거래",
+   "confidence": "high",
+   "note": "",
+   "quote_verified": true
+  },
+  {
+   "id": "PFF5",
+   "topic": "할인액 실적 제외",
+   "claim": "일부 카드는 할인 혜택이 적용된 이용금액을 전월 실적에서 제외하며, 이를 혜택 설명과 별도 '유의사항'으로 소극적으로 알린다는 지적이 있다.",
+   "value": null,
+   "unit": null,
+   "population": "삼성 모니모카드, NH 올바른 플렉스 카드 등",
+   "age_scope": "전연령",
+   "period": "2024-06",
+   "source_id": "PFS4",
+   "quote": "'할인 적용된 이용금액은 전월 실적 산정 시 제외'라는 항목을 소극적으로 알리고 있다",
+   "confidence": "high",
+   "note": "",
+   "quote_verified": true
+  },
+  {
+   "id": "PFF6",
+   "topic": "금감원 소비자 유의사항",
+   "claim": "금융감독원은 2024년 초 소비자 유의사항에서 이용 실적 기준이 카드 상품 및 행사별로 다르다고 당부했다.",
+   "value": null,
+   "unit": null,
+   "population": "신용카드 소비자",
+   "age_scope": "전연령",
+   "period": "2024 초",
+   "source_id": "PFS4",
+   "quote": "이용 실적 기준은 카드 상품 및 행사별로 다르다",
+   "confidence": "medium",
+   "note": "기사가 전한 금감원 발언. 금감원 원문 미확인.",
+   "quote_verified": true
+  },
+  {
+   "id": "PFF7",
+   "topic": "실적 임계값 사례",
+   "claim": "뉴스토마토는 삼성 모니모·NH 올바른 플렉스는 전월 30만원, 롯데 로카365는 50만원 조건이며 로카365는 관리비·할인액도 실적으로 인정한다고 소개했다.",
+   "value": null,
+   "unit": null,
+   "population": "개별 카드 3종",
+   "age_scope": "전연령",
+   "period": "2024-06",
+   "source_id": "PFS4",
+   "quote": "전월 실적 50만원을 채워야 하는데, 보통 전월 30만원 이상인 타사 카드보다 기준이 높아보입니다",
+   "confidence": "high",
+   "note": "본문 확인(curl). 모니모·올바른 플렉스는 전월 30만원 조건 서술도 본문에 있음.",
+   "quote_verified": true
+  },
+  {
+   "id": "PFF8",
+   "topic": "할인액 실적 제외의 효과",
+   "claim": "할인 적용된 금액 전체가 실적에서 제외되는 카드는 그만큼 더 써야 전월실적을 채울 수 있다고 설명한다(예: 2만원 커피 50% 할인 시 2만원 추가 결제 필요).",
+   "value": null,
+   "unit": null,
+   "population": "신용카드 일반 설명",
+   "age_scope": "전연령",
+   "period": "2026 열람",
+   "source_id": "PFS6",
+   "quote": "할인 적용된 금액 전체만큼 더 써야 전월실적을 채울 수 있다",
+   "confidence": "medium",
+   "note": "실적 때문에 추가 지출이 필요해지는 구조를 보여주는 사례 설명.",
+   "quote_verified": true
+  },
+  {
+   "id": "PFF9",
+   "topic": "할부 실적",
+   "claim": "카드고릴라는 할부 결제 전체 금액이 첫 달 전월실적으로 잡히고 매월 나뉘어 잡히지 않는다고 설명한다.",
+   "value": null,
+   "unit": null,
+   "population": "카드사 신용카드(은행 대출우대 실적과 별개)",
+   "age_scope": "전연령",
+   "period": "2026 열람",
+   "source_id": "PFS6",
+   "quote": "할부 결제한 전체 금액이 첫 달의 전월실적으로 들어간다",
+   "confidence": "medium",
+   "note": "은행 대출금리 감면 실적은 2026-07 개선으로 할부 분할 인정(PFF22). 카드사 혜택 실적은 카드별 상이.",
+   "quote_verified": true
+  },
+  {
+   "id": "PFF10",
+   "topic": "발급 초기 무실적 기간",
+   "claim": "많은 카드가 카드등록일로부터 다음 달 말일까지 전월실적과 무관하게 혜택을 제공한다(최대 약 60일).",
+   "value": null,
+   "unit": null,
+   "population": "신용/체크카드 일반(카드마다 상이)",
+   "age_scope": "전연령",
+   "period": "2026 열람",
+   "source_id": "PFS6",
+   "quote": "카드등록일로부터 다음 달 말일까지, 전월실적 상관없이 카드 혜택을 제공한다",
+   "confidence": "medium",
+   "note": "뱅크샐러드(PFS20)도 같은 취지로 설명.",
+   "quote_verified": true
+  },
+  {
+   "id": "PFF11",
+   "topic": "무실적 카드 혜택 수준",
+   "claim": "무실적 카드는 전월실적 조건과 한도 제한이 없는 대신 할인/적립률이 0.7~1% 내외로 낮은 편이라고 설명한다.",
+   "value": null,
+   "unit": "%",
+   "population": "무실적 카드 일반",
+   "age_scope": "전연령",
+   "period": "2026 열람",
+   "source_id": "PFS6",
+   "quote": "할인/적립률은 0.7~1% 내외로 낮은 편이다",
+   "confidence": "medium",
+   "note": "수치 범위는 설명글 서술. 조사 통계 아님.",
+   "quote_verified": true
+  },
+  {
+   "id": "PFF12",
+   "topic": "무실적 카드 혜택 수준(2)",
+   "claim": "보통 무실적·모든 가맹점 할인 카드는 0.7%에서 최대 1%까지 할인율을 적용해 1% 초과 카드를 찾기 쉽지 않다고 한다.",
+   "value": null,
+   "unit": "%",
+   "population": "무실적 카드 일반",
+   "age_scope": "전연령",
+   "period": "2026 열람",
+   "source_id": "PFS7",
+   "quote": "보통 무실적 x 모든 가맹점 할인 카드들이 0.7%에서 최대 1%까지 할인율을 적용하기 때문에",
+   "confidence": "medium",
+   "note": "",
+   "quote_verified": true
+  },
+  {
+   "id": "PFF13",
+   "topic": "LOCA LIKIT 1.2",
+   "claim": "LOCA LIKIT 1.2는 전월실적 및 할인한도 없이 국내 모든 가맹점에서 1.2% 할인을 제공한다고 소개된다.",
+   "value": 1.2,
+   "unit": "%",
+   "population": "개별 카드",
+   "age_scope": "전연령",
+   "period": "2026 열람",
+   "source_id": "PFS7",
+   "quote": "전월실적 및 할인한도 없이 국내 모든 가맹점에서 1.2% 할인 받을 수 있다",
+   "confidence": "medium",
+   "note": "홍보성 글(D).",
+   "quote_verified": true
+  },
+  {
+   "id": "PFF14",
+   "topic": "카드의정석2 SUPER",
+   "claim": "카드의정석2 SUPER는 전월실적 없이 국내외 모든 가맹점 2% 할인(월 할인한도 10만원), 연회비 3만원으로 소개된다.",
+   "value": 2.0,
+   "unit": "%",
+   "population": "개별 카드",
+   "age_scope": "전연령",
+   "period": "2026 열람",
+   "source_id": "PFS8",
+   "quote": "전월실적 없이 국내외 모든 가맹점에서 2% 할인 (월 할인한도: 10만원)",
+   "confidence": "medium",
+   "note": "홍보성 글(D). 월 한도로 혜택 총량을 제한하는 구조.",
+   "quote_verified": true
+  },
+  {
+   "id": "PFF15",
+   "topic": "MOVING ALLDAY 3일 연속",
+   "claim": "하나 MOVING카드 ALLDAY모드는 전월실적 없이 3일 연속 이용하면 영역별로 2배 적립한다(날마다 1원 이상 결제 필요).",
+   "value": null,
+   "unit": null,
+   "population": "개별 카드",
+   "age_scope": "전연령",
+   "period": "2026 열람",
+   "source_id": "PFS8",
+   "quote": "전월실적 없이 3일 연속 쓰면 영역별 2배 적립",
+   "confidence": "medium",
+   "note": "행동(연속 일수) 기반 조건 사례. 홍보성 글(D). 같은 글이 소액결제로 3일 채우는 방법을 팁으로 소개.",
+   "quote_verified": true
+  },
+  {
+   "id": "PFF16",
+   "topic": "MOVING 모드 전환",
+   "claim": "MOVING카드는 하나페이 앱에서 월 1회 모드를 바꿀 수 있고 변경 즉시 적용된다(다른 카드는 다음달 적용).",
+   "value": null,
+   "unit": null,
+   "population": "개별 카드",
+   "age_scope": "전연령",
+   "period": "2026 열람",
+   "source_id": "PFS8",
+   "quote": "모드는 하나페이 앱에서 월 1회 변경할 수 있고, 변경 즉시 적용된다",
+   "confidence": "medium",
+   "note": "",
+   "quote_verified": true
+  },
+  {
+   "id": "PFF17",
+   "topic": "ZERO Up 구조",
+   "claim": "현대카드 ZERO Up은 전월실적 없이 국내외 0.8% 무제한 할인, 온라인몰·대형마트 등 10만원 이상 결제 시 1.6% 할인(연회비 3만원)으로 소개된다.",
+   "value": 0.8,
+   "unit": "%",
+   "population": "개별 카드",
+   "age_scope": "전연령",
+   "period": "2026 열람",
+   "source_id": "PFS8",
+   "quote": "전월실적 없이 국내외 가맹점 0.8% 무제한 할인",
+   "confidence": "medium",
+   "note": "'10만원 이상'이 건당인지 합산인지 본문 미기재. 홍보성 글(D).",
+   "quote_verified": true
+  },
+  {
+   "id": "PFF18",
+   "topic": "KB ALL 혼합 구조",
+   "claim": "KB ALL 카드는 전월실적 없이 국내 1% 무제한 할인이지만 쇼핑 멤버십·OTT·통신 할인은 전월실적 40만원 이상일 때 제공하며 할인받은 건은 실적에서 제외된다.",
+   "value": 40,
+   "unit": "만원",
+   "population": "개별 카드",
+   "age_scope": "전연령",
+   "period": "2026 열람",
+   "source_id": "PFS8",
+   "quote": "쇼핑 멤버십, OTT, 이동통신요금 할인은 전월실적 40만원 이상 시 제공",
+   "confidence": "medium",
+   "note": "무실적 기본 + 실적 구간 추가 혜택의 혼합형. 홍보성 글(D).",
+   "quote_verified": true
+  },
+  {
+   "id": "PFF19",
+   "topic": "Simple Plan+ 분기 조건",
+   "claim": "신한카드 Simple Plan+는 전월실적 없이 국내 1.5%·해외 2% 할인에 더해 가족카드 분기 실적 150만원 이상이면 1만원 캐시백(분기당 1회)을 준다.",
+   "value": 1.5,
+   "unit": "%",
+   "population": "개별 카드",
+   "age_scope": "전연령",
+   "period": "2026 열람",
+   "source_id": "PFS8",
+   "quote": "전월실적 없이 국내 1.5%, 해외 2% 무제한 할인",
+   "confidence": "medium",
+   "note": "월 단위가 아닌 분기 누적 조건 사례. 연회비 47,000원/50,000원(본문). 홍보성 글(D).",
+   "quote_verified": true
+  },
+  {
+   "id": "PFF20",
+   "topic": "무실적 카드 대상층",
+   "claim": "카드고릴라는 무실적 카드를 20대 대학생 및 사회초년생의 첫 신용카드, 직장인 서브카드 용도로 추천한다.",
+   "value": null,
+   "unit": null,
+   "population": "20대 대학생·사회초년생(추천 문구)",
+   "age_scope": "20대",
+   "period": "2026-09",
+   "source_id": "PFS9",
+   "quote": "20대 대학생 및 사회초년생의 첫 신용카드부터 메인 카드를 지닌 직장인의 서브 카드",
+   "confidence": "low",
+   "note": "상품 추천 문구(홍보). 20대의 실제 선호 통계 아님.",
+   "quote_verified": true
+  },
+  {
+   "id": "PFF21",
+   "topic": "무실적 카드 비중 대용 정보",
+   "claim": "카드고릴라 순위는 실시간 집계한 국내 2천여개 카드의 조회수·신청수 기반이며 '전월실적 없이 모든 가맹점 혜택' 카드만 별도 차트로 선정했다. 전체 대비 무실적 카드 비중 수치는 아니다.",
+   "value": null,
+   "unit": null,
+   "population": "카드고릴라 집계 카드(국내 2천여개)",
+   "age_scope": "전연령",
+   "period": "2026.09",
+   "source_id": "PFS9",
+   "quote": "카드고릴라가 실시간 집계한 국내 2천여개 카드의 조회수 및 신청수 기반",
+   "confidence": "medium",
+   "note": "비중 통계 없음 → gaps.",
+   "quote_verified": true
+  },
+  {
+   "id": "PFF22",
+   "topic": "은행 대출 우대금리 카드실적 제외항목",
+   "claim": "은행들은 현금서비스·카드론·리볼빙·카드 연회비·정부지원금·후불교통카드·선불카드 결제액 등 중 4~8개 항목을 대출금리 감면 실적으로 인정하지 않았다.",
+   "value": null,
+   "unit": "개",
+   "population": "은행 가계대출 금리감면 조건의 카드 실적",
+   "age_scope": "전연령",
+   "period": "2026-07",
+   "source_id": "PFS1",
+   "quote": "중에서 4~8개 항목은 대출금리 감면 실적으로 인정하지 않았다",
+   "confidence": "high",
+   "note": "카드 혜택 실적이 아니라 은행 대출금리 감면용 카드 실적 기준임에 유의.",
+   "quote_verified": true
+  },
+  {
+   "id": "PFF23",
+   "topic": "제외항목 최대 1개로",
+   "claim": "금감원은 은행권과 함께 카드 이용실적 제외 항목을 은행별 최대 1개로 줄이기로 했다(신한·우리·하나는 제외 항목 없음).",
+   "value": 1,
+   "unit": "개",
+   "population": "은행 가계대출 금리감면",
+   "age_scope": "전연령",
+   "period": "2026-07-22",
+   "source_id": "PFS1",
+   "quote": "카드 이용실적 제외 항목이 은행별로 최대 1개로 줄어든다",
+   "confidence": "high",
+   "note": "",
+   "quote_verified": true
+  },
+  {
+   "id": "PFF24",
+   "topic": "체크카드 동일 인정",
+   "claim": "체크카드도 신용카드와 동일하게 인정하기로 했다. 그동안 일부 은행은 체크카드 이용액을 실적으로 취급하지 않거나 감면 폭을 작게 적용했다.",
+   "value": null,
+   "unit": null,
+   "population": "은행 가계대출 금리감면",
+   "age_scope": "전연령",
+   "period": "2026-07-22",
+   "source_id": "PFS1",
+   "quote": "체크카드도 신용카드와 동일하게 인정하기로 했다",
+   "confidence": "high",
+   "note": "",
+   "quote_verified": true
+  },
+  {
+   "id": "PFF25",
+   "topic": "할부 분할 인정",
+   "claim": "할부 결제는 당월에만 실적으로 잡히던 것을 앞으로 매월 분할 인정한다(360만원 6개월 할부 시 매달 60만원).",
+   "value": 60,
+   "unit": "만원",
+   "population": "은행 가계대출 금리감면",
+   "age_scope": "전연령",
+   "period": "2026-07-22",
+   "source_id": "PFS1",
+   "quote": "앞으로는 6개월간 매달 60만원의 실적을 채운 것으로 간주한다",
+   "confidence": "high",
+   "note": "",
+   "quote_verified": true
+  },
+  {
+   "id": "PFF26",
+   "topic": "적용 시기",
+   "claim": "개선안은 은행별로 9~10월 신규 대출자부터 순차 적용되며 기존 대출 고객은 10월 이후 적용된다. 하나은행은 이미 시행 중이다.",
+   "value": null,
+   "unit": null,
+   "population": "은행 가계대출 금리감면",
+   "age_scope": "전연령",
+   "period": "2026-09~10",
+   "source_id": "PFS1",
+   "quote": "9∼10월 신규 대출자부터 순차적으로 적용된다",
+   "confidence": "high",
+   "note": "",
+   "quote_verified": true
+  },
+  {
+   "id": "PFF27",
+   "topic": "실적 관련 민원",
+   "claim": "금감원 자료 기준 보도에서, 카드 이용실적 산정방식·제외대상을 은행별로 다르게 운영해 소비자 민원이 지속적으로 제기돼 왔고 대출약정 시 충분한 설명을 못 들었다는 민원이 빈번했다고 한다.",
+   "value": null,
+   "unit": null,
+   "population": "은행 대출 금리감면 관련 소비자",
+   "age_scope": "전연령",
+   "period": "2026-07-22",
+   "source_id": "PFS2",
+   "quote": "소비자 민원이 지속적으로 제기돼 왔다",
+   "confidence": "high",
+   "note": "민원 건수 수치는 본문에 없음 → gaps.",
+   "quote_verified": true
+  },
+  {
+   "id": "PFF28",
+   "topic": "민원 유형",
+   "claim": "실적 산정 방식·제외 항목이 복잡하고 안내가 부족하다는 민원이 잇따랐고, 결제 취소분이 어느 달 실적에서 빠지는지 안내받지 못했다는 민원도 나왔다.",
+   "value": null,
+   "unit": null,
+   "population": "은행 대출 금리감면 관련 소비자",
+   "age_scope": "전연령",
+   "period": "2026-07-22",
+   "source_id": "PFS3",
+   "quote": "결제 취소분이 어느 달 실적에서 빠지는지 제대로 안내받지 못했다는 민원도 나왔다",
+   "confidence": "high",
+   "note": "본문 확인(curl). 건수 수치 없음.",
+   "quote_verified": true
+  },
+  {
+   "id": "PFF29",
+   "topic": "정보 공개 강화",
+   "claim": "은행은 대출약정서·앱에 카드 실적 산정방식, 취소·선결제·가족카드 합산·결제일 변경 시 인정방식 등을 안내하기로 했다.",
+   "value": null,
+   "unit": null,
+   "population": "은행 가계대출 금리감면",
+   "age_scope": "전연령",
+   "period": "2026-07-22",
+   "source_id": "PFS2",
+   "quote": "카드 이용실적 제외대상을 카드론이나 후불교통카드 등 1개 수준으로 최소화할 계획이다",
+   "confidence": "high",
+   "note": "",
+   "quote_verified": true
+  },
+  {
+   "id": "PFF30",
+   "topic": "실적 부족 시 행동(1위)",
+   "claim": "실적이 부족할 때 '남은 기간 바싹 실적 채워 다음 달 혜택 받겠다'가 29.3%(422표)로 1위였다.",
+   "value": 29.3,
+   "unit": "%",
+   "population": "카드고릴라 웹사이트 방문자 1,440명",
+   "age_scope": "전연령",
+   "period": "2월 16일~3월 1일(연도 미기재)",
+   "source_id": "PFS5",
+   "quote": "응답이 29.3%(422표)로 1위를 차지했다",
+   "confidence": "medium",
+   "note": "발행연도·연령 미기재. 방문자 자발 응답이라 대표성 낮음.",
+   "quote_verified": true
+  },
+  {
+   "id": "PFF31",
+   "topic": "실적 채우기 서비스 선택",
+   "claim": "'실적 채우기 서비스로 다음 달 혜택 받겠다'가 25.8%(371표), '혜택 없이 그대로 사용'이 20.4%(294표)였다.",
+   "value": 25.8,
+   "unit": "%",
+   "population": "카드고릴라 웹사이트 방문자 1,440명",
+   "age_scope": "전연령",
+   "period": "2월 16일~3월 1일(연도 미기재)",
+   "source_id": "PFS5",
+   "quote": "25.8%(371표)로 2위에 올랐다",
+   "confidence": "medium",
+   "note": "20.4% 응답은 별도 quote: '20.4%(294표)에 달했다'",
+   "quote_verified": true
+  },
+  {
+   "id": "PFF32",
+   "topic": "추가 결제·대체 수단 비율",
+   "claim": "카드고릴라는 약 64%가 결제, 실적 채우기 서비스 활용, 다른 카드 사용 등으로 부족분을 메워 혜택을 받겠다고 응답했다고 해석했다.",
+   "value": 64,
+   "unit": "%",
+   "population": "카드고릴라 웹사이트 방문자 1,440명",
+   "age_scope": "전연령",
+   "period": "2월 16일~3월 1일(연도 미기재)",
+   "source_id": "PFS5",
+   "quote": "약 64%의 인원이 부족한 만큼 결제, 실적 채우기 서비스 활용, 다른 카드 사용 등의",
+   "confidence": "medium",
+   "note": "원문 수치(약 64%). 응답 보기 합산 해석은 카드고릴라의 것. 직접 '과소비' 문항은 아님.",
+   "quote_verified": true
+  },
+  {
+   "id": "PFF33",
+   "topic": "Puzzle 이월",
+   "claim": "신한카드 Puzzle은 이용금액이 70만원 이상이면 그중 20만원을 다음 달 이용금액으로 이월해 준다.",
+   "value": 20,
+   "unit": "만원",
+   "population": "개별 카드",
+   "age_scope": "전연령",
+   "period": "설문 시점(연도 미기재)",
+   "source_id": "PFS5",
+   "quote": "이용금액이 70만원 이상일 경우 그중 20만원을 다음 달 이용금액으로 이월해주는 서비스",
+   "confidence": "medium",
+   "note": "현재 판매·조건 유지 여부는 미확인.",
+   "quote_verified": true
+  },
+  {
+   "id": "PFF34",
+   "topic": "WE:SH 채워드림",
+   "claim": "KB국민 Our/My WE:SH 카드는 연 2회 5만원 한도 안에서 전월실적 채워드림 혜택을 선보였다(지난 1월 출시로 서술).",
+   "value": 5,
+   "unit": "만원",
+   "population": "개별 카드",
+   "age_scope": "전연령",
+   "period": "설문 시점(연도 미기재)",
+   "source_id": "PFS5",
+   "quote": "연 2회 5만원 한도 안에서 전월실적 채워드림 혜택을 선보였다",
+   "confidence": "medium",
+   "note": "현재 판매·조건 유지 여부는 미확인.",
+   "quote_verified": true
+  },
+  {
+   "id": "PFF35",
+   "topic": "적격비용에 부가서비스 비용 포함",
+   "claim": "감독규정 가맹점수수료 적격비용 항목 중 마케팅비용에 '상품약관에 따라 신용카드회원에게 제공하는 부가서비스에 소요되는 비용'이 포함된다(가맹점 매출 증대에 기여하는 것으로 인정되는 비용).",
+   "value": null,
+   "unit": null,
+   "population": "여신전문금융업 감독규정 가맹점수수료 적격비용 항목",
+   "age_scope": "전연령",
+   "period": "시행 2026-05-06",
+   "source_id": "PFS11",
+   "quote": "신용카드회원에게 제공하는 부가서비스에 소요되는 비용",
+   "confidence": "high",
+   "note": "이 구조가 카드 혜택 재원과 가맹점수수료를 법규상 연결한다는 점은 조문 서술. 실제 재원 비중은 확인 못함.",
+   "quote_verified": true
+  },
+  {
+   "id": "PFF36",
+   "topic": "적격비용 원칙",
+   "claim": "카드사는 가맹점이 부담하는 것이 합당한 '적격 비용'만 가맹점수수료율 산정에 반영해야 하며 특정 가맹점 혜택 비용은 해당 가맹점이 부담하게 해야 한다.",
+   "value": null,
+   "unit": null,
+   "population": "가맹점수수료율 산정",
+   "age_scope": "전연령",
+   "period": "시행 2026-05-06",
+   "source_id": "PFS11",
+   "quote": "\"적격 비용\"이라 한다)만을 가맹점수수료율 산정에 반영하여야 하며",
+   "confidence": "high",
+   "note": "",
+   "quote_verified": true
+  },
+  {
+   "id": "PFF37",
+   "topic": "영세가맹점 우대수수료율",
+   "claim": "카드사는 영세한 중소신용카드가맹점에 금융위가 정하는 우대수수료율을 적용해야 한다(시행령상 연매출 30억원 이하).",
+   "value": 30,
+   "unit": "억원",
+   "population": "영세·중소 가맹점",
+   "age_scope": "전연령",
+   "period": "시행 2025-10-01",
+   "source_id": "PFS12",
+   "quote": "금융위원회가 정하는 우대수수료율을 적용하여야 한다",
+   "confidence": "high",
+   "note": "30억원 기준은 시행령 제6조의13(PFS10).",
+   "quote_verified": true
+  },
+  {
+   "id": "PFF38",
+   "topic": "연회비에 부가서비스 비용 반영",
+   "claim": "시행령은 연회비 반환 시 이미 납부한 연회비에 반영된 비용으로 '부가서비스 제공에 소요된 비용'을 반환금액 산정에서 제외한다고 정한다.",
+   "value": null,
+   "unit": null,
+   "population": "연회비 반환 규정",
+   "age_scope": "전연령",
+   "period": "시행 2026-05-06",
+   "source_id": "PFS10",
+   "quote": "신용카드 이용 시 제공되는 추가적인 혜택 등 부가서비스 제공에 소요된 비용",
+   "confidence": "high",
+   "note": "연회비가 부가서비스 비용을 일부 충당함을 규정이 전제함.",
+   "quote_verified": true
+  },
+  {
+   "id": "PFF39",
+   "topic": "경제적 이익 정의와 한도(법인회원)",
+   "claim": "감독규정은 법인회원에 대해 경제적 이익(부가서비스 등)이 연간 이용 총액의 1000분의 5를 초과하면 과도한 경제적 이익으로 본다. 개인회원에 대한 같은 한도는 확인하지 못했다.",
+   "value": 5,
+   "unit": "‰",
+   "population": "법인회원(개인회원 아님)",
+   "age_scope": "전연령",
+   "period": "시행 2026-05-06",
+   "source_id": "PFS11",
+   "quote": "연간 이용 총액의 1000분의 5를 초과하는 경우를 말한다",
+   "confidence": "high",
+   "note": "개인회원 한도는 gaps.",
+   "quote_verified": true
+  },
+  {
+   "id": "PFF40",
+   "topic": "부가서비스 약관 변경 예외 규정",
+   "claim": "감독규정 제26조의2는 약관 개정 예외 사유로 '부가서비스 내용의 동일성을 유지하면서 제휴업체 변경'을 열거한다.",
+   "value": null,
+   "unit": null,
+   "population": "금융약관 개정 시 신고 예외",
+   "age_scope": "전연령",
+   "period": "시행 2026-05-06",
+   "source_id": "PFS11",
+   "quote": "부가서비스 내용의 동일성을 유지하면서 부가서비스를 제공하는 제휴업체의",
+   "confidence": "medium",
+   "note": "3년 유지 의무 조항 자체는 이번에 확인한 현행 법령 본문에서 찾지 못함(gaps).",
+   "quote_verified": true
+  },
+  {
+   "id": "PFF41",
+   "topic": "약관 신고 예외: 경제적 이익",
+   "claim": "시행령은 차별성 있는 금융약관 제정은 사전신고 대상으로 하되 신용카드포인트 등 이용 시 제공되는 경제적 이익 관련 내용을 포함하는 경우는 제외한다.",
+   "value": null,
+   "unit": null,
+   "population": "금융약관 제정 시 사전신고",
+   "age_scope": "전연령",
+   "period": "시행 2026-05-06",
+   "source_id": "PFS10",
+   "quote": "신용카드포인트 등 신용카드 이용 시 제공되는 경제적 이익과 관련된 내용을 포함하는 경우는 제외한다",
+   "confidence": "medium",
+   "note": "법령 문언만 근거. 실무 해석은 미확인.",
+   "quote_verified": true
+  },
+  {
+   "id": "PFF42",
+   "topic": "과거 부가서비스 유지 의무",
+   "claim": "과거 보도는 여전법상 신규 카드상품 출시 후 1년 이상 부가서비스를 유지해야 하고 이후 6개월 전 통보하면 변경할 수 있으며, 금융위가 3년 이상 연장을 검토 중이라고 전했다.",
+   "value": 1,
+   "unit": "년",
+   "population": "신용카드 부가서비스",
+   "age_scope": "전연령",
+   "period": "과거(연도 미기재, 2013년경 추정)",
+   "source_id": "PFS13",
+   "quote": "신규 카드상품 출시 후 1년 이상 애초에 탑재한 부가서비스를 유지해야 한다",
+   "confidence": "low",
+   "note": "현행 규정 아님. 현행 3년 유지 원칙은 이번 조사에서 법령 원문으로 확인 못함.",
+   "quote_verified": true
+  },
+  {
+   "id": "PFF43",
+   "topic": "Bilt 5회 거래 조건 폐지",
+   "claim": "Bilt 공식 FAQ는 월 5회 거래 최소 조건이 원래 Bilt Card의 요건이었고 Bilt Card 2.0에는 적용되지 않는다고 밝힌다.",
+   "value": 5,
+   "unit": "회",
+   "population": "Bilt Card 2.0",
+   "age_scope": "전연령",
+   "period": "열람 2026-10",
+   "source_id": "PFS14",
+   "quote": "The 5-transaction monthly minimum was a requirement of the original Bilt Card",
+   "confidence": "high",
+   "note": "",
+   "quote_verified": true
+  },
+  {
+   "id": "PFF44",
+   "topic": "Bilt 주거비 포인트 해금 방식",
+   "claim": "Bilt 2.0의 Flexible Bilt Cash 옵션은 주거비(월세) 포인트가 Bilt Cash를 사용해 해금되며, Bilt Cash는 일상 구매에서 4% 적립된다.",
+   "value": 4,
+   "unit": "%",
+   "population": "Bilt Card 2.0",
+   "age_scope": "전연령",
+   "period": "열람 2026-10",
+   "source_id": "PFS14",
+   "quote": "Points on housing (up to 1X points) are unlocked by redeeming Bilt Cash",
+   "confidence": "high",
+   "note": "소비 → 별도 통화 → 목표(주거비) 보상 구조.",
+   "quote_verified": true
+  },
+  {
+   "id": "PFF45",
+   "topic": "Bilt Cash 소멸",
+   "claim": "Bilt Cash는 적립한 해의 12월 31일에 소멸하며 100달러까지만 다음 해로 이월된다.",
+   "value": 100,
+   "unit": "달러",
+   "population": "Bilt 회원",
+   "age_scope": "전연령",
+   "period": "열람 2026-10",
+   "source_id": "PFS14",
+   "quote": "Up to $100 of your Bilt Cash balance rolls over to the following year.",
+   "confidence": "high",
+   "note": "",
+   "quote_verified": true
+  },
+  {
+   "id": "PFF46",
+   "topic": "Apple Card 무한도 적립",
+   "claim": "Apple Card 페이지는 Apple Pay 결제 시 2% Daily Cash를 주며 '제한이나 기한이 없다'고 하고, 연회비·연체료 등 수수료가 없다고 밝힌다.",
+   "value": 2,
+   "unit": "%",
+   "population": "Apple Card 이용자(미국)",
+   "age_scope": "전연령",
+   "period": "열람 2026-10",
+   "source_id": "PFS15",
+   "quote": "you get 2% Daily Cash back. No points to calculate. No limits or deadlines.",
+   "confidence": "high",
+   "note": "월 최소 사용액 조건은 페이지에서 찾지 못함.",
+   "quote_verified": true
+  },
+  {
+   "id": "PFF47",
+   "topic": "Petal 캐시플로 심사",
+   "claim": "Petal은 은행 데이터를 연동해 저축·지출 현황을 보여주면 신용점수 이력과 무관하게 신용 준비도를 보여줄 수 있다고 안내한다.",
+   "value": null,
+   "unit": null,
+   "population": "Petal 신청자(미국)",
+   "age_scope": "전연령",
+   "period": "열람 2026-10",
+   "source_id": "PFS16",
+   "quote": "real-time snapshot of savings and spending can show you’re ready for credit",
+   "confidence": "high",
+   "note": "",
+   "quote_verified": true
+  },
+  {
+   "id": "PFF48",
+   "topic": "Petal Leap 한도 상향",
+   "claim": "Petal은 Leap 프로그램에서 적격한 정시 납부를 하면 6개월 만에 신용한도 상향을 받을 수 있다고 안내한다.",
+   "value": 6,
+   "unit": "개월",
+   "population": "Petal 회원(미국)",
+   "age_scope": "전연령",
+   "period": "열람 2026-10",
+   "source_id": "PFS16",
+   "quote": "earn a credit line increase in 6 months by making qualifying on-time",
+   "confidence": "high",
+   "note": "",
+   "quote_verified": true
+  },
+  {
+   "id": "PFF49",
+   "topic": "Petal 2 수수료·이율",
+   "claim": "Petal 2는 연회비 등 수수료가 없고 일상 구매 캐시백 1%~1.5%이며 변동 APR 28.24% 이상으로 표시된다.",
+   "value": 28.24,
+   "unit": "%",
+   "population": "Petal 2(미국)",
+   "age_scope": "전연령",
+   "period": "열람 2026-10",
+   "source_id": "PFS16",
+   "quote": "Cash back on everyday purchases 1% – 1.5%",
+   "confidence": "high",
+   "note": "수수료 없는 대신 이자율이 높은 수익 구조를 시사하나 이는 해석. 수치는 페이지 표기.",
+   "quote_verified": true
+  },
+  {
+   "id": "PFF50",
+   "topic": "Discover 첫해 캐시백 매치",
+   "claim": "Discover it은 첫해 적립한 캐시백 전액을 해가 끝날 때 달러 대 달러로 자동 매치한다(연회비 없음).",
+   "value": null,
+   "unit": null,
+   "population": "Discover it 이용자(미국)",
+   "age_scope": "전연령",
+   "period": "열람 2026-10",
+   "source_id": "PFS18",
+   "quote": "Get an unlimited dollar-for-dollar match of all the cash back you earn",
+   "confidence": "high",
+   "note": "",
+   "quote_verified": true
+  },
+  {
+   "id": "PFF51",
+   "topic": "Capital One 정률 1.5%",
+   "claim": "Capital One Quicksilver는 모든 구매에 무제한 1.5% 캐시백을 제공한다고 표기한다.",
+   "value": 1.5,
+   "unit": "%",
+   "population": "Quicksilver(미국)",
+   "age_scope": "전연령",
+   "period": "열람 2026-10",
+   "source_id": "PFS19",
+   "quote": "Earn unlimited 1.5% cash back on every purchase.",
+   "confidence": "high",
+   "note": "",
+   "quote_verified": true
+  },
+  {
+   "id": "PFF52",
+   "topic": "Chime Credit Builder",
+   "claim": "Chime은 신용확인 없이 신청 가능하고 카드로 옮겨 둔 금액만큼 사용할 수 있으며 결제 이력을 신용평가사에 보고한다고 안내한다.",
+   "value": null,
+   "unit": null,
+   "population": "Chime(미국)",
+   "age_scope": "전연령",
+   "period": "열람 2026-10",
+   "source_id": "PFS17",
+   "quote": "The money you move to your Chime Card is how much you can spend with the card.",
+   "confidence": "low",
+   "note": "curl 미확보, WebFetch 요약 기준 → 인용 미검증.",
+   "quote_verified": false
+  }
+ ],
+ "gaps": [
+  "전월실적이 카드사 수익 구조상 왜 존재하는지를 직접 설명한 금융당국·여신금융협회 공식 자료는 찾지 못했다. 확인된 것은 감독규정 가맹점수수료 적격비용에 부가서비스 비용이 마케팅비용으로 포함된다는 조문(PFF35)과 연회비가 부가서비스 비용을 반영한다고 전제하는 시행령(PFF38)뿐이며, 이 둘로 '실적이 재원 통제 수단'이라고 단정할 수는 없다.",
+  "카드 혜택 전월실적에 대한 금융감독원·금융위원회·소비자원 공식 지적·권고·가이드라인 원문을 확보하지 못했다(검색 한도 소진). 금감원 2024년 초 소비자 유의사항은 뉴스토마토 인용으로만 확인(PFF6). 2026-07 금감원 개선안은 은행 대출금리 감면용 카드 실적 기준이며 카드 혜택 실적 기준이 아니다.",
+  "소비자원·금감원 카드 관련 민원 통계(전월실적 관련 건수), 20대·청년의 전월실적 불만 설문은 찾지 못했다. 확인한 설문은 카드고릴라 방문자 1,440명(발행연도·연령 미기재, 자발 응답) 1건뿐이며 직접 '과소비' 문항은 없다.",
+  "무실적 카드가 시판 카드 중 차지하는 비중을 보여주는 조사·보도는 찾지 못했다(카드고릴라 순위는 조회·신청 기반 인기 순위일 뿐 비중 아님). 무실적 카드의 혜택률 0.7~1% 수치는 카드고릴라 설명글 서술이다.",
+  "무실적 카드의 수익 구조(이자·수수료 의존 정도)를 설명한 공식 자료는 찾지 못했다. Petal 의 APR 표기(PFF49)는 사실이나 수익 구조 해석은 하지 않았다.",
+  "현행 신용카드 부가서비스 '3년 이상 유지' 의무와 수익성 악화 시 변경 절차의 법령·감독규정 원문을 확인하지 못했다. 국가법령정보 API 로 받은 여전법(시행 2025-10-01), 시행령(시행 2026-05-06), 감독규정(시행 2026-05-06)에는 해당 조항이 잡히지 않았다(감독규정 제25조 ①~⑤ 삭제 표기, 2016-4 고시 부칙에 제25조제2항제3호 언급). 카드사 약관(BC카드 상품안내장)에 3년 유지 문구가 있다는 검색 요약만 있었고 원문은 읽지 못했다.",
+  "개인회원에 대한 '경제적 이익 제공 한도' 규정은 확인하지 못했다. 감독규정에서 확인한 1000분의 5 한도는 법인회원 대상이다(PFF39).",
+  "카드사 혜택 실적과 관련한 2024~2026 실적 산정 방식 변경·혜택 한도 축소 사례(카드사별)는 이번 조사에서 확인하지 못했다.",
+  "국내 '가입 기간(보유 기간)'에 따라 혜택이 열리는 카드, 연체 없음·결제일 준수 등 건전성 조건으로 혜택을 여는 카드, 미션·챌린지형 카드의 확인 가능한 공식 상품 페이지는 찾지 못했다. 국내 행동형 사례는 MOVING ALLDAY(PFC7) 1건이며 카드고릴라 글 기준이다.",
+  "해외 사례(Bilt, Apple Card, Petal, Chime, Discover, Capital One)는 공식 페이지 서술 기준이며 성과 지표(승인률, 연체율, 수익성)는 확인하지 못했다. Chime 은 curl 로 본문을 받지 못해 인용 미검증이다.",
+  "카드고릴라/뱅크샐러드 글은 발행일 미확인이고 홍보성(tier D)이다. LOCA LIKIT 1.2·카드의정석2 SUPER 의 발급사는 본문에 표기가 없어 적지 않았다. 현재 판매·단종 여부는 카드사 공식 페이지로 확인하지 못했다.",
+  "검색 한도(WebSearch)가 소진되어 추가 탐색을 하지 못했다."
+ ],
+ "cases": [
+  {
+   "id": "PFC1",
+   "name": "Bilt Card (원 카드 → Bilt Card 2.0)",
+   "operator": "Bilt Rewards(발급 은행 파트너)",
+   "region": "미국",
+   "kind": "behavior_based",
+   "launched": "본문 미기재",
+   "status": "원 카드의 월 5회 거래 최소 조건은 2.0 상품에 적용되지 않음(공식 FAQ)",
+   "structure": "원 카드: 월 5회 거래를 채워야 월세 포인트 적립. 2.0: 거래 횟수 최소 없음, 선택한 리워드 옵션에 따라 주거비 포인트 결정. Flexible Bilt Cash 옵션은 일상 구매 4% Bilt Cash를 쌓아 이를 사용해 주거비 포인트를 해금.",
+   "conditions": "행동 조건(횟수)은 폐지. 2.0 Flexible 옵션은 Bilt Cash 상환으로 해금.",
+   "metrics": "주거비 포인트 1X까지; Bilt Cash 30달러 상환당 1,000 포인트(공식 FAQ).",
+   "limits": "Bilt Cash 12/31 소멸, 100달러만 이월. 횟수 조건을 폐지한 사유·성과 수치는 확인 못함.",
+   "source_ids": [
+    "PFS14"
+   ]
+  },
+  {
+   "id": "PFC2",
+   "name": "Apple Card",
+   "operator": "Apple(발급 은행은 본문 미확인)",
+   "region": "미국",
+   "kind": "no_spend",
+   "launched": "본문 미기재",
+   "status": "판매 중(공식 페이지 열람 2026-10)",
+   "structure": "실적·월 한도 없이 결제 즉시 Daily Cash 적립. Apple 결제 3%, Apple Pay 2%, 실물 카드 1%.",
+   "conditions": "월 최소 사용액 조건 없음, 연회비·연체료 등 수수료 없음(페이지 서술).",
+   "metrics": "2%/1% 정률 적립, '제한이나 기한 없음'.",
+   "limits": "Apple 3%는 Apple 및 일부 가맹점 한정, 'Limitations apply'. 수익 구조(이자 등)는 페이지에 없음.",
+   "source_ids": [
+    "PFS15"
+   ]
+  },
+  {
+   "id": "PFC3",
+   "name": "Capital One Quicksilver",
+   "operator": "Capital One",
+   "region": "미국",
+   "kind": "no_spend",
+   "launched": "본문 미기재",
+   "status": "판매 중(공식 페이지 열람 2026-10)",
+   "structure": "모든 구매 무제한 1.5% 캐시백, 로테이션 카테고리 없음(페이지에 명시된 것은 '무제한 1.5%').",
+   "conditions": "실적 조건 서술 없음. 가입 보너스 200달러는 별도 조건 존재(세부 미확인).",
+   "metrics": "정률 1.5%.",
+   "limits": "연회비·APR 은 페이지 본문에 없음(확인 못함).",
+   "source_ids": [
+    "PFS19"
+   ]
+  },
+  {
+   "id": "PFC4",
+   "name": "Petal 2 / Petal 1 / Petal 1 Rise",
+   "operator": "Petal",
+   "region": "미국",
+   "kind": "behavior_based",
+   "launched": "본문 미기재",
+   "status": "판매 중(공식 페이지 열람 2026-10)",
+   "structure": "은행 데이터 기반 캐시플로 심사로 신용이력이 얇은 사람도 승인 가능성을 높이고, Leap 프로그램에서 정시 납부 시 6개월 만에 한도 상향. 소비 실적이 아니라 상환·현금흐름 행동이 한도를 연다.",
+   "conditions": "Petal 2: 수수료 없음, 일상 구매 캐시백 1%~1.5%. Petal 1 Rise 는 연회비 59달러 표기.",
+   "metrics": "Leap: 6개월 정시 납부로 한도 상향.",
+   "limits": "Petal 2 변동 APR 28.24% 이상 표기(이자 의존 구조 시사는 해석). 승인 보장 없음('subject to qualification'). 성과 수치는 확인 못함.",
+   "source_ids": [
+    "PFS16"
+   ]
+  },
+  {
+   "id": "PFC5",
+   "name": "Chime Credit Builder (현 Chime Card)",
+   "operator": "Chime",
+   "region": "미국",
+   "kind": "other",
+   "launched": "본문 미기재",
+   "status": "Chime Card 로 명칭 변경(WebFetch 요약)",
+   "structure": "신용확인 없이 가입, 카드에 옮겨 둔 금액만큼 사용(한도=예치), 이자·연회비 없음, 결제 이력을 신용평가사에 보고.",
+   "conditions": "정시 결제 이력이 신용점수 개선에 쓰일 수 있음(보장 없음).",
+   "metrics": "보고 항목: 최고 잔액·결제 금액·결제일(utilization 제외).",
+   "limits": "인용 미검증(curl 불가). 리워드 구조는 확인 못함.",
+   "source_ids": [
+    "PFS17"
+   ]
+  },
+  {
+   "id": "PFC6",
+   "name": "Discover it Cash Back (Cashback Match)",
+   "operator": "Discover",
+   "region": "미국",
+   "kind": "tenure_based",
+   "launched": "본문 미기재",
+   "status": "판매 중(공식 페이지 열람 2026-10)",
+   "structure": "첫해에 적립한 캐시백 전액을 해가 끝날 때 달러 대 달러로 자동 매치. 연회비 없음.",
+   "conditions": "5% 분기 카테고리는 활성화(activation)와 분기 상한 조건이 있음.",
+   "metrics": "첫해 캐시백 100% 추가(무제한 매치).",
+   "limits": "혜택이 첫해 한정. 분기 상한 금액은 페이지에 없음.",
+   "source_ids": [
+    "PFS18"
+   ]
+  },
+  {
+   "id": "PFC7",
+   "name": "하나카드 MOVING카드 ALLDAY모드",
+   "operator": "하나카드",
+   "region": "한국",
+   "kind": "behavior_based",
+   "launched": "본문 미기재",
+   "status": "판매 중(카드고릴라 2026 추천글 기준, 단종 여부 미확인)",
+   "structure": "전월실적 없이 3일 연속 이용하면 영역별 2배 적립. 월 1회 앱에서 모드(혜택 묶음) 즉시 변경 가능.",
+   "conditions": "날마다 1원 이상 결제해야 2배 적립. 연회비 2만원.",
+   "metrics": "국내외 0.5%→1% 무제한 적립, 간편결제 1%→2%(월 2만점), 쇼핑·배달 2%·대중교통 3%(통합 5만점).",
+   "limits": "카드고릴라 글이 500원짜리 소액 결제로 3일을 채우는 팁을 소개 → 조건이 의미 있는 소비로 이어지는지 불명. 홍보성 글 기준.",
+   "source_ids": [
+    "PFS8"
+   ]
+  },
+  {
+   "id": "PFC8",
+   "name": "현대카드 ZERO Up",
+   "operator": "현대카드",
+   "region": "한국",
+   "kind": "no_spend",
+   "launched": "본문 미기재",
+   "status": "판매 중(카드고릴라 2026 추천글 기준)",
+   "structure": "전월실적 없이 국내외 0.8% 무제한 할인(포인트형 1.2% 적립). 온라인몰·대형마트·교육·주유·통신 10만원 이상 결제 시 1.6% 할인(포인트형 2.4%). 긴급할인(선지급 포인트) 서비스.",
+   "conditions": "10만원 이상 조건의 단위(건당/합산)는 본문 미기재. 연회비 3만원.",
+   "metrics": "0.8%/1.6% 무제한 할인.",
+   "limits": "홍보성 글 기준. 선지급 포인트 서비스의 조건·비용은 확인 못함.",
+   "source_ids": [
+    "PFS8"
+   ]
+  },
+  {
+   "id": "PFC9",
+   "name": "카드의정석2 SUPER",
+   "operator": "발급사 본문 미표기",
+   "region": "한국",
+   "kind": "no_spend",
+   "launched": "본문 미기재",
+   "status": "판매 중(카드고릴라 2026 추천글 기준)",
+   "structure": "전월실적 없이 국내외 모든 가맹점 2% 할인, 월 할인한도 10만원, 해외결제수수료 면제.",
+   "conditions": "연회비 3만원. 5만원 이상 결제 시 2~3개월 무이자.",
+   "metrics": "2% 할인(결제 500만원까지 한도 소진은 카드고릴라 서술).",
+   "limits": "실적 대신 월 할인한도(10만원)로 총량 통제. 홍보성 글 기준.",
+   "source_ids": [
+    "PFS8"
+   ]
+  },
+  {
+   "id": "PFC10",
+   "name": "LOCA LIKIT 1.2",
+   "operator": "발급사 본문 미표기",
+   "region": "한국",
+   "kind": "no_spend",
+   "launched": "본문 미기재",
+   "status": "판매 중(카드고릴라 2026 추천글 기준)",
+   "structure": "전월실적과 할인한도 없이 국내 모든 가맹점 1.2% 할인, 온라인 1.5%.",
+   "conditions": "조건 없음 표기.",
+   "metrics": "1.2%/1.5% 정률.",
+   "limits": "카드고릴라는 무실적 카드 다수가 0.7~1% 수준이라 1% 초과 카드는 찾기 쉽지 않다고 서술. 홍보성 글 기준.",
+   "source_ids": [
+    "PFS7"
+   ]
+  },
+  {
+   "id": "PFC11",
+   "name": "KB국민 KB ALL 카드 / WE:SH All카드",
+   "operator": "KB국민카드",
+   "region": "한국",
+   "kind": "low_spend",
+   "launched": "본문 미기재",
+   "status": "판매 중(카드고릴라 2026 기준)",
+   "structure": "전월실적 없이 국내 1%(무제한), 해외 2%(월 4만원 한도). 쇼핑 멤버십·OTT·통신 할인은 전월실적 40만원 이상 시 추가 제공(통합 월 3천원 한도 표기).",
+   "conditions": "40만원 이상 구간에서 추가 혜택. 할인받은 건은 실적 제외. 연회비 2만원(KB ALL).",
+   "metrics": "1% 무실적 기본.",
+   "limits": "무실적 기본 + 실적 구간 추가의 혼합형. 홍보성 글 기준.",
+   "source_ids": [
+    "PFS7",
+    "PFS8"
+   ]
+  },
+  {
+   "id": "PFC12",
+   "name": "신한카드 Simple Plan+",
+   "operator": "신한카드",
+   "region": "한국",
+   "kind": "no_spend",
+   "launched": "본문 미기재",
+   "status": "판매 중(카드고릴라 2026 기준)",
+   "structure": "전월실적 없이 국내 1.5%·해외 2% 무제한 할인. 가족카드 분기 실적 150만원 이상 시 1만원 캐시백(분기당 1회).",
+   "conditions": "연회비 국내 47,000원/해외 50,000원. 실적 단위가 월이 아닌 분기.",
+   "metrics": "국내 1.5%.",
+   "limits": "월 50만원 이상 결제하는 사람에게 적합하다는 추천 서술(홍보). 분기 누적 조건의 성과는 확인 못함.",
+   "source_ids": [
+    "PFS8"
+   ]
+  },
+  {
+   "id": "PFC13",
+   "name": "신한카드 Puzzle (초과 실적 이월)",
+   "operator": "신한카드",
+   "region": "한국",
+   "kind": "spend_relief",
+   "launched": "본문 미기재",
+   "status": "설문 시점(연도 미기재)에 제공 서술. 현재 유지 여부 미확인",
+   "structure": "이용금액이 70만원 이상이면 그중 20만원을 다음 달 이용금액으로 이월.",
+   "conditions": "70만원 이상 사용 시.",
+   "metrics": "이월 20만원.",
+   "limits": "현재 판매·조건 미확인. 발행연도 불명 출처.",
+   "source_ids": [
+    "PFS5"
+   ]
+  },
+  {
+   "id": "PFC14",
+   "name": "KB국민 Our WE:SH / My WE:SH 카드 (전월실적 채워드림)",
+   "operator": "KB국민카드",
+   "region": "한국",
+   "kind": "spend_relief",
+   "launched": "본문 미기재",
+   "status": "설문 시점(연도 미기재)에 '지난 1월 출시'로 서술. 현재 유지 여부 미확인",
+   "structure": "연 2회, 5만원 한도 안에서 부족한 전월실적을 카드사가 채워줌.",
+   "conditions": "연 2회·5만원 한도.",
+   "metrics": "연 2회 × 한도 5만원.",
+   "limits": "횟수·금액 한도가 작음. 현재 판매·조건 미확인.",
+   "source_ids": [
+    "PFS5"
+   ]
+  },
+  {
+   "id": "PFC15",
+   "name": "로카365 / 미스터라이프 (할인액·관리비 실적 인정형)",
+   "operator": "롯데카드(로카365) / 신한카드(미스터라이프)",
+   "region": "한국",
+   "kind": "spend_relief",
+   "launched": "본문 미기재",
+   "status": "2024-06 기사 기준",
+   "structure": "로카365는 전월 50만원 조건이 높지만 아파트 관리비·공과금과 할인받은 금액을 실적으로 인정. 미스터라이프는 전월 30만원에 관리비·공과금·할인액 전부 실적 인정.",
+   "conditions": "실적 기준을 올리는 대신 제외 항목을 줄이는 방식.",
+   "metrics": "소비자 사이에서 '혜자' 카드로 불린다고 기사가 서술.",
+   "limits": "현재 판매 여부 미확인(2024-06 기준).",
+   "source_ids": [
+    "PFS4"
+   ]
+  },
+  {
+   "id": "PFC16",
+   "name": "삼성 모니모카드 / NH 올바른 플렉스 (할인액 실적 제외형, 비교 사례)",
+   "operator": "삼성카드 / NH농협카드",
+   "region": "한국",
+   "kind": "low_spend",
+   "launched": "본문 미기재",
+   "status": "2024-06 기사 기준",
+   "structure": "전월 30만원 조건이지만 할인받은 이용금액은 실적에서 제외. 추가 결제 없이는 실적을 채우기 어려운 구조로 소비자 혼란이 지적됨.",
+   "conditions": "전월 30만원.",
+   "metrics": "혜택: 모니모 관리비·통신 10%, 올바른 플렉스 스타벅스 50% 등(기사 서술).",
+   "limits": "제외 사실을 소극적으로 안내한다는 지적. 민원 건수는 확인 못함.",
+   "source_ids": [
+    "PFS4"
+   ]
+  },
+  {
+   "id": "PFC17",
+   "name": "은행 대출금리 감면 카드실적 기준 개선",
+   "operator": "금융감독원·14개 은행",
+   "region": "한국",
+   "kind": "spend_relief",
+   "launched": "2026-07-22 발표",
+   "status": "2026-09~10 신규 대출자부터 순차 적용(하나은행은 이미 시행)",
+   "structure": "카드 이용실적 제외 항목 4~8개 → 최대 1개, 체크카드 신용카드와 동일 인정, 할부 매월 분할 인정, 약관·앱 안내 강화.",
+   "conditions": "대출금리 감면 조건의 카드 실적에만 해당(카드 혜택 실적 아님).",
+   "metrics": "제외 항목 4~8개 → 은행별 최대 1개.",
+   "limits": "카드사 부가서비스 실적 기준과는 별개 제도. 효과 지표는 아직 없음.",
+   "source_ids": [
+    "PFS1",
+    "PFS2",
+    "PFS3"
+   ]
+  },
+  {
+   "id": "PFC18",
+   "name": "발급 후 다음 달 말까지 무실적 혜택(관행)",
+   "operator": "다수 카드사(카드마다 상이)",
+   "region": "한국",
+   "kind": "spend_relief",
+   "launched": "본문 미기재",
+   "status": "2026 설명글 기준",
+   "structure": "카드 등록일로부터 다음 달 말일까지 전월실적과 무관하게 혜택 제공.",
+   "conditions": "카드마다 제공 범위·한도 상이.",
+   "metrics": "최대 약 60일(설명글 서술).",
+   "limits": "특정 혜택만 제공하거나 구간 한도를 두는 카드도 있음. 설명글 기준이라 카드사 약관 미확인.",
+   "source_ids": [
+    "PFS6",
+    "PFS20"
+   ]
+  }
+ ],
+ "trend_items": [
+  {
+   "id": "PFT1",
+   "title": "금감원, 은행 대출금리 감면용 카드 실적 제외항목 4~8개를 최대 1개로 축소",
+   "categories": [
+    "금융",
+    "소비"
+   ],
+   "age_scope": "전연령",
+   "what": "금감원은 2026-07-22 은행권과 함께 카드 이용실적 제외 항목을 줄이고 체크카드를 신용카드와 동일하게 인정하며 할부는 매월 분할 인정하기로 했다.",
+   "when": "2026-07",
+   "virality": {
+    "channel": "뉴스",
+    "evidence": "다수 경제지·방송이 동일 보도자료를 보도",
+    "metric": "제외 항목 4~8개 → 최대 1개"
+   },
+   "durability": "지속 추세",
+   "fact_ids": [
+    "PFF22",
+    "PFF23",
+    "PFF24",
+    "PFF25",
+    "PFF26"
+   ],
+   "card_relevance": "해석: 실적 인정 범위를 넓히는 방향이 제도권에서 먼저 시작됐다는 신호로, 카드 혜택 실적에도 같은 요구가 이어질 수 있다."
+  },
+  {
+   "id": "PFT2",
+   "title": "할인받은 금액을 실적에서 빼는 카드에 대한 소비자 혼란과 금감원 유의사항",
+   "categories": [
+    "소비",
+    "금융"
+   ],
+   "age_scope": "전연령",
+   "what": "일부 카드가 할인 적용 이용금액을 전월 실적에서 제외하고 이를 소극적으로 안내한다는 지적이 있었고, 금감원은 2024년 초 실적 기준이 상품·행사별로 다르다고 당부했다.",
+   "when": "2024-06",
+   "virality": {
+    "channel": "뉴스",
+    "evidence": "뉴스토마토 보도에서 '금융소비자 민원도 꾸준한 상황'이라고 서술",
+    "metric": null
+   },
+   "durability": "불명",
+   "fact_ids": [
+    "PFF5",
+    "PFF6",
+    "PFF7",
+    "PFF8"
+   ],
+   "card_relevance": "해석: 같은 30만원 조건이라도 제외 규칙에 따라 실제 체감 조건이 달라져, 실적 산정 투명성이 신뢰 요소가 된다."
+  },
+  {
+   "id": "PFT3",
+   "title": "카드 비교 플랫폼에서 무실적 카드가 별도 추천 카테고리로 운영",
+   "categories": [
+    "소비",
+    "금융"
+   ],
+   "age_scope": "20대",
+   "what": "카드고릴라는 2026년 9월 집계로 '전월실적 없이 모든 가맹점 혜택' 카드 TOP5를 별도 차트로 운영하며 20대 대학생·사회초년생의 첫 카드로 추천한다. 무실적 카드는 0.7~1% 수준이 보통이고 일부는 1.2~2%(월 한도 있음)를 제시한다.",
+   "when": "2026-09",
+   "virality": {
+    "channel": "뉴스",
+    "evidence": "카드고릴라 조회수·신청수 기반 순위(홍보성 글)",
+    "metric": "집계 대상 국내 2천여개 카드"
+   },
+   "durability": "불명",
+   "fact_ids": [
+    "PFF11",
+    "PFF12",
+    "PFF13",
+    "PFF14",
+    "PFF20",
+    "PFF21"
+   ],
+   "card_relevance": "해석: 실적 부담 없는 상품이 첫 카드 층의 별도 수요로 취급되고 있고, 혜택률을 올리면 월 한도나 연회비로 보완하는 설계가 보인다."
+  },
+  {
+   "id": "PFT4",
+   "title": "실적 부족분을 '채워주거나 이월해 주는' 카드 기능 등장",
+   "categories": [
+    "금융",
+    "소비"
+   ],
+   "age_scope": "전연령",
+   "what": "신한 Puzzle은 70만원 이상 사용 시 20만원을 다음 달로 이월하고, KB국민 WE:SH 카드는 연 2회 5만원 한도 내에서 전월실적을 채워줬다. 카드고릴라 설문에서는 부족 시 바짝 채우겠다는 응답이 29.3%였다.",
+   "when": "연도 미기재(설문 2월16일~3월1일)",
+   "virality": {
+    "channel": "뉴스",
+    "evidence": "카드고릴라 방문자 1,440명 설문",
+    "metric": "29.3% / 25.8% / 20.4%"
+   },
+   "durability": "불명",
+   "fact_ids": [
+    "PFF30",
+    "PFF31",
+    "PFF32",
+    "PFF33",
+    "PFF34"
+   ],
+   "card_relevance": "해석: 실적 충족 압박이 소비자 행동(월말 몰아 쓰기)을 만든다는 정황이며 카드사도 이를 완화하는 장치를 일부 도입했다."
+  },
+  {
+   "id": "PFT5",
+   "title": "월 소비액이 아닌 '연속 이용 일수'를 조건으로 한 무실적 카드",
+   "categories": [
+    "소비",
+    "디지털"
+   ],
+   "age_scope": "20대",
+   "what": "하나 MOVING카드 ALLDAY모드는 전월실적 없이 3일 연속(매일 1원 이상) 결제하면 2배 적립하며 월 1회 모드를 바꿀 수 있다. 카드고릴라는 대학생·1인가구에게 소액결제 잦은 사람용으로 추천한다.",
+   "when": "2026(월 미확인)",
+   "virality": {
+    "channel": "뉴스",
+    "evidence": "카드고릴라 추천 1위 사례(홍보성 글)",
+    "metric": null
+   },
+   "durability": "불명",
+   "fact_ids": [
+    "PFF15",
+    "PFF16"
+   ],
+   "card_relevance": "해석: 금액이 아니라 사용 빈도·습관을 조건으로 삼는 방식이 이미 국내 상품에 존재하나, 소액 결제로 조건을 채우는 팁이 함께 퍼질 수 있다."
+  },
+  {
+   "id": "PFT6",
+   "title": "미국 Bilt, 월 5회 거래 최소 조건을 2.0 카드에서 폐지",
+   "categories": [
+    "금융",
+    "소비"
+   ],
+   "age_scope": "전연령",
+   "what": "Bilt 공식 FAQ는 5회 거래 최소 조건이 원 카드의 요건이었고 Bilt Card 2.0에는 없다고 밝힌다. 주거비 포인트는 일상 구매로 쌓은 Bilt Cash를 사용해 해금한다.",
+   "when": "2026-10 열람 시점 기준",
+   "virality": {
+    "channel": "뉴스",
+    "evidence": "공식 FAQ 서술(확산 지표 없음)",
+    "metric": null
+   },
+   "durability": "불명",
+   "fact_ids": [
+    "PFF43",
+    "PFF44",
+    "PFF45"
+   ],
+   "card_relevance": "해석: 거래 횟수 같은 행동 조건이 이후 제거된 사례가 있다는 점은, 행동 기반 조건의 유지 비용이나 효과를 따져봐야 한다는 신호일 수 있다."
+  },
+  {
+   "id": "PFT7",
+   "title": "미국 핀테크, 소비 대신 상환·현금흐름 행동으로 한도를 여는 카드",
+   "categories": [
+    "금융",
+    "디지털"
+   ],
+   "age_scope": "전연령",
+   "what": "Petal은 은행 데이터 기반 심사와 6개월 정시 납부 시 한도 상향(Leap)을 제공하고, Chime은 예치한 금액만큼 쓰며 결제 이력을 보고한다.",
+   "when": "2026-10 열람 시점 기준",
+   "virality": {
+    "channel": "뉴스",
+    "evidence": "공식 페이지 서술",
+    "metric": "6개월"
+   },
+   "durability": "불명",
+   "fact_ids": [
+    "PFF47",
+    "PFF48",
+    "PFF49",
+    "PFF52"
+   ],
+   "card_relevance": "해석: 소비액이 아닌 상환 행동이 혜택·한도를 여는 구조의 해외 선례이며, 국내 적용 가능성은 별도 법규 검토가 필요하다."
+  },
+  {
+   "id": "PFT8",
+   "title": "카드 혜택 재원이 가맹점수수료 적격비용·연회비에 법규상 연결",
+   "categories": [
+    "금융"
+   ],
+   "age_scope": "전연령",
+   "what": "감독규정 적격비용에 부가서비스 비용이 마케팅비용으로 포함되고, 시행령은 연회비에 부가서비스 비용이 반영됨을 전제로 반환금액을 정한다.",
+   "when": "2026-05(시행)",
+   "virality": {
+    "channel": "뉴스",
+    "evidence": "법령 본문(확산 지표 없음)",
+    "metric": null
+   },
+   "durability": "지속 추세",
+   "fact_ids": [
+    "PFF35",
+    "PFF36",
+    "PFF37",
+    "PFF38"
+   ],
+   "card_relevance": "해석: 혜택 재원이 가맹점 매출 기여분과 연회비에 묶여 있어, 실적 없는 고혜택 설계는 재원 설명이 필요하다."
+  }
+ ],
+ "design_analogues": [
+  {
+   "id": "PFA1",
+   "idea": "월 금액 대신 '연속 이용 일수·출석'을 혜택 해금 조건으로 삼는다",
+   "based_on_case_ids": [
+    "PFC7",
+    "PFC1"
+   ],
+   "risk": "MOVING ALLDAY 소개글이 500원짜리 소액 결제로 3일을 채우는 팁을 안내하고 있어 의미 없는 결제로 조건이 채워질 수 있다. Bilt 는 월 5회 거래 조건을 2.0에서 폐지했다(사유는 공식 FAQ에 없음)."
+  },
+  {
+   "id": "PFA2",
+   "idea": "할인받은 금액·고정지출(관리비, 구독)을 실적으로 인정해 추가 지출 없이 조건을 채우게 한다",
+   "based_on_case_ids": [
+    "PFC15",
+    "PFC16",
+    "PFC17"
+   ],
+   "risk": "카드 혜택 재원은 적격비용의 마케팅비용 등 구조에 연결되어 있고(감독규정), 로카365는 실적 기준을 50만원으로 높여 균형을 맞춘 사례다. 실적 인정 확대가 기준 금액 상향과 함께 오는지 확인해야 한다."
+  },
+  {
+   "id": "PFA3",
+   "idea": "실적 미달분을 일정 횟수 보전하거나 초과분을 이월해 한 번의 미달이 0 혜택으로 이어지지 않게 한다",
+   "based_on_case_ids": [
+    "PFC13",
+    "PFC14",
+    "PFC18"
+   ],
+   "risk": "국내 사례는 연 2회·5만원 한도, 70만원 이상 시 20만원 이월처럼 한도가 작고, 현재 판매 여부도 확인되지 않았다."
+  },
+  {
+   "id": "PFA4",
+   "idea": "무실적 기본 혜택 + 선택적 상위 구간(또는 월 한도 상향)으로 층위를 둔다",
+   "based_on_case_ids": [
+    "PFC8",
+    "PFC9",
+    "PFC10",
+    "PFC11",
+    "PFC12"
+   ],
+   "risk": "무실적 카드는 혜택률이 0.7~1%가 보통이며 1% 초과 상품은 월 한도(예: 10만원)나 연회비(2~5만원)로 총량을 통제한다. 기본 혜택률을 높이면 재원 부담이 커진다."
+  },
+  {
+   "id": "PFA5",
+   "idea": "정시 결제·한도 내 사용 같은 금융 건전성 행동에 따라 한도나 혜택 단계를 올린다",
+   "based_on_case_ids": [
+    "PFC4",
+    "PFC5"
+   ],
+   "risk": "Petal 2는 수수료가 없는 대신 변동 APR 28.24% 이상을 표기하는 등 이자 수익과 연결된 해외 구조이며, 성과 지표를 공개하지 않는다. 국내 적용 시 개인회원 신용공여·약관 신고 요건은 별도 확인이 필요하다."
+  },
+  {
+   "id": "PFA6",
+   "idea": "가입 후 일정 기간(첫해)의 혜택을 확대해 보유 기간에 따라 충성도를 보상한다",
+   "based_on_case_ids": [
+    "PFC6",
+    "PFC18"
+   ],
+   "risk": "Discover 매치는 첫해 한정이며 이후 혜택 수준은 페이지에 없다. 국내는 혜택 축소 시 사전 고지 등 약관상 제한이 따르므로(과거 보도: 1년 유지, 6개월 전 통보) 현행 규정 원문 확인이 필요하다."
+  },
+  {
+   "id": "PFA7",
+   "idea": "소비로 쌓은 별도 통화를 사용자가 정한 목표(월세·구독료 등) 해금에 쓰는 목표 달성형 구조",
+   "based_on_case_ids": [
+    "PFC1"
+   ],
+   "risk": "Bilt Cash는 12월 31일 소멸하고 100달러만 이월돼 사용자가 놓치면 혜택이 사라진다. 국내 포인트 유효기간·소멸 고지 규정은 이번에 확인하지 못했다."
+  },
+  {
+   "id": "PFA8",
+   "idea": "월 단위가 아닌 분기·연 단위 누적으로 실적 압박을 평탄화한다",
+   "based_on_case_ids": [
+    "PFC12"
+   ],
+   "risk": "확인된 사례는 신한 Simple Plan+의 가족카드 분기 150만원 캐시백 1건뿐이고 성과 자료가 없다."
+  }
+ ]
+}

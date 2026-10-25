@@ -1,0 +1,423 @@
+{
+ "name": "genz-discovery",
+ "today": "2026-10-23",
+ "summary": "GenZ 특화 신용카드 신상품 기획 데모의 탐색 단계. 근거 조사, 공백 분석, 아이디어 발산, 반박 검증.",
+ "period": "최근 18개월(2025-04~2026-10)",
+ "assumptions": [
+  "GenZ는 카드 발급이 가능한 만 19~29세를 중심으로 하되 잘파·Z세대·젊은층·수능 직후 학생까지 범위를 넓혀 조사한다(근거마다 age_scope 표시)",
+  "고객사 회원·결제 데이터 없이 공개 자료만 쓴다",
+  "투자 연계는 특이하거나 이미 존재하는 근거가 있을 때만 다룬다"
+ ],
+ "target": {
+  "segment": "GenZ(만 19~29세 중심, 잘파·Z세대·젊은층 포함)",
+  "age_focus": [
+   "20대",
+   "Z세대",
+   "잘파(Z+알파)",
+   "10대후반(고3·수험생 포함)",
+   "청년(19~34)"
+  ],
+  "constraints": [
+   "신용카드 발급 가능 연령(만 19세 이상, 가족카드 예외)",
+   "신용카드로 금융투자상품 결제 불가",
+   "투자 연계는 근거가 있을 때만"
+  ]
+ },
+ "pm_directions": [
+  "새 카드는 완전히 비어 있는 영역이 아니어도 CVP(혜택 구조)나 컨셉이 참신하면 된다",
+  "'졸업'·'레벨업' 컨셉이 흥미롭다",
+  "GenZ는 개인 취미를 발굴하느라 배움에도 돈을 쓴다. 배움 카드와 고객이 직접 짜는 성장 코스와 함께 성장하는 구조",
+  "'전월실적'이라는 개념 자체를 다시 본다(무실적, 전월 30만원, 50만원처럼 채워야 받는 구조가 정말 중요한가)",
+  "지금은 러닝·AI·한정 디저트가 유행인데 다음 유행은 무엇이고, 연계한 카드는 무엇이 좋을까. 이 플랫폼이 제안해도 좋다"
+ ],
+ "competitor_db": "competitor_db.enriched.json",
+ "vocab": {
+  "needs": {
+   "saving": "절약·캐시백",
+   "invest": "투자·자산형성",
+   "travel": "여행·해외",
+   "digital": "구독·디지털",
+   "fixed_cost": "고정비 절감",
+   "safety": "보장·안전",
+   "social": "소속감·소셜",
+   "simple": "단순함",
+   "control": "소비 통제·예측 가능성(한도·알림·결제일 부담·혜택 변경 불신·예산)"
+  },
+  "domains": {
+   "dining": "외식·배달",
+   "online": "온라인쇼핑",
+   "sub": "구독·디지털",
+   "trans": "교통·모빌리티",
+   "travel": "여행·해외",
+   "daily": "편의점·마트",
+   "fixed": "통신·관리비"
+  }
+ },
+ "scouts": [
+  {
+   "topic": "stats",
+   "id_prefix": "ST",
+   "brief": "GenZ(20대·청년) 소비·결제·카드 통계와 제도. 가계동향 소비지출 구성, 한국은행 지급수단 이용행태 연령별 결과(선호 지급수단, 이용 건수, 간편결제), 연령대별 신용카드 발급·이용, 온라인쇼핑, 신용카드 발급 요건·대안신용평가·청년 발급 문턱 완화·K-패스, 청년 소득·부채. 20대 수치 우선, 없으면 전 연령으로 표시.",
+   "kinds": [
+    "facts"
+   ],
+   "max_queries": 20
+  },
+  {
+   "topic": "trends",
+   "id_prefix": "TR",
+   "brief": "GenZ 소비·결제·카드 트렌드 시그널 8~10개. 체크카드 선호, 간편결제, 구독, 혜택 축소 불신, 해외여행·직구 등. 20대 수치로 보강하거나 새 시그널 발굴.",
+   "kinds": [
+    "facts",
+    "trend_items"
+   ]
+  },
+  {
+   "topic": "consumer",
+   "id_prefix": "CS",
+   "brief": "20대가 카드를 고르고 쓰고 버리는 이유에 대한 설문·실태조사·언론 분석. 선택 기준, 발급 동기와 장벽, 혜택 불만, 해지 이유, 금융앱 이용, 20대 내부 차이.",
+   "kinds": [
+    "facts",
+    "trend_items"
+   ]
+  },
+  {
+   "topic": "wide",
+   "id_prefix": "WT",
+   "brief": "잘파·Z세대·젊은층의 소비·관심·라이프스타일 트렌드 15개 이상(러닝, 가성비 재정의, 팝업, 구독·생성형 AI, 중고·리셀, 일본 중심 해외여행 등). 대학내일20대연구소, 트렌드코리아, 오픈서베이, 플랫폼 공개 데이터.",
+   "kinds": [
+    "facts",
+    "trend_items"
+   ]
+  },
+  {
+   "topic": "suneung",
+   "id_prefix": "SN",
+   "brief": "수능 직후 학생(만 18~19세, 예비 신입생)의 니즈·소비·금융 행동: 알바, 운전면허, 여행, 수험표 할인, 첫 계좌·체크카드, 발급 연령 기준(체크카드·신용카드·가족카드), 수능 마케팅·바이럴 사례.",
+   "kinds": [
+    "facts",
+    "trend_items"
+   ]
+  },
+  {
+   "topic": "gatherings",
+   "id_prefix": "GT",
+   "brief": "모임·소셜 트렌드와 함께 쓰는 돈: 당근모임·소모임·러닝크루, 정산(N빵)·모임통장·모임 체크카드, 선물하기, 모임 단위 카드 상품 사례와 반응. 혜택 공유 카드의 수요 근거 유무.",
+   "kinds": [
+    "facts",
+    "trend_items"
+   ]
+  },
+  {
+   "topic": "viral",
+   "id_prefix": "VR",
+   "brief": "한국 젊은층에서 바이럴된 소비·콘텐츠·금융 사례와 확산 경로(두바이 초콜릿·두쫀쿠, 팝업, 캐릭터 체크카드 흥행, 게임형 적금)와 유행 수명. 금융·카드 사례 5개 이상.",
+   "kinds": [
+    "facts",
+    "trend_items"
+   ]
+  },
+  {
+   "topic": "money",
+   "id_prefix": "MH",
+   "brief": "젊은층의 돈 관리·절약·결제 습관: 무지출·짠테크, 앱테크, 체크/신용/간편결제 선택 이유, 후불결제(BNPL), 소비 통제 도구, 구독 정리, 쿠폰·타임딜, 선물하기, 포인트·캐시백 선호, 첫 카드 발급 동기.",
+   "kinds": [
+    "facts",
+    "trend_items"
+   ]
+  },
+  {
+   "topic": "invest",
+   "id_prefix": "IV",
+   "brief": "투자 연계 카드·핀테크 사례(포인트→주식, 잔돈 투자, 적립금 자동 투자, 증권사 제휴 카드), 규제·제약(신용카드로 금융투자상품 결제 금지, 광고·고지), 젊은층 소액투자 행태, 시장 공백 가설. 없다·막혀 있다는 것도 결과다.",
+   "kinds": [
+    "facts",
+    "trend_items",
+    "cases",
+    "constraints"
+   ]
+  },
+  {
+   "topic": "learning",
+   "id_prefix": "LN",
+   "brief": "배움·성장·졸업 카드 사례: 20대의 자기계발·취미 클래스 소비(클래스101·탈잉·인프런 등), 배움 관련 카드·금융 상품과 한계, 국민내일배움카드, 졸업·레벨업·성장 경로 구조의 국내외 사례(Chase Freedom Rise 등).",
+   "kinds": [
+    "facts",
+    "trend_items",
+    "cases"
+   ]
+  },
+  {
+   "topic": "performance",
+   "id_prefix": "PF",
+   "brief": "전월실적 제도의 정체와 대안: 실적의 존재 이유(수수료·연회비 구조), 실적 제외 항목 문제와 금감원 개선안, 소비자 불만, 무실적·저실적 카드, 실적 보전·이월·행동 기반 변형 상품, 해외 사례(Bilt 등), 부가서비스 규제 시사점.",
+   "kinds": [
+    "facts",
+    "trend_items",
+    "cases",
+    "design_analogues"
+   ]
+  },
+  {
+   "topic": "foresight",
+   "id_prefix": "FS",
+   "brief": "다음 유행의 선행 신호: 2026~2027 트렌드 전망(트렌드코리아, KT Y트렌드 등), 유행의 확산 경로와 수명(반감기), 지금 막 오르는 신호, 유행과 결제가 만나는 지점. 예측은 관측 신호에 근거하고 반증 조건을 붙인다.",
+   "kinds": [
+    "facts",
+    "trend_items",
+    "predictions"
+   ]
+  }
+ ],
+ "angles": [
+  {
+   "id": "touchpoint",
+   "id_prefix": "TP",
+   "title": "결제 접점·앱 안 카드",
+   "description": "20대 모바일결제·간편결제 주 지급수단이 카드(90.6%)인 점을 중심으로, 카드가 선택되는 순간(결제 앱 안, 결제 직전·직후)에 비어 있는 구조·경험을 찾는다.",
+   "focus": {
+    "needs": [
+     "digital",
+     "saving"
+    ],
+    "tags": [
+     "paymethod_bonus",
+     "auto_best",
+     "online_shop",
+     "ai_personalize"
+    ],
+    "domains": [
+     "online"
+    ]
+   }
+  },
+  {
+   "id": "social",
+   "id_prefix": "SO",
+   "title": "모임·소셜·관계",
+   "description": "모임통장·모임 체크카드·정산·선물하기 등 함께 쓰는 돈에서 신용카드가 못 하는 것을 찾는다. 수요가 체크카드로 풀리고 있다면 그 사실을 판정에 쓴다.",
+   "focus": {
+    "needs": [
+     "social"
+    ],
+    "tags": [
+     "social",
+     "group_pooling",
+     "challenge",
+     "bank_bundle",
+     "check_card"
+    ],
+    "domains": [
+     "dining"
+    ]
+   }
+  },
+  {
+   "id": "control",
+   "id_prefix": "CT",
+   "title": "소비 통제·신뢰·예측가능성",
+   "description": "소비 통제 64.4%, 결제일 부담, BNPL, 혜택 축소·단종과 불신, 전월실적 복잡함에서 고객이 통제력과 신뢰를 얻는 카드 구조의 빈틈을 찾는다. 부가서비스 변경 규제도 확인한다.",
+   "focus": {
+    "needs": [
+     "control",
+     "safety",
+     "simple"
+    ],
+    "tags": [
+     "perf_recharge",
+     "anti_cap",
+     "spend_free",
+     "no_cap",
+     "miss_refund"
+    ],
+    "domains": []
+   }
+  },
+  {
+   "id": "entry",
+   "id_prefix": "EN",
+   "title": "입문·첫 카드·정책 타이밍",
+   "description": "수능 직후, 체크카드·가족카드에서 신용카드로 넘어가는 순간, 금융이력 없는 첫 신용카드. 발급 문턱 완화·보증금 카드 등 제도 변화 타이밍. 확정되지 않은 제도는 단정하지 않는다.",
+   "focus": {
+    "needs": [
+     "safety",
+     "simple"
+    ],
+    "tags": [
+     "check_card",
+     "life_event",
+     "target_special",
+     "bank_bundle"
+    ],
+    "domains": []
+   }
+  },
+  {
+   "id": "viral",
+   "id_prefix": "VL",
+   "title": "바이럴·취향·희소성·콘텐츠",
+   "description": "유행하는 소비와 카드가 만나는 지점, 카드 자체가 바이럴 소재가 되는 구조. 한시 유행과 지속 추세를 구분한다.",
+   "focus": {
+    "needs": [
+     "digital",
+     "social"
+    ],
+    "tags": [
+     "plcc_brand",
+     "benefit_rental",
+     "period_bonus",
+     "subscription_ott",
+     "target_special",
+     "challenge"
+    ],
+    "domains": [
+     "sub",
+     "travel"
+    ]
+   }
+  }
+ ],
+ "themes": [
+  {
+   "id": "growth",
+   "id_prefix": "GR",
+   "title": "졸업·레벨업·배움 성장",
+   "description": "체크카드에서 신용카드로, 첫 카드에서 다음 카드로 '졸업'하는 구조, 행동에 따라 한도·혜택이 단계적으로 열리는 레벨 구조, 취미·배움 비용, 고객이 직접 짜는 성장 코스. '졸업'이 무엇을 졸업하는지 여러 해석으로 비교한다.",
+   "focus": {
+    "needs": [
+     "safety",
+     "simple",
+     "saving"
+    ],
+    "tags": [
+     "life_event",
+     "check_card",
+     "target_special",
+     "challenge",
+     "perf_recharge"
+    ],
+    "domains": []
+   }
+  },
+  {
+   "id": "performance",
+   "id_prefix": "PR",
+   "title": "실적 재해석",
+   "description": "전월실적(무실적, 30만원, 50만원)이 하는 일을 분해하고 다른 방식으로 해결한다. 행동·약속·목표·보유 기간·결제 건전성·연속성 기반, 시점(월·누적·이월), 실적 미리 보기·보전, 총량 캡. 카드사 수익은 어디서 나오는가를 사실에 비추어 쓴다.",
+   "focus": {
+    "needs": [
+     "simple",
+     "control",
+     "saving"
+    ],
+    "tags": [
+     "spend_free",
+     "no_cap",
+     "anti_cap",
+     "perf_recharge",
+     "tiered_perf",
+     "discount_counts"
+    ],
+    "domains": []
+   }
+  },
+  {
+   "id": "trend",
+   "id_prefix": "TD",
+   "title": "다음 유행 연계·제철 교체형",
+   "description": "유행 수명이 짧아졌다는 사실에서 나오는 구조 아이디어(혜택 슬롯 교체, 규제와 양립하는 설계)와 근거가 두꺼운 예측과 연계한 컨셉. 이 플랫폼이 관측 신호로 유행 후보를 제안하는 기능(트렌드 에이전트 foresight 모드)의 형식 예시.",
+   "focus": {
+    "needs": [
+     "digital",
+     "social"
+    ],
+    "tags": [
+     "benefit_rental",
+     "period_bonus",
+     "time_slot",
+     "target_special",
+     "challenge"
+    ],
+    "domains": [
+     "travel",
+     "sub"
+    ]
+   }
+  },
+  {
+   "id": "fresh",
+   "id_prefix": "FR",
+   "title": "참신한 CVP·컨셉(자유)",
+   "description": "앞의 세 테마 밖에서 근거에 닿은 참신한 컨셉. 혜택을 받는 것이 아니라 고르는·만드는·나누는·모으는 것으로 바꾸기, 통제감·관계·정체성·성취가 원하는 것일 때의 카드, 이름·플레이트·앱 경험을 포함한 컨셉 전체. 유형을 고루 낸다.",
+   "focus": {
+    "needs": [
+     "control",
+     "social",
+     "digital",
+     "saving"
+    ],
+    "tags": [
+     "subscription_ott",
+     "social",
+     "group_pooling",
+     "plcc_brand",
+     "select_pack",
+     "select_item",
+     "miss_refund"
+    ],
+    "domains": [
+     "sub"
+    ]
+   }
+  }
+ ],
+ "lenses_gap": [
+  "existing",
+  "evidence",
+  "risk"
+ ],
+ "lenses_idea": [
+  "novelty",
+  "evidence",
+  "risk"
+ ],
+ "finalist_n": 8,
+ "search_available": false,
+ "merge_gap": {
+  "CTC4": [
+   "VLC5"
+  ],
+  "CTC1": [
+   "TPC3"
+  ],
+  "CTC6": [
+   "TPC4"
+  ],
+  "VLC2": [
+   "ENC5"
+  ],
+  "VLC4": [
+   "SOC5"
+  ]
+ },
+ "merge_idea": {
+  "TDI4": [
+   "GRI6"
+  ],
+  "GRI5": [
+   "TDI6"
+  ],
+  "GRI7": [
+   "PRI4"
+  ],
+  "FRI1": [
+   "PRI5"
+  ],
+  "PRI2": [
+   "PRI1"
+  ],
+  "FRI2": [
+   "TDI7"
+  ]
+ }
+}

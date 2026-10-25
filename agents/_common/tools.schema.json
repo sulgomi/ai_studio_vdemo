@@ -5,123 +5,581 @@
   "description": "에이전트가 쓰는 도구 3개. 로컬은 코드 함수, AWS는 AgentCore Gateway 뒤 도구. card_info_lookup은 C design.md 6-1(P-1~P-3 반영), web_search는 C tools/search.py, kb_search는 A AWS 구조도 22절 제안.",
   "type": "object",
   "properties": {
-    "web_search": {"$ref": "#/$defs/web_search"},
-    "card_info_lookup": {"$ref": "#/$defs/card_info_lookup"},
-    "kb_search": {"$ref": "#/$defs/kb_search"}
+    "web_search": {
+      "$ref": "#/$defs/web_search"
+    },
+    "card_info_lookup": {
+      "$ref": "#/$defs/card_info_lookup"
+    },
+    "kb_search": {
+      "$ref": "#/$defs/kb_search"
+    },
+    "web_fetch": {
+      "$ref": "#/$defs/web_fetch"
+    }
   },
   "$defs": {
     "web_search": {
       "type": "object",
-      "required": ["input", "output"],
+      "required": [
+        "input",
+        "output"
+      ],
       "properties": {
         "input": {
           "type": "object",
-          "required": ["query"],
+          "required": [
+            "query"
+          ],
           "additionalProperties": false,
           "properties": {
-            "query": {"type": "string", "description": "한국어 위주, 연도·기관명을 넣어 구체적으로"},
-            "max_results": {"type": "integer", "minimum": 1, "maximum": 10, "default": 5},
-            "domains": {"type": "array", "items": {"type": "string"}, "description": "도메인 제한(공시 검색 등)"},
-            "recency_months": {"type": "integer", "minimum": 1, "default": 18}
+            "query": {
+              "type": "string",
+              "description": "한국어 위주, 연도·기관명을 넣어 구체적으로"
+            },
+            "max_results": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 10,
+              "default": 5
+            },
+            "domains": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              },
+              "description": "도메인 제한(공시 검색 등)"
+            },
+            "recency_months": {
+              "type": "integer",
+              "minimum": 1,
+              "default": 18
+            }
           }
         },
         "output": {
           "type": "object",
-          "required": ["results", "cached"],
+          "required": [
+            "results",
+            "cached"
+          ],
           "properties": {
             "results": {
               "type": "array",
               "items": {
                 "type": "object",
-                "required": ["doc_id", "title", "url", "snippet", "published"],
+                "required": [
+                  "doc_id",
+                  "title",
+                  "url",
+                  "snippet",
+                  "published"
+                ],
                 "properties": {
-                  "doc_id": {"type": "string", "description": "코드가 붙이는 번호. 에이전트 접두어 포함(T-d3)"},
-                  "title": {"type": "string"},
-                  "url": {"type": "string", "pattern": "^https?://"},
-                  "snippet": {"type": "string"},
-                  "content": {"type": "string", "description": "본문 일부. 수치 근거 확인용"},
-                  "published": {"type": ["string", "null"]},
-                  "kind": {"enum": ["official", "news", "report", "web", "community"]},
-                  "tier": {"enum": ["A", "B", "C", "D"]}
+                  "doc_id": {
+                    "type": "string",
+                    "description": "코드가 붙이는 번호. 에이전트 접두어 포함(T-d3)"
+                  },
+                  "title": {
+                    "type": "string"
+                  },
+                  "url": {
+                    "type": "string",
+                    "pattern": "^https?://"
+                  },
+                  "snippet": {
+                    "type": "string"
+                  },
+                  "content": {
+                    "type": "string",
+                    "description": "본문 일부. 수치 근거 확인용"
+                  },
+                  "published": {
+                    "type": [
+                      "string",
+                      "null"
+                    ]
+                  },
+                  "kind": {
+                    "enum": [
+                      "official",
+                      "news",
+                      "report",
+                      "web",
+                      "community"
+                    ]
+                  },
+                  "tier": {
+                    "enum": [
+                      "A",
+                      "B",
+                      "C",
+                      "D"
+                    ]
+                  }
                 }
               }
             },
-            "cached": {"type": "boolean", "description": "7일 검색 캐시 사용 여부"}
+            "cached": {
+              "type": "boolean",
+              "description": "7일 검색 캐시 사용 여부"
+            }
           }
         }
       }
     },
     "card_info_lookup": {
       "type": "object",
-      "required": ["input", "output"],
+      "required": [
+        "input",
+        "output"
+      ],
       "properties": {
         "input": {
           "type": "object",
-          "required": ["issuer"],
+          "required": [
+            "issuer"
+          ],
           "additionalProperties": false,
           "properties": {
-            "issuer": {"type": "string", "description": "카드사명 또는 '자사'(설정값 OWN_ISSUER로 치환)"},
-            "product_name": {"type": ["string", "null"], "description": "없으면 해당 카드사 상품 목록"},
-            "fields": {"type": "array", "items": {"enum": ["benefits", "annual_fee", "min_monthly_spend", "promotions", "change_history"]}},
-            "as_of": {"type": ["string", "null"], "format": "date"}
+            "issuer": {
+              "type": "string",
+              "description": "카드사명 또는 '자사'(설정값 OWN_ISSUER로 치환)"
+            },
+            "product_name": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "description": "없으면 해당 카드사 상품 목록"
+            },
+            "fields": {
+              "type": "array",
+              "items": {
+                "enum": [
+                  "benefits",
+                  "annual_fee",
+                  "min_monthly_spend",
+                  "promotions",
+                  "change_history"
+                ]
+              }
+            },
+            "as_of": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "format": "date"
+            }
           }
         },
         "output": {
           "type": "object",
-          "required": ["found", "path", "records", "missing_fields", "conflicts", "source"],
+          "required": [
+            "found",
+            "path",
+            "records",
+            "missing_fields",
+            "conflicts",
+            "source"
+          ],
           "properties": {
-            "found": {"type": "boolean"},
-            "path": {"enum": ["db", "disclosure", "web"], "description": "가장 위에서 찾은 소스. 순서는 DB→공시→웹"},
+            "found": {
+              "type": "boolean"
+            },
+            "path": {
+              "enum": [
+                "db",
+                "disclosure",
+                "web"
+              ],
+              "description": "가장 위에서 찾은 소스. 순서는 DB→공시→웹"
+            },
             "records": {
               "type": "array",
               "items": {
                 "type": "object",
-                "required": ["issuer", "product_name"],
+                "required": [
+                  "issuer",
+                  "product_name"
+                ],
                 "properties": {
-                  "issuer": {"type": "string"},
-                  "product_name": {"type": "string"},
-                  "annual_fee": {"type": ["string", "null"]},
-                  "min_monthly_spend": {"type": ["string", "null"]},
-                  "benefits": {"type": "array", "items": {"type": "object", "required": ["category"], "properties": {"category": {"type": "string"}, "rate": {"type": ["string", "null"]}, "monthly_cap": {"type": ["string", "null"]}}}},
-                  "promotions": {"type": "array", "items": {"type": "object", "required": ["description", "status"], "properties": {"description": {"type": "string"}, "start_date": {"type": ["string", "null"]}, "end_date": {"type": ["string", "null"]}, "status": {"enum": ["active", "ended", "unknown"]}}}},
-                  "change_history": {"type": "array", "items": {"type": "object", "required": ["date", "change"], "properties": {"date": {"type": "string"}, "change": {"type": "string"}}}},
-                  "field_sources": {"type": "object", "additionalProperties": {"type": "object", "required": ["path", "url", "checked_at"], "properties": {"path": {"enum": ["db", "disclosure", "web"]}, "url": {"type": "string"}, "checked_at": {"type": "string", "format": "date"}}}},
-                  "tags": {"type": "array", "items": {"type": "string"}, "description": "허용 태그(택소노미)로 코드가 부호화"}
+                  "issuer": {
+                    "type": "string"
+                  },
+                  "product_name": {
+                    "type": "string"
+                  },
+                  "annual_fee": {
+                    "type": [
+                      "string",
+                      "null"
+                    ]
+                  },
+                  "min_monthly_spend": {
+                    "type": [
+                      "string",
+                      "null"
+                    ]
+                  },
+                  "benefits": {
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "required": [
+                        "category"
+                      ],
+                      "properties": {
+                        "category": {
+                          "type": "string"
+                        },
+                        "rate": {
+                          "type": [
+                            "string",
+                            "null"
+                          ]
+                        },
+                        "monthly_cap": {
+                          "type": [
+                            "string",
+                            "null"
+                          ]
+                        }
+                      }
+                    }
+                  },
+                  "promotions": {
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "required": [
+                        "description",
+                        "status"
+                      ],
+                      "properties": {
+                        "description": {
+                          "type": "string"
+                        },
+                        "start_date": {
+                          "type": [
+                            "string",
+                            "null"
+                          ]
+                        },
+                        "end_date": {
+                          "type": [
+                            "string",
+                            "null"
+                          ]
+                        },
+                        "status": {
+                          "enum": [
+                            "active",
+                            "ended",
+                            "unknown"
+                          ]
+                        }
+                      }
+                    }
+                  },
+                  "change_history": {
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "required": [
+                        "date",
+                        "change"
+                      ],
+                      "properties": {
+                        "date": {
+                          "type": "string"
+                        },
+                        "change": {
+                          "type": "string"
+                        }
+                      }
+                    }
+                  },
+                  "field_sources": {
+                    "type": "object",
+                    "additionalProperties": {
+                      "type": "object",
+                      "required": [
+                        "path",
+                        "url",
+                        "checked_at"
+                      ],
+                      "properties": {
+                        "path": {
+                          "enum": [
+                            "db",
+                            "disclosure",
+                            "web"
+                          ]
+                        },
+                        "url": {
+                          "type": "string"
+                        },
+                        "checked_at": {
+                          "type": "string",
+                          "format": "date"
+                        }
+                      }
+                    }
+                  },
+                  "tags": {
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    },
+                    "description": "허용 태그(택소노미)로 코드가 부호화"
+                  }
                 }
               }
             },
-            "missing_fields": {"type": "array", "items": {"type": "string"}, "description": "상위 소스에 없어 하위 소스로 보완한 항목"},
-            "conflicts": {"type": "array", "items": {"type": "object", "required": ["product_name", "field", "values"], "properties": {"product_name": {"type": "string"}, "field": {"type": "string"}, "values": {"type": "array", "items": {"type": "object", "required": ["path", "value"], "properties": {"path": {"enum": ["db", "disclosure", "web"]}, "value": {"type": "string"}}}}}}},
-            "source": {"type": "object", "required": ["name", "url", "checked_at"], "properties": {"name": {"type": "string"}, "url": {"type": "string"}, "checked_at": {"type": "string", "format": "date"}}},
-            "cached": {"type": "boolean"}
+            "missing_fields": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              },
+              "description": "상위 소스에 없어 하위 소스로 보완한 항목"
+            },
+            "conflicts": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "required": [
+                  "product_name",
+                  "field",
+                  "values"
+                ],
+                "properties": {
+                  "product_name": {
+                    "type": "string"
+                  },
+                  "field": {
+                    "type": "string"
+                  },
+                  "values": {
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "required": [
+                        "path",
+                        "value"
+                      ],
+                      "properties": {
+                        "path": {
+                          "enum": [
+                            "db",
+                            "disclosure",
+                            "web"
+                          ]
+                        },
+                        "value": {
+                          "type": "string"
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "source": {
+              "type": "object",
+              "required": [
+                "name",
+                "url",
+                "checked_at"
+              ],
+              "properties": {
+                "name": {
+                  "type": "string"
+                },
+                "url": {
+                  "type": "string"
+                },
+                "checked_at": {
+                  "type": "string",
+                  "format": "date"
+                }
+              }
+            },
+            "cached": {
+              "type": "boolean"
+            }
           }
         }
       }
     },
     "kb_search": {
       "type": "object",
-      "required": ["input", "output"],
+      "required": [
+        "input",
+        "output"
+      ],
       "properties": {
         "input": {
           "type": "object",
-          "required": ["query"],
+          "required": [
+            "query"
+          ],
           "additionalProperties": false,
           "properties": {
-            "query": {"type": "string"},
-            "topics": {"type": "array", "items": {"enum": ["invest", "benefit", "digital", "group", "promo", "regulation", "etc"]}},
-            "min_published_ym": {"type": "integer", "description": "예: 202504. 기본은 today 기준 18개월 전"},
-            "min_reliability": {"type": "number", "minimum": 0, "maximum": 1, "default": 0.5},
-            "top_k": {"type": "integer", "minimum": 1, "maximum": 20, "default": 6}
+            "query": {
+              "type": "string"
+            },
+            "topics": {
+              "type": "array",
+              "items": {
+                "enum": [
+                  "invest",
+                  "benefit",
+                  "digital",
+                  "group",
+                  "promo",
+                  "regulation",
+                  "etc"
+                ]
+              }
+            },
+            "min_published_ym": {
+              "type": "integer",
+              "description": "예: 202504. 기본은 today 기준 18개월 전"
+            },
+            "min_reliability": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 1,
+              "default": 0.5
+            },
+            "top_k": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 20,
+              "default": 6
+            }
           }
         },
         "output": {
           "type": "object",
-          "required": ["chunks"],
+          "required": [
+            "chunks"
+          ],
           "properties": {
-            "chunks": {"type": "array", "items": {"type": "object", "required": ["doc_id", "url", "text", "published_ym", "reliability"], "properties": {"doc_id": {"type": "string"}, "url": {"type": "string"}, "title": {"type": "string"}, "text": {"type": "string"}, "published_ym": {"type": "integer"}, "reliability": {"type": "number"}, "source_type": {"type": "string"}, "facts": {"type": "array", "items": {"type": "object", "required": ["label", "value", "unit"], "properties": {"label": {"type": "string"}, "value": {"type": "number"}, "unit": {"type": "string"}}}}}}}
+            "chunks": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "required": [
+                  "doc_id",
+                  "url",
+                  "text",
+                  "published_ym",
+                  "reliability"
+                ],
+                "properties": {
+                  "doc_id": {
+                    "type": "string"
+                  },
+                  "url": {
+                    "type": "string"
+                  },
+                  "title": {
+                    "type": "string"
+                  },
+                  "text": {
+                    "type": "string"
+                  },
+                  "published_ym": {
+                    "type": "integer"
+                  },
+                  "reliability": {
+                    "type": "number"
+                  },
+                  "source_type": {
+                    "type": "string"
+                  },
+                  "facts": {
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "required": [
+                        "label",
+                        "value",
+                        "unit"
+                      ],
+                      "properties": {
+                        "label": {
+                          "type": "string"
+                        },
+                        "value": {
+                          "type": "number"
+                        },
+                        "unit": {
+                          "type": "string"
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
           }
         }
       }
+    },
+    "web_fetch": {
+      "type": "object",
+      "required": [
+        "input",
+        "output"
+      ],
+      "properties": {
+        "input": {
+          "type": "object",
+          "required": [
+            "url"
+          ],
+          "additionalProperties": false,
+          "properties": {
+            "url": {
+              "type": "string",
+              "pattern": "^https?://"
+            },
+            "max_chars": {
+              "type": "integer",
+              "minimum": 1000,
+              "maximum": 60000,
+              "default": 20000
+            }
+          }
+        },
+        "output": {
+          "type": "object",
+          "required": [
+            "url",
+            "text"
+          ],
+          "properties": {
+            "url": {
+              "type": "string"
+            },
+            "text": {
+              "type": "string",
+              "description": "본문 텍스트(HTML 태그 제거). 인용은 이 텍스트에서 확인한다"
+            },
+            "error": {
+              "type": [
+                "string",
+                "null"
+              ]
+            }
+          }
+        }
+      },
+      "description": "URL 본문을 가져온다. 요약 모델을 거치지 않으므로 quote 검증에 쓴다"
     }
   }
 }

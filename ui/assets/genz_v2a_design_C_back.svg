@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 560" width="360" height="560">
+  <defs>
+    <clipPath id="card"><rect x="0" y="0" width="360" height="560" rx="28"/></clipPath>
+    <filter id="brush" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.004 0.85" numOctaves="2" seed="11" result="n"/>
+      <feColorMatrix in="n" type="matrix" values="0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  0 0 0 0.9 -0.38"/>
+    </filter>
+    <filter id="grain" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="1.4" numOctaves="1" seed="5"/>
+      <feColorMatrix type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 0.5 -0.2"/>
+    </filter>
+    <linearGradient id="base" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#1A1C21"/>
+      <stop offset="1" stop-color="#121317"/>
+    </linearGradient>
+    <linearGradient id="sheen" x1="1" y1="0" x2="0" y2="0.35">
+      <stop offset="0.34" stop-color="#FFFFFF" stop-opacity="0"/>
+      <stop offset="0.44" stop-color="#FFFFFF" stop-opacity="0.03"/>
+      <stop offset="0.56" stop-color="#FFFFFF" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="strip" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0A0B0D"/>
+      <stop offset="0.5" stop-color="#16171B"/>
+      <stop offset="1" stop-color="#0A0B0D"/>
+    </linearGradient>
+  </defs>
+
+  <g clip-path="url(#card)">
+    <rect width="360" height="560" fill="url(#base)"/>
+    <rect width="360" height="560" filter="url(#brush)" opacity="0.10"/>
+    <rect width="360" height="560" filter="url(#grain)" opacity="0.35"/>
+    <rect width="360" height="560" fill="url(#sheen)"/>
+    <!-- magnetic stripe, vertical along the long edge -->
+    <rect x="300" y="0" width="38" height="560" fill="url(#strip)"/>
+  </g>
+
+  <rect x="0.9" y="0.9" width="358.2" height="558.2" rx="27.1" fill="none" stroke="#FF7A59" stroke-width="1.8"/>
+  <rect x="2.6" y="2.6" width="354.8" height="554.8" rx="25.4" fill="none" stroke="#000000" stroke-opacity="0.55" stroke-width="0.8"/>
+
+  <g font-family="Pretendard Variable, Pretendard, Apple SD Gothic Neo, Noto Sans KR, sans-serif">
+    <!-- header -->
+    <text x="32" y="50" font-size="10.5" font-weight="600" letter-spacing="1.6" fill="#8D929B">[ISSUER]</text>
+    <text x="32" y="68" font-size="9" font-weight="500" letter-spacing="0.4" fill="#5E626B">구독노트 CREDIT</text>
+
+    <!-- card number / validity / CVC placeholders -->
+    <text x="32" y="112" font-size="7.5" font-weight="600" letter-spacing="1.4" fill="#6E727A">CARD NUMBER</text>
+    <text x="32" y="134" font-size="15" font-weight="500" letter-spacing="2.2" fill="#C9CDD3">[CARD NUMBER]</text>
+
+    <g transform="translate(32 166)">
+      <text x="0" y="0" font-size="7.5" font-weight="600" letter-spacing="1.4" fill="#6E727A">VALID THRU</text>
+      <text x="0" y="20" font-size="13" font-weight="500" letter-spacing="1.6" fill="#C9CDD3">MM / YY</text>
+      <text x="112" y="0" font-size="7.5" font-weight="600" letter-spacing="1.4" fill="#6E727A">CVC</text>
+      <text x="112" y="20" font-size="13" font-weight="500" letter-spacing="1.6" fill="#C9CDD3">[CVC]</text>
+    </g>
+
+    <text x="32" y="224" font-size="7.5" font-weight="600" letter-spacing="1.4" fill="#6E727A">CARDHOLDER</text>
+    <text x="32" y="244" font-size="12" font-weight="500" letter-spacing="1.6" fill="#C9CDD3">[NAME]</text>
+
+    <!-- signature panel -->
+    <text x="32" y="282" font-size="7.5" font-weight="600" letter-spacing="1.4" fill="#6E727A">AUTHORIZED SIGNATURE</text>
+    <rect x="32" y="290" width="244" height="34" rx="3" fill="#E9E6DF"/>
+    <g stroke="#D6D2C9" stroke-width="0.6">
+      <line x1="32" y1="298.5" x2="276" y2="298.5"/>
+      <line x1="32" y1="307" x2="276" y2="307"/>
+      <line x1="32" y1="315.5" x2="276" y2="315.5"/>
+    </g>
+    <path d="M40 318 H160" stroke="#FF7A59" stroke-width="1.2"/>
+    <text x="32" y="338" font-size="7.5" font-weight="400" fill="#7A7E87">서명하지 않은 카드는 사용할 수 없습니다.</text>
+
+    <!-- hairline divider -->
+    <line x1="32" y1="364" x2="276" y2="364" stroke="#2C2F36" stroke-width="0.8"/>
+
+    <!-- the one conditions line -->
+    <g transform="translate(32 386)">
+      <path d="M0 0 H10" stroke="#FF7A59" stroke-width="2" stroke-linecap="round"/>
+      <text x="0" y="20" font-size="9.5" font-weight="500" fill="#C9CDD3">캐시백 영역은 직전 3개월 이용액으로 정해지며,</text>
+      <text x="0" y="35" font-size="9.5" font-weight="500" fill="#C9CDD3">한도와 조건은 앱에서 확인할 수 있습니다.</text>
+    </g>
+
+    <!-- security / service -->
+    <g font-size="7.5" font-weight="400" fill="#7A7E87">
+      <text x="32" y="458">이 카드는 본인만 사용할 수 있으며 타인에게 양도하거나 대여할 수 없습니다.</text>
+      <text x="32" y="471">분실·도난 시 즉시 고객센터나 앱으로 신고해 주십시오.</text>
+    </g>
+    <text x="32" y="500" font-size="7.5" font-weight="600" letter-spacing="1.4" fill="#6E727A">CUSTOMER CENTER</text>
+    <text x="32" y="516" font-size="10" font-weight="500" letter-spacing="0.8" fill="#B9BEC6">[ISSUER] 고객센터 [PHONE]</text>
+    <text x="276" y="516" text-anchor="end" font-size="7.5" font-weight="500" letter-spacing="1.6" fill="#4A4E57">LATE</text>
+  </g>
+</svg>

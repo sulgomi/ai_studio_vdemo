@@ -1,0 +1,111 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 560" width="360" height="560" font-family="Pretendard Variable, Pretendard, Apple SD Gothic Neo, Noto Sans KR, sans-serif">
+  <defs>
+    <clipPath id="card"><rect x="0" y="0" width="360" height="560" rx="28"/></clipPath>
+    <filter id="grain" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="3" seed="11" result="n"/>
+      <feColorMatrix in="n" type="matrix" values="0 0 0 0 0.09  0 0 0 0 0.10  0 0 0 0 0.12  0 0 0 0.09 0"/>
+    </filter>
+    <filter id="fiber" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.012 0.18" numOctaves="2" seed="5" result="n"/>
+      <feColorMatrix in="n" type="matrix" values="0 0 0 0 0.45  0 0 0 0 0.40  0 0 0 0 0.32  0 0 0 0.05 0"/>
+    </filter>
+    <radialGradient id="sheen" cx="0.78" cy="0.1" r="0.95">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity="0.34"/>
+      <stop offset="0.55" stop-color="#FFFFFF" stop-opacity="0.04"/>
+      <stop offset="1" stop-color="#6E6450" stop-opacity="0.07"/>
+    </radialGradient>
+    <linearGradient id="stripe" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#1D2027"/>
+      <stop offset="1" stop-color="#191B21"/>
+    </linearGradient>
+    <pattern id="sig" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)">
+      <rect width="6" height="6" fill="#FBF9F4"/>
+      <line x1="0" y1="0" x2="0" y2="6" stroke="#DADDE2" stroke-width="1.6"/>
+    </pattern>
+  </defs>
+
+  <g clip-path="url(#card)">
+    <rect width="360" height="560" fill="#F5F2EB"/>
+    <rect width="360" height="560" filter="url(#fiber)"/>
+    <rect width="360" height="560" filter="url(#grain)"/>
+    <!-- 마그네틱 띠: 세로형이라 긴 변을 따라 오른쪽 -->
+    <rect x="300" y="0" width="46" height="560" fill="url(#stripe)"/>
+    <rect width="360" height="560" fill="url(#sheen)"/>
+  </g>
+
+  <!-- 머리: 발급사 + 소형 로고 -->
+  <text x="30" y="50" font-size="9.5" font-weight="600" letter-spacing="1.4" fill="#17191F">[ISSUER]</text>
+  <g transform="translate(206,38)">
+    <path d="M2 0 H11 L15 4.5 V13 A2 2 0 0 1 13 15 H2 A2 2 0 0 1 0 13 V2 A2 2 0 0 1 2 0 Z" fill="#17191F"/>
+    <path d="M11 0 V3 A1.5 1.5 0 0 0 12.5 4.5 H15 Z" fill="#B9BEC6"/>
+    <rect x="3" y="5.5" width="6.5" height="1" fill="#F5F2EB"/>
+    <rect x="3" y="8.5" width="9" height="1" fill="#F5F2EB"/>
+    <rect x="3" y="11.5" width="9" height="1.2" fill="#FF7A59"/>
+  </g>
+  <text x="226" y="51" font-size="12" font-weight="700" letter-spacing="-0.3" fill="#17191F">구독노트</text>
+
+  <!-- 날짜칸: 비어 있는 7칸 x 2줄, 한 칸 밑에만 코랄 -->
+  <text x="30" y="88" font-size="7.5" font-weight="600" letter-spacing="0.2" fill="#17191F" opacity="0.55">결제 예정일</text>
+  <g transform="translate(30,96)" stroke="#17191F" stroke-width="0.6">
+    <line x1="0" y1="0" x2="238" y2="0" stroke-opacity="0.35"/>
+    <line x1="0" y1="28" x2="238" y2="28" stroke-opacity="0.22"/>
+    <line x1="0" y1="56" x2="238" y2="56" stroke-opacity="0.35"/>
+    <g stroke-opacity="0.18" stroke-dasharray="1 2">
+      <line x1="34" y1="3" x2="34" y2="53"/>
+      <line x1="68" y1="3" x2="68" y2="53"/>
+      <line x1="102" y1="3" x2="102" y2="53"/>
+      <line x1="136" y1="3" x2="136" y2="53"/>
+      <line x1="170" y1="3" x2="170" y2="53"/>
+      <line x1="204" y1="3" x2="204" y2="53"/>
+    </g>
+  </g>
+  <line x1="170" y1="152" x2="196" y2="152" stroke="#FF7A59" stroke-width="1.6"/>
+  <text x="30" y="168" font-size="8" font-weight="400" fill="#17191F" opacity="0.7">칸은 비워 두었습니다. 날짜는 앱에서 먼저 봅니다.</text>
+
+  <!-- 서명란 + CVC -->
+  <text x="30" y="200" font-size="6.5" font-weight="600" letter-spacing="1.4" fill="#17191F" opacity="0.55">AUTHORIZED SIGNATURE · 서명</text>
+  <rect x="30" y="206" width="180" height="34" rx="2" fill="url(#sig)" stroke="#17191F" stroke-opacity="0.18" stroke-width="0.6"/>
+  <text x="218" y="200" font-size="6.5" font-weight="600" letter-spacing="1.4" fill="#17191F" opacity="0.55">CVC</text>
+  <rect x="218" y="206" width="50" height="34" rx="2" fill="#FBF9F4" stroke="#17191F" stroke-opacity="0.3" stroke-width="0.6"/>
+  <text x="243" y="227" text-anchor="middle" font-size="8" font-weight="500" letter-spacing="0.6" fill="#17191F" opacity="0.6">[CVC]</text>
+
+  <!-- 카드 정보 자리표시 -->
+  <g fill="#17191F">
+    <text x="30" y="272" font-size="6.5" font-weight="600" letter-spacing="1.4" opacity="0.55">CARD NUMBER</text>
+    <text x="30" y="290" font-size="13" font-weight="500" letter-spacing="1.2" opacity="0.88">[CARD NUMBER]</text>
+    <text x="30" y="318" font-size="6.5" font-weight="600" letter-spacing="1.4" opacity="0.55">VALID THRU</text>
+    <text x="30" y="334" font-size="10.5" font-weight="500" letter-spacing="1" opacity="0.88">[MM/YY]</text>
+    <text x="130" y="318" font-size="6.5" font-weight="600" letter-spacing="1.4" opacity="0.55">CARDHOLDER</text>
+    <text x="130" y="334" font-size="10.5" font-weight="500" letter-spacing="1" opacity="0.88">[NAME]</text>
+  </g>
+
+  <line x1="30" y1="356" x2="268" y2="356" stroke="#17191F" stroke-opacity="0.2" stroke-width="0.6"/>
+
+  <!-- 조건 안내 한 줄 + 이용 안내 -->
+  <g fill="#17191F" font-size="7.6" font-weight="400">
+    <text x="30" y="376" font-weight="600" opacity="0.9">캐시백 영역은 직전 3개월 이용액으로 정해지며,</text>
+    <text x="30" y="388" font-weight="600" opacity="0.9">한도와 조건은 앱에서 확인하세요.</text>
+    <text x="30" y="408" opacity="0.68">서명 후 사용하시고 타인에게 양도·대여할 수 없습니다.</text>
+    <text x="30" y="420" opacity="0.68">이 카드는 [ISSUER]가 발급한 신용카드입니다.</text>
+    <text x="30" y="432" opacity="0.68">습득하신 분은 가까운 우체통에 넣어 주세요.</text>
+  </g>
+
+  <!-- 고객센터 -->
+  <g fill="#17191F" font-size="7.6">
+    <text x="30" y="462" font-weight="600" opacity="0.55" font-size="7" letter-spacing="0.2">고객센터</text>
+    <text x="30" y="476" font-weight="500" opacity="0.88">[CUSTOMER CENTER]</text>
+    <text x="150" y="462" font-weight="600" opacity="0.55" font-size="7" letter-spacing="0.2">분실·도난 신고</text>
+    <text x="150" y="476" font-weight="500" opacity="0.88">[LOST CARD LINE]</text>
+  </g>
+
+  <!-- 하단: 네트워크 자리표시, 시안 코드 -->
+  <g transform="translate(194,500)">
+    <rect x="0" y="0" width="74" height="30" rx="5" fill="none" stroke="#17191F" stroke-opacity="0.45" stroke-width="0.8" stroke-dasharray="2 2"/>
+    <text x="37" y="19" text-anchor="middle" font-size="8.5" font-weight="600" letter-spacing="1.4" fill="#17191F" opacity="0.6">NETWORK</text>
+  </g>
+  <text x="30" y="522" font-size="7" font-weight="500" letter-spacing="2" fill="#17191F" opacity="0.4">MEMO</text>
+
+  <!-- 가장자리 한 줄 -->
+  <rect x="0.6" y="0.6" width="358.8" height="558.8" rx="27.4" fill="none" stroke="#17191F" stroke-opacity="0.22" stroke-width="1.2"/>
+  <rect x="2" y="2" width="356" height="556" rx="26" fill="none" stroke="#FFFFFF" stroke-opacity="0.5" stroke-width="0.8"/>
+</svg>

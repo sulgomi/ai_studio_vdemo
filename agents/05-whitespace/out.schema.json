@@ -3,7 +3,9 @@
   "$id": "card-studio/agents/whitespace/out.schema.json",
   "title": "whitespace result",
   "type": "object",
-  "required": ["picks"],
+  "required": [
+    "picks"
+  ],
   "additionalProperties": false,
   "properties": {
     "picks": {
@@ -12,24 +14,183 @@
       "maxItems": 3,
       "items": {
         "type": "object",
-        "required": ["rank", "seg", "need", "engine_rank", "rationale", "evidence_ids", "deviates_from_engine", "risk", "origin"],
+        "required": [
+          "rank",
+          "seg",
+          "need",
+          "engine_rank",
+          "rationale",
+          "evidence_ids",
+          "deviates_from_engine",
+          "risk",
+          "origin"
+        ],
         "additionalProperties": false,
         "properties": {
-          "rank": {"type": "integer", "minimum": 1, "maximum": 3},
-          "seg": {"type": "string"},
-          "need": {"type": "string"},
-          "engine_rank": {"type": "integer", "minimum": 1},
-          "rationale": {"type": "string", "minLength": 20},
-          "evidence_ids": {"type": "array", "minItems": 2, "items": {"type": "string", "pattern": "^(T[0-9]+|tag:[a-z_]+|need:[a-z_]+)$"}},
-          "deviates_from_engine": {"type": "boolean"},
-          "deviation_reason": {"type": ["string", "null"]},
-          "risk": {"type": "string"},
-          "origin": {"enum": ["score", "tension"]},
-          "ceiling": {"type": ["number", "null"], "minimum": 0, "maximum": 1, "description": "코드가 채움"},
-          "feasible": {"type": ["boolean", "null"], "description": "코드: ceiling ≥ target_adopt"}
+          "rank": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 3
+          },
+          "seg": {
+            "type": "string"
+          },
+          "need": {
+            "type": "string"
+          },
+          "engine_rank": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "rationale": {
+            "type": "string",
+            "minLength": 20
+          },
+          "evidence_ids": {
+            "type": "array",
+            "minItems": 2,
+            "items": {
+              "type": "string",
+              "pattern": "^(T[0-9]+|tag:[a-z_]+|need:[a-z_]+|ev:[A-Za-z0-9_]+)$"
+            }
+          },
+          "deviates_from_engine": {
+            "type": "boolean"
+          },
+          "deviation_reason": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "risk": {
+            "type": "string"
+          },
+          "origin": {
+            "enum": [
+              "score",
+              "tension"
+            ]
+          },
+          "ceiling": {
+            "type": [
+              "number",
+              "null"
+            ],
+            "minimum": 0,
+            "maximum": 1,
+            "description": "코드가 채움"
+          },
+          "feasible": {
+            "type": [
+              "boolean",
+              "null"
+            ],
+            "description": "코드: ceiling ≥ target_adopt"
+          },
+          "area_id": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "description": "cells_top 의 기회영역 id(v2 엔진). 시장조사 충돌에서 새로 본 영역이면 null"
+          },
+          "mechanisms": {
+            "type": "array",
+            "maxItems": 2,
+            "items": {
+              "type": "string",
+              "pattern": "^[a-z_]+$"
+            },
+            "description": "이 영역을 풀 공백 혜택 방식 1~2개(allowed_tags 키). 컨셉이 중심 장치로 쓴다"
+          },
+          "statement": {
+            "type": "string",
+            "minLength": 30,
+            "maxLength": 300,
+            "description": "기회 문장: 누가, 어떤 상황에서, 무엇이 채워지지 않고, 어떤 방식으로 풀 수 있는가(1~2문장)"
+          },
+          "unmet_gap": {
+            "type": "string",
+            "maxLength": 300,
+            "description": "지금 시장이 못 채우는 것. 입력의 사실(카드 수, 태그, 시그널)로만"
+          },
+          "why_now": {
+            "type": "string",
+            "maxLength": 300,
+            "description": "왜 지금인가. 시그널 id를 근거로. 근거가 약하면 그렇게 쓴다"
+          },
+          "hypotheses_to_validate": {
+            "type": "array",
+            "minItems": 1,
+            "maxItems": 3,
+            "items": {
+              "type": "string",
+              "maxLength": 200
+            },
+            "description": "컨셉·검증 단계가 시험해야 할 가설"
+          },
+          "kill_criteria": {
+            "type": "string",
+            "maxLength": 240,
+            "description": "이 영역을 접어야 하는 조건(관측 가능한 형태로)"
+          },
+          "confidence": {
+            "enum": [
+              "high",
+              "medium",
+              "low"
+            ],
+            "description": "근거의 두께. 코드 confidence 를 올리지 않는다"
+          },
+          "domain": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "description": "혜택 영역(소비 카테고리 키: dining, online, sub …). 영역을 정하지 않은 넓은 영역이면 null"
+          }
         },
-        "if": {"properties": {"deviates_from_engine": {"const": true}}},
-        "then": {"required": ["deviation_reason"], "properties": {"deviation_reason": {"type": "string", "minLength": 5}}}
+        "if": {
+          "properties": {
+            "deviates_from_engine": {
+              "const": true
+            }
+          }
+        },
+        "then": {
+          "required": [
+            "deviation_reason"
+          ],
+          "properties": {
+            "deviation_reason": {
+              "type": "string",
+              "minLength": 5
+            }
+          }
+        }
+      }
+    },
+    "not_chosen": {
+      "type": "array",
+      "description": "cells_top 에서 고르지 않은 영역 중 이유를 남길 만한 것(0~4개)",
+      "maxItems": 4,
+      "items": {
+        "type": "object",
+        "required": [
+          "area_id",
+          "reason"
+        ],
+        "additionalProperties": false,
+        "properties": {
+          "area_id": {
+            "type": "string"
+          },
+          "reason": {
+            "type": "string",
+            "maxLength": 200
+          }
+        }
       }
     }
   }

@@ -1,0 +1,201 @@
+{
+ "cards": [
+  {
+   "id": "gc01",
+   "tags": [
+    "bank_bundle",
+    "plcc_brand",
+    "spend_free",
+    "reward_cashback",
+    "paymethod_bonus"
+   ],
+   "tag_basis": "전월 실적 조건없이 최대 2% 캐시백(월 4만원), 카카오뱅크 첫 PLCC, 5일 이내 선결제 추가 캐시백",
+   "tag_confidence": "high"
+  },
+  {
+   "id": "gc02",
+   "tags": [
+    "delivery",
+    "plcc_brand",
+    "reward_discount"
+   ],
+   "tag_basis": "배달의민족 5% 할인(월 3만원), 배민 제휴 PLCC, 전 가맹점 1% 청구할인",
+   "tag_confidence": "high"
+  },
+  {
+   "id": "gc03",
+   "tags": [
+    "online_shop",
+    "subscription_ott",
+    "dining_cafe",
+    "travel_fx",
+    "plcc_brand",
+    "reward_discount",
+    "tiered_perf"
+   ],
+   "tag_basis": "토스페이·쇼핑몰 할인, 토스프라임·디지털콘텐츠 50%, 스타벅스, 해외 2%, 전월 실적에 따라 구간 차등",
+   "tag_confidence": "medium"
+  },
+  {
+   "id": "gc04",
+   "tags": [
+    "online_shop",
+    "plcc_brand",
+    "reward_point",
+    "paymethod_bonus"
+   ],
+   "tag_basis": "네이버쇼핑 네이버페이 포인트 7% 적립(멤버십 합산 12%), 네이버 제휴 PLCC",
+   "tag_confidence": "high"
+  },
+  {
+   "id": "gc05",
+   "tags": [
+    "online_shop",
+    "plcc_brand",
+    "reward_point",
+    "period_bonus"
+   ],
+   "tag_basis": "네이버플러스 스토어 5% 적립, 더블 적립 프로모션(기간 한정), 멤버십 합산",
+   "tag_confidence": "high"
+  },
+  {
+   "id": "gc06",
+   "tags": [
+    "bank_bundle",
+    "plcc_brand",
+    "spend_free",
+    "reward_discount",
+    "tiered_perf"
+   ],
+   "tag_basis": "전월 실적 상관없이 1% 청구할인, 40만원 이상 시 2%, 토스뱅크 앱 발급",
+   "tag_confidence": "medium"
+  },
+  {
+   "id": "gc07",
+   "tags": [
+    "dining_cafe",
+    "fixed_bills",
+    "online_shop",
+    "plcc_brand",
+    "reward_discount",
+    "tiered_perf",
+    "count_based"
+   ],
+   "tag_basis": "8개 생활업종 10% 청구할인, 전월 50만/100만 구간별 업종당 한도, 토스뱅크 PLCC",
+   "tag_confidence": "medium"
+  },
+  {
+   "id": "gc08",
+   "tags": [
+    "dining_cafe",
+    "transit",
+    "fixed_bills",
+    "online_shop",
+    "reward_discount"
+   ],
+   "tag_basis": "스타벅스 50%, 패스트푸드 20%, 간편결제 10%, 대중교통·이동통신 10% 청구할인",
+   "tag_confidence": "medium"
+  },
+  {
+   "id": "gc09",
+   "tags": [
+    "travel_fx",
+    "reward_point",
+    "plcc_brand"
+   ],
+   "tag_basis": "해외 2% 적립(일본 3.5%), 호시노 리조트 숙박 할인, 호시노/JCB 협업 카드",
+   "tag_confidence": "medium"
+  },
+  {
+   "id": "gc10",
+   "tags": [
+    "check_card",
+    "travel_fx",
+    "mart_daily",
+    "dining_cafe",
+    "reward_discount"
+   ],
+   "tag_basis": "환율 우대·해외수수료 면제, 일본 돈키호테·스타벅스·편의점 할인, 체크카드",
+   "tag_confidence": "high"
+  },
+  {
+   "id": "gc11",
+   "tags": [
+    "check_card",
+    "travel_fx",
+    "reward_point"
+   ],
+   "tag_basis": "해외 이용·ATM 수수료 면제 안내, 하나머니 0.3% 적립, 체크카드",
+   "tag_confidence": "medium"
+  },
+  {
+   "id": "gc12",
+   "tags": [
+    "online_shop",
+    "plcc_brand",
+    "target_special"
+   ],
+   "tag_basis": "무신사·29CM 등 패션 플랫폼 회원 특화 혜택(수치 미공개), 2030 플레이트 언급",
+   "tag_confidence": "low"
+  },
+  {
+   "id": "gc13",
+   "tags": [
+    "select_item",
+    "monthly_switch",
+    "delivery",
+    "dining_cafe",
+    "online_shop",
+    "subscription_ott",
+    "transit",
+    "travel_fx",
+    "reward_discount",
+    "common_plus_select"
+   ],
+   "tag_basis": "외식/온라인쇼핑 택1 매월 변경 가능, 배달·커피·택시 5%, 디지털콘텐츠 50%, 해외 2%",
+   "tag_confidence": "high"
+  },
+  {
+   "id": "gc14",
+   "tags": [
+    "mart_daily",
+    "online_shop",
+    "plcc_brand",
+    "reward_discount",
+    "reward_point",
+    "tiered_perf",
+    "paymethod_bonus"
+   ],
+   "tag_basis": "CU 네이버페이 QR 최대 20% 할인, 네이버페이 적립, 전월 실적 구간별 한도",
+   "tag_confidence": "high"
+  },
+  {
+   "id": "gc15",
+   "tags": [
+    "transit",
+    "govt_link",
+    "subscription_ott",
+    "mart_daily",
+    "fixed_bills",
+    "travel_fx",
+    "target_special",
+    "reward_cashback"
+   ],
+   "tag_basis": "K-패스 연계 대중교통 15%, OTT 15%, 편의점·통신 5%, 해외 3%, 청년 기준 조건",
+   "tag_confidence": "medium"
+  },
+  {
+   "id": "gc16",
+   "tags": [
+    "check_card",
+    "online_shop",
+    "delivery",
+    "subscription_ott",
+    "reward_discount",
+    "target_special"
+   ],
+   "tag_basis": "온라인쇼핑·배달앱·뷰티 5%, OTT 10% 할인, 20~30대 선호 업종 표방, 체크카드",
+   "tag_confidence": "high"
+  }
+ ]
+}

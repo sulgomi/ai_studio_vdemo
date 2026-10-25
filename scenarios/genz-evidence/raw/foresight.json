@@ -1,0 +1,1607 @@
+{
+ "agent": "foresight",
+ "retrieved_at": "2026-10-23",
+ "sources": [
+  {
+   "id": "FSS1",
+   "title": "교보문고 '2027 트렌드 프리뷰' 개최 기사",
+   "publisher": "파이낸셜뉴스",
+   "url": "https://www.fnnews.com/news/202610060920255153",
+   "published": "2026-10-06",
+   "tier": "B 언론·리서치",
+   "kind": "news",
+   "stale": false,
+   "promotional": false
+  },
+  {
+   "id": "FSS2",
+   "title": "무리에 휩쓸리지 마라…2027년 트렌드는 '알파쉽(Alpha Sheep)' (트렌드 코리아 2027 소개)",
+   "publisher": "매일신문",
+   "url": "https://www.imaeil.com/page/view/2026100715353031137",
+   "published": "2026-10-08",
+   "tier": "B 언론·리서치",
+   "kind": "news",
+   "stale": false,
+   "promotional": false
+  },
+  {
+   "id": "FSS3",
+   "title": "크로플·탕후루·두쫀쿠로 본 소비 변화 (유행 반감기)",
+   "publisher": "아시아경제(연합뉴스 분석 인용)",
+   "url": "https://view.asiae.co.kr/article/2026020810004309195",
+   "published": "2026-02-08",
+   "tier": "B 언론·리서치",
+   "kind": "news",
+   "stale": false,
+   "promotional": false
+  },
+  {
+   "id": "FSS4",
+   "title": "'뚱카롱·탕후루보다 짧았다' 49일 만에 식은 두쫀쿠 열풍",
+   "publisher": "경인일보",
+   "url": "https://www.kyeongin.com/article/1759871",
+   "published": "2026-03",
+   "tier": "B 언론·리서치",
+   "kind": "news",
+   "stale": false,
+   "promotional": false
+  },
+  {
+   "id": "FSS5",
+   "title": "트렌드에도 매수·매도 타이밍이 있다? 분야별 트렌드 지속 기간",
+   "publisher": "캐릿",
+   "url": "https://www.careet.net/1896",
+   "published": "2026",
+   "tier": "C 업계",
+   "kind": "blog",
+   "stale": false,
+   "promotional": false
+  },
+  {
+   "id": "FSS6",
+   "title": "술집 대신 '내돈내땀'... Z세대의 새로운 아지트가 된 K-사우나",
+   "publisher": "인사이트",
+   "url": "https://www.insight.co.kr/news/548145",
+   "published": "2026",
+   "tier": "B 언론·리서치",
+   "kind": "news",
+   "stale": false,
+   "promotional": false
+  },
+  {
+   "id": "FSS7",
+   "title": "'이게 다시 유행한다고?'... 20년 전 2030 사로잡은 취미의 부활",
+   "publisher": "인사이트",
+   "url": "https://www.insight.co.kr/news/573341",
+   "published": "2026",
+   "tier": "B 언론·리서치",
+   "kind": "news",
+   "stale": false,
+   "promotional": false
+  },
+  {
+   "id": "FSS8",
+   "title": "'20대부터 오래 살 준비해요'… Z세대 '장수 소비' 뜬다",
+   "publisher": "한경매거진&북",
+   "url": "https://magazine.hankyung.com/business/article/202609020263b",
+   "published": "2026-09-02",
+   "tier": "B 언론·리서치",
+   "kind": "news",
+   "stale": false,
+   "promotional": false
+  },
+  {
+   "id": "FSS9",
+   "title": "네트왓킹·스크롤픽·밸런쉼...Z세대가 꼽은 2026 트렌드 (KT 2026 Y트렌드북)",
+   "publisher": "파이낸셜뉴스",
+   "url": "https://www.fnnews.com/news/202610070943339142",
+   "published": "2026-10-07",
+   "tier": "B 언론·리서치",
+   "kind": "news",
+   "stale": false,
+   "promotional": false
+  },
+  {
+   "id": "FSS10",
+   "title": "팝업스토어도 세대교체… 패션 가고 IP 뜬다 (스위트스팟 2026 상반기 팝업스토어 트렌드 리포트 보도)",
+   "publisher": "다음뉴스 전재",
+   "url": "https://v.daum.net/v/f0gOVpFYcB",
+   "published": "2026",
+   "tier": "B 언론·리서치",
+   "kind": "news",
+   "stale": false,
+   "promotional": false
+  },
+  {
+   "id": "FSS11",
+   "title": "KB국민카드, 마스터카드와 '도쿄 마라톤 2027' 출전권 이벤트",
+   "publisher": "SBS Biz",
+   "url": "https://biz.sbs.co.kr/amp/article/20000335175",
+   "published": "2026-09-17",
+   "tier": "B 언론·리서치",
+   "kind": "news",
+   "stale": false,
+   "promotional": false
+  },
+  {
+   "id": "FSS12",
+   "title": "NH농협카드, 기안84 협업 'zgm 러닝카드' 출시",
+   "publisher": "SBS Biz",
+   "url": "https://biz.sbs.co.kr/amp/article/20000331932",
+   "published": null,
+   "tier": "B 언론·리서치",
+   "kind": "news",
+   "stale": false,
+   "promotional": false
+  },
+  {
+   "id": "FSS13",
+   "title": "카카오, 톡디지털카드 '러너스 카드' 출시",
+   "publisher": "스마트투데이",
+   "url": "https://www.smarttoday.co.kr/ko-kr/articles/87250",
+   "published": null,
+   "tier": "B 언론·리서치",
+   "kind": "news",
+   "stale": false,
+   "promotional": false
+  },
+  {
+   "id": "FSS14",
+   "title": "필라테스·헬스장 폐업 선불거래 피해 사례 3년 새 7배↑",
+   "publisher": "SBS Biz",
+   "url": "https://biz.sbs.co.kr/amp/article/20000336777",
+   "published": null,
+   "tier": "B 언론·리서치",
+   "kind": "news",
+   "stale": false,
+   "promotional": false
+  },
+  {
+   "id": "FSS15",
+   "title": "필라테스 갑자기 폐업…내 잔액 지킬 '이 방법' 나왔다 (공정위 요가·필라테스 표준약관)",
+   "publisher": "한국경제",
+   "url": "https://www.hankyung.com/article/2026072048757",
+   "published": "2026-07-20",
+   "tier": "B 언론·리서치",
+   "kind": "news",
+   "stale": false,
+   "promotional": false
+  },
+  {
+   "id": "FSS16",
+   "title": "토스 카드라운지 '새해 다짐 통했다'… '갓생 소비' 늘며 교육·운동 혜택 카드 '주목'",
+   "publisher": "토스피드",
+   "url": "https://toss.im/tossfeed/article/46887",
+   "published": null,
+   "tier": "C 업계",
+   "kind": "news",
+   "stale": false,
+   "promotional": false
+  },
+  {
+   "id": "FSS17",
+   "title": "[오늘의 책] Z세대 트렌드 2026 (대학내일20대연구소)",
+   "publisher": "KNN",
+   "url": "https://news.knn.co.kr/news/article/190965",
+   "published": null,
+   "tier": "B 언론·리서치",
+   "kind": "news",
+   "stale": false,
+   "promotional": false
+  }
+ ],
+ "facts": [
+  {
+   "id": "FSF1",
+   "topic": "트렌드코리아2027",
+   "claim": "『트렌드 코리아 2027』 슬로건은 알파쉽, 10대 소비 트렌드를 제시",
+   "value": null,
+   "unit": null,
+   "population": "전 국민 소비 전망",
+   "age_scope": "전연령",
+   "period": "2027 전망",
+   "source_id": "FSS2",
+   "quote": "올해 책의 슬로건은 'ALPHA SHEEP(알파쉽)'",
+   "quote_verified": true,
+   "confidence": "high",
+   "note": "10개 키워드: 권태사회, 라이프 ROI, 폼팩터 시프트, 해봄경제, 저장인류, 바이브 워킹, 리:텐션 전략, 휴먼엣지, 하프시그널, 안목자본"
+  },
+  {
+   "id": "FSF2",
+   "topic": "트렌드코리아2027",
+   "claim": "권태사회: 자극적 콘텐츠가 넘치는데도 무엇에도 흥미를 못 느끼는 '바쁜 권태'가 확산",
+   "value": null,
+   "unit": null,
+   "population": "전 국민",
+   "age_scope": "전연령",
+   "period": "2027 전망",
+   "source_id": "FSS2",
+   "quote": "무엇에도 흥미를 느끼지 못하는 '바쁜 권태'가 확산하고 있다는 진단이다",
+   "quote_verified": true,
+   "confidence": "medium",
+   "note": "전망서의 진단이며 수치 없음"
+  },
+  {
+   "id": "FSF3",
+   "topic": "트렌드코리아2027",
+   "claim": "폼팩터 시프트: 붙이는 비타민·알약 육수처럼 제품 형태가 편의에 맞춰 바뀜",
+   "value": null,
+   "unit": null,
+   "population": "전 국민",
+   "age_scope": "전연령",
+   "period": "2027 전망",
+   "source_id": "FSS2",
+   "quote": "붙이는 비타민이나 알약 육수처럼 익숙했던 제품의 형태가 소비자의 편의와 경험에 맞춰 바뀌고 있다",
+   "quote_verified": true,
+   "confidence": "medium",
+   "note": ""
+  },
+  {
+   "id": "FSF4",
+   "topic": "트렌드코리아2027",
+   "claim": "해봄경제: 생성형 AI·3D 프린터 등으로 개인이 일단 해보고 배우는 경제",
+   "value": null,
+   "unit": null,
+   "population": "전 국민",
+   "age_scope": "전연령",
+   "period": "2027 전망",
+   "source_id": "FSS2",
+   "quote": "일단 실행하고 과정에서 배우는 경제를 뜻한다",
+   "quote_verified": true,
+   "confidence": "medium",
+   "note": ""
+  },
+  {
+   "id": "FSF5",
+   "topic": "트렌드코리아2027",
+   "claim": "저장인류: 영상·사진·대화·영수증까지 일단 저장하는 사람들의 증가",
+   "value": null,
+   "unit": null,
+   "population": "전 국민",
+   "age_scope": "전연령",
+   "period": "2027 전망",
+   "source_id": "FSS2",
+   "quote": "무엇이든 일단 저장하고 보는 사람들의 증가를 가리킨다",
+   "quote_verified": true,
+   "confidence": "medium",
+   "note": ""
+  },
+  {
+   "id": "FSF6",
+   "topic": "트렌드코리아2027",
+   "claim": "안목자본: AI 시대에 '무엇이 좋은지 알아보는 눈'이 새로운 자본",
+   "value": null,
+   "unit": null,
+   "population": "전 국민",
+   "age_scope": "전연령",
+   "period": "2027 전망",
+   "source_id": "FSS2",
+   "quote": "'무엇이 좋은지 알아보는 눈'이 새로운 자본이 된다는 개념이다",
+   "quote_verified": true,
+   "confidence": "medium",
+   "note": ""
+  },
+  {
+   "id": "FSF7",
+   "topic": "트렌드코리아2027",
+   "claim": "라이프 ROI: 삶 모든 영역에서 투자 대비 수익률을 따지고 손해가 크면 정리",
+   "value": null,
+   "unit": null,
+   "population": "전 국민",
+   "age_scope": "전연령",
+   "period": "2027 전망",
+   "source_id": "FSS2",
+   "quote": "얻는 것보다 손해가 크다고 판단하면 관계나 선택을 과감히 정리하는 태도도 이에 포함된다",
+   "quote_verified": true,
+   "confidence": "medium",
+   "note": ""
+  },
+  {
+   "id": "FSF8",
+   "topic": "전망서 수요",
+   "claim": "트렌드·전망서의 10월 판매량은 9월보다 평균 141.5% 늘었고 4분기에 연간 판매량의 48.8%가 몰림",
+   "value": 141.5,
+   "unit": "%",
+   "population": "교보문고 판매 분석",
+   "age_scope": "전연령",
+   "period": "2023~2025",
+   "source_id": "FSS1",
+   "quote": "트렌드·전망서의 10월 판매량은 9월보다 평균 141.5% 늘었다",
+   "quote_verified": true,
+   "confidence": "high",
+   "note": "10월 시점의 전망 키워드 공개가 연 1회 집중됨을 보여주는 맥락 자료"
+  },
+  {
+   "id": "FSF9",
+   "topic": "KT Y트렌드",
+   "claim": "KT 2026 Y트렌드북: 대학생 100명이 약 3개월 연구해 5대 키워드 선정 중 하나가 스크롤픽",
+   "value": null,
+   "unit": null,
+   "population": "Y퓨처리스트 100명(대학생)",
+   "age_scope": "Z세대",
+   "period": "2026.8 발표",
+   "source_id": "FSS9",
+   "quote": "스크롤 중 발견한 콘텐츠가 즉각적인 소비로 이어지는 '스크롤픽(Scroll Pick)'",
+   "quote_verified": true,
+   "confidence": "high",
+   "note": "표본 조사가 아니라 대학생 서포터즈의 트렌드 발굴 결과"
+  },
+  {
+   "id": "FSF10",
+   "topic": "KT Y트렌드",
+   "claim": "KT 2026 Y트렌드북 키워드 밸런쉼: 적극적인 회복을 통한 일상의 균형 추구",
+   "value": null,
+   "unit": null,
+   "population": "Y퓨처리스트 100명(대학생)",
+   "age_scope": "Z세대",
+   "period": "2026.8 발표",
+   "source_id": "FSS9",
+   "quote": "적극적인 회복을 통해 일상의 균형을 추구하는 '밸런쉼'",
+   "quote_verified": true,
+   "confidence": "high",
+   "note": ""
+  },
+  {
+   "id": "FSF11",
+   "topic": "KT Y트렌드",
+   "claim": "KT 2026 Y트렌드북 키워드 트라이에이터: AI로 누구나 콘텐츠 창작에 도전",
+   "value": null,
+   "unit": null,
+   "population": "Y퓨처리스트 100명(대학생)",
+   "age_scope": "Z세대",
+   "period": "2026.8 발표",
+   "source_id": "FSS9",
+   "quote": "AI를 활용해 누구나 콘텐츠 창작에 도전하는 '트라이에이터(Try-ator)'",
+   "quote_verified": true,
+   "confidence": "high",
+   "note": ""
+  },
+  {
+   "id": "FSF12",
+   "topic": "KT Y트렌드",
+   "claim": "KT 2026 Y트렌드북 키워드 네트왓킹: 사람보다 경험 대상을 함께하며 관계 확장",
+   "value": null,
+   "unit": null,
+   "population": "Y퓨처리스트 100명(대학생)",
+   "age_scope": "Z세대",
+   "period": "2026.8 발표",
+   "source_id": "FSS9",
+   "quote": "'누구'보다 '무엇'을 함께 경험하며 관계를 확장하는 '네트왓킹(NetWHATking)'",
+   "quote_verified": true,
+   "confidence": "high",
+   "note": ""
+  },
+  {
+   "id": "FSF13",
+   "topic": "유행 수명",
+   "claim": "검색량이 최고점에서 절반으로 떨어지기까지 크로플 163일",
+   "value": 163,
+   "unit": "일",
+   "population": "네이버 데이터랩 검색어(디저트)",
+   "age_scope": "전연령",
+   "period": "2020~2021",
+   "source_id": "FSS3",
+   "quote": "크로플은 검색량이 최고점을 기록한 이후 절반 수준으로 떨어지기까지 163일이 소요됐다",
+   "quote_verified": true,
+   "confidence": "high",
+   "note": "연합뉴스 분석을 인용한 기사; 분석 대상은 디저트 4종"
+  },
+  {
+   "id": "FSF14",
+   "topic": "유행 수명",
+   "claim": "두바이 초콜릿(2024)의 반감기 13일, 두쫀쿠(2025년 말)의 반감기 17일",
+   "value": 17,
+   "unit": "일",
+   "population": "네이버 데이터랩 검색어(디저트)",
+   "age_scope": "전연령",
+   "period": "2024~2026",
+   "source_id": "FSS3",
+   "quote": "두바이 초콜릿은 13일, 지난해 말 급부상한 두바이 쫀득 쿠키(두쫀쿠)는 17일에 불과했다",
+   "quote_verified": true,
+   "confidence": "high",
+   "note": "탕후루(2023)는 54일. 크로플 163일 대비 10분의 1 수준이라는 기사 표현"
+  },
+  {
+   "id": "FSF15",
+   "topic": "유행 수명",
+   "claim": "두쫀쿠 검색량은 1월 13일 정점, 12월 27일 30% 초과 후 49일 만에 30% 이하로 내려가 주기 종료",
+   "value": 49,
+   "unit": "일",
+   "population": "네이버 데이터랩 검색어",
+   "age_scope": "전연령",
+   "period": "2025.12~2026.2",
+   "source_id": "FSS4",
+   "quote": "49일 만인 지난달 13일 다시 30% 이하로 내려가며 유행 주기가 마무리됐다",
+   "quote_verified": true,
+   "confidence": "high",
+   "note": "같은 기준 2018 뚱카롱 817일, 2023 탕후루 159일로 기사에 병기. 반감기(17일)와 기준이 다른 별개 지표"
+  },
+  {
+   "id": "FSF16",
+   "topic": "유행 수명",
+   "claim": "유통업계는 상품 기획부터 출시까지를 3개월에서 약 한 달로 단축, 그래도 출시가 유행 후반과 겹침",
+   "value": null,
+   "unit": null,
+   "population": "유통업계 관계자 발언",
+   "age_scope": "전연령",
+   "period": "2026.3",
+   "source_id": "FSS4",
+   "quote": "제품 출시 시점이 유행 후반부와 겹치는 경우가 많다는 점이다",
+   "quote_verified": true,
+   "confidence": "medium",
+   "note": "한 달 단축 발언은 익명 업계 관계자 인용"
+  },
+  {
+   "id": "FSF17",
+   "topic": "유행 수명",
+   "claim": "캐릿 분류에서 F&B 트렌드 지속 기간은 평균 22일, 굿즈가 가장 길고 F&B가 가장 짧음",
+   "value": 22,
+   "unit": "일",
+   "population": "블랙키위 일간 검색량 기반 F&B 3개 품목",
+   "age_scope": "Z세대",
+   "period": "최근 3년",
+   "source_id": "FSS5",
+   "quote": "트렌드 지속 기간은 평균 22일",
+   "quote_verified": true,
+   "confidence": "medium",
+   "note": "캐릿 정의: 고점 대비 일일 검색량 50% 유지 기간. 두쫀쿠는 같은 글에서 2026-01-05~02-04(약 31일). 취미·헬스케어·굿즈 구간 수치는 멤버십 가림으로 미확인"
+  },
+  {
+   "id": "FSF18",
+   "topic": "확산 경로",
+   "claim": "두쫀쿠: 캐릿 첫 소개 2025-12-19, 숏폼 먹방 → 개인카페 품절·재고지도 → 편의점 대량생산 → 구매제한·중고 프리미엄 소멸",
+   "value": null,
+   "unit": null,
+   "population": "캐릿 타임라인",
+   "age_scope": "Z세대",
+   "period": "2025.12~2026.2",
+   "source_id": "FSS5",
+   "quote": "두쫀쿠 인당 구매 제한이 풀림. 중고 거래 프리미엄도 사라짐.",
+   "quote_verified": true,
+   "confidence": "medium",
+   "note": "타임라인 문구는 본문 요약; 캐릿 글 본문 일부 멤버십 가림"
+  },
+  {
+   "id": "FSF19",
+   "topic": "확산 경로",
+   "claim": "대형마트·편의점·카페가 저가 유사 제품을 내놓자 개인 매장 중심 열풍이 빠르게 식음",
+   "value": null,
+   "unit": null,
+   "population": "디저트 시장",
+   "age_scope": "전연령",
+   "period": "2026.2",
+   "source_id": "FSS3",
+   "quote": "대형마트와 편의점, 프랜차이즈 카페들이 저가 제품을 선보이자, 기존 개인 매장 중심의 열풍도 빠르게 식는 모습이다",
+   "quote_verified": true,
+   "confidence": "medium",
+   "note": ""
+  },
+  {
+   "id": "FSF20",
+   "topic": "팝업",
+   "claim": "2026 상반기 오픈 팝업스토어 2130건, 전년 동기(1470건) 대비 44.9% 증가",
+   "value": 44.9,
+   "unit": "%",
+   "population": "스위트스팟 집계 팝업스토어",
+   "age_scope": "전연령",
+   "period": "2026 상반기",
+   "source_id": "FSS10",
+   "quote": "올해 상반기 오픈한 팝업스토어는 2130건으로 지난해 동기(1470건) 대비 44.9% 증가했다",
+   "quote_verified": true,
+   "confidence": "high",
+   "note": "계산 가능: 증가 건수 660"
+  },
+  {
+   "id": "FSF21",
+   "topic": "팝업",
+   "claim": "문구·도서·음반 팝업은 비중 5% 미만이나 전년 동기 대비 352.9% 증가해 가장 가파름",
+   "value": 352.9,
+   "unit": "%",
+   "population": "스위트스팟 집계 팝업스토어",
+   "age_scope": "전연령",
+   "period": "2026 상반기",
+   "source_id": "FSS10",
+   "quote": "지난해 동기 대비 352.9% 급증하며 가장 가파른 성장세를 보였다",
+   "quote_verified": true,
+   "confidence": "high",
+   "note": ""
+  },
+  {
+   "id": "FSF22",
+   "topic": "팝업",
+   "claim": "패션·뷰티는 비중 감소, IP·엔터 등 팬덤 기반 팝업은 증가",
+   "value": null,
+   "unit": null,
+   "population": "스위트스팟 집계 팝업스토어",
+   "age_scope": "전연령",
+   "period": "2026 상반기",
+   "source_id": "FSS10",
+   "quote": "패션·뷰티가 감소한 반면 IP·엔터 등 팬덤 기반 팝업은 증가하며",
+   "quote_verified": true,
+   "confidence": "high",
+   "note": ""
+  },
+  {
+   "id": "FSF23",
+   "topic": "팝업",
+   "claim": "성동구 팝업 비중 34.9%에서 26%로 감소, 용산·송파·마포·중구 확대",
+   "value": 26,
+   "unit": "%",
+   "population": "스위트스팟 집계 팝업스토어",
+   "age_scope": "전연령",
+   "period": "2026 상반기",
+   "source_id": "FSS10",
+   "quote": "서울 전체에서 차지하는 비중은 34.9%에서 26%로 줄었다",
+   "quote_verified": true,
+   "confidence": "high",
+   "note": ""
+  },
+  {
+   "id": "FSF24",
+   "topic": "팝업",
+   "claim": "성수 팝업의 평당 매출은 같은 브랜드 기준 강남의 최대 4배",
+   "value": 4,
+   "unit": "배",
+   "population": "스위트스팟 집계 팝업스토어",
+   "age_scope": "전연령",
+   "period": "2026 상반기",
+   "source_id": "FSS10",
+   "quote": "같은 브랜드라도 성수 팝업스토어의 평당 매출은 강남의 최대 4배에 달했고",
+   "quote_verified": true,
+   "confidence": "medium",
+   "note": ""
+  },
+  {
+   "id": "FSF25",
+   "topic": "팝업",
+   "claim": "7일 이내 단기 팝업 비중이 3년 연속 큰 폭 증가",
+   "value": null,
+   "unit": null,
+   "population": "스위트스팟 집계 팝업스토어",
+   "age_scope": "전연령",
+   "period": "3년 연속",
+   "source_id": "FSS10",
+   "quote": "7일 이내 단기 팝업스토어 비중은 3년 연속 큰 폭의 증가세를 이어가고 있다",
+   "quote_verified": true,
+   "confidence": "high",
+   "note": ""
+  },
+  {
+   "id": "FSF26",
+   "topic": "아날로그 회귀",
+   "claim": "디지털 기기 사용이 늘수록 아날로그 활동이 더 필요하다는 응답 69.9%",
+   "value": 69.9,
+   "unit": "%",
+   "population": "엠브레인 트렌드모니터 전국 19~59세 성인 1000명",
+   "age_scope": "MZ",
+   "period": "3월(연도 기사 미표기)",
+   "source_id": "FSS7",
+   "quote": "응답자의 69.9%가 디지털 기기 사용이 늘수록 아날로그 활동이 더 필요하다고 답했다",
+   "quote_verified": true,
+   "confidence": "medium",
+   "note": "20대 한정 수치 아님(19~59세)"
+  },
+  {
+   "id": "FSF27",
+   "topic": "아날로그 회귀",
+   "claim": "오래된 방식이나 제품이 새롭고 매력적이라는 응답 전체 60.4%, 20대 68%로 최고",
+   "value": 68,
+   "unit": "%",
+   "population": "엠브레인 트렌드모니터 전국 19~59세 성인 1000명 중 20대",
+   "age_scope": "20대",
+   "period": "3월(연도 기사 미표기)",
+   "source_id": "FSS7",
+   "quote": "20대는 68%로 가장 높았다",
+   "quote_verified": true,
+   "confidence": "medium",
+   "note": ""
+  },
+  {
+   "id": "FSF28",
+   "topic": "아날로그 회귀",
+   "claim": "여의도공원 인라인스케이트 관련 게시물 조회수 78만~100만 회, 1시간 4000원 대여",
+   "value": null,
+   "unit": null,
+   "population": "관련 SNS 게시물",
+   "age_scope": "MZ",
+   "period": "2026 여름~가을(추정)",
+   "source_id": "FSS7",
+   "quote": "관련 게시물 조회수는 78만~100만 회에 달한다",
+   "quote_verified": true,
+   "confidence": "medium",
+   "note": "기사 발행일 미확인. 2030 대상으로 서술"
+  },
+  {
+   "id": "FSF29",
+   "topic": "AI",
+   "claim": "올해 상반기 국내 모바일 앱 신규 설치 1위는 챗GPT 534만 건, 인스타그램 505만 건",
+   "value": 534,
+   "unit": "만 건",
+   "population": "아이지에이웍스 모바일인덱스 누적 신규 설치",
+   "age_scope": "전연령",
+   "period": "올해 상반기",
+   "source_id": "FSS7",
+   "quote": "챗GPT(534만 건)로 인스타그램(505만 건)을 제쳤다",
+   "quote_verified": true,
+   "confidence": "medium",
+   "note": "전 연령 앱 설치 지표"
+  },
+  {
+   "id": "FSF30",
+   "topic": "AI",
+   "claim": "챗GPT 등 대화형 AI를 매일 사용한다는 응답 36.9%",
+   "value": 36.9,
+   "unit": "%",
+   "population": "엠브레인 트렌드모니터 전국 19~59세 성인 1000명",
+   "age_scope": "MZ",
+   "period": "3월(연도 기사 미표기)",
+   "source_id": "FSS7",
+   "quote": "챗GPT 등 대화형 AI를 매일 사용한다는 응답이 36.9%로 나타났다",
+   "quote_verified": true,
+   "confidence": "medium",
+   "note": ""
+  },
+  {
+   "id": "FSF31",
+   "topic": "AI",
+   "claim": "대학내일20대연구소 Z세대 트렌드 2026은 AI를 감정 관리 도구로 쓰는 특징을 소개",
+   "value": null,
+   "unit": null,
+   "population": "대학내일20대연구소 보고서(방송 소개)",
+   "age_scope": "Z세대",
+   "period": "2026",
+   "source_id": "FSS17",
+   "quote": "AI를 단순한 검색 도구가 아닌 감정을 관리하는 도구로 활용하는 Z세대의 특징도 소개합니다",
+   "quote_verified": true,
+   "confidence": "low",
+   "note": "방송 소개문만 확인, 수치 미확인(20대 4명 중 1명 AI 상담 경험 수치는 검색 요약에만 있어 미채택)"
+  },
+  {
+   "id": "FSF32",
+   "topic": "사우나·회복",
+   "claim": "사우나는 휴대폰 사용이 불가능한 공간이라 Z세대의 디지털 디톡스 공간으로 부상",
+   "value": null,
+   "unit": null,
+   "population": "Z세대 사우나 이용 서술",
+   "age_scope": "Z세대",
+   "period": "2026",
+   "source_id": "FSS6",
+   "quote": "사우나는 휴대폰 사용이 불가능한 몇 안 되는 공간으로, 강제적인 디지털 디톡스 효과를 제공한다",
+   "quote_verified": true,
+   "confidence": "medium",
+   "note": "수치 없음. 기사 발행일 미확인"
+  },
+  {
+   "id": "FSF33",
+   "topic": "사우나·회복",
+   "claim": "인천 파라다이스시티 '런 레이브': 5km 러닝 후 사우나·스파·디제잉 결합",
+   "value": 5,
+   "unit": "km",
+   "population": "지난해 말 행사",
+   "age_scope": "Z세대",
+   "period": "지난해 말(기사 기준)",
+   "source_id": "FSS6",
+   "quote": "5km 러닝 후 사우나, 스파, 디제잉 공연을 결합한 형태로 진행됐다",
+   "quote_verified": true,
+   "confidence": "medium",
+   "note": ""
+  },
+  {
+   "id": "FSF34",
+   "topic": "사우나·회복",
+   "claim": "숙박·웰니스 업계가 사우나를 핵심 콘텐츠로 내세우고 예약제·인원 제한 운영",
+   "value": null,
+   "unit": null,
+   "population": "업계 서술",
+   "age_scope": "Z세대",
+   "period": "2026",
+   "source_id": "FSS6",
+   "quote": "사우나를 부대시설이 아닌 핵심 콘텐츠로 내세우며 예약제 운영이나 인원 제한을 통해 가치를 높이고 있다",
+   "quote_verified": true,
+   "confidence": "medium",
+   "note": ""
+  },
+  {
+   "id": "FSF35",
+   "topic": "사우나·회복",
+   "claim": "미국에서 사우나 레이브·콜드 플런지 파티 등 웰니스 기반 모임이 급속 확산",
+   "value": null,
+   "unit": null,
+   "population": "미국",
+   "age_scope": "Z세대",
+   "period": "2026",
+   "source_id": "FSS6",
+   "quote": "사우나와 냉수욕을 결합한 '사우나 레이브', '콜드 플런지 파티' 등 웰니스 기반 모임이 급속히 확산되며",
+   "quote_verified": true,
+   "confidence": "low",
+   "note": "해외 사례 서술, 수치 없음"
+  },
+  {
+   "id": "FSF36",
+   "topic": "웰니스(해외)",
+   "claim": "미국 Z세대 응답자의 61%가 올해 운동·건강 관련 제품 구매에 집중할 계획",
+   "value": 61,
+   "unit": "%",
+   "population": "체인스토어에이지·라이트스피드 커머스 조사, 미국 Z세대",
+   "age_scope": "Z세대",
+   "period": "올해",
+   "source_id": "FSS8",
+   "quote": "Z세대 응답자의 61%가 올해 운동과 건강 관련 제품 구매에 집중할 계획이라고 답했다",
+   "quote_verified": true,
+   "confidence": "medium",
+   "note": "미국 자료"
+  },
+  {
+   "id": "FSF37",
+   "topic": "웰니스(해외)",
+   "claim": "미국 Z세대의 74%는 한 달 주말의 절반 이상을 집에서 보냄(해리스폴 4100명 조사)",
+   "value": 74,
+   "unit": "%",
+   "population": "해리스폴 미국 성인 4100명 중 18~29세",
+   "age_scope": "Z세대",
+   "period": "2026.7 발표",
+   "source_id": "FSS8",
+   "quote": "18~29세 Z세대의 74%는 한 달 주말의 절반 이상을 집에서 보내는 것으로 나타났다",
+   "quote_verified": true,
+   "confidence": "medium",
+   "note": "미국 자료"
+  },
+  {
+   "id": "FSF38",
+   "topic": "웰니스(해외)",
+   "claim": "미국 Z세대의 73%는 술이 중심이 되지 않는 공간이 더 많아지기를 원함",
+   "value": 73,
+   "unit": "%",
+   "population": "해리스폴 미국 성인 4100명 중 Z세대",
+   "age_scope": "Z세대",
+   "period": "2026.7 발표",
+   "source_id": "FSS8",
+   "quote": "73%는 술이 중심이 되지 않는 공간이 더 많아지기를 원했다",
+   "quote_verified": true,
+   "confidence": "medium",
+   "note": "미국 자료"
+  },
+  {
+   "id": "FSF39",
+   "topic": "웰니스(해외)",
+   "claim": "미국 Z세대의 48%가 최근 6개월 안에 비타민을 구매",
+   "value": 48,
+   "unit": "%",
+   "population": "별도 조사, 미국 Z세대",
+   "age_scope": "Z세대",
+   "period": "최근 6개월",
+   "source_id": "FSS8",
+   "quote": "미국 Z세대의 48%가 최근 6개월 안에 비타민을 구매했다고 답했다",
+   "quote_verified": true,
+   "confidence": "medium",
+   "note": "미국 자료. 조사 기관명 미확인"
+  },
+  {
+   "id": "FSF40",
+   "topic": "카드 대응",
+   "claim": "KB국민카드 KB 마라톤카드: 9월 한 달 100만원 이상 이용·응모 고객 중 추첨 20명에게 도쿄 마라톤 2027 참가 자격",
+   "value": 20,
+   "unit": "명",
+   "population": "KB 마라톤카드 마스터카드 고객",
+   "age_scope": "전연령",
+   "period": "2026.9",
+   "source_id": "FSS11",
+   "quote": "100만원 이상 이용하고 이벤트 페이지에서 응모한 고객 중 추첨을 통해 20명에게",
+   "quote_verified": true,
+   "confidence": "high",
+   "note": "카드 이용 실적 조건 + 대회 참가권 결합 구조"
+  },
+  {
+   "id": "FSF41",
+   "topic": "카드 대응",
+   "claim": "마스터카드로 도쿄 마라톤 참가비(230달러)를 결제하면 11달러 상당 짐 보관료 면제",
+   "value": 11,
+   "unit": "달러",
+   "population": "KB 마라톤카드 마스터카드 고객",
+   "age_scope": "전연령",
+   "period": "2026.9",
+   "source_id": "FSS11",
+   "quote": "마스터카드 브랜드의 KB국민카드로 참가비를 결제하면 11달러(USD) 상당의 짐 보관료 면제 혜택도 받을 수 있습니다",
+   "quote_verified": true,
+   "confidence": "high",
+   "note": "대회 공식 결제 파트너 연계"
+  },
+  {
+   "id": "FSF42",
+   "topic": "카드 대응",
+   "claim": "KB 마라톤카드는 러닝앱 러너블 티켓·스토어, 스포츠 업종, OTT, 병원·약국에서 할인",
+   "value": null,
+   "unit": null,
+   "population": "KB 마라톤카드",
+   "age_scope": "전연령",
+   "period": "2026.9",
+   "source_id": "FSS11",
+   "quote": "러닝앱 러너블 티켓·스토어, 스포츠 업종, OTT, 병원·약국 등 다양한 영역에서 할인 혜택을 제공합니다",
+   "quote_verified": true,
+   "confidence": "high",
+   "note": ""
+  },
+  {
+   "id": "FSF43",
+   "topic": "카드 대응",
+   "claim": "NH농협 zgm 러닝카드: 평일 5~9시·17~23시 등 운동 시간대 CU 음료 50% 현장 할인",
+   "value": 50,
+   "unit": "%",
+   "population": "NH농협 zgm 러닝카드",
+   "age_scope": "전연령",
+   "period": "출시 시점(월 미확인)",
+   "source_id": "FSS12",
+   "quote": "주요 운동 시간대 음료 품목을 결제할 경우 50% 현장 할인이 제공됩니다",
+   "quote_verified": true,
+   "confidence": "high",
+   "note": "시간대 조건 혜택. 발행일 미확인"
+  },
+  {
+   "id": "FSF44",
+   "topic": "카드 대응",
+   "claim": "NH농협 zgm 러닝카드는 크림·무신사 등 러닝용품과 피트니스 5% 할인, 모바일 전용 발급 가능",
+   "value": 5,
+   "unit": "%",
+   "population": "NH농협 zgm 러닝카드",
+   "age_scope": "전연령",
+   "period": "출시 시점(월 미확인)",
+   "source_id": "FSS12",
+   "quote": "스포츠용품점과 크림(KREAM), 무신사 등의 러닝용품과 피트니스",
+   "quote_verified": true,
+   "confidence": "medium",
+   "note": "원문 문장은 '러닝용품과 피트니스(종합스포츠센터, 문화센터), CU 편의점 5% 할인'"
+  },
+  {
+   "id": "FSF45",
+   "topic": "카드 대응",
+   "claim": "카카오 러너스 카드(톡디지털카드)는 러닝·마라톤 참가 기록을 통합 인증·관리하고 대회 선등록 기회 제공",
+   "value": null,
+   "unit": null,
+   "population": "카카오·러너블 연동 이용자",
+   "age_scope": "전연령",
+   "period": "2025(월 미확인)",
+   "source_id": "FSS13",
+   "quote": "통합해 공식적으로 인증하고 체계적으로 관리할 수 있는 서비스다",
+   "quote_verified": true,
+   "confidence": "high",
+   "note": "카카오 측 표현 '국내 러닝 인구 천만 시대'"
+  },
+  {
+   "id": "FSF46",
+   "topic": "자기계발 결제",
+   "claim": "토스 집계 1월 자기계발 카테고리 결제금액 전년 동월 대비 약 20% 증가, 결제 건수 11% 증가, 이용자 수 증가 1.9%",
+   "value": 20,
+   "unit": "%",
+   "population": "토스 마이데이터 카드 결제(교육·학원·서점·운동·생활체육)",
+   "age_scope": "전연령",
+   "period": "1월(연도 기사 미표기, 2026 추정)",
+   "source_id": "FSS16",
+   "quote": "결제 금액은 작년 1월과 비교해 20%가량 증가했으며, 같은 기간 결제 건수 역시 11% 늘어났다",
+   "quote_verified": true,
+   "confidence": "medium",
+   "note": "연령 분리 없음. 발행일 미확인"
+  },
+  {
+   "id": "FSF47",
+   "topic": "선결제 위험",
+   "claim": "폐업 관련 선불거래 피해구제 5년 838건, 2021년 37건에서 2024년 264건으로 증가",
+   "value": 264,
+   "unit": "건",
+   "population": "한국소비자원 피해구제(국회 정무위 제출 자료)",
+   "age_scope": "전연령",
+   "period": "2021~2025.7",
+   "source_id": "FSS14",
+   "quote": "2021년 37건에서 2022년 96건, 2023년 133건, 2024년 264건으로 3년 만에 7배 이상 급증",
+   "quote_verified": true,
+   "confidence": "medium",
+   "note": "발행일 미확인(올해 7월까지 104건 병기)"
+  },
+  {
+   "id": "FSF48",
+   "topic": "선결제 위험",
+   "claim": "필라테스 325건(38.8%)·헬스장 291건(34.7%)이 폐업 선불거래 피해의 70% 이상",
+   "value": 38.8,
+   "unit": "%",
+   "population": "한국소비자원 피해구제 838건",
+   "age_scope": "전연령",
+   "period": "2021~2025.7",
+   "source_id": "FSS14",
+   "quote": "필라테스가 325건(38.8%)으로 가장 많았고, 헬스장이 291건(34.7%)으로 두 번째로 많아",
+   "quote_verified": true,
+   "confidence": "medium",
+   "note": ""
+  },
+  {
+   "id": "FSF49",
+   "topic": "선결제 위험",
+   "claim": "피해구제 신청 중 실제 환급은 150건(17.9%)에 불과",
+   "value": 17.9,
+   "unit": "%",
+   "population": "한국소비자원 피해구제 838건",
+   "age_scope": "전연령",
+   "period": "2021~2025.7",
+   "source_id": "FSS14",
+   "quote": "실제 환급으로 이어진 사례는 150건(17.9%)에 불과했고",
+   "quote_verified": true,
+   "confidence": "medium",
+   "note": ""
+  },
+  {
+   "id": "FSF50",
+   "topic": "선결제 위험",
+   "claim": "필라테스 9.9%, 요가 11.5%가 사업자 폐업으로 이용료를 돌려받지 못함",
+   "value": 9.9,
+   "unit": "%",
+   "population": "한국소비자원 실태조사 필라테스 이용자",
+   "age_scope": "전연령",
+   "period": "조사 시점 미확인",
+   "source_id": "FSS15",
+   "quote": "필라테스에서는 9.9%, 요가에서는 11.5%가 사업자 폐업으로 이용료를 돌려받지 못한",
+   "quote_verified": true,
+   "confidence": "medium",
+   "note": "요가 11.5%는 value 외 병기"
+  },
+  {
+   "id": "FSF51",
+   "topic": "선결제 위험",
+   "claim": "공정위 요가·필라테스 표준약관: 폐업 14일 전 통지, 환급은 실제 결제금액 기준, 위약금 10%. 의무는 아님",
+   "value": 10,
+   "unit": "%",
+   "population": "요가·필라테스 업체",
+   "age_scope": "전연령",
+   "period": "2026-07-20",
+   "source_id": "FSS15",
+   "quote": "표준약관은 사업자가 의무적으로 따라야 하는 것은 아니지만",
+   "quote_verified": true,
+   "confidence": "high",
+   "note": "위약금 이용료의 10%"
+  }
+ ],
+ "trend_items": [
+  {
+   "id": "FST1",
+   "title": "사우나·냉욕 등 회복 루틴이 Z세대 모임·여가 공간으로 부상(한국은 정성 서술, 미국 모임 형태가 선행)",
+   "categories": [
+    "여가",
+    "모임"
+   ],
+   "age_scope": "Z세대",
+   "what": "국내 기사는 사우나가 휴대폰 사용이 불가능한 디지털 디톡스 공간으로 Z세대에게 부상하고, 러닝 후 사우나를 결합한 '런 레이브'와 예약제 운영 사례가 나왔다고 전한다. 미국에서는 사우나 레이브·콜드 플런지 파티가 확산 중이라고 서술한다.",
+   "when": "2025 말~2026",
+   "virality": {
+    "channel": "SNS·오프라인",
+    "evidence": "SNS 재조명으로 동네 사우나가 레트로 핫플이 됐다는 서술. 정량 지표 없음.",
+    "metric": null
+   },
+   "durability": "불명",
+   "fact_ids": [
+    "FSF32",
+    "FSF33",
+    "FSF34",
+    "FSF35"
+   ],
+   "card_relevance": "해석: 예약제 사우나·러닝 후 회복 패키지는 선결제·시간대 한정 결제 구조와 닿는다.",
+   "phase": "초기",
+   "signal_type": "관측",
+   "phase_basis": "근거: 수치 없이 사례와 서술만 있고 해외 선행 사례가 병기됨. 확산 단계 단정 불가, 초기로 분류"
+  },
+  {
+   "id": "FST2",
+   "title": "인라인스케이트·스도쿠 등 아날로그 취미가 2030에서 SNS를 타고 재유행",
+   "categories": [
+    "여가",
+    "콘텐츠"
+   ],
+   "age_scope": "MZ",
+   "what": "여의도공원 인라인스케이트 대여소에 2030이 몰리고 관련 게시물 조회수가 78만~100만 회라고 한다. 스도쿠도 X(트위터)에서 인증 게시물이 이어진다.",
+   "when": "2026 여름~가을(발행일 미확인)",
+   "virality": {
+    "channel": "SNS",
+    "evidence": "관련 게시물 조회수 78만~100만 회, 1시간 4000원 대여",
+    "metric": "78만~100만 회"
+   },
+   "durability": "불명",
+   "fact_ids": [
+    "FSF28",
+    "FSF26",
+    "FSF27"
+   ],
+   "card_relevance": "해석: 장비 대여·클래스 등 소액·즉흥 결제가 중심이라 카드보다 간편결제·체크 영역에 가깝다.",
+   "phase": "초기",
+   "signal_type": "관측",
+   "phase_basis": "근거: 특정 공원 한 곳의 사례이고 게시물 조회수 외 거래 지표 없음"
+  },
+  {
+   "id": "FST3",
+   "title": "디지털·AI가 늘수록 아날로그가 필요하다는 인식(20대 68%가 옛 방식이 새롭다고 응답)",
+   "categories": [
+    "여가",
+    "콘텐츠"
+   ],
+   "age_scope": "20대",
+   "what": "트렌드모니터 조사에서 69.9%가 디지털 기기 사용이 늘수록 아날로그 활동이 더 필요하다고 답했고, 20대는 옛 방식이 새롭고 매력적이라는 응답이 가장 높았다.",
+   "when": "3월 조사(연도 기사 미표기)",
+   "virality": {
+    "channel": "뉴스",
+    "evidence": "서베이 응답 비율",
+    "metric": "69.9%·68%"
+   },
+   "durability": "불명",
+   "fact_ids": [
+    "FSF26",
+    "FSF27"
+   ],
+   "card_relevance": "해석: 오프라인 체험·클래스형 소비의 태도 근거.",
+   "phase": "확산",
+   "signal_type": "관측",
+   "phase_basis": "근거: 태도 조사 수치일 뿐 행동(구매·참여) 증가율이 아님. 20대 수치는 전체 중 하위집단 값"
+  },
+  {
+   "id": "FST4",
+   "title": "챗GPT가 상반기 신규 설치 1위, 대화형 AI를 매일 쓰는 비율 36.9%, AI를 감정 관리 도구로 사용",
+   "categories": [
+    "디지털"
+   ],
+   "age_scope": "MZ",
+   "what": "국내 상반기 모바일 앱 신규 설치 1위가 챗GPT(534만 건)이고 인스타그램(505만 건)을 앞섰다. Z세대 트렌드 2026은 AI를 감정 관리 도구로 쓰는 특징을 소개한다.",
+   "when": "2026 상반기",
+   "virality": {
+    "channel": "앱 지표",
+    "evidence": "신규 설치 건수, 일상 사용률",
+    "metric": "534만 건 / 36.9%"
+   },
+   "durability": "지속 추세",
+   "fact_ids": [
+    "FSF29",
+    "FSF30",
+    "FSF31"
+   ],
+   "card_relevance": "해석: AI 구독·서비스 결제와 맞닿지만 wide.json과 중복되는 현재 유행 영역.",
+   "phase": "확산",
+   "signal_type": "관측",
+   "phase_basis": "근거: 신규 설치 1위·매일 사용률 3분의 1 이상으로 일상화 단계. 포화 여부는 자료 없음"
+  },
+  {
+   "id": "FST5",
+   "title": "팝업스토어 상반기 2130건(+44.9%), 패션·뷰티 비중 감소와 IP·팬덤 팝업 증가",
+   "categories": [
+    "소비",
+    "콘텐츠"
+   ],
+   "age_scope": "전연령",
+   "what": "스위트스팟 집계에서 2026 상반기 오픈 팝업이 전년 동기 대비 44.9% 늘었고 IP·엔터 등 팬덤 기반 팝업이 증가했다.",
+   "when": "2026 상반기",
+   "virality": {
+    "channel": "오프라인",
+    "evidence": "월별 오픈 팝업 건수",
+    "metric": "2130건, +44.9%"
+   },
+   "durability": "지속 추세",
+   "fact_ids": [
+    "FSF20",
+    "FSF22"
+   ],
+   "card_relevance": "해석: 팝업 사전예약·굿즈 결제를 카드 혜택 대상으로 삼을 여지.",
+   "phase": "확산",
+   "signal_type": "관측",
+   "phase_basis": "근거: 건수가 전년 대비 크게 증가하는 중. 포화 신호는 단기화 비중 증가가 유일"
+  },
+  {
+   "id": "FST6",
+   "title": "문구·도서·음반 팝업이 비중 5% 미만이지만 전년 대비 352.9% 증가",
+   "categories": [
+    "콘텐츠",
+    "소비"
+   ],
+   "age_scope": "전연령",
+   "what": "팝업 시장에서 문구·도서·음반 카테고리가 가장 가파른 성장세를 보였다.",
+   "when": "2026 상반기",
+   "virality": {
+    "channel": "오프라인",
+    "evidence": "카테고리별 팝업 오픈 건수 증감",
+    "metric": "+352.9%"
+   },
+   "durability": "불명",
+   "fact_ids": [
+    "FSF21"
+   ],
+   "card_relevance": "해석: 소액 굿즈·도서 결제는 문화 업종 혜택과 연결 가능.",
+   "phase": "초기",
+   "signal_type": "관측",
+   "phase_basis": "근거: 비중이 5% 미만의 작은 기저에서 나온 증가율"
+  },
+  {
+   "id": "FST7",
+   "title": "팝업 상권이 성수에서 서울 전역으로 분산(성동구 비중 34.9%에서 26%)하나 성수 평당 매출은 강남의 최대 4배",
+   "categories": [
+    "소비"
+   ],
+   "age_scope": "전연령",
+   "what": "성동구 비중이 줄고 용산·송파·마포·중구 비중이 커졌으며, 성수 팝업 평당 매출은 같은 브랜드 기준 강남의 최대 4배다.",
+   "when": "2026 상반기",
+   "virality": {
+    "channel": "오프라인",
+    "evidence": "상권별 비중, 평당 매출",
+    "metric": "34.9%→26%, 최대 4배"
+   },
+   "durability": "불명",
+   "fact_ids": [
+    "FSF23",
+    "FSF24"
+   ],
+   "card_relevance": "해석: 지역·상권 제휴 혜택의 근거.",
+   "phase": "확산",
+   "signal_type": "관측",
+   "phase_basis": "근거: 상권 이동이 진행 중이라는 비중 변화"
+  },
+  {
+   "id": "FST8",
+   "title": "팝업 운영 기간 단기화(7일 이내 비중 3년 연속 증가)와 금~일 3일 운영 증가",
+   "categories": [
+    "소비"
+   ],
+   "age_scope": "전연령",
+   "what": "브랜드가 짧은 기간에 화제성을 집중시키는 단기 팝업을 선호한다.",
+   "when": "2024~2026",
+   "virality": {
+    "channel": "오프라인",
+    "evidence": "7일 이내 팝업 비중",
+    "metric": "3년 연속 큰 폭 증가"
+   },
+   "durability": "지속 추세",
+   "fact_ids": [
+    "FSF25"
+   ],
+   "card_relevance": "해석: 단기 사전예약·한정 결제 프로모션의 주기 설계 근거.",
+   "phase": "확산",
+   "signal_type": "관측",
+   "phase_basis": "근거: 3년 연속 증가"
+  },
+  {
+   "id": "FST9",
+   "title": "디저트 유행 반감기가 크로플 163일에서 두쫀쿠 17일로 단축, 두쫀쿠는 49일 만에 주기 종료",
+   "categories": [
+    "소비"
+   ],
+   "age_scope": "전연령",
+   "what": "검색량이 정점에서 절반으로 떨어지는 기간이 163일, 54일, 13일, 17일로 짧아졌고 두쫀쿠는 49일 만에 30% 이하로 내려갔다.",
+   "when": "2020~2026.2",
+   "virality": {
+    "channel": "검색량",
+    "evidence": "네이버 데이터랩 검색어 기반",
+    "metric": "163일→17일, 49일"
+   },
+   "durability": "한시 유행",
+   "fact_ids": [
+    "FSF13",
+    "FSF14",
+    "FSF15"
+   ],
+   "card_relevance": "해석: 특정 유행에 고정한 혜택은 수명이 짧아 구조적으로 불리하다.",
+   "phase": "포화",
+   "signal_type": "관측",
+   "phase_basis": "근거: 검색 정점 후 반감기·종료 시점이 확인된 사례(두쫀쿠 이미 하락)"
+  },
+  {
+   "id": "FST10",
+   "title": "유행 상품 기획-출시가 3개월에서 약 한 달로 단축됐지만 출시가 유행 후반과 겹침",
+   "categories": [
+    "소비"
+   ],
+   "age_scope": "전연령",
+   "what": "유통업계가 파생 제품 개발 체계를 만들고 대형 유통이 저가 유사품을 내놓자 개인 매장 열풍이 식었다.",
+   "when": "2026.1~3",
+   "virality": {
+    "channel": "유통",
+    "evidence": "업계 관계자 인용, 기사 서술",
+    "metric": "3개월→약 1개월"
+   },
+   "durability": "한시 유행",
+   "fact_ids": [
+    "FSF16",
+    "FSF19",
+    "FSF17",
+    "FSF18"
+   ],
+   "card_relevance": "해석: 편의점·배달앱은 유행의 후행 채널이라 카드 프로모션은 선행 채널(팝업·숏폼)에 맞춰야 한다.",
+   "phase": "포화",
+   "signal_type": "관측",
+   "phase_basis": "근거: 편의점 대량 생산 단계에 이미 도달한 뒤 하락"
+  },
+  {
+   "id": "FST11",
+   "title": "러닝·마라톤 특화 카드가 잇따라 출시(KB 마라톤카드, NH zgm 러닝카드, 카카오 러너스 카드)",
+   "categories": [
+    "금융",
+    "여가"
+   ],
+   "age_scope": "전연령",
+   "what": "KB는 마라톤카드 실적 고객 추첨으로 도쿄 마라톤 2027 참가권을, NH는 운동 시간대 CU 음료 50% 할인을, 카카오는 대회 참가 기록 인증 디지털카드를 내놨다.",
+   "when": "2025~2026.9",
+   "virality": {
+    "channel": "뉴스",
+    "evidence": "카드사 신상품·이벤트 보도",
+    "metric": "KB 추첨 20명, NH 50% 할인"
+   },
+   "durability": "지속 추세",
+   "fact_ids": [
+    "FSF40",
+    "FSF41",
+    "FSF42",
+    "FSF43",
+    "FSF44",
+    "FSF45"
+   ],
+   "card_relevance": "해석: 발급 연령층이 불명이라 Z세대 카드로 단정할 수 없다. 대회 참가비 결제와 실적 조건을 결합한 구조.",
+   "phase": "포화",
+   "signal_type": "카드업계 대응",
+   "phase_basis": "근거: 3개 사업자가 같은 소재로 출시, 후발 차별화가 필요한 단계로 판단(해석)"
+  },
+  {
+   "id": "FST12",
+   "title": "자기계발 관련 카드 결제금액이 1월 전년 대비 약 20% 증가, 이용자 수 증가는 1.9%",
+   "categories": [
+    "금융",
+    "교육"
+   ],
+   "age_scope": "전연령",
+   "what": "토스 집계에서 교육·학원·서점·운동·생활체육 결제금액이 늘고 1인당 지출이 커졌다.",
+   "when": "1월(연도 기사 미표기)",
+   "virality": {
+    "channel": "결제 데이터",
+    "evidence": "카드 결제금액·건수 전년 동월 비교",
+    "metric": "+20% / +11% / 이용자 +1.9%"
+   },
+   "durability": "불명",
+   "fact_ids": [
+    "FSF46"
+   ],
+   "card_relevance": "해석: 소비 강도 증가는 카드 혜택 적립형보다 정액형 업종 혜택에 가깝다.",
+   "phase": "확산",
+   "signal_type": "결제 지표",
+   "phase_basis": "근거: 연초 시즌성과 구분되지 않음. 연령 분리 없음"
+  },
+  {
+   "id": "FST13",
+   "title": "요가·필라테스·헬스장 장기 선결제 폐업 피해 증가(2021년 37건에서 2024년 264건)",
+   "categories": [
+    "금융",
+    "여가"
+   ],
+   "age_scope": "전연령",
+   "what": "폐업 관련 선불거래 피해구제가 증가하고 환급은 17.9%에 그쳤으며 공정위가 2026-07-20 표준약관을 제정했다.",
+   "when": "2021~2026.7",
+   "virality": {
+    "channel": "뉴스",
+    "evidence": "소비자원 피해구제 건수",
+    "metric": "264건(2024)"
+   },
+   "durability": "불명",
+   "fact_ids": [
+    "FSF47",
+    "FSF48",
+    "FSF49",
+    "FSF50",
+    "FSF51"
+   ],
+   "card_relevance": "해석: 클래스·회원권 선결제를 카드 할부(항변권)와 연계해 안전장치로 삼는 상품 구조 아이디어의 배경.",
+   "phase": "확산",
+   "signal_type": "결제 리스크",
+   "phase_basis": "근거: 피해가 증가하는 중이며 표준약관은 권고 수준"
+  },
+  {
+   "id": "FST14",
+   "title": "스크롤 중 본 콘텐츠를 바로 구매하는 '스크롤픽'(KT 2026 Y트렌드북 키워드)",
+   "categories": [
+    "소비",
+    "디지털"
+   ],
+   "age_scope": "Z세대",
+   "what": "대학생 100명이 약 3개월 연구해 선정한 5대 키워드 중 하나.",
+   "when": "2026.8 발표",
+   "virality": {
+    "channel": "숏폼·SNS",
+    "evidence": "트렌드북 키워드 선정",
+    "metric": "수치 없음"
+   },
+   "durability": "불명",
+   "fact_ids": [
+    "FSF9"
+   ],
+   "card_relevance": "해석: 즉시 결제 흐름(원터치)이 중요한 접점.",
+   "phase": "불명",
+   "signal_type": "전망 키워드",
+   "phase_basis": "근거: 서베이가 아닌 대학생 서포터즈 발굴 키워드이며 정량 근거 없음"
+  },
+  {
+   "id": "FST15",
+   "title": "밸런쉼·네트왓킹·트라이에이터: 회복, 경험 중심 관계, AI 창작 키워드(KT Y트렌드)",
+   "categories": [
+    "여가",
+    "모임",
+    "디지털"
+   ],
+   "age_scope": "Z세대",
+   "what": "적극적 회복, '무엇'을 함께 경험하며 관계 확장, AI로 누구나 창작에 도전이라는 키워드.",
+   "when": "2026.8 발표",
+   "virality": {
+    "channel": "뉴스",
+    "evidence": "트렌드북 키워드",
+    "metric": "수치 없음"
+   },
+   "durability": "불명",
+   "fact_ids": [
+    "FSF10",
+    "FSF11",
+    "FSF12"
+   ],
+   "card_relevance": "해석: 회복·모임·창작 소비의 방향성 단서.",
+   "phase": "불명",
+   "signal_type": "전망 키워드",
+   "phase_basis": "근거: 정량 근거 없는 키워드"
+  },
+  {
+   "id": "FST16",
+   "title": "트렌드 코리아 2027: 권태사회·라이프 ROI·저장인류 등 심리 중심 키워드",
+   "categories": [
+    "소비",
+    "디지털"
+   ],
+   "age_scope": "전연령",
+   "what": "쇼츠·SNS 자극 과잉 속 '바쁜 권태', 삶 전 영역의 ROI 판단, 일단 저장하는 저장인류.",
+   "when": "2026.10 출간",
+   "virality": {
+    "channel": "출간물",
+    "evidence": "슬로건 알파쉽, 10대 키워드",
+    "metric": "수치 없음"
+   },
+   "durability": "불명",
+   "fact_ids": [
+    "FSF1",
+    "FSF2",
+    "FSF7",
+    "FSF5"
+   ],
+   "card_relevance": "해석: 지출 정당화 요구 증가는 혜택의 명확한 환산(가성비) 요구와 연결.",
+   "phase": "불명",
+   "signal_type": "전망 키워드",
+   "phase_basis": "근거: 전망서의 진단이며 관측 수치 없음"
+  },
+  {
+   "id": "FST17",
+   "title": "트렌드 코리아 2027: 해봄경제·안목자본·폼팩터 시프트 등 AI 이후 키워드",
+   "categories": [
+    "디지털",
+    "소비"
+   ],
+   "age_scope": "전연령",
+   "what": "AI 도구로 일단 해보는 경제, 취향을 알아보는 눈이 자본이 된다는 안목자본, 제품 형태의 변화.",
+   "when": "2026.10 출간",
+   "virality": {
+    "channel": "출간물",
+    "evidence": "키워드 정의",
+    "metric": "수치 없음"
+   },
+   "durability": "불명",
+   "fact_ids": [
+    "FSF3",
+    "FSF4",
+    "FSF6"
+   ],
+   "card_relevance": "해석: 큐레이션·취향 기반 소비의 혜택 설계 단서.",
+   "phase": "불명",
+   "signal_type": "전망 키워드",
+   "phase_basis": "근거: 전망서의 개념이며 관측 수치 없음"
+  },
+  {
+   "id": "FST18",
+   "title": "미국 Z세대는 술 없는 사교 공간을 원하고(73%) 건강·웰니스 지출에 집중(61%) — 해외 선행 신호",
+   "categories": [
+    "여가",
+    "모임"
+   ],
+   "age_scope": "Z세대",
+   "what": "해리스폴·체인스토어에이지 조사에서 미국 Z세대가 집 체류가 많고 술 중심이 아닌 공간을 원하며 건강 제품 구매에 집중한다.",
+   "when": "2026",
+   "virality": {
+    "channel": "서베이",
+    "evidence": "미국 조사 인용",
+    "metric": "73% / 61% / 74%"
+   },
+   "durability": "불명",
+   "fact_ids": [
+    "FSF36",
+    "FSF37",
+    "FSF38",
+    "FSF39"
+   ],
+   "card_relevance": "해석: 한국 유입 여부는 미확인. 해외 선행 신호로만 취급.",
+   "phase": "불명",
+   "signal_type": "관측",
+   "phase_basis": "근거: 미국 자료만 있고 한국 동일 지표는 찾지 못함"
+  }
+ ],
+ "predictions": [
+  {
+   "id": "FSP1",
+   "prediction": "predict: 러닝 다음으로 '회복·사우나 결합 모임'(러닝 후 사우나, 술 없는 사교)이 젊은층 여가 유행 후보가 된다",
+   "based_on_trend_item_ids": [
+    "FST1",
+    "FST18",
+    "FST15",
+    "FST3"
+   ],
+   "leading_indicators": [
+    "국내 기사에서 사우나가 디지털 디톡스 공간으로 부상(수치 없음)",
+    "러닝 후 사우나를 결합한 행사 사례",
+    "미국 Z세대 73%가 술 없는 공간 선호, 미국 사우나 레이브 확산",
+    "KT 밸런쉼(적극적 회복) 키워드"
+   ],
+   "expected_window": "향후 6~12개월",
+   "confidence": "낮음",
+   "falsifier": "국내 사우나·스파 예약 건수나 검색량이 같은 기간 증가하지 않거나, 20대 방문 비중 데이터가 반대 방향이면 틀린 것",
+   "card_link_ideas": [
+    "해석: 러닝 대회 참가와 사우나·스파 이용을 묶는 회복 번들 혜택",
+    "해석: 예약제 웰니스 시설 선결제를 할부 안전장치와 결합한 구조"
+   ]
+  },
+  {
+   "id": "FSP2",
+   "prediction": "predict: 팬덤·IP 팝업이 문구·도서·음반 등 소액 굿즈로 넓어지고 상권이 성수 밖으로 분산된다",
+   "based_on_trend_item_ids": [
+    "FST5",
+    "FST6",
+    "FST7",
+    "FST8"
+   ],
+   "leading_indicators": [
+    "팝업 +44.9%, IP·팬덤 팝업 증가",
+    "문구·도서·음반 +352.9%(작은 기저)",
+    "성동구 비중 34.9%에서 26%",
+    "7일 이내 단기 팝업 비중 3년 연속 증가"
+   ],
+   "expected_window": "향후 6개월 내외",
+   "confidence": "중간",
+   "falsifier": "2026 하반기 리포트에서 팝업 건수가 전년 대비 감소하거나 문구·도서·음반 증가세가 꺾이면 틀린 것",
+   "card_link_ideas": [
+    "해석: 팝업 사전예약 결제·굿즈 구매에 정액 환급을 주는 팬덤형 혜택",
+    "해석: 팝업 지역 확산에 맞춘 상권별 제휴(용산·송파·마포)"
+   ]
+  },
+  {
+   "id": "FSP3",
+   "prediction": "predict: 러닝 연계 카드는 '해외 대회 출전권·참가비 결제 파트너십' 경쟁으로 이동한다",
+   "based_on_trend_item_ids": [
+    "FST11",
+    "FST12"
+   ],
+   "leading_indicators": [
+    "KB가 마스터카드와 도쿄 마라톤 2027 참가권을 추첨 제공",
+    "카카오가 대회 선등록 기회와 기록 인증을 제공",
+    "NH는 운동 시간대 한정 혜택",
+    "자기계발 결제금액 +20%"
+   ],
+   "expected_window": "향후 6~12개월",
+   "confidence": "중간",
+   "falsifier": "다음 반기에도 신규 러닝 카드가 대회 참가권보다 단순 할인 위주로만 출시되면 약함",
+   "card_link_ideas": [
+    "해석: 대회 참가비를 결제하면 다음 대회 선등록권을 얻는 시즌권 구조",
+    "해석: 기록 인증(디지털카드)과 등급 혜택 연동"
+   ]
+  },
+  {
+   "id": "FSP4",
+   "prediction": "predict: 인라인·스도쿠 같은 레트로 아날로그 활동이 '대여·클래스' 형태의 소액 체험 소비로 퍼진다",
+   "based_on_trend_item_ids": [
+    "FST2",
+    "FST3",
+    "FST4"
+   ],
+   "leading_indicators": [
+    "인라인 게시물 조회수 78만~100만 회",
+    "옛 방식이 새롭다는 20대 응답 68%",
+    "AI 일상화(챗GPT 신규 설치 1위)와 아날로그 필요 응답 69.9% 병존"
+   ],
+   "expected_window": "향후 3~6개월",
+   "confidence": "낮음",
+   "falsifier": "인라인·스도쿠 관련 검색량이 여름 이후 급감하거나 대여소 이용 증가 자료가 없으면 틀린 것",
+   "card_link_ideas": [
+    "해석: 소액 체험은 체크카드·간편결제 혜택이 맞고 신용카드 연계는 약함"
+   ]
+  },
+  {
+   "id": "FSP5",
+   "prediction": "predict: 유행 단기화가 이어져 특정 유행 고정 혜택보다 '제철 교체형' 혜택 구조가 유리하다",
+   "based_on_trend_item_ids": [
+    "FST9",
+    "FST10",
+    "FST8",
+    "FST5"
+   ],
+   "leading_indicators": [
+    "반감기 163일, 54일, 13일, 17일",
+    "두쫀쿠 49일 만에 주기 종료",
+    "캐릿 F&B 평균 22일",
+    "기획-출시 3개월에서 약 1개월",
+    "7일 이내 팝업 비중 3년 연속 증가"
+   ],
+   "expected_window": "향후 12개월 이상",
+   "confidence": "높음",
+   "falsifier": "2026 하반기~2027 상반기에 새 유행의 반감기가 60일 이상으로 길어지면 틀린 것",
+   "card_link_ideas": [
+    "해석: 월 단위로 혜택 업종 슬롯을 바꾸는 제철 선택형 구조",
+    "해석: 유행 후행 채널이 아닌 팝업·숏폼 선행 채널 우선 제휴"
+   ]
+  },
+  {
+   "id": "FSP6",
+   "prediction": "predict: AI 일상화 뒤 '사람 손·안목' 소비(큐레이션, 아날로그 체험)가 구독·클래스로 상품화된다",
+   "based_on_trend_item_ids": [
+    "FST17",
+    "FST4",
+    "FST3"
+   ],
+   "leading_indicators": [
+    "트렌드 코리아 2027 안목자본·휴먼엣지",
+    "챗GPT 신규 설치 1위",
+    "아날로그 필요 응답 69.9%"
+   ],
+   "expected_window": "향후 12개월",
+   "confidence": "낮음",
+   "falsifier": "안목·큐레이션 관련 신규 구독 서비스 증가나 이용 지표가 관측되지 않으면 틀린 것",
+   "card_link_ideas": [
+    "해석: 큐레이션 구독·클래스 정기결제 혜택"
+   ]
+  },
+  {
+   "id": "FSP7",
+   "prediction": "predict: 클래스·회원권 선결제 수요가 늘수록 '환불 안전 결제' 요구가 커진다",
+   "based_on_trend_item_ids": [
+    "FST13",
+    "FST12",
+    "FST1"
+   ],
+   "leading_indicators": [
+    "폐업 선불거래 피해구제 2021년 37건에서 2024년 264건",
+    "환급 17.9%",
+    "공정위 표준약관 2026-07-20(권고)",
+    "자기계발 결제금액 +20%"
+   ],
+   "expected_window": "향후 6~12개월",
+   "confidence": "중간",
+   "falsifier": "선불거래 피해구제 건수가 감소하거나 보증보험 의무화로 피해가 줄면 약해짐",
+   "card_link_ideas": [
+    "해석: 장기 클래스 결제에 할부 항변권 안내와 업체 폐업 보호 장치를 결합한 카드 상품",
+    "해석: 회원권 결제 이력 기반 폐업 위험 업체 알림"
+   ]
+  },
+  {
+   "id": "FSP8",
+   "prediction": "predict: 스크롤픽(숏폼 즉시구매) 확산에 맞춘 원터치 결제·간편결제 혜택이 쟁점이 된다",
+   "based_on_trend_item_ids": [
+    "FST14",
+    "FST9"
+   ],
+   "leading_indicators": [
+    "KT Y트렌드 스크롤픽 키워드",
+    "유행 반감기 단축으로 구매 결정 시점이 짧아짐"
+   ],
+   "expected_window": "향후 6~12개월",
+   "confidence": "낮음",
+   "falsifier": "숏폼 연계 커머스 결제 비중 지표가 나오지 않거나 증가하지 않으면 틀린 것",
+   "card_link_ideas": [
+    "해석: 숏폼 앱 결제 시 즉시 적용되는 한정 시간 혜택"
+   ]
+  }
+ ],
+ "gaps": [
+  "트렌드 코리아 2027은 10개 키워드를 언론 요약으로만 확인했다. 책 본문의 근거 수치는 미확인(원문 확인 불가).",
+  "대학내일20대연구소 Z세대 트렌드 2026 본문, 캐릿 2026 하반기 키워드 전체, 오픈서베이, 나스미디어는 찾지 못함(검색 한도 소진 포함). 카드사(신한·현대·삼성·KB국민·BC·롯데)의 2027 소비 트렌드 전망은 찾지 못함.",
+  "해외 틱톡·인스타 → 국내 팝업 → 편의점/배달앱 → 리셀의 단계별 시차(개월)를 직접 다룬 자료는 찾지 못함. 두쫀쿠 한 건에 대해서만 국내 타임라인(캐릿 첫 소개 2025-12-19, 검색 30% 초과 12-27, 정점 1-13, 종료 2-13)을 확인했고 해외 시작 시점은 viral.json 에서 다룸.",
+  "러닝 외 새 스포츠·클래스(피클볼·하이록스·클라이밍 등)의 증가율 수치는 검색 한도로 확인하지 못함. 사우나·인라인 기사는 발행일을 확인하지 못해 published를 연도 수준으로만 기록.",
+  "한국 청년층의 사우나·회복 소비 증가를 보여주는 결제·예약 지표 없음. 웰니스·술 없는 사교 수치는 미국 자료.",
+  "러닝 카드 3종의 발급 연령 분포와 발급 수치는 찾지 못함.",
+  "캐릿 지속 기간 글의 취미·헬스케어·굿즈·캐릿 구간 수치는 멤버십 가림으로 미확인.",
+  "팝업 사전예약·리셀 플랫폼 결제·공동구매 방식 변화와 이에 대한 카드·페이 대응 사례는 찾지 못함(viral.json 의 카드 사례 참조)."
+ ]
+}

@@ -3,15 +3,110 @@
   "$id": "card-studio/agents/trend/in.schema.json",
   "title": "trend payload",
   "type": "object",
-  "required": ["purpose", "target"],
+  "required": [
+    "purpose",
+    "target"
+  ],
   "additionalProperties": false,
   "properties": {
-    "purpose": {"enum": ["signals", "evidence_pack", "conversation"], "description": "signals: E2E·시장조사, evidence_pack: 디자인·마케팅 근거 보강, conversation: 단독 대화"},
-    "target": {"type": "string", "description": "타깃 세그먼트 설명. 예: 2030 투자 입문자"},
-    "topics_hint": {"type": "array", "items": {"enum": ["invest", "benefit", "digital", "group", "promo", "regulation", "etc"]}},
-    "signal_count": {"type": "integer", "minimum": 4, "maximum": 6, "default": 5},
-    "research_topics": {"type": "array", "maxItems": 3, "items": {"type": "string"}, "description": "evidence_pack일 때 필수(코드 검사). design_marketing.needs_research에서 옴"},
-    "known_doc_ids": {"type": "array", "items": {"type": "string"}, "description": "앞 턴 문서 메모리"},
-    "max_queries": {"type": "integer", "minimum": 1, "maximum": 8, "default": 5}
+    "purpose": {
+      "enum": [
+        "signals",
+        "evidence_pack",
+        "conversation"
+      ],
+      "description": "signals: E2E·시장조사, evidence_pack: 디자인·마케팅 근거 보강, conversation: 단독 대화"
+    },
+    "target": {
+      "type": "string",
+      "description": "타깃 세그먼트 설명. 예: 2030 투자 입문자"
+    },
+    "topics_hint": {
+      "type": "array",
+      "items": {
+        "enum": [
+          "invest",
+          "benefit",
+          "digital",
+          "group",
+          "promo",
+          "regulation",
+          "etc"
+        ]
+      }
+    },
+    "signal_count": {
+      "type": "integer",
+      "minimum": 4,
+      "maximum": 6,
+      "default": 5
+    },
+    "research_topics": {
+      "type": "array",
+      "maxItems": 3,
+      "items": {
+        "type": "string"
+      },
+      "description": "evidence_pack일 때 필수(코드 검사). design_marketing.needs_research에서 옴"
+    },
+    "known_doc_ids": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "앞 턴 문서 메모리"
+    },
+    "max_queries": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 8,
+      "default": 5
+    },
+    "docs": {
+      "type": "array",
+      "description": "근거 팩 모드: 검색 대신 코드가 골라 준 출처 문서. 이 문서의 사실만 근거로 쓴다",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "title",
+          "url",
+          "facts"
+        ],
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "title": {
+            "type": "string"
+          },
+          "url": {
+            "type": "string"
+          },
+          "published": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "reliability": {
+            "type": "number"
+          },
+          "tier": {
+            "type": "string"
+          },
+          "facts": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "pack_mode": {
+      "type": "boolean",
+      "description": "true면 web_search 를 쓰지 않고 docs 만 근거로 쓴다"
+    }
   }
 }

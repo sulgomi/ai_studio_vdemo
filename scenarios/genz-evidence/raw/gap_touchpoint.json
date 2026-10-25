@@ -1,0 +1,553 @@
+{
+ "angle": "touchpoint",
+ "search_available": false,
+ "candidates": [
+  {
+   "id": "TPC1",
+   "title": "결제수단 선택 직전(페이 앱 결제창)에 카드 혜택·쿠폰·포인트 중 가장 큰 쪽을 건별로 비교해 안내/자동 선택하는 구조가 없다",
+   "gap_type": "touchpoint",
+   "unmet_need": "20대는 간편결제 주 지급수단으로 카드를 쓰고(90.6%) 결제 경험자는 평균 3.9개 수단을 쓰지만, 결제 순간 어떤 카드·쿠폰·포인트 조합이 유리한지 알려주는 카드 쪽 장치는 DB에서 확인되지 않는다. 해석: 쇼핑몰별 최저가·혜택 비교를 AI에 기대하는 비중(46.2%)은 비교 수요가 크다는 신호이나, 카드 결제창 안의 비교 수요를 직접 묻는 근거는 없다.",
+   "genz_basis": [
+    {
+     "fact_id": "STF12",
+     "says": "20대 간편결제 주 지급수단의 90.6%가 카드",
+     "age_scope": "20대",
+     "weight": "핵심"
+    },
+    {
+     "fact_id": "MHF16",
+     "says": "결제 경험자 1인 평균 3.9개 결제수단, 간편결제 이용률 89.3%",
+     "age_scope": "전연령",
+     "weight": "핵심"
+    },
+    {
+     "fact_id": "MHF34",
+     "says": "온라인 쇼핑에서 AI가 도움 된 상황으로 쇼핑몰별 최저가·혜택 비교 46.2%",
+     "age_scope": "전연령",
+     "weight": "보조"
+    },
+    {
+     "fact_id": "TRF15",
+     "says": "대학생이 페이 앱 굿딜로 신용카드 못지않은 혜택을 받는다고 말한 사례(low)",
+     "age_scope": "대학생 1인 사례",
+     "weight": "보조"
+    }
+   ],
+   "existing_check": {
+    "db_cards_compared": [
+     "카카오뱅크 K-패스 프렌즈 체크",
+     "NEED Pay",
+     "삼성 iD SELECT ON",
+     "토스 삼성카드",
+     "디지로카 London"
+    ],
+    "similar": [
+     {
+      "card": "카카오뱅크 K-패스 프렌즈 체크",
+      "how_similar": "auto_best 태그: 주중/주말 이용 구간별 캐시백 자동 적용",
+      "difference": "카드 내부 규칙 자동화일 뿐 앱 쿠폰·포인트와 비교하지 않음"
+     },
+     {
+      "card": "NEED Pay",
+      "how_similar": "간편결제 KB Pay 15%/네이버·카카오·토스페이 10% 택1, 월 1회 변경",
+      "difference": "월 단위 수동 선택이며 건별 비교·쿠폰 고려 없음"
+     },
+     {
+      "card": "삼성 iD SELECT ON",
+      "how_similar": "발급 후 매월 선택 변경",
+      "difference": "월 단위 선택, 결제 시점 안내 없음"
+     }
+    ],
+    "web_checked": [
+     "웹 검색 예산 소진으로 DB 밖 카드 확인 못 함(DB 판정)"
+    ],
+    "verdict": "partial",
+    "note": "자동 선택은 카드 내부 혜택(주중/주말)에 한정. 앱 쿠폰·포인트까지 아우르는 결제창 비교는 DB에서 발견 못 함."
+   },
+   "mechanism_tags": [
+    "auto_best",
+    "ai_personalize"
+   ],
+   "need_key": "saving",
+   "domain_key": "online",
+   "strength": "중",
+   "strength_reason": "20대 특정 근거는 STF12 하나와 사례 1건이고, 나머지는 전연령. 결제창 비교 수요 자체는 해석.",
+   "counter_evidence": "네이버페이 선택 이유가 이미 포인트·할인(MHF18)이라 페이 앱이 스스로 최적화할 수 있어 카드사가 끼어들 여지가 작을 수 있음. 페이사 결제창 제어권은 카드사에 없음.",
+   "risks": [
+    "결제창 제어권은 페이사에 있어 제휴 필수",
+    "혜택 비교 안내의 표시·광고 규제 부담(가정)",
+    "CSF5: 카드 이용에서 소비 통제 64.4%가 혜택 설계 19.2%보다 높아 혜택 극대화만으로는 약할 수 있음"
+   ],
+   "invest_related": false,
+   "cvp_seed": {
+    "target": "페이 앱으로 온라인 결제가 잦은 20대",
+    "offer": "페이 앱 결제 직전 카드 혜택·쿠폰·포인트 중 유리한 조합을 건별 안내하고 선택",
+    "key_benefit": "결제 순간 혜택을 놓치지 않음",
+    "alternative": "NEED Pay(월 1회 택1), 삼성 iD SELECT ON, 페이 앱 자체 쿠폰",
+    "differentiator": "가장 비슷한 NEED Pay는 월 단위 수동 택1이고 이쪽은 건별 비교",
+    "reason_to_believe": [
+     "STF12",
+     "MHF16",
+     "가정: 페이사 제휴로 결제창 연동 가능"
+    ]
+   }
+  },
+  {
+   "id": "TPC2",
+   "title": "페이 앱 쿠폰·포인트와 카드 혜택이 겹칠 때 어느 쪽이 적용되고 실적에 잡히는지 보장하는 합산 구조가 없다",
+   "gap_type": "benefit_structure",
+   "unmet_need": "Z세대는 구매처 선택 기준으로 쿠폰·할인 45.7%, 포인트·혜택 28.0%를 꼽는다. 카드 혜택과 앱 쿠폰이 서로 대체재처럼 비교된다는 사례가 있다(TRF15). 해석: 쿠폰 사용 시 카드 할인 제외나 실적 제외 같은 조건이 걸리면 혜택이 줄어드는데, DB 카드 문구는 쿠폰과의 중복 처리를 대부분 적지 않는다.",
+   "genz_basis": [
+    {
+     "fact_id": "MHF3",
+     "says": "Z세대 구매 채널 선택 기준: 쿠폰·할인 45.7%, 포인트·혜택 28.0%",
+     "age_scope": "Z세대",
+     "weight": "핵심"
+    },
+    {
+     "fact_id": "TRF15",
+     "says": "페이 앱 굿딜 타임어택 8600원 결제 후 신용카드 못지않은 혜택이라는 대학생 사례(low)",
+     "age_scope": "대학생 1인 사례",
+     "weight": "보조"
+    },
+    {
+     "fact_id": "MHF18",
+     "says": "온라인쇼핑 네이버페이 1순위 선택 이유가 포인트 적립과 할인",
+     "age_scope": "전연령",
+     "weight": "보조"
+    },
+    {
+     "fact_id": "MHF5",
+     "says": "'오늘만 할인/타임 세일' 문구 반응 39.2%로 최고",
+     "age_scope": "Z세대",
+     "weight": "보조"
+    }
+   ],
+   "existing_check": {
+    "db_cards_compared": [
+     "네이버 현대카드 Edition2",
+     "토스 삼성카드",
+     "쿠팡 와우카드",
+     "CU Npay 카드",
+     "디지로카 London"
+    ],
+    "similar": [
+     {
+      "card": "네이버 현대카드 Edition2",
+      "how_similar": "네이버페이 포인트 7% 적립에 멤버십 5% 합산 시 12%",
+      "difference": "멤버십과의 합산이지 쿠폰·타임딜과의 중복 규칙은 아님"
+     },
+     {
+      "card": "쿠팡 와우카드",
+      "how_similar": "쿠팡 프로모션 포함 최대 4%, 쿠팡+외부 합산 월 최대 6만4000원",
+      "difference": "자사 프로모션 합산 한도 명시, 외부 쿠폰 중복은 언급 없음"
+     },
+     {
+      "card": "토스 삼성카드",
+      "how_similar": "토스페이·토스쇼핑 최대 15%",
+      "difference": "쿠폰과의 관계 문구 없음"
+     }
+    ],
+    "web_checked": [
+     "웹 검색 예산 소진으로 DB 밖 카드 확인 못 함(DB 판정)"
+    ],
+    "verdict": "partial",
+    "note": "PLCC가 자사 포인트·멤버십 합산은 제공. 외부 쿠폰·타임딜과 카드 혜택의 중복·실적 처리를 보장하는 문구는 DB에서 못 찾음(문구 미기재일 뿐 약관엔 있을 수 있음)."
+   },
+   "mechanism_tags": [
+    "paymethod_bonus",
+    "discount_counts"
+   ],
+   "need_key": "saving",
+   "domain_key": "online",
+   "strength": "약",
+   "strength_reason": "쿠폰 선호는 Z세대 수치(MHF3)가 있으나 겹침 문제는 low 사례 1건과 해석뿐.",
+   "counter_evidence": "쿠폰 중복 불가는 가맹점·페이사 정책이라 카드사가 보장하기 어렵고, 중복 허용 시 마케팅 비용이 급증.",
+   "risks": [
+    "수익성: 중복 보장은 비용 증가(가정)",
+    "페이사·가맹점 약관 의존",
+    "TRF15는 confidence low"
+   ],
+   "invest_related": false,
+   "cvp_seed": {
+    "target": "페이 앱 쿠폰·타임딜을 자주 쓰는 20대",
+    "offer": "쿠폰을 쓴 결제에도 카드 혜택과 실적을 그대로 인정",
+    "key_benefit": "쿠폰과 카드 혜택 중 하나를 포기하지 않음",
+    "alternative": "네이버 현대카드 Edition2, 토스 삼성카드",
+    "differentiator": "네이버 현대카드는 멤버십 합산만 하고 외부 쿠폰·타임딜은 다루지 않음",
+    "reason_to_believe": [
+     "MHF3",
+     "TRF15",
+     "가정: 쿠폰 사용분 실적 인정 가능"
+    ]
+   }
+  },
+  {
+   "id": "TPC3",
+   "title": "간편결제 직후(결제 성공 화면) 카드 앱이 월 예산 대비 잔여를 보여주고 초과 전 알림을 주는 소비 경계심 장치가 없다",
+   "gap_type": "experience",
+   "unmet_need": "간편결제를 쓴 뒤 소비 경계심이 줄었다는 응답이 56.8%, 소비 금액이 늘었다는 응답이 51.3%이고 MZ세대는 카드 사용에서 소비 통제(64.4%)를 혜택 설계(19.2%)보다 중요하게 본다. 재단은 예산 초과 알림 도입을 권했다(발언). 해석: 결제 직후의 예산 대비 현황 표시가 비어 있다. 단 응답은 전연령 또는 MZ 범위 미기재다.",
+   "genz_basis": [
+    {
+     "fact_id": "MHF39",
+     "says": "간편결제 후 소비 경계심 감소 경험 56.8%",
+     "age_scope": "전연령(19세 이상)",
+     "weight": "핵심"
+    },
+    {
+     "fact_id": "MHF40",
+     "says": "간편결제 후 실제 소비금액 증가 51.3%",
+     "age_scope": "전연령(19세 이상)",
+     "weight": "핵심"
+    },
+    {
+     "fact_id": "CSF5",
+     "says": "카드 활용에 필요한 요소로 소비 통제 64.4%, 카드 혜택 설계 19.2%",
+     "age_scope": "MZ(연령 범위 미기재)",
+     "weight": "핵심"
+    },
+    {
+     "fact_id": "MHF41",
+     "says": "재단 관계자가 예산 초과 알림 도입 필요 발언(조사 응답 아님)",
+     "age_scope": "전연령",
+     "weight": "보조"
+    },
+    {
+     "fact_id": "CSF3",
+     "says": "MZ세대 53.6%가 카드 결제일에 부담을 느낀 적 있음",
+     "age_scope": "MZ(연령 범위 미기재)",
+     "weight": "보조"
+    }
+   ],
+   "existing_check": {
+    "db_cards_compared": [
+     "카카오뱅크 줍줍 신한카드",
+     "디지로카 London",
+     "토심이 첵첵",
+     "토스뱅크 체크카드",
+     "케이뱅크 ONE 체크"
+    ],
+    "similar": [
+     {
+      "card": "카카오뱅크 줍줍 신한카드",
+      "how_similar": "앱에서 즉시결제·내역 조회 원스톱",
+      "difference": "예산 알림이 아닌 조회와 선결제 기능"
+     },
+     {
+      "card": "디지로카 London",
+      "how_similar": "즉시결제 시 추가 캐시백",
+      "difference": "결제 직후 정산을 유도할 뿐 예산 개념 없음"
+     }
+    ],
+    "web_checked": [
+     "웹 검색 예산 소진으로 DB 밖 카드 확인 못 함(DB 판정)"
+    ],
+    "verdict": "none",
+    "note": "DB 50종 혜택 문구에 예산 대비 현황·초과 알림 구조는 없음. 카드사 앱 부가기능은 혜택 문구에 안 나올 수 있어 none은 DB 한정 판정이며 반증 약함."
+   },
+   "mechanism_tags": [
+    "challenge",
+    "ai_personalize"
+   ],
+   "need_key": "safety",
+   "domain_key": null,
+   "strength": "중",
+   "strength_reason": "독립 출처 2건(MHS14, CSS4)이 같은 방향이지만 모두 연령 범위가 넓거나 미기재. DB 문구 한계로 none 신뢰도는 낮음.",
+   "counter_evidence": "알림은 혜택 구조가 아니라 앱 기능이라 카드 상품 차별화로 약하고 이미 카드사·가계부 앱이 제공할 수 있음.",
+   "risks": [
+    "카드 상품 설계보다 앱 기능이라 상품 기획과 거리 있음",
+    "예산 알림이 사용액 감소로 이어져 수익성과 충돌(가정)"
+   ],
+   "invest_related": false,
+   "cvp_seed": {
+    "target": "간편결제로 지출이 늘었다고 느끼는 20대",
+    "offer": "결제 직후 월 예산 대비 잔여 표시와 초과 전 알림, 예산 내 사용 시 혜택",
+    "key_benefit": "혜택보다 먼저 소비 통제",
+    "alternative": "카드사 앱 이용내역 조회, 가계부 앱",
+    "differentiator": "비교한 DB 카드는 조회·선결제까지만 하고 예산 현황 표시는 없음",
+    "reason_to_believe": [
+     "MHF39",
+     "MHF40",
+     "CSF5"
+    ]
+   }
+  },
+  {
+   "id": "TPC4",
+   "title": "모바일카드로 결제하는 순간 이번 달 전월실적·월 한도 소진 상태를 보여주고 소진 시 다른 혜택으로 넘기는 장치가 없다",
+   "gap_type": "condition",
+   "unmet_need": "20대는 모바일카드를 선호 지급수단 36.8%로 꼽고 향후 사용 확대 예상도 55.5%로 가장 높다. MZ세대의 신용카드 사용 이유 1위가 실적·할인 혜택(44.0%)이다. 해석: 앱카드 결제는 실적·한도에 걸린 혜택을 쓰는 접점인데, 그 순간 잔여를 알려주는 구조가 DB 문구에서 보이지 않는다.",
+   "genz_basis": [
+    {
+     "fact_id": "STF2",
+     "says": "선호 지급수단으로 20대 36.8%가 모바일카드",
+     "age_scope": "20대",
+     "weight": "핵심"
+    },
+    {
+     "fact_id": "STF16",
+     "says": "향후 사용 늘 지급수단으로 20대 55.5%가 모바일카드",
+     "age_scope": "20대",
+     "weight": "핵심"
+    },
+    {
+     "fact_id": "CSF1",
+     "says": "MZ 신용카드 사용 이유로 실적·할인 혜택 44.0%(중복응답)",
+     "age_scope": "MZ(연령 범위 미기재)",
+     "weight": "핵심"
+    },
+    {
+     "fact_id": "STF4",
+     "says": "20대 월평균 오프라인 이용 건수 중 모바일카드 8.3건",
+     "age_scope": "20대",
+     "weight": "보조"
+    }
+   ],
+   "existing_check": {
+    "db_cards_compared": [
+     "My WE:SH",
+     "NEED Pay",
+     "카드의정석2",
+     "LOCA 365",
+     "Discount Plan+"
+    ],
+    "similar": [
+     {
+      "card": "My WE:SH",
+      "how_similar": "perf_recharge: 생일 전월실적 채워드림",
+      "difference": "실적 대신 채워주는 이벤트, 결제 시 잔여 안내 아님"
+     },
+     {
+      "card": "NEED Pay",
+      "how_similar": "perf_recharge 태그",
+      "difference": "실적 보전이며 소진 안내 구조는 문구에 없음"
+     }
+    ],
+    "web_checked": [
+     "웹 검색 예산 소진으로 DB 밖 카드 확인 못 함(DB 판정)"
+    ],
+    "verdict": "partial",
+    "note": "실적 보전은 있으나 결제 시점 잔여·소진 안내는 DB 문구에 없음. 카드사 앱 기능으로 존재할 수 있어 실제는 더 높은 exists 가능성."
+   },
+   "mechanism_tags": [
+    "anti_cap",
+    "miss_refund"
+   ],
+   "need_key": "simple",
+   "domain_key": null,
+   "strength": "약",
+   "strength_reason": "모바일카드 선호는 20대 통계로 두텁지만 '잔여 안내' 수요 자체를 직접 보여주는 근거가 없음.",
+   "counter_evidence": "카드사 앱 대부분이 실적 현황 화면을 이미 제공하므로 새롭지 않을 수 있음.",
+   "risks": [
+    "이미 제공 기능일 가능성",
+    "CSF23: 통합 할인 한도 축소 사례처럼 한도 구조 변경이 불만으로 이어짐"
+   ],
+   "invest_related": false,
+   "cvp_seed": {
+    "target": "앱카드 위주로 결제하는 20대",
+    "offer": "결제 순간 실적·한도 잔여 표시와 소진 시 대체 혜택 전환",
+    "key_benefit": "혜택 한도를 놓치지 않고 쓴다",
+    "alternative": "My WE:SH, NEED Pay",
+    "differentiator": "비교 카드는 실적 보전 이벤트이고 이쪽은 결제 시점 안내",
+    "reason_to_believe": [
+     "STF2",
+     "STF16",
+     "CSF1"
+    ]
+   }
+  },
+  {
+   "id": "TPC5",
+   "title": "소액 간편결제·타임딜 결제에서 건당 최소금액이나 인앱결제 제외 조건 때문에 혜택이 빠지는 문제를 없앤 카드가 드물다",
+   "gap_type": "condition",
+   "unmet_need": "20대 모바일카드 오프라인 건수는 월 8.3건이고 온라인 쇼핑에서 간편결제를 많이 쓰며(58.7%), 페이 앱 타임어택 결제 사례는 8600원이다. 해석: 소액이 많은 결제 패턴에 건당 하한(1만원, 2만원 등)이 걸리면 체감 혜택이 줄 수 있으나 20대 건당 결제액 근거는 없다.",
+   "genz_basis": [
+    {
+     "fact_id": "STF13",
+     "says": "20대 간편결제 이용자의 58.7%는 주로 온라인 쇼핑 시 이용",
+     "age_scope": "20대",
+     "weight": "핵심"
+    },
+    {
+     "fact_id": "STF4",
+     "says": "20대 월평균 오프라인 이용 건수 27.8건 중 모바일카드 8.3건",
+     "age_scope": "20대",
+     "weight": "보조"
+    },
+    {
+     "fact_id": "TRF15",
+     "says": "8600원 타임어택 결제 사례(low)",
+     "age_scope": "대학생 1인 사례",
+     "weight": "보조"
+    }
+   ],
+   "existing_check": {
+    "db_cards_compared": [
+     "케이뱅크 ONE 체크",
+     "LOCA 365",
+     "NEED Pay",
+     "토심이 첵첵",
+     "ZERO Edition3(할인형)",
+     "LOCA LIKIT 1.2"
+    ],
+    "similar": [
+     {
+      "card": "케이뱅크 ONE 체크",
+      "how_similar": "지정 가맹점 5%는 건당 1만원 이상",
+      "difference": "하한이 있음"
+     },
+     {
+      "card": "LOCA 365",
+      "how_similar": "건당 2만원 이상 결제 조건",
+      "difference": "하한이 있음"
+     },
+     {
+      "card": "NEED Pay",
+      "how_similar": "멤버십 인앱·단건결제 제외, 건당 한도 3000원",
+      "difference": "조건이 많음"
+     },
+     {
+      "card": "ZERO Edition3(할인형)",
+      "how_similar": "전 가맹점 0.8% 청구할인, 실적·한도 없음",
+      "difference": "건당 조건은 없으나 페이 앱 소액 특화 아님"
+     }
+    ],
+    "web_checked": [
+     "웹 검색 예산 소진으로 DB 밖 카드 확인 못 함(DB 판정)"
+    ],
+    "verdict": "partial",
+    "note": "조건 없는 균일 정률 카드가 있어 완전한 공백은 아님. 소액 간편결제 특화 구조만 비어 있음."
+   },
+   "mechanism_tags": [
+    "anti_cap",
+    "paymethod_bonus"
+   ],
+   "need_key": "simple",
+   "domain_key": "online",
+   "strength": "약",
+   "strength_reason": "건당 하한 카드 3종은 확인되나 20대 건당 결제액 근거가 없어 수요는 추정.",
+   "counter_evidence": "균일 정률 카드가 이미 하한 없이 혜택을 주므로 차별점이 작음.",
+   "risks": [
+    "소액 건 처리 비용 증가(가정)",
+    "TRF15 low"
+   ],
+   "invest_related": false,
+   "cvp_seed": {
+    "target": "소액 온라인 결제가 잦은 20대",
+    "offer": "건당 하한과 인앱 제외 없이 페이 앱 결제 전체에 혜택",
+    "key_benefit": "작은 결제도 혜택에서 빠지지 않음",
+    "alternative": "ZERO Edition3, 케이뱅크 ONE 체크",
+    "differentiator": "ZERO는 전 가맹점 균일 0.8%, 이쪽은 페이 앱 소액 결제에 가산",
+    "reason_to_believe": [
+     "STF13",
+     "가정: 소액 결제 비중이 큼"
+    ]
+   }
+  },
+  {
+   "id": "TPC6",
+   "title": "신용카드 결제 직후 건별로 바로 정산·결제일을 정하게 해 결제일 부담을 줄이는 구조가 즉시결제 캐시백 수준에 머문다",
+   "gap_type": "experience",
+   "unmet_need": "MZ세대의 53.6%가 카드 결제일에 부담을 느꼈고, 20대의 결제성 계좌 잔액은 0~100만원 미만이 45.5%다. 핀테크 소액 후불결제(BNPL) 잔액은 줄었다. 해석: 결제 후 자금 부담을 앱에서 조절하려는 수요가 있을 수 있으나, 선결제 인센티브 카드는 이미 있다.",
+   "genz_basis": [
+    {
+     "fact_id": "CSF3",
+     "says": "MZ 53.6%가 카드 결제일 부담 경험",
+     "age_scope": "MZ(연령 범위 미기재)",
+     "weight": "핵심"
+    },
+    {
+     "fact_id": "STF22",
+     "says": "결제성 예금계좌 잔액 0~100만원 미만 20대 45.5%",
+     "age_scope": "20대",
+     "weight": "핵심"
+    },
+    {
+     "fact_id": "MHF35",
+     "says": "핀테크 3사 BNPL 잔액이 2023년 1분기 대비 53% 감소",
+     "age_scope": "전연령",
+     "weight": "보조"
+    },
+    {
+     "fact_id": "MHF38",
+     "says": "BNPL 월 한도 토스·네이버페이 최대 30만원",
+     "age_scope": "전연령",
+     "weight": "보조"
+    }
+   ],
+   "existing_check": {
+    "db_cards_compared": [
+     "디지로카 London",
+     "카카오뱅크 줍줍 신한카드",
+     "LOCA 365"
+    ],
+    "similar": [
+     {
+      "card": "디지로카 London",
+      "how_similar": "일시불 5영업일 내 즉시결제 시 추가 1% 캐시백, LOCA 나누기",
+      "difference": "즉시결제 인센티브와 분할은 이미 있음"
+     },
+     {
+      "card": "카카오뱅크 줍줍 신한카드",
+      "how_similar": "승인 후 5일 내 선결제 시 1%(월 2만원), 앱 원스톱 즉시결제",
+      "difference": "같은 구조"
+     }
+    ],
+    "web_checked": [
+     "웹 검색 예산 소진으로 DB 밖 카드 확인 못 함(DB 판정)"
+    ],
+    "verdict": "exists",
+    "note": "선결제 캐시백 구조는 2종에서 확인. 남는 공백은 결제일 분산 같은 세부 변형뿐."
+   },
+   "mechanism_tags": [
+    "auto_best",
+    "anti_cap"
+   ],
+   "need_key": "safety",
+   "domain_key": null,
+   "strength": "약",
+   "strength_reason": "CSF3는 범위 미기재, 구조는 이미 존재.",
+   "counter_evidence": "디지로카·줍줍이 이미 같은 구조를 제공.",
+   "risks": [
+    "여전법 발급 요건 STF24",
+    "후불 한도 규제",
+    "BNPL 시장 축소 MHF35"
+   ],
+   "invest_related": false,
+   "cvp_seed": {
+    "target": "결제일 부담을 느끼는 20대",
+    "offer": "결제 직후 건별 선결제와 결제일 선택",
+    "key_benefit": "결제일 부담 완화",
+    "alternative": "디지로카 London, 줍줍 신한카드",
+    "differentiator": "둘은 선결제 캐시백이고 이쪽은 결제일 선택 중심",
+    "reason_to_believe": [
+     "CSF3",
+     "STF22"
+    ]
+   }
+  }
+ ],
+ "rejected": [
+  {
+   "idea": "앱 안에서 카드 발급·관리 원스톱(빅테크 제휴 카드)",
+   "why": "이미 존재: 카카오뱅크 줍줍 신한카드 앱 원스톱, 토스 삼성카드, 네이버 현대카드"
+  },
+  {
+   "idea": "페이사 포인트 적립형 PLCC",
+   "why": "이미 존재: 네이버 현대카드 Edition2/3, CU Npay 카드"
+  },
+  {
+   "idea": "배달·퀵커머스 전용 할인 카드",
+   "why": "이미 존재: 배민 신한카드 밥친구, Discount Plan+, LOCA 365. 퀵커머스 20대 근거도 약함(WTF36 전연령)"
+  },
+  {
+   "idea": "페이스페이 등 생체결제 연동 카드",
+   "why": "근거 약함: 전환 조건 1위가 매장 확대 67.6%(MHF21)로 카드 혜택이 아님, 전연령"
+  },
+  {
+   "idea": "카드 모바일 선호를 근거로 한 모바일카드 전용 혜택",
+   "why": "근거 약함: STF2/STF16은 선호도이며 혜택 공백 근거는 없음"
+  }
+ ],
+ "notes": "웹 검색 예산 소진으로 DB 50종만으로 판정했고 모든 verdict는 DB 한정이다. 결제창·앱 기능은 혜택 문구에 안 나와 none/partial이 실제보다 낙관적일 수 있다. 근거 대부분이 전연령·MZ 범위 미기재이며 20대 특정 근거는 STF 통계에 집중돼 있다."
+}

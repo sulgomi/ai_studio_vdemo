@@ -1,0 +1,417 @@
+{
+  "lens": "existing",
+  "search_available": false,
+  "checks": [
+    {
+      "candidate_id": "TPC1",
+      "vote": "weaken",
+      "findings": [
+        "반박 시도: 핀테크 앱의 결제수단 추천 기능 검색. 카카오페이가 2025-10-28 'AI로 나만의 혜택 찾기' 베타 출시. 등록 카드·체크카드·페이머니의 할인·적립과 최소 실적 충족 여부를 분석해 가장 유리한 결제수단을 제시함(https://www.heraldk.com/article/2025102722484333050). 다만 사용자가 가맹점과 금액을 직접 입력하는 방식이고 결제창 안에서 자동 작동한다는 서술은 없으며, 쿠폰 고려 언급도 없음.",
+        "DB 대조: NEED Pay(간편결제 택1, 월 1회 변경), 삼성 iD SELECT ON(택1)은 월 단위 선택이라 후보 서술과 일치."
+      ],
+      "corrections": [
+        "'안내하는 구조가 없다'는 과장. 카카오페이가 카드 혜택·실적을 고려한 결제수단 추천을 이미 제공함. 비어 있는 것은 '결제창 안 자동 추천'과 '쿠폰·포인트까지 합친 건별 비교'로 좁혀야 함.",
+        "alternative에 카카오페이 'AI로 나만의 혜택 찾기'를 넣어야 함.",
+        "카드 상품보다 페이 플랫폼이 먼저 가져간 영역이라, 카드사 단독 상품으로 차별화하기 어렵다는 점을 위험으로 추가해야 함."
+      ],
+      "adjusted_strength": "약",
+      "confidence_in_vote": "medium"
+    },
+    {
+      "candidate_id": "TPC2",
+      "vote": "confirm",
+      "findings": [
+        "반박 시도: DB 50종에서 '쿠폰 사용 결제의 실적 인정·중복 보장'을 명시한 문구를 찾았으나 없음. 쿠팡 와우카드의 프로모션 합산, 네이버 현대카드 Edition3의 '멤버십 쇼핑 적립과 합산'은 자사 플랫폼 적립 합산일 뿐 외부 쿠폰 중복 보장은 아님.",
+        "현대카드 매거진 검색 결과 요약에 '같은 카드라도 등록한 간편결제에 따라 혜택 조건이 달라진다'는 안내가 있었으나 본문은 열지 않았음. 웹 검색 예산 소진으로 이 후보 전용 DB 밖 검색은 못 함(DB 대조만)."
+      ],
+      "corrections": [
+        "후보 strength 약 판정은 적정. 근거가 소비자 혼란 쪽이고 해법 수요는 직접 증거가 아님을 유지."
+      ],
+      "adjusted_strength": "약",
+      "confidence_in_vote": "low"
+    },
+    {
+      "candidate_id": "TPC3",
+      "vote": "weaken",
+      "findings": [
+        "반박 시도: DB 대조에서 처음(ANNIVERSE)의 '소비관리 보너스: 목표 입력 500P, 달성 5천P'를 찾음. 소비 목표를 넣고 지키면 보상하는 구조라 '예산 대비 혜택'의 원형이 이미 시판 중임. 후보는 이 카드를 비교 목록에 넣지 않았음.",
+        "웹 검색: 한국 카드사 앱의 월 예산 초과 알림을 다룬 공식 자료는 찾지 못함. 삼성 월렛 커뮤니티에 사용자가 '카드별 한도 설정과 초과 알림'을 제안하는 글만 있었음(기능 미제공 정황, 본문 미열람·검색 요약 기준)."
+      ],
+      "corrections": [
+        "verdict none → partial. 처음(ANNIVERSE)의 소비관리 보너스를 similar에 추가해야 함.",
+        "남는 공백은 '결제 직후 화면의 잔여 예산 표시와 초과 전 알림'이라는 UX 단계뿐이며, 이는 CTC1과 거의 같은 후보임."
+      ],
+      "adjusted_strength": "약",
+      "confidence_in_vote": "medium"
+    },
+    {
+      "candidate_id": "TPC4",
+      "vote": "weaken",
+      "findings": [
+        "반박 시도: DB 대조에서 NEED Pay note '전월 35~40만원 미만은 전월실적 채워드림 신청 가능(반기 1회, 연 최대 2회)'과 My WE:SH '전월실적 채워드림'을 확인. 실적 미달 완충은 이미 상품화돼 있음.",
+        "카드사 앱의 실적 진행 표시 기능은 혜택 문구에 없는 앱 기능이라 공식 기능 페이지를 확인하려 했으나 검색 예산이 소진되어 확인하지 못함. 일반적으로 카드사 앱이 실적 조회를 제공한다는 점은 검증하지 못했으므로 반증 근거로 쓰지 않음."
+      ],
+      "corrections": [
+        "'소진 시 다른 혜택으로 넘기는 장치가 없다' 중 실적 미달 완충은 NEED Pay·My WE:SH의 채워드림으로 일부 존재. 결제 순간 표시라는 UX만 남음.",
+        "CTC6과 같은 공백이므로 하나로 합쳐야 함."
+      ],
+      "adjusted_strength": "약",
+      "confidence_in_vote": "medium"
+    },
+    {
+      "candidate_id": "TPC5",
+      "vote": "confirm",
+      "findings": [
+        "반박 시도: DB에서 건당 하한·인앱 제외 없이 페이 결제 전체에 혜택을 주는 카드 찾기. ZERO Edition3(할인형)은 전 가맹점 청구할인·전월실적 0이라 '건당 조건 없음'은 충족하지만 페이 소액 특화 가산은 아님. 카드의정석2 SHOPPING+는 '4대 PAY 5% 추가할인'이 있으나 전월 30만원 조건이고 건당·월 한도는 팝업 안에 있어 DB에서 읽지 못함.",
+        "웹 검색 결과 요약에서 착붙 신한카드는 '간편결제나 앱스토어 인앱결제는 제외'라는 조건이 확인됨(https://www.dailian.co.kr/news/view/1683901 검색 요약). 인앱 제외 조건이 흔하다는 후보 전제와 맞음. 웹 검색 예산 소진으로 이 후보 전용 DB 밖 검색은 못 함(DB 대조만)."
+      ],
+      "corrections": [
+        "카드의정석2 SHOPPING+의 4대 PAY 5% 추가할인을 similar에 추가해야 함."
+      ],
+      "adjusted_strength": "약",
+      "confidence_in_vote": "low"
+    },
+    {
+      "candidate_id": "TPC6",
+      "vote": "refute",
+      "findings": [
+        "반박 시도 성공: 디지로카 London(즉시결제 추가 캐시백, Weekly 자동결제, LOCA 나누기 무수수료 분할)과 카카오뱅크 줍줍 신한카드(승인 후 5일 이내 선결제 추가 캐시백, 앱에서 즉시결제)가 같은 구조로 시판 중. 후보 스스로도 exists로 판정함.",
+        "결제일 선택은 국내 신용카드 공통 절차라 차별 요소가 아님(일반 지식, 출처 미열람이라 근거로 쓰지 않음)."
+      ],
+      "corrections": [
+        "후보에서 빼고 rejected로 옮겨야 함. CTC2와 같은 공백임."
+      ],
+      "adjusted_strength": "폐기",
+      "confidence_in_vote": "high"
+    },
+    {
+      "candidate_id": "SOC1",
+      "vote": "confirm",
+      "findings": [
+        "반박 시도: 모임 신용카드 시판 사례 검색. 뉴스토마토 2025-08-26 기사는 NH올원모임체크, 신한 Point Plan 체크(SOL 모임), KB국민 총무 체크, 하나 모임원 체크를 소개하며 모두 체크카드이고 모임 신용카드 사례는 없음(https://newstomato.com/ReadNews.aspx?no=1272743). 정산·회비 기능도 카드가 아니라 연계 모임통장의 기능.",
+        "가족카드(본인 청구, 가족 사용)는 '1인이 신용으로 결제하고 여러 명이 쓰는' 기존 구조이나 모임원별 분할 청구는 아님(일반 지식, 출처 미열람)."
+      ],
+      "corrections": [
+        "similar에 KB국민 총무 체크카드(전월 30만원 이상 한식·커피 5% 캐시백)를 추가하면 비교가 정확해짐.",
+        "신용 공여를 모임원 여럿에게 나누는 구조는 연대 채무·심사 문제가 있어 규제 위험을 risks에 분명히 적어야 함."
+      ],
+      "adjusted_strength": "약",
+      "confidence_in_vote": "medium"
+    },
+    {
+      "candidate_id": "SOC2",
+      "vote": "weaken",
+      "findings": [
+        "반박 시도: DB 50종에 모임원 실적 합산 문구 없음. 다만 가족카드 이용액을 본인 카드 실적에 합산하는 관행이 업계에 있다고 알려져 있으나 이번에 공식 문구를 열어 확인하지 못함(근거로 인용 불가, 반증 후보로만 기록).",
+        "뉴스토마토 기사상 모임 체크카드의 혜택은 모두 카드 단위이고 모임원 합산 실적은 없음(https://newstomato.com/ReadNews.aspx?no=1272743)."
+      ],
+      "corrections": [
+        "'50종 어디에도 없다'는 DB 기준으로 맞지만, 가족 단위 실적 합산이 기존 관행일 가능성을 counter_evidence에 적어야 함. 차별점은 '가족 밖 친구 모임'으로 좁혀야 함."
+      ],
+      "adjusted_strength": "약",
+      "confidence_in_vote": "low"
+    },
+    {
+      "candidate_id": "SOC3",
+      "vote": "confirm",
+      "findings": [
+        "반박 시도: DB에서 더치페이 정산과 실적 기준을 연결한 문구를 찾았으나 없음. 모임 체크카드 기사에서도 정산 후 실적 처리 언급 없음(https://newstomato.com/ReadNews.aspx?no=1272743). 웹 검색 예산 소진으로 이 후보 전용 DB 밖 검색은 못 함(DB 대조만)."
+      ],
+      "corrections": [
+        "offer 문장이 '순소비 기준이 아니라 선결제 전체 금액을 실적으로 인정'으로 제목(순소비 기준 혜택)과 반대 방향임. 어느 쪽인지 통일해야 함."
+      ],
+      "adjusted_strength": "약",
+      "confidence_in_vote": "low"
+    },
+    {
+      "candidate_id": "SOC4",
+      "vote": "confirm",
+      "findings": [
+        "반박 시도: DB 50종의 혜택 문구에 친구 연결 상시 가산 없음. 웹에서 친구 결제 연동 상시 혜택 사례를 후보 작성자가 찾지 못했고, 나도 검색 예산 소진으로 추가 확인 못 함."
+      ],
+      "corrections": [
+        "친구추천 이벤트는 카드사 공통 마케팅이므로 '1회성 보상은 이미 있다'를 분명히 적고, 상시 동반결제 가산만 공백으로 한정."
+      ],
+      "adjusted_strength": "약",
+      "confidence_in_vote": "low"
+    },
+    {
+      "candidate_id": "SOC5",
+      "vote": "confirm",
+      "findings": [
+        "반박 시도: DB에서 취미모임 참가비·장비 업종 혜택 찾기. 굿데이카드의 학원·피트니스 10%, Discount Plan+의 피트니스 5%가 가장 가깝지만 모임 단위·참가비 업종은 아님. 웹 검색 예산 소진으로 이 후보 전용 DB 밖 검색은 못 함(DB 대조만)."
+      ],
+      "corrections": [
+        "굿데이카드·Discount Plan+의 피트니스 혜택을 similar에 넣어 '운동 업종 일부 존재'를 명시해야 함. VLC4(러닝)와 겹침."
+      ],
+      "adjusted_strength": "약",
+      "confidence_in_vote": "low"
+    },
+    {
+      "candidate_id": "SOC6",
+      "vote": "weaken",
+      "findings": [
+        "반박 시도: 선물하기는 대부분 카카오페이·네이버페이로 결제되는 온라인 결제임. DB의 NEED Pay는 네이버페이·카카오페이·토스페이 10% 할인(택1), 카드의정석2 SHOPPING+는 4대 PAY 5% 추가할인, 토스 삼성카드는 카카오페이 등 간편결제 할인을 제공. 선물 '전용'은 아니지만 선물하기 결제가 이 혜택에 걸릴 수 있음.",
+        "선물하기 결제가 위 카드들의 간편결제 할인 대상에 실제로 포함되는지는 약관을 열지 못해 확인하지 못함."
+      ],
+      "corrections": [
+        "verdict none → partial. 간편결제 할인 카드들이 선물하기 결제를 우회적으로 커버할 수 있음을 similar에 추가.",
+        "남는 공백은 생일·기념일 알림 연동이라는 경험 요소."
+      ],
+      "adjusted_strength": "약",
+      "confidence_in_vote": "low"
+    },
+    {
+      "candidate_id": "CTC1",
+      "vote": "weaken",
+      "findings": [
+        "반박 시도: DB의 처음(ANNIVERSE) '소비관리 보너스: 목표 입력 500P, 달성 5천P, 일시불 당월 즉시결제 0.3% 추가'가 사용자 목표 설정과 혜택을 한 카드 안에 묶은 구조. 후보도 이 카드를 similar에 넣었음.",
+        "카드 이용한도를 고객이 낮게 조정하는 기능의 공식 안내는 검색 예산 소진으로 확인 못 함. 삼성 월렛 커뮤니티에 카드별 한도 설정·초과 알림 요청 글이 있었음(검색 요약 기준)."
+      ],
+      "corrections": [
+        "'한 카드 안에서 묶은 구조 없음'은 과장. 처음(ANNIVERSE)이 목표 설정과 보상을 이미 묶음. 공백은 하드캡·초과 알림·승인 확인 단계로 한정.",
+        "TPC3과 사실상 같은 후보이므로 합쳐야 함."
+      ],
+      "adjusted_strength": "약",
+      "confidence_in_vote": "medium"
+    },
+    {
+      "candidate_id": "CTC2",
+      "vote": "refute",
+      "findings": [
+        "반박 시도 성공: DB의 디지로카 London이 'Weekly 자동결제: 일주일 간 일시불 합산 5만원 이상 자동결제 시 추가 캐시백'과 '즉시결제 추가 캐시백'을 제공. 이는 후보 offer의 '주간 자동 정산 + 주기 지키면 혜택'과 같은 구조임.",
+        "후보는 London을 '선결제 가산 혜택일 뿐 주기 조정이 핵심 아님'으로 적었으나 Weekly 자동결제 문구를 놓쳤음. 카카오뱅크 줍줍 신한카드도 5일 이내 선결제 추가 캐시백."
+      ],
+      "corrections": [
+        "verdict partial → exists. '결제 주기를 쪼개는 구조에 혜택을 연결한 카드 없음'은 틀림.",
+        "남는 것은 '결제일을 고객이 정하는 것'인데 결제일 지정은 신용카드 공통 절차라 공백이 아님(일반 지식). TPC6과 함께 폐기 권고."
+      ],
+      "adjusted_strength": "폐기",
+      "confidence_in_vote": "high"
+    },
+    {
+      "candidate_id": "CTC3",
+      "vote": "weaken",
+      "findings": [
+        "반박 시도: DB의 SOL트래블 체크 note에 '혜택 보장 출시 후 3년'이 있음. 부가서비스 일정 기간 유지가 이미 상품 설명에 명시되는 관행이며, 이 의무 기간이 법령상 기준이라는 점은 이번에 원문으로 확인하지 못함.",
+        "후보가 ZERO Edition3를 '혜택 유지 보증'이라 적었으나 DB 문구에는 '긴급할인 서비스 존재'만 있고 유지 보증 문구는 없음. 잘못 읽은 근거임.",
+        "축소 시 대체 혜택 선택·연회비 환급을 명시한 카드는 DB에서 찾지 못함. 웹 검색 예산 소진으로 이 후보 전용 DB 밖 검색은 못 함(DB 대조만)."
+      ],
+      "corrections": [
+        "ZERO Edition3 '혜택 유지 보증' 서술은 DB 문구에 없으니 삭제.",
+        "출시 후 일정 기간 혜택 보장이 이미 표기되는 관행(SOL트래블 체크 '출시 후 3년')을 counter_evidence에 넣고, 공백을 '변경 시 고객 선택권·환급'으로 한정."
+      ],
+      "adjusted_strength": "중",
+      "confidence_in_vote": "medium"
+    },
+    {
+      "candidate_id": "CTC4",
+      "vote": "weaken",
+      "findings": [
+        "반박 시도: 카드사 정기결제 관리 기능 검색. 신한카드 '마이정기결제'(2021 출시, 디지털 구독 납부 현황을 한곳에서 조회)(https://www.hankyung.com/amp/2021040170686 검색 요약), 카드고릴라 비교 기사에 삼성카드 80여개 정기결제 항목 관리 서비스, 핀크 결제일 하루 전 알림, 금융결제원 어카운트인포의 카드 자동납부 조회·해지가 소개됨(https://www.card-gorilla.com/contents/detail/1814 검색 요약, 2020~2021 자료라 현행 여부 미확인).",
+        "구독 월 예산 한도와 초과·신규 정기결제 차단을 묶은 기능은 찾지 못함."
+      ],
+      "corrections": [
+        "'구독은 할인만 존재'는 틀림. 카드사·핀테크의 정기결제 조회·관리 기능이 이미 있음. 공백은 '구독 예산 한도와 혜택 연동'으로 좁혀야 함.",
+        "VLC5의 구독 낭비 방지 부분과 중복."
+      ],
+      "adjusted_strength": "약",
+      "confidence_in_vote": "medium"
+    },
+    {
+      "candidate_id": "CTC5",
+      "vote": "weaken",
+      "findings": [
+        "반박 시도: 신한카드 보증금 기반 신용카드가 혁신금융서비스로 지정됐다는 보도는 후보 작성자(ENC2)가 이미 확인함(2026-10-21 지정, 12월 도입 계획). 소액 한도로 시작해 이력에 따라 올리는 입문 신용 구조가 곧 시판됨.",
+        "고객이 이용한도를 스스로 낮추는 기능이 카드사 공통인지 공식 페이지로 확인하지 못함."
+      ],
+      "corrections": [
+        "ENC2와 같은 공백. 신한 보증금 카드 출시 예정으로 선점 기간이 짧다는 점을 risks에 추가."
+      ],
+      "adjusted_strength": "약",
+      "confidence_in_vote": "medium"
+    },
+    {
+      "candidate_id": "CTC6",
+      "vote": "weaken",
+      "findings": [
+        "반박 시도: DB의 NEED Pay note에 '전월 35~40만원 미만은 전월실적 채워드림 신청 가능(반기 1회, 연 최대 2회)'. 실적 미달 시 완충 장치가 이미 시판 중. My WE:SH도 '전월실적 채워드림'을 혜택 문구에 둠.",
+        "후보는 My WE:SH를 '생일 한정 1회성'으로 적었는데 DB 문구상 '생일 혜택'과 '전월실적 채워드림'은 나란히 적혀 있어 생일 한정인지 단정할 수 없음. NEED Pay의 채워드림은 후보가 비교하지 않았음."
+      ],
+      "corrections": [
+        "NEED Pay 전월실적 채워드림을 similar에 추가. '단계적 완충이 없다'를 '완충이 이벤트성·횟수 제한으로만 있다'로 고쳐야 함.",
+        "TPC4와 합쳐야 함."
+      ],
+      "adjusted_strength": "약",
+      "confidence_in_vote": "medium"
+    },
+    {
+      "candidate_id": "ENC1",
+      "vote": "confirm",
+      "findings": [
+        "반박 시도: 체크카드 이력을 신용카드 한도·혜택으로 승계하는 구조 탐색. DB에서는 없음. 후보 작성자가 확인한 현대카드 M HYBRID는 결제 방식 전환일 뿐 이력 승계는 아님.",
+        "카카오뱅크 줍줍 신한카드는 카카오뱅크 앱에서 신청·사용하는 신용카드라 체크카드 고객 기반을 넘기는 통로는 있으나, 체크 이용 이력을 한도·혜택에 반영한다는 문구는 DB에 없음. 웹 검색 예산 소진으로 이 후보 전용 DB 밖 검색은 못 함(DB 대조만)."
+      ],
+      "corrections": [
+        "카카오뱅크 줍줍 신한카드를 '체크 고객 → 신용 전환 통로는 이미 있음'으로 서술해 차별점을 '이력 반영 한도·혜택'으로 분명히 해야 함."
+      ],
+      "adjusted_strength": "중",
+      "confidence_in_vote": "low"
+    },
+    {
+      "candidate_id": "ENC2",
+      "vote": "weaken",
+      "findings": [
+        "반박 시도: 후보 작성자가 직접 확인한 대로 신한카드 보증금 기반 비대면 신용카드가 2026-10-21 혁신금융서비스로 지정되고 12월 도입 계획. '시판 카드로는 아직 없다'는 오늘(2026-10-23) 기준 사실이지만 두 달 안에 깨질 전제임.",
+        "추가 검색은 예산 소진으로 하지 못함."
+      ],
+      "corrections": [
+        "strength 강은 과함. 경쟁사가 이미 규제 샌드박스를 통과해 출시 직전이므로 '공백'이 아니라 '곧 경쟁 상품이 생기는 영역'으로 서술해야 함. 차별점은 '청년 대상 + 보증금 일부 환급 단계 구조'로 좁혀야 함."
+      ],
+      "adjusted_strength": "중",
+      "confidence_in_vote": "medium"
+    },
+    {
+      "candidate_id": "ENC3",
+      "vote": "weaken",
+      "findings": [
+        "반박 시도: DB에서 전월실적 0인 신용카드를 찾음. 카카오뱅크 줍줍 신한카드(0, 전 가맹점 캐시백), ZERO Edition3(0, 전 가맹점 청구할인), 쿠팡 와우카드(0), 토스뱅크 하나카드 WIDE(0, 기본 청구할인). 소액 이용자도 혜택을 받는 무실적 카드가 여럿 시판 중.",
+        "Youth Club 체크는 전월 20만원, 하나 나라사랑카드 체크의 Basic은 지난달 10만원 이상으로 저실적 구간이 체크카드에는 있음."
+      ],
+      "corrections": [
+        "'낮은 실적 구간 구조가 없다'는 과장. 무실적 정률 카드가 이미 있으므로 공백은 '저실적 구간의 정액 혜택' 설계로만 남음.",
+        "줍줍 신한카드·토스뱅크 하나카드 WIDE를 similar에 추가."
+      ],
+      "adjusted_strength": "약",
+      "confidence_in_vote": "medium"
+    },
+    {
+      "candidate_id": "ENC4",
+      "vote": "confirm",
+      "findings": [
+        "반박 시도: DB에 미성년 가족카드나 만 19세 승계 구조 없음. 후보 작성자도 시행 직후라 상품 현황 불명으로 적음. 검색 예산 소진으로 2026-05 이후 출시된 미성년 가족카드 상품을 확인하지 못함."
+      ],
+      "corrections": [
+        "제도 시행 후 5개월이 지났으므로 카드사 출시가 이미 있을 수 있음. 출시 여부 미확인이라는 한계를 counter_evidence에 분명히 적어야 함."
+      ],
+      "adjusted_strength": "약",
+      "confidence_in_vote": "low"
+    },
+    {
+      "candidate_id": "ENC5",
+      "vote": "refute",
+      "findings": [
+        "반박 시도 성공(부분): DB의 카카오뱅크 줍줍 신한카드는 전월실적 0의 신용카드이고 note에 '메탈라이언 디자인은 발급 수수료 7만원 추가'가 있음. 캐릭터 체크카드를 쓰던 카카오뱅크 고객이 실적 조건 없이 캐릭터 디자인 신용카드로 넘어가는 상품이 이미 있음.",
+        "후보는 이 카드를 '캐릭터 디자인과 한정 에디션 문구는 없다'고 적었으나 DB note의 메탈라이언 디자인을 놓쳤음. 신한카드 SOL트래블J 체크도 치이카와 캐릭터 디자인."
+      ],
+      "corrections": [
+        "'이어받는 상품이 없다'는 틀림. 남는 것은 '디자인이 사용에 따라 바뀌는 에디션'뿐이며 이는 VLC2와 같은 후보임. 이 후보는 폐기하고 VLC2로 합쳐야 함."
+      ],
+      "adjusted_strength": "폐기",
+      "confidence_in_vote": "medium"
+    },
+    {
+      "candidate_id": "ENC6",
+      "vote": "confirm",
+      "findings": [
+        "반박 시도: DB에 수험표·만 19세 도달 트리거 문구 없음. 웹 검색 예산 소진으로 이 후보 전용 DB 밖 검색은 못 함(DB 대조만). 수험생 대상 카드사 이벤트는 매년 있을 가능성이 있으나 확인하지 못함."
+      ],
+      "corrections": [
+        "수험생 이벤트가 카드사에 이미 있을 수 있음을 counter_evidence에 적어야 함."
+      ],
+      "adjusted_strength": "약",
+      "confidence_in_vote": "low"
+    },
+    {
+      "candidate_id": "VLC1",
+      "vote": "weaken",
+      "findings": [
+        "반박 시도: DB의 토스뱅크 체크카드 '스위치 캐시백 시즌 6'은 발급사가 시즌마다 캐시백 업종을 교체하는 구조이고, 현 시즌에 즉석사진·서점 같은 Z세대 유행 업종이 이미 들어 있음.",
+        "케이뱅크 ONE 체크의 '2026.10~12 한정 교통비 캐시백 확대'도 기간 한정 슬롯."
+      ],
+      "corrections": [
+        "'신용카드에 없다'로 범위를 좁히면 맞지만, 시즌 교체 구조 자체는 체크카드에 존재하고 즉석사진 같은 유행 업종도 이미 담겨 있음. 후보가 '유행 품목 대응이 아니다'라고 쓴 부분은 즉석사진 포함 사실과 어긋남."
+      ],
+      "adjusted_strength": "약",
+      "confidence_in_vote": "medium"
+    },
+    {
+      "candidate_id": "VLC2",
+      "vote": "weaken",
+      "findings": [
+        "반박 시도: 카카오뱅크 줍줍 신한카드(전월실적 0, 메탈라이언 디자인 유료 선택), 신한 SOL트래블J 체크(치이카와 디자인), 카카오뱅크 프렌즈 체크카드로 캐릭터와 실사용 혜택을 묶은 카드는 체크·신용 모두 있음.",
+        "결제 횟수에 따라 플레이트 에디션이 열리는 구조는 DB에서 찾지 못함. 웹 검색 예산 소진으로 이 후보 전용 DB 밖 검색은 못 함(DB 대조만)."
+      ],
+      "corrections": [
+        "'캐릭터 신용카드가 없다'는 과장. 무실적 캐릭터 신용카드(줍줍 메탈라이언)가 있으므로 공백은 '사용에 따라 열리는 에디션·굿즈'로만 한정. ENC5를 여기에 합쳐야 함."
+      ],
+      "adjusted_strength": "약",
+      "confidence_in_vote": "medium"
+    },
+    {
+      "candidate_id": "VLC3",
+      "vote": "confirm",
+      "findings": [
+        "반박 시도: DB에서 팝업 사전예약·우선입장·팝업 결제 가산을 찾았으나 없음. 올바른 FLEX(영화/공연 20%)가 문화 업종으로 가장 가까움. 웹 검색 예산 소진으로 이 후보 전용 DB 밖 검색은 못 함(DB 대조만)."
+      ],
+      "corrections": [
+        "카드사 자체 문화공간·공연 선예매 같은 비슷한 접점(DB 밖)을 확인하지 못했으므로 confidence를 낮게 적어야 함."
+      ],
+      "adjusted_strength": "중",
+      "confidence_in_vote": "low"
+    },
+    {
+      "candidate_id": "VLC4",
+      "vote": "confirm",
+      "findings": [
+        "반박 시도: DB에서 러닝 용품·대회 참가비 업종을 찾았으나 없음. 굿데이카드(피트니스 10%), Discount Plan+(피트니스 5%)는 운동 업종 일부. 러닝 특화 카드 검색은 예산 소진으로 결과를 받지 못함."
+      ],
+      "corrections": [
+        "DB 밖 러닝 제휴 카드 존재 여부 미확인이라는 한계를 명시해야 함. SOC5와 겹침."
+      ],
+      "adjusted_strength": "중",
+      "confidence_in_vote": "low"
+    },
+    {
+      "candidate_id": "VLC5",
+      "vote": "refute",
+      "findings": [
+        "반박 시도 성공: 데일리안 2026-08-29 기사에 생성형 AI 구독 할인 카드가 여럿 확인됨. 카카오뱅크 착붙 신한카드는 챗GPT·클로드 공식 홈페이지 정기결제 10% 할인, 우리 카드의정석2 ROUTINE은 챗GPT 등 디지털 구독·멤버십 30% 할인(전월 100만원 이상, 영역별 최대 1만원), 현대카드 the Orange는 챗GPT·퍼플렉시티·구글원 등 테크 영역 10% M포인트 적립(전월 100만원 이상)(https://www.dailian.co.kr/news/view/1683901).",
+        "구독 낭비 방지 쪽도 신한카드 마이정기결제(구독 납부 현황 조회), 삼성카드 정기결제 관리, 어카운트인포 해지가 이미 있음(https://www.hankyung.com/amp/2021040170686, https://www.card-gorilla.com/contents/detail/1814 검색 요약)."
+      ],
+      "corrections": [
+        "'생성형 AI 구독을 포함한 구독 카드가 없다'는 틀림. similar에 착붙 신한카드, 카드의정석2 ROUTINE, the Orange를 추가해야 함.",
+        "남는 공백은 '미이용 구독 알림·미사용 환급'뿐이며 이는 CTC4와 겹침. strength 강은 근거를 잃었으므로 약으로 낮추고 CTC4에 합쳐야 함.",
+        "역으로 ROUTINE·the Orange는 전월 100만원이라 20대에게 문턱이 높다는 점은 남는 차별점이 될 수 있음."
+      ],
+      "adjusted_strength": "약",
+      "confidence_in_vote": "high"
+    },
+    {
+      "candidate_id": "VLC6",
+      "vote": "weaken",
+      "findings": [
+        "반박 시도: DB의 처음(ANNIVERSE) '소비관리 보너스: 목표 입력 500P, 달성 5천P'는 목표 미션과 달성 보상 구조이고, 케이뱅크 ONE 체크 '369 캐시백'은 결제 횟수 진행에 따른 보상. 챌린지 태그 1종이 처음(ANNIVERSE)인 것으로 보임.",
+        "후보가 처음(ANNIVERSE)을 '일일 적립 구조'로 적은 것은 혜택 문구의 소비관리 보너스를 놓친 것. 웹 검색 예산 소진으로 이 후보 전용 DB 밖 검색은 못 함(DB 대조만)."
+      ],
+      "corrections": [
+        "처음(ANNIVERSE)의 목표 달성 보상을 similar 서술에 반영. 공백은 '연속일·단계 진행 상태 표시' 같은 게임 요소로만 한정."
+      ],
+      "adjusted_strength": "약",
+      "confidence_in_vote": "medium"
+    },
+    {
+      "candidate_id": "VLC7",
+      "vote": "confirm",
+      "findings": [
+        "반박 시도: DB 혜택 문구에서 예고 없는 한정 수량 드롭을 찾았으나 고정 시간대(Mr.Life, Discount Plan+)와 기간 한정(케이뱅크 ONE 체크 2026.10~12 교통 확대)뿐. 카드사 앱의 선착순 이벤트는 혜택 문구 밖이라 확인하려 했으나 검색 예산 소진으로 못 함."
+      ],
+      "corrections": [
+        "카드사·페이 앱의 선착순 이벤트가 이미 흔할 가능성이 높아 차별성이 낮을 수 있음을 counter_evidence에 적어야 함."
+      ],
+      "adjusted_strength": "약",
+      "confidence_in_vote": "low"
+    }
+  ],
+  "cross_notes": "중복: TPC3=CTC1(예산·목표, 처음(ANNIVERSE)이 원형), TPC4=CTC6(실적 표시·완충, NEED Pay·My WE:SH 채워드림), TPC6=CTC2(선결제·주간결제, 디지로카 London로 폐기), VLC5=CTC4(구독 관리), ENC5=VLC2(캐릭터 신용카드), CTC5=ENC2(보증금·하드캡, 신한 12월 출시 예정), SOC5≈VLC4(운동 취미). 웹 검색은 5회 실행 후 세션 예산이 소진되어(search_available=false로 기록) 이후는 기사 3건 WebFetch와 DB 대조로 판정했다. 앱 안 기능(실적 진행 표시, 한도 하향, 선착순 이벤트, 결제일 선택)은 공식 기능 페이지를 열지 못해 반증에 쓰지 않았으므로, confirm 판정 다수는 '못 무너뜨림'이 아니라 '확인 못 함'에 가깝다."
+}

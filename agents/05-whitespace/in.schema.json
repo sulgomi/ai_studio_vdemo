@@ -3,30 +3,368 @@
   "$id": "card-studio/agents/whitespace/in.schema.json",
   "title": "whitespace payload",
   "type": "object",
-  "required": ["target_segment_id", "segments", "need_labels", "research", "cells_top"],
+  "required": [
+    "target_segment_id",
+    "segments",
+    "need_labels",
+    "research",
+    "cells_top"
+  ],
   "additionalProperties": false,
   "properties": {
-    "target_segment_id": {"type": "string"},
-    "target_adopt": {"type": "number", "minimum": 0, "maximum": 1, "default": 0.38},
-    "segments": {"type": "array", "minItems": 1, "items": {"type": "object", "required": ["id", "name"], "properties": {"id": {"type": "string"}, "name": {"type": "string"}}}},
-    "need_labels": {"type": "object", "additionalProperties": {"type": "string"}},
+    "target_segment_id": {
+      "type": "string"
+    },
+    "target_adopt": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 1,
+      "default": 0.38
+    },
+    "segments": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "name"
+        ],
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "need_labels": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "string"
+      }
+    },
     "research": {
       "type": "object",
-      "required": ["trend", "competitor", "consumer"],
+      "required": [
+        "trend",
+        "competitor",
+        "consumer"
+      ],
       "properties": {
-        "trend": {"type": "array", "items": {"type": "object", "required": ["id", "title", "impl", "topic"], "properties": {"id": {"type": "string"}, "title": {"type": "string"}, "impl": {"type": "string"}, "topic": {"type": "string"}, "strength": {"type": "number"}, "reliability": {"type": "number"}}}},
-        "competitor": {"type": "object", "required": ["crowded", "empty", "nearest"], "properties": {"crowded": {"type": "array"}, "empty": {"type": "array"}, "nearest": {"type": "array"}}},
-        "consumer": {"type": "object", "required": ["top_needs", "must_have", "can_give_up", "evidence_signal_ids"], "properties": {"top_needs": {"type": "array"}, "must_have": {"type": "array"}, "can_give_up": {"type": "array"}, "evidence_signal_ids": {"type": "array"}}},
-        "lead": {"type": "object", "properties": {"headline": {"type": "string"}, "key_findings": {"type": "array"}, "conflicts": {"type": "array"}}}
+        "trend": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [
+              "id",
+              "title",
+              "impl",
+              "topic"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "title": {
+                "type": "string"
+              },
+              "impl": {
+                "type": "string"
+              },
+              "topic": {
+                "type": "string"
+              },
+              "strength": {
+                "type": "number"
+              },
+              "reliability": {
+                "type": "number"
+              }
+            }
+          }
+        },
+        "competitor": {
+          "type": "object",
+          "required": [
+            "crowded",
+            "empty",
+            "nearest"
+          ],
+          "properties": {
+            "crowded": {
+              "type": "array"
+            },
+            "empty": {
+              "type": "array"
+            },
+            "nearest": {
+              "type": "array"
+            }
+          }
+        },
+        "consumer": {
+          "type": "object",
+          "required": [
+            "top_needs",
+            "must_have",
+            "can_give_up",
+            "evidence_signal_ids"
+          ],
+          "properties": {
+            "top_needs": {
+              "type": "array"
+            },
+            "must_have": {
+              "type": "array"
+            },
+            "can_give_up": {
+              "type": "array"
+            },
+            "evidence_signal_ids": {
+              "type": "array"
+            }
+          }
+        },
+        "lead": {
+          "type": "object",
+          "properties": {
+            "headline": {
+              "type": "string"
+            },
+            "key_findings": {
+              "type": "array"
+            },
+            "conflicts": {
+              "type": "array"
+            }
+          }
+        }
       }
     },
     "cells_top": {
       "type": "array",
       "minItems": 1,
       "maxItems": 12,
-      "items": {"type": "object", "required": ["seg", "need", "score", "rank"], "properties": {"seg": {"type": "string"}, "need": {"type": "string"}, "score": {"type": "number"}, "rank": {"type": "integer", "minimum": 1}, "ceiling": {"type": "number", "minimum": 0, "maximum": 1}}}
+      "items": {
+        "type": "object",
+        "required": [
+          "seg",
+          "need",
+          "score",
+          "rank"
+        ],
+        "properties": {
+          "seg": {
+            "type": "string"
+          },
+          "need": {
+            "type": "string"
+          },
+          "score": {
+            "type": "number"
+          },
+          "rank": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "ceiling": {
+            "type": "number",
+            "minimum": 0,
+            "maximum": 1
+          },
+          "id": {
+            "type": "string",
+            "description": "기회영역 id (v2)"
+          },
+          "mechanisms": {
+            "type": "array",
+            "minItems": 1,
+            "maxItems": 2,
+            "items": {
+              "type": "string"
+            },
+            "description": "공백 혜택 방식 1~2개(2개면 겹친 조합)"
+          },
+          "type": {
+            "enum": [
+              "미충족 핵심",
+              "흐름 편승",
+              "차별 틈새",
+              "보조 후보"
+            ]
+          },
+          "confidence": {
+            "enum": [
+              "high",
+              "medium",
+              "low"
+            ]
+          },
+          "rank_stability": {
+            "type": "number",
+            "minimum": 0,
+            "maximum": 1,
+            "description": "가중치 ±40% 흔들 때 상위 3에 드는 비율"
+          },
+          "parts": {
+            "type": "object",
+            "description": "I 중요도, U 미충족, M 모멘텀, D 차별성, Q 혜택 영역 매력, F 실현성, R 위험 (0~1)"
+          },
+          "facts": {
+            "type": "object",
+            "description": "cards_total, cards_with_mechanism[방식별 카드 수], need_gap, nearest_card, nearest_sim, signal_ids, consumer_priority, domain_card_share, domain_spend"
+          },
+          "tension": {
+            "type": "boolean"
+          },
+          "evidence_ids": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "feasible": {
+            "type": "boolean"
+          },
+          "domain": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "description": "혜택 영역(소비 카테고리 키) 또는 null"
+          },
+          "domain_label": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "evidence_refs": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "pattern": "^ev:[A-Za-z0-9_]+$"
+            },
+            "description": "이 영역과 관련 높은 근거 id(evidence 안)"
+          },
+          "idea": {
+            "type": "object",
+            "description": "탐색 파이프라인 아이디어에서 올라온 영역이면 그 아이디어(06 컨셉이 씨앗으로 쓴다). id 는 IDEA-<아이디어 id>"
+          }
+        }
+      }
     },
-    "tensions": {"type": "array", "items": {"type": "object", "required": ["topic", "positions"], "properties": {"topic": {"type": "string"}, "positions": {"type": "array"}}}},
-    "excluded_cells": {"type": "array", "items": {"type": "object", "required": ["seg", "need", "reason"], "properties": {"seg": {"type": "string"}, "need": {"type": "string"}, "reason": {"type": "string"}}}}
+    "tensions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "topic",
+          "positions"
+        ],
+        "properties": {
+          "topic": {
+            "type": "string"
+          },
+          "positions": {
+            "type": "array"
+          }
+        }
+      }
+    },
+    "excluded_cells": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "seg",
+          "need",
+          "reason"
+        ],
+        "properties": {
+          "seg": {
+            "type": "string"
+          },
+          "need": {
+            "type": "string"
+          },
+          "reason": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "evidence": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "kind",
+          "text"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^ev:[A-Za-z0-9_]+$"
+          },
+          "kind": {
+            "enum": [
+              "fact",
+              "trend",
+              "case",
+              "constraint",
+              "theme",
+              "voice",
+              "prediction",
+              "analogue"
+            ]
+          },
+          "text": {
+            "type": "string"
+          },
+          "age_scope": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "source": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "published": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "confidence": {
+            "enum": [
+              "high",
+              "medium",
+              "low",
+              null
+            ]
+          },
+          "stale": {
+            "type": "boolean"
+          }
+        }
+      },
+      "description": "근거 팩에서 코드가 골라 준 사실·트렌드·사례. 인용은 id(ev:...)로"
+    },
+    "pm_directions": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "H1에서 PM이 밝힌 관심 방향(예: 졸업·레벨업, 실적 재해석, 다음 유행 연계). 후보 영역 선택에 반영한다"
+    }
   }
 }

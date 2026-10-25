@@ -1,0 +1,7 @@
+jsonschema>=4.21
+# 실제 호출 시에만 필요
+anthropic>=0.40        # provider=anthropic
+boto3>=1.35            # provider=bedrock
+# 서버로 띄울 때만 필요
+fastapi>=0.110
+uvicorn>=0.29

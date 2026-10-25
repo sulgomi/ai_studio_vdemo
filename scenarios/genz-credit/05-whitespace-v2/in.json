@@ -1,0 +1,1056 @@
+{
+  "run_id": "_g05",
+  "request_id": "genz-credit-001-whitespace-v2",
+  "agent": "whitespace",
+  "contract_version": "1.0",
+  "mode": "workflow",
+  "today": "2026-10-20",
+  "question": "목표를 지킬 수 있는 시장 기회 셀을 순위로 골라줘.",
+  "conversation": {
+    "summary": "사용자 요청: GenZ 특화 신용카드 만들어줘. H1에서 범위 확인됨: GenZ(만 19~29세), 신용카드, 투자 연계 제외, 목표 채택 의향 0.38(가정치).",
+    "segment": "GenZ(만 19~29세)",
+    "card_type": "신용카드",
+    "period": "최근 18개월(2025-04~2026-10)",
+    "assumptions": [
+      "GenZ를 기준일 2026-10-20 기준 1997~2007년생 중 신용카드 발급이 가능한 만 19~29세로 해석",
+      "고객사 회원·결제 데이터 없이 공개 자료와 PM 가정치로 진행",
+      "목표 채택 의향 0.38은 기존 리허설과 같은 PM 가정치"
+    ],
+    "own_cards": []
+  },
+  "output_mode": "json",
+  "depth": "detail",
+  "payload": {
+    "target_segment_id": "genz",
+    "target_adopt": 0.38,
+    "segments": [
+      {
+        "id": "genz",
+        "name": "GenZ(만 19~29세)"
+      },
+      {
+        "id": "young",
+        "name": "사회초년생(25-29)"
+      },
+      {
+        "id": "single",
+        "name": "1인가구 직장인(30-39)"
+      }
+    ],
+    "need_labels": {
+      "saving": "절약·캐시백",
+      "invest": "투자·자산형성",
+      "travel": "여행·해외",
+      "digital": "구독·디지털",
+      "fixed_cost": "고정비 절감",
+      "safety": "보장·안전",
+      "social": "소속감·소셜",
+      "simple": "단순함"
+    },
+    "research": {
+      "trend": [
+        {
+          "id": "T1",
+          "title": "혜택이 큰 시점을 골라 쓰는 가격 최적화 소비 확산(신한카드 2026 키워드 '프라이스 옵티마이징')",
+          "impl": "확인한 것: 신한카드는 2026 키워드로 프라이스 옵티마이징과 타임 마케팅 인기를 제시했다(S1). 해석: GenZ 카드도 상시 할인보다 시간대·기간 한정 프로모션을 앱 알림과 묶는 설계를 검토할 만하다.",
+          "topic": "promo",
+          "strength": 0.6,
+          "reliability": 0.55
+        },
+        {
+          "id": "T2",
+          "title": "간편결제 일상화와 페이 플랫폼 경쟁 심화(한국은행 통계, 오픈서베이 2026 조사)",
+          "impl": "확인한 것: 2025년 상반기 간편결제 일평균 이용금액이 1조464억원으로 처음 1조원을 넘었다(S2). 해석: GenZ 신용카드는 실물보다 네이버페이·카카오페이·토스페이 등록과 앱 내 발급 경험을 먼저 설계해야 하며, 20대 연령별 수치는 확인하지 못했다.",
+          "topic": "digital",
+          "strength": 0.75,
+          "reliability": 0.65
+        },
+        {
+          "id": "T3",
+          "title": "해외결제 증가와 트래블카드 수수료 면제 혜택 경쟁(하나카드·신한카드 주도)",
+          "impl": "확인한 것: 2025년 상반기 개인 해외 카드 이용액은 10조6932억원으로 9.0% 늘었고, 해외 체크카드 결제 비중은 하나카드 41.9%, 신한카드 30%였다(S5, S6). 해석: 체크카드 중심 시장이라 신용카드는 해외 수수료 면제와 구독·앱 결제 혜택을 함께 묶어야 차별점이 생긴다.",
+          "topic": "benefit",
+          "strength": 0.65,
+          "reliability": 0.6
+        },
+        {
+          "id": "T4",
+          "title": "금융이력 부족 청년의 신용카드 발급 문턱 완화 추진(금융위원회 2026 하반기 업무보고)",
+          "impl": "확인한 것: 금융당국은 12월부터 대안신용평가 활용과 보증금 담보 신용카드 도입으로 청년 등 금융이력부족자 발급을 쉽게 하겠다고 했다(S8, S9). 해석: 첫 신용카드 수요가 커질 수 있어 낮은 한도로 시작해 이용 실적에 따라 올리는 구조를 검토할 만하며, 세부 기준은 사람 확인 필요다.",
+          "topic": "regulation",
+          "strength": 0.8,
+          "reliability": 0.7
+        },
+        {
+          "id": "T5",
+          "title": "카드 부가서비스 일방 변경 조항에 대한 약관 시정 요구",
+          "impl": "확인한 것: 공정위는 사전 고지 없이 부가서비스를 변경·중단할 수 있게 한 카드 약관 조항을 문제 삼아 금융위에 시정을 요청했다(S10, S11). 해석: 혜택 축소 가능성을 출시 후에 줄이기 어려우므로 지속 가능한 혜택 수준으로 처음부터 설계해야 한다(오래된 근거)",
+          "topic": "regulation",
+          "strength": 0.4,
+          "reliability": 0.45
+        }
+      ],
+      "competitor": {
+        "crowded": [
+          {
+            "tag": "reward_discount",
+            "count": 15,
+            "reason": "34종 중 15종으로 태그 집계 1위. 청구할인형 보상은 신한, 삼성, KB국민, 롯데, NH농협 등 대부분 발급사가 이미 채택"
+          },
+          {
+            "tag": "travel_fx",
+            "count": 14,
+            "reason": "34종 중 14종으로 집계 2위. 해외결제·환전 혜택은 신용카드와 체크카드 양쪽에 넓게 퍼져 있음"
+          },
+          {
+            "tag": "dining_cafe",
+            "count": 12,
+            "reason": "34종 중 12종. GenZ 생활 소비 영역 가운데 가장 붐비는 가맹점 태그"
+          },
+          {
+            "tag": "mart_daily",
+            "count": 11,
+            "reason": "34종 중 11종. 편의점·마트 혜택은 생활형 카드의 기본 구성으로 굳어짐"
+          },
+          {
+            "tag": "online_shop",
+            "count": 10,
+            "reason": "34종 중 10종. 온라인쇼핑 할인·적립은 young을 타깃에 넣은 신용카드 대부분이 보유"
+          },
+          {
+            "tag": "tiered_perf",
+            "count": 10,
+            "reason": "34종 중 10종이 실적 구간제를 채택해 조건 구조가 서로 비슷함"
+          },
+          {
+            "tag": "transit",
+            "count": 9,
+            "reason": "34종 중 9종으로 상위 8위권 동률. 대중교통·모빌리티 혜택은 young 전용 체크카드에 특히 몰려 있음"
+          },
+          {
+            "tag": "subscription_ott",
+            "count": 8,
+            "reason": "34종 중 8종으로 상위 8개 태그 밖(동률 9종 태그들 다음 순위)이지만, GenZ 대상 신용카드 후보(Discount Plan+, LOCA 365, 올바른 FLEX 등)가 공통으로 넣고 있어 GenZ 기획 관점에서는 붐비는 영역으로 봄"
+          }
+        ],
+        "empty": [
+          {
+            "tag": "social",
+            "count": 0,
+            "reason": "34종 중 0종. 친구·지인과 혜택을 주고받는 소셜형 구조를 가진 카드가 없음"
+          },
+          {
+            "tag": "group_pooling",
+            "count": 0,
+            "reason": "34종 중 0종. 여러 사람이 혜택 한도를 나눠 쓰는 구조가 없음"
+          },
+          {
+            "tag": "challenge",
+            "count": 1,
+            "reason": "34종 중 1종(처음(ANNIVERSE))뿐이고 young 타깃 카드에는 없음"
+          },
+          {
+            "tag": "ai_personalize",
+            "count": 0,
+            "reason": "34종 중 0종. 비슷한 auto_best(자동 최적 혜택)도 체크카드 1종(카카오뱅크 K-패스 프렌즈 체크)뿐"
+          },
+          {
+            "tag": "anti_cap",
+            "count": 0,
+            "reason": "34종 중 0종. tiered_perf가 10종인 데 비해 실적조건 완화 태그는 없고, perf_recharge(실적 부족분 보전)도 2종뿐"
+          },
+          {
+            "tag": "miss_refund",
+            "count": 0,
+            "reason": "34종 중 0종. 놓친 혜택을 돌려주는 환급형 카드가 없음"
+          },
+          {
+            "tag": "benefit_rental",
+            "count": 0,
+            "reason": "34종 중 0종. 비슷한 monthly_switch(월 변경형)는 체크카드 2종뿐이고 신용카드에는 없음"
+          },
+          {
+            "tag": "life_event",
+            "count": 0,
+            "reason": "34종 중 0종. 취업, 독립 같은 생애 전환 시점에 혜택이 바뀌는 카드가 없음"
+          },
+          {
+            "tag": "esg_green",
+            "count": 0,
+            "reason": "34종 중 0종. 친환경 소비 혜택 태그를 가진 카드가 없음"
+          }
+        ],
+        "nearest": [
+          {
+            "name": "올바른 FLEX",
+            "card_id": "c26",
+            "why": "NH농협 신용카드로 target에 young이 있고 delivery, subscription_ott, dining_cafe, transit, mart_daily, online_shop 6개 GenZ 생활 소비 태그가 겹침. 청구할인형(reward_discount)에 결제수단 가산(paymethod_bonus) 구조"
+          },
+          {
+            "name": "Discount Plan+",
+            "card_id": "c02",
+            "why": "신한 신용카드로 target에 young이 있고 delivery, subscription_ott, dining_cafe, mart_daily, online_shop 5개 태그가 겹침. 청구할인형에 실적 구간제, 팩 택1, 시간대 선택(time_slot)을 더한 구조"
+          },
+          {
+            "name": "iD SELECT ALL",
+            "card_id": "c07",
+            "why": "삼성 신용카드로 target에 young이 있고 delivery, dining_cafe, mart_daily, online_shop 4개 태그와 travel_fx가 겹침. 청구할인형에 항목 택1(select_item) 구조라 생활 소비를 골라 받는 방식이 GenZ 수요와 가까움"
+          }
+        ]
+      },
+      "consumer": {
+        "top_needs": [
+          {
+            "need": "digital",
+            "priority": 1,
+            "evidence": "니즈 가중치 0.85(PM 가정치)로 가장 높고 디지털 수준 0.95다. 간편결제 일상화(T2)로 페이 등록과 앱 내 발급이 첫 접점이 된다. 공개 웹에서도 간편결제가 주 결제수단으로 언급된다(U-s7, U-s8).",
+            "signal_ids": [
+              "T2"
+            ]
+          },
+          {
+            "need": "saving",
+            "priority": 2,
+            "evidence": "니즈 가중치 0.75(PM 가정치). 월 소비 가정치는 외식 24, 온라인 20, 생활 12 순이라 이 영역 적립이 체감 혜택의 중심이다. 혜택 시점을 골라 쓰는 소비(T1)와 맞물린다.",
+            "signal_ids": [
+              "T1"
+            ]
+          },
+          {
+            "need": "simple",
+            "priority": 3,
+            "evidence": "니즈 가중치 0.7, 복잡도 허용도 0.5(PM 가정치). 첫 카드 안내 글들은 전월실적 조건과 한도 확인을 반복해 강조한다(U-s2, U-s4). 혜택 변경 우려(T5)도 단순하고 지속 가능한 구조를 요구한다.",
+            "signal_ids": [
+              "T5"
+            ]
+          },
+          {
+            "need": "social",
+            "priority": 4,
+            "evidence": "니즈 가중치 0.7(PM 가정치). 페이 플랫폼 중심의 결제 생활(T2)에서 자주 쓰는 플랫폼과의 연결이 소속감 요소가 될 수 있다. 공개 웹 근거는 확인하지 못해 추정이다.",
+            "signal_ids": [
+              "T2"
+            ]
+          },
+          {
+            "need": "travel",
+            "priority": 5,
+            "evidence": "니즈 가중치 0.55, 여행 월 소비 가정치 6. 해외결제 증가와 트래블카드 수수료 면제 경쟁(T3)이 있으나 체크카드 중심 시장이라 보조 혜택으로 두는 편이 맞다.",
+            "signal_ids": [
+              "T3"
+            ]
+          },
+          {
+            "need": "fixed_cost",
+            "priority": 6,
+            "evidence": "니즈 가중치 0.4, 고정비 월 소비 가정치 5로 낮다. 다만 20대 인기 카드 순위 상위에 공과금·통신 할인 카드가 언급되어(U-s1, U-s2) 보조 혜택 후보로 남긴다.",
+            "signal_ids": []
+          },
+          {
+            "need": "invest",
+            "priority": 7,
+            "evidence": "니즈 가중치 0.3(PM 가정치)으로 낮고, 이번 기획 범위(H1)에서 투자 연계를 제외했으므로 최하위로 둔다. 관련 시그널도 입력에 없다.",
+            "signal_ids": []
+          }
+        ],
+        "must_have": [
+          "간편결제(네이버페이·카카오페이·토스페이) 등록과 앱 내 발급·관리(T2, 구독·디지털 0.85)",
+          "외식·온라인·생활 등 주 소비 영역에서 체감되는 적립·할인(절약·캐시백 0.75)",
+          "전월실적 조건과 할인 한도가 한눈에 보이는 단순한 혜택 구조(단순함 0.7, 복잡도 허용도 0.5)",
+          "연회비 부담이 낮은 수준(첫 카드 선택 기준으로 언급, U-s1)",
+          "출시 후 혜택 변경 가능성을 줄인 지속 가능한 혜택 설계와 변경 시 사전 고지(T5)"
+        ],
+        "can_give_up": [
+          "보장·안전 부가서비스(니즈 점수 0.25)",
+          "투자·자산형성 연계(니즈 점수 0.3, 범위 밖)",
+          "고정비 절감 중심 혜택(니즈 점수 0.4, 보조 혜택으로만 검토)",
+          "공항 라운지 등 프리미엄 여행 서비스(여행·해외 니즈 점수 0.55, 해외 수수료 면제 정도로 충분하다는 추정)"
+        ],
+        "evidence_signal_ids": [
+          "T1",
+          "T2",
+          "T3",
+          "T4",
+          "T5"
+        ]
+      },
+      "lead": {
+        "headline": "GenZ 신용카드는 소셜·실적조건 완화 같은 공백 혜택과 디지털·절약 니즈가 맞닿지만, 간편결제 습관과 혜택 불신이 발급 동기를 약하게 만든다",
+        "key_findings": [
+          {
+            "claim": "social, group_pooling, ai_personalize, anti_cap, miss_refund, benefit_rental, life_event, esg_green 태그 카드는 0종이고 challenge는 1종이다.",
+            "finding_ids": [
+              "competitor#1"
+            ],
+            "agents": [
+              "competitor"
+            ],
+            "source_ids": [
+              "DB1"
+            ]
+          },
+          {
+            "claim": "혜택 경쟁은 reward_discount 15종, travel_fx 14종, dining_cafe 12종, mart_daily 11종, online_shop 10종에 몰려 있다.",
+            "finding_ids": [
+              "competitor#0"
+            ],
+            "agents": [
+              "competitor"
+            ],
+            "source_ids": [
+              "DB1"
+            ]
+          },
+          {
+            "claim": "young만 겨냥한 카드는 모두 체크카드여서 GenZ 전용 신용카드 자리는 비어 보이나, 시판 전체와 같은지는 공시 재확인이 필요하다.",
+            "finding_ids": [
+              "competitor#2",
+              "competitor#4"
+            ],
+            "agents": [
+              "competitor"
+            ],
+            "source_ids": [
+              "DB1"
+            ]
+          },
+          {
+            "claim": "GenZ 니즈는 구독·디지털(0.85), 절약·캐시백(0.75), 단순함(0.7), 소속감·소셜(0.7) 순이며 가중치는 PM 가정치다.",
+            "finding_ids": [
+              "consumer#0"
+            ],
+            "agents": [
+              "consumer"
+            ],
+            "source_ids": []
+          },
+          {
+            "claim": "간편결제 일평균 이용금액은 1조464억원이고, 가장 많이 쓴 결제수단으로 간편결제를 꼽은 응답은 93.2%다(모두 전 연령 수치).",
+            "finding_ids": [
+              "trend#1",
+              "consumer#2"
+            ],
+            "agents": [
+              "trend",
+              "consumer"
+            ],
+            "source_ids": [
+              "S2",
+              "U-s7"
+            ]
+          },
+          {
+            "claim": "금융당국은 12월부터 청년 등 금융이력부족자의 신용카드 발급에 대안신용평가와 보증금 담보 신용카드를 도입하겠다고 밝혔다.",
+            "finding_ids": [
+              "trend#8"
+            ],
+            "agents": [
+              "trend"
+            ],
+            "source_ids": [
+              "S8"
+            ]
+          }
+        ],
+        "conflicts": [
+          {
+            "topic": "간편결제 일상화로 실물 신용카드 발급 동기가 약한가, 혜택에 민감한 소비가 카드 선택을 움직이는가",
+            "positions": [
+              {
+                "agent": "trend",
+                "view": "간편결제 일평균 이용금액이 1조464억원이고 전자금융업자 간편결제 비중이 55.1%라 결제 접점이 페이 앱으로 옮겨 갔다.",
+                "basis": "trend#1, trend#2, trend#3(한국은행 통계 보도, 오픈서베이 조사)",
+                "limits": "전 연령 지표이고 20대 수치는 확인하지 못했다."
+              },
+              {
+                "agent": "consumer",
+                "view": "절약·캐시백 니즈가 0.75로 2순위이고 20대 첫 카드는 혜택 위주로 고른다는 안내가 있어 혜택이 카드 선택 동기다.",
+                "basis": "consumer#0, consumer#4, trend#0(T1 가격 최적화 소비)",
+                "limits": "니즈 가중치는 PM 가정치이고 공개 웹 근거는 카드 추천 글 중심이라 홍보성 편향 가능."
+              }
+            ],
+            "if_assumptions": [
+              "가정 A: 카드가 페이에 등록돼 쓰이고 페이 결제에도 카드 혜택이 붙는다면 두 입장은 양립하며 혜택 설계가 발급 동기가 된다.",
+              "가정 B: 페이 앱 자체 적립이 카드 혜택과 비슷하거나 크다면 실물 카드 발급 동기는 약하고 카드는 휴면화될 수 있다(내부 데이터 확인 필요)."
+            ]
+          },
+          {
+            "topic": "해외결제 혜택을 GenZ 신용카드의 주 혜택으로 둘 만한가",
+            "positions": [
+              {
+                "agent": "trend",
+                "view": "해외 카드 이용액이 9.0% 늘고 트래블카드 수수료 면제 경쟁이 커지는 상승 시그널이다(T3).",
+                "basis": "trend#5, trend#6, trend#7",
+                "limits": "trend#7은 집계 사이트 보도라 신뢰도 낮음."
+              },
+              {
+                "agent": "competitor",
+                "view": "travel_fx는 14종으로 두 번째로 붐비는 태그라 차별점이 되기 어렵다.",
+                "basis": "competitor#0(경쟁 카드 DB 태그 집계)",
+                "limits": "DB 기준일이 없어 현재 상품 구성과 같은지 공시 재확인 필요."
+              },
+              {
+                "agent": "consumer",
+                "view": "여행·해외 니즈는 5순위이고 트래블 체크카드에서 바꿀 전환 비용이 있어 보조 혜택이 맞다.",
+                "basis": "consumer 결과 top_needs와 barriers(T3 인용)",
+                "limits": "니즈 가중치는 PM 가정치."
+              }
+            ],
+            "if_assumptions": [
+              "가정 A: 타깃이 해외 이용이 잦은 하위 집단이면 해외 혜택이 주 혜택이 될 수 있다.",
+              "가정 B: 타깃이 GenZ 전체면 해외 혜택은 보조로 두는 편이 근거와 맞는다."
+            ]
+          },
+          {
+            "topic": "소셜·공유형 공백이 수요가 있는 빈칸인가",
+            "positions": [
+              {
+                "agent": "competitor",
+                "view": "social, group_pooling은 0종, challenge는 1종이라 GenZ 기획의 공백 후보다.",
+                "basis": "competitor#1",
+                "limits": "DB에 없는 카드는 판단하지 않았다."
+              },
+              {
+                "agent": "consumer",
+                "view": "소속감·소셜 니즈는 0.7로 4순위지만 공개 웹 근거는 확인하지 못해 추정이다.",
+                "basis": "consumer#0",
+                "limits": "PM 가정치이며 커뮤니티 데이터 미연동."
+              },
+              {
+                "agent": "trend",
+                "view": "제휴·그룹 관점의 GenZ 시그널은 찾지 못해 근거 부족으로 남겼다.",
+                "basis": "trend 결과 unresolved",
+                "limits": "공개 검색 범위 안의 판단."
+              }
+            ],
+            "if_assumptions": [
+              "가정 A: 소셜 니즈 가정치가 실제와 비슷하면 공백과 니즈가 겹치는 기회다.",
+              "가정 B: 수요가 약하면 비어 있는 이유가 수요 부족일 수 있어 소비자 검증이 먼저다."
+            ]
+          }
+        ]
+      }
+    },
+    "cells_top": [
+      {
+        "id": "A-genz-digital-ai_personalize-online",
+        "seg": "genz",
+        "need": "digital",
+        "mechanisms": [
+          "ai_personalize"
+        ],
+        "domain": "online",
+        "domain_label": "온라인쇼핑",
+        "score": 0.72,
+        "rank": 1,
+        "ceiling": 0.56,
+        "feasible": true,
+        "type": "미충족 핵심",
+        "confidence": "medium",
+        "rank_stability": 0.9,
+        "parts": {
+          "I": 0.91,
+          "U": 0.841,
+          "M": 0.426,
+          "D": 0.8,
+          "Q": 0.549,
+          "F": 1.0,
+          "R": 0.25
+        },
+        "facts": {
+          "cards_total": 34,
+          "cards_with_mechanism": [
+            0
+          ],
+          "need_gap": 0.6,
+          "nearest_card": "디지로카 London",
+          "nearest_sim": 0.2,
+          "signal_ids": [
+            "T2"
+          ],
+          "consumer_priority": 1,
+          "assumed_links": [],
+          "domain_card_share": 0.29,
+          "domain_spend": 20
+        },
+        "tension": false,
+        "assumption_dependent": true,
+        "evidence_ids": [
+          "T2",
+          "tag:ai_personalize",
+          "need:digital",
+          "tag:online_shop"
+        ]
+      },
+      {
+        "id": "A-genz-digital-auto_best-online",
+        "seg": "genz",
+        "need": "digital",
+        "mechanisms": [
+          "auto_best"
+        ],
+        "domain": "online",
+        "domain_label": "온라인쇼핑",
+        "score": 0.718,
+        "rank": 2,
+        "ceiling": 0.56,
+        "feasible": true,
+        "type": "미충족 핵심",
+        "confidence": "medium",
+        "rank_stability": 0.78,
+        "parts": {
+          "I": 0.91,
+          "U": 0.753,
+          "M": 0.426,
+          "D": 0.714,
+          "Q": 0.549,
+          "F": 1.0,
+          "R": 0.0
+        },
+        "facts": {
+          "cards_total": 34,
+          "cards_with_mechanism": [
+            1
+          ],
+          "need_gap": 0.6,
+          "nearest_card": "카카오뱅크 K-패스 프렌즈 체크",
+          "nearest_sim": 0.29,
+          "signal_ids": [
+            "T2"
+          ],
+          "consumer_priority": 1,
+          "assumed_links": [],
+          "domain_card_share": 0.29,
+          "domain_spend": 20
+        },
+        "tension": false,
+        "assumption_dependent": true,
+        "evidence_ids": [
+          "T2",
+          "tag:auto_best",
+          "need:digital",
+          "tag:online_shop"
+        ]
+      },
+      {
+        "id": "A-genz-saving-miss_refund-online",
+        "seg": "genz",
+        "need": "saving",
+        "mechanisms": [
+          "miss_refund"
+        ],
+        "domain": "online",
+        "domain_label": "온라인쇼핑",
+        "score": 0.714,
+        "rank": 3,
+        "ceiling": 0.56,
+        "feasible": true,
+        "type": "미충족 핵심",
+        "confidence": "high",
+        "rank_stability": 0.7,
+        "parts": {
+          "I": 0.793,
+          "U": 0.824,
+          "M": 0.483,
+          "D": 0.8,
+          "Q": 0.549,
+          "F": 1.0,
+          "R": 0.15
+        },
+        "facts": {
+          "cards_total": 34,
+          "cards_with_mechanism": [
+            0
+          ],
+          "need_gap": 0.56,
+          "nearest_card": "zgm.streaming",
+          "nearest_sim": 0.2,
+          "signal_ids": [
+            "T1",
+            "T3"
+          ],
+          "consumer_priority": 2,
+          "assumed_links": [],
+          "domain_card_share": 0.29,
+          "domain_spend": 20
+        },
+        "tension": true,
+        "assumption_dependent": true,
+        "evidence_ids": [
+          "T1",
+          "T3",
+          "tag:miss_refund",
+          "need:saving",
+          "tag:online_shop"
+        ]
+      },
+      {
+        "id": "A-genz-saving-life_event-dining",
+        "seg": "genz",
+        "need": "saving",
+        "mechanisms": [
+          "life_event"
+        ],
+        "domain": "dining",
+        "domain_label": "외식·배달",
+        "score": 0.703,
+        "rank": 4,
+        "ceiling": 0.56,
+        "feasible": true,
+        "type": "미충족 핵심",
+        "confidence": "medium",
+        "rank_stability": 0.0,
+        "parts": {
+          "I": 0.793,
+          "U": 0.741,
+          "M": 0.483,
+          "D": 0.8,
+          "Q": 0.5,
+          "F": 1.0,
+          "R": 0.0
+        },
+        "facts": {
+          "cards_total": 34,
+          "cards_with_mechanism": [
+            0
+          ],
+          "need_gap": 0.56,
+          "nearest_card": "zgm.streaming",
+          "nearest_sim": 0.2,
+          "signal_ids": [
+            "T1",
+            "T3"
+          ],
+          "consumer_priority": 2,
+          "assumed_links": [
+            "life_event"
+          ],
+          "domain_card_share": 0.41,
+          "domain_spend": 24
+        },
+        "tension": true,
+        "assumption_dependent": true,
+        "evidence_ids": [
+          "T1",
+          "T3",
+          "tag:life_event",
+          "need:saving",
+          "tag:dining_cafe"
+        ]
+      },
+      {
+        "id": "A-genz-simple-anti_cap-dining",
+        "seg": "genz",
+        "need": "simple",
+        "mechanisms": [
+          "anti_cap"
+        ],
+        "domain": "dining",
+        "domain_label": "외식·배달",
+        "score": 0.683,
+        "rank": 5,
+        "ceiling": 0.68,
+        "feasible": true,
+        "type": "차별 틈새",
+        "confidence": "medium",
+        "rank_stability": 0.0,
+        "parts": {
+          "I": 0.706,
+          "U": 0.853,
+          "M": 0.367,
+          "D": 0.8,
+          "Q": 0.5,
+          "F": 1.0,
+          "R": 0.0
+        },
+        "facts": {
+          "cards_total": 34,
+          "cards_with_mechanism": [
+            0
+          ],
+          "need_gap": 0.63,
+          "nearest_card": "zgm.streaming",
+          "nearest_sim": 0.2,
+          "signal_ids": [
+            "T3"
+          ],
+          "consumer_priority": 3,
+          "assumed_links": [],
+          "domain_card_share": 0.41,
+          "domain_spend": 24
+        },
+        "tension": false,
+        "assumption_dependent": true,
+        "evidence_ids": [
+          "T3",
+          "tag:anti_cap",
+          "need:simple",
+          "tag:dining_cafe"
+        ]
+      },
+      {
+        "id": "A-genz-simple-anti_cap+auto_best-dining",
+        "seg": "genz",
+        "need": "simple",
+        "mechanisms": [
+          "anti_cap",
+          "auto_best"
+        ],
+        "domain": "dining",
+        "domain_label": "외식·배달",
+        "score": 0.664,
+        "rank": 6,
+        "ceiling": 0.68,
+        "feasible": true,
+        "type": "차별 틈새",
+        "confidence": "medium",
+        "rank_stability": 0.0,
+        "parts": {
+          "I": 0.706,
+          "U": 0.748,
+          "M": 0.367,
+          "D": 0.833,
+          "Q": 0.5,
+          "F": 1.0,
+          "R": 0.0
+        },
+        "facts": {
+          "cards_total": 34,
+          "cards_with_mechanism": [
+            0,
+            1
+          ],
+          "need_gap": 0.63,
+          "nearest_card": "zgm.streaming",
+          "nearest_sim": 0.17,
+          "signal_ids": [
+            "T3"
+          ],
+          "consumer_priority": 3,
+          "assumed_links": [
+            "auto_best"
+          ],
+          "domain_card_share": 0.41,
+          "domain_spend": 24
+        },
+        "tension": false,
+        "assumption_dependent": true,
+        "evidence_ids": [
+          "T3",
+          "tag:anti_cap",
+          "tag:auto_best",
+          "need:simple",
+          "tag:dining_cafe"
+        ]
+      },
+      {
+        "id": "A-genz-social-social",
+        "seg": "genz",
+        "need": "social",
+        "mechanisms": [
+          "social"
+        ],
+        "domain": null,
+        "domain_label": null,
+        "score": 0.59,
+        "rank": 7,
+        "ceiling": 0.56,
+        "feasible": true,
+        "type": "차별 틈새",
+        "confidence": "low",
+        "rank_stability": 0.0,
+        "parts": {
+          "I": 0.649,
+          "U": 0.99,
+          "M": 0.15,
+          "D": 0.8,
+          "Q": 0.35,
+          "F": 1.0,
+          "R": 0.0
+        },
+        "facts": {
+          "cards_total": 34,
+          "cards_with_mechanism": [
+            0
+          ],
+          "need_gap": 0.98,
+          "nearest_card": "zgm.streaming",
+          "nearest_sim": 0.2,
+          "signal_ids": [],
+          "consumer_priority": 4,
+          "assumed_links": [],
+          "domain_card_share": null,
+          "domain_spend": null
+        },
+        "tension": true,
+        "assumption_dependent": true,
+        "evidence_ids": [
+          "tag:social",
+          "need:social"
+        ]
+      },
+      {
+        "id": "A-genz-social-esg_green",
+        "seg": "genz",
+        "need": "social",
+        "mechanisms": [
+          "esg_green"
+        ],
+        "domain": null,
+        "domain_label": null,
+        "score": 0.574,
+        "rank": 8,
+        "ceiling": 0.56,
+        "feasible": true,
+        "type": "차별 틈새",
+        "confidence": "low",
+        "rank_stability": 0.0,
+        "parts": {
+          "I": 0.649,
+          "U": 0.891,
+          "M": 0.15,
+          "D": 0.8,
+          "Q": 0.35,
+          "F": 1.0,
+          "R": 0.0
+        },
+        "facts": {
+          "cards_total": 34,
+          "cards_with_mechanism": [
+            0
+          ],
+          "need_gap": 0.98,
+          "nearest_card": "zgm.streaming",
+          "nearest_sim": 0.2,
+          "signal_ids": [],
+          "consumer_priority": 4,
+          "assumed_links": [
+            "esg_green"
+          ],
+          "domain_card_share": null,
+          "domain_spend": null
+        },
+        "tension": true,
+        "assumption_dependent": true,
+        "evidence_ids": [
+          "tag:esg_green",
+          "need:social"
+        ]
+      },
+      {
+        "id": "A-genz-travel-premium_voucher",
+        "seg": "genz",
+        "need": "travel",
+        "mechanisms": [
+          "premium_voucher"
+        ],
+        "domain": null,
+        "domain_label": null,
+        "score": 0.547,
+        "rank": 9,
+        "ceiling": 0.56,
+        "feasible": true,
+        "type": "차별 틈새",
+        "confidence": "low",
+        "rank_stability": 0.0,
+        "parts": {
+          "I": 0.501,
+          "U": 0.644,
+          "M": 0.331,
+          "D": 0.8,
+          "Q": 0.35,
+          "F": 1.0,
+          "R": 0.0
+        },
+        "facts": {
+          "cards_total": 34,
+          "cards_with_mechanism": [
+            1
+          ],
+          "need_gap": 0.51,
+          "nearest_card": "zgm.streaming",
+          "nearest_sim": 0.2,
+          "signal_ids": [
+            "T1"
+          ],
+          "consumer_priority": 5,
+          "assumed_links": [
+            "premium_voucher"
+          ],
+          "domain_card_share": null,
+          "domain_spend": null
+        },
+        "tension": true,
+        "assumption_dependent": true,
+        "evidence_ids": [
+          "T1",
+          "tag:premium_voucher",
+          "need:travel"
+        ]
+      },
+      {
+        "id": "A-genz-travel-lounge",
+        "seg": "genz",
+        "need": "travel",
+        "mechanisms": [
+          "lounge"
+        ],
+        "domain": null,
+        "domain_label": null,
+        "score": 0.543,
+        "rank": 10,
+        "ceiling": 0.645,
+        "feasible": true,
+        "type": "차별 틈새",
+        "confidence": "low",
+        "rank_stability": 0.0,
+        "parts": {
+          "I": 0.501,
+          "U": 0.627,
+          "M": 0.331,
+          "D": 0.8,
+          "Q": 0.35,
+          "F": 1.0,
+          "R": 0.0
+        },
+        "facts": {
+          "cards_total": 34,
+          "cards_with_mechanism": [
+            2
+          ],
+          "need_gap": 0.51,
+          "nearest_card": "zgm.streaming",
+          "nearest_sim": 0.2,
+          "signal_ids": [
+            "T1"
+          ],
+          "consumer_priority": 5,
+          "assumed_links": [],
+          "domain_card_share": null,
+          "domain_spend": null
+        },
+        "tension": true,
+        "assumption_dependent": true,
+        "evidence_ids": [
+          "T1",
+          "tag:lounge",
+          "need:travel"
+        ]
+      },
+      {
+        "id": "A-single-fixed_cost-life_event",
+        "seg": "single",
+        "need": "fixed_cost",
+        "mechanisms": [
+          "life_event"
+        ],
+        "domain": null,
+        "domain_label": null,
+        "score": 0.49,
+        "rank": 11,
+        "ceiling": 0.887,
+        "feasible": true,
+        "type": "차별 틈새",
+        "confidence": "low",
+        "rank_stability": 0.0,
+        "parts": {
+          "I": 0.65,
+          "U": 0.724,
+          "M": 0.15,
+          "D": 0.8,
+          "Q": 0.35,
+          "F": 1.0,
+          "R": 0.0
+        },
+        "facts": {
+          "cards_total": 34,
+          "cards_with_mechanism": [
+            0
+          ],
+          "need_gap": 0.51,
+          "nearest_card": "디지로카 London",
+          "nearest_sim": 0.2,
+          "signal_ids": [],
+          "consumer_priority": null,
+          "assumed_links": [
+            "life_event"
+          ],
+          "domain_card_share": null,
+          "domain_spend": null
+        },
+        "tension": false,
+        "assumption_dependent": true,
+        "evidence_ids": [
+          "tag:life_event",
+          "need:fixed_cost"
+        ]
+      }
+    ],
+    "tensions": [
+      {
+        "topic": "간편결제 일상화로 실물 신용카드 발급 동기가 약한가, 혜택에 민감한 소비가 카드 선택을 움직이는가",
+        "positions": [
+          {
+            "agent": "trend",
+            "view": "간편결제 일평균 이용금액이 1조464억원이고 전자금융업자 간편결제 비중이 55.1%라 결제 접점이 페이 앱으로 옮겨 갔다.",
+            "basis": "trend#1, trend#2, trend#3(한국은행 통계 보도, 오픈서베이 조사)",
+            "limits": "전 연령 지표이고 20대 수치는 확인하지 못했다."
+          },
+          {
+            "agent": "consumer",
+            "view": "절약·캐시백 니즈가 0.75로 2순위이고 20대 첫 카드는 혜택 위주로 고른다는 안내가 있어 혜택이 카드 선택 동기다.",
+            "basis": "consumer#0, consumer#4, trend#0(T1 가격 최적화 소비)",
+            "limits": "니즈 가중치는 PM 가정치이고 공개 웹 근거는 카드 추천 글 중심이라 홍보성 편향 가능."
+          }
+        ]
+      },
+      {
+        "topic": "해외결제 혜택을 GenZ 신용카드의 주 혜택으로 둘 만한가",
+        "positions": [
+          {
+            "agent": "trend",
+            "view": "해외 카드 이용액이 9.0% 늘고 트래블카드 수수료 면제 경쟁이 커지는 상승 시그널이다(T3).",
+            "basis": "trend#5, trend#6, trend#7",
+            "limits": "trend#7은 집계 사이트 보도라 신뢰도 낮음."
+          },
+          {
+            "agent": "competitor",
+            "view": "travel_fx는 14종으로 두 번째로 붐비는 태그라 차별점이 되기 어렵다.",
+            "basis": "competitor#0(경쟁 카드 DB 태그 집계)",
+            "limits": "DB 기준일이 없어 현재 상품 구성과 같은지 공시 재확인 필요."
+          },
+          {
+            "agent": "consumer",
+            "view": "여행·해외 니즈는 5순위이고 트래블 체크카드에서 바꿀 전환 비용이 있어 보조 혜택이 맞다.",
+            "basis": "consumer 결과 top_needs와 barriers(T3 인용)",
+            "limits": "니즈 가중치는 PM 가정치."
+          }
+        ]
+      },
+      {
+        "topic": "소셜·공유형 공백이 수요가 있는 빈칸인가",
+        "positions": [
+          {
+            "agent": "competitor",
+            "view": "social, group_pooling은 0종, challenge는 1종이라 GenZ 기획의 공백 후보다.",
+            "basis": "competitor#1",
+            "limits": "DB에 없는 카드는 판단하지 않았다."
+          },
+          {
+            "agent": "consumer",
+            "view": "소속감·소셜 니즈는 0.7로 4순위지만 공개 웹 근거는 확인하지 못해 추정이다.",
+            "basis": "consumer#0",
+            "limits": "PM 가정치이며 커뮤니티 데이터 미연동."
+          },
+          {
+            "agent": "trend",
+            "view": "제휴·그룹 관점의 GenZ 시그널은 찾지 못해 근거 부족으로 남겼다.",
+            "basis": "trend 결과 unresolved",
+            "limits": "공개 검색 범위 안의 판단."
+          }
+        ]
+      }
+    ],
+    "excluded_cells": []
+  }
+}

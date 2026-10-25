@@ -1,0 +1,1422 @@
+{
+ "range": [
+  170,
+  339
+ ],
+ "labels": {
+  "WTF38": {
+   "needs": [
+    "saving"
+   ],
+   "tags": [],
+   "domains": [],
+   "relevance": "indirect"
+  },
+  "WTF39": {
+   "needs": [],
+   "tags": [],
+   "domains": [],
+   "relevance": "none"
+  },
+  "WTF40": {
+   "needs": [],
+   "tags": [],
+   "domains": [],
+   "relevance": "none"
+  },
+  "WTF41": {
+   "needs": [],
+   "tags": [],
+   "domains": [],
+   "relevance": "none"
+  },
+  "WTF42": {
+   "needs": [],
+   "tags": [],
+   "domains": [],
+   "relevance": "none"
+  },
+  "WTF43": {
+   "needs": [
+    "saving"
+   ],
+   "tags": [],
+   "domains": [],
+   "relevance": "indirect"
+  },
+  "WTF44": {
+   "needs": [],
+   "tags": [],
+   "domains": [],
+   "relevance": "none"
+  },
+  "SNF1": {
+   "needs": [],
+   "tags": [],
+   "domains": [],
+   "relevance": "none"
+  },
+  "SNF2": {
+   "needs": [],
+   "tags": [],
+   "domains": [],
+   "relevance": "indirect"
+  },
+  "SNF3": {
+   "needs": [],
+   "tags": [],
+   "domains": [
+    "dining"
+   ],
+   "relevance": "indirect"
+  },
+  "SNF4": {
+   "needs": [],
+   "tags": [],
+   "domains": [],
+   "relevance": "indirect"
+  },
+  "SNF5": {
+   "needs": [],
+   "tags": [],
+   "domains": [],
+   "relevance": "none"
+  },
+  "SNF6": {
+   "needs": [],
+   "tags": [],
+   "domains": [],
+   "relevance": "none"
+  },
+  "SNF7": {
+   "needs": [],
+   "tags": [],
+   "domains": [],
+   "relevance": "none"
+  },
+  "SNF8": {
+   "needs": [],
+   "tags": [],
+   "domains": [],
+   "relevance": "none"
+  },
+  "SNF9": {
+   "needs": [],
+   "tags": [],
+   "domains": [],
+   "relevance": "none"
+  },
+  "SNF10": {
+   "needs": [
+    "saving"
+   ],
+   "tags": [],
+   "domains": [
+    "online"
+   ],
+   "relevance": "indirect"
+  },
+  "SNF11": {
+   "needs": [],
+   "tags": [],
+   "domains": [],
+   "relevance": "none"
+  },
+  "SNF12": {
+   "needs": [
+    "saving"
+   ],
+   "tags": [],
+   "domains": [
+    "online"
+   ],
+   "relevance": "indirect"
+  },
+  "SNF13": {
+   "needs": [
+    "saving"
+   ],
+   "tags": [],
+   "domains": [],
+   "relevance": "indirect"
+  },
+  "SNF14": {
+   "needs": [
+    "saving"
+   ],
+   "tags": [],
+   "domains": [],
+   "relevance": "indirect"
+  },
+  "SNF15": {
+   "needs": [
+    "saving",
+    "travel"
+   ],
+   "tags": [],
+   "domains": [
+    "travel"
+   ],
+   "relevance": "indirect"
+  },
+  "SNF16": {
+   "needs": [],
+   "tags": [],
+   "domains": [],
+   "relevance": "direct"
+  },
+  "SNF17": {
+   "needs": [],
+   "tags": [],
+   "domains": [],
+   "relevance": "direct"
+  },
+  "SNF18": {
+   "needs": [],
+   "tags": [],
+   "domains": [],
+   "relevance": "direct"
+  },
+  "SNF19": {
+   "needs": [
+    "control",
+    "safety"
+   ],
+   "tags": [],
+   "domains": [],
+   "relevance": "direct"
+  },
+  "SNF20": {
+   "needs": [],
+   "tags": [
+    "check_card"
+   ],
+   "domains": [],
+   "relevance": "direct"
+  },
+  "SNF21": {
+   "needs": [],
+   "tags": [
+    "check_card",
+    "transit"
+   ],
+   "domains": [
+    "trans"
+   ],
+   "relevance": "direct"
+  },
+  "SNF22": {
+   "needs": [],
+   "tags": [
+    "check_card"
+   ],
+   "domains": [],
+   "relevance": "direct"
+  },
+  "SNF23": {
+   "needs": [
+    "saving"
+   ],
+   "tags": [
+    "check_card",
+    "reward_point",
+    "dining_cafe",
+    "mart_daily"
+   ],
+   "domains": [
+    "dining",
+    "daily"
+   ],
+   "relevance": "direct"
+  },
+  "SNF24": {
+   "needs": [
+    "saving"
+   ],
+   "tags": [
+    "bank_bundle"
+   ],
+   "domains": [],
+   "relevance": "direct"
+  },
+  "SNF25": {
+   "needs": [],
+   "tags": [
+    "check_card",
+    "bank_bundle"
+   ],
+   "domains": [],
+   "relevance": "direct"
+  },
+  "SNF26": {
+   "needs": [
+    "saving"
+   ],
+   "tags": [],
+   "domains": [
+    "online"
+   ],
+   "relevance": "indirect"
+  },
+  "SNF27": {
+   "needs": [
+    "saving"
+   ],
+   "tags": [
+    "paymethod_bonus",
+    "online_shop"
+   ],
+   "domains": [
+    "online"
+   ],
+   "relevance": "direct"
+  },
+  "SNF28": {
+   "needs": [],
+   "tags": [],
+   "domains": [],
+   "relevance": "none"
+  },
+  "SNF29": {
+   "needs": [],
+   "tags": [],
+   "domains": [],
+   "relevance": "none"
+  },
+  "SNF30": {
+   "needs": [],
+   "tags": [],
+   "domains": [],
+   "relevance": "none"
+  },
+  "SNF31": {
+   "needs": [],
+   "tags": [],
+   "domains": [],
+   "relevance": "none"
+  },
+  "SNF32": {
+   "needs": [],
+   "tags": [],
+   "domains": [
+    "travel"
+   ],
+   "relevance": "indirect"
+  },
+  "GTF1": {
+   "needs": [
+    "social"
+   ],
+   "tags": [],
+   "domains": [],
+   "relevance": "indirect"
+  },
+  "GTF2": {
+   "needs": [
+    "social"
+   ],
+   "tags": [],
+   "domains": [],
+   "relevance": "indirect"
+  },
+  "GTF3": {
+   "needs": [
+    "social"
+   ],
+   "tags": [],
+   "domains": [],
+   "relevance": "indirect"
+  },
+  "GTF4": {
+   "needs": [
+    "social"
+   ],
+   "tags": [],
+   "domains": [],
+   "relevance": "indirect"
+  },
+  "GTF5": {
+   "needs": [
+    "social"
+   ],
+   "tags": [
+    "group_pooling"
+   ],
+   "domains": [],
+   "relevance": "direct"
+  },
+  "GTF6": {
+   "needs": [
+    "social"
+   ],
+   "tags": [
+    "group_pooling"
+   ],
+   "domains": [],
+   "relevance": "direct"
+  },
+  "GTF7": {
+   "needs": [
+    "social"
+   ],
+   "tags": [
+    "group_pooling"
+   ],
+   "domains": [],
+   "relevance": "indirect"
+  },
+  "GTF8": {
+   "needs": [
+    "social"
+   ],
+   "tags": [
+    "group_pooling"
+   ],
+   "domains": [],
+   "relevance": "indirect"
+  },
+  "GTF9": {
+   "needs": [
+    "social"
+   ],
+   "tags": [
+    "group_pooling",
+    "check_card",
+    "social"
+   ],
+   "domains": [],
+   "relevance": "direct"
+  },
+  "GTF10": {
+   "needs": [
+    "social"
+   ],
+   "tags": [
+    "check_card",
+    "group_pooling",
+    "social"
+   ],
+   "domains": [],
+   "relevance": "direct"
+  },
+  "GTF11": {
+   "needs": [
+    "saving",
+    "social"
+   ],
+   "tags": [
+    "check_card",
+    "reward_cashback",
+    "social"
+   ],
+   "domains": [],
+   "relevance": "direct"
+  },
+  "GTF12": {
+   "needs": [
+    "social"
+   ],
+   "tags": [
+    "group_pooling"
+   ],
+   "domains": [],
+   "relevance": "direct"
+  },
+  "GTF13": {
+   "needs": [
+    "social"
+   ],
+   "tags": [
+    "group_pooling"
+   ],
+   "domains": [],
+   "relevance": "indirect"
+  },
+  "GTF14": {
+   "needs": [
+    "saving",
+    "social"
+   ],
+   "tags": [
+    "group_pooling"
+   ],
+   "domains": [],
+   "relevance": "direct"
+  },
+  "GTF15": {
+   "needs": [
+    "social"
+   ],
+   "tags": [
+    "group_pooling"
+   ],
+   "domains": [],
+   "relevance": "direct"
+  },
+  "GTF16": {
+   "needs": [
+    "social"
+   ],
+   "tags": [
+    "group_pooling"
+   ],
+   "domains": [],
+   "relevance": "direct"
+  },
+  "GTF17": {
+   "needs": [
+    "saving",
+    "simple"
+   ],
+   "tags": [
+    "check_card",
+    "social",
+    "reward_cashback",
+    "spend_free"
+   ],
+   "domains": [],
+   "relevance": "direct"
+  },
+  "GTF18": {
+   "needs": [],
+   "tags": [],
+   "domains": [],
+   "relevance": "indirect"
+  },
+  "GTF19": {
+   "needs": [],
+   "tags": [],
+   "domains": [],
+   "relevance": "indirect"
+  },
+  "GTF20": {
+   "needs": [
+    "social"
+   ],
+   "tags": [],
+   "domains": [],
+   "relevance": "indirect"
+  },
+  "GTF21": {
+   "needs": [
+    "social"
+   ],
+   "tags": [],
+   "domains": [],
+   "relevance": "indirect"
+  },
+  "GTF22": {
+   "needs": [
+    "social"
+   ],
+   "tags": [
+    "social"
+   ],
+   "domains": [
+    "dining"
+   ],
+   "relevance": "direct"
+  },
+  "GTF23": {
+   "needs": [],
+   "tags": [],
+   "domains": [],
+   "relevance": "indirect"
+  },
+  "GTF24": {
+   "needs": [],
+   "tags": [],
+   "domains": [],
+   "relevance": "indirect"
+  },
+  "GTF25": {
+   "needs": [
+    "saving",
+    "social"
+   ],
+   "tags": [
+    "social",
+    "reward_cashback"
+   ],
+   "domains": [],
+   "relevance": "direct"
+  },
+  "GTF26": {
+   "needs": [
+    "social"
+   ],
+   "tags": [],
+   "domains": [],
+   "relevance": "indirect"
+  },
+  "VRF1": {
+   "needs": [],
+   "tags": [],
+   "domains": [
+    "dining"
+   ],
+   "relevance": "none"
+  },
+  "VRF2": {
+   "needs": [],
+   "tags": [],
+   "domains": [],
+   "relevance": "none"
+  },
+  "VRF3": {
+   "needs": [],
+   "tags": [],
+   "domains": [],
+   "relevance": "none"
+  },
+  "VRF4": {
+   "needs": [],
+   "tags": [],
+   "domains": [
+    "dining"
+   ],
+   "relevance": "none"
+  },
+  "VRF5": {
+   "needs": [],
+   "tags": [],
+   "domains": [],
+   "relevance": "none"
+  },
+  "VRF6": {
+   "needs": [],
+   "tags": [],
+   "domains": [],
+   "relevance": "none"
+  },
+  "VRF7": {
+   "needs": [],
+   "tags": [],
+   "domains": [
+    "dining"
+   ],
+   "relevance": "none"
+  },
+  "VRF8": {
+   "needs": [],
+   "tags": [],
+   "domains": [
+    "daily"
+   ],
+   "relevance": "none"
+  },
+  "VRF9": {
+   "needs": [],
+   "tags": [],
+   "domains": [
+    "daily"
+   ],
+   "relevance": "none"
+  },
+  "VRF10": {
+   "needs": [],
+   "tags": [],
+   "domains": [],
+   "relevance": "none"
+  },
+  "VRF11": {
+   "needs": [],
+   "tags": [],
+   "domains": [
+    "daily"
+   ],
+   "relevance": "none"
+  },
+  "VRF12": {
+   "needs": [],
+   "tags": [],
+   "domains": [
+    "dining"
+   ],
+   "relevance": "none"
+  },
+  "VRF13": {
+   "needs": [],
+   "tags": [],
+   "domains": [],
+   "relevance": "none"
+  },
+  "VRF14": {
+   "needs": [],
+   "tags": [],
+   "domains": [],
+   "relevance": "none"
+  },
+  "VRF15": {
+   "needs": [],
+   "tags": [],
+   "domains": [],
+   "relevance": "none"
+  },
+  "VRF16": {
+   "needs": [],
+   "tags": [],
+   "domains": [
+    "online"
+   ],
+   "relevance": "none"
+  },
+  "VRF17": {
+   "needs": [],
+   "tags": [],
+   "domains": [],
+   "relevance": "none"
+  },
+  "VRF18": {
+   "needs": [],
+   "tags": [],
+   "domains": [
+    "online"
+   ],
+   "relevance": "none"
+  },
+  "VRF19": {
+   "needs": [],
+   "tags": [],
+   "domains": [],
+   "relevance": "none"
+  },
+  "VRF20": {
+   "needs": [],
+   "tags": [],
+   "domains": [],
+   "relevance": "none"
+  },
+  "VRF21": {
+   "needs": [],
+   "tags": [],
+   "domains": [],
+   "relevance": "none"
+  },
+  "VRF22": {
+   "needs": [
+    "social"
+   ],
+   "tags": [
+    "check_card",
+    "plcc_brand"
+   ],
+   "domains": [],
+   "relevance": "direct"
+  },
+  "VRF23": {
+   "needs": [
+    "saving"
+   ],
+   "tags": [
+    "check_card",
+    "plcc_brand",
+    "tiered_perf"
+   ],
+   "domains": [],
+   "relevance": "direct"
+  },
+  "VRF24": {
+   "needs": [],
+   "tags": [
+    "check_card",
+    "plcc_brand"
+   ],
+   "domains": [],
+   "relevance": "direct"
+  },
+  "VRF25": {
+   "needs": [],
+   "tags": [
+    "check_card",
+    "plcc_brand"
+   ],
+   "domains": [],
+   "relevance": "direct"
+  },
+  "VRF26": {
+   "needs": [
+    "saving"
+   ],
+   "tags": [
+    "check_card",
+    "govt_link",
+    "transit"
+   ],
+   "domains": [
+    "trans"
+   ],
+   "relevance": "direct"
+  },
+  "VRF27": {
+   "needs": [
+    "social"
+   ],
+   "tags": [
+    "check_card",
+    "group_pooling",
+    "social"
+   ],
+   "domains": [],
+   "relevance": "direct"
+  },
+  "VRF28": {
+   "needs": [
+    "saving"
+   ],
+   "tags": [],
+   "domains": [],
+   "relevance": "indirect"
+  },
+  "VRF29": {
+   "needs": [
+    "saving"
+   ],
+   "tags": [],
+   "domains": [],
+   "relevance": "indirect"
+  },
+  "VRF30": {
+   "needs": [],
+   "tags": [],
+   "domains": [],
+   "relevance": "indirect"
+  },
+  "VRF31": {
+   "needs": [
+    "saving"
+   ],
+   "tags": [],
+   "domains": [],
+   "relevance": "indirect"
+  },
+  "VRF32": {
+   "needs": [
+    "saving"
+   ],
+   "tags": [],
+   "domains": [],
+   "relevance": "indirect"
+  },
+  "VRF33": {
+   "needs": [],
+   "tags": [
+    "check_card",
+    "plcc_brand"
+   ],
+   "domains": [],
+   "relevance": "direct"
+  },
+  "VRF34": {
+   "needs": [],
+   "tags": [
+    "check_card"
+   ],
+   "domains": [],
+   "relevance": "direct"
+  },
+  "VRF35": {
+   "needs": [],
+   "tags": [
+    "check_card",
+    "plcc_brand"
+   ],
+   "domains": [],
+   "relevance": "direct"
+  },
+  "VRF36": {
+   "needs": [],
+   "tags": [
+    "plcc_brand"
+   ],
+   "domains": [],
+   "relevance": "direct"
+  },
+  "VRF37": {
+   "needs": [],
+   "tags": [
+    "plcc_brand"
+   ],
+   "domains": [],
+   "relevance": "direct"
+  },
+  "VRF38": {
+   "needs": [],
+   "tags": [
+    "plcc_brand"
+   ],
+   "domains": [],
+   "relevance": "indirect"
+  },
+  "MHF1": {
+   "needs": [
+    "saving"
+   ],
+   "tags": [],
+   "domains": [],
+   "relevance": "indirect"
+  },
+  "MHF2": {
+   "needs": [
+    "saving",
+    "control",
+    "invest"
+   ],
+   "tags": [],
+   "domains": [],
+   "relevance": "indirect"
+  },
+  "MHF3": {
+   "needs": [
+    "saving"
+   ],
+   "tags": [],
+   "domains": [
+    "online"
+   ],
+   "relevance": "indirect"
+  },
+  "MHF4": {
+   "needs": [],
+   "tags": [],
+   "domains": [],
+   "relevance": "indirect"
+  },
+  "MHF5": {
+   "needs": [],
+   "tags": [
+    "time_slot"
+   ],
+   "domains": [],
+   "relevance": "indirect"
+  },
+  "MHF6": {
+   "needs": [],
+   "tags": [],
+   "domains": [],
+   "relevance": "indirect"
+  },
+  "MHF7": {
+   "needs": [
+    "saving"
+   ],
+   "tags": [],
+   "domains": [
+    "daily"
+   ],
+   "relevance": "indirect"
+  },
+  "MHF8": {
+   "needs": [],
+   "tags": [],
+   "domains": [],
+   "relevance": "none"
+  },
+  "MHF9": {
+   "needs": [],
+   "tags": [],
+   "domains": [],
+   "relevance": "none"
+  },
+  "MHF10": {
+   "needs": [],
+   "tags": [],
+   "domains": [],
+   "relevance": "indirect"
+  },
+  "MHF11": {
+   "needs": [
+    "saving"
+   ],
+   "tags": [],
+   "domains": [],
+   "relevance": "indirect"
+  },
+  "MHF12": {
+   "needs": [],
+   "tags": [],
+   "domains": [],
+   "relevance": "indirect"
+  },
+  "MHF13": {
+   "needs": [
+    "invest"
+   ],
+   "tags": [],
+   "domains": [],
+   "relevance": "indirect"
+  },
+  "MHF14": {
+   "needs": [],
+   "tags": [
+    "paymethod_bonus",
+    "online_shop"
+   ],
+   "domains": [
+    "online"
+   ],
+   "relevance": "indirect"
+  },
+  "MHF15": {
+   "needs": [],
+   "tags": [],
+   "domains": [],
+   "relevance": "direct"
+  },
+  "MHF16": {
+   "needs": [],
+   "tags": [
+    "paymethod_bonus"
+   ],
+   "domains": [],
+   "relevance": "direct"
+  },
+  "MHF17": {
+   "needs": [],
+   "tags": [
+    "paymethod_bonus",
+    "online_shop"
+   ],
+   "domains": [
+    "online"
+   ],
+   "relevance": "direct"
+  },
+  "MHF18": {
+   "needs": [
+    "saving"
+   ],
+   "tags": [
+    "paymethod_bonus",
+    "online_shop",
+    "reward_point"
+   ],
+   "domains": [
+    "online"
+   ],
+   "relevance": "direct"
+  },
+  "MHF19": {
+   "needs": [],
+   "tags": [],
+   "domains": [],
+   "relevance": "indirect"
+  },
+  "MHF20": {
+   "needs": [],
+   "tags": [],
+   "domains": [],
+   "relevance": "indirect"
+  },
+  "MHF21": {
+   "needs": [
+    "safety"
+   ],
+   "tags": [],
+   "domains": [],
+   "relevance": "indirect"
+  },
+  "MHF22": {
+   "needs": [
+    "digital"
+   ],
+   "tags": [],
+   "domains": [
+    "sub"
+   ],
+   "relevance": "indirect"
+  },
+  "MHF23": {
+   "needs": [
+    "digital"
+   ],
+   "tags": [
+    "subscription_ott"
+   ],
+   "domains": [
+    "sub"
+   ],
+   "relevance": "indirect"
+  },
+  "MHF24": {
+   "needs": [
+    "digital",
+    "control"
+   ],
+   "tags": [
+    "subscription_ott"
+   ],
+   "domains": [
+    "sub"
+   ],
+   "relevance": "indirect"
+  },
+  "MHF25": {
+   "needs": [
+    "digital",
+    "control"
+   ],
+   "tags": [
+    "subscription_ott"
+   ],
+   "domains": [
+    "sub"
+   ],
+   "relevance": "indirect"
+  },
+  "MHF26": {
+   "needs": [],
+   "tags": [
+    "check_card"
+   ],
+   "domains": [],
+   "relevance": "direct"
+  },
+  "MHF27": {
+   "needs": [],
+   "tags": [
+    "bank_bundle"
+   ],
+   "domains": [],
+   "relevance": "indirect"
+  },
+  "MHF28": {
+   "needs": [],
+   "tags": [],
+   "domains": [],
+   "relevance": "indirect"
+  },
+  "MHF29": {
+   "needs": [
+    "saving"
+   ],
+   "tags": [],
+   "domains": [],
+   "relevance": "indirect"
+  },
+  "MHF30": {
+   "needs": [
+    "travel"
+   ],
+   "tags": [
+    "travel_fx"
+   ],
+   "domains": [
+    "travel"
+   ],
+   "relevance": "direct"
+  },
+  "MHF31": {
+   "needs": [],
+   "tags": [],
+   "domains": [],
+   "relevance": "none"
+  },
+  "MHF32": {
+   "needs": [],
+   "tags": [],
+   "domains": [],
+   "relevance": "none"
+  },
+  "MHF33": {
+   "needs": [
+    "fixed_cost"
+   ],
+   "tags": [],
+   "domains": [
+    "dining",
+    "fixed"
+   ],
+   "relevance": "indirect"
+  },
+  "MHF34": {
+   "needs": [
+    "saving"
+   ],
+   "tags": [],
+   "domains": [
+    "online"
+   ],
+   "relevance": "indirect"
+  },
+  "MHF35": {
+   "needs": [
+    "control"
+   ],
+   "tags": [],
+   "domains": [],
+   "relevance": "indirect"
+  },
+  "MHF36": {
+   "needs": [
+    "control"
+   ],
+   "tags": [],
+   "domains": [],
+   "relevance": "indirect"
+  },
+  "MHF37": {
+   "needs": [
+    "control"
+   ],
+   "tags": [],
+   "domains": [],
+   "relevance": "indirect"
+  },
+  "MHF38": {
+   "needs": [
+    "control"
+   ],
+   "tags": [],
+   "domains": [],
+   "relevance": "indirect"
+  },
+  "MHF39": {
+   "needs": [
+    "control"
+   ],
+   "tags": [],
+   "domains": [],
+   "relevance": "direct"
+  },
+  "MHF40": {
+   "needs": [
+    "control"
+   ],
+   "tags": [],
+   "domains": [],
+   "relevance": "direct"
+  },
+  "MHF41": {
+   "needs": [
+    "control"
+   ],
+   "tags": [],
+   "domains": [],
+   "relevance": "direct"
+  },
+  "MHF42": {
+   "needs": [
+    "simple"
+   ],
+   "tags": [],
+   "domains": [],
+   "relevance": "direct"
+  },
+  "MHF43": {
+   "needs": [
+    "saving",
+    "invest"
+   ],
+   "tags": [],
+   "domains": [],
+   "relevance": "indirect"
+  },
+  "MHF44": {
+   "needs": [
+    "saving"
+   ],
+   "tags": [],
+   "domains": [],
+   "relevance": "indirect"
+  },
+  "MHF45": {
+   "needs": [
+    "saving"
+   ],
+   "tags": [],
+   "domains": [],
+   "relevance": "indirect"
+  },
+  "MHF46": {
+   "needs": [
+    "saving"
+   ],
+   "tags": [],
+   "domains": [],
+   "relevance": "indirect"
+  },
+  "MHF47": {
+   "needs": [
+    "saving"
+   ],
+   "tags": [],
+   "domains": [],
+   "relevance": "indirect"
+  },
+  "MHF48": {
+   "needs": [
+    "saving",
+    "invest"
+   ],
+   "tags": [],
+   "domains": [],
+   "relevance": "indirect"
+  },
+  "MHF49": {
+   "needs": [],
+   "tags": [],
+   "domains": [],
+   "relevance": "indirect"
+  },
+  "MHF50": {
+   "needs": [
+    "control"
+   ],
+   "tags": [],
+   "domains": [],
+   "relevance": "indirect"
+  },
+  "MHF51": {
+   "needs": [],
+   "tags": [],
+   "domains": [],
+   "relevance": "none"
+  },
+  "MHF52": {
+   "needs": [],
+   "tags": [],
+   "domains": [],
+   "relevance": "none"
+  },
+  "MHF53": {
+   "needs": [],
+   "tags": [],
+   "domains": [],
+   "relevance": "none"
+  },
+  "IVF1": {
+   "needs": [
+    "invest"
+   ],
+   "tags": [
+    "invest_reward",
+    "point_to_stock"
+   ],
+   "domains": [],
+   "relevance": "direct"
+  },
+  "IVF2": {
+   "needs": [
+    "invest"
+   ],
+   "tags": [
+    "invest_reward"
+   ],
+   "domains": [],
+   "relevance": "direct"
+  },
+  "IVF3": {
+   "needs": [
+    "invest"
+   ],
+   "tags": [
+    "invest_reward"
+   ],
+   "domains": [],
+   "relevance": "direct"
+  },
+  "IVF4": {
+   "needs": [
+    "invest"
+   ],
+   "tags": [
+    "invest_reward"
+   ],
+   "domains": [],
+   "relevance": "indirect"
+  },
+  "IVF5": {
+   "needs": [
+    "invest"
+   ],
+   "tags": [
+    "invest_reward"
+   ],
+   "domains": [],
+   "relevance": "indirect"
+  },
+  "IVF6": {
+   "needs": [
+    "invest"
+   ],
+   "tags": [],
+   "domains": [],
+   "relevance": "indirect"
+  },
+  "IVF7": {
+   "needs": [
+    "invest"
+   ],
+   "tags": [
+    "invest_reward"
+   ],
+   "domains": [],
+   "relevance": "indirect"
+  },
+  "IVF8": {
+   "needs": [
+    "invest"
+   ],
+   "tags": [],
+   "domains": [],
+   "relevance": "indirect"
+  },
+  "IVF9": {
+   "needs": [
+    "invest"
+   ],
+   "tags": [],
+   "domains": [],
+   "relevance": "indirect"
+  },
+  "IVF10": {
+   "needs": [
+    "invest"
+   ],
+   "tags": [],
+   "domains": [],
+   "relevance": "indirect"
+  },
+  "IVF11": {
+   "needs": [
+    "invest"
+   ],
+   "tags": [],
+   "domains": [],
+   "relevance": "indirect"
+  },
+  "IVF12": {
+   "needs": [
+    "invest"
+   ],
+   "tags": [],
+   "domains": [],
+   "relevance": "indirect"
+  },
+  "IVF13": {
+   "needs": [
+    "invest",
+    "saving"
+   ],
+   "tags": [
+    "invest_reward",
+    "point_to_stock"
+   ],
+   "domains": [
+    "daily"
+   ],
+   "relevance": "direct"
+  },
+  "IVF14": {
+   "needs": [
+    "invest"
+   ],
+   "tags": [
+    "invest_reward"
+   ],
+   "domains": [],
+   "relevance": "indirect"
+  }
+ }
+}

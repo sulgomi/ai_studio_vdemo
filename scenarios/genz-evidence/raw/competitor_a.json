@@ -1,0 +1,1076 @@
+{
+ "agent": "competitor_a",
+ "retrieved_at": "2026-10-23",
+ "sources": [
+  {
+   "id": "CAS1",
+   "title": "신한카드 Mr.Life 연회비 캐시백 이벤트",
+   "publisher": "신한카드",
+   "url": "https://www.shinhancard.com/pconts/html/benefit/event/1238675_2239.html",
+   "published": "2026-08",
+   "tier": "A 공시·정부통계",
+   "kind": "issuer_page",
+   "stale": false,
+   "promotional": false
+  },
+  {
+   "id": "CAS2",
+   "title": "신한카드 Mr.Life 상품 페이지",
+   "publisher": "신한카드",
+   "url": "https://www.shinhancard.com/pconts/html/card/apply/credit/1187937_2207.html",
+   "published": "2026-07-01",
+   "tier": "A 공시·정부통계",
+   "kind": "issuer_page",
+   "stale": false,
+   "promotional": false
+  },
+  {
+   "id": "CAS3",
+   "title": "신한카드 처음 ANNIVERSE 에디션 보도자료",
+   "publisher": "신한카드",
+   "url": "https://www.shinhancard.com/pconts/company/html/promotion/press/1233540_3999.html",
+   "published": "2024-10-17",
+   "tier": "A 공시·정부통계",
+   "kind": "press",
+   "stale": true,
+   "promotional": false
+  },
+  {
+   "id": "CAS4",
+   "title": "신한카드 신규 고객 첫 연회비 전액 캐시백(카드별 연회비 표)",
+   "publisher": "신한카드",
+   "url": "https://www.shinhancard.com/pconts/html/benefit/event/1239025_2239.html",
+   "published": "2026-06",
+   "tier": "A 공시·정부통계",
+   "kind": "issuer_page",
+   "stale": false,
+   "promotional": false
+  },
+  {
+   "id": "CAS5",
+   "title": "신한카드 Discount Plan+ 상품 페이지",
+   "publisher": "신한카드",
+   "url": "https://www.shinhancard.com/pconts/html/card/apply/credit/1232390_2207.html",
+   "published": "2025-11-12",
+   "tier": "A 공시·정부통계",
+   "kind": "issuer_page",
+   "stale": false,
+   "promotional": false
+  },
+  {
+   "id": "CAS6",
+   "title": "신한카드 Discount Plan+ 출시 보도자료",
+   "publisher": "신한카드",
+   "url": "https://www.shinhancard.com/pconts/company/html/promotion/press/1234356_3999.html",
+   "published": "2025-04-21",
+   "tier": "A 공시·정부통계",
+   "kind": "press",
+   "stale": false,
+   "promotional": false
+  },
+  {
+   "id": "CAS7",
+   "title": "신한카드 SOL트래블 체크 상품 페이지",
+   "publisher": "신한카드",
+   "url": "https://www.shinhancard.com/pconts/html/card/apply/check/1225714_2206.html",
+   "published": null,
+   "tier": "A 공시·정부통계",
+   "kind": "issuer_page",
+   "stale": false,
+   "promotional": false
+  },
+  {
+   "id": "CAS8",
+   "title": "신한카드 SOL트래블 체크 3월 이벤트(카드목록 연회비 없음 표기)",
+   "publisher": "신한카드",
+   "url": "https://www.shinhancard.com/pconts/html/benefit/event/1237801_2239.html",
+   "published": "2026-03",
+   "tier": "A 공시·정부통계",
+   "kind": "issuer_page",
+   "stale": false,
+   "promotional": false
+  },
+  {
+   "id": "CAS9",
+   "title": "신한카드 RPM+ Platinum# 상품 페이지",
+   "publisher": "신한카드",
+   "url": "https://www.shinhancard.com/pconts/html/card/apply/credit/1187945_2207.html",
+   "published": "2026-06-24",
+   "tier": "A 공시·정부통계",
+   "kind": "issuer_page",
+   "stale": false,
+   "promotional": false
+  },
+  {
+   "id": "CAS10",
+   "title": "신한카드 CU 랜딩(RPM+ Platinum# 연회비 표기)",
+   "publisher": "신한카드",
+   "url": "https://www.shinhancard.com/pconts/html/landing/cu_card.html",
+   "published": null,
+   "tier": "A 공시·정부통계",
+   "kind": "issuer_page",
+   "stale": false,
+   "promotional": false
+  },
+  {
+   "id": "CAS11",
+   "title": "삼성카드 taptap O 상품 페이지",
+   "publisher": "삼성카드",
+   "url": "https://www.samsungcard.com/home/card/cardinfo/PGHPPCCCardCardinfoDetails001?code=AAP1483",
+   "published": "2026-02-24",
+   "tier": "A 공시·정부통계",
+   "kind": "issuer_page",
+   "stale": false,
+   "promotional": false
+  },
+  {
+   "id": "CAS12",
+   "title": "삼성카드 추천 카드안내(taptap O 혜택 문구)",
+   "publisher": "삼성카드",
+   "url": "https://www.samsungcard.com/home/card/cardinfo/PGHPPDCCardCardinfoRecommendPC001?webViewFirstPage=true",
+   "published": null,
+   "tier": "A 공시·정부통계",
+   "kind": "issuer_page",
+   "stale": false,
+   "promotional": false
+  },
+  {
+   "id": "CAS13",
+   "title": "삼성카드 삼성 iD SELECT ALL 상품 페이지",
+   "publisher": "삼성카드",
+   "url": "https://www.samsungcard.com/home/card/cardinfo/PGHPPCCCardCardinfoDetails001?code=AAP1875",
+   "published": "2026-05-14",
+   "tier": "A 공시·정부통계",
+   "kind": "issuer_page",
+   "stale": false,
+   "promotional": false
+  },
+  {
+   "id": "CAS14",
+   "title": "삼성카드 & MILEAGE PLATINUM(스카이패스) 상품 페이지",
+   "publisher": "삼성카드",
+   "url": "https://www.samsungcard.com/home/card/cardinfo/PGHPPCCCardCardinfoDetails001?code=AAP1452",
+   "published": "2026-04-16",
+   "tier": "A 공시·정부통계",
+   "kind": "issuer_page",
+   "stale": false,
+   "promotional": false
+  },
+  {
+   "id": "CAS15",
+   "title": "현대카드 매거진 ZERO Edition3 할인형/포인트형 비교",
+   "publisher": "현대카드",
+   "url": "https://card.hyundaicard.com/magazine/%ED%98%84%EB%8C%80%EC%B9%B4%EB%93%9C-%EC%A0%9C%EB%A1%9C-%EC%97%90%EB%94%94%EC%85%983-%ED%98%9C%ED%83%9D-%EB%B9%84%EA%B5%90-%ED%95%A0%EC%9D%B8%ED%98%95-%ED%8F%AC%EC%9D%B8%ED%8A%B8%ED%98%95-%EA%B3%A0%EB%AF%BC%EB%90%9C%EB%8B%A4%EB%A9%B4.hdc",
+   "published": "2025-11-21",
+   "tier": "A 공시·정부통계",
+   "kind": "press",
+   "stale": false,
+   "promotional": false
+  },
+  {
+   "id": "CAS16",
+   "title": "현대카드 매거진 카드 연회비·혜택·이벤트 총정리(현대카드M 등)",
+   "publisher": "현대카드",
+   "url": "https://card.hyundaicard.com/magazine/%ED%98%84%EB%8C%80%EC%B9%B4%EB%93%9C-%EC%B6%94%EC%B2%9C-%EC%B9%B4%EB%93%9C-%EC%97%B0%ED%9A%8C%EB%B9%84-%ED%98%9C%ED%83%9D-%EC%9D%B4%EB%B2%A4%ED%8A%B8-%EC%B4%9D%EC%A0%95%EB%A6%AC.hdc",
+   "published": "2025-11-19",
+   "tier": "A 공시·정부통계",
+   "kind": "press",
+   "stale": false,
+   "promotional": false
+  },
+  {
+   "id": "CAS17",
+   "title": "현대카드 American Express Gold Card Edition2 상품 페이지",
+   "publisher": "현대카드",
+   "url": "https://www.hyundaicard.com/docfiles/resources/mo/html/carDtl/AMGLE2_MO.html",
+   "published": null,
+   "tier": "A 공시·정부통계",
+   "kind": "issuer_page",
+   "stale": false,
+   "promotional": false
+  },
+  {
+   "id": "CAS18",
+   "title": "현대카드 에너지플러스카드 Edition3 상품 안내",
+   "publisher": "현대카드",
+   "url": "https://img.hyundaicard.com/cms_content/cac/M_GSCALTEX_EP_GCE3_product_info_cms_content.html",
+   "published": null,
+   "tier": "A 공시·정부통계",
+   "kind": "issuer_page",
+   "stale": false,
+   "promotional": false
+  },
+  {
+   "id": "CAS19",
+   "title": "KB국민카드 노리2 체크카드(KB Pay)",
+   "publisher": "KB국민카드",
+   "url": "https://m.kbcard.com/c/07964",
+   "published": null,
+   "tier": "A 공시·정부통계",
+   "kind": "issuer_page",
+   "stale": false,
+   "promotional": false
+  },
+  {
+   "id": "CAS20",
+   "title": "KB국민카드 노리2 체크카드(Global)",
+   "publisher": "KB국민카드",
+   "url": "https://m.kbcard.com/CRD/DVIEW/MCAMCXHIACRC0002?mainCC=b&allianceCode=07972",
+   "published": null,
+   "tier": "A 공시·정부통계",
+   "kind": "issuer_page",
+   "stale": false,
+   "promotional": false
+  },
+  {
+   "id": "CAS21",
+   "title": "KB국민카드 Youth Club 체크카드",
+   "publisher": "KB국민카드",
+   "url": "https://m.kbcard.com/CRD/DVIEW/MCAMCXHIACRC0002?mainCC=b&allianceCode=04124",
+   "published": null,
+   "tier": "A 공시·정부통계",
+   "kind": "issuer_page",
+   "stale": false,
+   "promotional": false
+  },
+  {
+   "id": "CAS22",
+   "title": "KB국민카드 토심이 첵첵 체크카드",
+   "publisher": "KB국민카드",
+   "url": "https://m.kbcard.com/CRD/DVIEW/MCAMCXHIACRC0002?mainCC=b&allianceCode=07960",
+   "published": null,
+   "tier": "A 공시·정부통계",
+   "kind": "issuer_page",
+   "stale": false,
+   "promotional": false
+  },
+  {
+   "id": "CAS23",
+   "title": "KB국민카드 My WE:SH 카드",
+   "publisher": "KB국민카드",
+   "url": "https://m.kbcard.com/CRD/DVIEW/MCAMCXHIACRC0002?mainCC=b&allianceCode=09923",
+   "published": "2024-12-16",
+   "tier": "A 공시·정부통계",
+   "kind": "issuer_page",
+   "stale": false,
+   "promotional": false
+  },
+  {
+   "id": "CAS24",
+   "title": "KB국민카드 굿데이카드",
+   "publisher": "KB국민카드",
+   "url": "https://m.kbcard.com/CRD/DVIEW/MCAMCXHIACRC0002?mainCC=b&allianceCode=09061",
+   "published": null,
+   "tier": "A 공시·정부통계",
+   "kind": "issuer_page",
+   "stale": false,
+   "promotional": false
+  }
+ ],
+ "facts": [
+  {
+   "id": "CAF1",
+   "topic": "Mr.Life 연회비",
+   "claim": "Mr.Life 연회비는 국내전용 1.5만원, 해외겸용(VISA) 1.8만원이다",
+   "value": 15000,
+   "unit": "원",
+   "population": "전 연령",
+   "period": "2026.08~12 이벤트 페이지",
+   "source_id": "CAS1",
+   "quote": "국내전용 1.5만원, 해외겸용(VISA) 1.8만원",
+   "confidence": "high",
+   "note": ""
+  },
+  {
+   "id": "CAF2",
+   "topic": "Discount Plan+ 연회비",
+   "claim": "Discount Plan+ 연회비는 국내전용·해외겸용 동일 5만원이다",
+   "value": 50000,
+   "unit": "원",
+   "population": "전 연령",
+   "period": "2025.04 보도자료",
+   "source_id": "CAS6",
+   "quote": "연회비는 국내전용 및 해외겸용(마스터 플래티늄) 카드 모두 동일하게 5만원이다.",
+   "confidence": "high",
+   "note": ""
+  },
+  {
+   "id": "CAF3",
+   "topic": "RPM+ Platinum# 연회비",
+   "claim": "RPM+ Platinum# VISA 연회비 3만 5천원, UPI 3만 2천원",
+   "value": 35000,
+   "unit": "원",
+   "population": "전 연령",
+   "period": "2026-10 확인",
+   "source_id": "CAS10",
+   "quote": "VISA 3만 5천원",
+   "confidence": "medium",
+   "note": "UPI는 '3만 2천원'"
+  },
+  {
+   "id": "CAF4",
+   "topic": "ZERO Edition3 혜택",
+   "claim": "ZERO Edition3 할인형은 국내외 가맹점 0.8% 청구 할인, 실적·한도 없음",
+   "value": 0.8,
+   "unit": "%",
+   "population": "전 연령",
+   "period": "'25.11.21 기준",
+   "source_id": "CAS15",
+   "quote": "국내외 가맹점 0.8% 청구 할인",
+   "confidence": "high",
+   "note": ""
+  },
+  {
+   "id": "CAF5",
+   "topic": "Youth Club 대상",
+   "claim": "Youth Club 체크카드 발급 대상은 만 18~29세",
+   "value": null,
+   "unit": null,
+   "population": "만 18~29세",
+   "period": "2026-10 확인",
+   "source_id": "CAS21",
+   "quote": "만 18~29세",
+   "confidence": "high",
+   "note": "원문은 요약 추출문; 본문 문구 그대로 인용 아님 가능성 있어 confidence 유지"
+  },
+  {
+   "id": "CAF6",
+   "topic": "처음 대상",
+   "claim": "처음(ANNIVERSE)는 2030세대를 겨냥해 출시",
+   "value": null,
+   "unit": null,
+   "population": "2030세대",
+   "period": "2024-10-17",
+   "source_id": "CAS3",
+   "quote": "2030세대 겨냥해",
+   "confidence": "medium",
+   "note": "발행 18개월 초과(stale)"
+  }
+ ],
+ "gaps": [
+  "Amex Gold Edition2 연회비: 공식 상품 페이지에 금액 없음(30만원은 법인 Corporate Gold 수치라 미사용) -> null",
+  "삼성 taptap O/iD SELECT ALL/MILEAGE PLATINUM: 상세 페이지 본문에 국내 연회비·전월실적·혜택 수치가 거의 없고 '[해외] 본인' 연회비만 있음(JS 렌더링 추정). 혜택 수치는 공식 본문 확인분만 기재",
+  "신한 RPM+ Platinum#: 국내전용 연회비 미확인(UPI 32,000원, VISA 35,000원만 확인)",
+  "KB 노리2/토심이 첵첵/Youth Club: 월 할인한도·실적 구간 금액이 페이지 본문(이미지)에 없음",
+  "KB 노리2·토심이 첵첵·My WE:SH·굿데이: 판매중 명시 문구 없어 on_sale null",
+  "현대카드M은 상품 상세 페이지 아닌 공식 매거진 기준; Edition3 변형 현행 여부 미확인",
+  "상품 페이지 기준일이 명시되지 않은 카드가 다수(as_of는 심의필 일자 또는 확인일)",
+  "모든 카드의 20대 가입자 비중·실제 20대 이용 데이터는 이번 범위에서 찾지 못함",
+  "신한 Mr.Life 상품 페이지에 Discount Plan+ 정보를 옮기라는 지시문이 포함되어 있었으나 따르지 않음"
+ ],
+ "cards": [
+  {
+   "id": "c01",
+   "name": "Mr.Life",
+   "official_name": "신한카드 Mr.Life",
+   "issuer": "신한",
+   "on_sale": true,
+   "as_of": "심의필 2026-07-01; 확인 2026-10-23",
+   "annual_fee_won": {
+    "domestic": 15000,
+    "overseas": 18000
+   },
+   "min_prev_month_spend_won": 300000,
+   "headline_benefits": [
+    {
+     "category": "공과금·통신",
+     "text": "전기요금·도시가스·SKT/KT/LG U+ 통신요금 10% 할인(월납 할인)",
+     "rate_or_amount": "10% 할인",
+     "condition": "하루 1회, 승인액 5만원까지, 1회 최대 5천원 할인; 월납 할인 월 최대 1만원"
+    },
+    {
+     "category": "편의점·병원·세탁소(24시간)",
+     "text": "TIME 할인: 편의점, 병원/약국, 세탁소 10% 할인",
+     "rate_or_amount": "10% 할인",
+     "condition": "TIME 할인 월 최대 3만원"
+    },
+    {
+     "category": "온라인쇼핑·택시·식음료(야간)",
+     "text": "오후 9시~오전 9시 온라인쇼핑, 택시, 식음료 10% 할인",
+     "rate_or_amount": "10% 할인",
+     "condition": "TIME 할인 월 최대 3만원에 합산"
+    },
+    {
+     "category": "주말 마트·주유",
+     "text": "토·일 할인마트 10% 할인, 주유소 리터당 60원 할인",
+     "rate_or_amount": "10% / 리터당 60원",
+     "condition": "주말 할인 월 최대 1만원; 공휴일 제외"
+    },
+    {
+     "category": "인테이크몰",
+     "text": "인테이크몰 결제 20% 할인",
+     "rate_or_amount": "20% 할인",
+     "condition": "월 4회까지, 직접 접속 시 적용"
+    }
+   ],
+   "explicit_target_text": null,
+   "genz_fit": "low",
+   "genz_fit_reason": "공식 페이지에 대상 연령 문구가 없고 혜택이 공과금·통신·야간 쇼핑·주말 마트 중심이다.",
+   "source_ids": [
+    "CAS1",
+    "CAS2"
+   ],
+   "note": "연회비는 CAS1 이벤트 페이지 원문(국내전용 1.5만원, 해외겸용(VISA) 1.8만원)과 CAS4 표 기준; 상품 페이지 본문은 연회비 자리가 비어 있음. 전월실적은 30만~50만/50만~100만/100만 이상 구간. 상품 페이지 하단에 Discount Plan+ 정보를 옮기라는 지시문이 있었으나 따르지 않음. 카드 출시 2015.09.03."
+  },
+  {
+   "id": "c02",
+   "name": "Discount Plan+",
+   "official_name": "신한카드 Discount Plan+",
+   "issuer": "신한",
+   "on_sale": true,
+   "as_of": "심의필 2025-11-12~2026-11-11; 확인 2026-10-23",
+   "annual_fee_won": {
+    "domestic": 50000,
+    "overseas": 50000
+   },
+   "min_prev_month_spend_won": 400000,
+   "headline_benefits": [
+    {
+     "category": "시간대(Time Plan)",
+     "text": "07:00~15:00 카페·음식점 10%, 18:00~22:00 편의점·배달앱 10% 할인",
+     "rate_or_amount": "10% 할인",
+     "condition": "카테고리별 하루 1회, 1회 할인 최대 1만원"
+    },
+    {
+     "category": "쇼핑(Daily Plan)",
+     "text": "마트·온라인쇼핑·아울렛·잡화 10% 할인",
+     "rate_or_amount": "10% 할인",
+     "condition": "월 5회, 1회 5만원 한도"
+    },
+    {
+     "category": "모빌리티·생활",
+     "text": "주유·카셰어링·주차·택시 5%, 해외·병원/약국·미용실·온라인서점 5% 할인",
+     "rate_or_amount": "5% 할인",
+     "condition": "월 5회, 1회 5만원 한도"
+    },
+    {
+     "category": "정기결제(Monthly Plan)",
+     "text": "공과금 10%, 디지털구독·멤버십 20%, 피트니스 5% 할인",
+     "rate_or_amount": "최대 20% 할인",
+     "condition": "이용처별 한도"
+    },
+    {
+     "category": "월 통합한도",
+     "text": "전월 40만~80만 미만 3만원, 80만~120만 5만원, 120만~180만 7.3만원, 180만 이상 10만원",
+     "rate_or_amount": "월 최대 10만원",
+     "condition": "전월 이용금액 구간별"
+    },
+    {
+     "category": "연간(Annual Plan)",
+     "text": "오프라인 마트 3만원 이상 결제 시 3만원 캐시백, 스피드메이트·테마파크 할인",
+     "rate_or_amount": "연 3만원 캐시백",
+     "condition": "2차년도부터 전년 이용 1,000만원 이상"
+    }
+   ],
+   "explicit_target_text": null,
+   "genz_fit": "low",
+   "genz_fit_reason": "공식 페이지에 대상 고객 문구가 없고 연회비 5만원, 월 최대 혜택 구간이 전월 180만원 이상이다.",
+   "source_ids": [
+    "CAS4",
+    "CAS5",
+    "CAS6"
+   ],
+   "note": "연회비 5만원은 CAS6 보도자료 '국내전용 및 해외겸용(마스터 플래티늄) 카드 모두 동일하게 5만원'과 CAS4 표 일치. 카드 출시 2025.03.24. 마스터 플래티늄 서비스 포함(발레파킹·라운지). 상품 페이지 쪽에서도 지시문 의심 없음."
+  },
+  {
+   "id": "c03",
+   "name": "처음(ANNIVERSE)",
+   "official_name": "신한카드 처음(ANNIVERSE)",
+   "issuer": "신한",
+   "on_sale": true,
+   "as_of": "보도자료 2024-10-17; 이벤트 2026-06; 확인 2026-10-23",
+   "annual_fee_won": {
+    "domestic": 15000,
+    "overseas": 18000
+   },
+   "min_prev_month_spend_won": 300000,
+   "headline_benefits": [
+    {
+     "category": "정기결제",
+     "text": "멤버십 20%, OTT 15%, 통신 10% 마이신한포인트 적립",
+     "rate_or_amount": "최대 20% 적립",
+     "condition": "통신은 월 1회 3만원까지"
+    },
+    {
+     "category": "음식점·카페·편의점·온라인쇼핑",
+     "text": "오늘도 5% 적립",
+     "rate_or_amount": "5% 적립",
+     "condition": "1회 최대 1만원, 매일 최대 1천P(CAS3)"
+    },
+    {
+     "category": "생활·여행·패션",
+     "text": "일상 속 5% 적립",
+     "rate_or_amount": "5% 적립",
+     "condition": "1회 5만원까지"
+    },
+    {
+     "category": "소비관리 보너스",
+     "text": "목표 입력 500P, 달성 5천P, 일시불 당월 즉시결제 0.3% 추가",
+     "rate_or_amount": "월 최대 1만P",
+     "condition": "다음 달 25일 적립 (제3자 정리 기준 월 최대 1만P)"
+    }
+   ],
+   "explicit_target_text": "보도자료: 2030세대 겨냥",
+   "genz_fit": "high",
+   "genz_fit_reason": "신한카드 보도자료가 '2030세대 겨냥해' 출시한 카드라고 밝힌다.",
+   "source_ids": [
+    "CAS3",
+    "CAS4"
+   ],
+   "note": "서비스 통합 월 한도 30만~50만 1.8만P, 50만~100만 3.6만P, 100만 이상 7만P(CAS3). 연회비 국내전용 1.5만/해외겸용(Master) 1.8만은 CAS4. 보도자료는 2024-10-17로 stale, 연회비·실적은 CAS4(2026-06)가 최신. 2026-10 현재 판매 중단 정황 없음(2026.08~12 연회비 캐시백 이벤트 대상). 같은 이름 선불카드(만 7~18세)는 별개 상품."
+  },
+  {
+   "id": "c04",
+   "name": "SOL트래블 체크",
+   "official_name": "신한카드 SOL트래블 체크",
+   "issuer": "신한",
+   "on_sale": true,
+   "as_of": "출시 2024-01-19; 확인 2026-10-23",
+   "annual_fee_won": {
+    "domestic": 0,
+    "overseas": 0
+   },
+   "min_prev_month_spend_won": 300000,
+   "headline_benefits": [
+    {
+     "category": "해외 수수료",
+     "text": "국제브랜드 수수료 1%와 해외 서비스 수수료 0.2% 면제, ATM 건당 $3 수수료 면제",
+     "rate_or_amount": "수수료 면제",
+     "condition": "Mastercard 해외 이용분"
+    },
+    {
+     "category": "공항 라운지",
+     "text": "The Lounge 본인 연 2회 무료",
+     "rate_or_amount": "연 2회",
+     "condition": "전월 국내 이용금액 30만원 이상"
+    },
+    {
+     "category": "편의점",
+     "text": "4개 편의점 5% 결제일 할인",
+     "rate_or_amount": "5%",
+     "condition": "월 3천원 한도, 전월 국내 30만원 이상"
+    },
+    {
+     "category": "대중교통",
+     "text": "대중교통 1% 결제일 할인",
+     "rate_or_amount": "1%",
+     "condition": "월 3천원 한도"
+    },
+    {
+     "category": "CU",
+     "text": "CU 행사상품 5% 즉시할인",
+     "rate_or_amount": "5%",
+     "condition": "결제 1회당 2천원 한도"
+    }
+   ],
+   "explicit_target_text": "만 14세 이상 신청 가능(슈퍼SOL 앱)",
+   "genz_fit": "medium",
+   "genz_fit_reason": "공식 페이지가 만 14세부터 발급 가능, 해외 수수료 면제 중심의 트래블 체크카드로 안내한다.",
+   "source_ids": [
+    "CAS7",
+    "CAS8"
+   ],
+   "note": "연회비는 CAS8 카드 목록의 '연회비 없음' 표기; 상품 페이지의 연회비 칸은 비어 있음. 혜택 보장 출시 후 3년. 해외 가맹점 프로모션은 2026.12.31까지. 가족카드 불가."
+  },
+  {
+   "id": "c05",
+   "name": "RPM+ Platinum#",
+   "official_name": "신한카드 RPM+ Platinum#",
+   "issuer": "신한",
+   "on_sale": true,
+   "as_of": "심의필 2026-06-24; 확인 2026-10-23",
+   "annual_fee_won": {
+    "domestic": null,
+    "overseas": 35000
+   },
+   "min_prev_month_spend_won": 0,
+   "headline_benefits": [
+    {
+     "category": "주유·충전",
+     "text": "전월 실적 구간별 리터당 40P→80P→100P→150P 적립(충전소 별도)",
+     "rate_or_amount": "리터당 최대 150P",
+     "condition": "주유·충전 통합 월 30만원까지, 월 적립한도 5만P"
+    },
+    {
+     "category": "특별 적립",
+     "text": "백화점·할인점·전자상거래(SOL페이)·편의점·택시·홈쇼핑·정비소 1.0%→2.0%→3.5%→5.0%",
+     "rate_or_amount": "최대 5.0%",
+     "condition": "전월 실적 4구간"
+    },
+    {
+     "category": "일반 적립",
+     "text": "국내외 가맹점 0.2%→0.5%→1.0%→2.0%",
+     "rate_or_amount": "최대 2.0%",
+     "condition": "일시불·할부"
+    },
+    {
+     "category": "부가서비스",
+     "text": "무료주차 일 1회 월 3회, 인천공항 발레파킹 월 3회, 공항 커피 무료",
+     "rate_or_amount": "무료",
+     "condition": "직전월 30만원 이상"
+    }
+   ],
+   "explicit_target_text": null,
+   "genz_fit": "low",
+   "genz_fit_reason": "공식 페이지에 대상 문구가 없고 주유 적립과 프리미엄 부가서비스(주차·발레) 중심이다.",
+   "source_ids": [
+    "CAS9",
+    "CAS10"
+   ],
+   "note": "연회비는 CAS10 랜딩 원문 'VISA 3만 5천원', 'UPI 3만 2천원'; 국내전용 여부 불명이라 domestic은 null, UPI 32,000원은 여기 기록. 실적 4구간(50만 미만/50~100/100~200/200 이상)이라 최소 실적 조건은 없고 부가서비스만 30만 조건. 출시 2016-04-27."
+  },
+  {
+   "id": "c06",
+   "name": "taptap O",
+   "official_name": "삼성카드 taptap O",
+   "issuer": "삼성",
+   "on_sale": true,
+   "as_of": "심의필 유효 2026-02-24~2027-02-23; 확인 2026-10-23",
+   "annual_fee_won": {
+    "domestic": null,
+    "overseas": 10000
+   },
+   "min_prev_month_spend_won": null,
+   "headline_benefits": [
+    {
+     "category": "대중교통·택시",
+     "text": "대중교통·택시 10% 결제일할인",
+     "rate_or_amount": "10%",
+     "condition": ""
+    },
+    {
+     "category": "통신",
+     "text": "통신요금 10% 결제일할인",
+     "rate_or_amount": "10%",
+     "condition": ""
+    },
+    {
+     "category": "영화",
+     "text": "CGV·롯데시네마 5,000원 결제일할인",
+     "rate_or_amount": "5,000원",
+     "condition": ""
+    },
+    {
+     "category": "라이프스타일 패키지",
+     "text": "옵션 패키지 택1 제공(커피·쇼핑 등), 해외 적립",
+     "rate_or_amount": "패키지 선택",
+     "condition": "세부 수치는 페이지에 없음"
+    }
+   ],
+   "explicit_target_text": null,
+   "genz_fit": "medium",
+   "genz_fit_reason": "공식 문구는 대중교통·통신·영화 할인과 옵션 패키지 선택형으로, 대상 연령 문구는 없다.",
+   "source_ids": [
+    "CAS11",
+    "CAS12"
+   ],
+   "note": "본문에서 읽은 연회비는 '[해외] 본인 10,000원'뿐; 국내 연회비와 전월실적은 확인 못함(검색 요약에는 30만원 이상이 보이나 공식 본문 직접 확인 못해 null). 커피·쇼핑 패키지 수치는 공식 본문 미확인."
+  },
+  {
+   "id": "c07",
+   "name": "iD SELECT ALL",
+   "official_name": "삼성 iD SELECT ALL",
+   "issuer": "삼성",
+   "on_sale": true,
+   "as_of": "심의필 유효 2026-05-14~2027-05-13; 확인 2026-10-23",
+   "annual_fee_won": {
+    "domestic": null,
+    "overseas": 20000
+   },
+   "min_prev_month_spend_won": null,
+   "headline_benefits": [
+    {
+     "category": "SELECT 서비스",
+     "text": "SELECT 서비스·생활 편의·디지털콘텐츠/멤버십·해외 할인 탭 구성",
+     "rate_or_amount": "세부 수치 없음",
+     "condition": "페이지에 수치 없음"
+    }
+   ],
+   "explicit_target_text": null,
+   "genz_fit": "unknown",
+   "genz_fit_reason": "공식 페이지에 혜택 수치와 대상 문구가 없다.",
+   "source_ids": [
+    "CAS13"
+   ],
+   "note": "본문에서 읽은 연회비는 '[해외] 본인 20,000원'뿐. 혜택 수치·전월실적은 공식 상품 페이지 본문에 없어 비움(검색 요약의 아파트관리비·통신·교육 10%, 외식·편의점·할인점·주유 7%는 본문 미확인)."
+  },
+  {
+   "id": "c08",
+   "name": "MILEAGE PLATINUM(스카이패스)",
+   "official_name": "삼성카드 & MILEAGE PLATINUM(스카이패스)",
+   "issuer": "삼성",
+   "on_sale": true,
+   "as_of": "심의필 유효 2026-04-16~2027-04-15; 확인 2026-10-23",
+   "annual_fee_won": {
+    "domestic": null,
+    "overseas": 49000
+   },
+   "min_prev_month_spend_won": null,
+   "headline_benefits": [
+    {
+     "category": "마일리지",
+     "text": "스카이패스 마일리지 적립 및 추가 적립, 아멕스 PLATINUM 등급 서비스",
+     "rate_or_amount": "수치 없음",
+     "condition": "적립률·한도는 페이지에 없음"
+    }
+   ],
+   "explicit_target_text": null,
+   "genz_fit": "low",
+   "genz_fit_reason": "공식 페이지에 대상 문구가 없고 항공 마일리지·플래티넘 서비스 중심의 연회비 49,000원 카드다.",
+   "source_ids": [
+    "CAS14"
+   ],
+   "note": "본문에서 읽은 연회비는 '[해외] 본인 49,000원'뿐. 적립률 수치는 본문에 없어 비움."
+  },
+  {
+   "id": "c09",
+   "name": "현대카드 M",
+   "official_name": "현대카드M",
+   "issuer": "현대",
+   "on_sale": true,
+   "as_of": "'25.11.19 기준 제작; 확인 2026-10-23",
+   "annual_fee_won": {
+    "domestic": 30000,
+    "overseas": 30000
+   },
+   "min_prev_month_spend_won": 500000,
+   "headline_benefits": [
+    {
+     "category": "온라인몰·외식·해외",
+     "text": "온라인몰·외식·해외 가맹점 M포인트 추가 적립",
+     "rate_or_amount": "5% 적립",
+     "condition": "전월 이용 100만원 이상, 대상점 월 1만 M포인트(본인+가족 합산)"
+    },
+    {
+     "category": "국내외 가맹점 기본",
+     "text": "국내외 가맹점 M포인트 적립",
+     "rate_or_amount": "1.5% 적립",
+     "condition": "전월 이용 50만원 이상"
+    }
+   ],
+   "explicit_target_text": null,
+   "genz_fit": "low",
+   "genz_fit_reason": "공식 매거진에 대상 연령 문구가 없고 전월 50만원·100만원 실적 구간으로 적립률이 갈린다.",
+   "source_ids": [
+    "CAS16"
+   ],
+   "note": "상품 상세 페이지가 아니라 현대카드 공식 매거진(CAS16)의 정리표 기준이며 'M Edition3'에 대한 내용은 없음. DB의 '현대카드 M'은 현재 상품명 '현대카드M'과 동일로 보나 Edition3 변형(통신할인형 등) 존재. 신규 회원 연회비 캐시백 이벤트 2026.10.1~10.31."
+  },
+  {
+   "id": "c10",
+   "name": "ZERO Edition3(할인형)",
+   "official_name": "현대카드ZERO Edition3(할인형)",
+   "issuer": "현대",
+   "on_sale": true,
+   "as_of": "'25.11.21 기준; 심의필 2025-11-07~2026-11-06; 확인 2026-10-23",
+   "annual_fee_won": {
+    "domestic": 15000,
+    "overseas": 15000
+   },
+   "min_prev_month_spend_won": 0,
+   "headline_benefits": [
+    {
+     "category": "전 가맹점",
+     "text": "국내외 가맹점 이용금액 청구 할인",
+     "rate_or_amount": "0.8% 청구 할인",
+     "condition": "전월 실적 조건·할인 한도 없음; 해외 이용분은 국내외겸용 카드만"
+    }
+   ],
+   "explicit_target_text": null,
+   "genz_fit": "medium",
+   "genz_fit_reason": "공식 매거진이 전월 실적과 한도 없는 0.8% 할인으로 소개하나 대상 연령 문구는 없다.",
+   "source_ids": [
+    "CAS15",
+    "CAS16"
+   ],
+   "note": "연회비 할인형·포인트형 모두 15,000원. 포인트형은 1.2% M포인트 적립. 긴급할인 서비스 존재."
+  },
+  {
+   "id": "c11",
+   "name": "American Express Gold Edition2",
+   "official_name": "American Express® Gold Card Edition2",
+   "issuer": "현대",
+   "on_sale": true,
+   "as_of": "서비스 유효 2026-12-31까지; 확인 2026-10-23",
+   "annual_fee_won": {
+    "domestic": null,
+    "overseas": null
+   },
+   "min_prev_month_spend_won": 500000,
+   "headline_benefits": [
+    {
+     "category": "연간 바우처",
+     "text": "연 25만원 상당 바우처(20만원권 1매, 5만원권 1매)",
+     "rate_or_amount": "25만원",
+     "condition": "발급 첫해 누적 250만원 이상, 2차년도 이후 전년 2,400만원 이상"
+    },
+    {
+     "category": "공항 라운지",
+     "text": "전 세계 공항 라운지 연 10회 무료",
+     "rate_or_amount": "연 10회",
+     "condition": "본인 회원, 전월 50만원 이상"
+    },
+    {
+     "category": "멤버십 리워즈 추가",
+     "text": "해외·특급호텔·여행·항공·골프·면세점 1,000원당 3MR",
+     "rate_or_amount": "1,000원당 3MR",
+     "condition": "영역별 월 4,500MR"
+    },
+    {
+     "category": "기본 적립",
+     "text": "국내외 가맹점 1,000원당 1MR",
+     "rate_or_amount": "1,000원당 1MR",
+     "condition": "한도 없음"
+    },
+    {
+     "category": "리무진·철도",
+     "text": "공항 리무진·공항철도 연 12회 무료",
+     "rate_or_amount": "연 12회",
+     "condition": "50만원 이상 항공권 구매 시"
+    },
+    {
+     "category": "호텔",
+     "text": "Be My Guest 레스토랑 6만원 이상 3만원 할인, Hotel Collection 100달러 크레딧",
+     "rate_or_amount": "3만원 / USD100",
+     "condition": "연 3회 / 2박 이상"
+    }
+   ],
+   "explicit_target_text": null,
+   "genz_fit": "low",
+   "genz_fit_reason": "공식 페이지에 대상 문구가 없고 바우처·라운지 중심의 프리미엄 카드이며 발급 첫해 250만원 이상 이용 조건이 있다.",
+   "source_ids": [
+    "CAS17"
+   ],
+   "note": "연회비 금액은 공식 상품 페이지에 없음(30만원은 법인 Amex Corporate Gold 수치로 확인되어 사용하지 않음). 메탈 플레이트 제공. 발레파킹 월 5회 통합."
+  },
+  {
+   "id": "c12",
+   "name": "에너지플러스",
+   "official_name": "에너지플러스카드 Edition3",
+   "issuer": "현대",
+   "on_sale": true,
+   "as_of": "확인 2026-10-23",
+   "annual_fee_won": {
+    "domestic": 30000,
+    "overseas": 30000
+   },
+   "min_prev_month_spend_won": 500000,
+   "headline_benefits": [
+    {
+     "category": "GS칼텍스 주유",
+     "text": "GS칼텍스 주유 시 리터당 M포인트 적립(앱 바로주유 300, 일반 결제 100)",
+     "rate_or_amount": "리터당 최대 300 M포인트",
+     "condition": "전월 50~100만 월 1.5만P, 100만 이상 월 3만P"
+    },
+    {
+     "category": "기본",
+     "text": "국내외 가맹점 M포인트 적립",
+     "rate_or_amount": "1% 적립",
+     "condition": "전월 50만원 이상, 한도 없음"
+    },
+    {
+     "category": "신규 우대",
+     "text": "바로할인 보너스 카드 2만원(발급일 1만 + 7개월차 1만), GS칼텍스 리터당 100원 자동 할인",
+     "rate_or_amount": "2만원",
+     "condition": "제공일로부터 6개월 내 1만원까지"
+    }
+   ],
+   "explicit_target_text": null,
+   "genz_fit": "low",
+   "genz_fit_reason": "공식 페이지에 대상 문구가 없고 GS칼텍스 주유 적립 전용 카드로 연회비 3만원, 전월 50만원 조건이 있다.",
+   "source_ids": [
+    "CAS18"
+   ],
+   "note": "DB명 '에너지플러스'를 현재 상품 '에너지플러스카드 Edition3'로 매핑. 다른 현대카드 페이지에 구버전 연회비 10,000원 표기가 있었으나 현행 Edition3 페이지의 30,000원 채택."
+  },
+  {
+   "id": "c13",
+   "name": "노리2 체크",
+   "official_name": "노리2 체크카드(KB Pay)",
+   "issuer": "KB국민",
+   "on_sale": null,
+   "as_of": "확인 2026-10-23",
+   "annual_fee_won": {
+    "domestic": 0,
+    "overseas": null
+   },
+   "min_prev_month_spend_won": null,
+   "headline_benefits": [
+    {
+     "category": "커피·모바일·문화",
+     "text": "커피, 모바일, 문화 10% 할인",
+     "rate_or_amount": "10%",
+     "condition": "월 할인한도·실적 구간은 페이지 본문에 없음"
+    },
+    {
+     "category": "뷰티·편의점",
+     "text": "뷰티, 편의점 5% 할인",
+     "rate_or_amount": "5%",
+     "condition": ""
+    },
+    {
+     "category": "KB Pay",
+     "text": "KB Pay 결제 2% 할인",
+     "rate_or_amount": "2%",
+     "condition": "Global 카드와 실적·한도 합산 안 됨"
+    }
+   ],
+   "explicit_target_text": "인터넷 발급 만 17세 이상(후불교통 만 18세 이상)",
+   "genz_fit": "medium",
+   "genz_fit_reason": "공식 페이지가 만 17세 이상 발급과 커피·모바일·문화 10% 할인을 안내하나 청년 한정 문구는 없다.",
+   "source_ids": [
+    "CAS19",
+    "CAS20"
+   ],
+   "note": "KB Pay형과 Global형(해외 2% 할인·공항라운지) 2종. 연회비 '없음'은 KB Pay형 페이지 원문, 해외 연회비 별도 표기 없어 null. 판매 중단 표시 없으나 '일부 상품만 발급 가능' 안내가 있어 on_sale은 null."
+  },
+  {
+   "id": "c14",
+   "name": "Youth Club 체크",
+   "official_name": "KB Youth Club 체크카드",
+   "issuer": "KB국민",
+   "on_sale": true,
+   "as_of": "출시 2025-12-08; 확인 2026-10-23",
+   "annual_fee_won": {
+    "domestic": 0,
+    "overseas": null
+   },
+   "min_prev_month_spend_won": 200000,
+   "headline_benefits": [
+    {
+     "category": "A팩",
+     "text": "OTT 50%, APP 30%, 여가 20%, 교통 20%, 편의점 20%, 영화 4,000원 할인",
+     "rate_or_amount": "최대 50%",
+     "condition": "전월 20만원, 월간 한도 있음(금액 페이지에 없음)"
+    },
+    {
+     "category": "B팩",
+     "text": "쇼핑 멤버십 50%, 통신요금 30%, 패션/라이프 20%, 배달 20%, 편의점 20%, 레스토랑/놀이공원 4,000원 할인",
+     "rate_or_amount": "최대 50%",
+     "condition": "A팩/B팩 택1, 매월 변경 가능"
+    }
+   ],
+   "explicit_target_text": "만 18~29세",
+   "genz_fit": "high",
+   "genz_fit_reason": "공식 페이지가 발급 대상을 만 18~29세로 명시하고 OTT·멤버십 50% 할인팩을 제공한다.",
+   "source_ids": [
+    "CAS21"
+   ],
+   "note": "2026.10.1~10.31 발급 이벤트 진행. 판매 상태 명시 문구는 없으나 출시 2025-12, 10월 신규발급 이벤트로 판매 중으로 판단."
+  },
+  {
+   "id": "c15",
+   "name": "토심이 첵첵",
+   "official_name": "토심이 첵첵 체크카드",
+   "issuer": "KB국민",
+   "on_sale": null,
+   "as_of": "확인 2026-10-23",
+   "annual_fee_won": {
+    "domestic": 0,
+    "overseas": null
+   },
+   "min_prev_month_spend_won": null,
+   "headline_benefits": [
+    {
+     "category": "대중교통·간편결제·스타벅스",
+     "text": "대중교통, 온라인 간편결제, 스타벅스 각 2천~4천원 할인",
+     "rate_or_amount": "건당 2~4천원",
+     "condition": "월간 한도 있음, 금액 페이지에 없음"
+    }
+   ],
+   "explicit_target_text": "인터넷 발급 만 17세 이상(영업점 만 7세 이상, 자녀 명의 만 7~17세)",
+   "genz_fit": "medium",
+   "genz_fit_reason": "공식 페이지가 만 17세 이상 인터넷 발급과 만 7~17세 자녀 명의 발급을 안내해 10대~청년 겨냥으로 보이나 청년 명시 문구는 없다.",
+   "source_ids": [
+    "CAS22"
+   ],
+   "note": "전월실적 구간은 공식 본문에 금액 없음(검색 요약상 30만/60만은 본문 미확인). 판매 상태 명시 문구 없음."
+  },
+  {
+   "id": "c16",
+   "name": "My WE:SH",
+   "official_name": "My WE:SH 카드",
+   "issuer": "KB국민",
+   "on_sale": null,
+   "as_of": "심의필 2024-12-16; 확인 2026-10-23",
+   "annual_fee_won": {
+    "domestic": 15000,
+    "overseas": 15000
+   },
+   "min_prev_month_spend_won": null,
+   "headline_benefits": [
+    {
+     "category": "KB Pay·음식·OTT",
+     "text": "KB Pay/음식/OTT 10~30% 할인",
+     "rate_or_amount": "10~30%",
+     "condition": "세부는 이미지, 본문 수치 없음"
+    },
+    {
+     "category": "배달·커피·영화·미용실",
+     "text": "배달/커피/영화/미용실 등 5~30% 할인",
+     "rate_or_amount": "5~30%",
+     "condition": "월 할인한도, 이월 불가"
+    },
+    {
+     "category": "생일 혜택",
+     "text": "Happy Birth Month, 전월실적 채워드림",
+     "rate_or_amount": "",
+     "condition": "세부 본문 없음"
+    }
+   ],
+   "explicit_target_text": null,
+   "genz_fit": "medium",
+   "genz_fit_reason": "공식 문구가 OTT·배달·커피·영화·미용실 중심이나 대상 연령 문구는 없다.",
+   "source_ids": [
+    "CAS23"
+   ],
+   "note": "연회비: 일반 15,000원(기본 7,000+제휴 8,000), 모바일 단독 9,000원. 상품설명서 2024-12-30, 심의필 2024-12-16으로 최신성 불명이고 2026-10 KB 신규발급 캐시백 대상 16종 목록에는 없음. 전월실적 구간 금액 본문 없음."
+  },
+  {
+   "id": "c17",
+   "name": "굿데이카드",
+   "official_name": "굿데이카드",
+   "issuer": "KB국민",
+   "on_sale": null,
+   "as_of": "확인 2026-10-23",
+   "annual_fee_won": {
+    "domestic": 5000,
+    "overseas": 10000
+   },
+   "min_prev_month_spend_won": 300000,
+   "headline_benefits": [
+    {
+     "category": "주유",
+     "text": "주유·충전소 리터당 60원 청구할인",
+     "rate_or_amount": "리터당 60원",
+     "condition": "월 할인 제공 이용금액 1구간 20만, 2구간 40만"
+    },
+    {
+     "category": "학원·피트니스",
+     "text": "학원·피트니스 10% 추가 청구할인",
+     "rate_or_amount": "10%",
+     "condition": "월 할인한도 3만원, 월 이용금액 30만원까지"
+    },
+    {
+     "category": "외식·커피·편의점·약국",
+     "text": "음식점·커피·편의점·약국 10% 추가 청구할인",
+     "rate_or_amount": "10%",
+     "condition": "월 할인한도 5천원"
+    },
+    {
+     "category": "통신",
+     "text": "전화·인터넷·케이블TV 10% 청구할인",
+     "rate_or_amount": "10%",
+     "condition": "월 할인한도 3천원"
+    }
+   ],
+   "explicit_target_text": null,
+   "genz_fit": "low",
+   "genz_fit_reason": "공식 페이지에 대상 문구가 없고 주유·통신·학원 할인 중심이며 첫해 연회비는 면제되지 않는다.",
+   "source_ids": [
+    "CAS24"
+   ],
+   "note": "연회비 플라스틱 기준(국내전용 5,000원/국내외겸용 10,000원), 모바일 단독 1,000/6,000원. 실적 1구간 30만, 2구간 60만, 3구간 120만. 2026.10 신규발급 이벤트 대상 목록에는 '굿데이 올림'만 있고 굿데이는 없음. 판매 상태 명시 없음."
+  }
+ ]
+}

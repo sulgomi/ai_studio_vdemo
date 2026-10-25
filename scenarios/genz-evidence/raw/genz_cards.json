@@ -1,0 +1,975 @@
+{
+  "agent": "genz_cards",
+  "retrieved_at": "2026-10-23",
+  "sources": [
+    {
+      "id": "GCS1",
+      "title": "카카오뱅크의 첫 번째 PLCC, ‘카카오뱅크 줍줍 신한카드’ 출시",
+      "publisher": "신한카드",
+      "url": "https://www.shinhancard.com/pconts/company/html/promotion/press/1235065_3999.html",
+      "published": "2025-07-01",
+      "tier": "A 공시·정부통계",
+      "kind": "issuer_page",
+      "stale": false,
+      "promotional": false
+    },
+    {
+      "id": "GCS2",
+      "title": "신한카드, 배달 때마다 할인되는 필수템 ‘배민 신한카드 밥친구’ 출시",
+      "publisher": "신한카드",
+      "url": "https://www.shinhancard.com/pconts/company/html/promotion/press/1235143_3999.html",
+      "published": "2025-08-06",
+      "tier": "A 공시·정부통계",
+      "kind": "issuer_page",
+      "stale": false,
+      "promotional": false
+    },
+    {
+      "id": "GCS3",
+      "title": "토스, ‘토스 삼성카드’ 출시",
+      "publisher": "토스(비바리퍼블리카)",
+      "url": "https://toss.im/tossfeed/article/39673",
+      "published": "2025-08-18",
+      "tier": "A 공시·정부통계",
+      "kind": "press",
+      "stale": false,
+      "promotional": false
+    },
+    {
+      "id": "GCS4",
+      "title": "네이버 현대카드 Edition2 공개 (현대모터그룹 뉴스룸)",
+      "publisher": "현대모터그룹",
+      "url": "https://www.hyundaimotorgroup.com/ko/news/CONT0000000000168547",
+      "published": "2025-01-23",
+      "tier": "A 공시·정부통계",
+      "kind": "press",
+      "stale": true,
+      "promotional": false
+    },
+    {
+      "id": "GCS5",
+      "title": "네이버-현대카드, 3번째 PLCC ‘네이버 현대카드 Edition3’ 출시",
+      "publisher": "네이버(navercorp.com)",
+      "url": "https://navercorp.com/media/pressReleasesDetail?seq=10034610",
+      "published": "2026-08-26",
+      "tier": "A 공시·정부통계",
+      "kind": "press",
+      "stale": false,
+      "promotional": false
+    },
+    {
+      "id": "GCS6",
+      "title": "토스뱅크-하나카드, 신용카드 ‘와이드’ 출시",
+      "publisher": "스마트투데이",
+      "url": "https://www.smarttoday.co.kr/ko-kr/articles/56556",
+      "published": "2024-08-02",
+      "tier": "B 언론·리서치",
+      "kind": "news",
+      "stale": true,
+      "promotional": false
+    },
+    {
+      "id": "GCS7",
+      "title": "토스뱅크·하나카드, 두번째 PLCC 카드 출시",
+      "publisher": "스마트투데이",
+      "url": "https://www.smarttoday.co.kr/ko-kr/articles/91251",
+      "published": "2025-09-15",
+      "tier": "B 언론·리서치",
+      "kind": "news",
+      "stale": false,
+      "promotional": false
+    },
+    {
+      "id": "GCS8",
+      "title": "커피부터 관리비까지 매일 할인받는, 토스뱅크 하나카드 Day",
+      "publisher": "토스뱅크",
+      "url": "https://tossbank.com/articles/day-bank",
+      "published": null,
+      "tier": "A 공시·정부통계",
+      "kind": "issuer_page",
+      "stale": false,
+      "promotional": false
+    },
+    {
+      "id": "GCS9",
+      "title": "청춘대로 톡톡카드 상품 페이지",
+      "publisher": "KB국민카드",
+      "url": "https://m.kbcard.com/CRD/DVIEW/MCAMCXHIACRC0002?allianceCode=09174&mainCC=b",
+      "published": null,
+      "tier": "A 공시·정부통계",
+      "kind": "issuer_page",
+      "stale": false,
+      "promotional": false
+    },
+    {
+      "id": "GCS10",
+      "title": "일본 여행 특화 신용카드 ‘신한카드 하루’ 출시",
+      "publisher": "신한카드",
+      "url": "https://www.shinhancard.com/pconts/company/html/promotion/press/1234731_3999.html",
+      "published": "2025-06-29",
+      "tier": "A 공시·정부통계",
+      "kind": "issuer_page",
+      "stale": false,
+      "promotional": false
+    },
+    {
+      "id": "GCS11",
+      "title": "더 가볍게 떠나는 일본 여행, ‘신한카드 SOL트래블J 체크’ 출시",
+      "publisher": "신한카드",
+      "url": "https://www.shinhancard.com/pconts/company/html/promotion/press/1233252_3999.html",
+      "published": "2025-05-13",
+      "tier": "A 공시·정부통계",
+      "kind": "issuer_page",
+      "stale": false,
+      "promotional": false
+    },
+    {
+      "id": "GCS12",
+      "title": "트래블로그 체크카드 상품 페이지",
+      "publisher": "하나카드",
+      "url": "https://www.hanacard.co.kr/OPI41000000D.web?CD_PD_SEQ=15414",
+      "published": null,
+      "tier": "A 공시·정부통계",
+      "kind": "issuer_page",
+      "stale": false,
+      "promotional": false
+    },
+    {
+      "id": "GCS13",
+      "title": "삼성카드, 2030 겨냥한 ‘무신사 전용 카드’ 출시한다",
+      "publisher": "헤럴드경제",
+      "url": "https://www.heraldk.com/article/2026041516245749478",
+      "published": "2026-04-16",
+      "tier": "B 언론·리서치",
+      "kind": "news",
+      "stale": false,
+      "promotional": false
+    },
+    {
+      "id": "GCS14",
+      "title": "삼성카드, ‘삼성 iD SELECT 카드’ 2종 출시",
+      "publisher": "헤럴드경제",
+      "url": "https://www.heraldk.com/article/2025082716361306222",
+      "published": "2025-08-28",
+      "tier": "B 언론·리서치",
+      "kind": "news",
+      "stale": false,
+      "promotional": false
+    },
+    {
+      "id": "GCS15",
+      "title": "신한카드, 네이버페이ㆍBGF리테일과 함께 ‘CU Npay 카드’ 출시",
+      "publisher": "신한카드",
+      "url": "https://www.shinhancard.com/pconts/company/html/promotion/press/1233547_3999.html",
+      "published": "2024-10-22",
+      "tier": "A 공시·정부통계",
+      "kind": "issuer_page",
+      "stale": true,
+      "promotional": false
+    },
+    {
+      "id": "GCS16",
+      "title": "5월 ‘K-패스’ 사업 시행 맞춰 ‘BC바로 K-패스 카드’로 상품명 변경 출시",
+      "publisher": "BC카드(뉴스와이어)",
+      "url": "https://www.newswire.co.kr/newsRead.php?no=988439",
+      "published": "2024-04-24",
+      "tier": "A 공시·정부통계",
+      "kind": "press",
+      "stale": true,
+      "promotional": false
+    },
+    {
+      "id": "GCS17",
+      "title": "iM뱅크, ‘iM A 체크카드’ 출시",
+      "publisher": "세계일보",
+      "url": "https://www.segye.com/newsView/20240730516614",
+      "published": "2024-07-30",
+      "tier": "B 언론·리서치",
+      "kind": "news",
+      "stale": true,
+      "promotional": false
+    },
+    {
+      "id": "GCS18",
+      "title": "[긁기 전에] ‘청년미래적금’만큼 쏠쏠한 ‘청년 카드’",
+      "publisher": "뉴스웍스",
+      "url": "https://www.newsworks.co.kr/news/articleView.html?idxno=845077",
+      "published": "2026-06-27",
+      "tier": "B 언론·리서치",
+      "kind": "news",
+      "stale": false,
+      "promotional": false
+    }
+  ],
+  "facts": [
+    {
+      "id": "GCF1",
+      "topic": "카카오뱅크 줍줍 신한카드 대상",
+      "claim": "신한카드 보도자료는 카카오뱅크 줍줍 신한카드의 캐릭터 디자인을 2030세대 소장 욕구 자극용으로 소개한다.",
+      "value": null,
+      "unit": null,
+      "population": "2030세대(카드 디자인 타깃)",
+      "period": "2025.07",
+      "source_id": "GCS1",
+      "quote": "2030세대의 소장 욕구를 자극하는",
+      "confidence": "medium",
+      "note": "연령 발급 제한이 아니라 디자인 타깃 표현"
+    },
+    {
+      "id": "GCF2",
+      "topic": "네이버 현대카드 Edition2 선호 연령",
+      "claim": "현대모터그룹 뉴스룸은 네이버 현대카드 Edition2 선호도가 20·30대에서 가장 높은 64%라고 적었다.",
+      "value": 64,
+      "unit": "%",
+      "population": "20·30대(선호도 조사, 표본·문항 미공개)",
+      "period": "2025.01 기준 보도",
+      "source_id": "GCS4",
+      "quote": null,
+      "confidence": "low",
+      "note": "fetch 요약문에서 확인한 수치로 원문 문장 인용 확보 못 함(quote null). 조사 방법 미확인."
+    },
+    {
+      "id": "GCF3",
+      "topic": "카드사 청년층 대상 신용카드 공급",
+      "claim": "조사한 신규 출시 보도자료 중 카드사가 연령을 직접 한정해 낸 청년 전용 신용카드는 확인되지 않았고, 연령 언급은 '2030' 디자인·플랫폼 맥락에 그친다.",
+      "value": null,
+      "unit": null,
+      "population": "2025~2026 카드사 보도자료(조사 범위 한정)",
+      "period": "2024~2026",
+      "source_id": "GCS1",
+      "quote": null,
+      "confidence": "low",
+      "note": "전수조사 아님. 신한 2025 보도자료 목록에서 '청년'/'20대'/'MZ' 제목의 신규 카드 출시는 없었음(청년 금융콘서트 1건만)."
+    },
+    {
+      "id": "GCF4",
+      "topic": "신한카드 SOL트래블 일본 특화 근거",
+      "claim": "신한카드는 쏠트래블 체크 이용 데이터에서 일본이 가장 많이 쓰인 국가여서 SOL트래블J를 기획했다고 밝혔다.",
+      "value": null,
+      "unit": null,
+      "population": "쏠트래블 체크 이용 데이터",
+      "period": "2025.05",
+      "source_id": "GCS11",
+      "quote": null,
+      "confidence": "medium",
+      "note": "fetch 요약 기반"
+    }
+  ],
+  "gaps": [
+    "카드사가 만 19~29세 등 연령을 명시해 발급을 제한한 '청년 전용 신용카드'는 신한 처음(DB 기존), BC 바로 K-패스(청년은 K-패스 환급 기준) 외에 공식 페이지로 확인하지 못했다. KB Youth Club 체크(만 18~29세)는 DB에 이미 있어 제외했다.",
+    "하나카드, 우리카드, 롯데카드, NH농협카드의 2025~2026 20대 명시 신규 신용카드는 검색에서 확인되지 않았다(롯데 LOCA LIKIT은 DB 기존, 카카오뱅크 롯데카드는 2021년 stale).",
+    "트래블 카드(gc09~gc11)는 20대 마케팅 문구를 공식 페이지에서 확인하지 못했다. 20대 이용 비중 수치도 없다.",
+    "WebFetch는 요약 모델을 거쳐 본문 원문 인용이 부족하다. 카드 필드의 따옴표 문구는 요약에 인용부호로 나온 표현 위주이며 quote 필드를 확보하지 못한 fact는 null로 두었다.",
+    "하나카드 트래블로그 체크 공식 페이지는 인코딩이 깨져 연회비·출시일을 확인하지 못했다.",
+    "무신사 삼성카드는 출시 계획 기사만 확인했고 실제 발급 개시일·연회비·혜택 수치는 공식 자료로 확인하지 못했다. 카드고릴라 등 홍보성 글의 수치는 쓰지 않았다.",
+    "on_sale(현재 판매 여부)은 네이버 현대카드 Edition3 외에는 확인하지 못해 null이다.",
+    "카카오페이삼성카드(카카오페이신용카드), 스타벅스 삼성카드, 모니모 카드, 삼성 iD SELECT UP, 신한카드 처음 체크(10대 대상)는 검토했으나 공식 페이지 확인 부족 또는 범위 밖(10대)이라 제외했다.",
+    "본 파일은 신용·체크 카드 수준의 상품 사실만 담았고 20대 월 소비·이용자 수치는 다루지 않았다."
+  ],
+  "cards": [
+    {
+      "id": "gc01",
+      "name": "카카오뱅크 줍줍 신한카드",
+      "official_name": "카카오뱅크 줍줍 신한카드",
+      "issuer": "신한카드",
+      "type": "credit",
+      "launched": "2025-07 (7월 1일 발표)",
+      "as_of": "2025-07-01",
+      "annual_fee_won": {
+        "domestic": 18000,
+        "overseas": 18000
+      },
+      "min_prev_month_spend_won": 0,
+      "headline_benefits": [
+        {
+          "category": "캐시백",
+          "text": "국내외 가맹점 캐시백",
+          "rate_or_amount": "최대 2%를 월 4만원까지",
+          "condition": "전월 실적 조건없이"
+        },
+        {
+          "category": "캐시백",
+          "text": "모든 가맹점 캐시백",
+          "rate_or_amount": "1%를 월 최대 2만원까지",
+          "condition": "원문 기준 전월 실적 조건없이"
+        },
+        {
+          "category": "선결제",
+          "text": "승인 후 5일 이내 선결제 시 추가 캐시백",
+          "rate_or_amount": "1%를 월 최대 2만원",
+          "condition": "승인 후 5일 이내 이용금액 선결제"
+        },
+        {
+          "category": "앱 원스톱",
+          "text": "카드 신청·사용등록·내역 조회·즉시결제를 카카오뱅크 앱에서 처리",
+          "rate_or_amount": "해당없음",
+          "condition": ""
+        }
+      ],
+      "explicit_target_text": "2030세대의 소장 욕구를 자극하는 캐릭터 디자인",
+      "target_age": "2030세대(원문 표기)",
+      "category_in_scan": "빅테크연계",
+      "distinct_feature": "카카오뱅크의 첫 PLCC로 카드 신청부터 결제까지 카카오뱅크 앱에서 원스톱 처리하고 캐릭터 4종 플레이트(메탈라이언은 실제 메탈)를 둔다.",
+      "source_ids": [
+        "GCS1"
+      ],
+      "note": "메탈라이언 디자인은 발급 수수료 7만원 추가. 판매 지속 여부는 미확인.",
+      "on_sale": null
+    },
+    {
+      "id": "gc02",
+      "name": "배민 신한카드 밥친구",
+      "official_name": "배민 신한카드 밥친구",
+      "issuer": "신한카드",
+      "type": "credit",
+      "launched": "2025-08 (8월 6일 발표)",
+      "as_of": "2025-08-06",
+      "annual_fee_won": {
+        "domestic": 12000,
+        "overseas": 15000
+      },
+      "min_prev_month_spend_won": 200000,
+      "headline_benefits": [
+        {
+          "category": "배달",
+          "text": "배달의민족 이용금액 할인(배달·포장 모두)",
+          "rate_or_amount": "5%, 월 최대 30,000원",
+          "condition": "전월 이용금액 20만원 이상(배민 이용금액 포함)"
+        },
+        {
+          "category": "전 가맹점",
+          "text": "배민 외 국내외 가맹점 할인",
+          "rate_or_amount": "1%, 월 최대 10,000원",
+          "condition": "전월 이용금액 20만원 이상"
+        }
+      ],
+      "explicit_target_text": null,
+      "target_age": null,
+      "category_in_scan": "PLCC",
+      "distinct_feature": "배달의민족 이용에 특화해 배민 5%, 그 외 가맹점 1% 할인 구조를 둔 배달 PLCC이다.",
+      "source_ids": [
+        "GCS2"
+      ],
+      "note": "공식 보도자료에 연령 대상 문구 없음. 현장결제(물품 수령 시)는 5% 제외. 20대 이용 비중 수치는 이 자료에 없음.",
+      "on_sale": null
+    },
+    {
+      "id": "gc03",
+      "name": "토스 삼성카드",
+      "official_name": "토스 삼성카드",
+      "issuer": "삼성카드",
+      "type": "credit",
+      "launched": "2025-08 (8월 18일 발표)",
+      "as_of": "2025-08-18",
+      "annual_fee_won": {
+        "domestic": 15000,
+        "overseas": 15000
+      },
+      "min_prev_month_spend_won": null,
+      "headline_benefits": [
+        {
+          "category": "간편결제",
+          "text": "토스페이 결제·토스쇼핑 할인",
+          "rate_or_amount": "최대 15%, 최대 3만 원",
+          "condition": "전월 실적에 따라"
+        },
+        {
+          "category": "온라인",
+          "text": "삼성페이·네이버페이·카카오페이 등 간편결제와 주요 쇼핑몰",
+          "rate_or_amount": "최대 10%",
+          "condition": "전월 실적에 따라"
+        },
+        {
+          "category": "디지털콘텐츠",
+          "text": "토스프라임 구독료·인앱결제·디지털콘텐츠",
+          "rate_or_amount": "최대 50%, 월 5천~1만 원",
+          "condition": "월 실적에 따라"
+        },
+        {
+          "category": "커피",
+          "text": "스타벅스",
+          "rate_or_amount": "월 최대 5천 원",
+          "condition": "전월 실적 30만 원 이상"
+        },
+        {
+          "category": "해외",
+          "text": "해외 가맹점",
+          "rate_or_amount": "상시 2%",
+          "condition": "전월 실적과 관계없음"
+        }
+      ],
+      "explicit_target_text": null,
+      "target_age": null,
+      "category_in_scan": "빅테크연계",
+      "distinct_feature": "토스가 낸 최초의 제휴카드로 토스페이·토스쇼핑·토스프라임 혜택을 한 장에 묶었다.",
+      "source_ids": [
+        "GCS3"
+      ],
+      "note": "대상 연령 문구 없음. 가장 가까운 표현은 토스 관계자의 '디지털 환경에 익숙한 고객들'.",
+      "on_sale": null
+    },
+    {
+      "id": "gc04",
+      "name": "네이버 현대카드 Edition2",
+      "official_name": "네이버 현대카드 Edition2",
+      "issuer": "현대카드",
+      "type": "credit",
+      "launched": "2025-01 (1월 23일 공개)",
+      "as_of": "2025-01-23",
+      "annual_fee_won": {
+        "domestic": 20000,
+        "overseas": null
+      },
+      "min_prev_month_spend_won": null,
+      "headline_benefits": [
+        {
+          "category": "온라인쇼핑",
+          "text": "네이버쇼핑 이용 시 네이버페이 포인트 적립(네이버플러스 멤버십 회원)",
+          "rate_or_amount": "7% 적립, 매월 2만 포인트 한도(멤버십 5% 합산 시 12%)",
+          "condition": "네이버플러스 멤버십 회원"
+        },
+        {
+          "category": "전 가맹점",
+          "text": "국내외 가맹점 적립",
+          "rate_or_amount": "1.4%(기본 0.7%+0.7%), 월 100만원까지",
+          "condition": "초과분 0.7%"
+        }
+      ],
+      "explicit_target_text": "네이버 사용자 필수 카드로 소개, 20·30대 선호도 64%(원문 표기)",
+      "target_age": "20·30대 선호도 언급(발급 연령 제한 아님)",
+      "category_in_scan": "빅테크연계",
+      "distinct_feature": "네이버플러스 멤버십 적립과 카드 적립을 중첩해 네이버쇼핑에서 최대 12% 적립한다.",
+      "source_ids": [
+        "GCS4"
+      ],
+      "note": "후속작 Edition3(gc05) 출시로 Edition2 판매 지속 여부 미확인. 전월실적은 해당 보도자료에 언급 없음. 연회비는 국내외 구분 미확인.",
+      "on_sale": null
+    },
+    {
+      "id": "gc05",
+      "name": "네이버 현대카드 Edition3",
+      "official_name": "네이버 현대카드 Edition3",
+      "issuer": "현대카드",
+      "type": "credit",
+      "launched": "2026-08 (8월 26일)",
+      "as_of": "2026-08-26",
+      "annual_fee_won": {
+        "domestic": null,
+        "overseas": null
+      },
+      "min_prev_month_spend_won": null,
+      "on_sale": true,
+      "headline_benefits": [
+        {
+          "category": "온라인쇼핑",
+          "text": "네이버플러스 스토어 결제 시 Npay 포인트 기본 적립",
+          "rate_or_amount": "5%, 월 최대 1만5천포인트",
+          "condition": "네이버플러스 스토어 결제"
+        },
+        {
+          "category": "온라인쇼핑",
+          "text": "더블 적립 프로모션",
+          "rate_or_amount": "최대 10%, 월 최대 3만 포인트",
+          "condition": "내년 7월까지"
+        },
+        {
+          "category": "멤버십 합산",
+          "text": "멤버십 쇼핑 적립과 합산",
+          "rate_or_amount": "최대 15%, 월 최대 9만6천 포인트",
+          "condition": "네이버플러스 멤버십"
+        }
+      ],
+      "explicit_target_text": null,
+      "target_age": null,
+      "category_in_scan": "신규출시",
+      "distinct_feature": "네이버플러스 스토어 단골을 겨냥해 카드 적립과 멤버십 적립이 중첩되는 구조에 연회비와 전월실적 기준을 이전 버전보다 낮췄다.",
+      "source_ids": [
+        "GCS5"
+      ],
+      "note": "보도자료는 '연회비와 전월 이용실적 기준도 낮췄다'고만 쓰고 금액은 없음. 연령 대상 문구 없음. 2026-08-26 신규 출시 PLCC."
+    },
+    {
+      "id": "gc06",
+      "name": "토스뱅크 하나카드 WIDE",
+      "official_name": "토스뱅크 하나카드 와이드(WIDE)",
+      "issuer": "하나카드",
+      "type": "credit",
+      "launched": "2024-08 (8월 2일 발표)",
+      "as_of": "2024-08-02",
+      "annual_fee_won": {
+        "domestic": 20000,
+        "overseas": null
+      },
+      "min_prev_month_spend_won": 0,
+      "headline_benefits": [
+        {
+          "category": "전 가맹점",
+          "text": "모든 가맹점 기본 청구할인",
+          "rate_or_amount": "1%",
+          "condition": "전월 실적과 상관없이"
+        },
+        {
+          "category": "전 가맹점",
+          "text": "전월 실적 충족 시 청구할인",
+          "rate_or_amount": "2%, 월 최대 10만원·연 최대 120만원(기사 표기)",
+          "condition": "전월 실적 40만 원 이상"
+        }
+      ],
+      "explicit_target_text": null,
+      "target_age": null,
+      "category_in_scan": "빅테크연계",
+      "distinct_feature": "토스뱅크 앱에서 발급·관리하며 전월 실적과 상관없이 모든 가맹점 기본 1% 청구할인을 준다.",
+      "source_ids": [
+        "GCS6"
+      ],
+      "note": "기사(2차 출처) 기반. 대상 연령 문구 없음. 판매 지속 여부 미확인.",
+      "on_sale": null
+    },
+    {
+      "id": "gc07",
+      "name": "토스뱅크 하나카드 Day",
+      "official_name": "토스뱅크 하나카드 Day",
+      "issuer": "하나카드",
+      "type": "credit",
+      "launched": "2025-09 (9월 15일 발표)",
+      "as_of": "2025-09-15",
+      "annual_fee_won": {
+        "domestic": 20000,
+        "overseas": 20000
+      },
+      "min_prev_month_spend_won": 500000,
+      "headline_benefits": [
+        {
+          "category": "생활업종",
+          "text": "커피·쇼핑·보험·통신·관리비·학원·병원·골프 8개 업종 청구할인",
+          "rate_or_amount": "10%, 연 최대 60만 원",
+          "condition": "전월 실적 50만 원 이상 시 업종별 5000원(월 통합 3만 원), 100만 원 이상 시 업종별 1만 원(월 통합 5만 원)"
+        }
+      ],
+      "explicit_target_text": null,
+      "target_age": null,
+      "category_in_scan": "신규출시",
+      "distinct_feature": "횟수 제한 없이 8개 생활 업종에서 매일 10% 할인한다고 소개하는 토스뱅크의 두 번째 PLCC이다.",
+      "source_ids": [
+        "GCS7",
+        "GCS8"
+      ],
+      "note": "대상 연령 문구 없음. 가장 가까운 표현은 '생활비 절약에 특화된 PLCC'. 연회비는 기사 기준 국내전용·겸용 동일 2만 원.",
+      "on_sale": null
+    },
+    {
+      "id": "gc08",
+      "name": "청춘대로 톡톡카드",
+      "official_name": "청춘대로 톡톡카드",
+      "issuer": "KB국민카드",
+      "type": "credit",
+      "launched": "2017-01-26",
+      "as_of": "2026-10-23",
+      "annual_fee_won": {
+        "domestic": null,
+        "overseas": null
+      },
+      "min_prev_month_spend_won": null,
+      "headline_benefits": [
+        {
+          "category": "커피",
+          "text": "[Great 서비스] 스타벅스 청구할인",
+          "rate_or_amount": "50%",
+          "condition": ""
+        },
+        {
+          "category": "패스트푸드",
+          "text": "[Enjoy 서비스] 버거/패스트푸드 청구할인",
+          "rate_or_amount": "20%",
+          "condition": ""
+        },
+        {
+          "category": "간편결제",
+          "text": "[Check 서비스] 간편결제(Pay) 청구할인",
+          "rate_or_amount": "10%",
+          "condition": ""
+        },
+        {
+          "category": "교통·통신",
+          "text": "[Basic 서비스] 대중교통/택시/이동통신 청구할인",
+          "rate_or_amount": "10%",
+          "condition": ""
+        }
+      ],
+      "explicit_target_text": null,
+      "target_age": null,
+      "category_in_scan": "청년전용",
+      "distinct_feature": "스타벅스 50%, 패스트푸드 20%, 간편결제 10% 등 청춘 소비 업종에 청구할인을 집중한 KB의 '청춘대로' 브랜드 카드이다.",
+      "source_ids": [
+        "GCS9",
+        "GCS18"
+      ],
+      "note": "공식 페이지에 연령 조건 문구 없음. 청년 카드로 분류한 근거는 브랜드명과 뉴스웍스 보도(카드 목록 맥락)이며 이 카드명이 해당 기사에 직접 등장하는지는 미확인이므로 '청춘대로' 브랜드 기준 분류. 연회비: K-WORLD(JCB) 플라스틱 1만원·모바일 단독 4천원, MASTER 플라스틱 1만2천원·모바일 단독 6천원(국내/해외 구분 불명확). 전월실적 금액은 페이지 본문에서 확인 안 됨. 2017 출시라 신규 아님.",
+      "on_sale": null
+    },
+    {
+      "id": "gc09",
+      "name": "신한카드 하루(Haru)",
+      "official_name": "신한카드 Haru(Hoshino Resorts)",
+      "issuer": "신한카드",
+      "type": "credit",
+      "launched": "2025-06 (6월 29일 발표)",
+      "as_of": "2025-06-29",
+      "annual_fee_won": {
+        "domestic": 30000,
+        "overseas": 30000
+      },
+      "min_prev_month_spend_won": 300000,
+      "headline_benefits": [
+        {
+          "category": "해외",
+          "text": "해외 결제 적립(일본은 1.5% 추가)",
+          "rate_or_amount": "2% (일본 합산 3.5%)",
+          "condition": "해외 월 3만 포인트, 일본 추가 월 10만 포인트 한도"
+        },
+        {
+          "category": "숙박",
+          "text": "호시노 리조트 계열 숙박 할인",
+          "rate_or_amount": "최대 30%",
+          "condition": "60여 곳"
+        },
+        {
+          "category": "국내",
+          "text": "국내 결제 적립",
+          "rate_or_amount": "1%, 월 5만 포인트",
+          "condition": ""
+        }
+      ],
+      "explicit_target_text": null,
+      "target_age": null,
+      "category_in_scan": "트래블",
+      "distinct_feature": "호시노 리조트와 JCB가 협업한 일본 여행 특화 신용카드이다.",
+      "source_ids": [
+        "GCS10"
+      ],
+      "note": "20대 마케팅 문구는 공식 페이지에 없음. 트래블 범주 대표 신용카드로 수록. 전월실적 30만원 이상(원문: 전월 국내이용 실적).",
+      "on_sale": null
+    },
+    {
+      "id": "gc10",
+      "name": "신한카드 SOL트래블J 체크",
+      "official_name": "신한카드 SOL트래블J 체크",
+      "issuer": "신한카드",
+      "type": "debit",
+      "launched": "2025-05 (5월 13일 발표)",
+      "as_of": "2025-05-13",
+      "annual_fee_won": {
+        "domestic": null,
+        "overseas": null
+      },
+      "min_prev_month_spend_won": null,
+      "headline_benefits": [
+        {
+          "category": "일본 쇼핑",
+          "text": "돈키호테 할인",
+          "rate_or_amount": "50%, 반기 2만원·연 4만원",
+          "condition": "전월 30만원 이상 국내 이용"
+        },
+        {
+          "category": "일본 커피",
+          "text": "일본 스타벅스 할인",
+          "rate_or_amount": "50%, 반기 5천원·연 1만원",
+          "condition": "전월 30만원 이상 국내 이용"
+        },
+        {
+          "category": "일본 편의점",
+          "text": "패밀리마트·로손·세븐일레븐",
+          "rate_or_amount": "5% 할인",
+          "condition": ""
+        },
+        {
+          "category": "환전·수수료",
+          "text": "42종 통화 환율 우대, 해외결제·해외 ATM 인출 수수료",
+          "rate_or_amount": "면제",
+          "condition": "기존 쏠트래블 체크 혜택 유지"
+        }
+      ],
+      "explicit_target_text": null,
+      "target_age": null,
+      "category_in_scan": "트래블",
+      "distinct_feature": "쏠트래블 체크카드 이용 데이터에서 일본이 최다 이용 국가로 나타난 점을 반영해 일본 여행 혜택을 더했다.",
+      "source_ids": [
+        "GCS11"
+      ],
+      "note": "20대 마케팅 문구 없음. 먼작귀(치이카와) 캐릭터 디자인 포함. 연회비 원문 없음. 기존 DB의 SOL트래블 체크(c04)의 일본 특화판.",
+      "on_sale": null
+    },
+    {
+      "id": "gc11",
+      "name": "하나카드 트래블로그 체크카드",
+      "official_name": "트래블로그 체크카드",
+      "issuer": "하나카드",
+      "type": "debit",
+      "launched": null,
+      "as_of": "2026-10-23",
+      "annual_fee_won": {
+        "domestic": null,
+        "overseas": null
+      },
+      "min_prev_month_spend_won": null,
+      "headline_benefits": [
+        {
+          "category": "해외수수료",
+          "text": "해외 이용 수수료(건당 US$0.5 또는 이용금액 1%)",
+          "rate_or_amount": "면제 안내",
+          "condition": ""
+        },
+        {
+          "category": "ATM",
+          "text": "해외 ATM 인출 수수료(건당 US$3 또는 이용금액 1%)",
+          "rate_or_amount": "면제 안내",
+          "condition": ""
+        },
+        {
+          "category": "적립",
+          "text": "하나머니 적립",
+          "rate_or_amount": "0.3%",
+          "condition": ""
+        }
+      ],
+      "explicit_target_text": null,
+      "target_age": "발급 대상 만 14세 이상(판독 불완전)",
+      "category_in_scan": "트래블",
+      "distinct_feature": "하나머니 잔액으로 결제하는 하나멤버스 연계 체크카드로 해외 이용·ATM 수수료를 면제한다.",
+      "source_ids": [
+        "GCS12"
+      ],
+      "note": "공식 페이지 본문 인코딩이 깨져 연회비·출시일·혜택 일부를 확인 못 함(추정으로 채우지 않음). 20대 마케팅 문구 확인 못 함. 기사 기준 하나카드 개인 체크 해외승인잔액 1위이나 20대 수치 없음.",
+      "on_sale": null
+    },
+    {
+      "id": "gc12",
+      "name": "무신사 삼성카드",
+      "official_name": "무신사 삼성카드",
+      "issuer": "삼성카드",
+      "type": "credit",
+      "launched": "2026-04 업무협약 발표(발급 개시일 미확인)",
+      "as_of": "2026-04-16",
+      "annual_fee_won": {
+        "domestic": null,
+        "overseas": null
+      },
+      "min_prev_month_spend_won": null,
+      "headline_benefits": [
+        {
+          "category": "패션",
+          "text": "무신사 스토어·29CM·솔드아웃 등 이용 시",
+          "rate_or_amount": "추가적립 등 무신사 회원 특화 혜택(수치 미공개)",
+          "condition": "출시 예정 기사 기준"
+        }
+      ],
+      "explicit_target_text": "무신사 주 고객인 2030의 취향을 담은 카드 플레이트도 선보일 계획이다.",
+      "target_age": "2030(원문 표기)",
+      "category_in_scan": "신규출시",
+      "distinct_feature": "패션·뷰티 플랫폼 무신사 회원 특화 혜택과 2030 취향 카드 플레이트를 내세운 제휴 카드이다.",
+      "source_ids": [
+        "GCS13"
+      ],
+      "note": "기사 시점은 출시 계획 단계로 발급 개시 여부 미확인(on_sale null). 혜택 수치는 공식 자료에서 확인 못 함.",
+      "on_sale": null
+    },
+    {
+      "id": "gc13",
+      "name": "삼성 iD SELECT ON",
+      "official_name": "삼성 iD SELECT ON 카드",
+      "issuer": "삼성카드",
+      "type": "credit",
+      "launched": "2025-08 (8월 28일 발표)",
+      "as_of": "2025-08-28",
+      "annual_fee_won": {
+        "domestic": 20000,
+        "overseas": 20000
+      },
+      "min_prev_month_spend_won": null,
+      "headline_benefits": [
+        {
+          "category": "선택형",
+          "text": "외식 또는 온라인패션·쇼핑몰 중 택1",
+          "rate_or_amount": "5%, 주말(금~일) 10%",
+          "condition": "발급 시 선택, 매월 변경 가능"
+        },
+        {
+          "category": "선택형",
+          "text": "온라인 간편결제",
+          "rate_or_amount": "1%",
+          "condition": "택1 선택지"
+        },
+        {
+          "category": "기본",
+          "text": "배달앱·커피전문점·택시·카셰어링",
+          "rate_or_amount": "5%",
+          "condition": ""
+        },
+        {
+          "category": "기본",
+          "text": "구글플레이·앱스토어·디지털콘텐츠",
+          "rate_or_amount": "50%",
+          "condition": ""
+        },
+        {
+          "category": "해외",
+          "text": "해외",
+          "rate_or_amount": "2%",
+          "condition": ""
+        }
+      ],
+      "explicit_target_text": null,
+      "target_age": null,
+      "category_in_scan": "신규출시",
+      "distinct_feature": "발급 시 혜택 영역을 고르고 매월 바꿀 수 있는 선택형 카드로 주말에 선택 영역 혜택이 2배가 된다.",
+      "source_ids": [
+        "GCS14",
+        "GCS18"
+      ],
+      "note": "출처 기사에 2030·청년 대상 문구 없음. 뉴스웍스(2026-06-27)는 이 카드를 청년 카드로 소개하나 이는 언론 분류이며 카드사 문구가 아님. 전월실적 금액은 기사에 없음.",
+      "on_sale": null
+    },
+    {
+      "id": "gc14",
+      "name": "CU Npay 카드",
+      "official_name": "CU Npay 카드",
+      "issuer": "신한카드",
+      "type": "credit",
+      "launched": "2024-10 (10월 22일 발표)",
+      "as_of": "2024-10-22",
+      "annual_fee_won": {
+        "domestic": 16000,
+        "overseas": 19000
+      },
+      "min_prev_month_spend_won": 400000,
+      "headline_benefits": [
+        {
+          "category": "편의점",
+          "text": "CU 네이버페이 QR결제 현장 할인",
+          "rate_or_amount": "최대 20%",
+          "condition": "보도자료 표기"
+        },
+        {
+          "category": "편의점",
+          "text": "카드 직접결제 또는 지정 간편결제 할인",
+          "rate_or_amount": "최대 15%, 1회 5천원",
+          "condition": "전월 실적 구간별 월 한도 1만/1.5만/2만 원"
+        },
+        {
+          "category": "적립",
+          "text": "일반 오프라인 가맹점 네이버페이 적립",
+          "rate_or_amount": "5%",
+          "condition": "전월 실적별 포인트 한도 1만/2만/2.5만"
+        },
+        {
+          "category": "적립",
+          "text": "온라인 가맹점 네이버페이 적립",
+          "rate_or_amount": "최대 2%",
+          "condition": ""
+        }
+      ],
+      "explicit_target_text": null,
+      "target_age": null,
+      "category_in_scan": "PLCC",
+      "distinct_feature": "편의점(CU)·카드사(신한)·간편결제(네이버페이) 3사 최초 제휴로 CU 네이버페이 QR결제에 최대 20% 현장 할인을 준다.",
+      "source_ids": [
+        "GCS15"
+      ],
+      "note": "보도자료에 청년·2030 문구 없음. 출시 후 18개월 초과(stale). 판매 지속 여부 미확인.",
+      "on_sale": null
+    },
+    {
+      "id": "gc15",
+      "name": "BC 바로 K-패스 카드",
+      "official_name": "BC바로 K-패스 카드",
+      "issuer": "BC카드",
+      "type": "credit",
+      "launched": "2024-04 (4월 24일, 기존 알뜰교통 상품 명칭 변경)",
+      "as_of": "2024-04-24",
+      "annual_fee_won": {
+        "domestic": 6000,
+        "overseas": null
+      },
+      "min_prev_month_spend_won": 300000,
+      "headline_benefits": [
+        {
+          "category": "교통",
+          "text": "대중교통",
+          "rate_or_amount": "15%",
+          "condition": "청년 고객 기준 전월실적 30만원 이상"
+        },
+        {
+          "category": "OTT",
+          "text": "주요 OTT/스트리밍",
+          "rate_or_amount": "15%",
+          "condition": ""
+        },
+        {
+          "category": "편의점",
+          "text": "편의점",
+          "rate_or_amount": "5%",
+          "condition": ""
+        },
+        {
+          "category": "통신",
+          "text": "이동통신요금",
+          "rate_or_amount": "5%",
+          "condition": ""
+        },
+        {
+          "category": "해외",
+          "text": "해외 가맹점",
+          "rate_or_amount": "3%",
+          "condition": ""
+        }
+      ],
+      "explicit_target_text": "청년(만 19~34세) 고객 기준 조건 충족 시 혜택",
+      "target_age": "청년 만 19~34세(K-패스 기준)",
+      "category_in_scan": "청년전용",
+      "distinct_feature": "K-패스 교통비 환급과 함께 쓰는 저연회비 교통·OTT 할인 카드로 청년 고객 기준 조건에 맞춘 캐시백을 둔다.",
+      "source_ids": [
+        "GCS16",
+        "GCS18"
+      ],
+      "note": "해외겸용 연회비는 6,000~7,000원(원문 표기, 단일값 아님). 출시 후 18개월 초과(stale). 뉴스웍스는 2026-06 기사에서 'BC 바로 K-패스트 카드'를 청년 카드로 소개(상품 동일 여부 미확인). 가입 연령 제한 카드는 아니며 청년 조건은 K-패스 환급 기준.",
+      "on_sale": null
+    },
+    {
+      "id": "gc16",
+      "name": "iM A 체크카드",
+      "official_name": "iM A 체크카드",
+      "issuer": "iM뱅크",
+      "type": "debit",
+      "launched": "2024-07 (7월 30일 발표)",
+      "as_of": "2024-07-30",
+      "annual_fee_won": {
+        "domestic": null,
+        "overseas": null
+      },
+      "min_prev_month_spend_won": null,
+      "headline_benefits": [
+        {
+          "category": "쇼핑·배달·뷰티",
+          "text": "온라인 쇼핑, 배달앱, 뷰티·잡화",
+          "rate_or_amount": "5% 할인",
+          "condition": ""
+        },
+        {
+          "category": "OTT",
+          "text": "넷플릭스·유튜브 프리미엄·티빙·디즈니플러스",
+          "rate_or_amount": "10% 할인",
+          "condition": ""
+        }
+      ],
+      "explicit_target_text": "20~30대 젊은층이 선호하는 다양한 소비 업종의 할인 혜택",
+      "target_age": "20~30대",
+      "category_in_scan": "청년전용",
+      "distinct_feature": "Z세대와 알파세대를 합친 '잘파세대'를 겨냥해 캐릭터 디자인 3종과 20~30대 선호 업종 할인을 담았다.",
+      "source_ids": [
+        "GCS17"
+      ],
+      "note": "언론(세계일보) 기반이며 iM뱅크 공식 페이지는 확인 못 함. 출시 후 18개월 초과(stale). 후속으로 2026년 웹툰 콜라보 iM A 체크 4종 보도가 있었으나 본문 미확인.",
+      "on_sale": null
+    }
+  ]
+}

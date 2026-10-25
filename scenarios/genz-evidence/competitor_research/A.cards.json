@@ -1,0 +1,908 @@
+[
+ {
+  "id": "ya01",
+  "name": "청춘대로 싱글 체크카드",
+  "official_name": "KB국민 청춘대로 싱글 체크카드",
+  "issuer": "KB국민",
+  "type": "debit",
+  "target_keyword": "청춘",
+  "explicit_target_text": null,
+  "on_sale": true,
+  "annual_fee_won": {
+   "domestic": 0,
+   "overseas": 0
+  },
+  "min_prev_month_spend_won": 300000,
+  "headline_benefits": [
+   {
+    "category": "편의점",
+    "text": "편의점 업종 환급할인(싱글데이 1/11/21/31일 5% 추가)",
+    "rate_or_amount": "5~10%",
+    "condition": "전월 30만원 이상 월 5천원, 50만원 이상 월 1만원 한도, 건당 1~2만원"
+   },
+   {
+    "category": "쇼핑",
+    "text": "다이소·소셜커머스(쿠팡/티몬/위메프) 환급할인",
+    "rate_or_amount": "5~10%",
+    "condition": "전월 30만원 이상 월 5천원, 50만원 이상 월 1만원 한도"
+   },
+   {
+    "category": "교통",
+    "text": "대중교통 5%(월 2천원)·택시 5%(월 3천원) 환급할인",
+    "rate_or_amount": "5%",
+    "condition": "전월 30만원 이상"
+   },
+   {
+    "category": "뷰티/펫",
+    "text": "올리브영·박승철헤어·동물병원 환급할인",
+    "rate_or_amount": "10%",
+    "condition": "전월 50만원 이상, 월 1만원 한도"
+   }
+  ],
+  "tags": [
+   "check_card",
+   "reward_cashback",
+   "tiered_perf",
+   "mart_daily",
+   "online_shop",
+   "transit",
+   "period_bonus",
+   "txn_threshold"
+  ],
+  "genz_fit": "mid",
+  "genz_fit_reason": "편의점·다이소·쿠팡·올리브영 같은 1인 가구 20대 생활 업종에 맞췄지만 2016년 출시라 구독·간편결제 혜택이 없다.",
+  "launched": "2016-08-24",
+  "source_url": "https://m.kbcard.com/CRD/DVIEW/MCAMCXHIACRC0002?mainCC=b&allianceCode=01988",
+  "source_urls": [
+   "https://m.kbcard.com/CRD/DVIEW/MCAMCXHIACRC0002?mainCC=b&allianceCode=01988",
+   "https://www.card-gorilla.com/card/detail/335"
+  ],
+  "checked": "2026-10-25",
+  "confidence": "high",
+  "note": "공식 페이지 본문으로 수치 확인(준법감시인 심의필 2026.05.22라 발급 중으로 판단). 공식 페이지에는 '20대' 같은 대상 문구가 없고, 카드고릴라가 '20대 대학생, 사회초년생' 대상으로 소개한다. '청춘대로' 시리즈 중 신용카드 대부분은 단종됐고 톡톡카드(기존 DB gc08)와 이 체크카드만 남아 있다."
+ },
+ {
+  "id": "ya02",
+  "name": "새로이 체크카드",
+  "official_name": "KB국민 새로이 체크카드",
+  "issuer": "KB국민",
+  "type": "debit",
+  "target_keyword": "대학생·사회초년생",
+  "explicit_target_text": "대학생, 사회 초년생 등 새로운 시작을 준비하는 고객들 (출시 보도, 한경 2021.03.09)",
+  "on_sale": true,
+  "annual_fee_won": {
+   "domestic": 0,
+   "overseas": 0
+  },
+  "min_prev_month_spend_won": null,
+  "headline_benefits": [
+   {
+    "category": "편의점",
+    "text": "GS25 환급할인",
+    "rate_or_amount": "5%",
+    "condition": "건당 1~2만원, 1회 최대 1천원"
+   },
+   {
+    "category": "생활",
+    "text": "쏘카·야놀자·Liiv M 이동통신 환급할인",
+    "rate_or_amount": "5%",
+    "condition": "건당 3~5만원"
+   },
+   {
+    "category": "카페",
+    "text": "스타벅스·파리바게뜨 환급할인",
+    "rate_or_amount": "5%",
+    "condition": "건당 1~2만원"
+   },
+   {
+    "category": "구독/교육",
+    "text": "멜론·지니·넷플릭스·웨이브 월정액, 교보문고·어학시험 응시료",
+    "rate_or_amount": "5%",
+    "condition": ""
+   }
+  ],
+  "tags": [
+   "check_card",
+   "reward_cashback",
+   "mart_daily",
+   "dining_cafe",
+   "subscription_ott",
+   "fixed_bills",
+   "txn_threshold"
+  ],
+  "genz_fit": "high",
+  "genz_fit_reason": "편의점·카페·OTT·어학시험·쏘카·야놀자 등 대학생·사회초년생 지출을 모은 무연회비 체크카드다.",
+  "launched": "2021-02-22",
+  "source_url": "https://m.kbcard.com/CRD/DVIEW/MCAMCXHIACRC0002?mainCC=b&allianceCode=01774",
+  "source_urls": [
+   "https://m.kbcard.com/CRD/DVIEW/MCAMCXHIACRC0002?mainCC=b&allianceCode=01774",
+   "https://magazine.hankyung.com/money/article/202103090971c",
+   "https://www.card-gorilla.com/card/detail/725"
+  ],
+  "checked": "2026-10-25",
+  "confidence": "medium",
+  "note": "혜택률·출시일은 공식 페이지에서 확인. 공식 페이지 본문 텍스트에서 전월실적 구간표는 추출되지 않아 null로 둠(확인 불가). 출시 보도는 전월 30만원/60만원 구간, 영역별 월 2천/4천원, 월 최대 2만원 할인이라고 적었다(2021 기준). 공식 페이지에는 '사용등록 후 60일까지 월 통합할인한도 1만원' 문구가 있다."
+ },
+ {
+  "id": "ya03",
+  "name": "청춘대로 매니아i카드",
+  "official_name": "KB국민 청춘대로 매니아i카드",
+  "issuer": "KB국민",
+  "type": "credit",
+  "target_keyword": "청춘(2030)",
+  "explicit_target_text": null,
+  "on_sale": false,
+  "annual_fee_won": {
+   "domestic": 12000,
+   "overseas": 15000
+  },
+  "min_prev_month_spend_won": 400000,
+  "headline_benefits": [
+   {
+    "category": "교통/통신",
+    "text": "대중교통·택시, 이동통신요금 포인트리 적립",
+    "rate_or_amount": "5%",
+    "condition": "항목별 월 5천점"
+   },
+   {
+    "category": "카페",
+    "text": "스타벅스·폴바셋·이디야, 파리바게뜨 등 적립",
+    "rate_or_amount": "10%",
+    "condition": "매니아 Special"
+   },
+   {
+    "category": "쇼핑",
+    "text": "SPA 패션 적립",
+    "rate_or_amount": "20%",
+    "condition": ""
+   }
+  ],
+  "tags": [
+   "reward_point",
+   "tiered_perf",
+   "transit",
+   "fixed_bills",
+   "dining_cafe"
+  ],
+  "genz_fit": "mid",
+  "genz_fit_reason": "2030 대상 '청춘대로' 시리즈의 적립형 신용카드였지만 지금은 신규 발급이 안 된다.",
+  "launched": "2016-10-14",
+  "source_url": "https://www.card-gorilla.com/card/detail/127",
+  "source_urls": [
+   "https://www.card-gorilla.com/card/detail/127"
+  ],
+  "checked": "2026-10-25",
+  "confidence": "medium",
+  "note": "공식 페이지 미확인. 카드고릴라 데이터 기준(단종 표시). 같은 시리즈의 청춘대로카드·1코노미·꿀맛α/꿀잠α/꿀잼α도 카드고릴라에서 단종으로 표시된다. 연회비는 K-WORLD(UPI) 1.2만원/Master 1.5만원."
+ },
+ {
+  "id": "ya04",
+  "name": "카드의정석 오하CHECK",
+  "official_name": "카드의정석 오하CHECK (구 NU 오하쳌)",
+  "issuer": "우리",
+  "type": "debit",
+  "target_keyword": "MZ",
+  "explicit_target_text": "MZ세대 특화 체크카드 (전신 '오늘하루체크(#오하쳌)' 출시 소개, 카드고릴라)",
+  "on_sale": true,
+  "annual_fee_won": {
+   "domestic": 0,
+   "overseas": 0
+  },
+  "min_prev_month_spend_won": 200000,
+  "headline_benefits": [
+   {
+    "category": "SHOPPING",
+    "text": "쿠팡·무신사·지그재그, 네이버페이·우리페이, 안경/렌즈 캐시백",
+    "rate_or_amount": "5%",
+    "condition": "건당 최대 1천원"
+   },
+   {
+    "category": "EAT",
+    "text": "스타벅스 사이렌오더, 배민·쿠팡이츠·B마트·컬리패스 캐시백",
+    "rate_or_amount": "5%",
+    "condition": "건당 최대 1천원"
+   },
+   {
+    "category": "LIFE",
+    "text": "대중교통·이동통신·해외·어학시험 캐시백",
+    "rate_or_amount": "5%",
+    "condition": "건당 최대 1천원"
+   },
+   {
+    "category": "PLAY",
+    "text": "넷플릭스·멜론, 인터파크·YES24·멜론티켓 캐시백",
+    "rate_or_amount": "5%",
+    "condition": "건당 최대 1천원"
+   }
+  ],
+  "tags": [
+   "check_card",
+   "reward_cashback",
+   "online_shop",
+   "paymethod_bonus",
+   "delivery",
+   "dining_cafe",
+   "transit",
+   "subscription_ott",
+   "travel_fx"
+  ],
+  "genz_fit": "high",
+  "genz_fit_reason": "무신사·지그재그·사이렌오더·컬리패스·공연티켓까지 20대 앱 소비를 5% 단일률로 묶었다.",
+  "launched": null,
+  "source_url": "https://www.card-gorilla.com/card/detail/2570",
+  "source_urls": [
+   "https://www.card-gorilla.com/card/detail/2570",
+   "https://www.card-gorilla.com/card/detail/762",
+   "https://www.card-gorilla.com/contents/detail/1851"
+  ],
+  "checked": "2026-10-25",
+  "confidence": "medium",
+  "note": "우리카드 공식 상세 페이지를 찾지 못함(확인 불가). 수치는 카드고릴라 카드 데이터 기준. 월 통합 캐시백 한도는 확인 불가. 전신 NU 오하쳌(BC 브랜드)은 단종, 카드의정석 브랜드로 다시 나왔다. '만 19세 이상만 신청' 조건은 검색 요약에만 있어 확인 불가."
+ },
+ {
+  "id": "ya05",
+  "name": "카드의정석 COOKIE CHECK",
+  "official_name": "카드의정석 COOKIE CHECK",
+  "issuer": "우리",
+  "type": "debit",
+  "target_keyword": "20대",
+  "explicit_target_text": "20대 고객들을 위한 혜택 (출시 보도, 인사이트 2019.03.05)",
+  "on_sale": false,
+  "annual_fee_won": {
+   "domestic": 0,
+   "overseas": 0
+  },
+  "min_prev_month_spend_won": 200000,
+  "headline_benefits": [
+   {
+    "category": "해외",
+    "text": "해외가맹점(직구 포함) 캐시백, 해외이용수수료 면제",
+    "rate_or_amount": "1~2%",
+    "condition": "월 5만원 통합한도, 전월 국내 20만원 이상"
+   },
+   {
+    "category": "공항라운지",
+    "text": "전 세계 1,000여 개 공항라운지 무료",
+    "rate_or_amount": "월 1회·연 2회",
+    "condition": "전월 30만원 이상, Mastercard"
+   },
+   {
+    "category": "생활",
+    "text": "11번가·G마켓·쿠팡, 스타벅스 정액 캐시백",
+    "rate_or_amount": "2천원",
+    "condition": "건당 2만원/1만원 이상, 월 3~4회"
+   },
+   {
+    "category": "간편결제",
+    "text": "네이버페이·카카오페이·PAYCO 추가 캐시백",
+    "rate_or_amount": "1천원",
+    "condition": "건당 1만원 이상, 월 2회"
+   }
+  ],
+  "tags": [
+   "check_card",
+   "reward_cashback",
+   "travel_fx",
+   "lounge",
+   "paymethod_bonus",
+   "count_based",
+   "txn_threshold"
+  ],
+  "genz_fit": "high",
+  "genz_fit_reason": "체크카드인데 공항라운지와 해외 캐시백을 넣어 20대 여행 수요를 겨냥했다(현재 단종).",
+  "launched": "2019-03-04",
+  "source_url": "https://www.card-gorilla.com/card/detail/312",
+  "source_urls": [
+   "https://www.card-gorilla.com/card/detail/312",
+   "https://www.insight.co.kr/news/214586"
+  ],
+  "checked": "2026-10-25",
+  "confidence": "medium",
+  "note": "공식 페이지 미확인. 카드고릴라 데이터에 단종 표시가 있다. K-패스 버전(우리 K-패스 COOKIE CHECK)도 단종으로 표시된다."
+ },
+ {
+  "id": "ya06",
+  "name": "Young Hana+ 체크카드",
+  "official_name": "Young Hana+ 체크카드",
+  "issuer": "하나",
+  "type": "debit",
+  "target_keyword": "Young(10대 후반~사회초년생)",
+  "explicit_target_text": "중고생은 물론 체크카드 이용률이 높은 사회 초년생 (금쪽이 에디션 보도, 딜사이트 2023.02.03)",
+  "on_sale": true,
+  "annual_fee_won": {
+   "domestic": 0,
+   "overseas": 0
+  },
+  "min_prev_month_spend_won": 100000,
+  "headline_benefits": [
+   {
+    "category": "카페",
+    "text": "스타벅스·투썸플레이스 캐시백",
+    "rate_or_amount": "20%",
+    "condition": "건당 1만원 이상, 실적 구간별 월 1천/2천/4천원"
+   },
+   {
+    "category": "교통",
+    "text": "버스·지하철 캐시백",
+    "rate_or_amount": "10%",
+    "condition": "월 합계 3만원 이상"
+   },
+   {
+    "category": "편의점/배달",
+    "text": "GS25·CU·이마트24·세븐일레븐, 배민·요기요 캐시백",
+    "rate_or_amount": "5%",
+    "condition": "건당 1만원 이상"
+   },
+   {
+    "category": "간편결제",
+    "text": "하나페이·네이버페이·카카오페이 등 페이결제 캐시백",
+    "rate_or_amount": "0.5%",
+    "condition": "통합 한도 10만/30만/60만원 구간 3천/1만/2만원"
+   }
+  ],
+  "tags": [
+   "check_card",
+   "reward_cashback",
+   "tiered_perf",
+   "dining_cafe",
+   "transit",
+   "mart_daily",
+   "delivery",
+   "paymethod_bonus"
+  ],
+  "genz_fit": "mid",
+  "genz_fit_reason": "전월 10만원부터 혜택이 시작돼 첫 카드로 쓰기 쉽지만 통합 한도(최대 월 2만원)가 작다.",
+  "launched": null,
+  "source_url": "https://www.card-gorilla.com/card/detail/2809",
+  "source_urls": [
+   "https://www.card-gorilla.com/card/detail/2809",
+   "https://dealsite.co.kr/articles/98446"
+  ],
+  "checked": "2026-10-25",
+  "confidence": "low",
+  "note": "하나카드 공식 상세 페이지(CD_PD_SEQ)를 찾지 못함(확인 불가). 수치는 카드고릴라 데이터 기준. 한 블로그는 대상을 만 17~20세, 출시일을 2021.06.14로 적었지만 확인 불가. 카드고릴라 수치 중 카페 항목 제목은 20%, 표는 5%로 서로 다르다."
+ },
+ {
+  "id": "ya07",
+  "name": "달달 하나 체크카드",
+  "official_name": "달달 하나 체크카드",
+  "issuer": "하나",
+  "type": "debit",
+  "target_keyword": "20대 알바생·사회초년생",
+  "explicit_target_text": "20대 알바생&사회초년생 맞춤 하나은행 달달하나통장과 연계 (카드고릴라 출시 기사 제목)",
+  "on_sale": true,
+  "annual_fee_won": {
+   "domestic": 0,
+   "overseas": 0
+  },
+  "min_prev_month_spend_won": 300000,
+  "headline_benefits": [
+   {
+    "category": "쇼핑/배달/교통/카페/생활비",
+    "text": "백화점·마트·편의점, 배민·요기요, 대중교통·카카오T·주유, 커피, 통신·전기·가스 하나머니 적립",
+    "rate_or_amount": "5%",
+    "condition": "영역별 30만/70만/100만원 구간 2천/4천/6천원"
+   },
+   {
+    "category": "구독",
+    "text": "넷플릭스·디즈니+·웨이브·왓챠·유튜브 프리미엄·쿠팡와우 적립",
+    "rate_or_amount": "10%",
+    "condition": "영역별 2천/4천/6천원"
+   },
+   {
+    "category": "간편결제",
+    "text": "하나페이·삼성페이·네이버페이 등 적립",
+    "rate_or_amount": "0.3%",
+    "condition": ""
+   },
+   {
+    "category": "해외",
+    "text": "트래블로그 스위치(해외결제를 외화 하나머니로 전환)",
+    "rate_or_amount": "수수료 우대",
+    "condition": "VISA·Mastercard"
+   }
+  ],
+  "tags": [
+   "check_card",
+   "reward_point",
+   "tiered_perf",
+   "bank_bundle",
+   "subscription_ott",
+   "delivery",
+   "transit",
+   "fixed_bills",
+   "travel_fx"
+  ],
+  "genz_fit": "high",
+  "genz_fit_reason": "20대 급여통장(달달하나통장)과 묶고 구독 10%·생활비 5%를 넣어 첫 월급 받는 사회초년생을 겨냥했다.",
+  "launched": null,
+  "source_url": "https://www.card-gorilla.com/card/detail/2750",
+  "source_urls": [
+   "https://www.card-gorilla.com/card/detail/2750",
+   "https://www.card-gorilla.com/contents/detail/3296"
+  ],
+  "checked": "2026-10-25",
+  "confidence": "medium",
+  "note": "하나카드 공식 상세 페이지를 찾지 못함(확인 불가). 수치는 카드고릴라 데이터 기준, 월 통합 적립한도 1만/2만/3만원. 발급수수료 2천원(조건 충족 시 환급)은 검색 요약에만 있어 확인 불가. 같은 통장과 묶은 '달달 하나 신용카드' 3종도 있다고 보도됐으나 확인 못 함."
+ },
+ {
+  "id": "ya08",
+  "name": "NH20해봄카드",
+  "official_name": "NH20해봄카드",
+  "issuer": "NH농협",
+  "type": "credit",
+  "target_keyword": "20대",
+  "explicit_target_text": "20대의 다양한 꿈과 도전, NH20 해봄과 함께!",
+  "on_sale": true,
+  "annual_fee_won": {
+   "domestic": 8000,
+   "overseas": 10000
+  },
+  "min_prev_month_spend_won": 300000,
+  "headline_benefits": [
+   {
+    "category": "온라인",
+    "text": "G마켓·옥션·11번가 등 온라인쇼핑, 온라인서점·어학시험, 배민·요기요 청구할인",
+    "rate_or_amount": "10%",
+    "condition": "건당 2만원(배달 1만원) 이상"
+   },
+   {
+    "category": "카페",
+    "text": "스타벅스·이디야 청구할인",
+    "rate_or_amount": "30%",
+    "condition": "건당 1만원 이상, 월 최대 5천원"
+   },
+   {
+    "category": "교통/통신",
+    "text": "대중교통 10%, 이동통신 자동납부 4천원 청구할인",
+    "rate_or_amount": "10% / 4천원",
+    "condition": "교통사업자별 월 2만원 이상"
+   },
+   {
+    "category": "선택",
+    "text": "여행해봄(인천공항 라운지 연 2회) 또는 놀이해봄(놀이공원 50%) 택1",
+    "rate_or_amount": "연 2회 / 50%",
+    "condition": "라운지 전월 50만원, 놀이공원 30만원 이상"
+   }
+  ],
+  "tags": [
+   "reward_discount",
+   "tiered_perf",
+   "online_shop",
+   "dining_cafe",
+   "transit",
+   "fixed_bills",
+   "delivery",
+   "select_item",
+   "lounge",
+   "travel_fx"
+  ],
+  "genz_fit": "high",
+  "genz_fit_reason": "연회비 8천원에 어학시험·온라인서점·배달·커피를 묶은 대학생용 첫 신용카드로, 통합 한도가 전월 30만원 구간 1만원부터 시작한다.",
+  "launched": null,
+  "source_url": "https://card.nonghyup.com/servlet/IpCc2021R.act?cd_wrs_sqno=90000372",
+  "source_urls": [
+   "https://card.nonghyup.com/servlet/IpCc2021R.act?cd_wrs_sqno=90000372",
+   "https://www.card-gorilla.com/card/detail/184",
+   "https://www.card-gorilla.com/contents/detail/4262"
+  ],
+  "checked": "2026-10-25",
+  "confidence": "high",
+  "note": "공식 페이지 본문 확인. 연회비는 일반 등급 8,000원/10,000원(브랜드 구분은 텍스트에서 확인 못 해 카드고릴라 기준으로 국내 JCB 8천, Master 1만원으로 배치). 통합 월 할인한도는 전월 30만/50만/70만/120만원 구간에 1만/1.5만/2.5만/4만원. 해외 2% 할인은 별도 월 10만원. 할인대상 이용액은 실적에 50%만 반영. 출시일 확인 불가."
+ },
+ {
+  "id": "ya09",
+  "name": "NH20해봄체크카드",
+  "official_name": "NH20해봄체크카드",
+  "issuer": "NH농협",
+  "type": "debit",
+  "target_keyword": "20대",
+  "explicit_target_text": "20대의 다양한 꿈과 도전, NH20 해봄과 함께!",
+  "on_sale": true,
+  "annual_fee_won": {
+   "domestic": 0,
+   "overseas": 0
+  },
+  "min_prev_month_spend_won": 200000,
+  "headline_benefits": [
+   {
+    "category": "온라인",
+    "text": "온라인쇼핑·온라인서점·어학시험 할인",
+    "rate_or_amount": "5%",
+    "condition": "건당 2만원 이상, 항목별 월 8천원"
+   },
+   {
+    "category": "카페",
+    "text": "스타벅스·이디야 할인",
+    "rate_or_amount": "20%",
+    "condition": "월 최대 3천원"
+   },
+   {
+    "category": "교통",
+    "text": "대중교통 할인",
+    "rate_or_amount": "10%",
+    "condition": "월 최대 3천원"
+   },
+   {
+    "category": "해외",
+    "text": "해외 전가맹점(직구 포함) 할인",
+    "rate_or_amount": "1%",
+    "condition": "통합한도와 별도 월 10만원"
+   }
+  ],
+  "tags": [
+   "check_card",
+   "reward_discount",
+   "tiered_perf",
+   "online_shop",
+   "dining_cafe",
+   "transit",
+   "travel_fx",
+   "select_item"
+  ],
+  "genz_fit": "high",
+  "genz_fit_reason": "전월 20만원부터 혜택이 시작돼 소득이 적은 대학생도 실적을 채우기 쉽다.",
+  "launched": "2017-05",
+  "source_url": "https://card.nonghyup.com/servlet/IpCc2021R.act?cd_wrs_sqno=90000359",
+  "source_urls": [
+   "https://card.nonghyup.com/servlet/IpCc2021R.act?cd_wrs_sqno=90000359",
+   "https://www.sateconomy.co.kr/news/view/179588196754542"
+  ],
+  "checked": "2026-10-25",
+  "confidence": "high",
+  "note": "공식 페이지 본문 확인. 통합 월 할인한도는 전월 20만/40만/60만/100만원 구간에 7천/1.3만/2.2만/3.5만원. 여행해봄·놀이해봄 택1 서비스가 있다. 출시 시기(2017년 5월)와 '발급 고객 약 70%가 2030'은 보도(검색 요약) 기준이라 확인 수준이 낮다."
+ },
+ {
+  "id": "ya10",
+  "name": "zgm 저장체크카드",
+  "official_name": "zgm 저장체크카드",
+  "issuer": "NH농협",
+  "type": "debit",
+  "target_keyword": "MZ·팬덤(zgm 브랜드)",
+  "explicit_target_text": null,
+  "on_sale": true,
+  "annual_fee_won": {
+   "domestic": 0,
+   "overseas": 0
+  },
+  "min_prev_month_spend_won": 300000,
+  "headline_benefits": [
+   {
+    "category": "온라인결제",
+    "text": "NH Pay·카카오페이·삼성페이 온라인 결제 할인",
+    "rate_or_amount": "3%",
+    "condition": "건당 1만원 이상"
+   },
+   {
+    "category": "카페/H&B",
+    "text": "투썸플레이스·커피빈, 올리브영 오프라인 할인",
+    "rate_or_amount": "4%",
+    "condition": "건당 1만원 이상"
+   },
+   {
+    "category": "통합한도",
+    "text": "위 3개 영역 통합 할인한도",
+    "rate_or_amount": "3천원 / 6천원",
+    "condition": "전월 30만원 / 50만원 이상"
+   },
+   {
+    "category": "디지털·라운지",
+    "text": "유튜브프리미엄·넷플릭스·앱스토어·구글플레이 5%(월 2천원), 국제공항 라운지 연 1회",
+    "rate_or_amount": "5% / 연 1회",
+    "condition": "라운지는 전월 50만원 이상"
+   }
+  ],
+  "tags": [
+   "check_card",
+   "reward_discount",
+   "tiered_perf",
+   "paymethod_bonus",
+   "dining_cafe",
+   "subscription_ott",
+   "lounge",
+   "plcc_brand",
+   "txn_threshold"
+  ],
+  "genz_fit": "mid",
+  "genz_fit_reason": "배우 박지훈 포토·컬러 플레이트로 팬덤을 공략한 체크카드다. 체크카드에 라운지를 넣었지만 월 할인한도는 최대 8천원으로 작다.",
+  "launched": "2026-07-10",
+  "source_url": "https://card.nonghyup.com/servlet/IpCc2021R.act?cd_wrs_sqno=90010618",
+  "source_urls": [
+   "https://card.nonghyup.com/servlet/IpCc2021R.act?cd_wrs_sqno=90010618",
+   "https://www.metroseoul.co.kr/article/20260701500172",
+   "https://www.card-gorilla.com/card/detail/3049"
+  ],
+  "checked": "2026-10-25",
+  "confidence": "high",
+  "note": "수치는 공식 페이지 본문 확인(심의필 2026.06.30). 공식 페이지에 연령 대상 문구는 없다. 메트로신문(2026.07.01)은 '배우 박지훈의 팬덤을 공략한 특화 상품', 사전신청 7/1·정식 7/10으로 보도. 출시 4일 만에 1만좌 돌파 보도는 검색 요약에만 있다. 'MZ' 표현은 기사에 근거하며 공식 페이지에는 없다. plcc_brand 태그는 연예인(팬덤) 제휴를 근사적으로 표시한 것이다."
+ },
+ {
+  "id": "ya11",
+  "name": "zgm.play카드",
+  "official_name": "zgm.play카드",
+  "issuer": "NH농협",
+  "type": "credit",
+  "target_keyword": "MZ(zgm 브랜드)",
+  "explicit_target_text": null,
+  "on_sale": true,
+  "annual_fee_won": {
+   "domestic": 12000,
+   "overseas": 12000
+  },
+  "min_prev_month_spend_won": 300000,
+  "headline_benefits": [
+   {
+    "category": "커피",
+    "text": "스타벅스·투썸플레이스·커피빈 청구할인",
+    "rate_or_amount": "30%",
+    "condition": "건당 5천원 이상, 일 1회·월 2회"
+   },
+   {
+    "category": "영화",
+    "text": "CGV·롯데시네마·메가박스 청구할인",
+    "rate_or_amount": "5천원",
+    "condition": "건당 1만원 이상, 월 2회"
+   },
+   {
+    "category": "선택",
+    "text": "온라인-플레이(인앱결제·PC게임·PC방·통신 10%) 또는 오프라인-플레이(피트니스·교통 10%, 놀이공원 50%) 택1",
+    "rate_or_amount": "10%",
+    "condition": "항목별 월 최대 5천원"
+   },
+   {
+    "category": "외식/생활",
+    "text": "패스트푸드 20%, 올리브영·CU/GS25·미용실 5%, 쿠팡·서점 5%",
+    "rate_or_amount": "5~20%",
+    "condition": "월 합계 한도 30만원 구간 3만원, 70만원 구간 4만원"
+   }
+  ],
+  "tags": [
+   "reward_discount",
+   "tiered_perf",
+   "select_pack",
+   "dining_cafe",
+   "mart_daily",
+   "online_shop",
+   "transit",
+   "count_based",
+   "txn_threshold"
+  ],
+  "genz_fit": "high",
+  "genz_fit_reason": "게임·PC방·인앱결제와 피트니스 중 하나를 고르게 해 20대 놀이 소비를 겨냥하고, 연회비 1.2만원에 월 최대 3~4만원을 할인한다.",
+  "launched": null,
+  "source_url": "https://card.nonghyup.com/servlet/IpCc2021R.act?cd_wrs_sqno=90010467",
+  "source_urls": [
+   "https://card.nonghyup.com/servlet/IpCc2021R.act?cd_wrs_sqno=90010467",
+   "https://www.card-gorilla.com/card/detail/2544",
+   "https://www.sidae.com/article/2023031015203038759"
+  ],
+  "checked": "2026-10-25",
+  "confidence": "medium",
+  "note": "수치는 공식 페이지 본문 확인. 공식 페이지는 대상을 밝히지 않는다(슬로건 '지금 잘 사는 방법'). zgm 브랜드가 MZ세대를 겨냥해 2022년 11월 나왔다는 보도(sidae.com 2023.03 기사, 검색 요약)를 근거로 넣었다. 인터넷·앱으로만 신청할 수 있다. 상위판 zgm.play++와 zgm.the pay도 같은 브랜드이며, 기존 DB에는 zgm.streaming(c28)만 있다. 출시일 확인 불가."
+ },
+ {
+  "id": "ya12",
+  "name": "BC 바로 시발(始發)카드",
+  "official_name": "始發(시발)카드",
+  "issuer": "BC",
+  "type": "credit",
+  "target_keyword": "MZ 직장인·사회초년생",
+  "explicit_target_text": "MZ세대 직장인을 위한 신용카드 / 사회초년생 겨냥 (이코노미스트 2021.09.16 보도)",
+  "on_sale": false,
+  "annual_fee_won": {
+   "domestic": 5000,
+   "overseas": 8000
+  },
+  "min_prev_month_spend_won": 300000,
+  "headline_benefits": [
+   {
+    "category": "소액 할인",
+    "text": "택시·커피·배달·백화점/온라인몰·편의점 1,800원 이상 1.8만원 미만 결제 시 건당 할인",
+    "rate_or_amount": "180원",
+    "condition": "일 5회, 월 50회"
+   },
+   {
+    "category": "고액 할인",
+    "text": "같은 5개 업종 1.8만원 이상 결제 시 건당 할인",
+    "rate_or_amount": "1,800원",
+    "condition": "일 2회, 월 10회"
+   }
+  ],
+  "tags": [
+   "reward_discount",
+   "count_based",
+   "txn_threshold",
+   "dining_cafe",
+   "delivery",
+   "transit",
+   "mart_daily",
+   "online_shop"
+  ],
+  "genz_fit": "high",
+  "genz_fit_reason": "워크맨 콘텐츠와 '시발' 말장난, 결제 금액대별 정액 할인으로 사회초년생 밈을 상품으로 만든 사례다(단종).",
+  "launched": "2021-09-14",
+  "source_url": "https://www.card-gorilla.com/card/detail/2418",
+  "source_urls": [
+   "https://www.card-gorilla.com/card/detail/2418",
+   "https://economist.co.kr/article/view/ecn202109160040",
+   "https://www.segye.com/newsView/20230910507320"
+  ],
+  "checked": "2026-10-25",
+  "confidence": "medium",
+  "note": "BC 공식 페이지 미확인. 단종은 카드고릴라의 '신규 발급 중단' 표시로 판단. 연회비는 카드고릴라 기준. 혜택 구조는 2021 보도 기준이며 공식으로는 확인 불가."
+ },
+ {
+  "id": "ya13",
+  "name": "IBK무민카드(체크)",
+  "official_name": "IBK무민카드(체크)",
+  "issuer": "IBK기업",
+  "type": "debit",
+  "target_keyword": "2030(캐릭터)",
+  "explicit_target_text": "2030 취향저격한 IBK기업 무민 체크카드 출시 (카드고릴라 기사 제목)",
+  "on_sale": false,
+  "annual_fee_won": {
+   "domestic": 0,
+   "overseas": 0
+  },
+  "min_prev_month_spend_won": 300000,
+  "headline_benefits": [
+   {
+    "category": "쇼핑",
+    "text": "쿠팡·티몬·위메프 할인",
+    "rate_or_amount": "10%",
+    "condition": "1회 이용금액 1만원 한도, 월 2회"
+   },
+   {
+    "category": "카페",
+    "text": "주요 커피전문점 할인",
+    "rate_or_amount": "10%",
+    "condition": "월 2회"
+   },
+   {
+    "category": "영화",
+    "text": "CGV·롯데시네마·메가박스 할인",
+    "rate_or_amount": "4천원",
+    "condition": "월 1회"
+   },
+   {
+    "category": "금융",
+    "text": "IBK 결제계좌 시 이체·타행 ATM 수수료 면제, 환율 70% 우대",
+    "rate_or_amount": "면제",
+    "condition": "IBK 입출식 통장 결제 시"
+   }
+  ],
+  "tags": [
+   "check_card",
+   "reward_discount",
+   "online_shop",
+   "dining_cafe",
+   "bank_bundle",
+   "count_based",
+   "plcc_brand"
+  ],
+  "genz_fit": "mid",
+  "genz_fit_reason": "캐릭터 플레이트와 항균필름으로 2030 취향을 노렸지만 혜택은 횟수 제한이 붙은 일반 생활 할인이다(단종).",
+  "launched": null,
+  "source_url": "https://www.card-gorilla.com/card/detail/674",
+  "source_urls": [
+   "https://www.card-gorilla.com/card/detail/674",
+   "https://www.card-gorilla.com/contents/detail/1531"
+  ],
+  "checked": "2026-10-25",
+  "confidence": "low",
+  "note": "공식 페이지 미확인. 카드고릴라 데이터에 단종 표시. 신용 버전(IBK무민카드 신용, 연회비 1만원)과 후속 IBK 무직타이거 카드 신용도 카드고릴라에서 단종으로 표시된다."
+ },
+ {
+  "id": "ya14",
+  "name": "카카오뱅크 mini카드",
+  "official_name": "카카오뱅크 mini카드",
+  "issuer": "카카오뱅크",
+  "type": "debit",
+  "target_keyword": "잘파(10대)",
+  "explicit_target_text": "mini는 만 14세 ~ 18세 내국인 본인만 개설 가능 (카드고릴라 수록 안내문)",
+  "on_sale": true,
+  "annual_fee_won": {
+   "domestic": 0,
+   "overseas": null
+  },
+  "min_prev_month_spend_won": 0,
+  "headline_benefits": [
+   {
+    "category": "수수료",
+    "text": "전국 ATM 입출금 수수료 무료",
+    "rate_or_amount": "무료",
+    "condition": ""
+   },
+   {
+    "category": "교통",
+    "text": "CU에서 mini카드로 티머니 충전, 선불 교통",
+    "rate_or_amount": "기능",
+    "condition": ""
+   },
+   {
+    "category": "한도",
+    "text": "선불 충전형, 일 50만원·월 200만원",
+    "rate_or_amount": "해당없음",
+    "condition": ""
+   }
+  ],
+  "tags": [
+   "check_card",
+   "target_special",
+   "spend_free",
+   "transit"
+  ],
+  "genz_fit": "low",
+  "genz_fit_reason": "19세 미만 전용 선불카드라 GenZ(19~29세) 본 타깃에는 해당하지 않고, 미래 고객을 미리 묶어 두는 전략의 참고 사례다.",
+  "launched": "2020-10",
+  "source_url": "https://www.card-gorilla.com/card/detail/686",
+  "source_urls": [
+   "https://www.card-gorilla.com/card/detail/686",
+   "https://www.card-gorilla.com/contents/detail/1550",
+   "https://economist.co.kr/article/view/ecn202504070043"
+  ],
+  "checked": "2026-10-25",
+  "confidence": "medium",
+  "note": "카카오뱅크 공식 페이지 미확인. 엄밀히는 선불전자지급수단 연계 카드(type은 debit으로 근사). 2025년 보도는 대상을 만 7~18세로 넓힌 것으로 전한다(검색 요약, 확인 불가). 발급수수료 3천원(최초 무료)."
+ },
+ {
+  "id": "ya15",
+  "name": "케이뱅크 ALPHA카드",
+  "official_name": "케이뱅크 ALPHA카드",
+  "issuer": "케이뱅크",
+  "type": "debit",
+  "target_keyword": "알파(청소년)",
+  "explicit_target_text": null,
+  "on_sale": true,
+  "annual_fee_won": {
+   "domestic": 0,
+   "overseas": null
+  },
+  "min_prev_month_spend_won": 0,
+  "headline_benefits": [
+   {
+    "category": "교통",
+    "text": "교통카드 기능, 앱에서 잔액 확인·충전",
+    "rate_or_amount": "기능",
+    "condition": ""
+   },
+   {
+    "category": "수수료",
+    "text": "전국 ATM 수수료 무료",
+    "rate_or_amount": "월 30회",
+    "condition": ""
+   },
+   {
+    "category": "간편결제",
+    "text": "카드 신청 즉시 카카오페이·토스페이 등록",
+    "rate_or_amount": "즉시",
+    "condition": ""
+   },
+   {
+    "category": "프로모션",
+    "text": "별 모으기: 3번 결제마다 별 1개, 월 최대 5천원 캐시백",
+    "rate_or_amount": "최대 5천원",
+    "condition": "2025.04.17~08.31 한정"
+   }
+  ],
+  "tags": [
+   "check_card",
+   "target_special",
+   "spend_free",
+   "transit",
+   "challenge",
+   "count_based"
+  ],
+  "genz_fit": "low",
+  "genz_fit_reason": "만 14~17세용 선불형이라 GenZ 본 타깃은 아니다. 다만 '3번 결제=별 1개' 같은 게임형 리워드는 참고할 만하다.",
+  "launched": null,
+  "source_url": "https://www.card-gorilla.com/card/detail/2849",
+  "source_urls": [
+   "https://www.card-gorilla.com/card/detail/2849",
+   "https://www.card-gorilla.com/contents/detail/3837"
+  ],
+  "checked": "2026-10-25",
+  "confidence": "low",
+  "note": "공식 페이지 미확인. 대상 연령(만 14~17세)은 검색 요약 기준이라 확인 불가. 카드고릴라는 '신용'으로 분류하지만 내용상 선불·체크형이라 debit으로 둠. 발급수수료 3천원(최초 무료). 전신 Hi teen 카드는 단종."
+ }
+]

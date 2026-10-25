@@ -1,0 +1,1316 @@
+{
+ "run_id": "genz-discovery-001",
+ "request_id": "genz-discovery-001-wide",
+ "agent": "scout",
+ "contract_version": "1.0",
+ "model": "recorded",
+ "status": "ok",
+ "answer": "wide 근거 조사 기록",
+ "result": {
+  "topic": "wide",
+  "facts": [
+   {
+    "id": "WTF1",
+    "topic": "러닝",
+    "claim": "국민생활체육조사에서 최근 1년 참여 체육활동 중 ‘달리기’가 0.5%에서 6.8%로 늘었다.",
+    "value": 6.8,
+    "unit": "%",
+    "population": "최근 1년간 참여 경험 체육활동(복수응답, 전 국민)",
+    "age_scope": "전연령",
+    "period": "2024 국민생활체육조사",
+    "source_id": "WTS1",
+    "quote": "‘달리기’가 0.5%에서 6.8%까지 늘었다",
+    "confidence": "high",
+    "note": "상위 8개 운동 중 가장 가파른 증가세라고 기사가 서술. 연령별 수치는 본문에 없음.",
+    "quote_verified": true
+   },
+   {
+    "id": "WTF2",
+    "topic": "러닝",
+    "claim": "신한카드 빅데이터연구소 기준 2024년 러닝 관련 소비 금액 증가율은 30대 232%, 40대 225%, 20대 177%였다.",
+    "value": 177,
+    "unit": "%",
+    "population": "20대 177%, 30대 232%, 40대 225%",
+    "age_scope": "20대",
+    "period": "2024년",
+    "source_id": "WTS1",
+    "quote": "30대가 232%, 40대가 225%로 20대(177%)보다 높았다",
+    "confidence": "high",
+    "note": "value는 20대 증가율. 기사는 20대 주도 열풍이 30·40대로 확산된 모습이라고 해석.",
+    "quote_verified": true
+   },
+   {
+    "id": "WTF3",
+    "topic": "러닝",
+    "claim": "인스타그램 ‘러닝’ 해시태그 게시물이 2025년 9월 기준 400만건을 넘었고 2023년 말에는 200만건 정도였다.",
+    "value": 400,
+    "unit": "만 건",
+    "population": "인스타그램 게시물(연령 구분 없음)",
+    "age_scope": "젊은층(범위 미기재)",
+    "period": "2023년 말~2025.9",
+    "source_id": "WTS1",
+    "quote": "‘러닝’ 해시태그가 달린 게시물은 올해 9월 기준 어느덧 400만건을 훌쩍 넘었다",
+    "confidence": "high",
+    "note": "기사는 ‘젊은 세대 사이에서 런스타그램 문화가 번졌다’고 서술.",
+    "quote_verified": true
+   },
+   {
+    "id": "WTF4",
+    "topic": "러닝",
+    "claim": "당근 내 러닝 모임은 2025년 8월 기준 2024년 1월 대비 4배 넘게 늘었고, 네이버 밴드 ‘러닝과 걷기’ 모임은 최근 2년 새 46% 늘었다.",
+    "value": 4,
+    "unit": "배",
+    "population": "당근·네이버 밴드 모임(전 연령)",
+    "age_scope": "전연령",
+    "period": "2024.1~2025.8",
+    "source_id": "WTS1",
+    "quote": "당근 내 러닝 모임은 올해 8월 기준 2024년 1월 대비 4배 넘게 늘었다",
+    "confidence": "high",
+    "note": "전체 러닝 모임의 40% 정도가 ‘연령 제한 없음’이라고 기사가 적음.",
+    "quote_verified": true
+   },
+   {
+    "id": "WTF5",
+    "topic": "러닝",
+    "claim": "크림에서 러닝 관련 상품 전체 구매자의 72%가 2030세대다.",
+    "value": 72,
+    "unit": "%",
+    "population": "크림 러닝 관련 구매자 중 2030세대",
+    "age_scope": "MZ",
+    "period": "2025.1~7(상반기)",
+    "source_id": "WTS2",
+    "quote": "전체 구매자의 72%가 2030세대로",
+    "confidence": "high",
+    "note": "‘러닝’ 검색량 270%, 거래액 154%, 구매자 수 153% 증가(전년 동기 대비). 구매자 기준이며 거래액 비중 아님.",
+    "quote_verified": true
+   },
+   {
+    "id": "WTF6",
+    "topic": "러닝",
+    "claim": "크림에서 30대 여성은 러닝 구매자 수 246%, 거래액 271% 증가했고 20대 여성은 각각 161%, 195% 증가했다.",
+    "value": null,
+    "unit": "%",
+    "population": "30대 여성, 20대 여성 크림 구매자",
+    "age_scope": "20대",
+    "period": "2025 상반기(전년 동기 대비)",
+    "source_id": "WTS2",
+    "quote": "20대 여성도 각각 161%, 195%의 증가율을 보였다",
+    "confidence": "high",
+    "note": "30대 여성 증가율이 전 연령대 중 최고라고 보도자료가 서술. 20대 남성은 아식스가 2위라는 서술도 있음.",
+    "quote_verified": true
+   },
+   {
+    "id": "WTF7",
+    "topic": "구독",
+    "claim": "20대가 새롭게 이용하고 싶은 구독 서비스 1위는 생성형 AI(23.0%), 2위는 건강·생활가전(18.0%)이었다.",
+    "value": 23.0,
+    "unit": "%",
+    "population": "20대 응답자(조사 표본: 대한상의·마크로밀엠브레인 소비자 조사)",
+    "age_scope": "20대",
+    "period": "2025.2 조사",
+    "source_id": "WTS3",
+    "quote": "20대가 새롭게 이용하고 싶은 구독 서비스 1위는 생성형 AI(23.0%)",
+    "confidence": "medium",
+    "note": "표본 크기·연령 구성은 기사 본문에서 확인하지 못함. 30대 1위는 가사 서비스(20.5%), 생성형 AI는 2위(19.5%).",
+    "quote_verified": true
+   },
+   {
+    "id": "WTF8",
+    "topic": "구독",
+    "claim": "응답자의 94.8%가 구독 서비스 이용 경험이 있고, 구독 개수는 1인당 3~4개(39.8%)가 가장 많았다.",
+    "value": 94.8,
+    "unit": "%",
+    "population": "구독 서비스 이용 소비자 전체(전 연령)",
+    "age_scope": "전연령",
+    "period": "2025.2 조사",
+    "source_id": "WTS3",
+    "quote": "응답자의 94.8%가 구독 서비스를 이용해 본 경험이 있다고 답했다",
+    "confidence": "medium",
+    "note": "가장 많이 경험한 구독은 동영상 스트리밍 60.8%, 쇼핑 멤버십 52.4%. 20대만의 수치는 없음.",
+    "quote_verified": true
+   },
+   {
+    "id": "WTF9",
+    "topic": "구독",
+    "claim": "구독 서비스의 단점으로 ‘월정액 관리 부족으로 인한 낭비’가 77.4%, ‘해지 어려움’이 47.2%로 꼽혔다.",
+    "value": 77.4,
+    "unit": "%",
+    "population": "구독 서비스 이용 소비자 전체(전 연령)",
+    "age_scope": "전연령",
+    "period": "2025.2 조사",
+    "source_id": "WTS3",
+    "quote": "월정액 관리 부족으로 인한 낭비(77.4%)",
+    "confidence": "medium",
+    "note": "",
+    "quote_verified": true
+   },
+   {
+    "id": "WTF10",
+    "topic": "저축·재테크",
+    "claim": "Z세대의 ‘요즘 절약·저축에 관심이 많다’ 응답 Top2 비율은 71.6%(5점 척도 평균 3.92점)다.",
+    "value": 71.6,
+    "unit": "%",
+    "population": "전국 만 18~28세 Z세대 남녀 1,200명",
+    "age_scope": "Z세대",
+    "period": "2025 조사",
+    "source_id": "WTS4",
+    "quote": "“요즘 절약·저축에 관심이 많다”는 응답의 Top2 비율이 71.6%",
+    "confidence": "high",
+    "note": "가계부 작성, 충동구매 자제, 적금·앱테크·주식 투자 등으로 지출을 관리한다고 서술(주식은 범위 밖).",
+    "quote_verified": true
+   },
+   {
+    "id": "WTF11",
+    "topic": "가치소비",
+    "claim": "Z세대가 ‘조금 더 비싸도 좋은 것’을 고르는 대표 품목은 가전·디지털 40.1%, 건강·의료용품 27.9%, 패션의류 27.6%다.",
+    "value": 40.1,
+    "unit": "%",
+    "population": "전국 만 18~28세 Z세대 1,200명",
+    "age_scope": "Z세대",
+    "period": "2025 조사",
+    "source_id": "WTS4",
+    "quote": "가전·디지털 40.1%, 건강·의료용품 27.9%, 패션의류 27.6%입니다",
+    "confidence": "high",
+    "note": "value는 가전·디지털.",
+    "quote_verified": true
+   },
+   {
+    "id": "WTF12",
+    "topic": "자기이해",
+    "claim": "MBTI·퍼스널컬러 등 자기이해 콘텐츠에 관심 있는 Z세대는 89.0%이며 유료 이용 경험은 21.0%다.",
+    "value": 89.0,
+    "unit": "%",
+    "population": "전국 만 18~28세 Z세대 1,200명",
+    "age_scope": "Z세대",
+    "period": "2025 조사",
+    "source_id": "WTS4",
+    "quote": "자기이해 콘텐츠 관심률이 89.0%이며, 유료 이용 경험도 21.0%로 나타납니다",
+    "confidence": "high",
+    "note": "정보 탐색 채널은 유튜브 66.2%, SNS 61.7%.",
+    "quote_verified": true
+   },
+   {
+    "id": "WTF13",
+    "topic": "프로모션",
+    "claim": "Z세대 중 광고·프로모션 문구로 구매한 경험이 73.8%이고, ‘오늘만 할인/타임 세일’ 반응이 39.2%로 가장 높았다.",
+    "value": 73.8,
+    "unit": "%",
+    "population": "전국 만 18~28세 Z세대 1,200명",
+    "age_scope": "Z세대",
+    "period": "2025 조사",
+    "source_id": "WTS4",
+    "quote": "광고·프로모션 문구로 구매한 경험이 73.8%였고",
+    "confidence": "high",
+    "note": "희소성 메시지(한정 수량, 리미티드 에디션)도 유효하다고 서술.",
+    "quote_verified": true
+   },
+   {
+    "id": "WTF14",
+    "topic": "구매기준",
+    "claim": "Z세대의 구매처 선택 기준은 가격 78.5%, 판매자 신뢰도 52.6%, 쿠폰·할인 45.7%, 배송 속도 32.7% 순이다.",
+    "value": 78.5,
+    "unit": "%",
+    "population": "전국 만 18~28세 Z세대 1,200명",
+    "age_scope": "Z세대",
+    "period": "2025 조사",
+    "source_id": "WTS4",
+    "quote": "가격 78.5%, 판매자 신뢰도 52.6%, 쿠폰·할인 45.7%",
+    "confidence": "medium",
+    "note": "문항(구매 시 고려 요소로 추정)의 정확한 문구는 요약문에 없음. value는 가격.",
+    "quote_verified": true
+   },
+   {
+    "id": "WTF15",
+    "topic": "가성비",
+    "claim": "Z세대의 소비 가치 중 ‘안정성·안전성·AS 등 품질’ 중시 응답이 70.7%(2024, 6위)에서 76.3%(2025, 2위)로 올랐다.",
+    "value": 76.3,
+    "unit": "%",
+    "population": "Z세대 응답자 358명(2025), 334명(2024); 전국 15~55세 1,200명 중",
+    "age_scope": "Z세대",
+    "period": "2024~2025(2025.11 조사)",
+    "source_id": "WTS5",
+    "quote": "‘안정성·안전성·AS 등 품질’은 2024년 70.7%로 6위였으나, 2025년 76.3%로 높아져 2위에 올랐다",
+    "confidence": "high",
+    "note": "대학내일20대연구소 ‘소비지출 정기조사’. ‘디자인·컬러 등 외형’은 73.1%에서 66.8%로 하락(4위→7위).",
+    "quote_verified": true
+   },
+   {
+    "id": "WTF16",
+    "topic": "가성비",
+    "claim": "Z세대의 ‘저렴한 가격’ 중시 응답은 2024년 76.9%, 2025년 76.0%로 높게 유지되며 순위는 2위에서 3위가 됐다.",
+    "value": 76.0,
+    "unit": "%",
+    "population": "Z세대 응답자 358명(2025)",
+    "age_scope": "Z세대",
+    "period": "2024~2025",
+    "source_id": "WTS5",
+    "quote": "‘저렴한 가격’을 중시한다는 응답은 2024년 76.9%, 2025년 76.0%로 여전히 높았다",
+    "confidence": "high",
+    "note": "효능·성능은 84.1%에서 85.2%로 1위 유지.",
+    "quote_verified": true
+   },
+   {
+    "id": "WTF17",
+    "topic": "백화점·팝업",
+    "claim": "더현대 서울의 2025년 전체 매출 중 2030세대 비중은 58%로 현대백화점 전국 점포 평균 25.1%의 두 배를 넘었고, 2025년에 팝업스토어 660여 개가 열렸다.",
+    "value": 58,
+    "unit": "%",
+    "population": "더현대 서울 매출 중 2030세대",
+    "age_scope": "젊은층(범위 미기재)",
+    "period": "2025년",
+    "source_id": "WTS5",
+    "quote": "더현대 서울의 2025년 전체 매출 가운데 2030세대가 차지한 비중은 58%였다",
+    "confidence": "medium",
+    "note": "현대백화점 수치를 기사가 전한 것이며 1차 자료(현대백화점) 미확인.",
+    "quote_verified": true
+   },
+   {
+    "id": "WTF18",
+    "topic": "팝업스토어",
+    "claim": "2026년 상반기 팝업스토어는 2130건으로 전년 동기(1470건) 대비 44.9% 증가했다.",
+    "value": 2130,
+    "unit": "건",
+    "population": "팝업스토어 운영 건수(스위트스팟 집계)",
+    "age_scope": "전연령",
+    "period": "2026 상반기",
+    "source_id": "WTS6",
+    "quote": "올해 상반기 오픈한 팝업스토어는 2130건으로 지난해 동기(1470건) 대비 44.9% 증가했다",
+    "confidence": "high",
+    "note": "계산 가능: 증가 건수 660건. 2025년 1~11월 팝업 3,077건이라는 별도 서술은 이 소스에 없음.",
+    "quote_verified": true
+   },
+   {
+    "id": "WTF19",
+    "topic": "팝업스토어·덕질",
+    "claim": "IP 기반 팝업스토어는 2026 상반기 전년 동기 대비 384.6% 급증했고, 문구·도서·음반 팝업은 352.9% 늘었다.",
+    "value": 384.6,
+    "unit": "%",
+    "population": "팝업스토어 운영 건수(스위트스팟 집계)",
+    "age_scope": "전연령",
+    "period": "2026 상반기",
+    "source_id": "WTS6",
+    "quote": "IP 기반 팝업스토어는 전년 동기 대비 384.6% 급증한 가운데",
+    "confidence": "high",
+    "note": "짱구·산리오 등 대중 IP와 서브컬처 팬덤 수요 확장 서술.",
+    "quote_verified": true
+   },
+   {
+    "id": "WTF20",
+    "topic": "팝업스토어",
+    "claim": "팝업스토어 방문 동기 1위는 ‘새로운 브랜드를 경험하기 위해서’(31.1%), 2위는 할인·이벤트 참여(29.5%)였다.",
+    "value": 31.1,
+    "unit": "%",
+    "population": "소비자 251명(스위트스팟 조사, 연령 구성 미기재)",
+    "age_scope": "젊은층(범위 미기재)",
+    "period": "2026 상반기",
+    "source_id": "WTS6",
+    "quote": "'새로운 브랜드를 경험하기 위해서'(31.1%)",
+    "confidence": "medium",
+    "note": "연령 구성은 기사에 없어 age_scope는 추정.",
+    "quote_verified": true
+   },
+   {
+    "id": "WTF21",
+    "topic": "팝업스토어",
+    "claim": "팝업스토어 방문 경험자의 71.6%가 상품이나 굿즈를 구매한 경험이 있고, 응답자 열 명 중 여덟 명이 방문 경험이 있다.",
+    "value": 71.6,
+    "unit": "%",
+    "population": "전국 만 19~59세 성인 1,000명(엠브레인 트렌드모니터)",
+    "age_scope": "전연령",
+    "period": "2024~2025 초 조사",
+    "source_id": "WTS7",
+    "quote": "팝업스토어 방문 경험자의 상당수(71.6%)는 팝업스토어에서 판매하는 상품이나 굿즈를 구매한 경험이 있었다",
+    "confidence": "medium",
+    "note": "발행 18개월 초과로 stale. 연령별 수치 없음.",
+    "quote_verified": true
+   },
+   {
+    "id": "WTF22",
+    "topic": "뷰티",
+    "claim": "다이소 뷰티 제품 최근 1년(MAT) 구매 추정액은 2026년 3월 기준 3619억6000만원(전년 동기 대비 39.6%)이며 20대 구매액(219억1000만원)이 연령별 최대였다.",
+    "value": 3619.6,
+    "unit": "억 원",
+    "population": "다이소 뷰티 구매(엠브레인 패널 추정), 연령별은 20대",
+    "age_scope": "20대",
+    "period": "2025.4~2026.3(MAT)",
+    "source_id": "WTS9",
+    "quote": "연령별로는 20대 구매액이 219억1000만원으로 가장 컸다",
+    "confidence": "medium",
+    "note": "219억은 기사 문맥상 세컨드 브랜드 구매액 기준으로 읽힐 수 있어 대상 범위가 모호함. 60대는 114.3% 증가.",
+    "quote_verified": true
+   },
+   {
+    "id": "WTF23",
+    "topic": "뷰티",
+    "claim": "다이소 화장품 최근 1년 구매 추정액은 약 3376억원(+101.9%)이며 연령별 증가율은 60대 163.2%, 30대 89.2%, 20대 88.1%였다.",
+    "value": 101.9,
+    "unit": "%",
+    "population": "다이소 뷰티 구매(엠브레인 패널 추정)",
+    "age_scope": "전연령",
+    "period": "2024.10~2025.9(MAT)",
+    "source_id": "WTS8",
+    "quote": "30대(89.2%)와 20대(88.1%) 등 젊은 층보다 중·장년층의 증가율이 상대적으로 높았다",
+    "confidence": "high",
+    "note": "젊은층 단독 급증이 아니라 전 연령 확산이라는 점이 핵심.",
+    "quote_verified": true
+   },
+   {
+    "id": "WTF24",
+    "topic": "뷰티",
+    "claim": "아성다이소 2024년 매출은 3조9680억원(+14.7%)이고 화장품(기초·색조) 카테고리 매출은 전년 대비 144% 상승했다.",
+    "value": 144,
+    "unit": "%",
+    "population": "다이소 전체",
+    "age_scope": "전연령",
+    "period": "2024년",
+    "source_id": "WTS8",
+    "quote": "화장품(기초·색조) 카테고리 매출액은 전년 대비 144% 상승",
+    "confidence": "medium",
+    "note": "기사 문맥상 ‘지난해’는 2024년으로 보임. 기사 발행 2025-11.",
+    "quote_verified": true
+   },
+   {
+    "id": "WTF25",
+    "topic": "AI 서비스",
+    "claim": "2025년 8월 챗GPT 앱 월간 사용자는 2031만명이며 연령 비중은 20대 24.2%로 최대, 20세 미만 13.6%였다.",
+    "value": 24.2,
+    "unit": "%",
+    "population": "국내 챗GPT 앱 MAU 연령 분포(와이즈앱·리테일)",
+    "age_scope": "20대",
+    "period": "2025.8",
+    "source_id": "WTS10",
+    "quote": "20대 사용자 비율이 24.2%로 최대였다",
+    "confidence": "high",
+    "note": "40대 22.4%, 30대 22.0%, 50대 12.6%, 60세 이상 5.2%.",
+    "quote_verified": true
+   },
+   {
+    "id": "WTF26",
+    "topic": "AI 서비스",
+    "claim": "챗GPT 앱 MAU 2031만명은 2024년 8월(407만명)보다 약 5배 증가한 수치다.",
+    "value": 2031,
+    "unit": "만 명",
+    "population": "국내 챗GPT 앱 월간 사용자(전 연령)",
+    "age_scope": "전연령",
+    "period": "2025.8",
+    "source_id": "WTS10",
+    "quote": "지난해 8월(407만명)보다 약 5배 증가해 역대 최고치를 기록한 것이다",
+    "confidence": "high",
+    "note": "",
+    "quote_verified": true
+   },
+   {
+    "id": "WTF27",
+    "topic": "AI 서비스",
+    "claim": "2025년 3월 3~9일 생성형 AI 앱 사용자는 20대 190만5700명이 가장 많았고 20세 미만은 72만2200명이었다.",
+    "value": 190.57,
+    "unit": "만 명",
+    "population": "생성형 AI 앱(챗GPT 중심) 사용자 수 연령별",
+    "age_scope": "20대",
+    "period": "2025.3.3~9",
+    "source_id": "WTS11",
+    "quote": "20대(190만5700명)의 활용율이 가장 높았다",
+    "confidence": "high",
+    "note": "사용 시간도 20대 118만5000시간으로 최장. 20세 미만의 2순위 앱은 뤼튼, 에이닷.",
+    "quote_verified": true
+   },
+   {
+    "id": "WTF28",
+    "topic": "중고·리셀",
+    "claim": "번개장터 이용자 중 MZ세대가 78%이며 2024년 거래건수는 2023년 대비 63% 늘었다.",
+    "value": 78,
+    "unit": "%",
+    "population": "번개장터 전체 이용자 중 MZ세대",
+    "age_scope": "MZ",
+    "period": "2024년",
+    "source_id": "WTS12",
+    "quote": "전체 이용자 중 가장 많은 비중을 차지한 건 MZ세대다. 전체의 78%를 차지했다",
+    "confidence": "medium",
+    "note": "발행 18개월 초과로 stale. 업체 자체 리포트를 언론이 전달.",
+    "quote_verified": true
+   },
+   {
+    "id": "WTF29",
+    "topic": "중고·리셀",
+    "claim": "번개장터에서 스트릿 브랜드 베이프 가방 거래건수가 2023년 대비 30배 늘었고 베이프는 10대 1위, 20대 2위로 올랐다.",
+    "value": 30,
+    "unit": "배",
+    "population": "번개장터 10대·20대 거래",
+    "age_scope": "10대",
+    "period": "2024년",
+    "source_id": "WTS12",
+    "quote": "베이프는 10대에서 1위, 20대에서 2위로 급상승했다",
+    "confidence": "medium",
+    "note": "stale. 정품 검수 ‘번개케어’에서는 포터 1459% 증가 1위.",
+    "quote_verified": true
+   },
+   {
+    "id": "WTF30",
+    "topic": "중고·리셀",
+    "claim": "당근·번개장터·중고나라 3개 앱의 2025년 8월 총 실행횟수는 약 45억6700만회로 2021년 8월 대비 약 90.7% 늘었고, 3개 앱 중 당근의 이용자 비율은 약 81%였다.",
+    "value": 81,
+    "unit": "%",
+    "population": "중고거래 3개 앱 이용(전 연령)",
+    "age_scope": "전연령",
+    "period": "2025.8",
+    "source_id": "WTS13",
+    "quote": "당근의 이용자 비율은 약 81%로",
+    "confidence": "high",
+    "note": "연령별 수치 없음. 당근 MAU는 2024년 8월 2185만명.",
+    "quote_verified": true
+   },
+   {
+    "id": "WTF31",
+    "topic": "모임·커뮤니티",
+    "claim": "당근의 누적 모임 수는 전년 대비 63%, 모임 가입자 수는 125% 증가했고 러닝·독서·맛집 탐방 모임이 늘었다.",
+    "value": 125,
+    "unit": "%",
+    "population": "당근 모임 서비스 이용자(전 연령)",
+    "age_scope": "전연령",
+    "period": "2025년(연말결산)",
+    "source_id": "WTS14",
+    "quote": "누적 모임 가입자 수는 125% 증가하며 러닝, 독서, 맛집 탐방",
+    "confidence": "high",
+    "note": "당근 MAU 2,000만 명, 중고거래 연결 약 1억 9천만 건. 연령별 수치 없음.",
+    "quote_verified": true
+   },
+   {
+    "id": "WTF32",
+    "topic": "여행",
+    "claim": "KB국민카드 항공권 구매 분석에서 20대는 일본(39%), 30대는 스페인(39%), 40대는 베트남(31%), 50대는 중국(28%) 비중이 가장 높았다.",
+    "value": 39,
+    "unit": "%",
+    "population": "KB국민카드 신용·체크카드 항공권 구매 32만 건, 연령대별 최다 국가 비중",
+    "age_scope": "20대",
+    "period": "2024 상반기",
+    "source_id": "WTS15",
+    "quote": "20대는 일본(39%), 30대는 스페인(39%), 40대는 베트남(31%)",
+    "confidence": "high",
+    "note": "stale(2024). 전체 일본 비중 44%, 전년 대비 일본 45% 증가, 중국 182% 증가.",
+    "quote_verified": true
+   },
+   {
+    "id": "WTF33",
+    "topic": "여행·결제",
+    "claim": "KB국민카드 설문(서울·경기·인천 500명)에서 20대 응답자 50%가 해외여행 시 해외여행 특화카드를 쓰겠다고 답했다.",
+    "value": 50,
+    "unit": "%",
+    "population": "서울·경기·인천 거주 응답자 500명 중 20대",
+    "age_scope": "20대",
+    "period": "2024 상반기 설문",
+    "source_id": "WTS15",
+    "quote": "20대 응답자 50%는 해외여행 특화카드를 선택하겠다고 밝혔지만",
+    "confidence": "medium",
+    "note": "stale. 30대는 46.5%, 40대는 48.4%, 50대는 66.7%가 기존 신용카드 사용 예정. 20대 응답자 수는 본문에 없음.",
+    "quote_verified": true
+   },
+   {
+    "id": "WTF34",
+    "topic": "여행",
+    "claim": "하나카드 일본 현지 이용 고객은 33만366명, 이용 금액은 약 2천275억원으로 전년 대비 각각 17.3%, 15.0% 늘었으나 1인당 이용금액은 2% 줄었다.",
+    "value": 17.3,
+    "unit": "%",
+    "population": "하나카드 국내 고객 일본 현지 이용(전 연령)",
+    "age_scope": "전연령",
+    "period": "직전 12월~2월 3개월(연도 본문 미명시)",
+    "source_id": "WTS16",
+    "quote": "이용 고객 수는 33만366명, 이용 금액은 약 2천275억원으로 각각 전년 대비 17.3%, 15.0% 늘어났습니다",
+    "confidence": "medium",
+    "note": "발행일을 확인하지 못해 published는 연도 수준. 1인당 68만8514원(전년 70만2441원).",
+    "quote_verified": true
+   },
+   {
+    "id": "WTF35",
+    "topic": "여행",
+    "claim": "2025년 2분기 해외여행 방문지는 일본 43.6%, 베트남 20.6%, 중국 7.6%, 필리핀 4.7% 순이었다.",
+    "value": 43.6,
+    "unit": "%",
+    "population": "해외여행 방문지(관광지식정보시스템, 전 연령)",
+    "age_scope": "전연령",
+    "period": "2025.2Q",
+    "source_id": "WTS17",
+    "quote": "올해 2분기 기준 해외여행 방문지로 일본이 43.6%로 가장 높았으며",
+    "confidence": "medium",
+    "note": "",
+    "quote_verified": true
+   },
+   {
+    "id": "WTF36",
+    "topic": "퀵커머스",
+    "claim": "배민 뷰티 부문은 2026년 2월 누적 기준 전년 동월 대비 70% 이상 성장했고, 딜리버리히어로 아시아 퀵커머스 거래액은 2025년 4분기 31% 성장했다.",
+    "value": 70,
+    "unit": "%",
+    "population": "배민 뷰티 부문 / 딜리버리히어로 아시아 퀵커머스 거래액(전 연령)",
+    "age_scope": "전연령",
+    "period": "2026.2 누적 / 2025.4Q",
+    "source_id": "WTS18",
+    "quote": "뷰티 부문은 지난 2월 누적 기준으로 전년 동월 대비 70% 이상 성장한 것으로 나타났다",
+    "confidence": "medium",
+    "note": "H&B 카테고리 50% 이상 성장도 서술. 연령별 수치 없음.",
+    "quote_verified": true
+   },
+   {
+    "id": "WTF37",
+    "topic": "주거·독립",
+    "claim": "만 25~36세 청년 4명 중 1명이 1인가구로 생활하며 1인가구의 정규직 비중은 67%다.",
+    "value": 67,
+    "unit": "%",
+    "population": "전국 만 25~36세 남녀 2,000명 스크리닝 후 1인가구 대상",
+    "age_scope": "청년(19~34)",
+    "period": "2025 조사",
+    "source_id": "WTS19",
+    "quote": "청년 4명 중 1명이 1인가구로 생활하고 있으며",
+    "confidence": "medium",
+    "note": "표본이 25~36세라 청년 정의(19~34)와 일치하지 않음. 1인가구의 절반 이상이 월 200~399만 원 소득.",
+    "quote_verified": true
+   },
+   {
+    "id": "WTF38",
+    "topic": "절약",
+    "claim": "KPR 소비경향 빅데이터 분석에서 2022년 상반기 대비 2024년 상반기 ‘무지출’·‘무소비’ 언급량이 85% 증가했고 ‘플렉스’·‘욜로’ 언급량은 12% 감소했다.",
+    "value": 85,
+    "unit": "%",
+    "population": "온라인 언급량(연령 구분 없음)",
+    "age_scope": "전연령",
+    "period": "2022 상반기~2024 상반기",
+    "source_id": "WTS20",
+    "quote": "‘무지출’과 ‘무소비’ 관련 언급량이 85% 증가했으며",
+    "confidence": "medium",
+    "note": "stale. 같은 글에서 한국방송광고진흥공사 ‘2025 새해 소비 트렌드 전망’ 응답자의 80.7%가 ‘꼭 필요한 것만 사고 불필요한 구매는 최대한 자제한다’, 89.7%가 ‘나를 위한 실용 소비 선호’(응답자 구성 미기재).",
+    "quote_verified": true
+   },
+   {
+    "id": "WTF39",
+    "topic": "키워드",
+    "claim": "KT와 대학내일20대연구소 ‘2025 Y트렌드 컨퍼런스’에서 Z세대 대학생 서포터즈가 도출한 키워드는 폴더소비, N놀러, 듣폴트, Ai:tionship, 셀고리즘이다.",
+    "value": 5,
+    "unit": "개",
+    "population": "Y퓨처리스트(대학생 서포터즈 100명)와 대학내일20대연구소 협업 도출",
+    "age_scope": "Z세대",
+    "period": "2025.8",
+    "source_id": "WTS21",
+    "quote": "폴더소비, N놀러, 듣폴트, Ai:tionship, 셀고리즘이라는 트렌드 키워드를 도출했다",
+    "confidence": "high",
+    "note": "정량 조사가 아니라 서포터즈 기획 결과물. 광고·마케팅 목적 행사.",
+    "quote_verified": true
+   },
+   {
+    "id": "WTF40",
+    "topic": "키워드",
+    "claim": "‘폴더소비’는 FOMO를 해소하려 일단 저장해 두고 실제 소비 순간 활용하는 Z세대의 저장형 소비 행태를 가리킨다고 소개됐다.",
+    "value": null,
+    "unit": null,
+    "population": "Z세대(정의 소개)",
+    "age_scope": "Z세대",
+    "period": "2025.8",
+    "source_id": "WTS21",
+    "quote": "일단 저장해 두고 실제 소비 순간 활용하는 Z세대의 저장형 소비 행태를 의미한다",
+    "confidence": "high",
+    "note": "정의만 있고 비중 수치 없음.",
+    "quote_verified": true
+   },
+   {
+    "id": "WTF41",
+    "topic": "키워드",
+    "claim": "‘N놀러’는 거창한 취미보다 사소한 즐거움을 다양하게 누리며 가볍게 즐기면 모두 취미라는 인식을 반영한 여가 트렌드로 소개됐다.",
+    "value": null,
+    "unit": null,
+    "population": "Z세대(정의 소개)",
+    "age_scope": "Z세대",
+    "period": "2025.8",
+    "source_id": "WTS21",
+    "quote": "거창한 취미보다 사소한 즐거움을 다양하게 누리며 가볍게 즐기면 모두 취미라는 인식",
+    "confidence": "high",
+    "note": "정의만 있고 수치 없음.",
+    "quote_verified": true
+   },
+   {
+    "id": "WTF42",
+    "topic": "키워드",
+    "claim": "『트렌드코리아 2026』의 ‘필코노미’는 기분을 전환하려고 기능성·효용이 없어도 재화와 서비스를 사는 경제 활동으로 소개됐다.",
+    "value": null,
+    "unit": null,
+    "population": "책 키워드(대상 연령 미기재, 기사는 젊은 세대 맥락)",
+    "age_scope": "젊은층(범위 미기재)",
+    "period": "2025.12 보도",
+    "source_id": "WTS22",
+    "quote": "딱히 기능성이나 효용이 없어도 재화와 서비스를 구매하는 경제 활동을 의미한다",
+    "confidence": "medium",
+    "note": "‘픽셀라이프’는 페스타·박람회·팝업스토어·제철 음식처럼 지금이 아니면 경험할 수 없는 순간에 몰입하려는 경향. 기사 필자의 요약임.",
+    "quote_verified": true
+   },
+   {
+    "id": "WTF43",
+    "topic": "절약",
+    "claim": "캐릿은 ‘플렉스’가 힙하던 3~4년 전과 달리 지금 Z세대 사이에서는 ‘절약’ 라이프스타일이 대세라고 서술했다.",
+    "value": null,
+    "unit": null,
+    "population": "Z세대(캐릿 서술)",
+    "age_scope": "Z세대",
+    "period": "2025",
+    "source_id": "WTS23",
+    "quote": "지금 Z세대 사이에서는 다시 ‘절약’하는 라이프스타일이 대세로 떠오르고 있어요",
+    "confidence": "low",
+    "note": "수치 없는 매체 서술이라 보조 근거. 명품·오마카세 프리미엄 정체 vs 소용량 뷰티템·마트 케이크 가성비 시장 부상 서술.",
+    "quote_verified": true
+   },
+   {
+    "id": "WTF44",
+    "topic": "러닝",
+    "claim": "2025년 서울국제마라톤에 역대 최대 4만명이 몰렸고 전국 마라톤 대회는 연 400개로 2022년 346개에서 늘었다.",
+    "value": 40000,
+    "unit": "명",
+    "population": "마라톤 참가·대회 수(전 연령)",
+    "age_scope": "전연령",
+    "period": "2025년",
+    "source_id": "WTS1",
+    "quote": "올해 서울국제마라톤에는 역대 최대인 4만명이 몰렸고",
+    "confidence": "high",
+    "note": "",
+    "quote_verified": true
+   }
+  ],
+  "gaps": [
+   "10대·알파세대(만 18세 이하) 단독 수치는 거의 찾지 못함: ChatGPT 앱 ‘20세 미만’ 13.6%·72만2200명, 번개장터 10대 베이프 1위 정도만 확보.",
+   "퀵커머스·배달: 20대 비중이나 연령별 이용 증가를 직접 밝힌 자료를 찾지 못해 WTT11은 전 연령 시장 데이터로만 구성(근거 약함).",
+   "덕질·굿즈: 연령별 지출 규모를 밝힌 2025~2026 설문 수치를 찾지 못함(굿즈 시장 1조원 전망 같은 서술은 출처 미확인이라 제외). 팝업/IP 팝업 수치로 간접 근거만 확보.",
+   "필라테스·요가 등 운동 소비는 20·30대 대상 2025 수치를 찾지 못함(검색 결과의 필라테스 증가 수치는 60·70대 자료).",
+   "당일치기 여행·동남아 여행의 청년층 수치를 찾지 못함. 일본 관련 20대 수치는 2024 상반기(stale)이며 2025년 연령별 수치 없음.",
+   "올리브영·무신사·쿠팡·토스·카카오 등 플랫폼의 2025 연령별 이용 비중은 공개 본문에서 확인하지 못함(올리브영 외국인 매출 비중 중심 자료만 확인).",
+   "트렌드코리아 2026은 기사 소개글(WTS22)만 확인함. 책 원문, 2027 전망, KT 2026 Y트렌드 키워드(네트왓킹·스크롤픽·밸런쉼·현재진행력·트라이에이터)의 정의 본문은 확인하지 못함.",
+   "나스미디어 NPR, 한국콘텐츠진흥원 이용행태 조사, 컨슈머인사이트 연령별 자료는 이번 세션의 검색 한도 소진으로 조사하지 못함. 오픈서베이 구독서비스 트렌드 리포트 2025 본문도 요약 페이지만 확인.",
+   "청년 저축·재테크 상품(도약계좌 등) 가입 수치는 검색 한도 소진으로 찾지 못함. WTF10은 설문 관심도뿐.",
+   "주거·독립은 오픈서베이 25~36세 1인가구 조사 1건뿐이며 20대 전용 통계(KOSIS)는 확인하지 못함.",
+   "WTF17(더현대 서울 2030 58%)은 1차 자료(현대백화점) 미확인. WTS16(하나카드 일본)은 발행일 미확인.",
+   "WTF20(팝업 방문 동기)는 표본 251명이고 연령 구성이 기사에 없어 age_scope가 추정임."
+  ],
+  "trend_items": [
+   {
+    "id": "WTT1",
+    "title": "러닝 참여 급증과 러닝 장비·크루 소비",
+    "categories": [
+     "여가",
+     "소비"
+    ],
+    "age_scope": "젊은층(범위 미기재)",
+    "what": "달리기 참여율이 0.5%에서 6.8%로 늘었고, 크림 러닝 구매자의 72%가 2030이며 당근 러닝 모임은 4배 넘게 늘었다.",
+    "when": "2024~2025",
+    "virality": {
+     "channel": "SNS",
+     "evidence": "인스타그램 ‘러닝’ 해시태그 게시물이 2023년 말 200만건에서 2025년 9월 400만건 넘게 늘었다는 보도",
+     "metric": "400만건"
+    },
+    "durability": "지속 추세",
+    "fact_ids": [
+     "WTF1",
+     "WTF2",
+     "WTF3",
+     "WTF4",
+     "WTF5",
+     "WTF6",
+     "WTF44"
+    ],
+    "card_relevance": "해석: 러닝화·러닝웨어 리셀/플랫폼 결제와 대회 참가비, 모임비가 젊은층 카드 사용처로 읽힌다."
+   },
+   {
+    "id": "WTT2",
+    "title": "절약·저축 관심과 의미 있는 영역에서의 과감한 지출",
+    "categories": [
+     "소비",
+     "금융"
+    ],
+    "age_scope": "Z세대",
+    "what": "Z세대 71.6%가 절약·저축에 관심이 많다고 답하면서도 가전·디지털(40.1%) 등은 더 비싸도 좋은 것을 고른다.",
+    "when": "2025",
+    "virality": {
+     "channel": "뉴스",
+     "evidence": "오픈서베이 Z세대 조사(18~28세 1,200명)",
+     "metric": "71.6%"
+    },
+    "durability": "지속 추세",
+    "fact_ids": [
+     "WTF10",
+     "WTF11",
+     "WTF43",
+     "WTF38"
+    ],
+    "card_relevance": "해석: 전반 절약 속에 선택 영역 집중 지출이라 카테고리별 혜택 차등 설계의 근거가 된다."
+   },
+   {
+    "id": "WTT3",
+    "title": "가성비의 재정의: 가격과 함께 품질·AS를 따진다",
+    "categories": [
+     "소비"
+    ],
+    "age_scope": "Z세대",
+    "what": "Z세대 소비 가치에서 품질·AS 중시가 70.7%에서 76.3%로 올라 6위에서 2위가 됐고 저렴한 가격은 76.0%로 3위다.",
+    "when": "2024~2025",
+    "virality": {
+     "channel": "뉴스",
+     "evidence": "대학내일20대연구소 소비지출 정기조사 해석 기사",
+     "metric": "76.3%"
+    },
+    "durability": "지속 추세",
+    "fact_ids": [
+     "WTF15",
+     "WTF16",
+     "WTF14"
+    ],
+    "card_relevance": "해석: 최저가 경쟁보다 신뢰할 수 있는 판매처·AS 결제 혜택 서사가 맞을 수 있다."
+   },
+   {
+    "id": "WTT4",
+    "title": "팝업스토어·IP 팝업의 확대",
+    "categories": [
+     "소비",
+     "여가"
+    ],
+    "age_scope": "젊은층(범위 미기재)",
+    "what": "2026 상반기 팝업은 2130건(+44.9%), IP 기반 팝업은 +384.6%, 더현대 서울 매출의 58%가 2030이다.",
+    "when": "2025~2026",
+    "virality": {
+     "channel": "오프라인",
+     "evidence": "스위트스팟 집계 팝업 운영 건수 및 더현대 서울 매출 비중",
+     "metric": "팝업 2130건(+44.9%)"
+    },
+    "durability": "지속 추세",
+    "fact_ids": [
+     "WTF17",
+     "WTF18",
+     "WTF19",
+     "WTF20",
+     "WTF21"
+    ],
+    "card_relevance": "해석: 팝업·굿즈·전시 같은 단발성 오프라인 결제가 늘어 해당 업종 가맹점 혜택의 접점이 된다."
+   },
+   {
+    "id": "WTT5",
+    "title": "다이소 뷰티: 저가 화장품 소비 확산",
+    "categories": [
+     "소비"
+    ],
+    "age_scope": "전연령",
+    "what": "다이소 화장품 구매 추정액이 +101.9%(2025.9 MAT)로 늘었고 20대 구매액이 연령별 최대이나 증가율은 중장년이 더 높다.",
+    "when": "2024~2026",
+    "virality": {
+     "channel": "오프라인",
+     "evidence": "엠브레인 패널 영수증 기반 구매 추정",
+     "metric": "3376억원(+101.9%)"
+    },
+    "durability": "지속 추세",
+    "fact_ids": [
+     "WTF22",
+     "WTF23",
+     "WTF24"
+    ],
+    "card_relevance": "해석: 소액 다빈도 생활 뷰티 결제가 주류이고 건당 금액이 작아 포인트·할인율 체감이 중요해 보인다."
+   },
+   {
+    "id": "WTT6",
+    "title": "구독 경험 보편화와 생성형 AI 구독 의향",
+    "categories": [
+     "디지털",
+     "소비"
+    ],
+    "age_scope": "20대",
+    "what": "구독 이용 경험은 94.8%이고 20대가 새로 쓰고 싶은 구독 1위는 생성형 AI(23.0%)이며 단점 1위는 관리 부족 낭비(77.4%)다.",
+    "when": "2025-02",
+    "virality": {
+     "channel": "뉴스",
+     "evidence": "대한상의·마크로밀엠브레인 조사 보도",
+     "metric": "94.8%"
+    },
+    "durability": "지속 추세",
+    "fact_ids": [
+     "WTF7",
+     "WTF8",
+     "WTF9"
+    ],
+    "card_relevance": "해석: 정기결제 구독 수가 늘어 구독 관리·정기결제 혜택 니즈가 있지만 낭비 우려도 같이 있다."
+   },
+   {
+    "id": "WTT7",
+    "title": "생성형 AI 앱의 일상화",
+    "categories": [
+     "디지털"
+    ],
+    "age_scope": "20대",
+    "what": "챗GPT 앱 MAU가 2031만명으로 1년 새 약 5배 늘었고 20대 비중이 24.2%로 가장 크다.",
+    "when": "2025-03~2025-08",
+    "virality": {
+     "channel": "앱 이용 데이터",
+     "evidence": "와이즈앱·리테일 MAU 집계",
+     "metric": "2031만명"
+    },
+    "durability": "지속 추세",
+    "fact_ids": [
+     "WTF25",
+     "WTF26",
+     "WTF27"
+    ],
+    "card_relevance": "해석: AI 서비스 유료 구독이 해외 결제와 정기결제로 이어질 수 있어 해외 결제 수수료·정기결제 혜택과 닿는다."
+   },
+   {
+    "id": "WTT8",
+    "title": "중고·리셀·세컨핸드 플랫폼 이용",
+    "categories": [
+     "소비"
+    ],
+    "age_scope": "MZ",
+    "what": "번개장터 이용자의 78%가 MZ, 10대에서 베이프가 1위이며 당근·번개장터·중고나라 실행횟수는 2021년 대비 90.7% 늘었다.",
+    "when": "2024~2025",
+    "virality": {
+     "channel": "앱 이용 데이터",
+     "evidence": "와이즈앱·리테일 및 번개장터 자체 리포트",
+     "metric": "MZ 78%"
+    },
+    "durability": "지속 추세",
+    "fact_ids": [
+     "WTF28",
+     "WTF29",
+     "WTF30",
+     "WTF5"
+    ],
+    "card_relevance": "해석: 개인간 거래·검수 결제는 안전결제·간편결제 비중이 커 카드 혜택 연결이 제한적일 수 있다."
+   },
+   {
+    "id": "WTT9",
+    "title": "일본 중심 해외여행",
+    "categories": [
+     "여행"
+    ],
+    "age_scope": "20대",
+    "what": "20대 항공권 구매 1위 국가가 일본(39%, 2024 상반기)이고 2025년 2분기 해외 방문지도 일본이 43.6%로 1위다.",
+    "when": "2024~2025",
+    "virality": {
+     "channel": "뉴스",
+     "evidence": "KB국민카드 결제 데이터 분석 및 관광지식정보시스템",
+     "metric": "20대 일본 39%"
+    },
+    "durability": "지속 추세",
+    "fact_ids": [
+     "WTF32",
+     "WTF33",
+     "WTF34",
+     "WTF35"
+    ],
+    "card_relevance": "해석: 해외 결제·환전·항공권 혜택이 20대 카드 선택 요인이 될 수 있다(20대 50%가 여행 특화카드 선택 의향, 2024 설문)."
+   },
+   {
+    "id": "WTT10",
+    "title": "자기이해 콘텐츠(MBTI·퍼스널컬러)에 대한 관심",
+    "categories": [
+     "콘텐츠",
+     "소비"
+    ],
+    "age_scope": "Z세대",
+    "what": "Z세대 89.0%가 자기이해 도구에 관심이 있고 21.0%는 유료 이용 경험이 있다.",
+    "when": "2025",
+    "virality": {
+     "channel": "뉴스",
+     "evidence": "오픈서베이 조사",
+     "metric": "89.0%"
+    },
+    "durability": "불명",
+    "fact_ids": [
+     "WTF12",
+     "WTF13"
+    ],
+    "card_relevance": "해석: 소액 유료 콘텐츠·진단 서비스 결제처로 읽히나 근거는 단일 조사다."
+   },
+   {
+    "id": "WTT11",
+    "title": "퀵커머스 품목 확장(뷰티·H&B)",
+    "categories": [
+     "소비",
+     "디지털"
+    ],
+    "age_scope": "전연령",
+    "what": "배민 뷰티는 2026-02 누적 +70%, DH 아시아 퀵커머스 GMV는 2025 4Q +31%다.",
+    "when": "2025~2026",
+    "virality": {
+     "channel": "뉴스",
+     "evidence": "업계 보도",
+     "metric": "+70%"
+    },
+    "durability": "불명",
+    "fact_ids": [
+     "WTF36",
+     "WTF23"
+    ],
+    "card_relevance": "해석: 즉시배송 소액 결제 빈도 증가가 예상되나 연령별 근거는 없어 약하다."
+   },
+   {
+    "id": "WTT12",
+    "title": "청년 1인가구와 혼자 보내는 시간",
+    "categories": [
+     "기타"
+    ],
+    "age_scope": "청년(19~34)",
+    "what": "25~36세 청년 4명 중 1명이 1인가구이며 정규직 비중 67%, 여가는 주로 혼자 영상 시청·휴식이다.",
+    "when": "2025",
+    "virality": {
+     "channel": "리서치",
+     "evidence": "오픈서베이 청년 1인가구 리포트",
+     "metric": "25%"
+    },
+    "durability": "지속 추세",
+    "fact_ids": [
+     "WTF37"
+    ],
+    "card_relevance": "해석: 주거비·식비 중심 고정지출과 장보기 결제처(대형마트·쿠팡)가 생활 카드의 접점이다. 근거 fact가 1건뿐이라 약함."
+   },
+   {
+    "id": "WTT13",
+    "title": "‘요즘 키워드’: 폴더소비·N놀러·필코노미·픽셀라이프",
+    "categories": [
+     "기타"
+    ],
+    "age_scope": "Z세대",
+    "what": "KT·대학내일 2025 키워드(폴더소비, N놀러 등)와 트렌드코리아 2026의 필코노미·픽셀라이프가 소비 행태 용어로 소개됐다.",
+    "when": "2025-08~2025-12",
+    "virality": {
+     "channel": "뉴스",
+     "evidence": "KT Y트렌드 컨퍼런스 및 트렌드코리아 2026 소개 기사",
+     "metric": "키워드 5개"
+    },
+    "durability": "불명",
+    "fact_ids": [
+     "WTF39",
+     "WTF40",
+     "WTF41",
+     "WTF42"
+    ],
+    "card_relevance": "해석: 순간·기분·소액 몰입 소비라는 공통 흐름이 소액 다빈도 결제 설계와 맞닿는다."
+   },
+   {
+    "id": "WTT14",
+    "title": "동네 모임·가벼운 취미 활동",
+    "categories": [
+     "모임",
+     "여가"
+    ],
+    "age_scope": "젊은층(범위 미기재)",
+    "what": "당근 모임 가입자가 125% 늘고 러닝·독서·맛집 탐방 모임이 늘었으며 ‘N놀러’는 사소한 즐거움을 모두 취미로 보는 인식이다.",
+    "when": "2025",
+    "virality": {
+     "channel": "오프라인",
+     "evidence": "당근 연말결산 및 KT·대학내일 키워드",
+     "metric": "모임 가입자 +125%"
+    },
+    "durability": "지속 추세",
+    "fact_ids": [
+     "WTF31",
+     "WTF4",
+     "WTF41"
+    ],
+    "card_relevance": "해석: 모임 회비·소액 정산 수요가 있으나 카드 연결은 간접적이다."
+   },
+   {
+    "id": "WTT15",
+    "title": "프로모션·희소성 메시지에 대한 반응",
+    "categories": [
+     "소비"
+    ],
+    "age_scope": "Z세대",
+    "what": "Z세대 73.8%가 광고·프로모션 문구로 구매한 적이 있고 ‘오늘만 할인/타임세일’ 반응이 39.2%로 가장 높다.",
+    "when": "2025",
+    "virality": {
+     "channel": "뉴스",
+     "evidence": "오픈서베이 조사",
+     "metric": "73.8%"
+    },
+    "durability": "불명",
+    "fact_ids": [
+     "WTF13",
+     "WTF14"
+    ],
+    "card_relevance": "해석: 기간 한정·쿠폰형 혜택이 카드 혜택 소구에도 유효할 수 있다."
+   }
+  ]
+ },
+ "findings": [],
+ "sources": [
+  {
+   "id": "WTS1",
+   "title": "러닝 인구 천만 시대 ‘런심’의 경제학 [스페셜리포트]",
+   "url": "https://v.daum.net/v/20250918070600267",
+   "publisher": "매경이코노미(다음 전재)",
+   "kind": "news",
+   "published": "2025-09-18",
+   "retrieved_at": "2026-10-23",
+   "reliability": 0.7,
+   "tier": "B",
+   "stale": false
+  },
+  {
+   "id": "WTS2",
+   "title": "“20대 남성은 아식스, 30대 여성은 온러닝” 크림, 2025 상반기 ‘러닝코어’ 트렌드 공개",
+   "url": "https://navercorp.com/media/pressReleasesDetail?seq=33243",
+   "publisher": "NAVER Corp.(크림 보도자료)",
+   "kind": "news",
+   "published": "2025-08-26",
+   "retrieved_at": "2026-10-23",
+   "reliability": 0.5,
+   "tier": "C",
+   "stale": false
+  },
+  {
+   "id": "WTS3",
+   "title": "구독서비스 이용 실태 조사(대한상공회의소·마크로밀엠브레인) 보도",
+   "url": "https://www.fnnews.com/news/202502190600589487",
+   "publisher": "파이낸셜뉴스",
+   "kind": "report",
+   "published": "2025-02-19",
+   "retrieved_at": "2026-10-23",
+   "reliability": 0.7,
+   "tier": "B",
+   "stale": false
+  },
+  {
+   "id": "WTS4",
+   "title": "불확실성 속에서 더 정교해진 Z세대 소비와 선택(Z세대 트렌드 리포트 2025)",
+   "url": "https://blog.opensurvey.co.kr/article/generation-z-2025-2/",
+   "publisher": "오픈서베이 블로그",
+   "kind": "report",
+   "published": null,
+   "retrieved_at": "2026-10-23",
+   "reliability": 0.7,
+   "tier": "B"
+  },
+  {
+   "id": "WTS5",
+   "title": "[윤나래의 세대읽기] 저가 쇼핑에 지친 Z세대, 품질·AS를 따진다",
+   "url": "https://bravo.etoday.co.kr/view/atc_view/19756",
+   "publisher": "브라보마이라이프(이투데이)",
+   "kind": "news",
+   "published": "2026-08-03",
+   "retrieved_at": "2026-10-23",
+   "reliability": 0.7,
+   "tier": "B",
+   "stale": false
+  },
+  {
+   "id": "WTS6",
+   "title": "팝업스토어도 세대교체… 패션 가고 IP 뜬다(스위트스팟 2026 상반기 팝업스토어 트렌드 리포트)",
+   "url": "https://v.daum.net/v/f0gOVpFYcB",
+   "publisher": "이코노믹리뷰(다음 전재)",
+   "kind": "news",
+   "published": "2026-07-14",
+   "retrieved_at": "2026-10-23",
+   "reliability": 0.7,
+   "tier": "B",
+   "stale": false
+  },
+  {
+   "id": "WTS7",
+   "title": "대중화된 팝업스토어 10명 중 8명 “방문 경험 있어”(엠브레인 트렌드모니터)",
+   "url": "https://lady.khan.co.kr/issue/article/202501211131001",
+   "publisher": "레이디경향",
+   "kind": "report",
+   "published": "2025-01-21",
+   "retrieved_at": "2026-10-23",
+   "reliability": 0.7,
+   "tier": "B",
+   "stale": true
+  },
+  {
+   "id": "WTS8",
+   "title": "다이소 기초 화장품 구매액 100% 이상 증가(엠브레인 딥데이터)",
+   "url": "https://view.asiae.co.kr/article/2025112815191948423",
+   "publisher": "아시아경제",
+   "kind": "news",
+   "published": "2025-11-29",
+   "retrieved_at": "2026-10-23",
+   "reliability": 0.7,
+   "tier": "B",
+   "stale": false
+  },
+  {
+   "id": "WTS9",
+   "title": "싸니까 한번 써볼까…60대男 다이소에 이것 사러 몰려갔다(엠브레인 딥데이터)",
+   "url": "https://www.hankyung.com/article/202605145546g",
+   "publisher": "한국경제",
+   "kind": "news",
+   "published": "2026-05-14",
+   "retrieved_at": "2026-10-23",
+   "reliability": 0.7,
+   "tier": "B",
+   "stale": false
+  },
+  {
+   "id": "WTS10",
+   "title": "국내 챗GPT 이용자, 1년 새 5배 폭증(와이즈앱·리테일)",
+   "url": "https://twig24.com/news/world/2025/09/07/20250907500083",
+   "publisher": "트위그24",
+   "kind": "news",
+   "published": "2025-09-07",
+   "retrieved_at": "2026-10-23",
+   "reliability": 0.7,
+   "tier": "B",
+   "stale": false
+  },
+  {
+   "id": "WTS11",
+   "title": "한국인이 가장 많이 사용하는 AI앱은?…1위 ‘챗GPT’(와이즈앱·리테일)",
+   "url": "https://www.ddaily.co.kr/page/view/2025031115592022172",
+   "publisher": "디지털데일리",
+   "kind": "news",
+   "published": "2025-03-11",
+   "retrieved_at": "2026-10-23",
+   "reliability": 0.7,
+   "tier": "B",
+   "stale": false
+  },
+  {
+   "id": "WTS12",
+   "title": "번개장터, 2024 세컨핸드 리포트 공개",
+   "url": "https://byline.network/2025/01/22_2918273",
+   "publisher": "바이라인네트워크",
+   "kind": "news",
+   "published": "2025-01-22",
+   "retrieved_at": "2026-10-23",
+   "reliability": 0.7,
+   "tier": "B",
+   "stale": true
+  },
+  {
+   "id": "WTS13",
+   "title": "중고거래 시장도 ‘양극화’…글로벌로 쑥쑥 크는 당근(와이즈앱·리테일)",
+   "url": "https://news.mtn.co.kr/news-detail/2025102016453768892",
+   "publisher": "MTN 머니투데이방송",
+   "kind": "news",
+   "published": "2025-10-20",
+   "retrieved_at": "2026-10-23",
+   "reliability": 0.7,
+   "tier": "B",
+   "stale": false
+  },
+  {
+   "id": "WTS14",
+   "title": "당근, ‘2025 연말결산’ 데이터 공개",
+   "url": "https://ditoday.com/?p=138349",
+   "publisher": "디지털인사이트",
+   "kind": "news",
+   "published": "2025-12-18",
+   "retrieved_at": "2026-10-23",
+   "reliability": 0.5,
+   "tier": "C",
+   "stale": false
+  },
+  {
+   "id": "WTS15",
+   "title": "세대별 인기 여행지 살펴보니…20대 일본, 40대 베트남, 30대는?(KB국민카드)",
+   "url": "https://www.khan.co.kr/article/202409021107001",
+   "publisher": "경향신문",
+   "kind": "news",
+   "published": "2024-09-02",
+   "retrieved_at": "2026-10-23",
+   "reliability": 0.7,
+   "tier": "B",
+   "stale": true
+  },
+  {
+   "id": "WTS16",
+   "title": "하나카드 일본 현지 카드 이용 분석 보도('가성비' 일본여행 안 가나 했더니 더 많이 갔다)",
+   "url": "https://biz.sbs.co.kr/amp/article/20000228958",
+   "publisher": "SBS Biz",
+   "kind": "news",
+   "published": null,
+   "retrieved_at": "2026-10-23",
+   "reliability": 0.7,
+   "tier": "B"
+  },
+  {
+   "id": "WTS17",
+   "title": "카드사 일본 여행객 겨냥 카드 보도(관광지식정보시스템 인용)",
+   "url": "https://www.metroseoul.co.kr/article/20251016500028",
+   "publisher": "메트로신문",
+   "kind": "news",
+   "published": "2025-10-16",
+   "retrieved_at": "2026-10-23",
+   "reliability": 0.7,
+   "tier": "B",
+   "stale": false
+  },
+  {
+   "id": "WTS18",
+   "title": "‘별별 것 다 파는’ 퀵커머스…유통업계 새 성장동력 부상",
+   "url": "https://news.mtn.co.kr/news-detail/2026030914360987371",
+   "publisher": "MTN 머니투데이방송",
+   "kind": "news",
+   "published": "2026-03-10",
+   "retrieved_at": "2026-10-23",
+   "reliability": 0.7,
+   "tier": "B",
+   "stale": false
+  },
+  {
+   "id": "WTS19",
+   "title": "청년 1인가구 트렌드 리포트 2025",
+   "url": "https://blog.opensurvey.co.kr/trendreport/youth-soloeconomy-2025/",
+   "publisher": "오픈서베이 블로그",
+   "kind": "report",
+   "published": null,
+   "retrieved_at": "2026-10-23",
+   "reliability": 0.7,
+   "tier": "B"
+  },
+  {
+   "id": "WTS20",
+   "title": "저축왕으로 거듭난 글로벌 Z세대(KPR·한국방송광고진흥공사 조사 인용)",
+   "url": "https://magazine.hankyung.com/business/article/202502132844b",
+   "publisher": "한경매거진&북",
+   "kind": "news",
+   "published": "2025-02-16",
+   "retrieved_at": "2026-10-23",
+   "reliability": 0.7,
+   "tier": "B",
+   "stale": true
+  },
+  {
+   "id": "WTS21",
+   "title": "“폴더소비부터 셀고리즘까지”…KT, Z세대가 뽑은 트렌드 키워드 공개",
+   "url": "https://mobile.newsis.com/view/NISX20250825_0003301545",
+   "publisher": "뉴시스",
+   "kind": "news",
+   "published": "2025-08-25",
+   "retrieved_at": "2026-10-23",
+   "reliability": 0.7,
+   "tier": "B",
+   "stale": false
+  },
+  {
+   "id": "WTS22",
+   "title": "기분파 지름신 ‘필코노미’, 인생 순간몰입 ‘픽셀라이프’(트렌드코리아 2026 소개)",
+   "url": "https://v.daum.net/v/20251227000318332",
+   "publisher": "중앙SUNDAY(다음 전재)",
+   "kind": "news",
+   "published": "2025-12-27",
+   "retrieved_at": "2026-10-23",
+   "reliability": 0.7,
+   "tier": "B",
+   "stale": false
+  },
+  {
+   "id": "WTS23",
+   "title": "2025년 Z세대를 대표하는 11개의 페르소나",
+   "url": "https://www.careet.net/1549",
+   "publisher": "캐릿(대학내일20대연구소 운영)",
+   "kind": "community",
+   "published": null,
+   "retrieved_at": "2026-10-23",
+   "reliability": 0.5,
+   "tier": "C"
+  }
+ ],
+ "assumptions": [],
+ "unresolved": [],
+ "limits": [],
+ "clarifications": [],
+ "out_of_scope": {
+  "detected": false,
+  "suggested_agent": null
+ },
+ "input_refs": []
+}

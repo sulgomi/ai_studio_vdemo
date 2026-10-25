@@ -1,0 +1,555 @@
+[
+  {
+    "id": "A-genz-digital-ai_personalize-online",
+    "seg": "genz",
+    "need": "digital",
+    "mechanisms": [
+      "ai_personalize"
+    ],
+    "domain": "online",
+    "domain_label": "온라인쇼핑",
+    "score": 0.72,
+    "rank": 1,
+    "ceiling": 0.56,
+    "feasible": true,
+    "type": "미충족 핵심",
+    "confidence": "medium",
+    "rank_stability": 0.9,
+    "parts": {
+      "I": 0.91,
+      "U": 0.841,
+      "M": 0.426,
+      "D": 0.8,
+      "Q": 0.549,
+      "F": 1.0,
+      "R": 0.25
+    },
+    "facts": {
+      "cards_total": 34,
+      "cards_with_mechanism": [
+        0
+      ],
+      "need_gap": 0.6,
+      "nearest_card": "디지로카 London",
+      "nearest_sim": 0.2,
+      "signal_ids": [
+        "T2"
+      ],
+      "consumer_priority": 1,
+      "assumed_links": [],
+      "domain_card_share": 0.29,
+      "domain_spend": 20
+    },
+    "tension": false,
+    "assumption_dependent": true,
+    "evidence_ids": [
+      "T2",
+      "tag:ai_personalize",
+      "need:digital",
+      "tag:online_shop"
+    ]
+  },
+  {
+    "id": "A-genz-digital-auto_best-online",
+    "seg": "genz",
+    "need": "digital",
+    "mechanisms": [
+      "auto_best"
+    ],
+    "domain": "online",
+    "domain_label": "온라인쇼핑",
+    "score": 0.718,
+    "rank": 2,
+    "ceiling": 0.56,
+    "feasible": true,
+    "type": "미충족 핵심",
+    "confidence": "medium",
+    "rank_stability": 0.78,
+    "parts": {
+      "I": 0.91,
+      "U": 0.753,
+      "M": 0.426,
+      "D": 0.714,
+      "Q": 0.549,
+      "F": 1.0,
+      "R": 0.0
+    },
+    "facts": {
+      "cards_total": 34,
+      "cards_with_mechanism": [
+        1
+      ],
+      "need_gap": 0.6,
+      "nearest_card": "카카오뱅크 K-패스 프렌즈 체크",
+      "nearest_sim": 0.29,
+      "signal_ids": [
+        "T2"
+      ],
+      "consumer_priority": 1,
+      "assumed_links": [],
+      "domain_card_share": 0.29,
+      "domain_spend": 20
+    },
+    "tension": false,
+    "assumption_dependent": true,
+    "evidence_ids": [
+      "T2",
+      "tag:auto_best",
+      "need:digital",
+      "tag:online_shop"
+    ]
+  },
+  {
+    "id": "A-genz-saving-miss_refund-online",
+    "seg": "genz",
+    "need": "saving",
+    "mechanisms": [
+      "miss_refund"
+    ],
+    "domain": "online",
+    "domain_label": "온라인쇼핑",
+    "score": 0.714,
+    "rank": 3,
+    "ceiling": 0.56,
+    "feasible": true,
+    "type": "미충족 핵심",
+    "confidence": "high",
+    "rank_stability": 0.7,
+    "parts": {
+      "I": 0.793,
+      "U": 0.824,
+      "M": 0.483,
+      "D": 0.8,
+      "Q": 0.549,
+      "F": 1.0,
+      "R": 0.15
+    },
+    "facts": {
+      "cards_total": 34,
+      "cards_with_mechanism": [
+        0
+      ],
+      "need_gap": 0.56,
+      "nearest_card": "zgm.streaming",
+      "nearest_sim": 0.2,
+      "signal_ids": [
+        "T1",
+        "T3"
+      ],
+      "consumer_priority": 2,
+      "assumed_links": [],
+      "domain_card_share": 0.29,
+      "domain_spend": 20
+    },
+    "tension": true,
+    "assumption_dependent": true,
+    "evidence_ids": [
+      "T1",
+      "T3",
+      "tag:miss_refund",
+      "need:saving",
+      "tag:online_shop"
+    ]
+  },
+  {
+    "id": "A-genz-saving-life_event-dining",
+    "seg": "genz",
+    "need": "saving",
+    "mechanisms": [
+      "life_event"
+    ],
+    "domain": "dining",
+    "domain_label": "외식·배달",
+    "score": 0.703,
+    "rank": 4,
+    "ceiling": 0.56,
+    "feasible": true,
+    "type": "미충족 핵심",
+    "confidence": "medium",
+    "rank_stability": 0.0,
+    "parts": {
+      "I": 0.793,
+      "U": 0.741,
+      "M": 0.483,
+      "D": 0.8,
+      "Q": 0.5,
+      "F": 1.0,
+      "R": 0.0
+    },
+    "facts": {
+      "cards_total": 34,
+      "cards_with_mechanism": [
+        0
+      ],
+      "need_gap": 0.56,
+      "nearest_card": "zgm.streaming",
+      "nearest_sim": 0.2,
+      "signal_ids": [
+        "T1",
+        "T3"
+      ],
+      "consumer_priority": 2,
+      "assumed_links": [
+        "life_event"
+      ],
+      "domain_card_share": 0.41,
+      "domain_spend": 24
+    },
+    "tension": true,
+    "assumption_dependent": true,
+    "evidence_ids": [
+      "T1",
+      "T3",
+      "tag:life_event",
+      "need:saving",
+      "tag:dining_cafe"
+    ]
+  },
+  {
+    "id": "A-genz-simple-anti_cap-dining",
+    "seg": "genz",
+    "need": "simple",
+    "mechanisms": [
+      "anti_cap"
+    ],
+    "domain": "dining",
+    "domain_label": "외식·배달",
+    "score": 0.683,
+    "rank": 5,
+    "ceiling": 0.68,
+    "feasible": true,
+    "type": "차별 틈새",
+    "confidence": "medium",
+    "rank_stability": 0.0,
+    "parts": {
+      "I": 0.706,
+      "U": 0.853,
+      "M": 0.367,
+      "D": 0.8,
+      "Q": 0.5,
+      "F": 1.0,
+      "R": 0.0
+    },
+    "facts": {
+      "cards_total": 34,
+      "cards_with_mechanism": [
+        0
+      ],
+      "need_gap": 0.63,
+      "nearest_card": "zgm.streaming",
+      "nearest_sim": 0.2,
+      "signal_ids": [
+        "T3"
+      ],
+      "consumer_priority": 3,
+      "assumed_links": [],
+      "domain_card_share": 0.41,
+      "domain_spend": 24
+    },
+    "tension": false,
+    "assumption_dependent": true,
+    "evidence_ids": [
+      "T3",
+      "tag:anti_cap",
+      "need:simple",
+      "tag:dining_cafe"
+    ]
+  },
+  {
+    "id": "A-genz-simple-anti_cap+auto_best-dining",
+    "seg": "genz",
+    "need": "simple",
+    "mechanisms": [
+      "anti_cap",
+      "auto_best"
+    ],
+    "domain": "dining",
+    "domain_label": "외식·배달",
+    "score": 0.664,
+    "rank": 6,
+    "ceiling": 0.68,
+    "feasible": true,
+    "type": "차별 틈새",
+    "confidence": "medium",
+    "rank_stability": 0.0,
+    "parts": {
+      "I": 0.706,
+      "U": 0.748,
+      "M": 0.367,
+      "D": 0.833,
+      "Q": 0.5,
+      "F": 1.0,
+      "R": 0.0
+    },
+    "facts": {
+      "cards_total": 34,
+      "cards_with_mechanism": [
+        0,
+        1
+      ],
+      "need_gap": 0.63,
+      "nearest_card": "zgm.streaming",
+      "nearest_sim": 0.17,
+      "signal_ids": [
+        "T3"
+      ],
+      "consumer_priority": 3,
+      "assumed_links": [
+        "auto_best"
+      ],
+      "domain_card_share": 0.41,
+      "domain_spend": 24
+    },
+    "tension": false,
+    "assumption_dependent": true,
+    "evidence_ids": [
+      "T3",
+      "tag:anti_cap",
+      "tag:auto_best",
+      "need:simple",
+      "tag:dining_cafe"
+    ]
+  },
+  {
+    "id": "A-genz-social-social",
+    "seg": "genz",
+    "need": "social",
+    "mechanisms": [
+      "social"
+    ],
+    "domain": null,
+    "domain_label": null,
+    "score": 0.59,
+    "rank": 7,
+    "ceiling": 0.56,
+    "feasible": true,
+    "type": "차별 틈새",
+    "confidence": "low",
+    "rank_stability": 0.0,
+    "parts": {
+      "I": 0.649,
+      "U": 0.99,
+      "M": 0.15,
+      "D": 0.8,
+      "Q": 0.35,
+      "F": 1.0,
+      "R": 0.0
+    },
+    "facts": {
+      "cards_total": 34,
+      "cards_with_mechanism": [
+        0
+      ],
+      "need_gap": 0.98,
+      "nearest_card": "zgm.streaming",
+      "nearest_sim": 0.2,
+      "signal_ids": [],
+      "consumer_priority": 4,
+      "assumed_links": [],
+      "domain_card_share": null,
+      "domain_spend": null
+    },
+    "tension": true,
+    "assumption_dependent": true,
+    "evidence_ids": [
+      "tag:social",
+      "need:social"
+    ]
+  },
+  {
+    "id": "A-genz-social-esg_green",
+    "seg": "genz",
+    "need": "social",
+    "mechanisms": [
+      "esg_green"
+    ],
+    "domain": null,
+    "domain_label": null,
+    "score": 0.574,
+    "rank": 8,
+    "ceiling": 0.56,
+    "feasible": true,
+    "type": "차별 틈새",
+    "confidence": "low",
+    "rank_stability": 0.0,
+    "parts": {
+      "I": 0.649,
+      "U": 0.891,
+      "M": 0.15,
+      "D": 0.8,
+      "Q": 0.35,
+      "F": 1.0,
+      "R": 0.0
+    },
+    "facts": {
+      "cards_total": 34,
+      "cards_with_mechanism": [
+        0
+      ],
+      "need_gap": 0.98,
+      "nearest_card": "zgm.streaming",
+      "nearest_sim": 0.2,
+      "signal_ids": [],
+      "consumer_priority": 4,
+      "assumed_links": [
+        "esg_green"
+      ],
+      "domain_card_share": null,
+      "domain_spend": null
+    },
+    "tension": true,
+    "assumption_dependent": true,
+    "evidence_ids": [
+      "tag:esg_green",
+      "need:social"
+    ]
+  },
+  {
+    "id": "A-genz-travel-premium_voucher",
+    "seg": "genz",
+    "need": "travel",
+    "mechanisms": [
+      "premium_voucher"
+    ],
+    "domain": null,
+    "domain_label": null,
+    "score": 0.547,
+    "rank": 9,
+    "ceiling": 0.56,
+    "feasible": true,
+    "type": "차별 틈새",
+    "confidence": "low",
+    "rank_stability": 0.0,
+    "parts": {
+      "I": 0.501,
+      "U": 0.644,
+      "M": 0.331,
+      "D": 0.8,
+      "Q": 0.35,
+      "F": 1.0,
+      "R": 0.0
+    },
+    "facts": {
+      "cards_total": 34,
+      "cards_with_mechanism": [
+        1
+      ],
+      "need_gap": 0.51,
+      "nearest_card": "zgm.streaming",
+      "nearest_sim": 0.2,
+      "signal_ids": [
+        "T1"
+      ],
+      "consumer_priority": 5,
+      "assumed_links": [
+        "premium_voucher"
+      ],
+      "domain_card_share": null,
+      "domain_spend": null
+    },
+    "tension": true,
+    "assumption_dependent": true,
+    "evidence_ids": [
+      "T1",
+      "tag:premium_voucher",
+      "need:travel"
+    ]
+  },
+  {
+    "id": "A-genz-travel-lounge",
+    "seg": "genz",
+    "need": "travel",
+    "mechanisms": [
+      "lounge"
+    ],
+    "domain": null,
+    "domain_label": null,
+    "score": 0.543,
+    "rank": 10,
+    "ceiling": 0.645,
+    "feasible": true,
+    "type": "차별 틈새",
+    "confidence": "low",
+    "rank_stability": 0.0,
+    "parts": {
+      "I": 0.501,
+      "U": 0.627,
+      "M": 0.331,
+      "D": 0.8,
+      "Q": 0.35,
+      "F": 1.0,
+      "R": 0.0
+    },
+    "facts": {
+      "cards_total": 34,
+      "cards_with_mechanism": [
+        2
+      ],
+      "need_gap": 0.51,
+      "nearest_card": "zgm.streaming",
+      "nearest_sim": 0.2,
+      "signal_ids": [
+        "T1"
+      ],
+      "consumer_priority": 5,
+      "assumed_links": [],
+      "domain_card_share": null,
+      "domain_spend": null
+    },
+    "tension": true,
+    "assumption_dependent": true,
+    "evidence_ids": [
+      "T1",
+      "tag:lounge",
+      "need:travel"
+    ]
+  },
+  {
+    "id": "A-single-fixed_cost-life_event",
+    "seg": "single",
+    "need": "fixed_cost",
+    "mechanisms": [
+      "life_event"
+    ],
+    "domain": null,
+    "domain_label": null,
+    "score": 0.49,
+    "rank": 11,
+    "ceiling": 0.887,
+    "feasible": true,
+    "type": "차별 틈새",
+    "confidence": "low",
+    "rank_stability": 0.0,
+    "parts": {
+      "I": 0.65,
+      "U": 0.724,
+      "M": 0.15,
+      "D": 0.8,
+      "Q": 0.35,
+      "F": 1.0,
+      "R": 0.0
+    },
+    "facts": {
+      "cards_total": 34,
+      "cards_with_mechanism": [
+        0
+      ],
+      "need_gap": 0.51,
+      "nearest_card": "디지로카 London",
+      "nearest_sim": 0.2,
+      "signal_ids": [],
+      "consumer_priority": null,
+      "assumed_links": [
+        "life_event"
+      ],
+      "domain_card_share": null,
+      "domain_spend": null
+    },
+    "tension": false,
+    "assumption_dependent": true,
+    "evidence_ids": [
+      "tag:life_event",
+      "need:fixed_cost"
+    ]
+  }
+]

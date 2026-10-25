@@ -3,54 +3,622 @@
   "$id": "card-studio/agents/concept/in.schema.json",
   "title": "concept payload",
   "type": "object",
-  "required": ["pick", "segment_pack", "comp_empty", "comp_crowded", "consumer", "n_options"],
+  "required": [
+    "pick",
+    "segment_pack",
+    "comp_empty",
+    "comp_crowded",
+    "consumer",
+    "n_options"
+  ],
   "additionalProperties": false,
   "properties": {
     "pick": {
       "type": "object",
       "description": "whitespace.result.picks 중 H2에서 고른 것 그대로",
-      "required": ["seg", "need", "rationale", "evidence_ids"],
-      "properties": {"rank": {"type": "integer"}, "seg": {"type": "string"}, "need": {"type": "string"}, "rationale": {"type": "string"}, "evidence_ids": {"type": "array", "items": {"type": "string"}}, "risk": {"type": "string"}}
+      "required": [
+        "seg",
+        "need",
+        "rationale",
+        "evidence_ids"
+      ],
+      "properties": {
+        "rank": {
+          "type": "integer"
+        },
+        "seg": {
+          "type": "string"
+        },
+        "need": {
+          "type": "string"
+        },
+        "rationale": {
+          "type": "string"
+        },
+        "evidence_ids": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "risk": {
+          "type": "string"
+        },
+        "area_id": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "mechanisms": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "공백 혜택 방식. 최소 1안은 이것을 중심 장치로 쓴다"
+        },
+        "statement": {
+          "type": "string"
+        },
+        "unmet_gap": {
+          "type": "string"
+        },
+        "why_now": {
+          "type": "string"
+        },
+        "hypotheses_to_validate": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "kill_criteria": {
+          "type": "string"
+        },
+        "domain": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "description": "혜택 영역(소비 카테고리). 있으면 rates 의 중심 카테고리로 삼는다"
+        },
+        "evidence_refs": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "idea": {
+          "type": "object",
+          "description": "탐색 파이프라인 아이디어를 영역으로 올린 경우: 이름, 한 줄, 새로운 점, 가장 비슷한 실제 카드, 컨셉 초안(제안값 포함), 검증 결과",
+          "properties": {
+            "id": {
+              "type": "string"
+            },
+            "name": {
+              "type": "string"
+            },
+            "one_liner": {
+              "type": "string"
+            },
+            "what_is_new": {
+              "type": "string"
+            },
+            "nearest_cards": {
+              "type": "array"
+            },
+            "concept": {
+              "type": "object"
+            },
+            "evidence_ids": {
+              "type": "array"
+            },
+            "risks": {
+              "type": "array"
+            },
+            "open_questions": {
+              "type": "array"
+            },
+            "platform_hook": {
+              "type": "string"
+            },
+            "verification": {
+              "type": "object"
+            }
+          }
+        }
+      }
     },
     "segment_pack": {
       "type": "object",
-      "required": ["allowed_tags", "categories", "constraints", "segment"],
+      "required": [
+        "allowed_tags",
+        "categories",
+        "constraints",
+        "segment"
+      ],
       "properties": {
-        "allowed_tags": {"type": "object", "additionalProperties": {"type": "string"}},
-        "categories": {"type": "object", "description": "카테고리 키 → 라벨. 예: dining → 외식", "additionalProperties": {"type": "string"}},
-        "constraints": {
+        "allowed_tags": {
           "type": "object",
-          "required": ["max_rate", "max_cx", "fee_range"],
-          "properties": {
-            "max_rate": {"type": "number", "default": 0.03},
-            "max_cx": {"type": "number", "default": 0.5},
-            "fee_range": {"type": "array", "minItems": 2, "maxItems": 2, "items": {"type": "number"}, "description": "연회비 범위(만원)"},
-            "links_allowed": {"type": "array", "items": {"enum": ["sec", "ins", "bank"]}}
+          "additionalProperties": {
+            "type": "string"
           }
         },
-        "segment": {"type": "object", "required": ["id", "name"], "properties": {"id": {"type": "string"}, "name": {"type": "string"}, "complexity_tolerance": {"type": "number"}, "need_weights": {"type": "object"}}}
+        "categories": {
+          "type": "object",
+          "description": "카테고리 키 → 라벨. 예: dining → 외식",
+          "additionalProperties": {
+            "type": "string"
+          }
+        },
+        "constraints": {
+          "type": "object",
+          "required": [
+            "max_rate",
+            "max_cx",
+            "fee_range"
+          ],
+          "properties": {
+            "max_rate": {
+              "type": "number",
+              "default": 0.03
+            },
+            "max_cx": {
+              "type": "number",
+              "default": 0.5
+            },
+            "fee_range": {
+              "type": "array",
+              "minItems": 2,
+              "maxItems": 2,
+              "items": {
+                "type": "number"
+              },
+              "description": "연회비 범위(만원)"
+            },
+            "links_allowed": {
+              "type": "array",
+              "items": {
+                "enum": [
+                  "sec",
+                  "ins",
+                  "bank"
+                ]
+              }
+            }
+          }
+        },
+        "segment": {
+          "type": "object",
+          "required": [
+            "id",
+            "name"
+          ],
+          "properties": {
+            "id": {
+              "type": "string"
+            },
+            "name": {
+              "type": "string"
+            },
+            "complexity_tolerance": {
+              "type": "number"
+            },
+            "need_weights": {
+              "type": "object"
+            }
+          }
+        }
       }
     },
-    "comp_empty": {"type": "array", "items": {"type": "object", "required": ["tag"], "properties": {"tag": {"type": "string"}, "reason": {"type": "string"}}}},
-    "comp_crowded": {"type": "array", "items": {"type": "object", "required": ["tag"], "properties": {"tag": {"type": "string"}, "reason": {"type": "string"}}}},
+    "comp_empty": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "tag"
+        ],
+        "properties": {
+          "tag": {
+            "type": "string"
+          },
+          "reason": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "comp_crowded": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "tag"
+        ],
+        "properties": {
+          "tag": {
+            "type": "string"
+          },
+          "reason": {
+            "type": "string"
+          }
+        }
+      }
+    },
     "benchmarks": {
       "type": "array",
       "description": "코드가 경쟁 카드 혜택률을 혜택 유형군별로 집계",
-      "items": {"type": "object", "required": ["mechanism_group", "unit", "low", "high", "median", "n"], "properties": {"mechanism_group": {"type": "string"}, "unit": {"enum": ["%", "원"]}, "low": {"type": "number"}, "high": {"type": "number"}, "median": {"type": "number"}, "n": {"type": "integer"}, "card_ids": {"type": "array", "items": {"type": "string"}}}}
+      "items": {
+        "type": "object",
+        "required": [
+          "mechanism_group",
+          "unit",
+          "low",
+          "high",
+          "median",
+          "n"
+        ],
+        "properties": {
+          "mechanism_group": {
+            "type": "string"
+          },
+          "unit": {
+            "enum": [
+              "%",
+              "원"
+            ]
+          },
+          "low": {
+            "type": "number"
+          },
+          "high": {
+            "type": "number"
+          },
+          "median": {
+            "type": "number"
+          },
+          "n": {
+            "type": "integer"
+          },
+          "card_ids": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        }
+      }
     },
-    "consumer": {"type": "object", "required": ["top_needs", "must_have", "can_give_up"], "properties": {"top_needs": {"type": "array"}, "must_have": {"type": "array", "items": {"type": "string"}}, "can_give_up": {"type": "array", "items": {"type": "string"}}}},
-    "trend_refs": {"type": "array", "items": {"type": "object", "required": ["id", "title"], "properties": {"id": {"type": "string"}, "title": {"type": "string"}, "impl": {"type": "string"}}}},
-    "n_options": {"type": "integer", "const": 3},
+    "consumer": {
+      "type": "object",
+      "required": [
+        "top_needs",
+        "must_have",
+        "can_give_up"
+      ],
+      "properties": {
+        "top_needs": {
+          "type": "array"
+        },
+        "must_have": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "can_give_up": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "trend_refs": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "title"
+        ],
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "title": {
+            "type": "string"
+          },
+          "impl": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "n_options": {
+      "type": "integer",
+      "const": 3
+    },
     "feedback": {
-      "type": ["object", "null"],
+      "type": [
+        "object",
+        "null"
+      ],
       "description": "재작업일 때",
       "properties": {
-        "from": {"enum": ["eval", "validation", "guardrail", "human"]},
-        "target_option": {"type": ["integer", "null"], "description": "특정 안만 고칠 때 index"},
-        "guardrail_fixes": {"type": "array", "items": {"type": "object", "required": ["item", "suggestion"], "properties": {"item": {"type": "string"}, "suggestion": {"type": "string"}}}},
-        "metrics": {"type": "object", "description": "미달 지표와 값. 예: {adopt: 0.31, topReject: inertia}"},
-        "human_note": {"type": "string"}
+        "from": {
+          "enum": [
+            "eval",
+            "validation",
+            "guardrail",
+            "human"
+          ]
+        },
+        "target_option": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "description": "특정 안만 고칠 때 index"
+        },
+        "guardrail_fixes": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [
+              "item",
+              "suggestion"
+            ],
+            "properties": {
+              "item": {
+                "type": "string"
+              },
+              "suggestion": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "metrics": {
+          "type": "object",
+          "description": "미달 지표와 값. 예: {adopt: 0.31, topReject: inertia}"
+        },
+        "human_note": {
+          "type": "string"
+        }
       }
+    },
+    "evidence": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "kind",
+          "text"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^ev:[A-Za-z0-9_]+$"
+          },
+          "kind": {
+            "enum": [
+              "fact",
+              "trend",
+              "case",
+              "constraint",
+              "theme",
+              "voice",
+              "prediction",
+              "analogue"
+            ]
+          },
+          "text": {
+            "type": "string"
+          },
+          "age_scope": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "source": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "published": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "confidence": {
+            "enum": [
+              "high",
+              "medium",
+              "low",
+              null
+            ]
+          },
+          "stale": {
+            "type": "boolean"
+          }
+        }
+      },
+      "description": "근거 팩에서 코드가 골라 준 사실·트렌드·사례. 인용은 id(ev:...)로"
+    },
+    "competitor_refs": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "name",
+          "issuer"
+        ],
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          },
+          "official_name": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "issuer": {
+            "type": "string"
+          },
+          "type": {
+            "type": "string"
+          },
+          "similarity": {
+            "type": "number"
+          },
+          "annual_fee_won": {
+            "type": [
+              "object",
+              "null"
+            ]
+          },
+          "min_prev_month_spend_won": {
+            "type": [
+              "integer",
+              "null"
+            ]
+          },
+          "on_sale": {
+            "type": [
+              "boolean",
+              "null"
+            ]
+          },
+          "headline_benefits": {
+            "type": "array"
+          },
+          "explicit_target_text": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "source_url": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "is_own": {
+            "type": "boolean"
+          }
+        }
+      },
+      "description": "기회영역과 태그가 가장 비슷한 실제 카드(공식 페이지 기준). cvp.alternative 는 여기서 고른다"
+    },
+    "invest_rules": {
+      "type": "array",
+      "description": "투자 연계를 넣을 때 지켜야 할 제약(근거 팩의 constraint). 비어 있으면 투자 연계는 범위 밖",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "rule"
+        ],
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "rule": {
+            "type": "string"
+          },
+          "status": {
+            "type": "string"
+          },
+          "as_of": {
+            "type": [
+              "string",
+              "null"
+            ]
+          }
+        }
+      }
+    },
+    "own_refs": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "name",
+          "issuer"
+        ],
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          },
+          "official_name": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "issuer": {
+            "type": "string"
+          },
+          "type": {
+            "type": "string"
+          },
+          "similarity": {
+            "type": "number"
+          },
+          "annual_fee_won": {
+            "type": [
+              "object",
+              "null"
+            ]
+          },
+          "min_prev_month_spend_won": {
+            "type": [
+              "integer",
+              "null"
+            ]
+          },
+          "on_sale": {
+            "type": [
+              "boolean",
+              "null"
+            ]
+          },
+          "headline_benefits": {
+            "type": "array"
+          },
+          "explicit_target_text": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "source_url": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "is_own": {
+            "type": "boolean"
+          }
+        }
+      },
+      "description": "자사 카드 중 이 영역과 태그가 가장 비슷한 실제 판매 카드(최대 3종). 경쟁 카드가 아니라 잠식·중복을 점검하는 비교 대상이다. 자사 카드사가 정해진 시나리오에서만 채운다."
     }
   }
 }

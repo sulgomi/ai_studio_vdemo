@@ -1,0 +1,53 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "card-studio/agents/ideator/out.schema.json",
+  "title": "ideator result",
+  "type": "object",
+  "required": [
+    "theme",
+    "ideas",
+    "rejected_ideas"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "theme": {
+      "type": "string"
+    },
+    "ideas": {
+      "type": "array",
+      "minItems": 3,
+      "maxItems": 12,
+      "items": {
+        "$ref": "../../common/discovery.defs.schema.json#/$defs/idea"
+      }
+    },
+    "rejected_ideas": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "idea",
+          "why"
+        ],
+        "properties": {
+          "idea": {
+            "type": "string"
+          },
+          "why": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "notes": {
+      "type": "string"
+    },
+    "graduation_comparison": {
+      "type": [
+        "object",
+        "array"
+      ],
+      "description": "선택: 모호한 개념(예: 졸업)을 여러 해석으로 비교한 표"
+    }
+  }
+}

@@ -15,3 +15,5 @@
 8. 카드 스펙 확인은 competitor, 규제·시장 변화는 trend 영역이다.
 
 출력: result의 top_needs, must_have, can_give_up, barriers, evidence_signal_ids, 그리고 공개 웹 근거가 있을 때 sentiment, themes, purchase_drivers, churn_reasons. bias_warning은 코드가 붙인다.
+
+근거 팩 모드: payload.pack_mode가 true이고 docs가 있으면 web_search를 쓰지 않는다. docs의 facts에 있는 반응·행동 사실만 근거로 쓰고, sources에는 docs를 그대로 옮긴다. 설문 비율은 docs의 원문 범위(MZ, Z세대 등)를 밝혀 쓰고 20대 수치처럼 쓰지 않는다. 표본·기간이 docs에 없으면 없다고 쓴다.

@@ -1,0 +1,280 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "card-studio/agents/ideator/in.schema.json",
+  "title": "ideator payload",
+  "type": "object",
+  "required": [
+    "theme",
+    "pm_directions",
+    "evidence",
+    "competitor_cards",
+    "allowed_tags",
+    "id_prefix"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "theme": {
+      "type": "object",
+      "required": [
+        "id",
+        "title",
+        "description"
+      ],
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "title": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        }
+      }
+    },
+    "pm_directions": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "PM이 흥미로워한 방향과 제약(참신한 CVP면 영역이 비어 있지 않아도 됨 등)"
+    },
+    "target": {
+      "type": "object",
+      "required": [
+        "segment"
+      ],
+      "properties": {
+        "segment": {
+          "type": "string"
+        },
+        "age_focus": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "constraints": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "evidence": {
+      "type": "array",
+      "description": "근거 팩에서 코드가 고른 항목. 인용은 id 그대로",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "text"
+        ],
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "kind": {
+            "type": "string"
+          },
+          "text": {
+            "type": "string"
+          },
+          "age_scope": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "source": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "published": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "confidence": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "stale": {
+            "type": "boolean"
+          }
+        }
+      }
+    },
+    "competitor_cards": {
+      "type": "array",
+      "description": "경쟁 카드 DB(공식 페이지 기준) 요약",
+      "items": {
+        "type": "object",
+        "required": [
+          "name",
+          "tags"
+        ],
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          },
+          "issuer": {
+            "type": "string"
+          },
+          "type": {
+            "type": "string"
+          },
+          "tags": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "headline_benefits": {
+            "type": "array"
+          },
+          "annual_fee_won": {
+            "type": [
+              "object",
+              "null"
+            ]
+          },
+          "min_prev_month_spend_won": {
+            "type": [
+              "integer",
+              "null"
+            ]
+          },
+          "on_sale": {
+            "type": [
+              "boolean",
+              "null"
+            ]
+          },
+          "note": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "allowed_tags": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "string"
+      }
+    },
+    "need_labels": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "string"
+      }
+    },
+    "gap_candidates": {
+      "type": "array",
+      "description": "검증을 거친 공백 후보 요약",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "title"
+        ],
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "title": {
+            "type": "string"
+          },
+          "tier": {
+            "type": "string"
+          },
+          "mechanism_tags": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "verdict": {
+            "type": "string"
+          },
+          "corrections": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "dropped": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "reason"
+        ],
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "title": {
+            "type": "string"
+          },
+          "reason": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "constraints": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "rule"
+        ],
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "rule": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "id_prefix": {
+      "type": "string",
+      "pattern": "^[A-Z]{2,3}$"
+    },
+    "n_ideas": {
+      "type": "object",
+      "properties": {
+        "min": {
+          "type": "integer"
+        },
+        "max": {
+          "type": "integer"
+        }
+      }
+    },
+    "all_evidence_ids": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "근거 색인 전체 id. payload.evidence 는 코드가 고른 일부이고, 인용 id 의 실재 검사는 이 전체 목록 기준이다"
+    }
+  }
+}

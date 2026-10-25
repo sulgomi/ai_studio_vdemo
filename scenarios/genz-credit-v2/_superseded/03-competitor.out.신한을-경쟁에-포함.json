@@ -1,0 +1,211 @@
+{
+  "run_id": "v2rec",
+  "request_id": "v2rec-competitor-r1",
+  "agent": "competitor",
+  "contract_version": "1.0",
+  "model": "claude-sonnet-5-5",
+  "status": "ok",
+  "answer": "50종 중 청구할인형(24종), 해외결제·환전(20종), 온라인쇼핑(19종), 외식·카페(17종), 편의점·마트(14종), 실적 구간제(14종)가 붐비는 영역입니다. 소셜, 혜택 풀 공유, AI 개인화, 실적조건 완화, 놓친혜택 환급, 라이프이벤트 전환 등은 0종이고 챌린지는 1종이라 공백 후보입니다. GenZ와 혜택 구조가 가까운 신용카드는 올바른 FLEX, Discount Plan+, BC 바로 K-패스 카드입니다.",
+  "result": {
+    "crowded": [
+      {
+        "tag": "reward_discount",
+        "count": 24,
+        "reason": "50종 중 24종으로 태그 집계 1위. 청구할인형은 대부분의 발급사가 이미 채택한 보상 방식이다."
+      },
+      {
+        "tag": "travel_fx",
+        "count": 20,
+        "reason": "50종 중 20종으로 집계 2위. 해외결제·환전 혜택이 신용카드와 체크카드에 넓게 퍼져 있다."
+      },
+      {
+        "tag": "online_shop",
+        "count": 19,
+        "reason": "50종 중 19종으로 집계 3위. 온라인쇼핑 할인·적립은 PLCC 제휴 카드와 생활형 카드에 공통으로 들어 있다."
+      },
+      {
+        "tag": "dining_cafe",
+        "count": 17,
+        "reason": "50종 중 17종으로 집계 4위. 외식·카페는 생활 소비 혜택의 기본 구성이다."
+      },
+      {
+        "tag": "mart_daily",
+        "count": 14,
+        "reason": "50종 중 14종으로 집계 5위(실적 구간제와 동률). 편의점·마트 혜택은 생활형 카드에 고정적으로 포함된다."
+      },
+      {
+        "tag": "tiered_perf",
+        "count": 14,
+        "reason": "50종 중 14종이 실적 구간제를 쓰고 있어 전월실적 조건 구조가 서로 비슷하다."
+      },
+      {
+        "tag": "reward_point",
+        "count": 13,
+        "reason": "50종 중 13종으로 집계 7위. 포인트 적립형은 PLCC 제휴 카드와 트래블 카드에서 흔하다."
+      },
+      {
+        "tag": "subscription_ott",
+        "count": 12,
+        "reason": "50종 중 12종으로 집계 공동 8위(대중교통, 공과금과 동률). 상위 8개 경계가 동률이라 구독/OTT를 포함했다."
+      }
+    ],
+    "empty": [
+      {
+        "tag": "social",
+        "count": 0,
+        "reason": "50종 중 0종. 친구·지인과 혜택을 주고받는 소셜 구조를 가진 카드가 없다."
+      },
+      {
+        "tag": "group_pooling",
+        "count": 0,
+        "reason": "50종 중 0종. 여러 사람이 혜택을 모아 나눠 쓰는 구조가 없다."
+      },
+      {
+        "tag": "ai_personalize",
+        "count": 0,
+        "reason": "50종 중 0종. 유사한 auto_best(자동 최적 혜택)도 1종뿐이다."
+      },
+      {
+        "tag": "anti_cap",
+        "count": 0,
+        "reason": "50종 중 0종. 실적 구간제가 14종인 데 비해 실적조건 완화 태그는 없고, 실적 부족분 보전도 2종이다."
+      },
+      {
+        "tag": "miss_refund",
+        "count": 0,
+        "reason": "50종 중 0종. 놓친 혜택을 돌려주는 구조를 가진 카드가 없다."
+      },
+      {
+        "tag": "life_event",
+        "count": 0,
+        "reason": "50종 중 0종. 취업, 독립 같은 생애 전환 시점에 혜택이 바뀌는 카드가 없다."
+      },
+      {
+        "tag": "benefit_rental",
+        "count": 0,
+        "reason": "50종 중 0종. 유사한 월 변경형(monthly_switch)은 3종이다."
+      },
+      {
+        "tag": "challenge",
+        "count": 1,
+        "reason": "50종 중 1종(처음(ANNIVERSE))뿐이며 target에 young이 있는 카드에는 없다."
+      },
+      {
+        "tag": "subscription_ledger",
+        "count": 0,
+        "reason": "50종 중 0종. 구독/OTT 혜택은 12종이 갖고 있으나 구독 장부와 결제 예정 알림 기능을 갖춘 카드는 없다."
+      },
+      {
+        "tag": "esg_green",
+        "count": 0,
+        "reason": "50종 중 0종. 친환경 소비 혜택을 가진 카드가 없다."
+      }
+    ],
+    "nearest": [
+      {
+        "name": "올바른 FLEX",
+        "card_id": "c26",
+        "why": "NH농협 신용카드로 target에 young이 있고 배달, 구독/OTT, 외식·카페, 대중교통, 편의점·마트, 온라인쇼핑 6개 생활 소비 태그가 겹친다. 청구할인형에 결제수단 가산 구조를 더했다."
+      },
+      {
+        "name": "Discount Plan+",
+        "card_id": "c02",
+        "why": "신한 신용카드로 target에 young이 있고 배달, 구독/OTT, 외식·카페, 편의점·마트, 온라인쇼핑이 겹친다. 청구할인형에 실적 구간제, 팩 택1, 시간대 선택, 기간 보너스를 더한 구조다."
+      },
+      {
+        "name": "BC 바로 K-패스 카드",
+        "card_id": "gc15",
+        "why": "BC카드 신용카드로 target이 young이며 대중교통, 정부 환급 연계, 구독/OTT, 편의점·마트, 공과금, 해외결제를 묶은 환급형 구조다. 대상 한정 태그도 있어 청년층 겨냥이 분명하다."
+      }
+    ],
+    "easy_to_copy": [
+      "reward_discount(청구할인형): 50종 중 24종이 쓰는 가장 흔한 보상 방식이라 구조만으로는 차별점이 되기 어렵다.",
+      "dining_cafe, mart_daily, online_shop 같은 생활 가맹점 할인: 각각 14종 이상이 보유해 경쟁사가 가맹점 목록만 바꿔 따라 할 수 있다.",
+      "subscription_ott(12종)와 delivery(8종): 가맹점 추가만으로 대응 가능한 영역이다.",
+      "transit과 govt_link: 대중교통 12종, 정부 환급 연계 3종이 이미 운영 중이고 체크카드에 몰려 있어 신용카드로 옮겨 오기 쉽다.",
+      "select_pack, select_item 같은 팩·항목 선택형: 각각 6종, 4종이 운영 중이라 설계 방식이 알려져 있다.",
+      "spend_free와 no_cap(무실적, 한도 없음): 각각 10종, 7종이 채택해 조건 설계만으로 모방할 수 있다."
+    ],
+    "products": [],
+    "comparison_with_own_card": null,
+    "db_as_of": null
+  },
+  "findings": [
+    {
+      "id": "competitor#0",
+      "claim": "입력 tag_counts 기준 reward_discount 24종, travel_fx 20종, online_shop 19종, dining_cafe 17종, mart_daily 14종, tiered_perf 14종이 상위 태그다.",
+      "type": "fact",
+      "source_id": "DB1",
+      "confidence": "high"
+    },
+    {
+      "id": "competitor#1",
+      "claim": "입력 tag_counts 기준 social, group_pooling, ai_personalize, anti_cap, miss_refund, life_event, benefit_rental, esg_green, subscription_ledger는 0종, challenge는 1종이다.",
+      "type": "fact",
+      "source_id": "DB1",
+      "confidence": "high"
+    },
+    {
+      "id": "competitor#2",
+      "claim": "competitor_db에서 target이 young 단독인 신용카드는 네이버 현대카드 Edition2, 무신사 삼성카드, BC 바로 K-패스 카드 3종이고, 나머지 young 단독 카드는 체크카드다.",
+      "type": "fact",
+      "source_id": "DB1",
+      "confidence": "high"
+    },
+    {
+      "id": "competitor#3",
+      "claim": "올바른 FLEX, Discount Plan+, BC 바로 K-패스 카드는 young 타깃과 생활 소비 태그가 겹쳐 GenZ 신용카드의 직접 경쟁 후보로 본다.",
+      "type": "estimate",
+      "source_id": null,
+      "confidence": "medium"
+    },
+    {
+      "id": "competitor#4",
+      "claim": "DB의 신용카드에서 GenZ를 겨냥한 소셜, 챌린지, 개인화 구조는 거의 비어 있는 것으로 보이나, 시판 전체 상품과 같은지는 공시 재확인이 필요하다.",
+      "type": "estimate",
+      "source_id": null,
+      "confidence": "low"
+    }
+  ],
+  "sources": [
+    {
+      "id": "DB1",
+      "title": "경쟁 카드 DB 50종과 태그 집계(입력 payload competitor_db, tag_counts, 기준일 2026-10-23)",
+      "url": "https://card-studio.invalid/scenarios/genz-credit-v2/03-competitor/in.json",
+      "publisher": "card-studio 입력 데이터",
+      "kind": "db",
+      "published": "2026-10-23",
+      "retrieved_at": "2026-10-23",
+      "reliability": 0.6
+    }
+  ],
+  "assumptions": [
+    "GenZ 근접도는 DB의 target에 young이 있는지와 생활 소비 태그 겹침 수로 판단함",
+    "신용카드 기획이므로 nearest는 type이 credit인 카드에서 고름",
+    "태그별 카드 수는 직접 세지 않고 입력 tag_counts를 그대로 인용함",
+    "투자 연계는 H1에서 범위 밖으로 확인되어 invest_reward, point_to_stock은 공백 후보에서 제외함"
+  ],
+  "unresolved": [
+    "상품 비교표(products): depth=overview라 상세 조회를 하지 않아 비어 있음",
+    "자사 카드명이 지정되지 않아 자사 비교 없음"
+  ],
+  "limits": [
+    "DB 기준일은 2026-10-23으로 입력돼 있으나 카드별 확인 일자와 프로모션 종료일이 없어 연회비·혜택 조건은 공시 재확인이 필요함",
+    "subscription_ott, transit, fixed_bills가 12종으로 동률이라 상위 8개 태그 경계가 모호함",
+    "young 또는 free 타깃의 PLCC 제휴 신용카드(네이버 현대카드 Edition2, 무신사 삼성카드 등)도 있어 nearest 3종 밖에 근접 후보가 더 있음",
+    "가입자 수, 발급량, 수익성은 확인 불가"
+  ],
+  "clarifications": [],
+  "out_of_scope": {
+    "detected": false,
+    "suggested_agent": null
+  },
+  "followups": [
+    "nearest 3종의 연회비와 혜택 한도를 조회해 줘",
+    "소셜·챌린지 공백을 GenZ 컨셉으로 연결해 줘",
+    "자사 카드와 나란히 비교해 줘"
+  ],
+  "input_refs": [
+    "03-competitor/in.json"
+  ]
+}

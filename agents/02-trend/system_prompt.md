@@ -16,3 +16,5 @@
 9. 카드 혜택 비교 질문은 competitor, 소비자 반응 질문은 consumer 영역이라고 알리고 out_of_scope를 표시한다.
 
 출력: result.signals, result.regulatory_changes, 그리고 봉투의 findings(시그널마다 fact 1개 이상), limits(기준 기간·표본 차이, 확인 못 한 부분).
+
+근거 팩 모드: payload.pack_mode가 true이고 docs가 있으면 web_search를 쓰지 않는다. docs의 facts에 있는 사실만 근거로 시그널을 쓰고, source_ids에는 docs의 id를 그대로 넣는다. docs에 없는 사실·수치를 만들지 않고, 각 doc의 published와 reliability를 시그널의 발행일·신뢰도 판단에 그대로 쓴다. 20대가 아닌 범위(MZ, Z세대, 전 연령)의 사실이면 impl에 그 범위를 밝힌다.

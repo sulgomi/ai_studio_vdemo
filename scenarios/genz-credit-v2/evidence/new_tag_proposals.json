@@ -1,0 +1,77 @@
+[
+ {
+  "key": "self_budget_cap",
+  "label": "자기 설정 예산 한도",
+  "definition": "고객이 정한 월 예산을 카드 이용한도나 알림 기준으로 적용한다"
+ },
+ {
+  "key": "budget_keep_bonus",
+  "label": "예산 지킴 가산",
+  "definition": "전월 예산을 넘지 않은 경우 다음 달 적립률을 올린다"
+ },
+ {
+  "key": "crew_vote_category",
+  "label": "크루 투표 혜택 영역",
+  "definition": "친구 묶음이 투표로 다음 달 혜택 업종을 정하고 각자 카드에 적용한다"
+ },
+ {
+  "key": "experience_category_pack",
+  "label": "경험 업종 혜택",
+  "definition": "소비재가 아니라 함께 하는 여가 경험 업종에 혜택을 준다"
+ },
+ {
+  "key": "subscription_slot",
+  "label": "구독 슬롯 선택 할인",
+  "definition": "고객이 직접 지정한 정기결제 몇 개에만 할인을 적용하고, 매월 바꿀 수 있다"
+ },
+ {
+  "key": "subscription_ledger",
+  "label": "구독 장부·결제 예정 알림",
+  "definition": "카드로 나가는 정기결제를 모아 합계·예정일·중복·금액 변동을 알린다"
+ },
+ {
+  "key": "perf_graduation",
+  "label": "실적 졸업",
+  "definition": "일정 보유 기간과 정시 납부·꾸준한 사용을 채우면 전월실적 조건이 영구 해제되는 구조"
+ },
+ {
+  "key": "zero_floor",
+  "label": "혜택 0 방지",
+  "definition": "실적 미달 월에도 기본 적립을 남겨 혜택이 0원이 되지 않게 하는 하한"
+ },
+ {
+  "key": "single_exclusion_perf",
+  "label": "제외 항목 1개 실적",
+  "definition": "실적 제외 항목을 1개로 줄이고 할부·취소·할인액 처리 기준을 공개하는 실적 산정 방식"
+ },
+ {
+  "key": "seasonal_slot",
+  "label": "제철 슬롯",
+  "definition": "할인율·한도·선택권이라는 슬롯 형식은 고정하고, 슬롯에 들어갈 제휴처 풀을 시즌마다 바꾸는 혜택 방식"
+ },
+ {
+  "key": "evergreen_fallback",
+  "label": "상설 대체 선택지",
+  "definition": "교체형 혜택 풀에 늘 쓸 수 있는 상설 업종을 함께 넣어 혜택 공백을 막는 방식"
+ },
+ {
+  "key": "post_purchase_pick",
+  "label": "사후 1건 지정",
+  "definition": "결제가 끝난 뒤 고객이 거래 한 건을 골라 높은 혜택을 적용한다"
+ },
+ {
+  "key": "value_spend_reward",
+  "label": "가치소비 보상",
+  "definition": "업종이 아니라 고객이 의미를 둔 결제에 혜택을 준다"
+ },
+ {
+  "key": "first_try_reward",
+  "label": "첫 시도 보상",
+  "definition": "고객 결제 이력상 처음인 업종의 첫 결제를 보상하는 구조"
+ },
+ {
+  "key": "habit_conversion",
+  "label": "단골 전환 보상",
+  "definition": "처음 시도한 곳을 일정 기간 안에 다시 찾으면 추가 보상하는 구조"
+ }
+]

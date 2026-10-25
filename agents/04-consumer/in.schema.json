@@ -3,28 +3,153 @@
   "$id": "card-studio/agents/consumer/in.schema.json",
   "title": "consumer payload",
   "type": "object",
-  "required": ["segment", "need_labels", "trend_signals"],
+  "required": [
+    "segment",
+    "need_labels",
+    "trend_signals"
+  ],
   "additionalProperties": false,
   "properties": {
     "segment": {
       "type": "object",
-      "required": ["id", "name", "monthly_spend", "complexity_tolerance", "need_weights"],
+      "required": [
+        "id",
+        "name",
+        "monthly_spend",
+        "complexity_tolerance",
+        "need_weights"
+      ],
       "properties": {
-        "id": {"type": "string", "description": "예: investor"},
-        "name": {"type": "string", "description": "예: 2030 투자입문자"},
-        "monthly_spend": {"type": "object", "description": "카테고리 → 월 소비(만원), PM 가정치", "additionalProperties": {"type": "number", "minimum": 0}},
-        "complexity_tolerance": {"type": "number", "minimum": 0, "maximum": 1},
-        "digital_level": {"type": "number", "minimum": 0, "maximum": 1},
-        "need_weights": {"type": "object", "additionalProperties": {"type": "number", "minimum": 0, "maximum": 1}},
-        "is_assumption": {"type": "boolean", "default": true}
+        "id": {
+          "type": "string",
+          "description": "예: investor"
+        },
+        "name": {
+          "type": "string",
+          "description": "예: 2030 투자입문자"
+        },
+        "monthly_spend": {
+          "type": "object",
+          "description": "카테고리 → 월 소비(만원), PM 가정치",
+          "additionalProperties": {
+            "type": "number",
+            "minimum": 0
+          }
+        },
+        "complexity_tolerance": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "digital_level": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "need_weights": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "number",
+            "minimum": 0,
+            "maximum": 1
+          }
+        },
+        "is_assumption": {
+          "type": "boolean",
+          "default": true
+        }
       }
     },
-    "need_labels": {"type": "object", "minProperties": 3, "additionalProperties": {"type": "string"}},
+    "need_labels": {
+      "type": "object",
+      "minProperties": 3,
+      "additionalProperties": {
+        "type": "string"
+      }
+    },
     "trend_signals": {
       "type": "array",
-      "items": {"type": "object", "required": ["id", "title", "impl"], "properties": {"id": {"type": "string", "pattern": "^T[0-9]+$"}, "title": {"type": "string"}, "impl": {"type": "string"}, "topic": {"type": "string"}}}
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "title",
+          "impl"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^T[0-9]+$"
+          },
+          "title": {
+            "type": "string"
+          },
+          "impl": {
+            "type": "string"
+          },
+          "topic": {
+            "type": "string"
+          }
+        }
+      }
     },
-    "public_sources_enabled": {"type": "boolean", "default": true},
-    "sentiment_source": {"enum": ["none", "stub", "api"], "default": "stub"}
+    "public_sources_enabled": {
+      "type": "boolean",
+      "default": true
+    },
+    "sentiment_source": {
+      "enum": [
+        "none",
+        "stub",
+        "api"
+      ],
+      "default": "stub"
+    },
+    "docs": {
+      "type": "array",
+      "description": "근거 팩 모드: 검색 대신 코드가 골라 준 출처 문서. 이 문서의 사실만 근거로 쓴다",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "title",
+          "url",
+          "facts"
+        ],
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "title": {
+            "type": "string"
+          },
+          "url": {
+            "type": "string"
+          },
+          "published": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "reliability": {
+            "type": "number"
+          },
+          "tier": {
+            "type": "string"
+          },
+          "facts": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "pack_mode": {
+      "type": "boolean",
+      "description": "true면 web_search 를 쓰지 않고 docs 만 근거로 쓴다"
+    }
   }
 }

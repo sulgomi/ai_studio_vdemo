@@ -4,62 +4,215 @@
   "title": "공통 입력 봉투",
   "description": "사용자(단독 대화), 시장조사 총괄(orchestrated), E2E 오케스트레이터(workflow)가 모든 에이전트를 같은 봉투로 부른다. 에이전트별 입력은 payload에 담고 각 에이전트 in.schema.json으로 검증한다. 출처: C design.md 6-2 + A _common/envelope 제안.",
   "type": "object",
-  "required": ["run_id", "request_id", "agent", "contract_version", "mode", "today", "question", "conversation", "payload"],
+  "required": [
+    "run_id",
+    "request_id",
+    "agent",
+    "contract_version",
+    "mode",
+    "today",
+    "question",
+    "conversation",
+    "payload"
+  ],
   "additionalProperties": false,
   "properties": {
-    "run_id": {"type": "string", "minLength": 1},
-    "request_id": {"type": "string", "minLength": 1},
-    "agent": {"$ref": "#/$defs/agent_id"},
-    "contract_version": {"type": "string", "pattern": "^[0-9]+\\.[0-9]+$"},
-    "mode": {"enum": ["standalone", "orchestrated", "workflow"]},
-    "today": {"type": "string", "format": "date", "description": "기준일. 최신성(18개월) 계산 기준"},
-    "question": {"type": "string", "minLength": 1, "description": "사용자 질문 또는 정리된 지시 한 문장"},
+    "run_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "request_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "agent": {
+      "$ref": "#/$defs/agent_id"
+    },
+    "contract_version": {
+      "type": "string",
+      "pattern": "^[0-9]+\\.[0-9]+$"
+    },
+    "mode": {
+      "enum": [
+        "standalone",
+        "orchestrated",
+        "workflow"
+      ]
+    },
+    "today": {
+      "type": "string",
+      "format": "date",
+      "description": "기준일. 최신성(18개월) 계산 기준"
+    },
+    "question": {
+      "type": "string",
+      "minLength": 1,
+      "description": "사용자 질문 또는 정리된 지시 한 문장"
+    },
     "conversation": {
       "type": "object",
-      "required": ["summary", "segment", "card_type", "period", "assumptions", "own_cards"],
+      "required": [
+        "summary",
+        "segment",
+        "card_type",
+        "period",
+        "assumptions",
+        "own_cards"
+      ],
       "additionalProperties": false,
       "properties": {
-        "summary": {"type": "string", "description": "지금까지 대화 요약. 단독→통합 인계 시 채운다"},
-        "segment": {"type": "string", "description": "예: 2030 투자 입문자"},
-        "card_type": {"type": "string", "description": "예: 신용카드, 체크카드, 제휴카드"},
-        "period": {"type": "string", "description": "예: 최근 6개월"},
-        "assumptions": {"type": "array", "items": {"type": "string"}},
-        "own_cards": {"type": "array", "items": {"type": "string"}, "description": "사용자가 이름으로 지정한 자사 카드만"}
+        "summary": {
+          "type": "string",
+          "description": "지금까지 대화 요약. 단독→통합 인계 시 채운다"
+        },
+        "segment": {
+          "type": "string",
+          "description": "예: 2030 투자 입문자"
+        },
+        "card_type": {
+          "type": "string",
+          "description": "예: 신용카드, 체크카드, 제휴카드"
+        },
+        "period": {
+          "type": "string",
+          "description": "예: 최근 6개월"
+        },
+        "assumptions": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "own_cards": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "사용자가 이름으로 지정한 자사 카드만"
+        }
       }
     },
-    "output_mode": {"enum": ["conversational", "report", "json"], "default": "json"},
-    "depth": {"enum": ["overview", "detail"], "default": "detail", "description": "overview는 후보만 빠르게(경쟁사는 상세 조회 없이)"},
-    "payload": {"type": "object", "description": "에이전트별 입력. agents/<폴더>/in.schema.json"},
+    "output_mode": {
+      "enum": [
+        "conversational",
+        "report",
+        "json"
+      ],
+      "default": "json"
+    },
+    "depth": {
+      "enum": [
+        "overview",
+        "detail"
+      ],
+      "default": "detail",
+      "description": "overview는 후보만 빠르게(경쟁사는 상세 조회 없이)"
+    },
+    "payload": {
+      "type": "object",
+      "description": "에이전트별 입력. agents/<폴더>/in.schema.json"
+    },
     "rework": {
       "type": "object",
-      "required": ["attempt", "reasons", "previous_output_ref"],
+      "required": [
+        "attempt",
+        "reasons",
+        "previous_output_ref"
+      ],
       "additionalProperties": false,
       "properties": {
-        "attempt": {"type": "integer", "minimum": 1, "maximum": 3},
-        "reasons": {"type": "array", "minItems": 1, "items": {"$ref": "#/$defs/reject_reason"}},
-        "previous_output_ref": {"type": "string"}
+        "attempt": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 3
+        },
+        "reasons": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "$ref": "#/$defs/reject_reason"
+          }
+        },
+        "previous_output_ref": {
+          "type": "string"
+        }
       }
     },
     "budget": {
       "type": "object",
       "additionalProperties": false,
       "properties": {
-        "max_tool_calls": {"type": "integer", "minimum": 0},
-        "max_seconds": {"type": "integer", "minimum": 1},
-        "max_output_tokens": {"type": "integer", "minimum": 256}
+        "max_tool_calls": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "max_seconds": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "max_output_tokens": {
+          "type": "integer",
+          "minimum": 256
+        }
       }
     }
   },
   "$defs": {
-    "agent_id": {"enum": ["orchestrator", "research_lead", "trend", "competitor", "consumer", "whitespace", "concept", "validation", "guardrail", "design_marketing", "plan_doc"]},
+    "agent_id": {
+      "enum": [
+        "orchestrator",
+        "research_lead",
+        "trend",
+        "competitor",
+        "consumer",
+        "whitespace",
+        "concept",
+        "validation",
+        "guardrail",
+        "design_marketing",
+        "plan_doc",
+        "scout",
+        "gap_analyst",
+        "ideator",
+        "critic",
+        "labeler"
+      ]
+    },
     "reject_reason": {
       "type": "object",
-      "required": ["code", "path", "message"],
+      "required": [
+        "code",
+        "path",
+        "message"
+      ],
       "additionalProperties": false,
       "properties": {
-        "code": {"enum": ["SCHEMA_INVALID", "ENUM_UNKNOWN", "ID_UNKNOWN", "SOURCE_URL_UNKNOWN", "SOURCE_STALE", "NUMBER_NOT_IN_INPUT", "NUMBER_FORMAT", "BANNED_WORD", "MISSING_DISCLOSURE", "COUNT_OUT_OF_RANGE", "NAME_TOO_SIMILAR", "SPECIAL_POINT_INVALID", "GATE_FAILED", "SECTION_MISSING", "STYLE_VIOLATION"]},
-        "path": {"type": "string", "description": "JSON Pointer. 예: /result/picks/0/evidence_ids/1"},
-        "message": {"type": "string"}
+        "code": {
+          "enum": [
+            "SCHEMA_INVALID",
+            "ENUM_UNKNOWN",
+            "ID_UNKNOWN",
+            "SOURCE_URL_UNKNOWN",
+            "SOURCE_STALE",
+            "NUMBER_NOT_IN_INPUT",
+            "NUMBER_FORMAT",
+            "BANNED_WORD",
+            "MISSING_DISCLOSURE",
+            "COUNT_OUT_OF_RANGE",
+            "NAME_TOO_SIMILAR",
+            "SPECIAL_POINT_INVALID",
+            "GATE_FAILED",
+            "SECTION_MISSING",
+            "STYLE_VIOLATION"
+          ]
+        },
+        "path": {
+          "type": "string",
+          "description": "JSON Pointer. 예: /result/picks/0/evidence_ids/1"
+        },
+        "message": {
+          "type": "string"
+        }
       }
     }
   }

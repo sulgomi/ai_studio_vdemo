@@ -1,0 +1,18 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "card-studio/agents/labeler/out.schema.json",
+  "title": "labeler result",
+  "type": "object",
+  "required": [
+    "labels"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "labels": {
+      "type": "object",
+      "additionalProperties": {
+        "$ref": "../../common/discovery.defs.schema.json#/$defs/label"
+      }
+    }
+  }
+}

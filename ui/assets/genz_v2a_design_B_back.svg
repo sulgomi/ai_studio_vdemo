@@ -1,0 +1,107 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 560" width="360" height="560">
+  <defs>
+    <linearGradient id="body" x1="1" y1="0" x2="0.65" y2="1">
+      <stop offset="0" stop-color="#EEF0F3" stop-opacity="0.92"/>
+      <stop offset="0.5" stop-color="#DADDE2" stop-opacity="0.80"/>
+      <stop offset="1" stop-color="#CDD1D8" stop-opacity="0.86"/>
+    </linearGradient>
+    <linearGradient id="glare" x1="1" y1="0" x2="0" y2="0.62">
+      <stop offset="0.18" stop-color="#FFFFFF" stop-opacity="0"/>
+      <stop offset="0.30" stop-color="#FFFFFF" stop-opacity="0.30"/>
+      <stop offset="0.36" stop-color="#FFFFFF" stop-opacity="0.05"/>
+      <stop offset="0.62" stop-color="#FFFFFF" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="mag" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#1F2A44" stop-opacity="0.92"/>
+      <stop offset="0.5" stop-color="#2A3653" stop-opacity="0.9"/>
+      <stop offset="1" stop-color="#1A2338" stop-opacity="0.94"/>
+    </linearGradient>
+    <linearGradient id="fadeG" x1="1" y1="0" x2="0" y2="0">
+      <stop offset="0" stop-color="#fff" stop-opacity="1"/>
+      <stop offset="0.55" stop-color="#fff" stop-opacity="0.9"/>
+      <stop offset="1" stop-color="#fff" stop-opacity="0.15"/>
+    </linearGradient>
+    <mask id="fade"><rect width="360" height="560" fill="url(#fadeG)"/></mask>
+    <filter id="grain" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" seed="11" result="n"/>
+      <feColorMatrix type="matrix" values="0 0 0 0 0.09  0 0 0 0 0.1  0 0 0 0 0.12  0 0 0 0.05 0" in="n"/>
+    </filter>
+    <filter id="soft" x="-5%" y="-20%" width="110%" height="140%"><feGaussianBlur stdDeviation="1.4"/></filter>
+    <filter id="rim" x="-5%" y="-5%" width="110%" height="110%"><feGaussianBlur stdDeviation="3"/></filter>
+    <clipPath id="card"><rect x="0" y="0" width="360" height="560" rx="28"/></clipPath>
+  </defs>
+
+  <g clip-path="url(#card)">
+    <rect width="360" height="560" fill="url(#body)"/>
+    <rect width="360" height="560" filter="url(#grain)"/>
+
+    <!-- the front's ledger rules, seen through the sheet (mirrored, softer) -->
+    <g mask="url(#fade)">
+      <g filter="url(#soft)" stroke="#1F2A44" stroke-opacity="0.08" stroke-width="1.2" transform="translate(-5 7)">
+        <path d="M0 286H360M0 306H360M0 326H360M0 346H360M0 366H360M0 386H360M0 406H360M0 426H360M276 270V440"/>
+      </g>
+      <g stroke="#17191F" stroke-opacity="0.2" stroke-width="0.7">
+        <path d="M0 286H360M0 306H360M0 326H360M0 346H360M0 366H360M0 386H360M0 406H360M0 426H360M276 270V440"/>
+      </g>
+    </g>
+
+    <!-- magnetic stripe -->
+    <rect x="0" y="34" width="360" height="46" fill="url(#mag)"/>
+    <rect x="0" y="34" width="360" height="0.8" fill="#FFFFFF" fill-opacity="0.25"/>
+
+    <rect x="2" y="2" width="356" height="556" rx="26" fill="none" stroke="#9AA1AB" stroke-opacity="0.45" stroke-width="7" filter="url(#rim)"/>
+    <rect width="360" height="560" fill="url(#glare)"/>
+  </g>
+
+  <rect x="1.25" y="1.25" width="357.5" height="557.5" rx="26.75" fill="none" stroke="#FF7A59" stroke-width="2.5"/>
+  <rect x="3.6" y="3.6" width="352.8" height="552.8" rx="24.4" fill="none" stroke="#FFFFFF" stroke-opacity="0.55" stroke-width="0.8"/>
+
+  <g font-family="Pretendard Variable, Pretendard, Apple SD Gothic Neo, Noto Sans KR, sans-serif" fill="#17191F">
+    <!-- signature + CVC -->
+    <text x="36" y="110" font-size="6.5" font-weight="600" letter-spacing="1.4" fill-opacity="0.55">AUTHORIZED SIGNATURE · 서명</text>
+    <rect x="36" y="116" width="218" height="34" rx="3" fill="#F5F2EB" fill-opacity="0.92"/>
+    <g stroke="#17191F" stroke-opacity="0.08" stroke-width="0.6">
+      <path d="M36 124.5H254M36 133H254M36 141.5H254"/>
+    </g>
+    <text x="276" y="110" font-size="6.5" font-weight="600" letter-spacing="1.4" fill-opacity="0.55">CVC</text>
+    <rect x="276" y="116" width="48" height="34" rx="3" fill="none" stroke="#17191F" stroke-opacity="0.5" stroke-width="0.9"/>
+    <text x="300" y="137" text-anchor="middle" font-size="9" font-weight="600" letter-spacing="0.6" fill-opacity="0.7">[CVC]</text>
+
+    <!-- card number block -->
+    <text x="36" y="190" font-size="6.5" font-weight="600" letter-spacing="1.4" fill-opacity="0.55">CARD NUMBER · 카드 번호</text>
+    <text x="36" y="211" font-size="15" font-weight="600" letter-spacing="2" fill-opacity="0.88">[CARD NUMBER]</text>
+
+    <text x="36" y="240" font-size="6.5" font-weight="600" letter-spacing="1.4" fill-opacity="0.55">VALID THRU · 유효기간</text>
+    <text x="36" y="256" font-size="11" font-weight="600" letter-spacing="1.4" fill-opacity="0.85">[MM/YY]</text>
+    <text x="156" y="240" font-size="6.5" font-weight="600" letter-spacing="1.4" fill-opacity="0.55">CARDHOLDER · 회원명</text>
+    <text x="156" y="256" font-size="11" font-weight="600" letter-spacing="1.4" fill-opacity="0.85">[NAME]</text>
+
+    <!-- conditions, set on the seen-through ledger rules -->
+    <g font-size="9" font-weight="500" fill-opacity="0.82">
+      <text x="36" y="302">캐시백 영역은 직전 3개월 이용액으로 정해집니다.</text>
+      <text x="36" y="322">한도와 적용 조건은 앱에서 먼저 확인하세요.</text>
+      <text x="36" y="342" fill-opacity="0.7">이 카드는 서명한 본인만 사용할 수 있습니다.</text>
+      <text x="36" y="362" fill-opacity="0.7">분실·도난 시 즉시 고객센터에 신고하세요.</text>
+    </g>
+    <text x="36" y="382" font-size="6.5" font-weight="600" letter-spacing="1.4" fill-opacity="0.55" dy="0">고객센터</text>
+    <text x="80" y="382" font-size="9" font-weight="600" letter-spacing="0.8" fill-opacity="0.82">[CS NUMBER]</text>
+    <text x="36" y="402" font-size="6.5" font-weight="600" letter-spacing="1.4" fill-opacity="0.55">해외 분실</text>
+    <text x="80" y="402" font-size="9" font-weight="600" letter-spacing="0.8" fill-opacity="0.82">[GLOBAL CS]</text>
+    <text x="36" y="422" font-size="7" font-weight="500" fill-opacity="0.55">이 카드는 [ISSUER] 소유이며 요청 시 반환해야 합니다.</text>
+
+    <!-- footer -->
+    <g transform="translate(36 482)">
+      <path d="M0 0H20V14.5L14.5 20H0Z" fill="none" stroke="#17191F" stroke-width="1.2" stroke-linejoin="round"/>
+      <path d="M20 14.5H14.5V20" fill="none" stroke="#17191F" stroke-width="1.2" stroke-linejoin="round"/>
+      <path d="M4 6H16M4 10.5H16" stroke="#17191F" stroke-width="0.9"/>
+      <path d="M4 15H11" stroke="#FF7A59" stroke-width="1.8" stroke-linecap="round"/>
+      <text x="28" y="15" font-size="13" font-weight="700" letter-spacing="-0.3">구독노트</text>
+    </g>
+    <text x="36" y="526" font-size="7.5" font-weight="600" letter-spacing="1.4" fill-opacity="0.65">[ISSUER]</text>
+    <text x="324" y="536" text-anchor="end" font-size="6.5" font-weight="500" letter-spacing="2" fill-opacity="0.4">GLASS</text>
+    <g transform="translate(272 484)">
+      <rect width="52" height="26" rx="5" fill="none" stroke="#17191F" stroke-opacity="0.45" stroke-width="0.9"/>
+      <text x="26" y="16.5" text-anchor="middle" font-size="7.5" font-weight="600" letter-spacing="1" fill-opacity="0.6">NETWORK</text>
+    </g>
+  </g>
+</svg>

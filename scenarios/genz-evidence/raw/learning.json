@@ -1,0 +1,1548 @@
+{
+ "agent": "learning",
+ "retrieved_at": "2026-10-23",
+ "sources": [
+  {
+   "id": "LNS1",
+   "title": "국민내일배움카드 발급안내",
+   "publisher": "고용24(고용노동부)",
+   "url": "https://m.work24.go.kr/hr/h/a/1100/selectIssuGudn.do",
+   "published": null,
+   "tier": "A 공시·정부통계",
+   "kind": "issuer_page",
+   "stale": false,
+   "promotional": false
+  },
+  {
+   "id": "LNS2",
+   "title": "신한카드 Edu Plan+ 출시",
+   "publisher": "카드고릴라",
+   "url": "https://m.card-gorilla.com/contents/detail/3267",
+   "published": null,
+   "tier": "D 블로그·홍보",
+   "kind": "blog",
+   "stale": false,
+   "promotional": true
+  },
+  {
+   "id": "LNS3",
+   "title": "학원비 할인 신용카드 & 체크카드 추천 BEST 7 (2026)",
+   "publisher": "카드고릴라",
+   "url": "https://www.card-gorilla.com/contents/detail/2511",
+   "published": null,
+   "tier": "D 블로그·홍보",
+   "kind": "blog",
+   "stale": false,
+   "promotional": true
+  },
+  {
+   "id": "LNS4",
+   "title": "학원비 할인 카드 BEST 3 추천",
+   "publisher": "뱅크샐러드",
+   "url": "https://www.banksalad.com/articles/학원비-할인-카드-BEST-3-추천",
+   "published": "2025-08-25",
+   "tier": "D 블로그·홍보",
+   "kind": "blog",
+   "stale": false,
+   "promotional": true
+  },
+  {
+   "id": "LNS5",
+   "title": "취미생활 자기계발 트렌드 리포트 2022",
+   "publisher": "오픈서베이",
+   "url": "https://blog.opensurvey.co.kr/trendreport/hobby-2022/",
+   "published": "2022-06-13",
+   "tier": "B 언론·리서치",
+   "kind": "survey",
+   "stale": true,
+   "promotional": false
+  },
+  {
+   "id": "LNS6",
+   "title": "클래스101 사례로 알아보는 취미생활 시장 트렌드 2019 (오픈서베이 2019 리포트 인용)",
+   "publisher": "오픈서베이 블로그",
+   "url": "https://blog.opensurvey.co.kr/article/hobby-2019-2/",
+   "published": "2019",
+   "tier": "B 언론·리서치",
+   "kind": "survey",
+   "stale": true,
+   "promotional": false
+  },
+  {
+   "id": "LNS7",
+   "title": "클래스101, 창립 이래 첫 연간 흑자 달성…영업익 39억원",
+   "publisher": "바이라인네트워크",
+   "url": "https://byline.network/2025/03/17-409",
+   "published": "2025-03-17",
+   "tier": "B 언론·리서치",
+   "kind": "press",
+   "stale": false,
+   "promotional": false
+  },
+  {
+   "id": "LNS8",
+   "title": "클래스101, 유료 구독자 239% 증가… 구독모델 도입 반년 만",
+   "publisher": "디지털인사이트",
+   "url": "https://ditoday.com/?p=72092",
+   "published": "2023-05-11",
+   "tier": "B 언론·리서치",
+   "kind": "press",
+   "stale": true,
+   "promotional": false
+  },
+  {
+   "id": "LNS9",
+   "title": "클래스101 비즈니스모델 분석",
+   "publisher": "데모데이",
+   "url": "https://demoday.co.kr/bm-analysis/120",
+   "published": "2026-01-26",
+   "tier": "C 업계",
+   "kind": "blog",
+   "stale": false,
+   "promotional": false
+  },
+  {
+   "id": "LNS10",
+   "title": "토스 카드라운지 “새학기 소비 뚜렷”... 도서·뷰티 결제 두 자릿수 증가",
+   "publisher": "토스피드(비바리퍼블리카)",
+   "url": "https://toss.im/tossfeed/article/48453",
+   "published": "2026-04-07",
+   "tier": "B 언론·리서치",
+   "kind": "press",
+   "stale": false,
+   "promotional": false
+  },
+  {
+   "id": "LNS11",
+   "title": "한강 작가가 부른 '독서열풍'…책 살때 좋은 카드는?",
+   "publisher": "메트로신문",
+   "url": "https://www.metroseoul.co.kr/article/20241016500020",
+   "published": "2024-10-16",
+   "tier": "B 언론·리서치",
+   "kind": "news",
+   "stale": true,
+   "promotional": false
+  },
+  {
+   "id": "LNS12",
+   "title": "Freedom Rise credit limit increases",
+   "publisher": "Chase(JPMorgan Chase)",
+   "url": "https://www.chase.com/personal/credit-cards/education/basics/freedom-rise-credit-limit-increase",
+   "published": null,
+   "tier": "A 공시·정부통계",
+   "kind": "issuer_page",
+   "stale": false,
+   "promotional": false
+  },
+  {
+   "id": "LNS13",
+   "title": "Chase Freedom Rise credit card launch",
+   "publisher": "The Points Guy",
+   "url": "https://thepointsguy.com/news/chase-freedom-rise-launch/",
+   "published": "2023-06-12",
+   "tier": "B 언론·리서치",
+   "kind": "news",
+   "stale": true,
+   "promotional": false
+  },
+  {
+   "id": "LNS14",
+   "title": "Platinum Secured Credit Card",
+   "publisher": "Capital One",
+   "url": "https://www.capitalone.com/credit-cards/platinum-secured/",
+   "published": null,
+   "tier": "A 공시·정부통계",
+   "kind": "issuer_page",
+   "stale": false,
+   "promotional": false
+  },
+  {
+   "id": "LNS15",
+   "title": "Quicksilver Rewards for Students",
+   "publisher": "Capital One",
+   "url": "https://www.capitalone.com/credit-cards/quicksilver-student/",
+   "published": null,
+   "tier": "A 공시·정부통계",
+   "kind": "issuer_page",
+   "stale": false,
+   "promotional": false
+  },
+  {
+   "id": "LNS16",
+   "title": "Discover it Student Cash Back",
+   "publisher": "Discover",
+   "url": "https://www.discover.com/credit-cards/student/it-card.html",
+   "published": null,
+   "tier": "A 공시·정부통계",
+   "kind": "issuer_page",
+   "stale": false,
+   "promotional": false
+  },
+  {
+   "id": "LNS17",
+   "title": "Step 홈페이지",
+   "publisher": "Step",
+   "url": "https://step.com",
+   "published": null,
+   "tier": "A 공시·정부통계",
+   "kind": "issuer_page",
+   "stale": false,
+   "promotional": false
+  },
+  {
+   "id": "LNS18",
+   "title": "청소년용 애플페이 카드 현대카드 Teens 출시",
+   "publisher": "카드고릴라",
+   "url": "https://www.card-gorilla.com/contents/detail/3487",
+   "published": null,
+   "tier": "D 블로그·홍보",
+   "kind": "blog",
+   "stale": false,
+   "promotional": true
+  },
+  {
+   "id": "LNS19",
+   "title": "토익 응시료 인상, 할인 카드",
+   "publisher": "뱅크샐러드",
+   "url": "https://www.banksalad.com/articles/토익-응시료-인상-가격-할인-카드",
+   "published": null,
+   "tier": "D 블로그·홍보",
+   "kind": "blog",
+   "stale": false,
+   "promotional": true
+  },
+  {
+   "id": "LNS20",
+   "title": "20대 자기계발 종류와 비용 정리 (링커리어 커뮤니티 글, 교육의봄·청년재단 2026 조사 인용)",
+   "publisher": "링커리어 커뮤니티",
+   "url": "https://community.linkareer.com/employment_data/6647362",
+   "published": "2026-07",
+   "tier": "D 블로그·홍보",
+   "kind": "blog",
+   "stale": false,
+   "promotional": false
+  },
+  {
+   "id": "LNS21",
+   "title": "서점 할인카드 PICK 5",
+   "publisher": "카드고릴라",
+   "url": "https://www.card-gorilla.com/contents/detail/375",
+   "published": null,
+   "tier": "D 블로그·홍보",
+   "kind": "blog",
+   "stale": true,
+   "promotional": true
+  },
+  {
+   "id": "LNS22",
+   "title": "직장인 인기 강의 TOP 5…최대 관심사는 ‘디지털 마케팅’",
+   "publisher": "벤처스퀘어",
+   "url": "https://www.venturesquare.net/740901/",
+   "published": "2016-12-27",
+   "tier": "B 언론·리서치",
+   "kind": "press",
+   "stale": true,
+   "promotional": false
+  },
+  {
+   "id": "LNS23",
+   "title": "Chase Freedom Rise 카드 상품 페이지",
+   "publisher": "Chase",
+   "url": "https://creditcards.chase.com/cash-back-credit-cards/freedom/rise",
+   "published": null,
+   "tier": "A 공시·정부통계",
+   "kind": "issuer_page",
+   "stale": false,
+   "promotional": false
+  }
+ ],
+ "facts": [
+  {
+   "id": "LNF1",
+   "topic": "내일배움카드",
+   "claim": "국민내일배움카드 훈련비 지원액은 5년간 300만원에 200만원 추가 지원이다.",
+   "value": 300,
+   "unit": "만원",
+   "population": "국민내일배움카드 발급 대상",
+   "period": "공식 안내(조회 2026-10-23)",
+   "source_id": "LNS1",
+   "quote": "훈련비 지원액: 5년간 300만원+ 200만원 추가 지원",
+   "age_scope": "전연령",
+   "confidence": "high",
+   "note": "추가 200만원은 기간제·파견·단시간·일용근로자 등 특정 대상 한정, 총 한도 500만원 초과 불가(본문)",
+   "quote_verified": true
+  },
+  {
+   "id": "LNF2",
+   "topic": "내일배움카드",
+   "claim": "수강료 결제 시 통상 15~55%는 본인이 부담한다.",
+   "value": null,
+   "unit": "%",
+   "population": "국민내일배움카드 발급 대상",
+   "period": "공식 안내(조회 2026-10-23)",
+   "source_id": "LNS1",
+   "quote": "통상 15~55%는 본인이 부담해야 합니다",
+   "age_scope": "전연령",
+   "confidence": "high",
+   "note": "",
+   "quote_verified": true
+  },
+  {
+   "id": "LNF3",
+   "topic": "내일배움카드",
+   "claim": "카드 유효기간은 5년이며 5년이 지나면 잔액이 사라진다.",
+   "value": 5,
+   "unit": "년",
+   "population": "국민내일배움카드 발급 대상",
+   "period": "공식 안내(조회 2026-10-23)",
+   "source_id": "LNS1",
+   "quote": "5년이 지나면 잔액은 모두 사라지므로",
+   "age_scope": "전연령",
+   "confidence": "high",
+   "note": "",
+   "quote_verified": true
+  },
+  {
+   "id": "LNF4",
+   "topic": "내일배움카드",
+   "claim": "대규모 기업 근로자로서 월 임금 300만원 이상이고 만 45세 미만인 사람은 지원 제외 대상이다.",
+   "value": null,
+   "unit": null,
+   "population": "국민내일배움카드 발급 대상",
+   "period": "공식 안내(조회 2026-10-23)",
+   "source_id": "LNS1",
+   "quote": "대규모 기업 근로자로서, 월 임금 300만원 이상이고, 만 45세 미만인 사람",
+   "age_scope": "청년(19~34)",
+   "confidence": "medium",
+   "note": "청년층에 직접 해당되는 제외 조건이라 기록. 해석 없음",
+   "quote_verified": true
+  },
+  {
+   "id": "LNF5",
+   "topic": "내일배움카드",
+   "claim": "졸업까지 남은 수업연한이 2년 이상인 대학·대학원 재학생은 내일배움카드 발급 제외 대상이다(2차 인용).",
+   "value": null,
+   "unit": null,
+   "population": "대학·대학원 재학생",
+   "period": "2026",
+   "source_id": "LNS20",
+   "quote": "졸업까지 남은 수업연한이 2년 이상인 대학·대학원 재학생은 발급 제외 대상입니다",
+   "age_scope": "20대",
+   "confidence": "low",
+   "note": "커뮤니티 글의 서술이며 고용24 본문에서 해당 문구를 직접 확인하지 못함(LNS1 본문에 2년 문구 없음)",
+   "quote_verified": true
+  },
+  {
+   "id": "LNF6",
+   "topic": "학원비 카드",
+   "claim": "신한카드 Edu Plan+는 학원비 캐시백을 월 최대 10만원까지 제공한다.",
+   "value": 100000,
+   "unit": "원",
+   "population": "카드 대상 미명시(학원·학습지·유치원 결제 고객)",
+   "period": "출시 기사(발행일 미확인)",
+   "source_id": "LNS2",
+   "quote": "한 달에 무려 최대 10만원까지 캐시백 제공한다",
+   "age_scope": "전연령",
+   "confidence": "medium",
+   "note": "카드고릴라는 홍보성 매체. 카드사 공식 페이지 미확인",
+   "quote_verified": true
+  },
+  {
+   "id": "LNF7",
+   "topic": "학원비 카드",
+   "claim": "Edu Plan+ 기본 캐시백은 전월실적 30만원 이상~50만원 미만 3%(한도 1만원)부터 200만원 이상 10%(한도 9만원)까지 4구간이다.",
+   "value": null,
+   "unit": "%",
+   "population": "카드 대상 미명시",
+   "period": "출시 기사(발행일 미확인)",
+   "source_id": "LNS2",
+   "quote": "200만원 이상 10% 9만원",
+   "age_scope": "전연령",
+   "confidence": "medium",
+   "note": "",
+   "quote_verified": true
+  },
+  {
+   "id": "LNF8",
+   "topic": "학원비 카드",
+   "claim": "Edu Plan+ 연회비는 4만원이고 캐시백 대상은 오프라인 학원, 학습지, 유치원이다.",
+   "value": 40000,
+   "unit": "원",
+   "population": "카드 대상 미명시",
+   "period": "2026 추천글",
+   "source_id": "LNS3",
+   "quote": "연회비 4만원 학원비 할인카드 캐시백형 신용카드",
+   "age_scope": "전연령",
+   "confidence": "medium",
+   "note": "",
+   "quote_verified": true
+  },
+  {
+   "id": "LNF9",
+   "topic": "학원비 카드",
+   "claim": "학원비 할인카드는 캐시백 받은 학원비 결제금액이 전월실적에서 제외된다.",
+   "value": null,
+   "unit": null,
+   "population": "학원비 할인카드 일반",
+   "period": "2026 추천글",
+   "source_id": "LNS3",
+   "quote": "캐시백 받은 학원비 결제금액은 전월실적에서 제외되는 점은 알아두자",
+   "age_scope": "전연령",
+   "confidence": "medium",
+   "note": "",
+   "quote_verified": true
+  },
+  {
+   "id": "LNF10",
+   "topic": "학원비 카드",
+   "claim": "신한카드 Edu의 연회비는 2만원이며 학원비 기본 캐시백 월 한도는 4만 5천원이다.",
+   "value": 45000,
+   "unit": "원",
+   "population": "카드 대상 미명시",
+   "period": "2026 추천글",
+   "source_id": "LNS3",
+   "quote": "기본 캐시백으로 한 달에 받을 수 있는 할인금액은 4만 5천원까지",
+   "age_scope": "전연령",
+   "confidence": "medium",
+   "note": "연회비 2만원은 같은 글 '연회비 2만원 학원비 할인카드' 문구",
+   "quote_verified": true
+  },
+  {
+   "id": "LNF11",
+   "topic": "학원비 카드",
+   "claim": "KB국민 Our WE:SH 카드는 연회비 1만5천원이며 선택형 혜택 중 학원 10% 할인을 고를 수 있다.",
+   "value": 15000,
+   "unit": "원",
+   "population": "카드 대상 미명시",
+   "period": "2026 추천글",
+   "source_id": "LNS3",
+   "quote": "[두리 - 자녀중심] 학원 10% 할인",
+   "age_scope": "전연령",
+   "confidence": "medium",
+   "note": "",
+   "quote_verified": true
+  },
+  {
+   "id": "LNF12",
+   "topic": "학원비 카드",
+   "claim": "현대카드Z 패밀리에디션2는 입시·예체능·운전학원 등 학원 업종에서 10% 할인, 연회비 20,000원, 전월실적 50만원~이다.",
+   "value": 20000,
+   "unit": "원",
+   "population": "카드 대상 미명시(자녀 교육비 가구 대상으로 소개)",
+   "period": "2025-08 기준 글",
+   "source_id": "LNS4",
+   "quote": "입시·예체능·운전학원 등 다양한 학원 업종에서 10% 할인",
+   "age_scope": "전연령",
+   "confidence": "medium",
+   "note": "",
+   "quote_verified": true
+  },
+  {
+   "id": "LNF13",
+   "topic": "학원비 카드",
+   "claim": "학원 등 교육 업종 결제금액은 전월실적에서 제외된다고 소개된다.",
+   "value": null,
+   "unit": null,
+   "population": "학원비 할인카드 일반",
+   "period": "2025-08 기준 글",
+   "source_id": "LNS4",
+   "quote": "업종에서 결제하신 금액은 전월 실적에서 제외 되기 때문에",
+   "age_scope": "전연령",
+   "confidence": "medium",
+   "note": "",
+   "quote_verified": true
+  },
+  {
+   "id": "LNF14",
+   "topic": "도서 카드",
+   "claim": "하나멤버스 1Q #tag1카드 Beige는 인터넷 서점 이용액의 7%를 하나머니로 적립하고, 학원 업종 5% 적립은 전월 30만원 이상 이용 조건이다.",
+   "value": 7,
+   "unit": "%",
+   "population": "카드 대상 미명시",
+   "period": "기사 발행일 미확인(stale 가능)",
+   "source_id": "LNS21",
+   "quote": "인터넷 서점 이용 금액의 7%가 하나머니로 적립된다",
+   "age_scope": "젊은층(범위 미기재)",
+   "confidence": "low",
+   "note": "이 카드의 현재 판매 여부 미확인. 같은 글에 최신 추천으로 이동 안내가 있음",
+   "quote_verified": true
+  },
+  {
+   "id": "LNF15",
+   "topic": "교육 카드 수요",
+   "claim": "토스 카드라운지에서 도서·서점/뷰티 혜택 카드 신청 완료 기준 1위는 롯데카드 LOCA 365(교육·대중교통 할인)였다.",
+   "value": null,
+   "unit": null,
+   "population": "토스 카드라운지 이용자(연령 미기재)",
+   "period": "2026.3월 소비 흐름 기준 신청",
+   "source_id": "LNS10",
+   "quote": "롯데카드의 ‘LOCA 365’가 1위를 차지했다",
+   "age_scope": "젊은층(범위 미기재)",
+   "confidence": "medium",
+   "note": "토스 이용자 기준, 신청 완료 순위이며 발급·사용 실적이 아님",
+   "quote_verified": true
+  },
+  {
+   "id": "LNF16",
+   "topic": "도서 소비",
+   "claim": "2026년 3월 도서·서점 결제금액은 방학으로 학습 소비가 줄어든 직전달 대비 약 30% 증가했다.",
+   "value": 30,
+   "unit": "%",
+   "population": "토스 카드 결제(전 연령)",
+   "period": "2026.3월(직전달 대비)",
+   "source_id": "LNS10",
+   "quote": "도서·서점 결제금액은 방학 기간으로 학습 관련 소비가 상대적으로 줄어드는 직전달 대비 약 30% 증가",
+   "age_scope": "전연령",
+   "confidence": "high",
+   "note": "",
+   "quote_verified": true
+  },
+  {
+   "id": "LNF17",
+   "topic": "도서 소비",
+   "claim": "도서·서점 소비는 10대에서 211% 증가했다.",
+   "value": 211,
+   "unit": "%",
+   "population": "10대(토스 카드 결제)",
+   "period": "2026.3월(전월 대비로 추정, 기준월 본문 불명확)",
+   "source_id": "LNS10",
+   "quote": "도서·서점 소비는 10대에서 무려 211% 증가",
+   "age_scope": "10대",
+   "confidence": "medium",
+   "note": "증가 기준 시점이 본문에 명시되지 않아 확인 필요",
+   "quote_verified": true
+  },
+  {
+   "id": "LNF18",
+   "topic": "도서 카드",
+   "claim": "2024년 10월 우리카드는 도서 구매 고객 할인 행사를, 비씨카드는 예스24·교보문고 3만원 이상 결제 시 2000원 할인을 진행했다.",
+   "value": 2000,
+   "unit": "원",
+   "population": "카드 회원(연령 미기재)",
+   "period": "2024-10",
+   "source_id": "LNS11",
+   "quote": "우리카드는 도서 구매 고객을 위한 할인 행사를 진행한다",
+   "age_scope": "전연령",
+   "confidence": "high",
+   "note": "",
+   "quote_verified": true
+  },
+  {
+   "id": "LNF19",
+   "topic": "독서 트렌드",
+   "claim": "MZ세대 중심으로 종이책 읽기가 유행처럼 번지는 '텍스트힙'이 형성되고 있다고 보도됐다.",
+   "value": null,
+   "unit": null,
+   "population": "MZ세대",
+   "period": "2024-10",
+   "source_id": "LNS11",
+   "quote": "MZ세대를 중심으로 종이책 읽기가 유행처럼 번지는 '텍스트힙(Texthip)'",
+   "age_scope": "MZ",
+   "confidence": "medium",
+   "note": "기자 서술이며 정량 지표 없음",
+   "quote_verified": true
+  },
+  {
+   "id": "LNF20",
+   "topic": "취미·자기계발",
+   "claim": "20~59세 남녀 10명 중 7명은 정기적으로 취미/자기계발 활동을 한다.",
+   "value": 70,
+   "unit": "%",
+   "population": "전국 20~59세 남녀 2,000명",
+   "period": "2022.5.29~5.30 조사",
+   "source_id": "LNS5",
+   "quote": "20~59세 남녀 10명 중 7명은 정기적으로 취미/자기계발 활동을 하고 있습니다",
+   "age_scope": "전연령",
+   "confidence": "high",
+   "note": "20대 단독 수치는 요약 페이지에 없음. 20~59세 전체. stale",
+   "quote_verified": true
+  },
+  {
+   "id": "LNF21",
+   "topic": "취미·자기계발",
+   "claim": "이들의 취미/자기계발 투자비용은 월평균 7.1만원이고 월 10만원 이상 지출자는 26.6%다.",
+   "value": 71000,
+   "unit": "원",
+   "population": "정기 활동자(20~59세)",
+   "period": "2022.5",
+   "source_id": "LNS5",
+   "quote": "월평균 7.1만 원이며, 월 10만 원 이상 지출하는 사람들도 적지 않습니다(26.6%)",
+   "age_scope": "전연령",
+   "confidence": "high",
+   "note": "원문은 '7.1만 원'. 값 71000은 단위 환산 표기",
+   "quote_verified": true
+  },
+  {
+   "id": "LNF22",
+   "topic": "취미·자기계발",
+   "claim": "취미/자기계발 시 주로 활용하는 채널은 유튜브 등 영상 채널이 34.7%로 가장 많다.",
+   "value": 34.7,
+   "unit": "%",
+   "population": "정기 활동자(20~59세)",
+   "period": "2022.5",
+   "source_id": "LNS5",
+   "quote": "유튜브 등 영상 채널을 주로 활용한다는 의견이 가장 많습니다(34.7%)",
+   "age_scope": "전연령",
+   "confidence": "high",
+   "note": "",
+   "quote_verified": true
+  },
+  {
+   "id": "LNF23",
+   "topic": "취미·자기계발",
+   "claim": "취미/자기계발 시 온라인 채널 이용률은 84.9%다.",
+   "value": 84.9,
+   "unit": "%",
+   "population": "정기 활동자(20~59세)",
+   "period": "2022.5",
+   "source_id": "LNS5",
+   "quote": "취미/자기계발 시 온라인 채널 이용률 84.9%",
+   "age_scope": "전연령",
+   "confidence": "high",
+   "note": "",
+   "quote_verified": true
+  },
+  {
+   "id": "LNF24",
+   "topic": "취미·자기계발",
+   "claim": "성인남녀의 76.9%가 정기적으로 취미생활·자기계발을 즐기고, 이 중 49.2%는 매달 5만원 넘게 쓴다.",
+   "value": 49.2,
+   "unit": "%",
+   "population": "성인남녀(오픈서베이 2019 리포트)",
+   "period": "2019.7 발행 리포트",
+   "source_id": "LNS6",
+   "quote": "이중 절반은 매달 취미생활·자기계발에 5만 원 넘게 적지 않은 비용을 투자한다고 합니다(49.2%)",
+   "age_scope": "전연령",
+   "confidence": "medium",
+   "note": "2차 인용. stale",
+   "quote_verified": true
+  },
+  {
+   "id": "LNF25",
+   "topic": "자기계발 지출",
+   "claim": "만 19~39세 청년의 취업 사교육비는 월평균 약 30만원, 연평균 약 360만원이다(2차 인용).",
+   "value": 300000,
+   "unit": "원",
+   "population": "만 19-39세 565명(교육의봄·청년재단)",
+   "period": "2026.6.30~7.15 조사",
+   "source_id": "LNS20",
+   "quote": "취업 사교육비는 월평균 약 30만원, 연평균 약 360만원",
+   "age_scope": "청년(19~34)",
+   "confidence": "medium",
+   "note": "커뮤니티 글이 인용한 값. 원조사 미확인. 취업 사교육비이므로 취미 지출과 다름. 모집단은 19~39세",
+   "quote_verified": true
+  },
+  {
+   "id": "LNF26",
+   "topic": "자기계발 희망",
+   "claim": "대학생 여름방학 계획 상위는 운동·다이어트 57.1%, 자격증 51.5%, 어학 40.2%다(알바천국 2026-07, 2차 인용).",
+   "value": 57.1,
+   "unit": "%",
+   "population": "대학생(알바천국 조사, 인용)",
+   "period": "2026-07",
+   "source_id": "LNS20",
+   "quote": "운동·다이어트 57.1%, 자격증 51.5%, 어학 40.2%",
+   "age_scope": "20대",
+   "confidence": "low",
+   "note": "원조사 미확인",
+   "quote_verified": true
+  },
+  {
+   "id": "LNF27",
+   "topic": "클래스101",
+   "claim": "클래스101의 2024년 영업이익은 39억원, 순이익은 18억원으로 창사 이래 첫 연간 흑자다.",
+   "value": 39,
+   "unit": "억원",
+   "population": "회사 전체",
+   "period": "2024년",
+   "source_id": "LNS7",
+   "quote": "지난해 영업이익은 39억원, 순이익은 18억원을 기록했다",
+   "age_scope": "전연령",
+   "confidence": "high",
+   "note": "이용자 연령 분포는 공개되지 않음",
+   "quote_verified": true
+  },
+  {
+   "id": "LNF28",
+   "topic": "클래스101",
+   "claim": "약 13만명의 크리에이터가 제공하는 6000여건의 클래스를 유지했다.",
+   "value": 6000,
+   "unit": "건",
+   "population": "회사 전체",
+   "period": "2024년",
+   "source_id": "LNS7",
+   "quote": "약 13만명의 크리에이터가 제공하는 6000여건의 클래스",
+   "age_scope": "전연령",
+   "confidence": "high",
+   "note": "",
+   "quote_verified": true
+  },
+  {
+   "id": "LNF29",
+   "topic": "클래스101",
+   "claim": "클래스101은 구독 정식 론칭 6개월 만에 유료 구독자가 239% 증가했고 유료 구독자 15만명을 확보했다.",
+   "value": 150000,
+   "unit": "명",
+   "population": "회사 전체",
+   "period": "2023.5 발표",
+   "source_id": "LNS8",
+   "quote": "구독 서비스 정식 론칭 6개월만에 유료 구독자수가 239% 증가했다",
+   "age_scope": "전연령",
+   "confidence": "high",
+   "note": "stale. 15만명은 제목의 '유료 구독자 15만 명 확보'",
+   "quote_verified": true
+  },
+  {
+   "id": "LNF30",
+   "topic": "클래스101",
+   "claim": "클래스101+는 월 19,000원에 6,000개+ 클래스 무제한 수강을 제공한다.",
+   "value": 19000,
+   "unit": "원",
+   "population": "구독 요금",
+   "period": "2026-01 분석글",
+   "source_id": "LNS9",
+   "quote": "클래스101+는 월 19,000원에 6,000개+ 클래스 무제한 수강을 제공한다",
+   "age_scope": "전연령",
+   "confidence": "medium",
+   "note": "업계 분석 블로그. 공식 요금 페이지 미확인",
+   "quote_verified": true
+  },
+  {
+   "id": "LNF31",
+   "topic": "클래스101",
+   "claim": "클래스101 매출은 2019년 221억원에서 2021년 866억원으로 4배 성장했다고 서술된다.",
+   "value": 866,
+   "unit": "억원",
+   "population": "회사 전체",
+   "period": "2021년",
+   "source_id": "LNS9",
+   "quote": "2019년 매출 221억원에서 2021년 866억원으로 4배 성장",
+   "age_scope": "전연령",
+   "confidence": "low",
+   "note": "2차 분석글 서술. 원출처 미확인",
+   "quote_verified": true
+  },
+  {
+   "id": "LNF32",
+   "topic": "패스트캠퍼스",
+   "claim": "패스트캠퍼스 수강생 평균 연령은 32세, 70%가 직장인이다(2016).",
+   "value": 32,
+   "unit": "세",
+   "population": "패스트캠퍼스 수강생",
+   "period": "2016",
+   "source_id": "LNS22",
+   "quote": "수강생 평균 연령은 32세로 70% 직장인과 30% 학생, 프리랜서 등으로 조사됐다",
+   "age_scope": "전연령",
+   "confidence": "medium",
+   "note": "stale. 2016년 자료라 현재 연령 분포로 쓰지 않음",
+   "quote_verified": true
+  },
+  {
+   "id": "LNF33",
+   "topic": "Chase Freedom Rise",
+   "claim": "Freedom Rise 카드회원은 12개월마다 Freedom Unlimited로의 업그레이드 대상으로 평가된다.",
+   "value": null,
+   "unit": null,
+   "population": "Freedom Rise 카드회원(미국)",
+   "period": "공식 안내(조회 2026-10-23)",
+   "source_id": "LNS12",
+   "quote": "Freedom Rise cardmembers are evaluated for an upgrade to a Freedom Unlimited",
+   "age_scope": "전연령",
+   "confidence": "high",
+   "note": "평가 조건은 본문: 계좌 개설 상태, 최근 12개월 내 구매, 정시 납부 등(본문 일부만 확인)",
+   "quote_verified": true
+  },
+  {
+   "id": "LNF34",
+   "topic": "Chase Freedom Rise",
+   "claim": "Freedom Rise는 약 6개월 후 한도 증액 대상이 될 수 있다.",
+   "value": 6,
+   "unit": "개월",
+   "population": "Freedom Rise 카드회원(미국)",
+   "period": "공식 안내(조회 2026-10-23)",
+   "source_id": "LNS12",
+   "quote": "may be eligible for a credit limit increase in as few as six months",
+   "age_scope": "전연령",
+   "confidence": "high",
+   "note": "",
+   "quote_verified": true
+  },
+  {
+   "id": "LNF35",
+   "topic": "Chase Freedom Rise",
+   "claim": "Freedom Rise는 첫 신용카드로 신용 형성 경로를 잡아주도록 설계된 starter 카드다.",
+   "value": null,
+   "unit": null,
+   "population": "신용 신규 고객(미국)",
+   "period": "공식 안내(조회 2026-10-23)",
+   "source_id": "LNS12",
+   "quote": "a first credit card to help people get on a path to building credit",
+   "age_scope": "전연령",
+   "confidence": "high",
+   "note": "",
+   "quote_verified": true
+  },
+  {
+   "id": "LNF36",
+   "topic": "Chase Freedom Rise",
+   "claim": "Freedom Rise는 연회비 $0이고 전 구매 1.5% 캐시백이다.",
+   "value": 1.5,
+   "unit": "%",
+   "population": "신용 신규·학생(미국)",
+   "period": "공식 페이지(조회 2026-10-23)",
+   "source_id": "LNS23",
+   "quote": "1.5% cash back on all purchases * $25 for enrolling in automatic payments",
+   "age_scope": "전연령",
+   "confidence": "high",
+   "note": "",
+   "quote_verified": true
+  },
+  {
+   "id": "LNF37",
+   "topic": "Chase Freedom Rise",
+   "claim": "Chase 예금 $250 이상 보유 시 승인 가능성이 올라간다는 안내가 있다.",
+   "value": 250,
+   "unit": "USD",
+   "population": "미국 신청자",
+   "period": "공식 페이지(조회 2026-10-23)",
+   "source_id": "LNS23",
+   "quote": "Having at least $250 in Chase checking or savings accounts increases",
+   "age_scope": "전연령",
+   "confidence": "medium",
+   "note": "문장 뒤쪽 확인 필요(본문은 'increases' 이후 절단)",
+   "quote_verified": true
+  },
+  {
+   "id": "LNF38",
+   "topic": "Chase Freedom Rise",
+   "claim": "Chase가 Freedom 계열에 Freedom Rise를 새로 추가했다고 발표했다(기사 2023-06-12).",
+   "value": null,
+   "unit": null,
+   "population": "미국",
+   "period": "2023-06",
+   "source_id": "LNS13",
+   "quote": "Today, Chase announced a new addition to its beloved Freedom family",
+   "age_scope": "전연령",
+   "confidence": "medium",
+   "note": "출시 시점은 기사 발행일 기준",
+   "quote_verified": true
+  },
+  {
+   "id": "LNF39",
+   "topic": "Capital One Secured",
+   "claim": "Platinum Secured는 책임 있는 이용 시 6개월 정도에 한도 증액이 고려될 수 있다.",
+   "value": 6,
+   "unit": "개월",
+   "population": "보증금형 카드 회원(미국)",
+   "period": "공식 페이지(조회 2026-10-23)",
+   "source_id": "LNS14",
+   "quote": "be considered for a credit line increase in as little as six months",
+   "age_scope": "전연령",
+   "confidence": "high",
+   "note": "",
+   "quote_verified": true
+  },
+  {
+   "id": "LNF40",
+   "topic": "Capital One Secured",
+   "claim": "Platinum Secured는 책임 있는 이용 시 보증금을 돌려받고 일반(unsecured) Platinum 카드로 업그레이드될 수 있다.",
+   "value": null,
+   "unit": null,
+   "population": "보증금형 카드 회원(미국)",
+   "period": "공식 페이지(조회 2026-10-23)",
+   "source_id": "LNS14",
+   "quote": "upgrade to a standard, unsecured Platinum card",
+   "age_scope": "전연령",
+   "confidence": "high",
+   "note": "",
+   "quote_verified": true
+  },
+  {
+   "id": "LNF41",
+   "topic": "Capital One Secured",
+   "claim": "Platinum Secured는 연회비 $0, 최소 환급형 보증금 $49·$99·$200 중 선택이다.",
+   "value": 49,
+   "unit": "USD",
+   "population": "미국 신청자",
+   "period": "공식 페이지(조회 2026-10-23)",
+   "source_id": "LNS14",
+   "quote": "$49, $99 or $200 minimum refundable deposit",
+   "age_scope": "전연령",
+   "confidence": "high",
+   "note": "신용 점수에 따라 보증금 구간이 갈림(본문 구조)",
+   "quote_verified": true
+  },
+  {
+   "id": "LNF42",
+   "topic": "Capital One Student",
+   "claim": "학생 카드(Quicksilver for Students)는 졸업 후에도 카드와 혜택이 유지된다.",
+   "value": null,
+   "unit": null,
+   "population": "대학생(미국)",
+   "period": "공식 FAQ(조회 2026-10-23)",
+   "source_id": "LNS15",
+   "quote": "your Capital One Quicksilver Rewards card stays with you",
+   "age_scope": "20대",
+   "confidence": "high",
+   "note": "졸업 시 별도 카드로 전환되는 구조가 아님",
+   "quote_verified": true
+  },
+  {
+   "id": "LNF43",
+   "topic": "Capital One Student",
+   "claim": "Quicksilver Rewards for Students는 모든 구매 1.5% 무제한 캐시백, 연회비 $0이다.",
+   "value": 1.5,
+   "unit": "%",
+   "population": "대학생(미국)",
+   "period": "공식 페이지(조회 2026-10-23)",
+   "source_id": "LNS15",
+   "quote": "Earn unlimited 1.5% cash back on every purchase, every day. $0 annual fee.",
+   "age_scope": "20대",
+   "confidence": "high",
+   "note": "",
+   "quote_verified": true
+  },
+  {
+   "id": "LNF44",
+   "topic": "Discover Student",
+   "claim": "Discover it Student는 첫해 말 받은 캐시백을 1:1로 무제한 매칭해준다.",
+   "value": null,
+   "unit": null,
+   "population": "대학생(미국)",
+   "period": "공식 페이지(조회 2026-10-23)",
+   "source_id": "LNS16",
+   "quote": "unlimited dollar-for-dollar match of all the cash back you earn",
+   "age_scope": "20대",
+   "confidence": "high",
+   "note": "",
+   "quote_verified": true
+  },
+  {
+   "id": "LNF45",
+   "topic": "Discover Student",
+   "claim": "Discover it Student는 분기별 선택 카테고리에서 5% 캐시백을 제공한다.",
+   "value": 5,
+   "unit": "%",
+   "population": "대학생(미국)",
+   "period": "공식 페이지(조회 2026-10-23)",
+   "source_id": "LNS16",
+   "quote": "Earn 5% cash back on everyday purchases at different places you shop",
+   "age_scope": "20대",
+   "confidence": "high",
+   "note": "분기 최대 한도·활성화 필요(본문)",
+   "quote_verified": true
+  },
+  {
+   "id": "LNF46",
+   "topic": "Step",
+   "claim": "Step은 20대 이용자의 신용점수가 1년 평균 57점 올랐다고 자사 페이지에 게시한다.",
+   "value": 57,
+   "unit": "점",
+   "population": "Step 20대 이용자(미국)",
+   "period": "공식 페이지(조회 2026-10-23)",
+   "source_id": "LNS17",
+   "quote": "Step users in their 20s increase their credit score by an average of 57 points",
+   "age_scope": "20대",
+   "confidence": "medium",
+   "note": "자사 주장, 산출 방법·표본 미공개",
+   "quote_verified": true
+  },
+  {
+   "id": "LNF47",
+   "topic": "현대카드 Teens",
+   "claim": "현대카드 Teens는 현대카드 회원의 만 12~18세 가족에게 발급되며 연회비는 국내전용 2천원이다.",
+   "value": 2000,
+   "unit": "원",
+   "population": "만 12~18세 가족",
+   "period": "출시 기사(발행일 미확인)",
+   "source_id": "LNS18",
+   "quote": "현대카드를 보유한 회원의 만 12~18세 가족에게 발급 가능하다는 점",
+   "age_scope": "10대",
+   "confidence": "medium",
+   "note": "홍보성 매체. 10대 대상이라 GenZ 신용카드 대상 아님",
+   "quote_verified": true
+  },
+  {
+   "id": "LNF48",
+   "topic": "현대카드 Teens",
+   "claim": "Teens 이용 한도는 월 최대 50만원 이내에서 부모가 1만원 단위로 조정한다.",
+   "value": 500000,
+   "unit": "원",
+   "population": "만 12~18세 가족",
+   "period": "출시 기사(발행일 미확인)",
+   "source_id": "LNS18",
+   "quote": "이용 한도는 월 최대 50만원 이내에서 부모가 1만원 단위로 조정할 수 있다",
+   "age_scope": "10대",
+   "confidence": "medium",
+   "note": "",
+   "quote_verified": true
+  },
+  {
+   "id": "LNF49",
+   "topic": "청년 카드 학습",
+   "claim": "KB국민 청춘대로 톡톡카드는 간편결제 혜택으로 토익 접수 시 5천원을 할인받는다고 소개된다(전월실적 30만원, 월 최대 25,000원).",
+   "value": 5000,
+   "unit": "원",
+   "population": "대학생·취준생 대상 소개",
+   "period": "2025~2026 글",
+   "source_id": "LNS19",
+   "quote": "간편결제 혜택으로 토익 접수 시 5천원을 할인받아요",
+   "age_scope": "20대",
+   "confidence": "low",
+   "note": "홍보성 글. 토익 응시료 52,500원 기준 표(첵첵 2,000원/노리2 1,050원/청춘대로 5,000원)가 같은 글에 있음. 학습 전용 카드가 아니라 일반 청년 카드의 간편결제 혜택",
+   "quote_verified": true
+  },
+  {
+   "id": "LNF50",
+   "topic": "토익 응시료",
+   "claim": "토익 응시료는 52,500원으로 소개된다.",
+   "value": 52500,
+   "unit": "원",
+   "population": "토익 응시자",
+   "period": "2025~2026 글",
+   "source_id": "LNS19",
+   "quote": "토익 응시료는 52,500원으로",
+   "age_scope": "20대",
+   "confidence": "low",
+   "note": "홍보성 글",
+   "quote_verified": true
+  }
+ ],
+ "gaps": [
+  "클래스101·탈잉·프립·인프런·패스트캠퍼스의 2025~2026 이용자 연령 분포, 20대 비중, 결제액은 공식 자료·보도에서 찾지 못함(클래스101은 2024년 영업이익과 구독자 수만 확인, 탈잉·프립·인프런은 수치 자체를 확인 못함)",
+  "20대 단독의 자기계발·취미 월 지출액 또는 지출 비중(2025~2026)은 찾지 못함. 확인된 설문은 20~59세 2022년(오픈서베이)과 만 19~39세 취업 사교육비 2026년(2차 인용)뿐",
+  "클래스101·탈잉·인프런과 카드사의 제휴 카드/할인 사례는 검색 결과에서 확인되지 않음",
+  "학원비·교육 카드의 카드사 공식 상품 페이지와 정확한 출시일·단종 여부는 확인 못함(카드고릴라·뱅크샐러드 등 홍보성 매체 서술에 의존, tier D)",
+  "국내 사례 중 현대카드 등급 제도, 처음 챌린지, 토스·카카오뱅크 미션형 상품, 대학생 카드의 졸업 후 자동 전환 구조는 검색 예산 소진으로 조사하지 못함",
+  "게임화(quest/레벨) 카드·앱과 점수형이 아닌 행동 단계형 카드의 출시 시점·성과 수치는 확인한 사례가 없음(leveling, gamified 종류의 case 0건)",
+  "해외 secured/student 카드의 이용자 수·졸업률 같은 성과 수치는 발행사 공식 페이지에서 확인 못함(리뷰 수, 자사 주장 수치만 존재)",
+  "4번 한계 항목(왜 크게 퍼지지 않았는지)은 직접 근거를 담은 출처를 확인하지 못함. 확인된 사실은 각 case의 limits(실적 제외, 대상 한정, 연회비, 보증금, 한도)에 사실로만 기록",
+  "Chase Freedom Rise의 일부 조건(3% 해외수수료 등)과 launch 정확한 날짜는 공식 확인 못함(2023-06은 TPG 기사 발행일 기준)",
+  "웹 검색 한도(세션 공유 200회) 소진으로 후반 조사가 제한됨",
+  "링커리어 글이 인용한 교육의봄·청년재단, 알바천국 조사는 원문 미확인(quote_verified는 인용 글 기준)"
+ ],
+ "cases": [
+  {
+   "id": "LNC1",
+   "name": "국민내일배움카드",
+   "operator": "고용노동부(고용24)",
+   "region": "KR",
+   "kind": "edu_card",
+   "launched": "미확인",
+   "status": "active",
+   "structure": "국민 평생 직업능력 개발법에 근거해 직업능력개발훈련이 필요한 국민에게 훈련비를 지원하는 제도로, 5년간 300만원에 200만원 추가 지원(공식 안내).",
+   "conditions": "고용24 훈련 신청에 사용. 수강료의 통상 15~55%는 본인 부담. 공무원, 월 임금 300만원 이상 만 45세 미만 대규모 기업 근로자 등은 제외.",
+   "metrics": "훈련비 지원 한도 5년 300만원(+200만원 대상 한정), 총 500만원 초과 불가",
+   "limits": "유효기간 5년 후 잔액 소멸. 발급 제외 대상 있음. 졸업까지 2년 이상 남은 대학·대학원 재학생 제외는 2차 출처(LNS20)에서만 확인. 신용카드가 아니라 훈련비 지원 계좌이며 취미 클래스는 대상 아님으로 추정(고용24 훈련과정 한정, 본문에서 취미 제외를 명시 확인하지는 못함)",
+   "source_ids": [
+    "LNS1",
+    "LNS20"
+   ]
+  },
+  {
+   "id": "LNC2",
+   "name": "신한카드 Edu Plan+",
+   "operator": "신한카드",
+   "region": "KR",
+   "kind": "edu_card",
+   "launched": "미확인(출시 기사 발행일 미확인)",
+   "status": "unknown",
+   "structure": "학원비, 학습지, 유치원 결제 시 월 최대 10% 캐시백(월 최대 10만원)을 주는 학원비 할인 신용카드(카드고릴라 보도 기준).",
+   "conditions": "전월실적 30만원 이상부터 구간별 3~10% 캐시백, 월 20만원 이상 학원비 결제 건수에 따라 추가 캐시백. 연회비 4만원.",
+   "metrics": "월 최대 캐시백 10만원(기본 9만원+추가 1만원)",
+   "limits": "캐시백 받은 학원비 결제금액은 전월실적에서 제외. 대상은 오프라인 학원·학습지·유치원 중심으로 자녀 교육비 가구용으로 소개됨(해석 아님, 기사 서술). 공식 카드사 페이지 미확인",
+   "source_ids": [
+    "LNS2",
+    "LNS3"
+   ]
+  },
+  {
+   "id": "LNC3",
+   "name": "신한카드 Edu",
+   "operator": "신한카드",
+   "region": "KR",
+   "kind": "edu_card",
+   "launched": "미확인",
+   "status": "unknown",
+   "structure": "오프라인 학원, 학습지, 유치원 결제에 5~10% 캐시백을 주는 학원비 할인 신용카드(카드고릴라 기준).",
+   "conditions": "전월실적 50만원 이상부터 5%(한도 1.5만원), 150만원 이상 10%(한도 4.5만원), 결제 건수별 추가 캐시백. 연회비 2만원.",
+   "metrics": "기본 월 한도 4만 5천원, 추가 포함 월 최대 5만원",
+   "limits": "학원비 캐시백 결제금액은 전월실적 제외. 아파트관리비 자동이체 캐시백은 실적 인정. 자녀 교육비 중심 구조",
+   "source_ids": [
+    "LNS3",
+    "LNS4"
+   ]
+  },
+  {
+   "id": "LNC4",
+   "name": "KB국민 Our WE:SH 카드",
+   "operator": "KB국민카드",
+   "region": "KR",
+   "kind": "edu_card",
+   "launched": "미확인",
+   "status": "unknown",
+   "structure": "소비패턴에 따라 쇼핑과 학원비 할인 혜택을 선택해 조합하는 선택형 카드이며 자녀중심 옵션에서 학원 10% 할인(카드고릴라 기준).",
+   "conditions": "연회비 1만5천원. 혜택 선택형.",
+   "metrics": "없음(수치 미기재)",
+   "limits": "자녀 중심 옵션이라 학원 업종이 성인 학습이 아닌 자녀 학원 대상으로 소개됨. 학원 한도 본문에서 확인 못함",
+   "source_ids": [
+    "LNS3"
+   ]
+  },
+  {
+   "id": "LNC5",
+   "name": "현대카드Z 패밀리에디션2",
+   "operator": "현대카드",
+   "region": "KR",
+   "kind": "edu_card",
+   "launched": "미확인",
+   "status": "unknown",
+   "structure": "입시·예체능·운전학원 등 학원 업종에서 10% 할인을 받을 수 있는 카드(뱅크샐러드 기준).",
+   "conditions": "연회비 20,000원, 전월실적 50만원~",
+   "metrics": "없음",
+   "limits": "자녀 교육비·생활비 가구 대상으로 소개. 학원 업종 결제는 일반적으로 실적 제외라는 같은 글의 일반 서술이 있음(이 카드 해당 여부 미확인)",
+   "source_ids": [
+    "LNS4"
+   ]
+  },
+  {
+   "id": "LNC6",
+   "name": "하나멤버스 1Q #tag1카드 Beige",
+   "operator": "하나카드",
+   "region": "KR",
+   "kind": "edu_card",
+   "launched": "미확인(stale 가능)",
+   "status": "unknown",
+   "structure": "인터넷 서점 이용 금액의 7%를 하나머니로 적립하고 학원 업종(오프라인)에도 5% 적립(카드고릴라 기준).",
+   "conditions": "전월 일시불 및 할부 30만원 이상 이용 시, 3구간(30/60/100만원)으로 통합 적립 한도 1/2/4만 하나머니. 연회비 국내전용 15,000원.",
+   "metrics": "한도 구간별 통합 적립 1~4만 하나머니",
+   "limits": "현재 판매 여부 미확인(글에 최신 추천 이동 안내 있음). 도서·학원 외 마트·통신 등과 통합 한도",
+   "source_ids": [
+    "LNS21"
+   ]
+  },
+  {
+   "id": "LNC7",
+   "name": "롯데카드 LOCA 365",
+   "operator": "롯데카드",
+   "region": "KR",
+   "kind": "edu_card",
+   "launched": "미확인",
+   "status": "active",
+   "structure": "교육 및 대중교통 등 일상 소비 영역에서 할인 혜택을 제공하는 카드(토스 보도 기준).",
+   "conditions": "상세 조건 미확인(본문 요약만)",
+   "metrics": "토스 카드라운지 도서·서점/뷰티 혜택 카드 신청 완료 기준 1위(2026.3월 소비 흐름 기반, 순위만 있고 건수 없음)",
+   "limits": "신청 순위이며 발급·사용 실적이 아님. 혜택 한도·연회비 미확인",
+   "source_ids": [
+    "LNS10"
+   ]
+  },
+  {
+   "id": "LNC8",
+   "name": "우리카드·비씨카드 도서 할인 행사",
+   "operator": "우리카드, 비씨카드",
+   "region": "KR",
+   "kind": "edu_card",
+   "launched": "2024-10",
+   "status": "ended",
+   "structure": "예스24 3만원 이상 결제 시 우리 원 페이 2000원 할인 쿠폰, 비씨 마이태그로 예스24·교보문고 3만원 이상 결제 시 2000원 할인(메트로신문).",
+   "conditions": "우리카드는 일 선착순 130명, 10월 29일까지. 비씨카드는 회원사 12곳 카드 동일 혜택.",
+   "metrics": "일 130명 2000원 쿠폰",
+   "limits": "한시 이벤트(기간 한정, 종료로 추정되나 종료 공지는 확인 못함). 기사는 도서 할인 행사가 한동안 활발할 것이라는 업계 관측을 전함",
+   "source_ids": [
+    "LNS11"
+   ]
+  },
+  {
+   "id": "LNC9",
+   "name": "KB국민 청춘대로 톡톡카드",
+   "operator": "KB국민카드",
+   "region": "KR",
+   "kind": "student_card",
+   "launched": "미확인",
+   "status": "unknown",
+   "structure": "카페·외식·간편결제·대중교통 할인을 주는 대학생·취준생 대상 카드이며 간편결제 혜택으로 토익 접수 5천원 할인(뱅크샐러드 홍보글 기준).",
+   "conditions": "전월실적 30만원, 월 최대 혜택 25,000원. 모바일 단독 발급 4천원 연회비(글 서술).",
+   "metrics": "토익 응시료 52,500원 기준 5천원 할인",
+   "limits": "학습 전용이 아니라 일반 청년 카드의 간편결제 혜택. 홍보성 글",
+   "source_ids": [
+    "LNS19"
+   ]
+  },
+  {
+   "id": "LNC10",
+   "name": "현대카드 Teens",
+   "operator": "현대카드",
+   "region": "KR",
+   "kind": "student_card",
+   "launched": "미확인",
+   "status": "unknown",
+   "structure": "현대카드 회원의 만 12~18세 가족에게 발급되며 편의점·카페·패스트푸드·대중교통 2% 청구 할인을 주는 청소년 카드(카드고릴라).",
+   "conditions": "전월 10만원 이상, 월 통합 할인 한도 5천원, 이용 한도 월 최대 50만원(부모 조정), 연회비 국내전용 2천원.",
+   "metrics": "없음",
+   "limits": "대상이 만 12~18세 가족 회원이라 GenZ 성인 카드 대상 아님. 성인 카드로의 자동 승급 구조는 본문에서 확인 못함",
+   "source_ids": [
+    "LNS18"
+   ]
+  },
+  {
+   "id": "LNC11",
+   "name": "Chase Freedom Rise",
+   "operator": "Chase(미국)",
+   "region": "해외",
+   "kind": "graduation_path",
+   "launched": "2023-06",
+   "status": "active",
+   "structure": "첫 신용카드로 신용 형성 경로를 돕도록 설계된 starter 카드이며 12개월마다 Freedom Unlimited로의 업그레이드가 자동 평가된다(Chase 공식).",
+   "conditions": "연회비 $0, 1.5% 캐시백, 약 6개월 후 한도 증액 대상 가능. 업그레이드 조건: 계좌 개설 상태, 최근 12개월 구매, 정시 납부 등. Chase 예금 $250 이상 보유 시 승인 가능성 상승(공식 페이지).",
+   "metrics": "성과 수치 미확인",
+   "limits": "Chase 계좌 보유가 승인에 유리해 은행 고객 중심 구조. 3% 해외결제 수수료 등은 본 조사에서 공식 확인 못함",
+   "source_ids": [
+    "LNS12",
+    "LNS13",
+    "LNS23"
+   ]
+  },
+  {
+   "id": "LNC12",
+   "name": "Capital One Platinum Secured",
+   "operator": "Capital One(미국)",
+   "region": "해외",
+   "kind": "graduation_path",
+   "launched": "미확인",
+   "status": "active",
+   "structure": "보증금을 맡기고 쓰는 secured 카드이며 책임 있는 이용 시 보증금을 돌려받고 일반 Platinum 카드로 업그레이드될 수 있다(Capital One 공식).",
+   "conditions": "연회비 $0, 환급형 보증금 $49/$99/$200 중 선택(최대 $1000까지 추가 예치로 한도 상향), 약 6개월 후 한도 증액 고려 가능.",
+   "metrics": "리뷰 14,196건(페이지 표기)",
+   "limits": "업그레이드는 'could/may be able to' 표현으로 보장 아님. 보증금 필요",
+   "source_ids": [
+    "LNS14"
+   ]
+  },
+  {
+   "id": "LNC13",
+   "name": "Capital One Quicksilver Rewards for Students",
+   "operator": "Capital One(미국)",
+   "region": "해외",
+   "kind": "student_card",
+   "launched": "미확인",
+   "status": "active",
+   "structure": "대학생 대상으로 모든 구매 1.5% 무제한 캐시백, 연회비 $0이며 졸업 후에도 같은 카드와 혜택이 유지된다(공식 FAQ).",
+   "conditions": "재학 중인 대학·커뮤니티칼리지 등 학생 대상",
+   "metrics": "성과 수치 미확인",
+   "limits": "졸업 시 상위 카드로 전환되는 단계 구조가 아니라 카드 유지 구조",
+   "source_ids": [
+    "LNS15"
+   ]
+  },
+  {
+   "id": "LNC14",
+   "name": "Discover it Student Cash Back",
+   "operator": "Discover(미국)",
+   "region": "해외",
+   "kind": "student_card",
+   "launched": "미확인",
+   "status": "active",
+   "structure": "분기별 선택 카테고리 5% 캐시백과 첫해 말 캐시백 1:1 무제한 매칭을 주는 학생 카드(Discover 공식).",
+   "conditions": "연회비 없음, 분기 최대 한도 및 활성화 필요",
+   "metrics": "성과 수치 미확인(리뷰 1,500건+ 5점 표기)",
+   "limits": "졸업 시 전환 구조는 본문에서 확인 못함",
+   "source_ids": [
+    "LNS16"
+   ]
+  },
+  {
+   "id": "LNC15",
+   "name": "Step Card / Step Black",
+   "operator": "Step(미국)",
+   "region": "해외",
+   "kind": "student_card",
+   "launched": "미확인",
+   "status": "active",
+   "structure": "Step Visa 카드로 신용을 쌓고 캐시백·저축 보상을 주는 핀테크 서비스이며 10대·20대 이용을 전제로 한다(공식 페이지).",
+   "conditions": "Step Black 가입 시 1% 캐시백·저축 3.00%(공식 페이지 표기)",
+   "metrics": "20대 이용자의 신용점수가 1년 평균 57점 상승(자사 주장, 산출 방법 미공개)",
+   "limits": "자사 주장 수치. 졸업·레벨 구조는 Step Black 유료 상위 플랜 외에 확인 못함",
+   "source_ids": [
+    "LNS17"
+   ]
+  },
+  {
+   "id": "LNC16",
+   "name": "클래스101 / 클래스101+",
+   "operator": "클래스101",
+   "region": "KR",
+   "kind": "class_platform",
+   "launched": "2018-03(서비스 시작, 2022 하반기 구독 전환)",
+   "status": "active",
+   "structure": "취미·창작 클래스 온라인 구독 플랫폼이며 클래스101+는 월 19,000원에 6,000개+ 클래스 무제한 수강을 제공한다(데모데이 분석).",
+   "conditions": "구독 방식. 정확한 요금·조건은 공식 페이지 미확인",
+   "metrics": "2024년 영업이익 39억원·순이익 18억원, 크리에이터 약 13만명·클래스 6000여건, 구독 론칭 6개월 만에 유료 구독자 239% 증가(2023.5)",
+   "limits": "이용자 연령 분포·결제액 비중 미공개. 카드사 제휴 사례 확인 못함",
+   "source_ids": [
+    "LNS7",
+    "LNS8",
+    "LNS9",
+    "LNS6"
+   ]
+  },
+  {
+   "id": "LNC17",
+   "name": "패스트캠퍼스",
+   "operator": "패스트캠퍼스",
+   "region": "KR",
+   "kind": "class_platform",
+   "launched": "미확인",
+   "status": "unknown",
+   "structure": "데이터사이언스·프로그래밍·마케팅 등 8개 카테고리의 직장인 실무 교육 서비스(2016 보도).",
+   "conditions": "온라인·파트타임 강의",
+   "metrics": "수강생 평균 연령 32세, 70% 직장인(2016)",
+   "limits": "2016 자료라 현재 수치 아님(stale). 20대 비중 미확인",
+   "source_ids": [
+    "LNS22"
+   ]
+  },
+  {
+   "id": "LNC18",
+   "name": "오픈서베이 취미생활·자기계발 조사(맥락 사례)",
+   "operator": "오픈서베이",
+   "region": "KR",
+   "kind": "class_platform",
+   "launched": "2022-06",
+   "status": "unknown",
+   "structure": "20~59세 대상 취미/자기계발 활동 현황·채널 조사 리포트이며 클래스101 등 온라인 서비스 이용 행태를 포함한다.",
+   "conditions": "전국 20~59세 2,000명",
+   "metrics": "10명 중 7명 정기 활동, 월평균 7.1만원, 월 10만원 이상 26.6%",
+   "limits": "20대 단독 수치 미확인, 2022년이라 stale. 영상 채널(유튜브 34.7%)이 주 채널이고 클래스101류 앱은 주요 채널로 자리잡지 못했다고 리포트가 서술",
+   "source_ids": [
+    "LNS5"
+   ]
+  }
+ ],
+ "trend_items": [
+  {
+   "id": "LNT1",
+   "title": "2026년 3월 도서·서점 결제가 전월 대비 약 30% 증가",
+   "categories": [
+    "소비",
+    "교육"
+   ],
+   "age_scope": "전연령",
+   "what": "토스 카드 결제 기준 2026년 3월 도서·서점 결제금액이 방학 직후 대비 약 30% 늘었고 10대에서 211% 증가했다.",
+   "when": "2026-03",
+   "virality": {
+    "channel": "뉴스",
+    "evidence": "토스 카드 결제 데이터 집계",
+    "metric": "약 30%, 10대 211%"
+   },
+   "durability": "불명",
+   "fact_ids": [
+    "LNF16",
+    "LNF17"
+   ],
+   "card_relevance": "해석: 새학기 학습 소비가 도서·서점 업종에 몰리므로 교육 업종 혜택 카드가 시즌성 수요를 만날 수 있다."
+  },
+  {
+   "id": "LNT2",
+   "title": "교육·대중교통 할인 카드(LOCA 365)가 토스 카드라운지 신청 1위",
+   "categories": [
+    "소비",
+    "금융",
+    "교육"
+   ],
+   "age_scope": "젊은층(범위 미기재)",
+   "what": "새학기 도서·뷰티 혜택 카드 중 롯데카드 LOCA 365가 토스 카드라운지 신청 완료 기준 1위였다.",
+   "when": "2026-03",
+   "virality": {
+    "channel": "뉴스",
+    "evidence": "토스 카드라운지 신청 순위",
+    "metric": "1위(건수 미공개)"
+   },
+   "durability": "불명",
+   "fact_ids": [
+    "LNF15"
+   ],
+   "card_relevance": "해석: 교육 혜택은 단독 컨셉보다 대중교통 같은 일상 혜택과 묶여 선택되는 사례다."
+  },
+  {
+   "id": "LNT3",
+   "title": "한강 노벨상 이후 도서 할인 행사와 '텍스트힙'",
+   "categories": [
+    "소비",
+    "콘텐츠",
+    "교육"
+   ],
+   "age_scope": "MZ",
+   "what": "2024년 10월 우리카드·비씨카드가 예스24·교보문고 대상 도서 할인 행사를 열었고, MZ 중심 종이책 읽기 유행(텍스트힙)이 언급됐다.",
+   "when": "2024-10",
+   "virality": {
+    "channel": "뉴스",
+    "evidence": "온·오프라인 서점 완판, 카드사 행사",
+    "metric": "우리카드 일 130명 2000원 쿠폰"
+   },
+   "durability": "한시 유행",
+   "fact_ids": [
+    "LNF18",
+    "LNF19"
+   ],
+   "card_relevance": "해석: 카드사의 도서 혜택은 쿠폰형 한시 이벤트가 중심이며 상시 학습 혜택 구조는 아니었다."
+  },
+  {
+   "id": "LNT4",
+   "title": "20~59세 10명 중 7명이 정기적 취미·자기계발 활동",
+   "categories": [
+    "여가",
+    "교육"
+   ],
+   "age_scope": "전연령",
+   "what": "2022년 오픈서베이 조사에서 정기 활동자의 월평균 비용은 7.1만원, 월 10만원 이상은 26.6%였다.",
+   "when": "2022-05",
+   "virality": {
+    "channel": "뉴스",
+    "evidence": "오픈서베이 설문(2,000명)",
+    "metric": "70%, 7.1만원, 26.6%"
+   },
+   "durability": "불명",
+   "fact_ids": [
+    "LNF20",
+    "LNF21"
+   ],
+   "card_relevance": "해석: 취미·자기계발 지출은 월 수만원 단위여서 연회비·실적 조건이 큰 카드와는 규모 차이가 있다(20대 단독 수치 없음)."
+  },
+  {
+   "id": "LNT5",
+   "title": "취미·자기계발의 주 채널은 온라인 영상",
+   "categories": [
+    "콘텐츠",
+    "디지털",
+    "교육"
+   ],
+   "age_scope": "전연령",
+   "what": "같은 조사에서 취미/자기계발 시 온라인 채널 이용률은 84.9%, 유튜브 등 영상 채널이 34.7%로 최다였다.",
+   "when": "2022-05",
+   "virality": {
+    "channel": "SNS",
+    "evidence": "오픈서베이 설문",
+    "metric": "84.9%, 34.7%"
+   },
+   "durability": "불명",
+   "fact_ids": [
+    "LNF23",
+    "LNF22"
+   ],
+   "card_relevance": "해석: 영상 채널 소비는 무료가 많아 결제 접점이 클래스 플랫폼 구독 등에 한정될 수 있다."
+  },
+  {
+   "id": "LNT6",
+   "title": "클래스101 구독 전환과 첫 연간 흑자",
+   "categories": [
+    "교육",
+    "디지털",
+    "콘텐츠"
+   ],
+   "age_scope": "전연령",
+   "what": "클래스101은 구독 론칭 6개월 만에 유료 구독자 239% 증가(2023.5), 2024년 영업이익 39억원으로 첫 연간 흑자를 냈다.",
+   "when": "2023-05~2024",
+   "virality": {
+    "channel": "뉴스",
+    "evidence": "회사 발표 보도",
+    "metric": "영업이익 39억원, 유료 구독자 15만명"
+   },
+   "durability": "지속 추세",
+   "fact_ids": [
+    "LNF27",
+    "LNF29",
+    "LNF30"
+   ],
+   "card_relevance": "해석: 취미 클래스는 월 구독형 정기결제가 정착된 영역이라 정기결제 업종 혜택 설계 대상이 될 수 있다(카드사 제휴 사례는 미확인)."
+  },
+  {
+   "id": "LNT7",
+   "title": "청년 취업 사교육비 월평균 약 30만원",
+   "categories": [
+    "교육",
+    "금융"
+   ],
+   "age_scope": "청년(19~34)",
+   "what": "교육의봄·청년재단 2026 조사(만 19~39세 565명) 인용: 취업 사교육비 월평균 약 30만원, 연평균 약 360만원.",
+   "when": "2026-06~07",
+   "virality": {
+    "channel": "커뮤니티",
+    "evidence": "커뮤니티 글의 2차 인용",
+    "metric": "월 약 30만원"
+   },
+   "durability": "불명",
+   "fact_ids": [
+    "LNF25"
+   ],
+   "card_relevance": "해석: 취업 준비 학습비는 취미 클래스보다 규모가 크고, 정부 지원(내일배움카드)과 겹치는 영역이다."
+  },
+  {
+   "id": "LNT8",
+   "title": "대학생 여름방학 계획: 운동·자격증·어학",
+   "categories": [
+    "교육",
+    "여가"
+   ],
+   "age_scope": "20대",
+   "what": "알바천국 2026-07 조사 인용: 운동·다이어트 57.1%, 자격증 51.5%, 어학 40.2%(2차 인용).",
+   "when": "2026-07",
+   "virality": {
+    "channel": "커뮤니티",
+    "evidence": "커뮤니티 글의 2차 인용",
+    "metric": "57.1%/51.5%/40.2%"
+   },
+   "durability": "한시 유행",
+   "fact_ids": [
+    "LNF26"
+   ],
+   "card_relevance": "해석: 자격증·어학 시험 응시료 같은 건당 결제가 학습 소비의 한 형태이며 토익 52,500원 사례가 있다."
+  },
+  {
+   "id": "LNT9",
+   "title": "국민내일배움카드: 5년 300만원 훈련비와 자부담 구조",
+   "categories": [
+    "교육",
+    "금융"
+   ],
+   "age_scope": "청년(19~34)",
+   "what": "정부 훈련비 지원은 5년 300만원(+대상 한정 200만원)이며 통상 15~55% 자부담, 일부 재직자·재학생은 제외된다.",
+   "when": "상시",
+   "virality": {
+    "channel": "오프라인",
+    "evidence": "고용24 공식 안내",
+    "metric": "300만원"
+   },
+   "durability": "지속 추세",
+   "fact_ids": [
+    "LNF1",
+    "LNF2",
+    "LNF4"
+   ],
+   "card_relevance": "해석: 공적 학습비 지원은 신용카드 상품과 별도 제도이며 카드사가 보완할 수 있는 영역은 취미·비정부 과정이다."
+  },
+  {
+   "id": "LNT10",
+   "title": "학원비 할인 카드는 자녀 교육비 가구 중심",
+   "categories": [
+    "교육",
+    "소비"
+   ],
+   "age_scope": "전연령",
+   "what": "신한 Edu Plan+·Edu·현대Z 패밀리에디션2 등 학원비 카드는 오프라인 학원·학습지·유치원 결제에 캐시백/할인을 주며 연회비 2만~4만원, 학원비 결제분은 전월실적에서 제외된다.",
+   "when": "미확인",
+   "virality": {
+    "channel": "커뮤니티",
+    "evidence": "카드 비교 매체 홍보글",
+    "metric": "월 최대 캐시백 10만원(Edu Plan+)"
+   },
+   "durability": "지속 추세",
+   "fact_ids": [
+    "LNF6",
+    "LNF9",
+    "LNF13"
+   ],
+   "card_relevance": "해석: 국내 교육 카드는 성인 학습자가 아니라 자녀 학원비 부모 고객을 겨냥한 구조라 20대 학습 소비를 겨냥한 카드는 이번 조사에서 확인되지 않았다."
+  }
+ ]
+}

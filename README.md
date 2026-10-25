@@ -66,6 +66,17 @@ open final-mvp/ui/index.html        # macOS
 | 08 | 가드레일 | `guardrail` | 재무·준법 점검, fix/needs_human 판정 | Sonnet |
 | 09 | 디자인·마케팅 | `design_marketing` | 마케팅 방향성 전략 → 디자인 보드 7장 → 영상 스토리보드 3종 | Opus |
 | 10 | 기획서 | `plan_doc` | 고객 틀 7개 섹션 기획서 | Sonnet |
+| 11 | 근거 조사 | `scout` | 주제별 공개 자료 조사(사실·트렌드·사례·제약·예측), web_fetch로 본문 인용 | Sonnet |
+| 12 | 공백 분석 | `gap_analyst` | 각도별 시장 공백 후보, 경쟁 카드 대조로 반증 | Sonnet |
+| 13 | 아이디어 발산 | `ideator` | 테마별 컨셉 아이디어(참신한 CVP·실적 재해석·졸업·유행 연계) | Opus(앙상블 권장) |
+| 14 | 반박 검증 | `critic` | 렌즈별(기존 시판·근거·규제·참신성) 반박과 투표 | Opus/Sonnet |
+| 15 | 근거 라벨링 | `labeler` | 근거 항목에 니즈·태그·영역 라벨(검색용) | Haiku |
+
+11~15는 **탐색 파이프라인**(근거 조사 → 라벨링 → 공백 분석 → 반박 검증 → 아이디어 발산 → 반박 검증 → 후보 확정)이다. 메인 파이프라인(00~10)의 05·06이 쓸 근거 색인과 후보를 만든다. 실행은 `python3 -m cardstudio discover` (`runtime/README.md`).
+
+## 실제 연결용 런타임 코드
+
+`runtime/`에 설계서를 실제로 돌리는 Python 코드가 있다(오케스트레이터, 에이전트 호출기, 스키마 검증, LLM provider 3종, 사람 확인 지점, SSE 서버). 지금은 `replay`로 GenZ 기본 실행과 H2 대안 분기를 저장된 기록과 같은 경로로 재현하고, 실제 호출(Anthropic·Bedrock)은 초안이다. 자세한 상태와 실행법은 `runtime/README.md`.
 
 ## 상태 표기
 
@@ -77,3 +88,9 @@ open final-mvp/ui/index.html        # macOS
 | `ai_cardproduct_rnd_studio/` | 트렌드·경쟁사·소비자·시장조사 총괄의 다중 턴 대화, 카드 정보 조회 도구, 답 검증, 평가 세트 |
 | `agent-dev/` | LangGraph 파이프라인(시장조사→시장기회→컨셉→기획서), 특별한 포인트 검사, 반론자, 보강 요청 루프, 사람 개입(interrupt) |
 | `design_marketing_agent/` | 전략·보드·스토리보드 스키마, Bedrock Converse 도구 루프, 자동 검수, 보드 렌더러, 영상 미리보기 플레이어 |
+
+## GenZ 근거 팩 v2 시나리오 (데모)
+
+- `scenarios/genz-evidence/` 근거 팩 → `scenarios/genz-discovery/` 발굴 파이프라인 기록(에이전트 11~15) → `scenarios/genz-credit-v2*/` 05·06 이후 전 단계 기록.
+- 기본 경로(H2 1순위): 구독노트 / 분기 경로(H2 3순위 졸업 아이디어): 꾸준. 자세한 내용과 한계는 `scenarios/genz-credit-v2/README.md`.
+- 사용자 뷰(`ui/user-view.html`)의 케이스 선택에서 "GenZ 특화 (근거 팩 v2)"를 고르면 재생된다. 데이터는 `python3 samples/build_genz_v2_ui.py`로 만든다.

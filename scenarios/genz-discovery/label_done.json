@@ -1,0 +1,1998 @@
+{
+  "labels": {
+    "LNF1": {
+      "needs": [
+        "saving"
+      ],
+      "tags": [],
+      "domains": [],
+      "relevance": "indirect"
+    },
+    "LNF2": {
+      "needs": [
+        "saving"
+      ],
+      "tags": [],
+      "domains": [],
+      "relevance": "indirect"
+    },
+    "LNF3": {
+      "needs": [
+        "control"
+      ],
+      "tags": [],
+      "domains": [],
+      "relevance": "indirect"
+    },
+    "LNF4": {
+      "needs": [],
+      "tags": [],
+      "domains": [],
+      "relevance": "indirect"
+    },
+    "LNF5": {
+      "needs": [],
+      "tags": [],
+      "domains": [],
+      "relevance": "indirect"
+    },
+    "LNF6": {
+      "needs": [
+        "saving"
+      ],
+      "tags": [
+        "reward_cashback"
+      ],
+      "domains": [],
+      "relevance": "direct"
+    },
+    "LNF7": {
+      "needs": [
+        "saving"
+      ],
+      "tags": [
+        "reward_cashback",
+        "tiered_perf"
+      ],
+      "domains": [],
+      "relevance": "direct"
+    },
+    "LNF8": {
+      "needs": [
+        "saving"
+      ],
+      "tags": [
+        "reward_cashback"
+      ],
+      "domains": [],
+      "relevance": "direct"
+    },
+    "LNF9": {
+      "needs": [
+        "saving",
+        "control"
+      ],
+      "tags": [
+        "reward_cashback"
+      ],
+      "domains": [],
+      "relevance": "direct"
+    },
+    "LNF10": {
+      "needs": [
+        "saving"
+      ],
+      "tags": [
+        "reward_cashback"
+      ],
+      "domains": [],
+      "relevance": "direct"
+    },
+    "LNF11": {
+      "needs": [
+        "saving"
+      ],
+      "tags": [
+        "select_item",
+        "reward_discount"
+      ],
+      "domains": [],
+      "relevance": "direct"
+    },
+    "LNF12": {
+      "needs": [
+        "saving"
+      ],
+      "tags": [
+        "reward_discount"
+      ],
+      "domains": [],
+      "relevance": "direct"
+    },
+    "LNF13": {
+      "needs": [
+        "control"
+      ],
+      "tags": [],
+      "domains": [],
+      "relevance": "direct"
+    },
+    "LNF14": {
+      "needs": [
+        "saving"
+      ],
+      "tags": [
+        "reward_point",
+        "online_shop"
+      ],
+      "domains": [
+        "online"
+      ],
+      "relevance": "direct"
+    },
+    "LNF15": {
+      "needs": [],
+      "tags": [
+        "transit"
+      ],
+      "domains": [
+        "trans"
+      ],
+      "relevance": "direct"
+    },
+    "LNF16": {
+      "needs": [],
+      "tags": [],
+      "domains": [],
+      "relevance": "indirect"
+    },
+    "LNF17": {
+      "needs": [],
+      "tags": [],
+      "domains": [],
+      "relevance": "indirect"
+    },
+    "LNF18": {
+      "needs": [
+        "saving"
+      ],
+      "tags": [
+        "reward_discount",
+        "txn_threshold"
+      ],
+      "domains": [],
+      "relevance": "direct"
+    },
+    "LNF19": {
+      "needs": [],
+      "tags": [],
+      "domains": [],
+      "relevance": "indirect"
+    },
+    "LNF20": {
+      "needs": [],
+      "tags": [],
+      "domains": [],
+      "relevance": "indirect"
+    },
+    "LNF21": {
+      "needs": [],
+      "tags": [],
+      "domains": [],
+      "relevance": "indirect"
+    },
+    "LNF22": {
+      "needs": [],
+      "tags": [],
+      "domains": [],
+      "relevance": "indirect"
+    },
+    "LNF23": {
+      "needs": [],
+      "tags": [],
+      "domains": [],
+      "relevance": "indirect"
+    },
+    "LNF24": {
+      "needs": [],
+      "tags": [],
+      "domains": [],
+      "relevance": "indirect"
+    },
+    "LNF25": {
+      "needs": [],
+      "tags": [],
+      "domains": [],
+      "relevance": "indirect"
+    },
+    "LNF26": {
+      "needs": [],
+      "tags": [],
+      "domains": [],
+      "relevance": "indirect"
+    },
+    "LNF27": {
+      "needs": [],
+      "tags": [],
+      "domains": [],
+      "relevance": "indirect"
+    },
+    "LNF28": {
+      "needs": [],
+      "tags": [],
+      "domains": [],
+      "relevance": "indirect"
+    },
+    "LNF29": {
+      "needs": [],
+      "tags": [],
+      "domains": [
+        "sub"
+      ],
+      "relevance": "indirect"
+    },
+    "LNF30": {
+      "needs": [
+        "digital"
+      ],
+      "tags": [
+        "subscription_ott"
+      ],
+      "domains": [
+        "sub"
+      ],
+      "relevance": "indirect"
+    },
+    "LNF31": {
+      "needs": [],
+      "tags": [],
+      "domains": [],
+      "relevance": "indirect"
+    },
+    "LNF32": {
+      "needs": [],
+      "tags": [],
+      "domains": [],
+      "relevance": "indirect"
+    },
+    "LNF33": {
+      "needs": [],
+      "tags": [],
+      "domains": [],
+      "relevance": "direct"
+    },
+    "LNF34": {
+      "needs": [],
+      "tags": [],
+      "domains": [],
+      "relevance": "direct"
+    },
+    "LNF35": {
+      "needs": [],
+      "tags": [],
+      "domains": [],
+      "relevance": "direct"
+    },
+    "LNF36": {
+      "needs": [
+        "saving"
+      ],
+      "tags": [
+        "reward_cashback"
+      ],
+      "domains": [],
+      "relevance": "direct"
+    },
+    "LNF37": {
+      "needs": [],
+      "tags": [],
+      "domains": [],
+      "relevance": "direct"
+    },
+    "LNF38": {
+      "needs": [],
+      "tags": [],
+      "domains": [],
+      "relevance": "direct"
+    },
+    "LNF39": {
+      "needs": [],
+      "tags": [],
+      "domains": [],
+      "relevance": "direct"
+    },
+    "LNF40": {
+      "needs": [],
+      "tags": [],
+      "domains": [],
+      "relevance": "direct"
+    },
+    "LNF41": {
+      "needs": [],
+      "tags": [],
+      "domains": [],
+      "relevance": "direct"
+    },
+    "LNF42": {
+      "needs": [],
+      "tags": [],
+      "domains": [],
+      "relevance": "direct"
+    },
+    "LNF43": {
+      "needs": [
+        "saving"
+      ],
+      "tags": [
+        "reward_cashback",
+        "no_cap"
+      ],
+      "domains": [],
+      "relevance": "direct"
+    },
+    "LNF44": {
+      "needs": [
+        "saving"
+      ],
+      "tags": [
+        "reward_cashback",
+        "no_cap",
+        "period_bonus"
+      ],
+      "domains": [],
+      "relevance": "direct"
+    },
+    "LNF45": {
+      "needs": [
+        "saving"
+      ],
+      "tags": [
+        "reward_cashback"
+      ],
+      "domains": [],
+      "relevance": "direct"
+    },
+    "LNF46": {
+      "needs": [],
+      "tags": [],
+      "domains": [],
+      "relevance": "indirect"
+    },
+    "LNF47": {
+      "needs": [],
+      "tags": [],
+      "domains": [],
+      "relevance": "direct"
+    },
+    "LNF48": {
+      "needs": [
+        "control"
+      ],
+      "tags": [],
+      "domains": [],
+      "relevance": "direct"
+    },
+    "LNF49": {
+      "needs": [
+        "saving"
+      ],
+      "tags": [
+        "paymethod_bonus",
+        "reward_discount"
+      ],
+      "domains": [],
+      "relevance": "direct"
+    },
+    "LNF50": {
+      "needs": [],
+      "tags": [],
+      "domains": [],
+      "relevance": "indirect"
+    },
+    "FSF1": {
+      "needs": [],
+      "tags": [],
+      "domains": [],
+      "relevance": "indirect"
+    },
+    "FSF2": {
+      "needs": [],
+      "tags": [],
+      "domains": [],
+      "relevance": "indirect"
+    },
+    "FSF3": {
+      "needs": [],
+      "tags": [],
+      "domains": [],
+      "relevance": "indirect"
+    },
+    "FSF4": {
+      "needs": [],
+      "tags": [],
+      "domains": [],
+      "relevance": "indirect"
+    },
+    "FSF5": {
+      "needs": [],
+      "tags": [],
+      "domains": [],
+      "relevance": "indirect"
+    },
+    "FSF6": {
+      "needs": [],
+      "tags": [],
+      "domains": [],
+      "relevance": "indirect"
+    },
+    "FSF7": {
+      "needs": [],
+      "tags": [],
+      "domains": [],
+      "relevance": "indirect"
+    },
+    "FSF8": {
+      "needs": [],
+      "tags": [],
+      "domains": [],
+      "relevance": "indirect"
+    },
+    "FSF9": {
+      "needs": [],
+      "tags": [],
+      "domains": [],
+      "relevance": "indirect"
+    },
+    "FSF10": {
+      "needs": [],
+      "tags": [],
+      "domains": [],
+      "relevance": "indirect"
+    },
+    "FSF11": {
+      "needs": [],
+      "tags": [],
+      "domains": [],
+      "relevance": "indirect"
+    },
+    "FSF12": {
+      "needs": [
+        "social"
+      ],
+      "tags": [],
+      "domains": [],
+      "relevance": "indirect"
+    },
+    "FSF13": {
+      "needs": [],
+      "tags": [],
+      "domains": [],
+      "relevance": "indirect"
+    },
+    "FSF14": {
+      "needs": [],
+      "tags": [],
+      "domains": [],
+      "relevance": "indirect"
+    },
+    "FSF15": {
+      "needs": [],
+      "tags": [],
+      "domains": [],
+      "relevance": "indirect"
+    },
+    "FSF16": {
+      "needs": [],
+      "tags": [],
+      "domains": [],
+      "relevance": "indirect"
+    },
+    "FSF17": {
+      "needs": [],
+      "tags": [],
+      "domains": [
+        "dining"
+      ],
+      "relevance": "indirect"
+    },
+    "FSF18": {
+      "needs": [],
+      "tags": [],
+      "domains": [
+        "dining",
+        "daily"
+      ],
+      "relevance": "indirect"
+    },
+    "FSF19": {
+      "needs": [],
+      "tags": [],
+      "domains": [
+        "dining",
+        "daily"
+      ],
+      "relevance": "indirect"
+    },
+    "FSF20": {
+      "needs": [],
+      "tags": [],
+      "domains": [],
+      "relevance": "indirect"
+    },
+    "FSF21": {
+      "needs": [],
+      "tags": [],
+      "domains": [],
+      "relevance": "indirect"
+    },
+    "FSF22": {
+      "needs": [],
+      "tags": [],
+      "domains": [],
+      "relevance": "indirect"
+    },
+    "FSF23": {
+      "needs": [],
+      "tags": [],
+      "domains": [],
+      "relevance": "indirect"
+    },
+    "FSF24": {
+      "needs": [],
+      "tags": [],
+      "domains": [],
+      "relevance": "indirect"
+    },
+    "FSF25": {
+      "needs": [],
+      "tags": [],
+      "domains": [],
+      "relevance": "indirect"
+    },
+    "FSF26": {
+      "needs": [],
+      "tags": [],
+      "domains": [],
+      "relevance": "indirect"
+    },
+    "FSF27": {
+      "needs": [],
+      "tags": [],
+      "domains": [],
+      "relevance": "indirect"
+    },
+    "FSF28": {
+      "needs": [],
+      "tags": [],
+      "domains": [],
+      "relevance": "indirect"
+    },
+    "FSF29": {
+      "needs": [],
+      "tags": [],
+      "domains": [],
+      "relevance": "indirect"
+    },
+    "FSF30": {
+      "needs": [],
+      "tags": [],
+      "domains": [],
+      "relevance": "indirect"
+    },
+    "FSF31": {
+      "needs": [],
+      "tags": [],
+      "domains": [],
+      "relevance": "indirect"
+    },
+    "FSF32": {
+      "needs": [],
+      "tags": [],
+      "domains": [],
+      "relevance": "indirect"
+    },
+    "FSF33": {
+      "needs": [],
+      "tags": [],
+      "domains": [],
+      "relevance": "indirect"
+    },
+    "FSF34": {
+      "needs": [],
+      "tags": [],
+      "domains": [],
+      "relevance": "indirect"
+    },
+    "FSF35": {
+      "needs": [],
+      "tags": [],
+      "domains": [],
+      "relevance": "indirect"
+    },
+    "FSF36": {
+      "needs": [],
+      "tags": [],
+      "domains": [],
+      "relevance": "indirect"
+    },
+    "FSF37": {
+      "needs": [],
+      "tags": [],
+      "domains": [],
+      "relevance": "indirect"
+    },
+    "FSF38": {
+      "needs": [],
+      "tags": [],
+      "domains": [],
+      "relevance": "indirect"
+    },
+    "FSF39": {
+      "needs": [],
+      "tags": [],
+      "domains": [],
+      "relevance": "indirect"
+    },
+    "FSF40": {
+      "needs": [],
+      "tags": [
+        "challenge"
+      ],
+      "domains": [],
+      "relevance": "direct"
+    },
+    "FSF41": {
+      "needs": [
+        "travel"
+      ],
+      "tags": [],
+      "domains": [],
+      "relevance": "direct"
+    },
+    "FSF42": {
+      "needs": [],
+      "tags": [
+        "subscription_ott",
+        "reward_discount"
+      ],
+      "domains": [
+        "sub"
+      ],
+      "relevance": "direct"
+    },
+    "FSF43": {
+      "needs": [],
+      "tags": [
+        "time_slot",
+        "reward_discount",
+        "mart_daily"
+      ],
+      "domains": [
+        "daily"
+      ],
+      "relevance": "direct"
+    },
+    "FSF44": {
+      "needs": [],
+      "tags": [
+        "reward_discount"
+      ],
+      "domains": [],
+      "relevance": "direct"
+    },
+    "FSF45": {
+      "needs": [],
+      "tags": [],
+      "domains": [],
+      "relevance": "direct"
+    },
+    "FSF46": {
+      "needs": [],
+      "tags": [],
+      "domains": [],
+      "relevance": "indirect"
+    },
+    "FSF47": {
+      "needs": [
+        "safety"
+      ],
+      "tags": [],
+      "domains": [],
+      "relevance": "indirect"
+    },
+    "FSF48": {
+      "needs": [
+        "safety"
+      ],
+      "tags": [],
+      "domains": [],
+      "relevance": "indirect"
+    },
+    "FSF49": {
+      "needs": [
+        "safety"
+      ],
+      "tags": [],
+      "domains": [],
+      "relevance": "indirect"
+    },
+    "FSF50": {
+      "needs": [
+        "safety"
+      ],
+      "tags": [],
+      "domains": [],
+      "relevance": "indirect"
+    },
+    "FSF51": {
+      "needs": [
+        "safety"
+      ],
+      "tags": [],
+      "domains": [],
+      "relevance": "indirect"
+    },
+    "PFF1": {
+      "needs": [
+        "control"
+      ],
+      "tags": [],
+      "domains": [],
+      "relevance": "direct"
+    },
+    "PFF2": {
+      "needs": [
+        "control"
+      ],
+      "tags": [],
+      "domains": [],
+      "relevance": "direct"
+    },
+    "PFF3": {
+      "needs": [
+        "saving"
+      ],
+      "tags": [
+        "tiered_perf"
+      ],
+      "domains": [],
+      "relevance": "direct"
+    },
+    "PFF4": {
+      "needs": [
+        "control"
+      ],
+      "tags": [],
+      "domains": [
+        "fixed"
+      ],
+      "relevance": "direct"
+    },
+    "PFF5": {
+      "needs": [
+        "control"
+      ],
+      "tags": [],
+      "domains": [],
+      "relevance": "direct"
+    },
+    "PFF6": {
+      "needs": [
+        "control"
+      ],
+      "tags": [],
+      "domains": [],
+      "relevance": "direct"
+    },
+    "PFF7": {
+      "needs": [
+        "control"
+      ],
+      "tags": [
+        "discount_counts"
+      ],
+      "domains": [
+        "fixed"
+      ],
+      "relevance": "direct"
+    },
+    "PFF8": {
+      "needs": [
+        "control"
+      ],
+      "tags": [],
+      "domains": [
+        "dining"
+      ],
+      "relevance": "direct"
+    },
+    "PFF9": {
+      "needs": [
+        "control"
+      ],
+      "tags": [],
+      "domains": [],
+      "relevance": "direct"
+    },
+    "PFF10": {
+      "needs": [],
+      "tags": [
+        "spend_free",
+        "period_bonus"
+      ],
+      "domains": [],
+      "relevance": "direct"
+    },
+    "PFF11": {
+      "needs": [
+        "saving"
+      ],
+      "tags": [
+        "spend_free"
+      ],
+      "domains": [],
+      "relevance": "direct"
+    },
+    "PFF12": {
+      "needs": [
+        "saving"
+      ],
+      "tags": [
+        "spend_free"
+      ],
+      "domains": [],
+      "relevance": "direct"
+    },
+    "PFF13": {
+      "needs": [
+        "saving"
+      ],
+      "tags": [
+        "spend_free",
+        "no_cap",
+        "reward_discount"
+      ],
+      "domains": [
+        "online"
+      ],
+      "relevance": "direct"
+    },
+    "PFF14": {
+      "needs": [
+        "saving"
+      ],
+      "tags": [
+        "spend_free",
+        "reward_discount"
+      ],
+      "domains": [],
+      "relevance": "direct"
+    },
+    "PFF15": {
+      "needs": [
+        "saving"
+      ],
+      "tags": [
+        "count_based",
+        "reward_point",
+        "spend_free"
+      ],
+      "domains": [],
+      "relevance": "direct"
+    },
+    "PFF16": {
+      "needs": [
+        "control"
+      ],
+      "tags": [
+        "monthly_switch"
+      ],
+      "domains": [],
+      "relevance": "direct"
+    },
+    "PFF17": {
+      "needs": [
+        "saving"
+      ],
+      "tags": [
+        "spend_free",
+        "reward_discount",
+        "txn_threshold",
+        "no_cap"
+      ],
+      "domains": [
+        "online",
+        "daily"
+      ],
+      "relevance": "direct"
+    },
+    "PFF18": {
+      "needs": [
+        "saving",
+        "control"
+      ],
+      "tags": [
+        "spend_free",
+        "no_cap",
+        "tiered_perf"
+      ],
+      "domains": [
+        "sub",
+        "fixed"
+      ],
+      "relevance": "direct"
+    },
+    "PFF19": {
+      "needs": [
+        "saving"
+      ],
+      "tags": [
+        "spend_free",
+        "reward_cashback",
+        "period_bonus",
+        "travel_fx"
+      ],
+      "domains": [],
+      "relevance": "direct"
+    },
+    "PFF20": {
+      "needs": [],
+      "tags": [
+        "spend_free"
+      ],
+      "domains": [],
+      "relevance": "direct"
+    },
+    "PFF21": {
+      "needs": [],
+      "tags": [
+        "spend_free"
+      ],
+      "domains": [],
+      "relevance": "direct"
+    },
+    "PFF22": {
+      "needs": [
+        "control"
+      ],
+      "tags": [],
+      "domains": [],
+      "relevance": "direct"
+    },
+    "PFF23": {
+      "needs": [
+        "control"
+      ],
+      "tags": [],
+      "domains": [],
+      "relevance": "direct"
+    },
+    "PFF24": {
+      "needs": [],
+      "tags": [
+        "check_card"
+      ],
+      "domains": [],
+      "relevance": "direct"
+    },
+    "PFF25": {
+      "needs": [
+        "control"
+      ],
+      "tags": [],
+      "domains": [],
+      "relevance": "direct"
+    },
+    "PFF26": {
+      "needs": [],
+      "tags": [],
+      "domains": [],
+      "relevance": "indirect"
+    },
+    "PFF27": {
+      "needs": [
+        "control"
+      ],
+      "tags": [],
+      "domains": [],
+      "relevance": "indirect"
+    },
+    "PFF28": {
+      "needs": [
+        "control"
+      ],
+      "tags": [],
+      "domains": [],
+      "relevance": "indirect"
+    },
+    "PFF29": {
+      "needs": [
+        "control"
+      ],
+      "tags": [],
+      "domains": [],
+      "relevance": "direct"
+    },
+    "PFF30": {
+      "needs": [
+        "control"
+      ],
+      "tags": [
+        "perf_recharge"
+      ],
+      "domains": [],
+      "relevance": "direct"
+    },
+    "PFF31": {
+      "needs": [
+        "control"
+      ],
+      "tags": [
+        "perf_recharge"
+      ],
+      "domains": [],
+      "relevance": "direct"
+    },
+    "PFF32": {
+      "needs": [
+        "control"
+      ],
+      "tags": [
+        "perf_recharge"
+      ],
+      "domains": [],
+      "relevance": "direct"
+    },
+    "PFF33": {
+      "needs": [
+        "saving"
+      ],
+      "tags": [],
+      "domains": [],
+      "relevance": "direct"
+    },
+    "PFF34": {
+      "needs": [
+        "saving"
+      ],
+      "tags": [
+        "perf_recharge"
+      ],
+      "domains": [],
+      "relevance": "direct"
+    },
+    "PFF35": {
+      "needs": [],
+      "tags": [],
+      "domains": [],
+      "relevance": "direct"
+    },
+    "PFF36": {
+      "needs": [],
+      "tags": [],
+      "domains": [],
+      "relevance": "direct"
+    },
+    "PFF37": {
+      "needs": [],
+      "tags": [],
+      "domains": [],
+      "relevance": "direct"
+    },
+    "PFF38": {
+      "needs": [
+        "fixed_cost"
+      ],
+      "tags": [],
+      "domains": [],
+      "relevance": "direct"
+    },
+    "PFF39": {
+      "needs": [],
+      "tags": [],
+      "domains": [],
+      "relevance": "direct"
+    },
+    "PFF40": {
+      "needs": [
+        "control"
+      ],
+      "tags": [],
+      "domains": [],
+      "relevance": "direct"
+    },
+    "PFF41": {
+      "needs": [],
+      "tags": [],
+      "domains": [],
+      "relevance": "direct"
+    },
+    "PFF42": {
+      "needs": [
+        "control"
+      ],
+      "tags": [],
+      "domains": [],
+      "relevance": "direct"
+    },
+    "PFF43": {
+      "needs": [],
+      "tags": [],
+      "domains": [],
+      "relevance": "direct"
+    },
+    "PFF44": {
+      "needs": [
+        "saving"
+      ],
+      "tags": [
+        "reward_point"
+      ],
+      "domains": [],
+      "relevance": "direct"
+    },
+    "PFF45": {
+      "needs": [
+        "control"
+      ],
+      "tags": [
+        "reward_point"
+      ],
+      "domains": [],
+      "relevance": "direct"
+    },
+    "PFF46": {
+      "needs": [
+        "saving"
+      ],
+      "tags": [
+        "reward_cashback",
+        "no_cap"
+      ],
+      "domains": [],
+      "relevance": "direct"
+    },
+    "PFF47": {
+      "needs": [],
+      "tags": [],
+      "domains": [],
+      "relevance": "direct"
+    },
+    "PFF48": {
+      "needs": [],
+      "tags": [],
+      "domains": [],
+      "relevance": "direct"
+    },
+    "PFF49": {
+      "needs": [
+        "saving"
+      ],
+      "tags": [
+        "reward_cashback"
+      ],
+      "domains": [],
+      "relevance": "direct"
+    },
+    "PFF50": {
+      "needs": [
+        "saving"
+      ],
+      "tags": [
+        "reward_cashback",
+        "period_bonus"
+      ],
+      "domains": [],
+      "relevance": "direct"
+    },
+    "PFF51": {
+      "needs": [
+        "saving"
+      ],
+      "tags": [
+        "reward_cashback",
+        "no_cap"
+      ],
+      "domains": [],
+      "relevance": "direct"
+    },
+    "PFF52": {
+      "needs": [],
+      "tags": [],
+      "domains": [],
+      "relevance": "direct"
+    },
+    "LNT1": {
+      "needs": [],
+      "tags": [],
+      "domains": [],
+      "relevance": "indirect"
+    },
+    "LNT2": {
+      "needs": [],
+      "tags": [
+        "transit"
+      ],
+      "domains": [
+        "trans"
+      ],
+      "relevance": "direct"
+    },
+    "LNT3": {
+      "needs": [
+        "saving"
+      ],
+      "tags": [
+        "reward_discount"
+      ],
+      "domains": [],
+      "relevance": "direct"
+    },
+    "LNT4": {
+      "needs": [],
+      "tags": [],
+      "domains": [],
+      "relevance": "indirect"
+    },
+    "LNT5": {
+      "needs": [],
+      "tags": [],
+      "domains": [],
+      "relevance": "indirect"
+    },
+    "LNT6": {
+      "needs": [],
+      "tags": [],
+      "domains": [
+        "sub"
+      ],
+      "relevance": "indirect"
+    },
+    "LNT7": {
+      "needs": [],
+      "tags": [],
+      "domains": [],
+      "relevance": "indirect"
+    },
+    "LNT8": {
+      "needs": [],
+      "tags": [],
+      "domains": [],
+      "relevance": "indirect"
+    },
+    "LNT9": {
+      "needs": [
+        "saving"
+      ],
+      "tags": [],
+      "domains": [],
+      "relevance": "indirect"
+    },
+    "LNT10": {
+      "needs": [
+        "saving"
+      ],
+      "tags": [
+        "reward_cashback",
+        "reward_discount"
+      ],
+      "domains": [],
+      "relevance": "direct"
+    },
+    "FST1": {
+      "needs": [
+        "social"
+      ],
+      "tags": [],
+      "domains": [],
+      "relevance": "indirect"
+    },
+    "FST2": {
+      "needs": [],
+      "tags": [],
+      "domains": [],
+      "relevance": "indirect"
+    },
+    "FST3": {
+      "needs": [],
+      "tags": [],
+      "domains": [],
+      "relevance": "indirect"
+    },
+    "FST4": {
+      "needs": [],
+      "tags": [],
+      "domains": [],
+      "relevance": "indirect"
+    },
+    "FST5": {
+      "needs": [],
+      "tags": [],
+      "domains": [],
+      "relevance": "indirect"
+    },
+    "FST6": {
+      "needs": [],
+      "tags": [],
+      "domains": [],
+      "relevance": "indirect"
+    },
+    "FST7": {
+      "needs": [],
+      "tags": [],
+      "domains": [],
+      "relevance": "indirect"
+    },
+    "FST8": {
+      "needs": [],
+      "tags": [],
+      "domains": [],
+      "relevance": "indirect"
+    },
+    "FST9": {
+      "needs": [],
+      "tags": [],
+      "domains": [
+        "dining"
+      ],
+      "relevance": "indirect"
+    },
+    "FST10": {
+      "needs": [],
+      "tags": [],
+      "domains": [],
+      "relevance": "indirect"
+    },
+    "FST11": {
+      "needs": [],
+      "tags": [
+        "challenge",
+        "time_slot"
+      ],
+      "domains": [
+        "daily"
+      ],
+      "relevance": "direct"
+    },
+    "FST12": {
+      "needs": [],
+      "tags": [],
+      "domains": [],
+      "relevance": "indirect"
+    },
+    "FST13": {
+      "needs": [
+        "safety"
+      ],
+      "tags": [],
+      "domains": [],
+      "relevance": "indirect"
+    },
+    "FST14": {
+      "needs": [],
+      "tags": [],
+      "domains": [
+        "online"
+      ],
+      "relevance": "indirect"
+    },
+    "FST15": {
+      "needs": [
+        "social"
+      ],
+      "tags": [],
+      "domains": [],
+      "relevance": "indirect"
+    },
+    "FST16": {
+      "needs": [],
+      "tags": [],
+      "domains": [],
+      "relevance": "indirect"
+    },
+    "FST17": {
+      "needs": [],
+      "tags": [],
+      "domains": [],
+      "relevance": "indirect"
+    },
+    "FST18": {
+      "needs": [
+        "social"
+      ],
+      "tags": [],
+      "domains": [],
+      "relevance": "indirect"
+    },
+    "PFT1": {
+      "needs": [
+        "control"
+      ],
+      "tags": [
+        "check_card"
+      ],
+      "domains": [],
+      "relevance": "direct"
+    },
+    "PFT2": {
+      "needs": [
+        "control"
+      ],
+      "tags": [],
+      "domains": [],
+      "relevance": "direct"
+    },
+    "PFT3": {
+      "needs": [],
+      "tags": [
+        "spend_free"
+      ],
+      "domains": [],
+      "relevance": "direct"
+    },
+    "PFT4": {
+      "needs": [
+        "control"
+      ],
+      "tags": [
+        "perf_recharge"
+      ],
+      "domains": [],
+      "relevance": "direct"
+    },
+    "PFT5": {
+      "needs": [
+        "saving"
+      ],
+      "tags": [
+        "count_based",
+        "spend_free",
+        "reward_point",
+        "monthly_switch"
+      ],
+      "domains": [],
+      "relevance": "direct"
+    },
+    "PFT6": {
+      "needs": [],
+      "tags": [],
+      "domains": [],
+      "relevance": "direct"
+    },
+    "PFT7": {
+      "needs": [],
+      "tags": [],
+      "domains": [],
+      "relevance": "direct"
+    },
+    "PFT8": {
+      "needs": [],
+      "tags": [],
+      "domains": [],
+      "relevance": "direct"
+    },
+    "LNC1": {
+      "needs": [
+        "saving"
+      ],
+      "tags": [],
+      "domains": [],
+      "relevance": "indirect"
+    },
+    "LNC2": {
+      "needs": [
+        "saving"
+      ],
+      "tags": [
+        "reward_cashback"
+      ],
+      "domains": [],
+      "relevance": "direct"
+    },
+    "LNC3": {
+      "needs": [
+        "saving"
+      ],
+      "tags": [
+        "reward_cashback"
+      ],
+      "domains": [],
+      "relevance": "direct"
+    },
+    "LNC4": {
+      "needs": [
+        "saving"
+      ],
+      "tags": [
+        "select_item",
+        "reward_discount"
+      ],
+      "domains": [],
+      "relevance": "direct"
+    },
+    "LNC5": {
+      "needs": [
+        "saving"
+      ],
+      "tags": [
+        "reward_discount"
+      ],
+      "domains": [],
+      "relevance": "direct"
+    },
+    "LNC6": {
+      "needs": [
+        "saving"
+      ],
+      "tags": [
+        "reward_point",
+        "online_shop"
+      ],
+      "domains": [
+        "online"
+      ],
+      "relevance": "direct"
+    },
+    "LNC7": {
+      "needs": [],
+      "tags": [
+        "transit"
+      ],
+      "domains": [
+        "trans"
+      ],
+      "relevance": "direct"
+    },
+    "LNC8": {
+      "needs": [
+        "saving"
+      ],
+      "tags": [
+        "reward_discount",
+        "txn_threshold"
+      ],
+      "domains": [],
+      "relevance": "direct"
+    },
+    "LNC9": {
+      "needs": [
+        "saving"
+      ],
+      "tags": [
+        "paymethod_bonus",
+        "reward_discount"
+      ],
+      "domains": [],
+      "relevance": "direct"
+    },
+    "LNC10": {
+      "needs": [
+        "saving"
+      ],
+      "tags": [
+        "reward_discount",
+        "transit"
+      ],
+      "domains": [
+        "dining",
+        "trans"
+      ],
+      "relevance": "direct"
+    },
+    "LNC11": {
+      "needs": [],
+      "tags": [],
+      "domains": [],
+      "relevance": "direct"
+    },
+    "LNC12": {
+      "needs": [],
+      "tags": [],
+      "domains": [],
+      "relevance": "direct"
+    },
+    "LNC13": {
+      "needs": [
+        "saving"
+      ],
+      "tags": [
+        "reward_cashback",
+        "no_cap"
+      ],
+      "domains": [],
+      "relevance": "direct"
+    },
+    "LNC14": {
+      "needs": [
+        "saving"
+      ],
+      "tags": [
+        "reward_cashback",
+        "no_cap",
+        "period_bonus"
+      ],
+      "domains": [],
+      "relevance": "direct"
+    },
+    "LNC15": {
+      "needs": [
+        "saving"
+      ],
+      "tags": [
+        "reward_cashback"
+      ],
+      "domains": [],
+      "relevance": "direct"
+    },
+    "LNC16": {
+      "needs": [
+        "digital"
+      ],
+      "tags": [
+        "subscription_ott"
+      ],
+      "domains": [
+        "sub"
+      ],
+      "relevance": "indirect"
+    },
+    "LNC17": {
+      "needs": [],
+      "tags": [],
+      "domains": [],
+      "relevance": "indirect"
+    },
+    "LNC18": {
+      "needs": [],
+      "tags": [],
+      "domains": [],
+      "relevance": "indirect"
+    },
+    "PFC1": {
+      "needs": [
+        "saving"
+      ],
+      "tags": [
+        "reward_point"
+      ],
+      "domains": [],
+      "relevance": "direct"
+    },
+    "PFC2": {
+      "needs": [
+        "saving"
+      ],
+      "tags": [
+        "reward_cashback",
+        "no_cap"
+      ],
+      "domains": [],
+      "relevance": "direct"
+    },
+    "PFC3": {
+      "needs": [
+        "saving"
+      ],
+      "tags": [
+        "reward_cashback",
+        "no_cap"
+      ],
+      "domains": [],
+      "relevance": "direct"
+    },
+    "PFC4": {
+      "needs": [],
+      "tags": [],
+      "domains": [],
+      "relevance": "direct"
+    },
+    "PFC5": {
+      "needs": [],
+      "tags": [],
+      "domains": [],
+      "relevance": "direct"
+    },
+    "PFC6": {
+      "needs": [
+        "saving"
+      ],
+      "tags": [
+        "reward_cashback",
+        "period_bonus",
+        "no_cap"
+      ],
+      "domains": [],
+      "relevance": "direct"
+    },
+    "PFC7": {
+      "needs": [
+        "saving"
+      ],
+      "tags": [
+        "count_based",
+        "spend_free",
+        "reward_point",
+        "monthly_switch"
+      ],
+      "domains": [
+        "dining"
+      ],
+      "relevance": "direct"
+    },
+    "PFC8": {
+      "needs": [
+        "saving"
+      ],
+      "tags": [
+        "spend_free",
+        "reward_discount",
+        "txn_threshold",
+        "no_cap"
+      ],
+      "domains": [
+        "online",
+        "daily"
+      ],
+      "relevance": "direct"
+    },
+    "PFC9": {
+      "needs": [
+        "saving"
+      ],
+      "tags": [
+        "spend_free",
+        "reward_discount"
+      ],
+      "domains": [],
+      "relevance": "direct"
+    },
+    "PFC10": {
+      "needs": [
+        "saving"
+      ],
+      "tags": [
+        "spend_free",
+        "no_cap",
+        "reward_discount"
+      ],
+      "domains": [
+        "online"
+      ],
+      "relevance": "direct"
+    },
+    "PFC11": {
+      "needs": [
+        "saving"
+      ],
+      "tags": [
+        "spend_free",
+        "no_cap",
+        "tiered_perf",
+        "subscription_ott"
+      ],
+      "domains": [
+        "sub",
+        "fixed"
+      ],
+      "relevance": "direct"
+    },
+    "PFC12": {
+      "needs": [
+        "saving"
+      ],
+      "tags": [
+        "spend_free",
+        "reward_discount",
+        "travel_fx",
+        "period_bonus"
+      ],
+      "domains": [],
+      "relevance": "direct"
+    },
+    "PFC13": {
+      "needs": [
+        "saving"
+      ],
+      "tags": [],
+      "domains": [],
+      "relevance": "direct"
+    },
+    "PFC14": {
+      "needs": [
+        "saving"
+      ],
+      "tags": [
+        "perf_recharge"
+      ],
+      "domains": [],
+      "relevance": "direct"
+    },
+    "PFC15": {
+      "needs": [
+        "saving"
+      ],
+      "tags": [
+        "discount_counts"
+      ],
+      "domains": [
+        "fixed"
+      ],
+      "relevance": "direct"
+    },
+    "PFC16": {
+      "needs": [
+        "control"
+      ],
+      "tags": [
+        "reward_discount"
+      ],
+      "domains": [
+        "fixed",
+        "dining"
+      ],
+      "relevance": "direct"
+    },
+    "PFC17": {
+      "needs": [
+        "control"
+      ],
+      "tags": [
+        "check_card"
+      ],
+      "domains": [],
+      "relevance": "direct"
+    },
+    "PFC18": {
+      "needs": [],
+      "tags": [
+        "spend_free",
+        "period_bonus"
+      ],
+      "domains": [],
+      "relevance": "direct"
+    },
+    "FSP1": {
+      "needs": [
+        "social"
+      ],
+      "tags": [],
+      "domains": [],
+      "relevance": "indirect"
+    },
+    "FSP2": {
+      "needs": [],
+      "tags": [],
+      "domains": [],
+      "relevance": "indirect"
+    },
+    "FSP3": {
+      "needs": [
+        "travel"
+      ],
+      "tags": [
+        "challenge"
+      ],
+      "domains": [],
+      "relevance": "direct"
+    },
+    "FSP4": {
+      "needs": [],
+      "tags": [],
+      "domains": [],
+      "relevance": "indirect"
+    },
+    "FSP5": {
+      "needs": [],
+      "tags": [
+        "monthly_switch"
+      ],
+      "domains": [],
+      "relevance": "direct"
+    },
+    "FSP6": {
+      "needs": [],
+      "tags": [],
+      "domains": [],
+      "relevance": "indirect"
+    },
+    "FSP7": {
+      "needs": [
+        "safety"
+      ],
+      "tags": [],
+      "domains": [],
+      "relevance": "indirect"
+    },
+    "FSP8": {
+      "needs": [],
+      "tags": [
+        "paymethod_bonus"
+      ],
+      "domains": [
+        "online"
+      ],
+      "relevance": "direct"
+    },
+    "PFA1": {
+      "needs": [
+        "saving"
+      ],
+      "tags": [
+        "count_based",
+        "spend_free"
+      ],
+      "domains": [],
+      "relevance": "direct"
+    },
+    "PFA2": {
+      "needs": [
+        "saving"
+      ],
+      "tags": [
+        "discount_counts"
+      ],
+      "domains": [
+        "fixed",
+        "sub"
+      ],
+      "relevance": "direct"
+    },
+    "PFA3": {
+      "needs": [
+        "control"
+      ],
+      "tags": [
+        "perf_recharge"
+      ],
+      "domains": [],
+      "relevance": "direct"
+    },
+    "PFA4": {
+      "needs": [
+        "saving"
+      ],
+      "tags": [
+        "spend_free",
+        "tiered_perf"
+      ],
+      "domains": [],
+      "relevance": "direct"
+    },
+    "PFA5": {
+      "needs": [
+        "control"
+      ],
+      "tags": [],
+      "domains": [],
+      "relevance": "direct"
+    },
+    "PFA6": {
+      "needs": [
+        "saving"
+      ],
+      "tags": [
+        "period_bonus"
+      ],
+      "domains": [],
+      "relevance": "direct"
+    },
+    "PFA7": {
+      "needs": [
+        "saving"
+      ],
+      "tags": [
+        "reward_point"
+      ],
+      "domains": [],
+      "relevance": "direct"
+    },
+    "PFA8": {
+      "needs": [
+        "control"
+      ],
+      "tags": [],
+      "domains": [],
+      "relevance": "direct"
+    }
+  }
+}

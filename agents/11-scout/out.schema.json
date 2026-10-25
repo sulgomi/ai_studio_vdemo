@@ -1,0 +1,73 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "card-studio/agents/scout/out.schema.json",
+  "title": "scout result",
+  "type": "object",
+  "required": [
+    "topic",
+    "facts",
+    "gaps"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "topic": {
+      "type": "string"
+    },
+    "facts": {
+      "type": "array",
+      "items": {
+        "$ref": "../../common/discovery.defs.schema.json#/$defs/fact"
+      }
+    },
+    "trend_items": {
+      "type": "array",
+      "items": {
+        "$ref": "../../common/discovery.defs.schema.json#/$defs/trend_item"
+      }
+    },
+    "cases": {
+      "type": "array",
+      "items": {
+        "$ref": "../../common/discovery.defs.schema.json#/$defs/case"
+      }
+    },
+    "constraints": {
+      "type": "array",
+      "items": {
+        "$ref": "../../common/discovery.defs.schema.json#/$defs/constraint"
+      }
+    },
+    "predictions": {
+      "type": "array",
+      "items": {
+        "$ref": "../../common/discovery.defs.schema.json#/$defs/prediction"
+      }
+    },
+    "design_analogues": {
+      "type": "array",
+      "items": {
+        "$ref": "../../common/discovery.defs.schema.json#/$defs/analogue"
+      }
+    },
+    "gaps": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "못 찾은 것, 20대 수치가 없어 전 연령으로 기록한 것"
+    },
+    "voices": {
+      "type": "array",
+      "maxItems": 8,
+      "items": {
+        "$ref": "../../common/discovery.defs.schema.json#/$defs/voice"
+      }
+    },
+    "themes": {
+      "type": "array",
+      "items": {
+        "$ref": "../../common/discovery.defs.schema.json#/$defs/theme"
+      }
+    }
+  }
+}

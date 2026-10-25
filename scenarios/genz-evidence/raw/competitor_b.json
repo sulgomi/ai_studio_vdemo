@@ -1,0 +1,1037 @@
+{
+  "agent": "competitor_b",
+  "retrieved_at": "2026-10-23",
+  "sources": [
+    {
+      "id": "CBS1",
+      "title": "쿠팡 와우 카드 상품 안내",
+      "publisher": "KB국민카드",
+      "url": "https://m.kbcard.com/CRD/DVIEW/MCAMCXHIACRC0002?cooperationcode=09293&mainCC=a&type=",
+      "published": "2025-06-11",
+      "tier": "A 공시·정부통계",
+      "kind": "issuer_page",
+      "stale": false,
+      "promotional": false
+    },
+    {
+      "id": "CBS2",
+      "title": "쿠팡, 와우카드 혜택 강화…4대 편의점 적립 2배 늘린다",
+      "publisher": "디지털데일리",
+      "url": "https://www.ddaily.co.kr/page/view/2026041911410627844",
+      "published": "2026-04-19",
+      "tier": "B 언론·리서치",
+      "kind": "press",
+      "stale": false,
+      "promotional": false
+    },
+    {
+      "id": "CBS3",
+      "title": "KB NEED Pay 카드 상품 안내",
+      "publisher": "KB국민카드",
+      "url": "https://m.kbcard.com/CRD/DVIEW/MCAMCXHIACRC0002?mainCC=b&allianceCode=09800",
+      "published": "2026-02-25",
+      "tier": "A 공시·정부통계",
+      "kind": "issuer_page",
+      "stale": false,
+      "promotional": false
+    },
+    {
+      "id": "CBS4",
+      "title": "KB NEED Pay 신용카드로 간편결제, OTT 구독 할인받아요 (2026-06-17 기준)",
+      "publisher": "kbthink.com (KB 계열 안내 페이지로 보이나 운영 주체 미확인)",
+      "url": "https://kbthink.com/card/need-pay-card.html",
+      "published": "2026-06-17",
+      "tier": "C 업계",
+      "kind": "issuer_page",
+      "stale": false,
+      "promotional": false
+    },
+    {
+      "id": "CBS5",
+      "title": "KB국민카드, 간편결제 특화 'KB NEED Pay 카드' 출시",
+      "publisher": "미주헤럴드경제",
+      "url": "https://www.heraldk.com/article/2026050517191558250",
+      "published": "2026-05-05",
+      "tier": "B 언론·리서치",
+      "kind": "press",
+      "stale": false,
+      "promotional": false
+    },
+    {
+      "id": "CBS6",
+      "title": "카드의정석2 SHOPPING+ (2026년 9월 현재 기준)",
+      "publisher": "우리카드",
+      "url": "https://m.wooricard.com/dcmw/yh1/crd/crd01/M1CRD101S02.do?recomNo=102492",
+      "published": "2026-09",
+      "tier": "A 공시·정부통계",
+      "kind": "issuer_page",
+      "stale": false,
+      "promotional": false
+    },
+    {
+      "id": "CBS7",
+      "title": "카드의 정석2 (2026년 6월 현재 기준)",
+      "publisher": "우리카드",
+      "url": "https://m.wooricard.com/ai-data/cardDetail_standard2.html",
+      "published": "2026-06",
+      "tier": "A 공시·정부통계",
+      "kind": "issuer_page",
+      "stale": false,
+      "promotional": false
+    },
+    {
+      "id": "CBS8",
+      "title": "카드의정석2 MILE&POINT (2026년 9월 현재 기준)",
+      "publisher": "우리카드",
+      "url": "https://m.wooricard.com/dcmw/yh1/crd/crd01/M1CRD101S02.do?recomNo=104154",
+      "published": "2026-09",
+      "tier": "A 공시·정부통계",
+      "kind": "issuer_page",
+      "stale": false,
+      "promotional": false
+    },
+    {
+      "id": "CBS9",
+      "title": "LOCA 365 카드",
+      "publisher": "롯데카드",
+      "url": "https://www.lottecard.co.kr/app/LPCDADB_V100.lc?vtCdKndC=P14028-A14028",
+      "published": "2024-10-29",
+      "tier": "A 공시·정부통계",
+      "kind": "issuer_page",
+      "stale": true,
+      "promotional": false
+    },
+    {
+      "id": "CBS10",
+      "title": "LOCA LIKIT 1.2",
+      "publisher": "롯데카드",
+      "url": "https://m.lottecard.co.kr/front/card/basic/credit/info/likit1.2/",
+      "published": "2021-10-13",
+      "tier": "A 공시·정부통계",
+      "kind": "issuer_page",
+      "stale": true,
+      "promotional": false
+    },
+    {
+      "id": "CBS11",
+      "title": "디지로카 London",
+      "publisher": "롯데카드",
+      "url": "https://jiwon3.lottecard.co.kr/app/LPCDADB_V100.lc?vtCdKndC=P14718-A14718",
+      "published": "2023-11-22",
+      "tier": "A 공시·정부통계",
+      "kind": "issuer_page",
+      "stale": true,
+      "promotional": false
+    },
+    {
+      "id": "CBS12",
+      "title": "카드 찾기/키워드검색 목록 (올바른FLEX, 클래시 트래블, zgm.streaming)",
+      "publisher": "NH농협카드",
+      "url": "https://card.nonghyup.com/servlet/IpCc1411R.act",
+      "published": null,
+      "tier": "A 공시·정부통계",
+      "kind": "issuer_page",
+      "stale": false,
+      "promotional": false
+    },
+    {
+      "id": "CBS13",
+      "title": "zgm. 브릿지 페이지 (zgm.streaming 혜택, 심의필 2022.11.24)",
+      "publisher": "NH농협카드",
+      "url": "https://card.nonghyup.com/content/html/bridge/zgm/",
+      "published": "2022-11-24",
+      "tier": "A 공시·정부통계",
+      "kind": "issuer_page",
+      "stale": true,
+      "promotional": false
+    },
+    {
+      "id": "CBS14",
+      "title": "BC 바로 에어 마스터",
+      "publisher": "BC카드",
+      "url": "https://m.bccard.com/app/mobileweb/CardDetail.do?exec=cardDetail&cardGdsNo=104452",
+      "published": "2026-08-27",
+      "tier": "A 공시·정부통계",
+      "kind": "issuer_page",
+      "stale": false,
+      "promotional": false
+    },
+    {
+      "id": "CBS15",
+      "title": "BC 바로 에어 맥스",
+      "publisher": "BC카드",
+      "url": "https://m.bccard.com/app/mobileweb/CardDetail.do?exec=cardDetail&cardGdsNo=104453",
+      "published": "2026-08-21",
+      "tier": "A 공시·정부통계",
+      "kind": "issuer_page",
+      "stale": false,
+      "promotional": false
+    },
+    {
+      "id": "CBS16",
+      "title": "토스뱅크 체크카드 혜택 (스위치 캐시백 시즌 6)",
+      "publisher": "토스뱅크",
+      "url": "https://www.tossbank.com/card/benefits",
+      "published": "2026-09-29",
+      "tier": "A 공시·정부통계",
+      "kind": "issuer_page",
+      "stale": false,
+      "promotional": false
+    },
+    {
+      "id": "CBS17",
+      "title": "토스뱅크 체크카드에 연회비나 발급 수수료가 있나요?",
+      "publisher": "토스 고객센터(토스뱅크)",
+      "url": "https://support.toss.im/faq/5313",
+      "published": "2025-08-01",
+      "tier": "A 공시·정부통계",
+      "kind": "issuer_page",
+      "stale": false,
+      "promotional": false
+    },
+    {
+      "id": "CBS18",
+      "title": "[해외] 토스뱅크 체크카드로 해외 결제 시 수수료가 있나요?",
+      "publisher": "토스 고객센터(토스뱅크)",
+      "url": "https://support.toss.im/faq/tossbank/5265?from=27&page=1",
+      "published": "2026-08",
+      "tier": "A 공시·정부통계",
+      "kind": "issuer_page",
+      "stale": false,
+      "promotional": false
+    },
+    {
+      "id": "CBS19",
+      "title": "ONE 체크카드(K-패스)",
+      "publisher": "케이뱅크",
+      "url": "https://www.kbanknow.com/web/product/card/one-card",
+      "published": "2026-09-30",
+      "tier": "A 공시·정부통계",
+      "kind": "issuer_page",
+      "stale": false,
+      "promotional": false
+    },
+    {
+      "id": "CBS20",
+      "title": "카카오뱅크 더(The) 체크카드 with 모두의카드",
+      "publisher": "카카오뱅크",
+      "url": "https://www.kakaobank.com/products/thecheckcard",
+      "published": "2026-10-08",
+      "tier": "A 공시·정부통계",
+      "kind": "issuer_page",
+      "stale": false,
+      "promotional": false
+    },
+    {
+      "id": "CBS21",
+      "title": "카카오뱅크 프렌즈 체크카드",
+      "publisher": "카카오뱅크",
+      "url": "https://www.kakaobank.com/products/checkcard",
+      "published": "2026-10-08",
+      "tier": "A 공시·정부통계",
+      "kind": "issuer_page",
+      "stale": false,
+      "promotional": false
+    },
+    {
+      "id": "CBS22",
+      "title": "하나 나라사랑카드(체크)",
+      "publisher": "하나카드",
+      "url": "https://www.hanacard.co.kr/OPI41000000D.web?schID=pcd&mID=PI41018813P&CD_PD_SEQ=18813",
+      "published": "2026-06-26",
+      "tier": "A 공시·정부통계",
+      "kind": "issuer_page",
+      "stale": false,
+      "promotional": false
+    }
+  ],
+  "facts": [
+    {
+      "id": "CBF1",
+      "topic": "토스뱅크 체크카드 해외 혜택 변경",
+      "claim": "2026년 8월 11일부터 해외 결제 2% 캐시백 대신 해외 결제 수수료 면제가 적용된다.",
+      "value": null,
+      "unit": null,
+      "population": "토스뱅크 체크카드 고객 (외화통장 보유 시)",
+      "period": "2026-08-11~",
+      "source_id": "CBS18",
+      "quote": "2026년 8월 11일부터는 2% 캐시백 대신 해외 결제 수수료 면제 혜택이 적용돼요.",
+      "confidence": "high",
+      "note": "원화통장 이용 고객은 수수료 계속 부과"
+    },
+    {
+      "id": "CBF2",
+      "topic": "LOCA LIKIT 1.2 판매 상태",
+      "claim": "LOCA LIKIT 1.2는 신규, 추가, 교체 발급이 중단되었다.",
+      "value": null,
+      "unit": null,
+      "population": "롯데카드 LOCA LIKIT 1.2",
+      "period": "2026-10-23 조회 시점",
+      "source_id": "CBS10",
+      "quote": "이 카드는 신규, 추가, 교체 발급이 중단되었습니다.",
+      "confidence": "high",
+      "note": ""
+    },
+    {
+      "id": "CBF3",
+      "topic": "KB NEED Pay 연회비",
+      "claim": "KB NEED Pay 카드 일반카드 연회비는 합계 19,000원이다.",
+      "value": 19000,
+      "unit": "원",
+      "population": "국내전용/국내외겸용(Mastercard) 일반카드",
+      "period": "2026.02.27 출시",
+      "source_id": "CBS3",
+      "quote": "19,000원",
+      "confidence": "high",
+      "note": "기본 7,000+제휴 12,000"
+    }
+  ],
+  "gaps": [
+    "우리카드 SHOPPING+ 월 할인한도·건당 한도, 하나 나라사랑카드 월 통합 할인한도와 상세 발급 대상은 상세 팝업에 있어 읽지 못함.",
+    "NH농협카드(올바른FLEX, 클래시 트래블, zgm.streaming) 상세 상품 페이지는 보안 프로그램 요구와 상세 URL 미확보로 열지 못함. FLEX와 클래시 트래블은 공식 카드 목록 수준(연회비·헤드라인)만 확인, 전월실적·한도는 null.",
+    "zgm.streaming 혜택 상세는 심의필 2022~2023년으로 표기된 NH 브릿지 페이지 기준이라 현행 상품설명서와 다를 수 있음.",
+    "쿠팡 와우카드 공식 쿠팡 안내(coupang.com/vm/wowcard)는 403으로 열지 못했고, 프로모션(쿠팡 최대 4% 등) 종료 여부는 확인 못 함. 한도·프로모션 수치는 2026-04-19 언론 보도 기준.",
+    "KB NEED Pay 구간별 한도와 전월 40만원 조건은 KB 공식 상품 페이지 본문에 없어 kbthink.com(운영 주체 미확인)과 보도 기준으로 기록.",
+    "카카오뱅크 'K-패스 프렌즈 체크'라는 정확한 현행 상품명은 확인 못 함. 프렌즈 체크카드와 The 체크카드 with 모두의카드 두 상품을 병기.",
+    "롯데카드 LOCA 365와 디지로카 London 페이지의 심의필은 각각 2024-10, 2023-11이라 stale 처리했으나, 상품 페이지 자체는 2026-10-23 조회 시 열려 있었음.",
+    "체크카드(토스뱅크·케이뱅크·카카오뱅크·하나)의 전월실적 조건은 읽은 페이지에 명시가 없으면 null로 둠.",
+    "17종 모두 공식 페이지에서 만 19~29세 등 연령대를 명시한 문구는 찾지 못함(케이뱅크·카카오뱅크는 만 17세 이상 발급 자격, 나라사랑카드는 군 대상)."
+  ],
+  "cards": [
+    {
+      "id": "c18",
+      "name": "쿠팡 와우카드",
+      "official_name": "쿠팡 와우 카드",
+      "issuer": "KB국민",
+      "on_sale": true,
+      "as_of": "2026-04-19 (혜택 강화 보도) / KB 상품 페이지 retrieved 2026-10-23",
+      "annual_fee_won": {
+        "domestic": 20000,
+        "overseas": 20000
+      },
+      "min_prev_month_spend_won": 0,
+      "headline_benefits": [
+        {
+          "category": "쿠팡 적립",
+          "text": "쿠팡·쿠팡이츠·쿠팡플레이 쿠팡캐시 적립 (기본 2%, 프로모션 포함 최대 4%)",
+          "rate_or_amount": "기본 2% / 프로모션 포함 최대 4%",
+          "condition": "프로모션분 월 최대 4만원 (기사 기준). 프로모션 기간은 기사에 명시 없음, 현재 적용 여부 미확인"
+        },
+        {
+          "category": "편의점 적립",
+          "text": "CU·GS25·세븐일레븐·이마트24 최대 2.4% (기본 0.2%+프로모션 2.2%)",
+          "rate_or_amount": "최대 2.4%",
+          "condition": "월 최대 2만4000원, 이용금액 한도 100만원 (기사 기준)"
+        },
+        {
+          "category": "일반 가맹점 적립",
+          "text": "국내외 가맹점 0.2% 쿠팡캐시 (프로모션 포함 최대 1.2%)",
+          "rate_or_amount": "기본 0.2% / 최대 1.2%",
+          "condition": "프로모션분 월 최대 1만2000원 (기사 기준). 쿠팡+외부 합산 월 최대 6만4000원 (기사 기준)"
+        }
+      ],
+      "explicit_target_text": "와우 멤버십 가입자만 발급할 수 있는 제휴카드 (기사 문구)",
+      "genz_fit": "medium",
+      "genz_fit_reason": "공식 페이지는 쿠팡·쿠팡이츠·쿠팡플레이 2% 적립을 내세우고 연령 대상은 명시하지 않는다.",
+      "source_ids": [
+        "CBS1",
+        "CBS2"
+      ],
+      "note": "KB 상품 페이지: 연회비 20,000원(기본 7,000+제휴 13,000), 면제 조건 없음, 월 한도 금액은 페이지에 미표기, 전월실적 항목 없음. 전월실적 0은 CBS2(전월 실적 조건은 없습니다) 근거. 쿠팡 공식 와우카드 안내(coupang.com/vm/wowcard)는 403으로 열지 못했고, 프로모션 종료 여부(2026-10-23 기준)는 확인 못 함. KB 첫해 연회비 캐시백 이벤트 대상 16종에 와우 미포함."
+    },
+    {
+      "id": "c19",
+      "name": "NEED Pay",
+      "official_name": "KB NEED Pay 카드",
+      "issuer": "KB국민",
+      "on_sale": true,
+      "as_of": "2026-06-17 (CBS4 기준일) / 출시 2026-02-27",
+      "annual_fee_won": {
+        "domestic": 19000,
+        "overseas": 19000
+      },
+      "min_prev_month_spend_won": 400000,
+      "headline_benefits": [
+        {
+          "category": "디지털 콘텐츠·멤버십",
+          "text": "넷플릭스·유튜브·디즈니플러스·티빙·웨이브·스포티파이, 네이버플러스·컬리멤버스·배민클럽 정기결제 30% 할인",
+          "rate_or_amount": "30%",
+          "condition": "건당 3,000원, 월 통합 5,000원, 인앱·단건결제 제외 (CBS4)"
+        },
+        {
+          "category": "간편결제",
+          "text": "KB Pay 15% / 네이버페이·카카오페이·토스페이 10% 할인 (택1, 월 1회 변경)",
+          "rate_or_amount": "15% / 10%",
+          "condition": "전월 40만원 이상. KB Pay 건당 3,000원·월 15,000원(40~80만) / 30,000원(80만+); 그 외 건당 2,000원·월 10,000원 / 20,000원 (CBS4)"
+        },
+        {
+          "category": "온라인패션몰",
+          "text": "무신사·지그재그·W컨셉·29CM·에이블리 KB Pay 결제 5% 할인",
+          "rate_or_amount": "5%",
+          "condition": "월 5,000원, 온라인 홈페이지·앱만 (CBS4)"
+        },
+        {
+          "category": "해외",
+          "text": "해외 가맹점 2% 할인 (국내외겸용 Mastercard)",
+          "rate_or_amount": "2%",
+          "condition": "전월실적·월 한도 없음 (CBS4)"
+        }
+      ],
+      "explicit_target_text": "간편결제 이용이 많은 고객 (CBS5 기사 표현)",
+      "genz_fit": "high",
+      "genz_fit_reason": "간편결제 15%/10%, OTT·멤버십 30%, 온라인패션몰(무신사·지그재그·에이블리 등) 5%가 공식 상품명 부제에 올라 있다.",
+      "source_ids": [
+        "CBS3",
+        "CBS4",
+        "CBS5"
+      ],
+      "note": "KB 공식 상품 페이지(CBS3)는 연회비 19,000원(기본 7,000+제휴 12,000), 모바일 단독 13,000원, 가족 7,000원, 심의필 2026-C1a-02460(2026.02.25)만 확인되고 구간별 실적·한도는 본문에 없다. 전월 40만원과 항목별 한도는 CBS4(kbthink.com, 운영 주체 미확인)와 CBS5 보도에서 가져옴. 전월 35~40만원 미만은 '전월실적 채워드림' 신청 가능(반기 1회, 연 최대 2회)."
+    },
+    {
+      "id": "c20",
+      "name": "카드의정석2 SHOPPING+",
+      "official_name": "카드의정석2 SHOPPING+",
+      "issuer": "우리",
+      "on_sale": true,
+      "as_of": "2026-09",
+      "annual_fee_won": {
+        "domestic": 10000,
+        "overseas": 12000
+      },
+      "min_prev_month_spend_won": 300000,
+      "headline_benefits": [
+        {
+          "category": "온라인 쇼핑",
+          "text": "온라인 쇼핑 10% 청구할인",
+          "rate_or_amount": "10%",
+          "condition": "전월 이용실적 30만원 이상"
+        },
+        {
+          "category": "오프라인 쇼핑",
+          "text": "오프라인 쇼핑 10% 청구할인",
+          "rate_or_amount": "10%",
+          "condition": "전월 이용실적 30만원 이상"
+        },
+        {
+          "category": "간편결제",
+          "text": "4대 PAY 5% 추가할인",
+          "rate_or_amount": "5%",
+          "condition": "전월 이용실적 30만원 이상"
+        }
+      ],
+      "explicit_target_text": null,
+      "genz_fit": "medium",
+      "genz_fit_reason": "공식 소개 문구는 '온오프라인 쇼핑 시 10% 청구할인, 간편결제 추가 할인'이며 연령 대상은 명시하지 않는다.",
+      "source_ids": [
+        "CBS6"
+      ],
+      "note": "연회비는 렌더링된 페이지에 '10,000원 / 12,000원 / 12,000원'으로만 표시(브랜드 라벨 미표시). 국내전용 10,000, 해외겸용 12,000으로 기록한 것은 표시 순서와 검색 결과 요약 기준이라 라벨은 재확인 필요. 월 할인한도·건당 한도는 팝업 안에 있어 읽지 못함. 출시 2023-09-04, 심의필 2026-C1h-12959(2026.09.01~2027.08.31). 온라인 신규발급 연회비 100% 캐시백 이벤트(우리WON페이 5만원 이상 이용 조건)."
+    },
+    {
+      "id": "c21",
+      "name": "카드의정석2",
+      "official_name": "카드의정석2",
+      "issuer": "우리",
+      "on_sale": true,
+      "as_of": "2026-06",
+      "annual_fee_won": {
+        "domestic": 22000,
+        "overseas": 22000
+      },
+      "min_prev_month_spend_won": 500000,
+      "headline_benefits": [
+        {
+          "category": "기본 할인",
+          "text": "국내외 가맹점 1.2% 청구할인",
+          "rate_or_amount": "1.2%",
+          "condition": "전월 국내외 가맹점 이용실적 50만원 이상, 기본 할인은 월 이용금액 최대 300만원까지, 월 할인한도 최대 36,000원"
+        },
+        {
+          "category": "분기별 추가",
+          "text": "국내외 가맹점 1% 청구할인 (분기 실적 구간별)",
+          "rate_or_amount": "300만원 이상 5,000원 / 600만원 이상 10,000원 / 900만원 이상 15,000원",
+          "condition": "해당 분기 3개월 매월 10만원 이상 이용, 추가 할인 최대 15,000원"
+        }
+      ],
+      "explicit_target_text": null,
+      "genz_fit": "low",
+      "genz_fit_reason": "공식 페이지는 모든 가맹점 1.2% 기본 할인과 분기 실적 추가 할인을 내세우며 연령 대상이나 업종 특화 문구는 없다.",
+      "source_ids": [
+        "CBS7"
+      ],
+      "note": "연회비는 국내 및 MasterCard 모두 22,000원(기본 7,000+제휴 15,000). 심의필 2026-C1h-10197(2026.07.02~2027.07.01). 같은 우리카드의 '카드의정석2 SUPER'(연회비 3만원, 2% 할인)는 별개 상품으로 이 카드와 혼동하지 않음(검색 결과 요약 기준, 페이지 미열람)."
+    },
+    {
+      "id": "c22",
+      "name": "카드의정석2 MILE&POINT",
+      "official_name": "카드의정석2 MILE&POINT",
+      "issuer": "우리",
+      "on_sale": true,
+      "as_of": "2026-09",
+      "annual_fee_won": {
+        "domestic": 75000,
+        "overseas": 75000
+      },
+      "min_prev_month_spend_won": 500000,
+      "headline_benefits": [
+        {
+          "category": "해외 마일리지",
+          "text": "해외 가맹점 이용금액 1,500원당 최대 2마일리지 적립",
+          "rate_or_amount": "최대 2마일리지/1,500원",
+          "condition": "전월 이용실적 50만원 이상, 월 추가 적립한도 2,000마일"
+        },
+        {
+          "category": "포인트 동시 적립",
+          "text": "항공마일리지와 포인트 동시 적립",
+          "rate_or_amount": "원문 수치 미표기",
+          "condition": "전월 이용실적 50만원 이상, 월 포인트 적립한도 3만 포인트"
+        },
+        {
+          "category": "공항라운지",
+          "text": "국내외 1,000여개 공항라운지 무료 이용",
+          "rate_or_amount": "연 2회(동반인 1인 포함)",
+          "condition": "전월 이용실적 50만원 이상"
+        }
+      ],
+      "explicit_target_text": null,
+      "genz_fit": "low",
+      "genz_fit_reason": "연회비 75,000원의 해외 마일리지·공항라운지 중심 상품으로 공식 문구에 연령 대상이 없다.",
+      "source_ids": [
+        "CBS8"
+      ],
+      "note": "출시 2025-09-16, 심의필 2026-C1h-13861(2026.09.02~2027.09.01). 연회비는 렌더링된 페이지에 75,000원이 두 번 표시(브랜드 라벨 미표시)."
+    },
+    {
+      "id": "c23",
+      "name": "LOCA 365",
+      "official_name": "LOCA 365 카드",
+      "issuer": "롯데",
+      "on_sale": true,
+      "as_of": "2024-10-29 (심의필일, 페이지에 별도 기준일 없음)",
+      "annual_fee_won": {
+        "domestic": 20000,
+        "overseas": 20000
+      },
+      "min_prev_month_spend_won": 500000,
+      "headline_benefits": [
+        {
+          "category": "생활업종 결제일 할인",
+          "text": "아파트관리비·공과금·이동통신·대중교통·보험료·학습지·배달앱 등 생활업종 결제일 할인 (헤드라인 10%)",
+          "rate_or_amount": "월 최대 36,500원",
+          "condition": "지난달 1일~말일 50만원 이상(본인·가족카드 합산), 건당 2만원 이상 결제(스트리밍 제외). 최초 발급 고객은 발급일부터 다음 달 말일까지 실적 무관"
+        },
+        {
+          "category": "스트리밍",
+          "text": "스트리밍 구독료 월 1회 할인",
+          "rate_or_amount": "월 1회 1,500원",
+          "condition": "건당 2만원 기준 예외"
+        },
+        {
+          "category": "무이자 할부",
+          "text": "국내 가맹점 2~3개월 무이자 할부",
+          "rate_or_amount": "5만원 이상",
+          "condition": ""
+        }
+      ],
+      "explicit_target_text": null,
+      "genz_fit": "low",
+      "genz_fit_reason": "공식 혜택은 아파트관리비·공과금·보험료·학습지 등 생활 고정비 중심이다.",
+      "source_ids": [
+        "CBS9"
+      ],
+      "note": "가족카드 연회비 13,000원. 업종별 개별 할인율·한도 표는 페이지 텍스트에서 명확히 읽히지 않아 헤드라인(10%)만 기록. 페이지 심의필이 2024-10/11이라 최신 개정 여부는 확인 못 함(stale 처리). L.POINT 적립 없음."
+    },
+    {
+      "id": "c24",
+      "name": "LOCA LIKIT 1.2",
+      "official_name": "LOCA LIKIT 1.2",
+      "issuer": "롯데",
+      "on_sale": false,
+      "as_of": "2026-10-23",
+      "annual_fee_won": {
+        "domestic": 10000,
+        "overseas": null
+      },
+      "min_prev_month_spend_won": null,
+      "headline_benefits": [
+        {
+          "category": "전 가맹점 할인",
+          "text": "모든 가맹점 1.2% 할인",
+          "rate_or_amount": "1.2%",
+          "condition": ""
+        },
+        {
+          "category": "온라인",
+          "text": "온라인 1.5% 할인",
+          "rate_or_amount": "1.5%",
+          "condition": ""
+        }
+      ],
+      "explicit_target_text": null,
+      "genz_fit": "low",
+      "genz_fit_reason": "공식 문구는 모든 가맹점 1.2% 할인이며 연령 대상은 없고, 현재 신규 발급이 중단됐다.",
+      "source_ids": [
+        "CBS10"
+      ],
+      "note": "공식 페이지: '이 카드는 신규, 추가, 교체 발급이 중단되었습니다.' 출시 2021-09-15. 연회비 10,000원만 표시(국내/해외 구분 없음). 롯데카드 메인에 LOCA LIKIT 1.5/2.0이 노출되나 상세는 열람 못 해 대체 상품 혜택은 기록하지 않음."
+    },
+    {
+      "id": "c25",
+      "name": "디지로카 London",
+      "official_name": "디지로카 London",
+      "issuer": "롯데",
+      "on_sale": true,
+      "as_of": "2023-11-22 (심의필일, 페이지에 별도 기준일 없음)",
+      "annual_fee_won": {
+        "domestic": 20000,
+        "overseas": 20000
+      },
+      "min_prev_month_spend_won": 0,
+      "headline_benefits": [
+        {
+          "category": "즉시결제 추가 캐시백",
+          "text": "일시불 이용 후 5영업일 이내 즉시결제 시 추가 캐시백",
+          "rate_or_amount": "1%",
+          "condition": "실적 조건 및 한도 없음"
+        },
+        {
+          "category": "Weekly 자동결제",
+          "text": "일주일 간 일시불 합산 5만원 이상 자동결제 시 추가 캐시백 (즉시결제와 중복 불가)",
+          "rate_or_amount": "1%",
+          "condition": "실적 조건 및 한도 없음"
+        },
+        {
+          "category": "기본 캐시백",
+          "text": "국내 모든 가맹점·해외 모든 이용금액 캐시백",
+          "rate_or_amount": "0.7%",
+          "condition": "실적 조건 및 한도 없음"
+        },
+        {
+          "category": "LOCA 나누기",
+          "text": "추가수수료 없는 분할납부 (건당 3만원~30만원 미만 3개월, 30만원 이상 3개월 또는 6개월)",
+          "rate_or_amount": "최대 6개월",
+          "condition": "이용일로부터 10일 이내 앱 신청"
+        }
+      ],
+      "explicit_target_text": null,
+      "genz_fit": "medium",
+      "genz_fit_reason": "공식 페이지는 실적·한도 없는 0.7% 기본 캐시백과 즉시결제 1% 추가를 내세우며 연령 대상은 명시하지 않는다.",
+      "source_ids": [
+        "CBS11"
+      ],
+      "note": "연회비 총 20,000원(기본 7,000+제휴 13,000), 가족카드 13,000원. 캐시백은 다음 달 25일 지급. 출시 2023-10-27."
+    },
+    {
+      "id": "c26",
+      "name": "올바른 FLEX",
+      "official_name": "채움 올바른FLEX카드",
+      "issuer": "NH농협",
+      "on_sale": true,
+      "as_of": "2026-10-23",
+      "annual_fee_won": {
+        "domestic": 10000,
+        "overseas": 12000
+      },
+      "min_prev_month_spend_won": null,
+      "headline_benefits": [
+        {
+          "category": "커피",
+          "text": "커피 50% 할인",
+          "rate_or_amount": "50%",
+          "condition": "목록 페이지에 한도·실적 미표기"
+        },
+        {
+          "category": "영화/공연",
+          "text": "영화/공연 20% 할인",
+          "rate_or_amount": "20%",
+          "condition": "목록 페이지에 한도·실적 미표기"
+        },
+        {
+          "category": "쇼핑",
+          "text": "쇼핑 5% 할인",
+          "rate_or_amount": "5%",
+          "condition": "목록 페이지에 한도·실적 미표기"
+        }
+      ],
+      "explicit_target_text": null,
+      "genz_fit": "medium",
+      "genz_fit_reason": "공식 목록 문구는 '일상의 FLEX, 혜택을 FLEX!'이며 커피 50%·영화 20%·쇼핑 5%를 내세우고 연령 대상은 명시하지 않는다.",
+      "source_ids": [
+        "CBS12"
+      ],
+      "note": "NH농협카드 공식 카드 목록(키워드검색) 수준에서만 확인. 연회비는 국내전용(일반) 10,000원, 비자(일반) 12,000원, 후불교통 신청 가능. 목록의 '전월실적: 없음'은 추출 요약이며 상세 페이지에서 확인한 값이 아니므로 null 처리. 상세 상품 페이지(한도·실적·심의필)는 NH 사이트의 보안 프로그램 요구와 상세 URL 미확보로 열지 못함."
+    },
+    {
+      "id": "c27",
+      "name": "클래시 트래블카드",
+      "official_name": "클래시 트래블카드",
+      "issuer": "NH농협",
+      "on_sale": true,
+      "as_of": "2026-10-23",
+      "annual_fee_won": {
+        "domestic": null,
+        "overseas": 120000
+      },
+      "min_prev_month_spend_won": null,
+      "headline_benefits": [
+        {
+          "category": "해외 수수료 면제",
+          "text": "해외 결제 브랜드 1% / 이용 0.25% 수수료 면제",
+          "rate_or_amount": "1% / 0.25%",
+          "condition": "목록 페이지에 실적 조건 미표기"
+        },
+        {
+          "category": "해외 적립",
+          "text": "해외이용액 3~4% 적립",
+          "rate_or_amount": "3~4%",
+          "condition": "세부 한도·구간 미확인"
+        },
+        {
+          "category": "공항라운지",
+          "text": "전세계공항라운지 연 4회 무료 이용",
+          "rate_or_amount": "연 4회",
+          "condition": "조건 미확인"
+        }
+      ],
+      "explicit_target_text": null,
+      "genz_fit": "low",
+      "genz_fit_reason": "공식 목록 문구는 해외 수수료 면제·해외 적립·공항라운지이며 연회비 120,000원, 연령 대상 문구는 없다.",
+      "source_ids": [
+        "CBS12"
+      ],
+      "note": "NH농협카드 공식 카드 목록 수준에서만 확인. 연회비는 마스터카드(TriPlus) 120,000원(국내전용 표시 없음 → domestic null). 상세 페이지 미열람으로 전월실적·한도 null."
+    },
+    {
+      "id": "c28",
+      "name": "zgm.streaming",
+      "official_name": "zgm.streaming카드",
+      "issuer": "NH농협",
+      "on_sale": true,
+      "as_of": "2026-10-23",
+      "annual_fee_won": {
+        "domestic": 12000,
+        "overseas": 12000
+      },
+      "min_prev_month_spend_won": 400000,
+      "headline_benefits": [
+        {
+          "category": "멤버십",
+          "text": "네이버플러스멤버십·쿠팡와우멤버십·컬리패스·요기패스 이용요금 할인 (7천원 미만은 결제금액만큼)",
+          "rate_or_amount": "건별 최대 7,000원",
+          "condition": "전월 40만원 이상, 월 할인한도 7,000원, 가맹점별 월 1회"
+        },
+        {
+          "category": "스트리밍",
+          "text": "넷플릭스·웨이브·티빙·디즈니+·유튜브프리미엄·멜론 건별 1만원 이상 결제 시 할인",
+          "rate_or_amount": "건별 최대 5,000원",
+          "condition": "전월 40만원 이상, 월 통합 한도 5,000원, 가맹점별 월 1회"
+        },
+        {
+          "category": "스타벅스 사이렌오더",
+          "text": "공식 앱 사이렌오더 할인 (목록 문구: 커피 50% 할인)",
+          "rate_or_amount": "50% (목록 문구)",
+          "condition": "월 한도 5,000원, 일 1회·월 2회"
+        },
+        {
+          "category": "온라인 간편결제",
+          "text": "온라인 간편결제 할인 (목록 문구: 5%)",
+          "rate_or_amount": "5% (목록 문구)",
+          "condition": "건당 2만원 이상, 월 한도 3,000원, 일 1회"
+        }
+      ],
+      "explicit_target_text": null,
+      "genz_fit": "high",
+      "genz_fit_reason": "공식 혜택이 OTT·스트리밍·쇼핑 멤버십 구독료와 스타벅스, 온라인 간편결제에 집중돼 있다.",
+      "source_ids": [
+        "CBS12",
+        "CBS13"
+      ],
+      "note": "혜택 상세는 NH 'zgm.' 브릿지 페이지(심의필 2022-C1h-10294, 2022.11.24~2023.11.23 표기)에서 읽었고 현행 상품설명서와 다를 수 있음. 연회비는 목록과 브릿지 페이지 모두 국내전용 12,000원, 마스터 12,000원. 스트리밍 5천원 할인 대상 서비스 목록은 브릿지 페이지 기준."
+    },
+    {
+      "id": "c29",
+      "name": "BC 바로 에어 마스터",
+      "official_name": "BC 바로 에어 마스터",
+      "issuer": "BC",
+      "on_sale": true,
+      "as_of": "2026-08-27",
+      "annual_fee_won": {
+        "domestic": 29000,
+        "overseas": 29000
+      },
+      "min_prev_month_spend_won": 500000,
+      "headline_benefits": [
+        {
+          "category": "기본 적립",
+          "text": "카드 사용액 1,500원당 1 스카이패스 마일리지",
+          "rate_or_amount": "1,500원당 1마일리지",
+          "condition": "한도 명시 없음"
+        },
+        {
+          "category": "특별 적립",
+          "text": "주유소·LPG·전기차 충전소, 택시, 대중교통, 해외 가맹점 1,500원당 1마일리지 추가",
+          "rate_or_amount": "1,500원당 +1마일리지",
+          "condition": "전월 국내 가맹점 50만원 이상, 월 최대 2,000마일리지"
+        },
+        {
+          "category": "보너스 적립",
+          "text": "100만원당 200마일리지 추가",
+          "rate_or_amount": "100만원당 +200마일리지",
+          "condition": "전월 국내 가맹점 50만원 이상, 월 최대 2,000마일리지"
+        },
+        {
+          "category": "무이자 할부",
+          "text": "국내 대상 가맹점 2~3개월 상시 무이자 할부",
+          "rate_or_amount": "5만원 이상",
+          "condition": ""
+        }
+      ],
+      "explicit_target_text": null,
+      "genz_fit": "low",
+      "genz_fit_reason": "공식 페이지는 스카이패스 마일리지 적립 카드로 연회비 29,000원이며 연령 대상 문구는 없다.",
+      "source_ids": [
+        "CBS14"
+      ],
+      "note": "연회비 기본 10,000+제휴 19,000, 국내전용(LOCAL)·해외겸용(MasterCard) 동일, 가족카드 기본 1만원 추가. 해외 국제브랜드 수수료 1%, 해외서비스 수수료 0.3%. 심의필 2026-C1h-12984(2026.08.27~2027.08.26). 최초 신규 발급 회원은 전월실적 무관."
+    },
+    {
+      "id": "c30",
+      "name": "BC 바로 에어 맥스",
+      "official_name": "BC 바로 에어 맥스",
+      "issuer": "BC",
+      "on_sale": true,
+      "as_of": "2026-08-21",
+      "annual_fee_won": {
+        "domestic": 43000,
+        "overseas": 43000
+      },
+      "min_prev_month_spend_won": 500000,
+      "headline_benefits": [
+        {
+          "category": "기본 적립",
+          "text": "카드 사용액 1,500원당 1 스카이패스 마일리지",
+          "rate_or_amount": "1,500원당 1마일리지",
+          "condition": "한도 명시 없음"
+        },
+        {
+          "category": "MAX 적립 #1",
+          "text": "쿠팡·컬리·다이소·올리브영·스타벅스·투썸플레이스·해외 가맹점 1,500원당 1마일리지 추가",
+          "rate_or_amount": "1,500원당 +1마일리지",
+          "condition": "전월 국내 가맹점 50만원 이상, 월 최대 2,000마일리지"
+        },
+        {
+          "category": "MAX 적립 #2",
+          "text": "아파트관리비 자동납부 1,500원당 1마일리지",
+          "rate_or_amount": "1,500원당 +1마일리지",
+          "condition": "전월실적 조건, 월 최대 500마일리지"
+        },
+        {
+          "category": "보너스 적립",
+          "text": "100만원당 200마일리지 추가",
+          "rate_or_amount": "100만원당 +200마일리지",
+          "condition": "전월 국내 가맹점 50만원 이상, 월 최대 2,000마일리지"
+        }
+      ],
+      "explicit_target_text": null,
+      "genz_fit": "low",
+      "genz_fit_reason": "공식 페이지는 연회비 43,000원의 스카이패스 마일리지 카드이며 연령 대상 문구는 없다.",
+      "source_ids": [
+        "CBS15"
+      ],
+      "note": "연회비 기본 10,000+제휴 33,000, 국내전용(LOCAL)·해외겸용(AMEX) 동일. 해외 국제브랜드 수수료 1.4%, 해외서비스 수수료 0.3%. 심의필 2026-C1h-12574(2026.08.21~2027.08.20)."
+    },
+    {
+      "id": "c31",
+      "name": "토스뱅크 체크카드",
+      "official_name": "토스뱅크 체크카드",
+      "issuer": "토스뱅크",
+      "on_sale": true,
+      "as_of": "2026-09-29 (심의필 시작일) / FAQ 연회비 2025.08.01 기준",
+      "annual_fee_won": {
+        "domestic": 0,
+        "overseas": null
+      },
+      "min_prev_month_spend_won": 0,
+      "headline_benefits": [
+        {
+          "category": "해외 결제 수수료 면제",
+          "text": "외화통장 연결 시 해외 가맹점 결제 국제브랜드수수료(1%)·해외이용수수료(건당 US$0.5) 면제. 2026-08-11부터 2% 캐시백 대신 적용",
+          "rate_or_amount": "수수료 면제",
+          "condition": "토스뱅크 체크카드와 외화통장 모두 보유. 원화통장 이용 고객은 수수료 계속 부과"
+        },
+        {
+          "category": "오프라인 캐시백",
+          "text": "스위치 캐시백 시즌 6: 편의점·대중교통·음식음료·마트백화점·서점·즉석사진·영화관 결제 시 캐시백",
+          "rate_or_amount": "1만원 이상 500원 / 1만원 미만 100원",
+          "condition": "최소 결제 3,000원(대중교통 100원), 영역별 하루 1회·월 10회, 영역별 월 5,000원, 기간 2026.04.01~2027.01.20"
+        },
+        {
+          "category": "해외 ATM",
+          "text": "해외 ATM 출금 국제브랜드수수료(1%)·해외이용수수료(건당 US$3) 면제",
+          "rate_or_amount": "월 5회 또는 US$700까지",
+          "condition": "외화통장 연결, 한도 초과 시 1%+US$3 부과"
+        }
+      ],
+      "explicit_target_text": null,
+      "genz_fit": "high",
+      "genz_fit_reason": "공식 FAQ가 연회비·발급수수료 없음과 실적 상관없는 캐시백을 안내하고 캐시백 대상이 편의점·대중교통·음식음료 등 일상 소비 업종이다.",
+      "source_ids": [
+        "CBS16",
+        "CBS17",
+        "CBS18"
+      ],
+      "note": "DB 이름과 동일 상품. 발급 대상·연령 조건은 읽은 페이지에 없음. 국내 ATM 월 30회 초과 시 건당 ATM 수수료 부과(2025.08.01 기준). 이전 시즌의 '집중/어디서나 캐시백' 안내 페이지는 날짜 미확인이라 사용하지 않음."
+    },
+    {
+      "id": "c32",
+      "name": "케이뱅크 ONE 체크",
+      "official_name": "ONE 체크카드(K-패스)",
+      "issuer": "케이뱅크",
+      "on_sale": true,
+      "as_of": "2026-09-30 (심의필일)",
+      "annual_fee_won": {
+        "domestic": 0,
+        "overseas": null
+      },
+      "min_prev_month_spend_won": null,
+      "headline_benefits": [
+        {
+          "category": "여기서 더 캐시백",
+          "text": "커피·편의점·배달·통신 3사 등 지정 가맹점 캐시백",
+          "rate_or_amount": "5%",
+          "condition": "건당 1만원 이상 결제"
+        },
+        {
+          "category": "모두 다 캐시백",
+          "text": "횟수 제한 없이 온라인 1.1%, 오프라인 0.6% 캐시백",
+          "rate_or_amount": "온라인 1.1% / 오프라인 0.6%",
+          "condition": ""
+        },
+        {
+          "category": "369 캐시백",
+          "text": "결제 횟수가 3의 배수가 될 때마다 캐시백",
+          "rate_or_amount": "1,000원",
+          "condition": "건당 1만원 이상 결제"
+        },
+        {
+          "category": "교통(K-패스)",
+          "text": "K-패스 모두의카드로 무제한 캐시백, 2026.10~12 한정 교통비 월 5,000원 캐시백 확대",
+          "rate_or_amount": "월 5,000원 (한정)",
+          "condition": "2026.10~2026.12 기간 한정"
+        }
+      ],
+      "explicit_target_text": "만 17세 이상 케이뱅크 계좌 보유 고객, 가족카드 불가 (후불교통기능 포함 발급은 만 18세 이상)",
+      "genz_fit": "high",
+      "genz_fit_reason": "공식 페이지는 만 17세 이상 발급, 카페·편의점·배달·통신·교통 캐시백과 K-패스 연계를 안내한다.",
+      "source_ids": [
+        "CBS19"
+      ],
+      "note": "DB 이름 'ONE 체크'는 현재 공식 상품명 'ONE 체크카드(K-패스)'로 확인. 연회비 '없음'. 전월실적 항목은 페이지에 없어 null. 매월 3종 중 1개 선택. 이용한도 일 600만원·월 2,000만원. 부가서비스 내용은 '2024년 8월 기준'이라고 표기돼 있음. 대상 문구는 연령 타깃이 아닌 발급 자격."
+    },
+    {
+      "id": "c33",
+      "name": "카카오뱅크 K-패스 프렌즈 체크",
+      "official_name": "카카오뱅크 프렌즈 체크카드 (모두의카드(K-패스) 신청 가능 디자인) / 별도 상품: 카카오뱅크 더(The) 체크카드 with 모두의카드",
+      "issuer": "카카오뱅크",
+      "on_sale": true,
+      "as_of": "2026-10-08 (심의필 시작일)",
+      "annual_fee_won": {
+        "domestic": 0,
+        "overseas": null
+      },
+      "min_prev_month_spend_won": null,
+      "headline_benefits": [
+        {
+          "category": "프렌즈 체크카드 캐시백",
+          "text": "주중 이용금액 캐시백",
+          "rate_or_amount": "주중 0.2%",
+          "condition": "한도 표기: 적립한도 없음"
+        },
+        {
+          "category": "프렌즈 체크카드 캐시백",
+          "text": "주말/공휴일 이용금액 캐시백",
+          "rate_or_amount": "주말·공휴일 0.4%",
+          "condition": "한도 표기: 적립한도 없음"
+        },
+        {
+          "category": "더 체크카드 혜택팩",
+          "text": "가성비 브랜드 5% 또는 소득·세액공제 업종 5% 캐시백 (택1)",
+          "rate_or_amount": "5%",
+          "condition": "하루 1천원·월 2만원 한도, 하루 한 번 변경, 혜택 기간 2026.09.21~2027.06.30 (CBS20)"
+        },
+        {
+          "category": "더 체크카드 기본",
+          "text": "국내 어디서나 캐시백",
+          "rate_or_amount": "0.5%",
+          "condition": "전월 이용실적 없어도 결제 즉시 캐시백 (CBS20)"
+        }
+      ],
+      "explicit_target_text": "주민등록증을 소지한 만 17세 이상 내국인 본인회원 (후불교통기능은 만 18세 이상)",
+      "genz_fit": "high",
+      "genz_fit_reason": "공식 페이지가 만 17세 이상 본인회원 발급과 모두의카드(K-패스) 연계를 안내한다.",
+      "source_ids": [
+        "CBS20",
+        "CBS21"
+      ],
+      "note": "DB 이름 'K-패스 프렌즈 체크'와 정확히 일치하는 현행 공식 상품명은 못 찾음. 가장 가까운 현행 상품 두 개를 병기: (1) 프렌즈 체크카드(K-패스 신청 가능 디자인, 연회비 없음, 심의필 26-1913 2026.10.8~2027.1.31), (2) 더(The) 체크카드 with 모두의카드(연회비 없음, 해외겸용 MasterCard, 심의필 26-1919 2026.10.8~2027.6.30). 구 K-패스 프렌즈의 교통 추가 캐시백과 전월실적 조건은 현행 페이지에서 확인 못 해 min_prev null. K-패스 등록은 후불교통기능 선택 발급 시에만 가능."
+    },
+    {
+      "id": "c34",
+      "name": "하나 나라사랑카드 체크",
+      "official_name": "하나 나라사랑카드(체크)",
+      "issuer": "하나",
+      "on_sale": true,
+      "as_of": "2026-06-26 (준법심의일) / 출시 2025-12-15",
+      "annual_fee_won": {
+        "domestic": 0,
+        "overseas": 0
+      },
+      "min_prev_month_spend_won": 0,
+      "headline_benefits": [
+        {
+          "category": "군마트(PX)",
+          "text": "군마트(PX) 최대 30% 캐시백 (Easy 서비스)",
+          "rate_or_amount": "최대 30%",
+          "condition": "실적 조건 없는 서비스"
+        },
+        {
+          "category": "온라인",
+          "text": "쿠팡/네이버플러스스토어 20% 캐시백 (Easy 서비스)",
+          "rate_or_amount": "20%",
+          "condition": "실적 조건 없는 서비스"
+        },
+        {
+          "category": "택시·딜리버리",
+          "text": "택시, 딜리버리 20% 캐시백 (Desire/Basic 서비스)",
+          "rate_or_amount": "20%",
+          "condition": "Desire: 군 급여이체 시 / Basic: 지난달 실적 10만원 이상"
+        },
+        {
+          "category": "편의점",
+          "text": "CU 편의점 행사품목 10% 캐시백 (Easy 서비스)",
+          "rate_or_amount": "10%",
+          "condition": "실적 조건 없는 서비스"
+        },
+        {
+          "category": "디지털라이프",
+          "text": "유튜브프리미엄 등 디지털라이프 10% 캐시백 (Desire/Basic 서비스)",
+          "rate_or_amount": "10%",
+          "condition": "Desire: 군 급여이체 시 / Basic: 지난달 실적 10만원 이상"
+        },
+        {
+          "category": "금융 서비스",
+          "text": "현역병 무료 상해보험, 나라사랑 휴대폰케어, 트래블로그 스위치 서비스",
+          "rate_or_amount": "수치 미표기",
+          "condition": ""
+        }
+      ],
+      "explicit_target_text": "군 대상 상품 (나라사랑카드). 페이지 표기: 발급대상 '후불교통 - 18세 이상'",
+      "genz_fit": "medium",
+      "genz_fit_reason": "공식 혜택이 군마트(PX), 군 급여이체, 현역병 상해보험 등 군 복무자 전용 구성이다.",
+      "source_ids": [
+        "CBS22"
+      ],
+      "note": "연회비 없음 / Visa. min_prev 0은 Easy 서비스 기준이고 Basic 서비스는 지난달 10만원 이상. 상세 발급 대상(병역판정검사 수검자·현역병·예비역 등)은 상세 안내 팝업에 있어 읽지 못함. 상세 한도(월 할인한도)도 미확인. 심의 A-26-2543(2026.06.26)."
+    }
+  ]
+}

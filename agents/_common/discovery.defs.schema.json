@@ -1,0 +1,891 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "card-studio/common/discovery.defs.schema.json",
+  "title": "탐색 파이프라인 공용 정의",
+  "description": "근거 조사(scout), 공백 분석(gap_analyst), 아이디어 발산(ideator), 반박 검증(critic), 라벨링(labeler)이 같이 쓰는 객체 모양. 2026-10 GenZ 데모 조사에서 실제로 쓴 형식을 계약으로 고정했다.",
+  "$defs": {
+    "age_scope": {
+      "enum": [
+        "10대후반(고3·수험생 포함)",
+        "10대",
+        "잘파(Z+알파)",
+        "Z세대",
+        "20대",
+        "MZ",
+        "청년(19~34)",
+        "젊은층(범위 미기재)",
+        "전연령"
+      ],
+      "description": "원문 표현은 population에 두고 가장 가까운 값을 고른다"
+    },
+    "fact": {
+      "type": "object",
+      "required": [
+        "id",
+        "claim",
+        "source_id",
+        "confidence"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[A-Z]{2,3}F[0-9]+$",
+          "description": "담당 접두 + F + 번호. 인용은 ev:<id>"
+        },
+        "topic": {
+          "type": "string"
+        },
+        "claim": {
+          "type": "string",
+          "description": "한 문장. 수치는 원문 그대로, 계산한 값 금지"
+        },
+        "value": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "unit": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "population": {
+          "type": "string"
+        },
+        "period": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "age_scope": {
+          "$ref": "#/$defs/age_scope"
+        },
+        "source_id": {
+          "type": "string"
+        },
+        "quote": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "maxLength": 120,
+          "description": "본문 그대로 옮긴 한 구절"
+        },
+        "quote_verified": {
+          "type": "boolean",
+          "description": "내려받은 본문에서 문자열 일치를 확인했으면 true"
+        },
+        "confidence": {
+          "enum": [
+            "high",
+            "medium",
+            "low"
+          ]
+        },
+        "note": {
+          "type": "string"
+        },
+        "out_of_scope": {
+          "type": "boolean"
+        }
+      }
+    },
+    "trend_item": {
+      "type": "object",
+      "required": [
+        "id",
+        "title",
+        "what",
+        "fact_ids"
+      ],
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "title": {
+          "type": "string"
+        },
+        "categories": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "age_scope": {
+          "type": "string"
+        },
+        "what": {
+          "type": "string",
+          "description": "사실 1~2문장"
+        },
+        "when": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "virality": {
+          "type": "object",
+          "properties": {
+            "channel": {
+              "type": "string"
+            },
+            "evidence": {
+              "type": "string"
+            },
+            "metric": {
+              "type": [
+                "string",
+                "null"
+              ]
+            }
+          }
+        },
+        "durability": {
+          "enum": [
+            "지속 추세",
+            "한시 유행",
+            "불명"
+          ]
+        },
+        "phase": {
+          "enum": [
+            "초기",
+            "확산",
+            "포화",
+            "불명"
+          ]
+        },
+        "fact_ids": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "string"
+          }
+        },
+        "card_relevance": {
+          "type": "string",
+          "description": "해석: 카드·결제와 닿는 점 한 문장. 사실과 섞지 않는다"
+        }
+      }
+    },
+    "case": {
+      "type": "object",
+      "required": [
+        "id",
+        "name",
+        "structure",
+        "source_ids"
+      ],
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "operator": {
+          "type": "string"
+        },
+        "region": {
+          "type": "string"
+        },
+        "kind": {
+          "type": "string"
+        },
+        "type": {
+          "type": "string"
+        },
+        "launched": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "status": {
+          "type": "string",
+          "description": "active | ended | unknown 권장, 원문 상태 설명이면 그대로"
+        },
+        "structure": {
+          "type": "string",
+          "description": "공식 문구 기준 한 문장"
+        },
+        "conditions": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "metrics": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "limits": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "source_ids": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "constraint": {
+      "type": "object",
+      "required": [
+        "id",
+        "rule",
+        "status",
+        "source_ids"
+      ],
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "rule": {
+          "type": "string"
+        },
+        "status": {
+          "type": "string"
+        },
+        "as_of": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "source_ids": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "string"
+          }
+        },
+        "note": {
+          "type": "string"
+        }
+      }
+    },
+    "prediction": {
+      "type": "object",
+      "required": [
+        "id",
+        "prediction",
+        "based_on_trend_item_ids",
+        "confidence",
+        "falsifier"
+      ],
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "prediction": {
+          "type": "string",
+          "pattern": "^predict:"
+        },
+        "based_on_trend_item_ids": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "string"
+          }
+        },
+        "leading_indicators": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "expected_window": {
+          "type": "string"
+        },
+        "confidence": {
+          "enum": [
+            "낮음",
+            "중간",
+            "높음"
+          ]
+        },
+        "falsifier": {
+          "type": "string"
+        },
+        "card_link_ideas": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "analogue": {
+      "type": "object",
+      "required": [
+        "id",
+        "idea"
+      ],
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "idea": {
+          "type": "string"
+        },
+        "based_on_case_ids": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "risk": {
+          "type": "string"
+        }
+      }
+    },
+    "nearest_card": {
+      "type": "object",
+      "required": [
+        "card",
+        "difference"
+      ],
+      "properties": {
+        "card": {
+          "type": "string",
+          "description": "경쟁 카드 DB의 카드 이름 그대로"
+        },
+        "similarity": {
+          "type": "string"
+        },
+        "difference": {
+          "type": "string"
+        }
+      }
+    },
+    "genz_basis": {
+      "type": "object",
+      "required": [
+        "fact_id",
+        "says"
+      ],
+      "properties": {
+        "fact_id": {
+          "type": "string"
+        },
+        "says": {
+          "type": "string"
+        },
+        "age_scope": {
+          "type": "string"
+        },
+        "weight": {
+          "enum": [
+            "핵심",
+            "보조"
+          ]
+        }
+      }
+    },
+    "cvp_seed": {
+      "type": "object",
+      "required": [
+        "target",
+        "offer",
+        "key_benefit",
+        "alternative",
+        "differentiator",
+        "reason_to_believe"
+      ],
+      "properties": {
+        "target": {
+          "type": "string"
+        },
+        "offer": {
+          "type": "string"
+        },
+        "key_benefit": {
+          "type": "string"
+        },
+        "alternative": {
+          "type": "string"
+        },
+        "differentiator": {
+          "type": "string"
+        },
+        "reason_to_believe": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "gap_candidate": {
+      "type": "object",
+      "required": [
+        "id",
+        "title",
+        "gap_type",
+        "unmet_need",
+        "genz_basis",
+        "existing_check",
+        "mechanism_tags",
+        "need_key",
+        "strength",
+        "counter_evidence",
+        "cvp_seed"
+      ],
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "title": {
+          "type": "string"
+        },
+        "gap_type": {
+          "enum": [
+            "benefit_structure",
+            "experience",
+            "touchpoint",
+            "condition",
+            "partnership",
+            "trust"
+          ]
+        },
+        "unmet_need": {
+          "type": "string"
+        },
+        "genz_basis": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "$ref": "#/$defs/genz_basis"
+          }
+        },
+        "existing_check": {
+          "type": "object",
+          "required": [
+            "db_cards_compared",
+            "verdict"
+          ],
+          "properties": {
+            "db_cards_compared": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "similar": {
+              "type": "array",
+              "items": {
+                "type": "object"
+              }
+            },
+            "web_checked": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "verdict": {
+              "enum": [
+                "none",
+                "partial",
+                "exists"
+              ]
+            },
+            "note": {
+              "type": "string"
+            }
+          }
+        },
+        "mechanism_tags": {
+          "type": "array",
+          "minItems": 1,
+          "maxItems": 2,
+          "items": {
+            "type": "string"
+          }
+        },
+        "need_key": {
+          "type": "string"
+        },
+        "domain_key": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "strength": {
+          "enum": [
+            "강",
+            "중",
+            "약"
+          ]
+        },
+        "strength_reason": {
+          "type": "string"
+        },
+        "counter_evidence": {
+          "type": "string"
+        },
+        "risks": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "invest_related": {
+          "type": "boolean"
+        },
+        "cvp_seed": {
+          "$ref": "#/$defs/cvp_seed"
+        }
+      }
+    },
+    "idea": {
+      "type": "object",
+      "required": [
+        "id",
+        "name",
+        "one_liner",
+        "novelty_type",
+        "what_is_new",
+        "nearest_cards",
+        "concept",
+        "evidence_ids",
+        "need_key",
+        "risks"
+      ],
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "one_liner": {
+          "type": "string"
+        },
+        "novelty_type": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "enum": [
+              "영역",
+              "혜택 구조",
+              "컨셉",
+              "실적 재해석",
+              "접근 방식"
+            ]
+          }
+        },
+        "what_is_new": {
+          "type": "string"
+        },
+        "nearest_cards": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "$ref": "#/$defs/nearest_card"
+          }
+        },
+        "target": {
+          "type": "string"
+        },
+        "why_genz": {
+          "type": "string"
+        },
+        "concept": {
+          "type": "object",
+          "required": [
+            "offer",
+            "mechanism",
+            "performance_rule"
+          ],
+          "properties": {
+            "offer": {
+              "type": "string"
+            },
+            "mechanism": {
+              "type": "array",
+              "minItems": 3,
+              "items": {
+                "type": "string"
+              }
+            },
+            "performance_rule": {
+              "type": "object",
+              "required": [
+                "type",
+                "description"
+              ],
+              "properties": {
+                "type": {
+                  "enum": [
+                    "none",
+                    "spend",
+                    "behavior",
+                    "tenure",
+                    "goal",
+                    "level",
+                    "other"
+                  ]
+                },
+                "description": {
+                  "type": "string"
+                }
+              }
+            },
+            "growth_path": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "design_values": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "required": [
+                  "what",
+                  "value",
+                  "design_value"
+                ],
+                "properties": {
+                  "what": {
+                    "type": "string"
+                  },
+                  "value": {
+                    "type": "string"
+                  },
+                  "design_value": {
+                    "const": true
+                  }
+                }
+              }
+            }
+          }
+        },
+        "evidence_ids": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "string"
+          }
+        },
+        "evidence_note": {
+          "type": "string"
+        },
+        "new_tags": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [
+              "key",
+              "label",
+              "definition"
+            ],
+            "properties": {
+              "key": {
+                "type": "string",
+                "pattern": "^[a-z][a-z0-9_]*$"
+              },
+              "label": {
+                "type": "string"
+              },
+              "definition": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "need_key": {
+          "type": "string"
+        },
+        "domain_key": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "platform_hook": {
+          "type": "string"
+        },
+        "durability": {
+          "enum": [
+            "지속 추세",
+            "한시 유행",
+            "불명"
+          ]
+        },
+        "risks": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "open_questions": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "interpretation_flags": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "check": {
+      "type": "object",
+      "required": [
+        "vote",
+        "findings",
+        "confidence_in_vote"
+      ],
+      "properties": {
+        "vote": {
+          "enum": [
+            "confirm",
+            "weaken",
+            "refute"
+          ]
+        },
+        "findings": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "string"
+          }
+        },
+        "corrections": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "confidence_in_vote": {
+          "enum": [
+            "high",
+            "medium",
+            "low"
+          ]
+        }
+      }
+    },
+    "label": {
+      "type": "object",
+      "required": [
+        "needs",
+        "tags",
+        "domains",
+        "relevance"
+      ],
+      "properties": {
+        "needs": {
+          "type": "array",
+          "maxItems": 3,
+          "items": {
+            "type": "string"
+          }
+        },
+        "tags": {
+          "type": "array",
+          "maxItems": 4,
+          "items": {
+            "type": "string"
+          }
+        },
+        "domains": {
+          "type": "array",
+          "maxItems": 2,
+          "items": {
+            "type": "string"
+          }
+        },
+        "relevance": {
+          "enum": [
+            "direct",
+            "indirect",
+            "none"
+          ]
+        }
+      }
+    },
+    "voice": {
+      "type": "object",
+      "required": [
+        "id",
+        "text",
+        "source_id"
+      ],
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "text": {
+          "type": "string",
+          "maxLength": 120
+        },
+        "where": {
+          "type": "string"
+        },
+        "source_id": {
+          "type": "string"
+        },
+        "tier": {
+          "enum": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ]
+        },
+        "note": {
+          "type": "string"
+        }
+      },
+      "description": "공개 글·보도 속 발언. 수치 근거로 쓰지 않는다"
+    },
+    "theme": {
+      "type": "object",
+      "required": [
+        "id",
+        "theme",
+        "summary",
+        "fact_ids"
+      ],
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "theme": {
+          "type": "string"
+        },
+        "summary": {
+          "type": "string"
+        },
+        "fact_ids": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "strength": {
+          "type": "string"
+        }
+      }
+    }
+  }
+}

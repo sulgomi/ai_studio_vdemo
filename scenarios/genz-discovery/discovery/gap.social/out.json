@@ -1,0 +1,556 @@
+{
+ "run_id": "genz-discovery-001",
+ "request_id": "genz-discovery-001-social",
+ "agent": "gap_analyst",
+ "contract_version": "1.0",
+ "model": "recorded",
+ "status": "ok",
+ "answer": "gap_analyst social 기록",
+ "result": {
+  "angle": "social",
+  "candidates": [
+   {
+    "id": "SOC1",
+    "title": "모임통장·정산과 묶인 '신용카드' 모임 결제: 총무 1인 후불 결제 + 모임원별 자동 분할 청구가 되는 카드가 없다",
+    "gap_type": "experience",
+    "unmet_need": "모임 결제는 체크카드·모임통장으로는 풀렸지만(모임통장 순이용자 1200만, 모임 체크카드 100만장), 총무가 먼저 결제하고 나중에 모임원에게 받는 '후불·분할' 흐름을 신용카드 수준의 한도·할부·실적 위에서 해주는 상품은 확인되지 않았다. 해석: 이 공백은 모임 수요가 아니라 '선결제 부담과 정산 번거로움'이 있다는 가정에 기대며 그 직접 근거는 없다.",
+    "genz_basis": [
+     {
+      "fact_id": "GTF6",
+      "says": "카카오뱅크 모임통장 순이용자가 2025년 6월 말 1200만명을 돌파했다",
+      "age_scope": "전연령",
+      "weight": "핵심"
+     },
+     {
+      "fact_id": "GTF10",
+      "says": "카카오뱅크 모임 체크카드 누적 발급이 100만장을 돌파했다",
+      "age_scope": "전연령",
+      "weight": "핵심"
+     },
+     {
+      "fact_id": "GTF7",
+      "says": "모임통장 이용자 중 20대 이하는 16.5%로 젊은층 한정이 아니다",
+      "age_scope": "20대",
+      "weight": "보조"
+     },
+     {
+      "fact_id": "GTF22",
+      "says": "배달의민족이 2026-06-16부터 배민페이 내 더치페이(정산 요청)를 도입한다",
+      "age_scope": "전연령",
+      "weight": "보조"
+     },
+     {
+      "fact_id": "CSF4",
+      "says": "MZ세대가 가장 많이 쓰는 결제수단은 신용카드 49.6%, 체크카드 42.6%다",
+      "age_scope": "MZ",
+      "weight": "보조"
+     }
+    ],
+    "existing_check": {
+     "db_cards_compared": [
+      "카카오뱅크 K-패스 프렌즈 체크",
+      "토스뱅크 체크카드",
+      "케이뱅크 ONE 체크",
+      "카카오뱅크 줍줍 신한카드",
+      "토스뱅크 하나카드 WIDE",
+      "토스 삼성카드"
+     ],
+     "similar": [
+      {
+       "card": "토스뱅크 체크카드",
+       "how_similar": "DB 혜택 문구에는 모임 기능이 없고 은행 결합형 체크카드",
+       "difference": "모임 단위 결제·정산 구조가 아님"
+      },
+      {
+       "card": "카카오뱅크 줍줍 신한카드",
+       "how_similar": "은행 결합 신용카드, 전월 실적 조건 없는 캐시백",
+       "difference": "모임통장·모임원 분할과 연결되지 않은 개인 카드"
+      }
+     ],
+     "web_checked": [
+      "WebSearch: 카카오뱅크 모임카드의 2금융권·카드사 확산 보도(2025-08), NH올원모임체크카드(1인 최대 5장), 신한카드 SOL모임 체크카드(건당 최대 1% 적립), 토스뱅크 모임카드(1만원 이상 500원 캐시백, 모임원 각자 발급) 모두 체크카드형",
+      "WebSearch: 모임 단위 신용카드 시판 사례는 찾지 못함(과거 2007 삼성카드 가족 포인트 합산, 1993 동호회 제휴카드 기사만 확인)",
+      "모임 체크카드는 exists, 모임 신용카드는 none"
+     ],
+     "verdict": "partial",
+     "note": "모임 결제 자체는 체크카드·모임통장으로 이미 풀리고 있다(exists). 비어 있는 것은 신용카드 층위의 후불·분할뿐이며, 그것을 20대가 원한다는 근거는 없다."
+    },
+    "mechanism_tags": [
+     "group_pooling",
+     "social"
+    ],
+    "need_key": "social",
+    "domain_key": "dining",
+    "strength": "약",
+    "strength_reason": "모임 결제 수요는 출처가 여럿이고 최신(2025~2026)이나 전연령이다. 후불 분할형 신용카드에 대한 수요 근거와 20대 한정 근거는 없다.",
+    "counter_evidence": "모임 수요는 체크카드·모임통장으로 이미 흡수되고 있다. 20대 이하 신용카드 이용액은 감소(CSF18)하며 MZ는 카드 결제일 부담을 53.6% 느낀다(CSF3). 모임원 간 후불 채권 구조는 신용카드에서 오히려 부담이 될 수 있다.",
+    "risks": [
+     "여신 심사·한도 부담이 20대 모임 총무에게 쏠림(가정)",
+     "MZ 53.6%가 결제일 부담 경험(CSF3)",
+     "모임 정산 서비스의 연령별 이용 수치는 없음(gatherings gaps)"
+    ],
+    "invest_related": false,
+    "cvp_seed": {
+     "target": "여러 모임의 총무 역할을 하는 20대 후반 직장인·대학생",
+     "offer": "모임 단위 결제를 신용한도로 먼저 처리하고 정산 요청 건을 모임원별로 분리해 청구·상환 표시하는 모임 연동 신용카드",
+     "key_benefit": "선결제 부담을 개인 현금흐름에서 분리하고 결제 실적은 총무가 인정받음",
+     "alternative": "카카오뱅크 모임 체크카드 + 모임통장, 토스뱅크 모임카드",
+     "differentiator": "모임 체크카드는 입금된 잔액만 쓰는 선입금 구조이고 이 제안은 후불·한도 구조",
+     "reason_to_believe": [
+      "GTF6",
+      "GTF10",
+      "가정: 총무 선결제 부담 존재"
+     ]
+    }
+   },
+   {
+    "id": "SOC2",
+    "title": "전월실적을 모임원과 합산·공유하는 혜택 풀: 50종 어디에도 없다",
+    "gap_type": "benefit_structure",
+    "unmet_need": "신용카드 혜택은 개인 전월실적에 묶이는데, 모임에서 각자 쓰는 돈을 실적·혜택 한도로 합산하는 카드는 DB와 웹검색에서 찾지 못했다. 모임 체크카드는 실적 조건 자체를 없애는 방식(카카오뱅크: 5만원 이상 결제마다 3000원/300원 무작위, 실적·업종 제한 없음)으로 풀고 있다. 해석: '실적 합산'은 설계 아이디어이며 수요 근거는 없다.",
+    "genz_basis": [
+     {
+      "fact_id": "GTF17",
+      "says": "카카오뱅크 모임 체크카드는 전월 실적·업종 제한이 없다",
+      "age_scope": "전연령",
+      "weight": "핵심"
+     },
+     {
+      "fact_id": "GTF11",
+      "says": "모임 체크카드 캐시백 누적 30억원(2025-07 말)",
+      "age_scope": "전연령",
+      "weight": "보조"
+     },
+     {
+      "fact_id": "GTF9",
+      "says": "모임통장 연결 체크카드 결제액이 2025년 상반기에만 2조원이다",
+      "age_scope": "전연령",
+      "weight": "보조"
+     },
+     {
+      "fact_id": "GTF16",
+      "says": "토스뱅크 모임통장 약 16%는 구성원 모두가 공동모임장이 되어 권한을 공유한다",
+      "age_scope": "전연령",
+      "weight": "보조"
+     },
+     {
+      "fact_id": "CSF1",
+      "says": "MZ 신용카드 사용 이유 1위가 실적·할인 혜택 44.0%다",
+      "age_scope": "MZ",
+      "weight": "보조"
+     }
+    ],
+    "existing_check": {
+     "db_cards_compared": [
+      "카카오뱅크 K-패스 프렌즈 체크",
+      "토스뱅크 체크카드",
+      "LOCA LIKIT 1.2",
+      "ZERO Edition3(할인형)",
+      "토스뱅크 하나카드 WIDE",
+      "카카오뱅크 줍줍 신한카드",
+      "BC 바로 K-패스 카드"
+     ],
+     "similar": [
+      {
+       "card": "토스뱅크 하나카드 WIDE",
+       "how_similar": "전월 실적과 상관없이 전 가맹점 기본 청구할인 1%",
+       "difference": "개인 단위이며 모임원 합산 없음"
+      },
+      {
+       "card": "ZERO Edition3(할인형)",
+       "how_similar": "무실적 0.8% 청구할인",
+       "difference": "개인 단위, 합산 없음"
+      }
+     ],
+     "web_checked": [
+      "WebSearch: 카카오뱅크 모임카드의 2금융권·카드사 확산 보도(2025-08), NH올원모임체크카드(1인 최대 5장), 신한카드 SOL모임 체크카드(건당 최대 1% 적립), 토스뱅크 모임카드(1만원 이상 500원 캐시백, 모임원 각자 발급) 모두 체크카드형",
+      "WebSearch: 모임 단위 신용카드 시판 사례는 찾지 못함(과거 2007 삼성카드 가족 포인트 합산, 1993 동호회 제휴카드 기사만 확인)"
+     ],
+     "verdict": "none",
+     "note": "합산 구조 자체는 none이다. 다만 '모임 결제 때 실적 걱정이 없다'는 효익은 무실적 카드와 모임 체크카드가 이미 제공한다. 차별점이 합산이어야만 성립한다."
+    },
+    "mechanism_tags": [
+     "group_pooling",
+     "anti_cap"
+    ],
+    "need_key": "social",
+    "domain_key": "dining",
+    "strength": "약",
+    "strength_reason": "모임 결제 규모(GTF9)는 두껍지만 실적 합산 수요를 직접 보여주는 근거가 없고 전연령이다.",
+    "counter_evidence": "모임 체크카드가 실적 조건 제거로 이미 100만장 발급을 얻었다(GTF10). 무실적 카드가 같은 효익을 준다. 20대가 모임 실적 합산을 원한다는 설문이 없다.",
+    "risks": [
+     "실적을 타인 결제로 채우는 체리피킹·가입 유도 악용(가정)",
+     "한도 보전 재원 비용(CSF25 연회비 의존 구조와 충돌 가능)",
+     "모임원 개인정보·결제내역 공유 동의"
+    ],
+    "invest_related": false,
+    "cvp_seed": {
+     "target": "월 모임 지출이 크고 개인 전월실적을 못 채우는 20대",
+     "offer": "모임 구성원 결제를 합산해 실적 구간을 푸는 혜택 풀",
+     "key_benefit": "혼자 실적을 못 채워도 모임 전체로 혜택 구간 도달",
+     "alternative": "카카오뱅크 모임 체크카드, LOCA LIKIT 1.2",
+     "differentiator": "무실적 카드는 혜택이 낮고 고정이며 이 제안은 합산으로 구간 혜택을 올림",
+     "reason_to_believe": [
+      "GTF17",
+      "GTF9",
+      "가정"
+     ]
+    }
+   },
+   {
+    "id": "SOC3",
+    "title": "더치페이로 돌려받은 금액이 카드 실적·혜택에 어떻게 반영되는지 설계한 카드가 없다(정산 후 순소비 기준 혜택)",
+    "gap_type": "condition",
+    "unmet_need": "먼저 계산한 사람의 카드에는 전체 금액이 실적으로 잡히고 정산으로 돌려받는 금액은 반영되지 않는 것이 일반적이라는 점은 해석이다. 이를 다루는 카드 혜택 문구는 DB에서 확인되지 않았다. 정산 요청 기능은 배민페이 등 결제 앱이 도입 중이다.",
+    "genz_basis": [
+     {
+      "fact_id": "GTF22",
+      "says": "배달의민족이 2026-06-16부터 배민페이 내 더치페이 기능을 도입한다",
+      "age_scope": "전연령",
+      "weight": "핵심"
+     },
+     {
+      "fact_id": "MHF10",
+      "says": "20대는 카카오톡을 송금·결제 51.4%, 선물하기 40.4%에도 쓴다",
+      "age_scope": "20대",
+      "weight": "보조"
+     },
+     {
+      "fact_id": "MHF19",
+      "says": "송금에서는 카카오페이 45.2%, 토스페이 32.6%다",
+      "age_scope": "전연령",
+      "weight": "보조"
+     }
+    ],
+    "existing_check": {
+     "db_cards_compared": [
+      "토스 삼성카드",
+      "배민 신한카드 밥친구",
+      "카카오뱅크 줍줍 신한카드",
+      "네이버 현대카드 Edition2"
+     ],
+     "similar": [
+      {
+       "card": "배민 신한카드 밥친구",
+       "how_similar": "배달앱 이용금액 5% 할인, 월 최대 3만원",
+       "difference": "더치페이 정산과 무관"
+      }
+     ],
+     "web_checked": [
+      "WebSearch: 모임카드·모임통장 연결·정산 기능 관련 직접 자료 없음(검색 결과 신뢰 낮음)"
+     ],
+     "verdict": "none",
+     "note": "카드 혜택에서 정산 반영을 다룬 곳은 확인 못했다. 단, 이는 '못 찾았다'일 뿐이며 약관 수준의 내용은 확인하지 못했다."
+    },
+    "mechanism_tags": [
+     "social",
+     "anti_cap"
+    ],
+    "need_key": "social",
+    "domain_key": "dining",
+    "strength": "약",
+    "strength_reason": "정산 수요는 배민의 도입(GTF22) 한 건의 간접 근거뿐이고 정산 서비스의 연령별 이용 수치는 없다(gatherings gaps).",
+    "counter_evidence": "정산 문제를 겪는 빈도·불만 설문이 없다. 정산 기능은 결제 앱이 제공하고 있어 카드가 아니라 앱 영역일 수 있다.",
+    "risks": [
+     "정산 환수에 따른 실적 정정은 카드사 시스템·약관 변경 필요(가정)",
+     "원 결제자 실적 부풀리기 악용(가정)"
+    ],
+    "invest_related": false,
+    "cvp_seed": {
+     "target": "모임에서 먼저 결제하는 20대",
+     "offer": "정산 요청 완료 건을 제외한 순소비 기준이 아니라, 선결제 전체 금액을 실적으로 인정하는 조건",
+     "key_benefit": "대신 결제해도 내 실적과 혜택이 손해 보지 않음",
+     "alternative": "카카오페이·토스 정산 + 개인 신용카드",
+     "differentiator": "기존 카드는 정산 개념이 없는 일반 실적 구조",
+     "reason_to_believe": [
+      "GTF22",
+      "가정"
+     ]
+    }
+   },
+   {
+    "id": "SOC4",
+    "title": "친구 추천이 1회성 보상이 아니라 '함께 쓸수록 둘 다 커지는' 지속형 구조인 카드는 없다",
+    "gap_type": "benefit_structure",
+    "unmet_need": "신한카드는 '함께 쓰면 커지는 혜택' 문구의 친구추천 이벤트(추천인 월 최대 25만원 캐시백, 피추천 연회비 100% 지원)를 내세운다. 이는 이벤트이며 카드 상시 구조가 아니다. 상시 사용 과정에서 친구와 함께 쓴 결제에 가산되는 구조는 DB에서 확인되지 않았다.",
+    "genz_basis": [
+     {
+      "fact_id": "GTF25",
+      "says": "신한카드 친구추천 이벤트로 추천인 월 최대 25만원 캐시백, 피추천인 연회비 100% 지원",
+      "age_scope": "전연령",
+      "weight": "핵심"
+     },
+     {
+      "fact_id": "GTF20",
+      "says": "Z세대 친구·지인 평균 15.2명, 친한 친구 5.8명으로 비교 세대 중 많은 편",
+      "age_scope": "Z세대",
+      "weight": "보조"
+     },
+     {
+      "fact_id": "VRF20",
+      "says": "Z세대 91.7%가 나이가 달라도 비슷한 라이프스타일이면 같은 트렌드를 공유한다고 동의",
+      "age_scope": "Z세대",
+      "weight": "보조"
+     }
+    ],
+    "existing_check": {
+     "db_cards_compared": [
+      "처음(ANNIVERSE)",
+      "카카오뱅크 줍줍 신한카드",
+      "토스 삼성카드",
+      "삼성 iD SELECT ON"
+     ],
+     "similar": [
+      {
+       "card": "신한카드 친구추천 이벤트(DB 밖)",
+       "how_similar": "함께 쓰면 커지는 혜택 문구와 양방향 보상",
+       "difference": "이벤트성 1회·기간 보상이며 상시 혜택 구조가 아님"
+      }
+     ],
+     "web_checked": [
+      "gatherings 근거: 신한카드 1:1 친구추천 보상 확인",
+      "WebSearch: 친구 결제 연동 상시 혜택 사례는 찾지 못함"
+     ],
+     "verdict": "partial",
+     "note": "1:1 친구추천 보상이 이미 있어 '추천 보상' 자체는 exists. 비어 있는 것은 상시 구조다. 효과(전환·유지)를 보여주는 근거는 없다."
+    },
+    "mechanism_tags": [
+     "social"
+    ],
+    "need_key": "social",
+    "domain_key": null,
+    "strength": "약",
+    "strength_reason": "Z세대 관계 크기(GTF20)는 보조 근거이고 추천 보상 반응 수치는 없다. GTF20은 medium 신뢰다.",
+    "counter_evidence": "추천 이벤트는 모집 비용 소진 방식이라 유지에 효과가 없을 수 있다. 연회비 수익 의존(CSF25)과 카드 단종 증가(CSF22) 환경에서 상시 비용을 감당하기 어렵다.",
+    "risks": [
+     "다단계·모집 과열 및 금융당국 마케팅 규제(가정)",
+     "체리피킹(받고 해지): 해지 회원 증가 CSF21"
+    ],
+    "invest_related": false,
+    "cvp_seed": {
+     "target": "친구와 자주 결제하는 20대",
+     "offer": "친구 연결 카드 간 동일 가맹점 동반 결제에 공동 가산",
+     "key_benefit": "같이 쓸수록 둘 다 혜택 증가",
+     "alternative": "신한카드 친구추천 이벤트, 일반 무실적 카드",
+     "differentiator": "이벤트 1회성이 아니라 사용 과정의 상시 가산",
+     "reason_to_believe": [
+      "GTF25",
+      "GTF20",
+      "가정"
+     ]
+    }
+   },
+   {
+    "id": "SOC5",
+    "title": "러닝크루·독서·맛집 모임 등 취미모임 활동 결제(참가비·장비·모임 후 식사)에 대한 모임 목적 혜택이 없다",
+    "gap_type": "partnership",
+    "unmet_need": "당근·밴드 러닝 모임이 급증하고(WTF4) 러닝 소비가 20대에서도 늘었다(WTF2). 그러나 50종의 혜택 업종은 외식·카페·주유·교통·쇼핑·구독 중심이며, 취미모임 활동 결제를 묶은 카드는 확인되지 않았다. 해석: 20대 모임 활동 참여율은 근거가 없고 당근모임 이용자 중 20대는 14%뿐이다.",
+    "genz_basis": [
+     {
+      "fact_id": "GTF1",
+      "says": "당근모임 2026 상반기 모임 수 +74%, 가입자 +128%",
+      "age_scope": "전연령",
+      "weight": "핵심"
+     },
+     {
+      "fact_id": "GTF3",
+      "says": "당근모임 연령 구성은 20대 14%, 30대 26%, 40대 27%",
+      "age_scope": "20대",
+      "weight": "핵심"
+     },
+     {
+      "fact_id": "WTF2",
+      "says": "2024년 러닝 관련 소비 증가율은 20대 177%, 30대 232%, 40대 225%",
+      "age_scope": "20대",
+      "weight": "보조"
+     },
+     {
+      "fact_id": "WTF4",
+      "says": "당근 러닝 모임은 2024년 1월 대비 4배 넘게 늘었다",
+      "age_scope": "전연령",
+      "weight": "보조"
+     },
+     {
+      "fact_id": "WTF5",
+      "says": "크림 러닝 상품 구매자의 72%가 2030세대",
+      "age_scope": "MZ",
+      "weight": "보조"
+     },
+     {
+      "fact_id": "WTF41",
+      "says": "N놀러: 사소한 즐거움을 다양하게 누리는 여가 트렌드",
+      "age_scope": "Z세대",
+      "weight": "보조"
+     }
+    ],
+    "existing_check": {
+     "db_cards_compared": [
+      "Youth Club 체크",
+      "노리2 체크",
+      "처음(ANNIVERSE)",
+      "청춘대로 톡톡카드",
+      "iM A 체크카드",
+      "삼성 iD SELECT ON"
+     ],
+     "similar": [
+      {
+       "card": "Youth Club 체크",
+       "how_similar": "여가 20% 할인(A팩)",
+       "difference": "모임 단위 아니고 체크카드"
+      },
+      {
+       "card": "처음(ANNIVERSE)",
+       "how_similar": "멤버십·OTT·통신 적립 중심",
+       "difference": "취미모임 활동 업종 없음"
+      }
+     ],
+     "web_checked": [
+      "WebSearch: 모임카드 검색 결과에 취미모임 목적 카드 없음(전용 검색은 하지 않음)"
+     ],
+     "verdict": "none",
+     "note": "DB 기준 none. 웹은 간접 확인뿐이다."
+    },
+    "mechanism_tags": [
+     "social",
+     "target_special"
+    ],
+    "need_key": "social",
+    "domain_key": "daily",
+    "strength": "약",
+    "strength_reason": "모임 성장과 러닝 소비는 최신(2025~2026)이지만 20대 모임 이용은 14%로 낮고 모임 결제 규모의 근거가 없다.",
+    "counter_evidence": "당근모임 사용자 중 20대는 14%뿐이다(GTF3). 참가비는 대부분 현금·계좌이체일 가능성이 있다(가정).",
+    "risks": [
+     "취미모임 가맹점이 영세·분산이어서 제휴 구현이 어려움(가정)",
+     "러닝 열풍의 지속성: 유행 단발 위험(VRF5, VRF6는 디저트 사례)"
+    ],
+    "invest_related": false,
+    "cvp_seed": {
+     "target": "러닝크루·소모임 활동 20대",
+     "offer": "참가비·장비·모임 후 식사 결제를 모임 활동 카테고리로 묶은 혜택",
+     "key_benefit": "취미 활동에 쓴 돈이 한 카테고리로 환급",
+     "alternative": "일반 외식·쇼핑 혜택 카드, Youth Club 체크",
+     "differentiator": "업종이 아니라 활동 목적 기준",
+     "reason_to_believe": [
+      "GTF1",
+      "WTF2",
+      "WTF4",
+      "가정"
+     ]
+    }
+   },
+   {
+    "id": "SOC6",
+    "title": "카카오톡 선물하기 등 선물 결제·자기 선물 구매에 맞춘 카드 혜택이 비어 있다",
+    "gap_type": "partnership",
+    "unmet_need": "20대 선물 채널은 카카오톡이 93.2%로 수렴하고(MHF8), 선물하기 자기 구매가 2026 2분기 +39%로 전체의 약 20%다(GTF18). DB 50종 혜택에 선물하기 결제 혜택은 보이지 않았다. 해석: 선물 구매 시 어떤 결제수단을 쓰는지는 근거가 없다.",
+    "genz_basis": [
+     {
+      "fact_id": "MHF8",
+      "says": "20대 선물 채널은 카카오톡이 93.2%",
+      "age_scope": "20대",
+      "weight": "핵심"
+     },
+     {
+      "fact_id": "GTF18",
+      "says": "선물하기 자기 구매 거래액 2026 2분기 +39%, 전체의 약 20%",
+      "age_scope": "전연령",
+      "weight": "핵심"
+     },
+     {
+      "fact_id": "GTF19",
+      "says": "자기 구매는 20·30세대 이용 비중이 상대적으로 높다(수치 없음)",
+      "age_scope": "20대",
+      "weight": "보조"
+     },
+     {
+      "fact_id": "MHF11",
+      "says": "선물 앱 선택 이유 중 혜택·할인은 토스 17.0%, 카카오톡 10.8%",
+      "age_scope": "잘파",
+      "weight": "보조"
+     }
+    ],
+    "existing_check": {
+     "db_cards_compared": [
+      "카카오뱅크 줍줍 신한카드",
+      "토스 삼성카드",
+      "네이버 현대카드 Edition2",
+      "iD SELECT ALL",
+      "삼성 iD SELECT ON"
+     ],
+     "similar": [
+      {
+       "card": "카카오뱅크 줍줍 신한카드",
+       "how_similar": "카카오뱅크 결합 PLCC, 국내외 가맹점 캐시백",
+       "difference": "선물하기 결제 특화 아님"
+      }
+     ],
+     "web_checked": [
+      "WebSearch 미실시(선물 카드 전용 검색 없음). DB 기준 판정"
+     ],
+     "verdict": "none",
+     "note": "search 한계: 카카오페이 계열 제휴 카드는 DB에 없음. DB 밖 카카오페이 신용카드 혜택은 확인하지 못했다."
+    },
+    "mechanism_tags": [
+     "plcc_brand",
+     "social"
+    ],
+    "need_key": "social",
+    "domain_key": "online",
+    "strength": "약",
+    "strength_reason": "20대 선물 채널 수치(MHF8)는 특정성이 높지만 결제수단·카드 혜택 수요 근거가 없다.",
+    "counter_evidence": "카카오톡 선물하기 결제는 대부분 카카오페이·카카오 포인트 등 간편결제를 거칠 수 있어 카드 혜택이 가시화되기 어렵다(가정). 선물은 예산 대비 소액이다.",
+    "risks": [
+     "플랫폼사 제휴 조건·수수료 협상",
+     "DB 밖 카드 미확인으로 exists 가능성"
+    ],
+    "invest_related": false,
+    "cvp_seed": {
+     "target": "선물을 자주 주고받는 20대",
+     "offer": "선물하기 결제와 생일·기념일 알림 연동 적립",
+     "key_benefit": "선물 지출 환급",
+     "alternative": "카카오뱅크 줍줍 신한카드",
+     "differentiator": "선물 결제 특화",
+     "reason_to_believe": [
+      "MHF8",
+      "GTF18",
+      "가정"
+     ]
+    }
+   }
+  ],
+  "rejected": [
+   {
+    "idea": "모임통장·모임 체크카드 자체",
+    "why": "이미 존재(카카오뱅크, 토스뱅크, 신한 SOL모임, NH올원모임 등 체크카드형)"
+   },
+   {
+    "idea": "정산(N빵) 서비스 자체",
+    "why": "카카오페이·토스 등 이미 존재, 배민페이도 도입(GTF22). 연령 수치 없음"
+   },
+   {
+    "idea": "팝업스토어 동행 혜택",
+    "why": "동행 여부·연령 근거 없음(GTT10, GTF23은 시장 규모뿐)"
+   },
+   {
+    "idea": "외로움·고립 청년 대상 관계 소비 카드",
+    "why": "근거 약함(GTF26 low, 소비 연결 없음)"
+   },
+   {
+    "idea": "캐릭터·굿즈 카드로 친구 공유",
+    "why": "디자인 카드는 소셜 각도 밖, 바이럴 각도 소관"
+   }
+  ],
+  "notes": "모임 수요(GTF6, GTF9, GTF10)는 두껍지만 전연령이며 20대 이하 16.5%(GTF7), 당근모임 20대 14%(GTF3)다. 수요는 체크카드·모임통장으로 이미 풀리고 있어 신용카드 공백으로 이어지는 직접 근거는 없다. 후보 모두 strength 약이며 정산·혜택공유의 수요 근거가 없고, SOC5·SOC6은 웹 반증을 충분히 하지 못했다."
+ },
+ "findings": [],
+ "sources": [],
+ "assumptions": [],
+ "unresolved": [],
+ "limits": [],
+ "clarifications": [],
+ "out_of_scope": {
+  "detected": false,
+  "suggested_agent": null
+ },
+ "input_refs": []
+}
