@@ -1,0 +1,1222 @@
+{
+ "run_id": "v2alt",
+ "request_id": "v2alt-design_marketing-r1",
+ "agent": "design_marketing",
+ "contract_version": "1.0",
+ "model": "opus",
+ "status": "ok",
+ "answer": "이름 후보 3개 중 '구독노트'를 추천하고, 결제 예정일과 예산을 먼저 보는 구독 장부를 중심 메시지로 둔 전략, 세로형 시안 3종(MEMO, GLASS, LATE), 릴스 20초·유튜브 25초·홍보 20초 스토리보드를 만들었습니다. 혜택은 브리프의 1.2%·0.8% 캐시백만 조건과 함께 썼고, 가드레일 G3·G4·G6은 리스크와 준법 항목에 넣었으며 체리피커 0.38, 손익 -0.73은 가상 고객 시뮬레이션 값으로 표시했습니다. 숏폼·동영상 채널 선택 근거가 입력에 없어 조사 주제 3개를 needs_research로 남겼고 영상은 H5 승인 전이라 렌더하지 않았습니다.",
+ "result": {
+  "naming": {
+   "candidates": [
+    {
+     "name": "구독노트",
+     "rationale": "앱의 구독 장부와 결제 예정일 확인이라는 실제 기능을 그대로 말하고 비율이나 개인화를 약속하지 않아 작동 방식보다 강하게 읽히지 않는다. 네 글자라 세로 카드 로고와 영상 끝 화면에 쓰기 쉽다.",
+     "similarity_max": 0.0,
+     "similar_to": null
+    },
+    {
+     "name": "사흘전",
+     "rationale": "결제 예정일 3일 전 알림을 이름에 담아 기억하기 쉽다. 다만 알림 하나만 떠올리게 해 예산 설정과 캐시백 구조가 이름에서 빠진다.",
+     "similarity_max": 0.0,
+     "similar_to": null
+    },
+    {
+     "name": "달장부",
+     "rationale": "한 달 단위 장부와 예산을 짧게 담았다. 장부라는 말이 GenZ에게 딱딱하게 들릴 수 있고 구독이라는 핵심 장면이 드러나지 않는다.",
+     "similarity_max": 0.0,
+     "similar_to": null
+    }
+   ],
+   "recommended": "구독노트"
+  },
+  "strategy": {
+   "positioning": {
+    "statement": "구독·배달 결제가 잦은 만 19~29세에게 결제 예정일과 예산 사용률을 앱 장부로 먼저 보여 주고, 직전 3개월 이용액이 큰 영역에 캐시백 비율을 정하는 신용카드.",
+    "for_whom": "구독·배달 결제가 잦은 만 19~29세",
+    "what_it_is": "구독 장부와 결제 예정 알림이 있는 캐시백 신용카드",
+    "why_different": "고객 본인의 구독 지출 장부와 예산을 기준으로 혜택 영역이 정해지는 구조"
+   },
+   "insight": {
+    "tension": "자동결제 구독이 여러 개라 언제 얼마가 빠져나가는지 결제된 뒤에야 안다.",
+    "truth": "결제 전에 날짜와 금액을 먼저 보고, 이번 달 예산 안에서 쓰고 싶다.",
+    "assumed": true,
+    "validate_with": "만 19~29세 소수 인원 대상 구독 장부 앱 화면 시안 비교 테스트와 짧은 설문"
+   },
+   "personas": [
+    {
+     "name": "주말 계산 담당 사회초년생",
+     "variant": "MEMO",
+     "moment": "주말 브런치 카페 계산대에서 카드를 탭할 때",
+     "need": "이번 달 예산이 얼마 남았는지 결제 전에 알기"
+    },
+    {
+     "name": "창가의 구독 정리러",
+     "variant": "GLASS",
+     "moment": "강의 끝난 오후 창가에서 결제 예정 알림을 볼 때",
+     "need": "자동결제 구독 목록과 결제일을 한 화면에서 보기"
+    },
+    {
+     "name": "늦은 밤 배달 주문자",
+     "variant": "LATE",
+     "moment": "야근 뒤 자취방에서 배달 주문 전 예산을 볼 때",
+     "need": "배달 지출이 예산 안인지 주문 전에 확인하기"
+    }
+   ],
+   "pillars": [
+    {
+     "title": "먼저 보는 결제일",
+     "message": "자동결제 구독의 결제 예정일을 3일 전에 앱에서 먼저 본다.",
+     "proof": "결제 예정일 3일 전 알림과 자동결제 구독 목록 화면"
+    },
+    {
+     "title": "내가 정한 예산",
+     "message": "직접 정한 월 예산과 이번 달 사용률을 한 화면에서 본다.",
+     "proof": "월 구독·배달 예산 설정(월 1회 변경)과 예산 사용률 표시"
+    },
+    {
+     "title": "규칙대로 정하는 비율",
+     "message": "직전 3개월 이용액이 큰 영역에 1.2%, 다른 영역에 0.8%가 정해진다.",
+     "proof": "매월 말일 판정, 영역별 월 한도 5천원, 배정 결과와 근거 매월 고지"
+    }
+   ],
+   "tone": {
+    "summary": "차분하고 투명하게, 날짜와 조건을 먼저 말한다.",
+    "do": [
+     "조건을 혜택과 같은 크기로 쓴다",
+     "평소 결제 장면으로 설명한다",
+     "앱에서 확인하는 방법을 안내한다"
+    ],
+    "dont": [
+     "조건 없이 비율만 크게 쓰기",
+     "두 비율을 더한 합산 표현",
+     "영역을 고를 수 있다는 인상",
+     "지출을 줄여 준다는 단정"
+    ]
+   },
+   "channels": [
+    {
+     "channel": "자사 앱 발급 화면",
+     "role": "배정 규칙과 가입 전 고지를 발급 전에 한 화면에서 보여 준다",
+     "asset": "boards",
+     "phase": "런칭"
+    },
+    {
+     "channel": "간편결제 등록 안내",
+     "role": "간편결제 이용률이 높아 발급 직후 앱 등록을 안내한다(S2, T2)",
+     "asset": "앱 안내 화면",
+     "phase": "정착"
+    },
+    {
+     "channel": "자사 앱 배너·브랜드 페이지",
+     "role": "세 시안과 생활 장면 영상을 런칭 시점에 공개한다",
+     "asset": "youtube",
+     "phase": "런칭"
+    },
+    {
+     "channel": "숏폼 영상(조사 후 결정)",
+     "role": "채널 근거가 입력에 없어 조사 결과를 보고 집행 여부를 정한다",
+     "asset": "reels",
+     "phase": "예열"
+    }
+   ],
+   "phases": [
+    {
+     "name": "예열",
+     "start_day": -28,
+     "end_day": -1,
+     "goal": "구독 장부 구조와 시안을 미리 알린다",
+     "actions": [
+      "광고심의 완료 소재만 준비",
+      "가입 전 고지 화면 문안 정리",
+      "숏폼 채널 근거 조사 결과 확인"
+     ]
+    },
+    {
+     "name": "런칭",
+     "start_day": 0,
+     "end_day": 14,
+     "goal": "앱 발급 신청을 받는다",
+     "actions": [
+      "자사 앱 배너와 브랜드 페이지 공개",
+      "발급 화면에 배정 규칙과 조건 병기",
+      "생활 장면 영상 공개"
+     ]
+    },
+    {
+     "name": "정착",
+     "start_day": 15,
+     "end_day": 90,
+     "goal": "장부 알림을 일상에서 쓰게 한다",
+     "actions": [
+      "간편결제 등록 안내 발송(수신 동의 고객)",
+      "첫 배정 결과 앱 고지와 설명",
+      "한도 도달 후 이용 변화 점검"
+     ]
+    }
+   ],
+   "kpis": [
+    {
+     "stage": "인지",
+     "metric": "브랜드 페이지 영상 완주율",
+     "target": "[목표값]",
+     "source": "자사 앱 로그"
+    },
+    {
+     "stage": "관심",
+     "metric": "발급 화면 진입 대비 가입 전 고지 확인 비율",
+     "target": "[목표값]",
+     "source": "자사 앱 로그"
+    },
+    {
+     "stage": "전환",
+     "metric": "발급 신청 완료 수",
+     "target": "[목표값]",
+     "source": "발급 시스템"
+    },
+    {
+     "stage": "전환",
+     "metric": "발급 후 간편결제 등록 비율",
+     "target": "[목표값]",
+     "source": "내부 데이터 확인 필요"
+    },
+    {
+     "stage": "전환",
+     "metric": "결제 예정 알림 확인 후 월별 이용 유지 비율",
+     "target": "[목표값]",
+     "source": "내부 데이터 확인 필요"
+    },
+    {
+     "stage": "확산",
+     "metric": "브랜드 자발 언급 수",
+     "target": "[목표값]",
+     "source": "소셜 리스닝"
+    }
+   ],
+   "risks": [
+    {
+     "risk": "G3 판정 기간·제외 거래·예산 변경 횟수 등 지급 조건 고지 미완",
+     "mitigation": "준법 확인 전까지 판정 기간·시점, 제외 거래, 예산 월 1회 변경, 영역별 한도, 사전 고지를 가입 전 고지에 넣는다"
+    },
+    {
+     "risk": "G4 결제 내역 분석·알림 발송 동의 범위 미정",
+     "mitigation": "그룹사 연계 없는 설계 유지, 개인정보 담당 확인 후 가입 화면에 정보 항목·이용 기간·목적을 적는다"
+    },
+    {
+     "risk": "G6 체리피커 0.38, 손익 -0.73과 휴면 위험형 0.19(시뮬레이션)",
+     "mitigation": "비율 비교형 메시지 대신 장부·알림 사용 메시지를 쓰고, 한도·예산 조건·연회비 조정은 재무 결정 후 재시뮬레이션"
+    },
+    {
+     "risk": "1.2% 단독 노출이나 영역 선택 가능 오인, 혜택 광고심의",
+     "mitigation": "1.2%는 0.8%·판정 기준·한도·예산 조건과 같은 화면에 쓰고 '직접 고를 수 없음'을 병기, 전 소재 심의"
+    },
+    {
+     "risk": "실존 구독·배달 서비스 화면 연상, 숏폼 채널 근거 없음",
+     "mitigation": "실존 로고·앱 화면을 쓰지 않고 숏폼 채널은 조사 결과 확인 후 집행 여부를 정한다"
+    }
+   ],
+   "next_steps": [
+    "광고심의에 이름·태그라인·세 영상 카피 제출",
+    "준법과 가입 전 고지 문안 정리(G3)",
+    "개인정보 담당과 결제 내역 활용 동의 문안 정리(G4)",
+    "재무의 한도·예산 조건·연회비 조정 결정 반영(G6)",
+    "숏폼·동영상 채널 근거 조사 후 채널 구성 결정"
+   ],
+   "targets_from_customer": false
+  },
+  "boards": {
+   "brand": {
+    "name": "구독노트",
+    "card_type": "credit",
+    "issuer_placeholder": "[ISSUER]"
+   },
+   "target": {
+    "segment": "만 19~29세, 구독·배달 결제가 잦은 GenZ",
+    "contexts": [
+     "주말 카페 계산대",
+     "오후 창가 알림",
+     "밤 배달 주문 전",
+     "구독 결제 예정일",
+     "간편결제 등록"
+    ],
+    "assumed": true
+   },
+   "concept": {
+    "tagline": "결제일을 먼저 안다.",
+    "statement": "자동결제 구독의 날짜와 이번 달 예산을 결제 전에 먼저 보는 카드다. 장부를 펴듯 앱을 열고 평소처럼 결제한다.",
+    "keywords": [
+     "세로형",
+     "번호 없는 앞면",
+     "장부 줄무늬",
+     "코랄 한 줄",
+     "뒷면 날짜칸",
+     "D-3 모서리 표식"
+    ],
+    "front_rule_note": "앞면에는 혜택 숫자를 넣지 않는다. 비율은 판정 기준과 조건을 함께 뒷면과 앱에만 쓴다."
+   },
+   "palette": [
+    {
+     "name": "종이",
+     "hex": "#F5F2EB",
+     "role": "ground"
+    },
+    {
+     "name": "먹색",
+     "hex": "#17191F",
+     "role": "ink"
+    },
+    {
+     "name": "코랄",
+     "hex": "#FF7A59",
+     "role": "accent"
+    },
+    {
+     "name": "안개회색",
+     "hex": "#DADDE2",
+     "role": "support"
+    },
+    {
+     "name": "밤청색",
+     "hex": "#1F2A44",
+     "role": "support"
+    },
+    {
+     "name": "은색",
+     "hex": "#B9BEC6",
+     "role": "metal"
+    }
+   ],
+   "typography": {
+    "display": "Syne",
+    "body": "IBM Plex Sans KR",
+    "mono": "IBM Plex Mono"
+   },
+   "layout": {
+    "orientation": "vertical",
+    "front_shows": [
+     "chip",
+     "contactless",
+     "logo",
+     "type_label"
+    ],
+    "orientation_reason": "만 19~29세가 탭 결제와 간편결제로 꺼내 쓰는 모바일 우선 카드라 세로형"
+   },
+   "variants": [
+    {
+     "code": "MEMO",
+     "name": "메모 장부",
+     "material": {
+      "preset": "matte",
+      "tint": "종이",
+      "chip": "gold",
+      "logo_color": "먹색"
+     },
+     "story": {
+      "headline": "날짜가 먼저 보인다.",
+      "lead": "종이색 무광 위에 가는 장부 줄무늬와 코랄 한 줄. 주말 계산대에서 꺼내도 담백한 시안이다.",
+      "points": [
+       {
+        "title": "장부 줄무늬",
+        "body": "앞면을 가로지르는 가는 줄무늬. 구독 장부의 칸을 그림으로만 옮겨 숫자 없이 구조를 보여 준다.",
+        "anchor": "front"
+       },
+       {
+        "title": "코랄 한 줄",
+        "body": "줄무늬 중 한 줄만 코랄로 칠했다. 이번 달 결제 예정일에 밑줄을 긋는 손버릇을 닮았다.",
+        "anchor": "logo"
+       },
+       {
+        "title": "뒷면 날짜칸",
+        "body": "뒷면에 비어 있는 날짜칸을 두었다. 결제일은 앱에서 먼저 본다는 습관을 카드가 다시 알려 준다.",
+        "anchor": "back"
+       },
+       {
+        "title": "금색 칩",
+        "body": "종이색 바탕에 금색 칩을 둬 카페 조명 아래서도 손에 쥔 카드가 또렷하다.",
+        "anchor": "chip"
+       }
+      ],
+      "persona": "브런치 계산 전에 이번 달 예산을 열어 보는 사회초년생",
+      "mood": [
+       "단정",
+       "따뜻",
+       "종이"
+      ],
+      "life_scene": "주말 브런치 카페 계산대에서 카드를 탭하는 순간"
+     }
+    },
+    {
+     "code": "GLASS",
+     "name": "투명 장부",
+     "material": {
+      "preset": "clear",
+      "tint": "안개회색",
+      "chip": "silver",
+      "logo_color": "먹색"
+     },
+     "story": {
+      "headline": "비치는 구독 목록.",
+      "lead": "안개빛이 도는 투명 카드. 창가 햇빛에 비추면 줄무늬가 손바닥 위로 장부 그림자를 만든다.",
+      "points": [
+       {
+        "title": "비치는 줄무늬",
+        "body": "투명 소재 안쪽에 인쇄한 줄무늬가 햇빛에서 그림자로 떨어진다. 구조를 숨기지 않는 카드다.",
+        "anchor": "material"
+       },
+       {
+        "title": "코랄 테두리",
+        "body": "모서리를 따라 코랄 테두리를 둘러 가방 속 투명 카드도 한 번에 찾는다.",
+        "anchor": "edge"
+       },
+       {
+        "title": "가는 비접촉 표시",
+        "body": "비접촉 표시를 먹색 선 하나로 줄였다. 창가 자리의 조용한 오후에 어울리는 절제다.",
+        "anchor": "contactless"
+       },
+       {
+        "title": "세로 카드 표기",
+        "body": "카드 종류 표기를 세로로 눕혀 작게 새겼다. 휴대폰과 겹쳐 들어도 글자가 가려지지 않는다.",
+        "anchor": "type_label"
+       }
+      ],
+      "persona": "강의 끝나고 창가에서 구독 결제일을 정리하는 대학생",
+      "mood": [
+       "산뜻",
+       "맑은",
+       "가벼움"
+      ],
+      "life_scene": "낮 창가 자리에서 결제 예정 알림을 보는 순간"
+     }
+    },
+    {
+     "code": "LATE",
+     "name": "늦은 밤",
+     "material": {
+      "preset": "metal",
+      "base": "black",
+      "edge": "코랄",
+      "chip": "graphite",
+      "logo_color": "코랄"
+     },
+     "story": {
+      "headline": "주문 전에 한 번.",
+      "lead": "검은 메탈에 코랄 테두리. 스탠드 불빛 아래 코랄 로고와 모서리 표식만 조용히 떠오른다.",
+      "points": [
+       {
+        "title": "코랄 세로 로고",
+        "body": "검은 메탈 위 코랄 세로 로고. 불을 끈 방에서도 스탠드 하나로 이름이 읽힌다.",
+        "anchor": "logo"
+       },
+       {
+        "title": "D-3 모서리 표식",
+        "body": "오른쪽 위 모서리에 작은 D-3 각인을 눌렀다. 결제 예정 알림을 손끝으로 떠올리게 한다.",
+        "anchor": "edge"
+       },
+       {
+        "title": "무게 있는 메탈",
+        "body": "손에 묵직하게 남는 메탈 소재. 배달 앱을 열기 전 한 번 멈추는 어른의 감각이다.",
+        "anchor": "material"
+       },
+       {
+        "title": "흑연색 칩",
+        "body": "칩을 흑연색으로 낮춰 밤 화면 옆에 둬도 카드가 튀지 않는다.",
+        "anchor": "chip"
+       }
+      ],
+      "persona": "야근 뒤 배달 주문 전에 예산 사용률부터 보는 직장인",
+      "mood": [
+       "깊은",
+       "조용",
+       "어른"
+      ],
+      "life_scene": "밤 자취방에서 배달 주문 전 예산을 확인하는 순간"
+     }
+    }
+   ],
+   "benefits": [
+    {
+     "category": "외식·배달",
+     "headline": "1.2% 캐시백",
+     "condition": "월 한도 5,000원 · 전월실적 0만원 이상",
+     "source": "winner.card.rates",
+     "variant": "LATE"
+    },
+    {
+     "category": "구독·디지털",
+     "headline": "0.8% 캐시백",
+     "condition": "월 한도 5,000원 · 전월실적 0만원 이상",
+     "source": "winner.card.rates",
+     "variant": "GLASS"
+    }
+   ],
+   "needs_compliance_review": true,
+   "assumptions": [
+    "일상 맥락과 페르소나 3명은 브리프에서 추론한 값이다",
+    "만 19~29세 타깃이고 탭 결제 중심이라 세로형으로 정했다",
+    "혜택 영역 짝은 외식·배달이 더 큰 기준 설계값을 따랐고 실제 영역은 직전 3개월 합계로 정해진다",
+    "카드 번호는 앞면에 넣지 않고 자리표시 0427 1017 2026 000N만 뒷면에 쓴다",
+    "발급사 표기는 [ISSUER] 자리표시로 둔다"
+   ]
+  },
+  "storyboards": {
+   "reels": {
+    "format": "reels",
+    "aspect": "9:16",
+    "fps": 30,
+    "duration_s": 20,
+    "hero_variant": "MEMO",
+    "scenes": [
+     {
+      "id": "reveal",
+      "preset": "hero_reveal",
+      "start_s": 0,
+      "duration_s": 2.0,
+      "variant": "MEMO",
+      "captions": [
+       {
+        "words": [
+         "구독노트",
+         "결제일을",
+         "먼저"
+        ],
+        "start_s": 0.3,
+        "end_s": 1.9,
+        "position": "top",
+        "emphasis": [
+         2
+        ]
+       }
+      ]
+     },
+     {
+      "id": "float",
+      "preset": "hero_float",
+      "start_s": 2.0,
+      "duration_s": 2.5,
+      "variant": "MEMO",
+      "captions": [
+       {
+        "words": [
+         "자동결제",
+         "구독도",
+         "3일 전에"
+        ],
+        "start_s": 0.2,
+        "end_s": 2.3,
+        "position": "top",
+        "emphasis": [
+         2
+        ]
+       }
+      ]
+     },
+     {
+      "id": "close_front",
+      "preset": "detail_closeup",
+      "start_s": 4.5,
+      "duration_s": 2.0,
+      "variant": "MEMO",
+      "params": {
+       "focus": "material"
+      },
+      "captions": [
+       {
+        "words": [
+         "장부를",
+         "닮은",
+         "줄무늬"
+        ],
+        "start_s": 0.2,
+        "end_s": 1.8,
+        "position": "top",
+        "emphasis": [
+         2
+        ],
+        "style": "pill"
+       }
+      ]
+     },
+     {
+      "id": "close_logo",
+      "preset": "detail_closeup",
+      "start_s": 6.5,
+      "duration_s": 2.0,
+      "variant": "MEMO",
+      "params": {
+       "focus": "logo"
+      },
+      "captions": [
+       {
+        "words": [
+         "번호",
+         "없는",
+         "앞면"
+        ],
+        "start_s": 0.2,
+        "end_s": 1.8,
+        "position": "top",
+        "emphasis": [
+         2
+        ],
+        "style": "pill"
+       }
+      ]
+     },
+     {
+      "id": "flip",
+      "preset": "flip",
+      "start_s": 8.5,
+      "duration_s": 2.5,
+      "variant": "MEMO",
+      "captions": [
+       {
+        "words": [
+         "뒷면엔",
+         "비어 있는",
+         "날짜칸"
+        ],
+        "start_s": 0.3,
+        "end_s": 2.3,
+        "position": "top",
+        "emphasis": [
+         2
+        ]
+       }
+      ]
+     },
+     {
+      "id": "fan",
+      "preset": "fan_merge",
+      "start_s": 11.0,
+      "duration_s": 2.5,
+      "captions": [
+       {
+        "words": [
+         "낮에도",
+         "밤에도",
+         "예산 안에서"
+        ],
+        "start_s": 0.3,
+        "end_s": 2.3,
+        "position": "top",
+        "emphasis": [
+         2
+        ]
+       }
+      ]
+     },
+     {
+      "id": "benefit",
+      "preset": "benefit_card",
+      "start_s": 13.5,
+      "duration_s": 3.5,
+      "variant": "MEMO",
+      "params": {
+       "benefits": [
+        {
+         "headline": "1.2% 캐시백",
+         "condition": "월 한도 5,000원 · 전월실적 0만원 이상"
+        },
+        {
+         "headline": "0.8% 캐시백",
+         "condition": "월 한도 5,000원 · 전월실적 0만원 이상"
+        }
+       ],
+       "note": "두 줄 모두 헤드라인과 조건을 같은 크기 수준으로 표시하고, 아래에 '영역은 직전 3개월 이용액 합계로 정해지며 직접 고를 수 없음'을 함께 표시"
+      },
+      "captions": [
+       {
+        "words": [
+         "조건과",
+         "함께",
+         "확인하세요"
+        ],
+        "start_s": 0.3,
+        "end_s": 3.3,
+        "position": "bottom",
+        "emphasis": [
+         2
+        ]
+       }
+      ]
+     },
+     {
+      "id": "end",
+      "preset": "stack_lockup",
+      "start_s": 17.0,
+      "duration_s": 3.0
+     }
+    ],
+    "ending": {
+     "type": "stack_lockup",
+     "copy_words": [
+      "결제일을",
+      "먼저",
+      "안다."
+     ],
+     "cta": "COMING SOON"
+    },
+    "audio": {
+     "mood": "가벼운 로파이 비트",
+     "file": null
+    },
+    "legal_footer": "직전 3개월 이용액이 더 큰 영역 1.2%, 다른 영역 0.8% 다음 달 청구 시 캐시백. 영역은 직접 고를 수 없음. 월 예산 이내 이용액, 영역별 월 한도 5천원, 연회비 5천원."
+   },
+   "youtube": {
+    "format": "youtube",
+    "aspect": "16:9",
+    "fps": 30,
+    "duration_s": 25,
+    "scenes": [
+     {
+      "id": "memo",
+      "preset": "life_tap_pay",
+      "start_s": 0,
+      "duration_s": 6.5,
+      "variant": "MEMO",
+      "label": "01 주말 카페 계산대",
+      "params": {
+       "note": "주말 브런치 카페 계산대에서 카드를 탭 결제. 실존 결제 단말·카페 로고 없음"
+      },
+      "captions": [
+       {
+        "words": [
+         "브런치 계산",
+         "전에"
+        ],
+        "start_s": 0.5,
+        "end_s": 3.0,
+        "position": "left",
+        "emphasis": [
+         1
+        ]
+       },
+       {
+        "words": [
+         "남은 예산",
+         "먼저 보기"
+        ],
+        "start_s": 3.2,
+        "end_s": 6.2,
+        "position": "left",
+        "emphasis": [
+         1
+        ]
+       }
+      ]
+     },
+     {
+      "id": "glass",
+      "preset": "life_daylight_seethrough",
+      "start_s": 6.5,
+      "duration_s": 6.5,
+      "variant": "GLASS",
+      "label": "02 오후 창가",
+      "params": {
+       "note": "강의 끝난 오후 창가 자리에서 결제 예정 알림을 본 뒤 투명 카드를 햇빛에 비춤. 실존 구독 서비스 화면 없음"
+      },
+      "captions": [
+       {
+        "words": [
+         "결제 3일 전",
+         "알림"
+        ],
+        "start_s": 0.5,
+        "end_s": 3.0,
+        "position": "left",
+        "emphasis": [
+         1
+        ]
+       },
+       {
+        "words": [
+         "다른 영역은",
+         "0.8%"
+        ],
+        "start_s": 3.2,
+        "end_s": 6.2,
+        "position": "left",
+        "emphasis": [
+         1
+        ]
+       }
+      ]
+     },
+     {
+      "id": "late",
+      "preset": "life_night_light",
+      "start_s": 13.0,
+      "duration_s": 6.5,
+      "variant": "LATE",
+      "label": "03 밤 배달 주문 전",
+      "params": {
+       "note": "밤 자취방 스탠드 조명 아래 배달 주문 전 예산 사용률을 확인하는 장면. 실존 배달 앱 화면 없음"
+      },
+      "captions": [
+       {
+        "words": [
+         "주문 전에",
+         "한 번"
+        ],
+        "start_s": 0.5,
+        "end_s": 3.0,
+        "position": "left",
+        "emphasis": [
+         1
+        ]
+       },
+       {
+        "words": [
+         "3개월 합계",
+         "큰 영역",
+         "1.2%"
+        ],
+        "start_s": 3.2,
+        "end_s": 6.2,
+        "position": "left",
+        "emphasis": [
+         2
+        ]
+       }
+      ]
+     },
+     {
+      "id": "merge",
+      "preset": "split_merge",
+      "start_s": 19.5,
+      "duration_s": 2.5,
+      "params": {
+       "panels": [
+        "memo",
+        "glass",
+        "late"
+       ]
+      },
+      "captions": [
+       {
+        "words": [
+         "세 장면,",
+         "한 장으로"
+        ],
+        "start_s": 0.3,
+        "end_s": 2.3,
+        "position": "center",
+        "emphasis": [
+         1
+        ]
+       }
+      ]
+     },
+     {
+      "id": "end",
+      "preset": "stack_lockup",
+      "start_s": 22.0,
+      "duration_s": 3.0
+     }
+    ],
+    "ending": {
+     "type": "stack_lockup",
+     "copy_words": [
+      "결제일을",
+      "먼저",
+      "안다."
+     ],
+     "cta": "COMING SOON"
+    },
+    "audio": {
+     "mood": "따뜻한 어쿠스틱 팝",
+     "file": null
+    },
+    "legal_footer": "직전 3개월 이용액이 더 큰 영역 1.2%, 다른 영역 0.8% 다음 달 청구 시 캐시백. 영역은 직접 고를 수 없음. 월 예산 이내 이용액, 영역별 월 한도 5천원, 연회비 5천원."
+   },
+   "promo": {
+    "format": "promo",
+    "aspect": "16:9",
+    "fps": 30,
+    "duration_s": 20,
+    "bpm": 120,
+    "hero_variant": "MEMO",
+    "scenes": [
+     {
+      "id": "intro",
+      "preset": "heartbeat_intro",
+      "start_s": 0,
+      "duration_s": 2.0,
+      "variant": "MEMO"
+     },
+     {
+      "id": "beats",
+      "preset": "beat_words",
+      "start_s": 2.0,
+      "duration_s": 6.0,
+      "params": {
+       "words": [
+        "구독",
+        "배달",
+        "결제일",
+        "3일 전",
+        "알림",
+        "예산",
+        "사용률",
+        "장부",
+        "3개월 합계",
+        "1.2%",
+        "0.8%",
+        "구독노트"
+       ],
+       "card_every": 4,
+       "benefit_words": [
+        "3개월 합계",
+        "1.2%",
+        "0.8%"
+       ]
+      }
+     },
+     {
+      "id": "mq_memo",
+      "preset": "material_marquee",
+      "start_s": 8.0,
+      "duration_s": 2.5,
+      "variant": "MEMO",
+      "label": "MEMO 메모 장부"
+     },
+     {
+      "id": "mq_glass",
+      "preset": "material_marquee",
+      "start_s": 10.5,
+      "duration_s": 2.5,
+      "variant": "GLASS",
+      "label": "GLASS 투명 장부"
+     },
+     {
+      "id": "mq_late",
+      "preset": "material_marquee",
+      "start_s": 13.0,
+      "duration_s": 2.5,
+      "variant": "LATE",
+      "label": "LATE 늦은 밤"
+     },
+     {
+      "id": "lineup",
+      "preset": "lineup_pulse",
+      "start_s": 15.5,
+      "duration_s": 2.0,
+      "captions": [
+       {
+        "words": [
+         "세 시안,",
+         "같은 장부"
+        ],
+        "start_s": 0.2,
+        "end_s": 1.8,
+        "position": "bottom",
+        "emphasis": [
+         1
+        ]
+       }
+      ]
+     },
+     {
+      "id": "end",
+      "preset": "stack_lockup",
+      "start_s": 17.5,
+      "duration_s": 2.5
+     }
+    ],
+    "ending": {
+     "type": "stack_lockup",
+     "copy_words": [
+      "결제일을",
+      "먼저",
+      "안다."
+     ],
+     "cta": "COMING SOON"
+    },
+    "audio": {
+     "mood": "또렷한 미니멀 하우스",
+     "file": null
+    },
+    "legal_footer": "직전 3개월 이용액이 더 큰 영역 1.2%, 다른 영역 0.8% 다음 달 청구 시 캐시백. 영역은 직접 고를 수 없음. 월 예산 이내 이용액, 영역별 월 한도 5천원, 연회비 5천원."
+   }
+  },
+  "segment_plays": [
+   {
+    "type": "일반형",
+    "share_and_profit": "채택자 중 비중 0.38, 손익 3.35(만원/년, 가상 고객 시뮬레이션, 가정 기반)",
+    "play": "발급 직후 간편결제 등록과 구독 장부 연결을 안내해 주 결제수단으로 자리 잡게 한다. 메시지는 결제 예정일을 먼저 보는 생활 장면 중심으로 쓴다.",
+    "guardrail": "1.2%는 0.8%, 판정 기준, 영역별 한도, 월 예산 조건과 함께만 쓰고 두 비율을 더한 표현을 쓰지 않는다."
+   },
+   {
+    "type": "체리피커",
+    "share_and_profit": "채택자 중 비중 0.38, 손익 -0.73(만원/년, 가상 고객 시뮬레이션, 가정 기반)",
+    "play": "혜택 비교용 비율 강조 메시지와 신규 발급 혜택 중심 노출을 하지 않고, 구독 장부와 결제 예정 알림을 쓰는 일상 메시지만 쓴다. 영역 배정 시점의 집중 결제와 한도 5천원 도달 후 이탈을 운영 지표로 본다.",
+    "guardrail": "영역별 월 한도, 월 예산 이내 조건, 연회비 5천원 조정은 재무가 정한 뒤 시뮬레이션을 다시 돌린다(G6). 혜택 20% 축소 시나리오 채택 의향 0.317은 조정안 비교에만 쓴다."
+   },
+   {
+    "type": "충성형",
+    "share_and_profit": "채택자 중 비중 0.05, 손익 5.48(만원/년, 가상 고객 시뮬레이션, 가정 기반)",
+    "play": "월별 배정 결과와 산정 근거를 앱에서 꾸준히 보여 줘 규칙에 대한 신뢰를 유지한다.",
+    "guardrail": "추천·초대 보상은 입력에 없으므로 만들지 않는다. 혜택 변경은 사전 고지한다."
+   },
+   {
+    "type": "휴면 위험형",
+    "share_and_profit": "채택자 중 비중 0.19, 손익 1.41(만원/년, 가상 고객 시뮬레이션, 가정 기반)",
+    "play": "발급 후 첫 결제 전이거나 이용이 줄어든 고객에게 구독 장부 연결과 결제 예정 알림 켜기를 안내해 장부 알림을 일상에서 쓰게 한다.",
+    "guardrail": "예산 사용률과 배정 결과는 매월 말일 판정 전 중간 집계이며 바뀔 수 있다는 표시를 빼지 않고, 마케팅 수신 동의가 없는 고객에게 마케팅성 메시지를 보내지 않는다(G6)."
+   }
+  ],
+  "compliance": [
+   {
+    "item": "이름·핵심 혜택 노출 지면의 영역 결정 방식 병기",
+    "handling": "이름 '구독노트'와 혜택이 나오는 보드, 릴스 benefit_card, 세 영상 legal_footer에 '영역은 직전 3개월 이용액 합계로 정해지며 직접 고를 수 없음'을 함께 쓴다.",
+    "needs_human": false,
+    "guard_ref": null
+   },
+   {
+    "item": "혜택 표시 광고심의(1.2% 단독 노출, 합산 표현)",
+    "handling": "1.2%는 boards 혜택 목록, 릴스 benefit_card, 유튜브 LATE 장면 자막, 홍보 박자 단어, legal_footer에만 쓰고 0.8%와 판정 기준·한도·예산 조건을 같은 영상 안에 둔다. 집행 전 전 소재 광고심의 필요.",
+    "needs_human": true,
+    "guard_ref": null
+   },
+   {
+    "item": "부가서비스 변경 제한과 혜택 지급 조건 고지",
+    "handling": "상품설명서와 가입 화면에 판정 기간과 시점, 제외 거래(할부·취소, 상품권·선불충전), 월 예산 월 1회 변경, 영역별 한도, 변경 시 사전 고지를 가입 전 고지 항목으로 넣는 초안을 준비한다. 준법 확인 필요.",
+    "needs_human": true,
+    "guard_ref": "G3"
+   },
+   {
+    "item": "결제 내역 분석·알림 발송 개인정보 활용 동의",
+    "handling": "그룹사 연계를 추가하지 않는 설계를 유지한다. 개인정보 담당 확인 후 가입 화면에 활용 정보 항목, 이용 기간, 이용 목적을 적고, 구독 장부는 고객이 연결한 결제 내역 범위 안에서만 보여 준다고 쓴다.",
+    "needs_human": true,
+    "guard_ref": "G4"
+   },
+   {
+    "item": "체리피킹·역선택 대비",
+    "handling": "비율 비교형 메시지를 쓰지 않고 장부·알림 사용 메시지를 썼다. 체리피커 0.38, 손익 -0.73과 휴면 위험형 0.19(가상 고객 시뮬레이션)를 기획서 리스크에 입력 그대로 적고, 조정 값은 재무가 정한다.",
+    "needs_human": true,
+    "guard_ref": "G6"
+   },
+   {
+    "item": "중간 집계 표시와 연회비 고지",
+    "handling": "앱 화면 예산 사용률과 배정 결과에 '매월 말일 판정 전 중간 집계이며 바뀔 수 있음'을 표시하고, 연회비 5천원과 혜택 변경 시 사전 고지 문구를 발급 화면에 넣는다.",
+    "needs_human": false,
+    "guard_ref": null
+   },
+   {
+    "item": "신규 발급 이벤트의 경제적 이익 상한",
+    "handling": "신용카드 모집 시 연회비의 100분의 100을 넘는 경제적 이익 제공이 금지되므로(S1) 런칭 이벤트를 붙일 경우 준법 확인 후 정한다. 이번 전략에는 발급 이벤트를 넣지 않았다.",
+    "needs_human": true,
+    "guard_ref": null
+   }
+  ],
+  "needs_research": [
+   "만 19~29세 신용카드 신규 발급자의 숏폼·동영상 플랫폼별 이용 비중과 금융 광고 반응",
+   "20대의 자동결제 구독 개수·결제일 관리 불편과 구독 관리 기능 이용 현황",
+   "월 예산 조건과 영역 배정형 캐시백을 담은 카드 광고의 심의 사례"
+  ],
+  "render_jobs": []
+ },
+ "findings": [
+  {
+   "id": "design_marketing#0",
+   "claim": "이름 후보 3개와 기존 카드명 50종의 글자쌍 유사도는 가장 높은 값이 0.0으로 반려선 0.5와 경고선 0.3 아래다. 상표 조회는 따로 필요하다.",
+   "type": "estimate",
+   "source_id": null,
+   "confidence": "medium"
+  },
+  {
+   "id": "design_marketing#1",
+   "claim": "결제 경험자의 간편결제 이용률이 89.3%이고 온라인 쇼핑 결제에서 간편결제 이용률이 74.4%라는 조사를 근거로 발급 직후 간편결제 등록 안내를 정착 단계 채널로 두었다.",
+   "type": "fact",
+   "source_id": "S2",
+   "confidence": "medium"
+  },
+  {
+   "id": "design_marketing#2",
+   "claim": "트렌드 시그널 T2는 20대 간편결제 이용자의 90.6%가 주 지급수단으로 카드를 쓴다고 정리했다. 원출처(STS1)가 이번 입력 출처 목록에 없어 보조 근거로만 썼다.",
+   "type": "estimate",
+   "source_id": null,
+   "confidence": "medium"
+  },
+  {
+   "id": "design_marketing#3",
+   "claim": "신용카드 모집 시 연회비의 100분의 100을 넘는 경제적 이익을 주는 모집은 금지되므로 발급 이벤트는 넣지 않고 준법 확인 항목으로 남겼다. 법률 판단은 사람 확인 필요다.",
+   "type": "fact",
+   "source_id": "S1",
+   "confidence": "high"
+  },
+  {
+   "id": "design_marketing#4",
+   "claim": "채택자 중 체리피커 비중 0.38, 손익 -0.73(만원/년)이라는 가상 고객 시뮬레이션 결과에 맞춰 비율 비교형 메시지를 빼고 장부·알림 사용 메시지를 썼다. 실제 전환율·손익이 아니다.",
+   "type": "estimate",
+   "source_id": null,
+   "confidence": "low"
+  },
+  {
+   "id": "design_marketing#5",
+   "claim": "휴면 위험형은 채택자 중 0.19, 손익 1.41로 하한 1.5에 못 미친다는 시뮬레이션 결과에 맞춰 결제 예정 알림을 일상에서 켜 두게 하는 안내를 정착 단계에 넣었다.",
+   "type": "estimate",
+   "source_id": null,
+   "confidence": "low"
+  },
+  {
+   "id": "design_marketing#6",
+   "claim": "입력의 트렌드 시그널과 리서치 자료에는 숏폼·동영상 플랫폼 선택 근거가 없어 해당 채널은 조사 후 결정으로 두었다.",
+   "type": "background",
+   "source_id": null,
+   "confidence": "medium"
+  }
+ ],
+ "sources": [
+  {
+   "id": "S1",
+   "title": "여신전문금융업법 시행령 [시행 2026.5.6.] 대통령령 제36314호",
+   "url": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=285799",
+   "kind": "official",
+   "published": "2026-05-06",
+   "retrieved_at": "2026-10-23",
+   "reliability": 0.9,
+   "stale": false
+  },
+  {
+   "id": "S2",
+   "title": "네이버·카카오·토스페이 각축전, 다음 승부처는 페이스페이가 될까? — 2026 결제 서비스 트렌드",
+   "url": "https://blog.opensurvey.co.kr/article/payment-2026-2/",
+   "kind": "report",
+   "published": "2026-07-06",
+   "retrieved_at": "2026-10-23",
+   "reliability": 0.7,
+   "stale": false
+  },
+  {
+   "id": "S3",
+   "title": "은행 대출금리 감면 카드 이용실적 산정 기준 개선 (체크카드 써도 대출금리 낮아진다)",
+   "url": "https://www.fnnews.com/news/202607221419101661",
+   "kind": "news",
+   "published": "2026-07-22",
+   "retrieved_at": "2026-10-23",
+   "reliability": 0.7,
+   "stale": false
+  },
+  {
+   "id": "S4",
+   "title": "KB국민카드, 마스터카드와 '도쿄 마라톤 2027' 출전권 이벤트",
+   "url": "https://biz.sbs.co.kr/amp/article/20000335175",
+   "kind": "news",
+   "published": "2026-09-17",
+   "retrieved_at": "2026-10-23",
+   "reliability": 0.7,
+   "stale": false
+  },
+  {
+   "id": "S5",
+   "title": "카카오뱅크 ‘모임통장’ 잔액 10조 돌파",
+   "url": "https://www.heraldk.com/article/2025072418320391278",
+   "kind": "news",
+   "published": "2025-07-24",
+   "retrieved_at": "2026-10-23",
+   "reliability": 0.7,
+   "stale": false
+  },
+  {
+   "id": "S6",
+   "title": "Freedom Rise credit limit increases",
+   "url": "https://www.chase.com/personal/credit-cards/education/basics/freedom-rise-credit-limit-increase",
+   "kind": "web",
+   "published": null,
+   "retrieved_at": "2026-10-23",
+   "reliability": 0.9
+  },
+  {
+   "id": "S7",
+   "title": "Platinum Secured Credit Card",
+   "url": "https://www.capitalone.com/credit-cards/platinum-secured/",
+   "kind": "web",
+   "published": null,
+   "retrieved_at": "2026-10-23",
+   "reliability": 0.9
+  },
+  {
+   "id": "S8",
+   "title": "Bilt Mastercard / Bilt Card 2.0 공식 페이지",
+   "url": "https://www.biltrewards.com/card",
+   "kind": "web",
+   "published": null,
+   "retrieved_at": "2026-10-23",
+   "reliability": 0.5
+  },
+  {
+   "id": "S9",
+   "title": "Petal 공식 페이지",
+   "url": "https://www.petalcard.com/",
+   "kind": "web",
+   "published": null,
+   "retrieved_at": "2026-10-23",
+   "reliability": 0.5
+  },
+  {
+   "id": "S10",
+   "title": "카카오뱅크, ‘모임 체크카드’ 출시 1년여 만에 누적 100만장 돌파",
+   "url": "https://www.heraldk.com/article/2025081317211700327",
+   "kind": "news",
+   "published": "2025-08-13",
+   "retrieved_at": "2026-10-23",
+   "reliability": 0.7,
+   "stale": false
+  },
+  {
+   "id": "S11",
+   "title": "신한은행, SOL모임통장 회원수 40만 돌파",
+   "url": "https://www.smarttoday.co.kr/ko-kr/articles/80716",
+   "kind": "news",
+   "published": "2025-05-14",
+   "retrieved_at": "2026-10-23",
+   "reliability": 0.7,
+   "stale": false
+  },
+  {
+   "id": "S12",
+   "title": "투자자 보호 및 리스크관리 강화를 위한 해외투자 실태점검 중간 결과 및 향후 대응방향",
+   "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?menuNo=200218&nttId=208246",
+   "kind": "official",
+   "published": "2025-12-19",
+   "retrieved_at": "2026-10-23",
+   "reliability": 0.9,
+   "stale": false
+  }
+ ],
+ "assumptions": [
+  "일상 맥락과 페르소나 3명은 브리프에서 추론한 값이다(assumed)",
+  "30세 미만 타깃과 탭 결제·간편결제 중심이라 카드 방향은 세로형으로 정했다",
+  "출시일이 없어 단계는 D-day 상대 일수로 썼고 영상 끝 화면은 COMING SOON으로 두었다",
+  "고객 리서치가 없어 인사이트는 가설(assumed)이다",
+  "혜택 목록의 영역별 비율은 외식·배달이 더 큰 기준 설계값이며 실제 영역은 직전 3개월 이용액 합계로 정해진다",
+  "출처의 retrieved_at은 입력에 없어 이번 호출 기준일로 적었다"
+ ],
+ "unresolved": [
+  "판정 기간·제외 거래·예산 변경 등 가입 전 고지 문안(G3, 준법)",
+  "결제 내역 분석·알림 발송 동의 구조(G4, 개인정보 담당)",
+  "영역별 한도·월 예산 조건·연회비 조정 여부(G6, 재무)",
+  "KPI 목표값(자사 과거 신상품 데이터 필요)",
+  "숏폼·동영상 채널 선택 근거(needs_research)"
+ ],
+ "limits": [
+  "영상 MP4는 H5 승인 전이라 렌더하지 않았다(render_jobs 비어 있음)",
+  "이름 유사도는 글자쌍 기준이라 상표 조회를 대신하지 못한다",
+  "시뮬레이션 수치는 가정 기반 가상 고객 모형이며 실제 전환율·손익이 아니다",
+  "스토리보드의 bpm과 장면 길이 배분은 템플릿 값이며 시장 근거가 없다"
+ ],
+ "clarifications": [],
+ "out_of_scope": {
+  "detected": false,
+  "suggested_agent": null
+ },
+ "followups": [
+  "스토리보드 미리보기를 보고 MP4로 렌더할까요?",
+  "추천 이름을 '사흘전'으로 바꿔 시안을 다시 볼까요?",
+  "채널 근거 조사 결과를 받으면 채널 구성을 다시 정할까요?"
+ ],
+ "input_refs": [
+  "09-design-marketing/in.json"
+ ]
+}

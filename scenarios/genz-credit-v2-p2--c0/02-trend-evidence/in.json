@@ -1,0 +1,226 @@
+{
+  "run_id": "b0",
+  "request_id": "b0-trend-r2",
+  "agent": "trend",
+  "contract_version": "1.0",
+  "mode": "orchestrated",
+  "today": "2026-10-23",
+  "question": "디자인·마케팅이 요청한 주제의 근거를 기록 우선으로 찾아줘.",
+  "conversation": {
+    "summary": "사용자 요청: GenZ 특화 신용카드 만들어줘. H1에서 범위 확인됨: GenZ(만 19~29세), 신용카드, 투자 연계 제외, 목표 채택 의향 0.38(가정치). H2에서 사람이 1순위 대신 2순위 셀(genz×saving)을 선택했다.",
+    "segment": "GenZ(만 19~29세)",
+    "card_type": "신용카드",
+    "period": "최근 18개월(2025-04~2026-10)",
+    "assumptions": [
+      "GenZ를 기준일 2026-10-20 기준 1997~2007년생 중 신용카드 발급이 가능한 만 19~29세로 해석",
+      "고객사 회원·결제 데이터 없이 공개 자료와 PM 가정치로 진행",
+      "목표 채택 의향 0.38은 기존 리허설과 같은 PM 가정치"
+    ],
+    "own_cards": []
+  },
+  "output_mode": "json",
+  "depth": "detail",
+  "payload": {
+    "purpose": "evidence_pack",
+    "target": "GenZ(만 19~29세), 투자 연계 제외",
+    "research_topics": [
+      "만 19~29세 신용카드 신규 발급자의 숏폼·동영상 플랫폼별 이용 비중과 카드 광고 반응",
+      "배달앱·간편결제 앱 안 카드 등록·추천 화면 노출 방식과 20대 이용 수치",
+      "조건부 캐시백·환급 혜택을 다룬 카드 광고의 심의 사례"
+    ],
+    "signal_count": 4,
+    "known_doc_ids": [
+      "CSS1",
+      "CSS10",
+      "CSS11",
+      "CSS13",
+      "CSS14",
+      "CSS15",
+      "CSS2",
+      "CSS3",
+      "CSS4",
+      "CSS5",
+      "CSS6",
+      "CSS7",
+      "CSS8",
+      "CSS9",
+      "DB1",
+      "STS1",
+      "STS11",
+      "STS12",
+      "STS13",
+      "STS14",
+      "STS15",
+      "STS16",
+      "STS17",
+      "STS18",
+      "STS19",
+      "STS2",
+      "STS20",
+      "STS23",
+      "STS24",
+      "STS25",
+      "STS26",
+      "STS27",
+      "STS3",
+      "STS4",
+      "STS5",
+      "STS6"
+    ],
+    "max_queries": 5,
+    "pack_mode": true,
+    "docs": [
+      {
+        "id": "IVS19",
+        "title": "여신전문금융업법 시행령 [시행 2026.5.6.] 대통령령 제36314호",
+        "url": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=285799",
+        "published": "2026-05-06",
+        "reliability": 0.9,
+        "tier": "A",
+        "facts": [
+          "여신전문금융업법 시행령 제1조의2는 자본시장법상 금융투자상품을 신용카드 결제 금지 대상으로 정한다",
+          "같은 조항은 가상자산 관련 행위에 따른 금전 지급도 신용카드 결제 금지 대상에 넣었다",
+          "개인 신용카드회원의 선불카드·선불전자지급수단·상품권 구입은 월 1백만원 이용한도를 넘으면 결제 금지 대상이다",
+          "신용카드 모집 시 연회비의 100분의 100을 넘는 경제적 이익을 주는 모집은 금지된다"
+        ]
+      },
+      {
+        "id": "FSS11",
+        "title": "KB국민카드, 마스터카드와 '도쿄 마라톤 2027' 출전권 이벤트",
+        "url": "https://biz.sbs.co.kr/amp/article/20000335175",
+        "published": "2026-09-17",
+        "reliability": 0.7,
+        "tier": "B",
+        "facts": [
+          "KB국민카드 KB 마라톤카드: 9월 한 달 100만원 이상 이용·응모 고객 중 추첨 20명에게 도쿄 마라톤 2027 참가 자격",
+          "마스터카드로 도쿄 마라톤 참가비(230달러)를 결제하면 11달러 상당 짐 보관료 면제",
+          "KB 마라톤카드는 러닝앱 러너블 티켓·스토어, 스포츠 업종, OTT, 병원·약국에서 할인"
+        ]
+      },
+      {
+        "id": "LNS12",
+        "title": "Freedom Rise credit limit increases",
+        "url": "https://www.chase.com/personal/credit-cards/education/basics/freedom-rise-credit-limit-increase",
+        "published": null,
+        "reliability": 0.9,
+        "tier": "A",
+        "facts": [
+          "Freedom Rise 카드회원은 12개월마다 Freedom Unlimited로의 업그레이드 대상으로 평가된다.",
+          "Freedom Rise는 약 6개월 후 한도 증액 대상이 될 수 있다.",
+          "Freedom Rise는 첫 신용카드로 신용 형성 경로를 잡아주도록 설계된 starter 카드다."
+        ]
+      },
+      {
+        "id": "LNS14",
+        "title": "Platinum Secured Credit Card",
+        "url": "https://www.capitalone.com/credit-cards/platinum-secured/",
+        "published": null,
+        "reliability": 0.9,
+        "tier": "A",
+        "facts": [
+          "Platinum Secured는 책임 있는 이용 시 6개월 정도에 한도 증액이 고려될 수 있다.",
+          "Platinum Secured는 책임 있는 이용 시 보증금을 돌려받고 일반(unsecured) Platinum 카드로 업그레이드될 수 있다.",
+          "Platinum Secured는 연회비 $0, 최소 환급형 보증금 $49·$99·$200 중 선택이다."
+        ]
+      },
+      {
+        "id": "PFS14",
+        "title": "Bilt Mastercard / Bilt Card 2.0 공식 페이지",
+        "url": "https://www.biltrewards.com/card",
+        "published": null,
+        "reliability": 0.5,
+        "tier": "C",
+        "facts": [
+          "Bilt 공식 FAQ는 월 5회 거래 최소 조건이 원래 Bilt Card의 요건이었고 Bilt Card 2.0에는 적용되지 않는다고 밝힌다.",
+          "Bilt 2.0의 Flexible Bilt Cash 옵션은 주거비(월세) 포인트가 Bilt Cash를 사용해 해금되며, Bilt Cash는 일상 구매에서 4% 적립된다.",
+          "Bilt Cash는 적립한 해의 12월 31일에 소멸하며 100달러까지만 다음 해로 이월된다."
+        ]
+      },
+      {
+        "id": "PFS16",
+        "title": "Petal 공식 페이지",
+        "url": "https://www.petalcard.com/",
+        "published": null,
+        "reliability": 0.5,
+        "tier": "C",
+        "facts": [
+          "Petal은 은행 데이터를 연동해 저축·지출 현황을 보여주면 신용점수 이력과 무관하게 신용 준비도를 보여줄 수 있다고 안내한다.",
+          "Petal은 Leap 프로그램에서 적격한 정시 납부를 하면 6개월 만에 신용한도 상향을 받을 수 있다고 안내한다.",
+          "Petal 2는 연회비 등 수수료가 없고 일상 구매 캐시백 1%~1.5%이며 변동 APR 28.24% 이상으로 표시된다."
+        ]
+      },
+      {
+        "id": "GTS3",
+        "title": "카카오뱅크, ‘모임 체크카드’ 출시 1년여 만에 누적 100만장 돌파",
+        "url": "https://www.heraldk.com/article/2025081317211700327",
+        "published": "2025-08-13",
+        "reliability": 0.7,
+        "tier": "B",
+        "facts": [
+          "카카오뱅크 모임 체크카드 누적 발급량이 100만장을 돌파했다.",
+          "카카오뱅크가 모임 체크카드 고객에게 돌려준 캐시백이 2025년 7월 말까지 누적 30억원이다."
+        ]
+      },
+      {
+        "id": "GTS4",
+        "title": "신한은행, SOL모임통장 회원수 40만 돌파",
+        "url": "https://www.smarttoday.co.kr/ko-kr/articles/80716",
+        "published": "2025-05-14",
+        "reliability": 0.7,
+        "tier": "B",
+        "facts": [
+          "신한은행 SOL모임통장이 2025년 2월 출시 후 3개월 만에 회원 40만을 돌파했다.",
+          "신한은행은 모임통장 가입 유인으로 입금액에 비례해 쌓이는 모임지원금 이벤트를 진행했다."
+        ]
+      },
+      {
+        "id": "IVS20",
+        "title": "투자자 보호 및 리스크관리 강화를 위한 해외투자 실태점검 중간 결과 및 향후 대응방향",
+        "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?menuNo=200218&nttId=208246",
+        "published": "2025-12-19",
+        "reliability": 0.9,
+        "tier": "A",
+        "facts": [
+          "금감원은 해외투자 관련 신규 현금성 이벤트·광고를 2026년 3월까지 중단하도록 했고 여기에 주식(1주) 제공도 포함했다",
+          "금감원은 과당매매 소지가 있는 거래금액 비례 이벤트를 원천 금지하는 방향으로 제도개선을 추진한다고 밝혔다"
+        ]
+      },
+      {
+        "id": "LNS15",
+        "title": "Quicksilver Rewards for Students",
+        "url": "https://www.capitalone.com/credit-cards/quicksilver-student/",
+        "published": null,
+        "reliability": 0.9,
+        "tier": "A",
+        "facts": [
+          "학생 카드(Quicksilver for Students)는 졸업 후에도 카드와 혜택이 유지된다.",
+          "Quicksilver Rewards for Students는 모든 구매 1.5% 무제한 캐시백, 연회비 $0이다."
+        ]
+      },
+      {
+        "id": "LNS16",
+        "title": "Discover it Student Cash Back",
+        "url": "https://www.discover.com/credit-cards/student/it-card.html",
+        "published": null,
+        "reliability": 0.9,
+        "tier": "A",
+        "facts": [
+          "Discover it Student는 첫해 말 받은 캐시백을 1:1로 무제한 매칭해준다.",
+          "Discover it Student는 분기별 선택 카테고리에서 5% 캐시백을 제공한다."
+        ]
+      },
+      {
+        "id": "SNS7",
+        "title": "미성년 자녀의 가족카드 발급허용 등 혁신금융서비스를 제도화하겠습니다 (입법예고 보도자료)",
+        "url": "https://www.fsc.go.kr/po010105/86116?curPage=2",
+        "published": "2026-01-22",
+        "reliability": 0.9,
+        "tier": "A",
+        "facts": [
+          "금융위원회는 현행법상 신용카드는 민법상 성년 이상인 자에 한해 발급할 수 있어, 원칙적으로 미성년자는 가족카드 포함 신용카드 발급이 불가하다고 밝혔다.",
+          "금융위원회는 부모 신청에 따라 만 12세 이상 자녀가 사용할 목적의 가족카드 발급을 허용하는 시행령·감독규정 개정안을 2026.1.23~3.4 입법예고했다."
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,41 @@
+{
+ "run_id": "_mk_v2",
+ "evidence_items": 735,
+ "gap_candidates": 31,
+ "ideas": 32,
+ "finalists": [
+  "FRI1",
+  "FRI4",
+  "FRI2",
+  "GRI1",
+  "PRI3",
+  "TDI1",
+  "FRI8",
+  "GRI5"
+ ],
+ "new_tags": [
+  "self_budget_cap",
+  "budget_keep_bonus",
+  "crew_vote_category",
+  "experience_category_pack",
+  "subscription_slot",
+  "subscription_ledger",
+  "perf_graduation",
+  "zero_floor",
+  "single_exclusion_perf",
+  "seasonal_slot",
+  "evergreen_fallback",
+  "post_purchase_pick",
+  "value_spend_reward",
+  "first_try_reward",
+  "habit_conversion"
+ ],
+ "usage": {
+  "input_tokens": 0,
+  "output_tokens": 0,
+  "calls": 32,
+  "tool_calls": 0,
+  "seconds": 0.05
+ },
+ "pack": "discovery_pack/"
+}

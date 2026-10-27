@@ -1,0 +1,192 @@
+{
+  "as_of": "2026-10-27",
+  "generated_by": "Claude Opus 5.5 (서브에이전트 정리)",
+  "intro": "20대 비중이 확인된 국내 소비 데이터를 먼저 고르고 출처를 붙였습니다.",
+  "groups": [
+    {
+      "title": "취미·성장",
+      "keywords": [
+        {
+          "keyword": "텍스트힙 독서",
+          "summary": "성인 독서율은 역대 최저인데 20대만 늘었습니다.",
+          "spend": "북 액세서리·전자책·도서전",
+          "fact": "20대 독서율 75.3%(성인 38.5%)",
+          "confidence": "high",
+          "source_ids": ["TR-01"]
+        },
+        {
+          "keyword": "러닝 다음은 하이록스",
+          "summary": "참가비가 20만원을 넘어도 대회가 금세 매진됩니다.",
+          "spend": "대회 참가비·전용 신발·짐 이용권",
+          "fact": "참가자 2년 만에 7배 이상 증가",
+          "confidence": "medium",
+          "source_ids": ["TR-03"]
+        },
+        {
+          "keyword": "자격증 취준",
+          "summary": "국가기술자격 응시자 중 20대가 가장 많습니다.",
+          "spend": "응시료·교재·스터디카페",
+          "fact": "응시자의 39.5%가 20대",
+          "confidence": "high",
+          "source_ids": ["TR-11"]
+        }
+      ]
+    },
+    {
+      "title": "아날로그·덕질",
+      "keywords": [
+        {
+          "keyword": "디카 꾸미기",
+          "summary": "디카를 사고 키링과 파우치로 꾸미는 소비가 커졌습니다.",
+          "spend": "컴팩트 디카·키링·파우치·대여",
+          "fact": "디카 키링 거래액 +3,779%",
+          "confidence": "high",
+          "source_ids": ["TR-02"]
+        },
+        {
+          "keyword": "야구장 큰손 여성",
+          "summary": "20대 여성이 평균보다 야구 용품에 더 많이 씁니다.",
+          "spend": "티켓·패션 굿즈·구장 먹거리",
+          "fact": "20대 여성 연 용품 지출 23만 7천원",
+          "confidence": "medium",
+          "source_ids": ["TR-12"]
+        },
+        {
+          "keyword": "극장 특전 N차",
+          "summary": "주차마다 바뀌는 특전이 반복 관람을 부릅니다(관객 연령은 미확인).",
+          "spend": "반복 관람 티켓·극장 한정 굿즈",
+          "fact": "치이카와 극장판 관객 187만명",
+          "confidence": "low",
+          "source_ids": ["TR-13"]
+        }
+      ]
+    },
+    {
+      "title": "일상 소비 채널",
+      "keywords": [
+        {
+          "keyword": "다이소·올리브영",
+          "summary": "1020이 다이소에서 과자와 화장품을 자주 삽니다.",
+          "spend": "저가 화장품·과자·소액 반복 구매",
+          "fact": "올리브영 결제의 28.4%가 20대 이하",
+          "confidence": "medium",
+          "source_ids": ["TR-07"]
+        },
+        {
+          "keyword": "얼리 웰니스·말차",
+          "summary": "10대 후반부터 수면과 건강을 챙기는 소비가 늘었습니다.",
+          "spend": "수면 건강식품·티 음료·말차 간식",
+          "fact": "올리브영 수면 건강식품 +300%",
+          "confidence": "medium",
+          "source_ids": ["TR-06"]
+        },
+        {
+          "keyword": "중고 득템 놀이",
+          "summary": "희귀한 중고를 찾는 과정 자체를 놀이로 즐깁니다.",
+          "spend": "중고 패션 플랫폼·빈티지·리셀",
+          "fact": "무신사 유즈드 일 거래액 6배 이상",
+          "confidence": "medium",
+          "source_ids": ["TR-08"]
+        }
+      ]
+    },
+    {
+      "title": "디지털·AI",
+      "keywords": [
+        {
+          "keyword": "AI 유료 구독",
+          "summary": "20대가 생성형 AI 유료 구독을 가장 많이 해 봤습니다.",
+          "spend": "AI 서비스 월 구독(해외 결제)",
+          "fact": "20대 61%가 유료 구독 경험",
+          "confidence": "high",
+          "source_ids": ["TR-04"]
+        },
+        {
+          "keyword": "스크롤픽",
+          "summary": "SNS에서 보고 바로 사는 흐름이 커집니다(연령별 수치는 미확인).",
+          "spend": "앱 내 링크 구매·팝업 방문",
+          "fact": "스레드 사용자 1년 새 +29.6%",
+          "confidence": "low",
+          "source_ids": ["TR-17"]
+        }
+      ]
+    },
+    {
+      "title": "여행·모임",
+      "keywords": [
+        {
+          "keyword": "걷는 소도시 여행",
+          "summary": "동해 묵호 같은 소도시 소품숍에 2030이 몰립니다.",
+          "spend": "KTX·소품숍·카페·지역 굿즈",
+          "fact": "묵호 소품숍 이용 건수 +2,113%",
+          "confidence": "medium",
+          "source_ids": ["TR-09"]
+        },
+        {
+          "keyword": "일본 중소도시",
+          "summary": "일본 여행이 중소도시로 퍼집니다(노선 연령 정보는 없음).",
+          "spend": "LCC 항공권·현지 교통·숙박",
+          "fact": "인천~히로시마 탑승객 +42%",
+          "confidence": "low",
+          "source_ids": ["TR-10"]
+        },
+        {
+          "keyword": "네트왓킹 모임",
+          "summary": "사람보다 함께 할 활동을 중심으로 관계를 넓힙니다.",
+          "spend": "모임 참가비·원데이 클래스",
+          "fact": "Z세대 72.3%가 온라인 관계 보유",
+          "confidence": "medium",
+          "source_ids": ["TR-19"]
+        }
+      ]
+    },
+    {
+      "title": "소비 심리",
+      "keywords": [
+        {
+          "keyword": "작은 셀프 선물",
+          "summary": "자신에게 주는 소소한 선물 구매가 늘었습니다(일부는 미국 자료).",
+          "spend": "디저트·뷰티·선물하기 셀프 구매",
+          "fact": "카톡 선물하기 자기 구매 +39%",
+          "confidence": "medium",
+          "source_ids": ["TR-15"]
+        },
+        {
+          "keyword": "짧아진 유행 주기",
+          "summary": "디저트 유행이 한 달도 안 돼 다음으로 넘어갑니다.",
+          "spend": "오픈런 디저트·편의점 출시판",
+          "fact": "두쫀쿠 관심 반감기 17일",
+          "confidence": "medium",
+          "source_ids": ["TR-18"]
+        }
+      ]
+    }
+  ],
+  "next": [
+    {
+      "keyword": "해봄경제",
+      "summary": "사기 전에 빌리거나 작게 먼저 해 보는 결제가 늘 수 있습니다(추정).",
+      "confidence": "low"
+    },
+    {
+      "keyword": "AI 구독은 학기 고정비",
+      "summary": "AI 구독료가 교재비처럼 학기마다 나가는 비용이 될 수 있습니다(추정).",
+      "confidence": "medium"
+    },
+    {
+      "keyword": "저장해 둔 것을 사는 순간",
+      "summary": "SNS에 저장한 목록이 실제 구매 목록으로 쓰일 수 있습니다(추정).",
+      "confidence": "low"
+    },
+    {
+      "keyword": "현장 한정 덕질 소비",
+      "summary": "극장과 야구장에서만 파는 물건이 방문 이유가 될 수 있습니다(추정).",
+      "confidence": "medium"
+    },
+    {
+      "keyword": "잘게 쪼개지는 여행 지출",
+      "summary": "소도시 여행이 늘면 지출이 작은 가게 결제로 흩어질 수 있습니다(추정).",
+      "confidence": "low"
+    }
+  ]
+}

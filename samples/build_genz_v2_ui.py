@@ -63,9 +63,21 @@ def build(scdir, extra=None):
 
     opts = concept["options"]
     cands = []
-    for e, o in zip(evalj, opts):
+    scen = json.loads((SC / "scenario.json").read_text(encoding="utf-8"))
+    cats = scen["categories"]
+    LEVER = {"benefit_structure": "혜택 구조", "experience": "앱 경험", "target_subsegment": "세부 타깃", "partnership": "제휴 구조",
+             "price": "가격·조건", "pricing": "가격·조건", "channel": "발급·이용 채널"}
+    for k, (e, o) in enumerate(zip(evalj, opts)):
+        cv = o.get("cvp", {})
         cands.append({"name": e["name"], "hook": o["one_liner"], "profit": e["profit"], "sim": e["sim"], "adopt": e["adopt"],
-                      "adopterProfit": e["adopterProfit"], "appliedCx": e["appliedCx"], "pass": e["pass"]})
+                      "adopterProfit": e["adopterProfit"], "appliedCx": e["appliedCx"], "pass": e["pass"], "winner": k == win_i,
+                      "lever": LEVER.get(o.get("lever"), o.get("lever")), "variation": o.get("variation"),
+                      "target": cv.get("target"), "need": cv.get("need"), "offer": cv.get("offer"), "key_benefit": cv.get("key_benefit"),
+                      "alternative": cv.get("alternative"), "differentiator": cv.get("differentiator"),
+                      "rates": [[cats.get(c, c), round(r * 100, 1)] for c, r in o["rates"].items()],
+                      "fee": o.get("fee"), "cap": o.get("capPerCat"), "minPerf": o.get("minPerf"), "tags": o["tags"],
+                      "mechanics": o["mechanics"], "special": (o.get("special_point") or {}).get("hook"),
+                      "why_unusual": (o.get("special_point") or {}).get("why_unusual")})
     win = opts[win_i]
 
     twin = val["twin"]
@@ -79,11 +91,53 @@ def build(scdir, extra=None):
     variants = dm["boards"]["variants"]
     codes = ["A", "B", "C"]
     designs = {codes[k]: {"title": f'{v["code"]} · {v["name"]}'} for k, v in enumerate(variants)}
-    sb = []
-    for sc in dm["storyboards"]["reels"]["scenes"]:
-        words = " ".join(w for c in sc.get("captions", []) for w in c["words"])
-        sb.append({"visual": f'릴스 {sc["id"]} · {sc.get("variant", "공통")} · {sc["duration_s"]}초', "copy": words or "(자막 없음)"})
-    sb = sb[:6]
+    PRESET = {"hero_reveal": "카드가 화면에 처음 등장한다", "hero_float": "카드가 천천히 떠올라 앞면을 보여 준다",
+              "detail_closeup": "카드 소재와 디테일을 가까이 보여 준다", "flip": "카드를 뒤집어 뒷면의 이용 조건을 보여 준다",
+              "fan_merge": "시안 여러 장이 펼쳐졌다가 하나로 모인다", "benefit_card": "혜택 안내 카드(조건을 같은 크기로 함께 표기)",
+              "stack_lockup": "로고와 이름으로 마무리한다", "split_merge": "여러 장면이 하나로 합쳐지며 같은 카드로 이어진다",
+              "heartbeat_intro": "심장박동처럼 카드가 등장하는 도입", "beat_words": "박자에 맞춰 핵심 단어가 차례로 나온다",
+              "lineup_pulse": "시안 라인업이 박자에 맞춰 차례로 강조된다", "material_marquee": "카드 소재 클로즈업이 흐르듯 이어진다"}
+    FOCUS = {"material": "소재", "chip": "칩", "edge": "옆면", "logo": "로고", "back": "뒷면"}
+    FMT = {"reels": "릴스(세로 영상)", "youtube": "유튜브(가로 영상)", "promo": "홍보 영상(가로)"}
+    storyboards = []
+    for fmt in ("reels", "youtube", "promo"):
+        v = dm["storyboards"][fmt]
+        scs = []
+        for k, sc in enumerate(v["scenes"], 1):
+            note = (sc.get("params") or {}).get("note")
+            words = (sc.get("params") or {}).get("words")
+            vis = (note.split(". ")[0].rstrip(".") if note else PRESET.get(sc["preset"], sc["preset"]))
+            if sc["preset"] == "detail_closeup":
+                vis = "카드 " + FOCUS.get((sc.get("params") or {}).get("focus"), "디테일") + "을 가까이 보여 준다"
+            if sc["preset"] == "beat_words" and words:
+                vis = "박자에 맞춰 핵심 단어가 차례로 나온다"
+            caps = [" ".join(c["words"]) for c in sc.get("captions", [])]
+            if sc["preset"] == "beat_words" and words:
+                caps = [" · ".join(words[:8]) + (" …" if len(words) > 8 else "")]
+            t0, d = sc.get("start_s", 0), sc.get("duration_s", 0)
+            scs.append({"n": k, "time": f"{t0:g}~{t0 + d:g}초", "label": (sc.get("label") or "").split(" ", 1)[-1] if sc.get("label") else "",
+                        "visual": vis, "captions": caps})
+        storyboards.append({"format": FMT[fmt], "duration": v["duration_s"], "aspect": v.get("aspect"), "scenes": scs})
+    sb = [{"visual": f'{x["format"]} 장면 {sc["n"]}', "copy": " / ".join(sc["captions"]) or "(자막 없음)"} for x in storyboards[:1] for sc in x["scenes"]][:6]
+    stg = dm["strategy"]
+    strategy = {"positioning": stg["positioning"], "insight": stg["insight"], "personas": stg["personas"], "pillars": stg["pillars"],
+                "channels": stg["channels"], "phases": [{"name": p["name"], "days": f'D{p["start_day"]:+d} ~ D{p["end_day"]:+d}', "goal": p["goal"], "actions": p.get("actions", [])} for p in stg["phases"]],
+                "kpis": stg["kpis"], "tone": stg["tone"], "risks": stg["risks"], "next_steps": stg["next_steps"]}
+    sp = scen["sim_params"]
+    gz = next(x for x in scen["segments"] if x["id"] == scen["scope"]["target_segment"])
+    TYPE_DESC = {"일반형": "평균적인 소비 습관으로 카드를 쓰는 고객", "체리피커": "혜택 조건을 채우는 데 소비를 맞추는 혜택 사냥꾼",
+                 "충성형": "기존에 쓰던 카드를 쉽게 바꾸지 않는 고객", "휴면 위험형": "발급은 받아도 카드를 거의 쓰지 않을 위험이 있는 고객"}
+    need_lbl = scen["need_labels"]
+    persona_brief = {
+        "segment": gz["name"], "n": sp["n_per_segment"], "digital": gz.get("digital_level"), "tolerance": gz.get("complexity_tolerance"),
+        "spend": [[cats.get(c, c), v] for c, v in sorted(gz["monthly_spend"].items(), key=lambda kv: -kv[1])],
+        "needs": [[need_lbl.get(n, n), w] for n, w in sorted(gz["need_weights"].items(), key=lambda kv: -kv[1])][:5],
+        "types": [{"name": "혜택 사냥꾼(체리피커)" if t == "체리피커" else t, "share": sp["type_mix"][t], "desc": TYPE_DESC.get(t, ""),
+                   "use": sp["card_share"][t], "inertia": sp["inertia_mean"][t]} for t in sp["type_mix"]],
+        "scenarios": [["기본", "혜택·소비·새로움이 가정한 그대로인 경우"], ["경쟁사 모방", "다른 카드사가 비슷한 카드를 내서 새로움의 매력이 절반으로 줄어든 경우"],
+                      ["혜택 20% 축소", "비용 때문에 혜택률을 20% 줄인 경우"], ["시장 위축", "경기 위축으로 고객의 소비가 15% 줄어든 경우"]],
+        "note": gz.get("note") or ""}
+    handoff = {"directions": scen.get("pm_directions", []), "constraints": scen["scope"].get("constraints", []), "target_adopt": scen["scope"]["target_adopt"]}
     palette = [p["hex"] for p in dm["boards"]["palette"]]
 
     md = plan["markdown"]
@@ -128,16 +182,92 @@ def build(scdir, extra=None):
         "brand": {"names": [{"name": c["name"], "rationale": c["rationale"]} for c in dm["naming"]["candidates"]],
                   "recommended": dm["naming"]["recommended"],
                   "design": {"motif": dm["boards"]["concept"]["statement"], "palette": palette, "tone": dm["strategy"]["tone"]["summary"]},
-                  "storyboard": sb, "needs_research": nr},
+                  "storyboard": sb, "storyboards": storyboards, "needs_research": nr},
         "designs": designs, "designRec": "A", "designPrefix": "genz_v2_design_", "promo": False, "heroH": 330, "designBack": True,
+        "persona_brief": persona_brief, "handoff": handoff, "strategy": strategy,
         "marketing": {"core": dm["strategy"]["positioning"]["statement"],
                       "lifecycle": [{"stage": p["name"], "goal": p["goal"], "actions": p.get("actions", []), "days": f'D{p["start_day"]:+d} ~ D{p["end_day"]:+d}'} for p in dm["strategy"]["phases"]]},
     }
 
     DATA["doc_head"] = doc_head
+    # 기회 영역 12개 전체(설명 파일이 있으면 합친다)
+    expf = ROOT / "scenarios/genz-evidence/opportunity_explain.json"
+    expl = json.loads(expf.read_text(encoding="utf-8")) if expf.exists() else None
+    ex_by = {a["id"]: a for a in (expl or {}).get("areas", [])}
+    chosen = {p.get("area_id"): k for k, p in enumerate(ws["picks"])}
+    DATA["areas"] = {"intro": (expl or {}).get("intro"), "picks_note": (expl or {}).get("picks_note"),
+                     "list": [{"id": a["id"], "rank": a["rank"], "score_pct": round(a["score"] * 100), "need": a["need"], "mechanisms": a["mechanisms"], "domain": a.get("domain_label"),
+                               "chosen": chosen.get(a["id"]), **{k: ex_by.get(a["id"], {}).get(k) for k in ("label", "need_ko", "approach_ko", "connects", "evidence", "risk", "status", "reason")}}
+                              for a in sorted(_areas.values(), key=lambda x: x["rank"])]}
+    for k, p in enumerate(ws["picks"]):
+        DATA["picks"][k]["area_id"] = p.get("area_id")
+        ea = ex_by.get(p.get("area_id"))
+        if ea:
+            DATA["picks"][k].update({"label": ea.get("label"), "connects": ea.get("connects"), "reason": ea.get("reason"), "approach_ko": ea.get("approach_ko"), "evidence_ko": ea.get("evidence"), "risk_ko": ea.get("risk")})
+    # 포지셔닝 맵(가로: 전월실적 부담, 세로: 혜택 구조의 희소성) — 카드 DB 값으로 계산
+    allc = _db["cards"]
+    comp_cnt = {}
+    for c in allc:
+        if not c.get("is_own"):
+            for t in c["tags"]:
+                comp_cnt[t] = comp_cnt.get(t, 0) + 1
+    def rare(c):
+        return sum(1 for t in c["tags"] if comp_cnt.get(t, 0) <= 5)
+    pts = []
+    for c in allc:
+        mp = c.get("min_prev_month_spend_won")
+        if mp is None:
+            continue
+        pts.append([c["name"], c["issuer"], 1 if c.get("is_own") else 0, round(min(mp / 10000, 100)), rare(c)])
+    nw = {"name": win["working_title"], "x": float(win.get("minPerf", 0)), "y": rare({"tags": win["tags"]})}
+    DATA["posmap"] = {"cards": pts, "new": nw, "nearest": [n["name"] for n in comp["nearest"]], "n_comp": sum(1 for c in allc if not c.get("is_own")), "n_own": sum(1 for c in allc if c.get("is_own"))}
+    # 자사 vs 경쟁사 비교(카드사별)
+    iss = {}
+    for c in allc:
+        key = "신한카드(자사)" if c.get("is_own") else c["issuer"]
+        g = iss.setdefault(key, {"issuer": key, "own": bool(c.get("is_own")), "n": 0, "youth": 0, "tags": {}, "mins": []})
+        g["n"] += 1
+        g["youth"] += 1 if c.get("genz_fit") in ("high", "mid") else 0
+        for t in c["tags"]:
+            g["tags"][t] = g["tags"].get(t, 0) + 1
+        if c.get("min_prev_month_spend_won") is not None:
+            g["mins"].append(c["min_prev_month_spend_won"] / 10000)
+    core = {"auto_best", "select_pack", "miss_refund", "perf_graduation", "zero_floor", "anti_cap", "time_slot", "subscription_ledger", "challenge", "life_event", "social", "group_pooling", "ai_personalize"}
+    rows = []
+    for key, g in iss.items():
+        top = sorted(((t, n) for t, n in g["tags"].items() if t not in ("reward_discount", "reward_point", "reward_cashback", "check_card")), key=lambda x: -x[1])[:3]
+        uniq = sorted(((t, n) for t, n in g["tags"].items() if t in core), key=lambda x: -x[1])[:3]
+        rows.append({"issuer": key, "own": g["own"], "n": g["n"], "youth": g["youth"], "avg_min": round(sum(g["mins"]) / len(g["mins"])) if g["mins"] else None,
+                     "top": [t for t, _ in top], "rare": [[t, n] for t, n in uniq]})
+    rows.sort(key=lambda r: (not r["own"], -r["n"]))
+    keytags = [t for t in win["tags"] if t not in ("reward_cashback", "reward_discount", "reward_point")][:3]
+    have = {}
+    for c in allc:
+        key = "신한카드(자사)" if c.get("is_own") else c["issuer"]
+        for t in keytags:
+            if t in c["tags"]:
+                have.setdefault(t, {}).setdefault(key, 0)
+                have[t][key] += 1
+    DATA["compare"] = {"rows": rows[:8], "keytags": keytags, "have": have}
+    # 마케팅 단계 요청 보완 조사(트렌드 분석)
+    evp = scdir / "02-trend-evidence" / "out.json"
+    if evp.exists():
+        ev = json.loads(evp.read_text(encoding="utf-8"))["result"]
+        inp = scdir / "02-trend-evidence" / "in.json"
+        topics = json.loads(inp.read_text(encoding="utf-8"))["payload"].get("research_topics", []) if inp.exists() else []
+        DATA["reresearch"] = {"topics": topics, "signals": [{"title": x["title"], "impl": x.get("impl"), "strength": x.get("strength")} for x in ev.get("signals", [])],
+                              "unresolved": ev.get("unresolved", []), "regulatory": [r.get("title") or r.get("summary") or str(r) for r in ev.get("regulatory_changes", [])][:4]}
     if extra:
         DATA.update({k: v for k, v in extra.items() if k not in ("ui", "_guard_final")})
         DATA["ui"] = dict(DATA.get("ui", {}), **extra.get("ui", {}))
+    fp = SC / "followups.json"          # 중간 확인 질문 2회와 준비 답변(Opus 사전 작성)
+    if fp.exists():
+        DATA["followups"] = json.loads(fp.read_text(encoding="utf-8"))
+    DATA["ui"]["researchSub"] = "트렌드 분석·경쟁사 분석·소비자 분석을 미리 모아 둔 자료로 정리했습니다. 경쟁 카드 130종을 살펴보고 신한카드 33종은 자사로 분리해 비교만 했습니다. 출처 신뢰도가 낮은 항목은 ‘낮음’으로 표시합니다."
+    for key, fp2 in (("sum2", SC / "ui_summary.json"), ("sumres", ROOT / "scenarios/genz-evidence/ui_summary_research.json"),
+                     ("keywords", ROOT / "scenarios/genz-evidence/trend_reference/consumer_keywords.json")):
+        if fp2.exists():        # 화면 요약(bullet)과 소비 트렌드 키워드: 서브에이전트가 사전 작성
+            DATA[key] = json.loads(fp2.read_text(encoding="utf-8"))
     DATA["ui"]["trendRef"] = True        # ui/genz-trend-ref.js (Opus 정리 트렌드 참고자료)
     return DATA
 
@@ -148,46 +278,55 @@ def wrap(d):
     return json.dumps(d, ensure_ascii=False)
 
 
-MAIN_EXTRA = {
-    "summary": {
-        "concept": "꾸준: 첫 12개월은 낮은 전월실적으로 연습하고, 연체 없이 기준을 채우면 13개월 차부터 전월실적 조건이 해제되는 GenZ 첫 신용카드",
-        "conceptNote": "매달 실적 충족 여부로 혜택이 갈리는 구조 대신, 보유 이력(납부·이용)에 따라 조건이 졸업하는 구조. 졸업 후 연체 시 연습 구간으로 복귀",
-        "short": {"target": "만 19~29세 GenZ, 카드 이용이 처음인 고객", "benefit": "연습 12개월 후 전월실적 해제", "diff": "실적 조건의 졸업 구조(경쟁 카드 40종·자사 10종 중 0종)"},
-        "benefits": [["연습 구간(발급 후 12개월)", "전월 15만원 이상 시 외식·배달 1%, 편의점·마트 1.5% 할인, 영역별 월 한도 4천원"], ["미달 월", "국내 가맹점 0.5% 적립(연습 구간 한정)"], ["졸업(13개월 차~)", "12개월 연체 0회 + 9개월 이상 월 이용 금액 기준 충족 시 전월실적 조건 해제, 영역별 월 한도 유지"], ["졸업 후 연체", "연습 구간으로 복귀 (상품설명서에 사전 고지)"], ["연회비", "1만원"]],
-        "target": [["연령", "만 19~29세 (신용카드 발급 가능 연령)"], ["카드 경험", "카드 이용이 처음인 고객을 주 대상으로 하되, 첫 카드 여부를 확인하는 장치는 두지 않음"], ["핵심 니즈", "단순함(PM 가정 연결) + 절약·캐시백"], ["결제 습관", "간편결제 등록, 앱 내 발급·관리 중심"]],
-        "diffs": [["졸업형 실적 구조", "경쟁 카드 40종 중 perf_graduation 0종, zero_floor 1종, 실적 구간제 9종(자사 신한카드 10종 중 5종은 별도)"], ["미달 월에도 혜택 0 방지", "연습 구간 미달 월 0.5% 적립 유지"], ["규칙 사전 고지", "졸업 조건과 복귀 규칙을 상품설명서·앱에 미리 표기"], ["한계(근거 범위)", "국내 전 카드 조사가 아니며, 졸업형 선호를 보여 주는 GenZ 고객 데이터는 없음"]],
-    },
-    "ui": {
-        "badge": "실제 LLM 호출 없음 · 근거 팩 v2 실행 기록 재생",
-        "date": "근거 팩 v2 실행 기록",
-        "reresearch": False,
-        "researchPrompt": "GenZ 신용카드 시장 흐름과 경쟁 공백을 알려줘",
-        "researchSub": "트렌드·경쟁사·소비자 조사는 미리 쌓아 둔 근거 팩(735건, 출처 261개)을 읽어 만들었습니다. 경쟁사는 시판 카드 40종 기준이고 신한카드 10종은 자사로 분리해 비교만 합니다. 근거 신뢰도가 낮은 항목은 낮음으로 표시합니다.",
-        "wsSub": "먼저 발굴 파이프라인(조사 → 공백 후보 31개 → 컨셉 아이디어 32개 → 3관점 반박 검증)을 돌렸고, 코드가 12개 기회 영역(니즈 × 혜택 방식 × 영역, 검증된 아이디어 영역 포함)을 점수화했습니다. 에이전트가 상위 3개를 골랐고, 3순위는 PM 관심 방향(졸업·실적 재해석)에 맞는 아이디어 영역입니다.",
-        "conceptSub": "에이전트가 서로 다른 3안을 내고 코드가 손익·유사도·복잡도·채택 의향을 계산했습니다. 첫 시도에서는 3안 모두 손익·복잡도 기준을 못 넘어 재작업했고, 2차에서 2안이 통과해 졸업 카드가 채택 의향 0.438로 선정됐습니다. 미달 월 환급안은 채택 의향 0.265로 탈락했습니다.",
-        "guardSub": "1차 점검에서 문구 3건(G1·G2·G6)이 fix였고, 이름·문구 수정 뒤 G1·G2는 통과했습니다. G6(졸업 이용 금액 미정·환수 미정·시뮬레이션 미반영)과 준법·개인정보 확인(G3·G4)은 남아 기획서 리스크로 이월했습니다. 아래는 수정 전 점검 결과입니다.",
-        "designNote": "시안은 모눈 낮(GRID)·투명 눈금(CLEAR)·밤 모눈(NIGHT) 3종입니다. 영상은 H5 확정 전이라 렌더하지 않고 스토리보드로 대신합니다.",
-        "docNote": "고객 틀 7개 섹션 + 부록으로 작성했습니다. 아래는 앞부분이며 전체는 scenarios/genz-credit-v2/기획서_꾸준카드.md에 있습니다.",
-        "human": {
-            "H1": "해석한 범위: 타깃 GenZ(만 19~29세), 카드 유형 신용카드, 투자 연계는 제외(규칙만 06에 전달). 이대로 진행할까요?",
-            "H2": "상위 3개 셀 중 컨셉을 만들 셀을 고릅니다. 이 실행 기록에서는 사람이 3순위(졸업·실적 재해석 아이디어)를 골랐습니다.",
-            "H3": "사람 확인이 필요한 항목(준법·개인정보)을 담당 부서에 배정합니다. 진행은 계속하고 기획서 부록에 미확인으로 남깁니다.",
-            "H4": "‘실적 졸업 카드’로 확정할까요? 확정하면 이름·디자인·마케팅 단계로 넘어갑니다.",
-            "H5": "스토리보드 미리보기를 확인했습니다. 영상은 렌더하지 않고 스토리보드로 대체합니다.",
-        },
-    },
-}
-
-# 기본 경로 = H2 1순위(scenarios/genz-credit-v2-alt), 분기 = H2에서 3순위(졸업 아이디어)를 고른 경로(scenarios/genz-credit-v2)
-MAIN_EXTRA["pickIdx"] = 2
-MAIN_EXTRA["designRec"] = "B"
-DATA_BRANCH = build(V2, MAIN_EXTRA)
-DATA_V2 = None
-if (ALT / "10-plan-doc" / "out.json").exists() and (ALT / "ui_extra.json").exists():
-    DATA_V2 = build(ALT, json.loads((ALT / "ui_extra.json").read_text(encoding="utf-8")))
-out = ""
-if DATA_V2:
-    out += "window.DATA_GENZ_V2=" + wrap(DATA_V2) + ";\n"
-out += "window.DATA_GENZ_V2_ALT=" + wrap(DATA_BRANCH) + ";\n"
-(UI / "genz-v2-data.js").write_text(out, encoding="utf-8")
-print("ok", len(out), "bytes", "main" if DATA_V2 else "no-main")
+# 세 경로: 기본 = H2 1순위(scenarios/genz-credit-v2-alt, window.DATA_GENZ_V2), 2순위(genz-credit-v2-p2, DATA_GENZ_V2_P2),
+#          3순위 = 졸업 아이디어(genz-credit-v2, DATA_GENZ_V2_ALT)
+P2 = ROOT / "scenarios" / "genz-credit-v2-p2"
+PATHS = [("DATA_GENZ_V2", ALT, None, "alt"), ("DATA_GENZ_V2_P2", P2, None, "p2"), ("DATA_GENZ_V2_ALT", V2, None, "p3")]
+out, variants = "", {}
+for var, d, extra, key in PATHS:
+    if extra is None:
+        up = d / "ui_extra.json"
+        if not ((d / "10-plan-doc" / "out.json").exists() and up.exists()):
+            continue
+        extra = json.loads(up.read_text(encoding="utf-8"))
+    data = build(d, extra)
+    data["variantsKey"] = key
+    vp = d / "variants.json"
+    if vp.exists():
+        vv = json.loads(vp.read_text(encoding="utf-8"))
+        for m in vv["grid"].values():      # 화면에서 쓰지 않는 유형별 값은 뺀다(파일 크기)
+            m.pop("byType", None)
+        variants[key] = vv
+    out += "window.%s=" % var + wrap(data) + ";\n"
+# 최종 확인에서 ‘다른 CVP 후보로 변경’을 골랐을 때 재생하는 실제 실행 기록(후보 0·2). 키는 부모 경로.
+CVP = {}
+cvp_js = "window.CVPALT=window.CVPALT||{};\n"
+for pkey, pdir, pvar in (("alt", ALT, "DATA_GENZ_V2"), ("p2", P2, "DATA_GENZ_V2_P2"), ("p3", V2, "DATA_GENZ_V2_ALT")):
+    CVP[pkey] = {}
+    for k in (0, 2):
+        d = ROOT / "scenarios" / f"{pdir.name}--c{k}"
+        up = d / "ui_extra.json"
+        if not ((d / "10-plan-doc" / "out.json").exists() and up.exists()):
+            continue
+        data = build(d, json.loads(up.read_text(encoding="utf-8")))
+        if "followups" not in data and (pdir / "followups.json").exists():
+            data["followups"] = json.loads((pdir / "followups.json").read_text(encoding="utf-8"))
+        data["variantsKey"] = f"{pkey}-c{k}"
+        data["switchKey"] = pkey
+        vp = d / "variants.json"
+        if vp.exists():
+            vv = json.loads(vp.read_text(encoding="utf-8"))
+            for m in vv["grid"].values():
+                m.pop("byType", None)
+            variants[data["variantsKey"]] = vv
+        CVP[pkey][k] = data
+    if CVP[pkey]:
+        cvp_js += "window.CVPALT[%s]={%s};\n" % (json.dumps(pkey), ",".join('"%d":%s' % (k, wrap(v)) for k, v in CVP[pkey].items()))
+        cvp_js += "window.CVPALT[%s][1]=window.%s;\n" % (json.dumps(pkey), pvar)
+import sys
+sys.path.insert(0, str(Path(__file__).parent))
+from mark_script import mark
+(UI / "genz-v2-data.js").write_text(mark(out), encoding="utf-8")
+(UI / "genz-v2-cvp.js").write_text(mark(cvp_js), encoding="utf-8")
+(UI / "genz-variants.js").write_text("window.VARIANTS=" + json.dumps(variants, ensure_ascii=False, separators=(",", ":")) + ";\n", encoding="utf-8")
+print("ok", len(out), "bytes", [k for _, _, _, k in PATHS], "variants", list(variants))

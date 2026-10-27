@@ -1,0 +1,2430 @@
+[
+ {
+  "id": "msamsung01",
+  "name": "모니모카드",
+  "official_name": "모니모카드",
+  "issuer": "삼성카드",
+  "type": "credit",
+  "on_sale": true,
+  "role": "youth",
+  "launched": "2021-09-30(상세 페이지 내장 날짜, 출시일 칸은 비어 있음)",
+  "annual_fee_won": {
+   "domestic": 10000,
+   "overseas": 10000
+  },
+  "tiers": [
+   {
+    "min_prev_month_spend_won": 0,
+    "benefit_summary": "기본 혜택 없음(발급월+1개월은 30만원 미만도 제공)"
+   },
+   {
+    "min_prev_month_spend_won": 300000,
+    "benefit_summary": "옵션1 택1 통합 월 1만원 + 옵션2 택1 월 5천원 + 통신·관리비/교통·택시/배달앱 각 10% 월 5천원"
+   }
+  ],
+  "benefits": [
+   {
+    "category": "옵션1(Needs & Identity, 택1·매월 변경)",
+    "text": "온라인패션(무신사·W컨셉·Nike.com·SSF)·오늘의집 30% 결제일할인",
+    "rate_or_amount": "30%",
+    "monthly_cap": "10,000원",
+    "condition": "전월 30만원 이상, 공식 홈페이지·앱 결제"
+   },
+   {
+    "category": "옵션1(택1)",
+    "text": "스타벅스 50%, 교보문고(온라인)·스트리밍(넷플릭스·웨이브·티빙·왓챠·멜론·FLO 정기결제) 30% 결제일할인",
+    "rate_or_amount": "50%/30%",
+    "monthly_cap": "10,000원",
+    "condition": "전월 30만원 이상, 스트리밍 인앱결제 제외"
+   },
+   {
+    "category": "옵션2(My Shopping, 택1·매월 변경)",
+    "text": "온라인쇼핑몰(쿠팡·티몬·위메프·SSG.COM·G마켓·옥션·11번가·삼성카드쇼핑) 7%",
+    "rate_or_amount": "7%",
+    "monthly_cap": "5,000원",
+    "condition": "전월 30만원 이상"
+   },
+   {
+    "category": "옵션2(택1)",
+    "text": "편의점(CU·GS25·세븐일레븐·미니스톱·이마트24)·다이소·올리브영 7%",
+    "rate_or_amount": "7%",
+    "monthly_cap": "5,000원",
+    "condition": "전월 30만원 이상, 오프라인·임대매장 제외"
+   },
+   {
+    "category": "옵션2(택1)",
+    "text": "해외 가맹점·해외 직구 7%",
+    "rate_or_amount": "7%",
+    "monthly_cap": "5,000원",
+    "condition": "전월 30만원 이상, 해외겸용"
+   },
+   {
+    "category": "생활",
+    "text": "이동통신(알뜰폰 일부 포함)·아파트 관리비 정기결제 10%",
+    "rate_or_amount": "10%",
+    "monthly_cap": "5,000원",
+    "condition": "전월 30만원 이상"
+   },
+   {
+    "category": "교통",
+    "text": "버스·지하철·택시 10%",
+    "rate_or_amount": "10%",
+    "monthly_cap": "5,000원",
+    "condition": "전월 30만원 이상, 시외·고속버스 제외"
+   },
+   {
+    "category": "배달",
+    "text": "배달의민족·요기요·쿠팡이츠 10%",
+    "rate_or_amount": "10%",
+    "monthly_cap": "5,000원",
+    "condition": "전월 30만원 이상, 앱 결제만"
+   }
+  ],
+  "exclusions": [
+   "무이자할부 이용금액",
+   "삼성카드 다른 할인이 적용된 이용금액",
+   "기프트/선불카드 구매·충전, 상품권 구매",
+   "자체 가맹점번호로 승인되는 일부 간편결제·키오스크 결제건",
+   "전월 이용금액 산정 제외: 혜택 받은 이용금액, 국세·지방세·공과금, 4대보험, 대학 등록금, 대중교통·택시, 아파트 관리비, 임대료, 상품권·선불카드"
+  ],
+  "promotions": [
+   {
+    "text": "THE TWENTY(만 20~29세) 멤버십 대상 카드: 연회비 매년 100% 포인트 환급 또는 면제(20대 기간 유지, 보도 기준), 컨택리스 결제 포인트 뽑기(월 최대 2만원, 보도 기준), 월간 럭키드로우, 매월 바뀌는 무실적 제휴 할인(예: 바나프레소 3%·빽다방 2%·교보문고 5%, 2026-12-31까지)",
+    "ends": "2026-12-31(제휴 할인 행사 기준; 멤버십 자체는 상시)"
+   }
+  ],
+  "recent_changes": [],
+  "target_text": null,
+  "issuance": "모니모 앱에서만 신청 가능(공식 페이지 문구)",
+  "app_features": [
+   "모니모 앱·삼성카드 앱/홈페이지에서 옵션 매월 변경(다음 달 1일 반영)",
+   "THE TWENTY 라운지(모니모·삼성카드 앱)"
+  ],
+  "design_note": "로고·젤리·소프트 3종, 3D 카드 디자인 보기 제공",
+  "tags": [
+   "select_item",
+   "monthly_switch",
+   "common_plus_select",
+   "online_shop",
+   "dining_cafe",
+   "subscription_ott",
+   "mart_daily",
+   "delivery",
+   "transit",
+   "fixed_bills",
+   "travel_fx",
+   "reward_discount",
+   "tiered_perf",
+   "target_special"
+  ],
+  "genz_fit": "high",
+  "genz_fit_reason": "THE TWENTY(만 20~29세) 대상 3종 중 하나. 무신사·오늘의집·스타벅스·올리브영·다이소 등 20대 소비처를 매월 바꿔 고를 수 있고 연회비 1만원이다.",
+  "source_url": "https://www.samsungcard.com/home/card/cardinfo/PGHPPCCCardCardinfoDetails001?code=AAP1742",
+  "source_urls": [
+   "https://www.samsungcard.com/home/card/cardinfo/PGHPPCCCardCardinfoDetails001?code=AAP1742",
+   "https://www.samsungcard.com/home/benefit/thetwenty/pghppmcbenefitthetwentyinfo001?click=adpromotion_twenty"
+  ],
+  "checked": "2026-10-27",
+  "confidence": "high",
+  "note": "심의필 2026-C1h-00722(2026-01-19~2027-01-18). 가족카드 없음. 옵션2 각 항목 월 한도 5,000원 확인(기존 B 조사의 '일부만 확인' 보강). 공식 페이지에 연령 대상 문구는 없음."
+ },
+ {
+  "id": "msamsung02",
+  "name": "삼성 iD SIMPLE",
+  "official_name": "삼성 iD SIMPLE 카드",
+  "issuer": "삼성카드",
+  "type": "credit",
+  "on_sale": true,
+  "role": "youth",
+  "launched": "2022-06-02(상세 페이지 내장 날짜)",
+  "annual_fee_won": {
+   "domestic": 7000,
+   "overseas": 7000
+  },
+  "tiers": [
+   {
+    "min_prev_month_spend_won": 0,
+    "benefit_summary": "국내외 건별 10만원 미만 0.7%, 10만원 이상 1% (실적·한도 없음)"
+   },
+   {
+    "min_prev_month_spend_won": 300000,
+    "benefit_summary": "+ 쇼핑 멤버십 50%(월 5천원), 영화 3천원(월 1회)"
+   }
+  ],
+  "benefits": [
+   {
+    "category": "기본",
+    "text": "국내외 가맹점 건별 10만원 미만 결제 0.7% 결제일할인",
+    "rate_or_amount": "0.7%",
+    "monthly_cap": "없음",
+    "condition": "전월 실적 무관"
+   },
+   {
+    "category": "기본",
+    "text": "국내외 가맹점 건별 10만원 이상 결제 1% 결제일할인",
+    "rate_or_amount": "1%",
+    "monthly_cap": "없음",
+    "condition": "전월 실적 무관"
+   },
+   {
+    "category": "멤버십",
+    "text": "쿠팡 와우·컬리멤버스·네이버플러스 멤버십 정기결제 50%",
+    "rate_or_amount": "50%",
+    "monthly_cap": "5,000원",
+    "condition": "전월 30만원 이상(발급월+1개월 면제)"
+   },
+   {
+    "category": "영화",
+    "text": "CGV·롯데시네마·메가박스 1만원 이상 3,000원",
+    "rate_or_amount": "3,000원",
+    "monthly_cap": "월 1회",
+    "condition": "전월 30만원 이상"
+   }
+  ],
+  "exclusions": [
+   "무이자할부",
+   "대중교통·택시·고속버스·통행료",
+   "공과금·4대보험·국세/지방세",
+   "등록금·학교납입금",
+   "임대료",
+   "상품권·선불카드"
+  ],
+  "promotions": [
+   {
+    "text": "THE TWENTY(만 20~29세) 멤버십 대상 카드: 연회비 매년 100% 포인트 환급 또는 면제(20대 기간 유지, 보도 기준), 컨택리스 결제 포인트 뽑기(월 최대 2만원, 보도 기준), 월간 럭키드로우, 매월 바뀌는 무실적 제휴 할인(예: 바나프레소 3%·빽다방 2%·교보문고 5%, 2026-12-31까지)",
+    "ends": "2026-12-31(제휴 할인 행사 기준; 멤버십 자체는 상시)"
+   }
+  ],
+  "recent_changes": [],
+  "target_text": null,
+  "issuance": "모니모 앱, 삼성카드 홈페이지(PC), 대표전화",
+  "app_features": [
+   "모니모 앱 연동 신청",
+   "THE TWENTY 라운지"
+  ],
+  "design_note": "펑키·모던·스탬프 3종 + '나만의 카드 꾸미기'(배경·스티커·그리기·텍스트, 기간 한정)",
+  "tags": [
+   "simple_flat",
+   "spend_free",
+   "no_cap",
+   "txn_threshold",
+   "subscription_ott",
+   "online_shop",
+   "reward_discount",
+   "target_special"
+  ],
+  "genz_fit": "high",
+  "genz_fit_reason": "연회비 7천원·무실적·무한도 기본 할인이라 첫 카드로 쉽고, THE TWENTY 대상이며 카드 꾸미기를 지원한다.",
+  "source_url": "https://www.samsungcard.com/home/card/cardinfo/PGHPPCCCardCardinfoDetails001?code=AAP1767",
+  "source_urls": [
+   "https://www.samsungcard.com/home/card/cardinfo/PGHPPCCCardCardinfoDetails001?code=AAP1767",
+   "https://www.samsungcard.com/home/benefit/thetwenty/pghppmcbenefitthetwentyinfo001?click=adpromotion_twenty"
+  ],
+  "checked": "2026-10-27",
+  "confidence": "high",
+  "note": "심의필 2026-C1h-07183(2026-05-15~2027-05-14). 기존 B(yb03)는 genz_fit=mid였으나 THE TWENTY 대상·커스텀 디자인을 반영해 high로 올림(해석). 연회비 Mastercard·VISA·UnionPay 모두 7,000원."
+ },
+ {
+  "id": "msamsung03",
+  "name": "taptap O",
+  "official_name": "삼성카드 taptap O",
+  "issuer": "삼성카드",
+  "type": "credit",
+  "on_sale": true,
+  "role": "youth",
+  "launched": "2016-04-11(상세 페이지 내장 날짜)",
+  "annual_fee_won": {
+   "domestic": 10000,
+   "overseas": 10000
+  },
+  "tiers": [
+   {
+    "min_prev_month_spend_won": 0,
+    "benefit_summary": "해외 1.3% 빅포인트(실적·한도 없음)"
+   },
+   {
+    "min_prev_month_spend_won": 300000,
+    "benefit_summary": "라이프스타일 패키지(커피 월 1만원·쇼핑 월 5천원) + 교통·택시 10% 월 5천원 + 통신 10% 월 5천원 + 영화 5천원(월 2회)"
+   }
+  ],
+  "benefits": [
+   {
+    "category": "라이프스타일 패키지(6종 택1, 매월 변경)",
+    "text": "커피: 스타벅스 50% 또는 커피전문점 30%",
+    "rate_or_amount": "50%/30%",
+    "monthly_cap": "10,000원",
+    "condition": "전월 30만원 이상, 가두매장(사이렌오더 포함)"
+   },
+   {
+    "category": "라이프스타일 패키지",
+    "text": "쇼핑: 오픈마켓·소셜커머스·트렌디숍 중 1곳 7% 할인 + 나머지 2곳 1% 적립",
+    "rate_or_amount": "7% / 1%",
+    "monthly_cap": "할인 5,000원(적립 한도 없음)",
+    "condition": "할인은 전월 30만원 이상"
+   },
+   {
+    "category": "교통",
+    "text": "버스·지하철(후불)·택시 10%",
+    "rate_or_amount": "10%",
+    "monthly_cap": "5,000원",
+    "condition": "전월 30만원 이상"
+   },
+   {
+    "category": "통신",
+    "text": "SKT·KT·LG U+ 자동납부 10%",
+    "rate_or_amount": "10%",
+    "monthly_cap": "5,000원",
+    "condition": "전월 30만원 이상"
+   },
+   {
+    "category": "영화",
+    "text": "CGV·롯데시네마 1만원 이상 5,000원",
+    "rate_or_amount": "5,000원",
+    "monthly_cap": "월 2회(일 1회·연 12회)",
+    "condition": "전월 30만원 이상"
+   },
+   {
+    "category": "해외",
+    "text": "해외 가맹점·직구 1.3% 빅포인트",
+    "rate_or_amount": "1.3%",
+    "monthly_cap": "없음",
+    "condition": "실적 무관"
+   }
+  ],
+  "exclusions": [
+   "카드 혜택 외 삼성카드 다른 할인·적립 미제공",
+   "할인 적용 금액은 포인트 미적립",
+   "무이자할부",
+   "대중교통·택시·통행료·공과금 등(적립 제외)",
+   "전월 이용금액 산정 제외: 혜택 받은 이용금액, 국세·지방세·공과금, 4대보험, 대학 등록금, 대중교통·택시, 아파트 관리비, 임대료, 상품권·선불카드"
+  ],
+  "promotions": [
+   {
+    "text": "THE TWENTY(만 20~29세) 멤버십 대상 카드: 연회비 매년 100% 포인트 환급 또는 면제(20대 기간 유지, 보도 기준), 컨택리스 결제 포인트 뽑기(월 최대 2만원, 보도 기준), 월간 럭키드로우, 매월 바뀌는 무실적 제휴 할인(예: 바나프레소 3%·빽다방 2%·교보문고 5%, 2026-12-31까지)",
+    "ends": "2026-12-31(제휴 할인 행사 기준; 멤버십 자체는 상시)"
+   }
+  ],
+  "recent_changes": [],
+  "target_text": null,
+  "issuance": "삼성카드 앱·홈페이지(앱 빠른 발급), 모바일·이메일 명세서 기본",
+  "app_features": [
+   "삼성카드 앱에서 패키지 매월 변경",
+   "THE TWENTY 라운지"
+  ],
+  "design_note": "단색 플레이트(#F6257E 계열), 컨택리스. 커스텀 꾸미기 문구 없음",
+  "tags": [
+   "select_pack",
+   "monthly_switch",
+   "dining_cafe",
+   "online_shop",
+   "transit",
+   "fixed_bills",
+   "travel_fx",
+   "reward_discount",
+   "reward_point",
+   "target_special"
+  ],
+  "genz_fit": "high",
+  "genz_fit_reason": "THE TWENTY 페이지가 '20대 추천 카드'로 첫 번째에 놓고 '연간 최대 36만원 혜택'을 내세운다. 카페·쇼핑·교통·통신 위주다. 카드고릴라 주간 신용 순위 16위(2026-10-27 조회).",
+  "source_url": "https://www.samsungcard.com/home/card/cardinfo/PGHPPCCCardCardinfoDetails001?code=AAP1483",
+  "source_urls": [
+   "https://www.samsungcard.com/home/card/cardinfo/PGHPPCCCardCardinfoDetails001?code=AAP1483",
+   "https://www.samsungcard.com/home/benefit/thetwenty/pghppmcbenefitthetwentyinfo001?click=adpromotion_twenty",
+   "https://api.card-gorilla.com:8080/v1/charts/ranking?term=weekly&card_gb=CRD&limit=30"
+  ],
+  "checked": "2026-10-27",
+  "confidence": "high",
+  "note": "심의필 2026-C1h-02439(2026-02-24~2027-02-23). 기존 DB c06의 '전월실적 null·커피 수치 미확인'을 보강: 전월 30만원, 커피 50%/30% 월 1만원, 쇼핑 7% 월 5천원. 기존 DB tags의 spend_free는 해외 적립만 해당."
+ },
+ {
+  "id": "msamsung04",
+  "name": "American Express Blue",
+  "official_name": "American Express Blue",
+  "issuer": "삼성카드",
+  "type": "credit",
+  "on_sale": true,
+  "role": "youth",
+  "launched": "2020-07-15(상세 페이지 내장 날짜)",
+  "annual_fee_won": {
+   "domestic": null,
+   "overseas": 15000
+  },
+  "tiers": [
+   {
+    "min_prev_month_spend_won": 0,
+    "benefit_summary": "해외 5% 적립(월 3만P), 쇼핑 1.5% 적립(월 3만P)"
+   },
+   {
+    "min_prev_month_spend_won": 300000,
+    "benefit_summary": "편의점·배달 7% 월 5천P, 교통·통신 5% 월 5천P, 스타벅스·이디야 20% 월 5천원, 스트리밍 20% 월 5천원"
+   },
+   {
+    "min_prev_month_spend_won": 600000,
+    "benefit_summary": "편의점·배달/교통·통신 각 월 1만P"
+   },
+   {
+    "min_prev_month_spend_won": 900000,
+    "benefit_summary": "편의점·배달/교통·통신 각 월 1.5만P"
+   }
+  ],
+  "benefits": [
+   {
+    "category": "해외",
+    "text": "해외 가맹점·직구 5% 멤버십리워즈",
+    "rate_or_amount": "5%",
+    "monthly_cap": "30,000P",
+    "condition": "실적 무관"
+   },
+   {
+    "category": "편의점·배달",
+    "text": "CU·GS25·세븐일레븐·미니스톱·이마트24, 배민·요기요·쿠팡이츠 7%",
+    "rate_or_amount": "7%",
+    "monthly_cap": "5,000/10,000/15,000P",
+    "condition": "전월 30/60/90만원"
+   },
+   {
+    "category": "카페",
+    "text": "스타벅스(사이렌오더 포함)·이디야 20% 결제일할인",
+    "rate_or_amount": "20%",
+    "monthly_cap": "5,000원",
+    "condition": "전월 30만원 이상"
+   },
+   {
+    "category": "쇼핑",
+    "text": "온라인 간편결제·프리미엄 아울렛·자라/H&M/8SECONDS 1.5%",
+    "rate_or_amount": "1.5%",
+    "monthly_cap": "30,000P",
+    "condition": "실적 무관"
+   },
+   {
+    "category": "교통·통신",
+    "text": "버스·지하철, 이동통신 자동납부 5%",
+    "rate_or_amount": "5%",
+    "monthly_cap": "5,000/10,000/15,000P",
+    "condition": "전월 30/60/90만원"
+   },
+   {
+    "category": "스트리밍",
+    "text": "넷플릭스·웨이브·티빙·왓챠·멜론·FLO 건별 6천원 이상 정기결제 20%",
+    "rate_or_amount": "20%",
+    "monthly_cap": "5,000원",
+    "condition": "전월 30만원 이상, 인앱·간편결제 제외"
+   }
+  ],
+  "exclusions": [
+   "무이자할부 이용금액",
+   "삼성카드 다른 할인이 적용된 이용금액",
+   "기프트/선불카드 구매·충전, 상품권 구매",
+   "자체 가맹점번호로 승인되는 일부 간편결제·키오스크 결제건",
+   "본인·가족카드 실적·한도 합산"
+  ],
+  "promotions": [],
+  "recent_changes": [],
+  "target_text": null,
+  "issuance": "실물(15,000원) 또는 모바일카드(10,000원, 모니모페이 등록)",
+  "app_features": [
+   "모바일카드(실물 없이 모니모페이 등록)",
+   "멤버십리워즈를 삼성카드 포인트와 합산 사용"
+  ],
+  "design_note": "AMEX 브랜드 블루 플레이트, 커스텀 없음",
+  "tags": [
+   "mart_daily",
+   "delivery",
+   "dining_cafe",
+   "subscription_ott",
+   "transit",
+   "fixed_bills",
+   "travel_fx",
+   "online_shop",
+   "reward_point",
+   "reward_discount",
+   "tiered_perf"
+  ],
+  "genz_fit": "high",
+  "genz_fit_reason": "편의점·배달·카페·OTT·교통처럼 20대 지출 비중이 큰 업종에 몰려 있고 해외 5%가 무실적이다. 비교 사이트가 20대·사회초년생 추천으로 분류(공식 문구 아님).",
+  "source_url": "https://www.samsungcard.com/home/card/cardinfo/PGHPPCCCardCardinfoDetails001?code=AAP1671",
+  "source_urls": [
+   "https://www.samsungcard.com/home/card/cardinfo/PGHPPCCCardCardinfoDetails001?code=AAP1671"
+  ],
+  "checked": "2026-10-27",
+  "confidence": "high",
+  "note": "심의필 2025-C1h-16708(2025-11-18). 국내전용 없음('-'). 실물 15,000원=기본 7,000+제휴 8,000, 모바일 10,000원=2,000+8,000, 가족 8,000원. 기존 B(yb01)와 일치."
+ },
+ {
+  "id": "msamsung05",
+  "name": "모니모페이카드",
+  "official_name": "모니모페이카드",
+  "issuer": "삼성카드",
+  "type": "credit",
+  "on_sale": true,
+  "role": "youth",
+  "launched": "2026-07-01(상세 페이지 내장 날짜) / 출시 보도 2026-08-04",
+  "annual_fee_won": {
+   "domestic": 15000,
+   "overseas": 15000
+  },
+  "tiers": [
+   {
+    "min_prev_month_spend_won": 300000,
+    "benefit_summary": "모니모페이 간편결제 15%(전월 매일 로그인)/10% 통합 월 1만원 + 디지털콘텐츠·멤버십 50% 월 5천원"
+   },
+   {
+    "min_prev_month_spend_won": 600000,
+    "benefit_summary": "간편결제 월 2만원 + 디지털 월 7천원"
+   },
+   {
+    "min_prev_month_spend_won": 1000000,
+    "benefit_summary": "간편결제 월 3만원 + 디지털 월 1만원"
+   }
+  ],
+  "benefits": [
+   {
+    "category": "간편결제",
+    "text": "모니모페이로 국내 온·오프라인 결제 시 15%(전월 모니모 앱 로그인 일수 100%) 또는 10%",
+    "rate_or_amount": "15%/10%",
+    "monthly_cap": "10,000/20,000/30,000원",
+    "condition": "전월 30/60/100만원"
+   },
+   {
+    "category": "디지털·멤버십",
+    "text": "넷플릭스·디즈니+·유튜브 프리미엄·티빙·FLO, 쿠팡 와우·네이버플러스 정기결제 50%",
+    "rate_or_amount": "50%",
+    "monthly_cap": "5,000/7,000/10,000원",
+    "condition": "전월 30/60/100만원, 인앱 제외"
+   }
+  ],
+  "exclusions": [
+   "무이자할부 이용금액",
+   "삼성카드 다른 할인이 적용된 이용금액",
+   "기프트/선불카드 구매·충전, 상품권 구매",
+   "자체 가맹점번호로 승인되는 일부 간편결제·키오스크 결제건",
+   "PG·간편결제 전용 가맹점으로 분류되는 결제(디지털콘텐츠 할인 대상 제외)",
+   "혜택 받은 이용금액은 전월실적 제외"
+  ],
+  "promotions": [
+   {
+    "text": "발급월+1개월은 로그인 100% 미달성·실적 미달이어도 15%와 30만원 구간 혜택",
+    "ends": "발급월+1개월"
+   }
+  ],
+  "recent_changes": [
+   "2026-08 신규 출시(로그인 일수 연동 할인율)"
+  ],
+  "target_text": null,
+  "issuance": "모니모 앱 필수(카드 혜택 사용 위해 모니모 가입)",
+  "app_features": [
+   "모니모 앱 로그인 인정 일수로 할인율 결정(매일 로그인=100%)",
+   "모니모페이 MST 오프라인 결제(보도)"
+  ],
+  "design_note": "POP·PIXEL 2종 + '나만의 카드 꾸미기'",
+  "tags": [
+   "paymethod_bonus",
+   "challenge",
+   "subscription_ott",
+   "online_shop",
+   "reward_discount",
+   "tiered_perf"
+  ],
+  "genz_fit": "high",
+  "genz_fit_reason": "매일 앱에 들어오는 습관을 할인율로 보상하는 구조라 앱 사용에 익숙한 GenZ에 맞고 꾸미기 디자인을 준다. 출시 3개월 만에 카드고릴라 주간 신용 순위 10위(2026-10-27 조회).",
+  "source_url": "https://www.samsungcard.com/home/card/cardinfo/PGHPPCCCardCardinfoDetails001?code=AAP1918",
+  "source_urls": [
+   "https://www.samsungcard.com/home/card/cardinfo/PGHPPCCCardCardinfoDetails001?code=AAP1918",
+   "https://m.etnews.com/20260804000219",
+   "https://api.card-gorilla.com:8080/v1/charts/ranking?term=weekly&card_gb=CRD&limit=30"
+  ],
+  "checked": "2026-10-27",
+  "confidence": "high",
+  "note": "심의필 2026-C1h-12594(2026-08-21~2027-08-20). 공식 페이지에 연령 대상 문구 없음. 연회비 VISA·국내 15,000원(기본 7,000+제휴 8,000)."
+ },
+ {
+  "id": "msamsung06",
+  "name": "모니모A 카드",
+  "official_name": "모니모A 카드",
+  "issuer": "삼성카드",
+  "type": "credit",
+  "on_sale": true,
+  "role": "other",
+  "launched": "2023-11-24(상세 페이지 내장 날짜)",
+  "annual_fee_won": {
+   "domestic": 10000,
+   "overseas": 10000
+  },
+  "tiers": [
+   {
+    "min_prev_month_spend_won": 0,
+    "benefit_summary": "국내외 0.5%(전월 로그인 7일 미만)/1%(7일 이상) 모니머니 리워드, 무한도"
+   },
+   {
+    "min_prev_month_spend_won": 300000,
+    "benefit_summary": "+ 보험 9% 추가(월 1만P, 로그인 7일+), 생활필수 1% 추가(월 2만P), 스타벅스 5천원(월 1회, 로그인 100%)"
+   }
+  ],
+  "benefits": [
+   {
+    "category": "기본 적립",
+    "text": "국내외 가맹점 모니머니 리워드(로그인 7일 미만 0.5%, 7일 이상 1%)",
+    "rate_or_amount": "0.5%/1%",
+    "monthly_cap": "없음",
+    "condition": "실적 무관"
+   },
+   {
+    "category": "보험",
+    "text": "대상 보험료 9% 추가 적립",
+    "rate_or_amount": "+9%",
+    "monthly_cap": "10,000P",
+    "condition": "로그인 7일 이상 + 전월 30만원"
+   },
+   {
+    "category": "생활 필수",
+    "text": "항공·면세점·백화점·아울렛·온라인몰·편의점·영화·의료·학원·주유·EV충전·해외 1% 추가",
+    "rate_or_amount": "+1%",
+    "monthly_cap": "20,000P",
+    "condition": "로그인 7일 이상 + 전월 30만원(페이지 일부만 확인)"
+   },
+   {
+    "category": "카페",
+    "text": "스타벅스 건별 5천원 이상 5,000원 할인",
+    "rate_or_amount": "5,000원",
+    "monthly_cap": "월 1회",
+    "condition": "전월 로그인 100% + 전월 30만원"
+   }
+  ],
+  "exclusions": [
+   "모니머니 리워드는 삼성카드 다른 포인트와 합산 불가",
+   "모니모 미가입 시 전환 불가"
+  ],
+  "promotions": [],
+  "recent_changes": [],
+  "target_text": null,
+  "issuance": "모니모 앱 연동",
+  "app_features": [
+   "모니머니 리워드→모니모 계정 모니머니 자동 전환(매월 1일), 본인계좌 출금 가능",
+   "혜택 받은 결제도 전월실적 포함"
+  ],
+  "design_note": "블루(홀로그램)·플레이(렌티큘러)·더블(메탈릭) 3종",
+  "tags": [
+   "challenge",
+   "reward_point",
+   "discount_counts",
+   "insurance_link",
+   "spend_free",
+   "no_cap",
+   "dining_cafe",
+   "tiered_perf"
+  ],
+  "genz_fit": "mid",
+  "genz_fit_reason": "앱 로그인 보상과 현금 출금형 리워드는 GenZ에 맞지만 보험 9%·생활 필수 영역은 20대 지출과 거리가 있다.",
+  "source_url": "https://www.samsungcard.com/home/card/cardinfo/PGHPPCCCardCardinfoDetails001?code=AAP1817",
+  "source_urls": [
+   "https://www.samsungcard.com/home/card/cardinfo/PGHPPCCCardCardinfoDetails001?code=AAP1817"
+  ],
+  "checked": "2026-10-27",
+  "confidence": "medium",
+  "note": "심의필 2026-C1h-01625(2026-02-04~2027-02-03). 생활필수 1% 추가 적립의 실적 조건은 페이지 반복 구간이라 일부 추정. 혜택 금액도 전월실적에 포함된다고 명시(삼성카드에선 드문 설계)."
+ },
+ {
+  "id": "msamsung07",
+  "name": "삼성 iD SELECT ON",
+  "official_name": "삼성 iD SELECT ON 카드",
+  "issuer": "삼성카드",
+  "type": "credit",
+  "on_sale": true,
+  "role": "youth",
+  "launched": "2025-07-02(상세 페이지 내장 날짜)",
+  "annual_fee_won": {
+   "domestic": 20000,
+   "overseas": 20000
+  },
+  "tiers": [
+   {
+    "min_prev_month_spend_won": 0,
+    "benefit_summary": "해외 2% 무한도, 온라인 간편결제 1% 옵션 무한도"
+   },
+   {
+    "min_prev_month_spend_won": 300000,
+    "benefit_summary": "SELECT 옵션 주력 영역 월 5천원 + 보조 영역 월 5천원, 배달·커피·택시 각 5% 월 5천원, 인앱/디지털 50% 월 5천원"
+   },
+   {
+    "min_prev_month_spend_won": 600000,
+    "benefit_summary": "주력 영역 월 1만원, 인앱/디지털 월 1만원"
+   }
+  ],
+  "benefits": [
+   {
+    "category": "SELECT(택1, 매월 변경)",
+    "text": "음식점 주중 5%·주말(금~일) 10% + 온라인패션·쇼핑몰 5%",
+    "rate_or_amount": "5%/10%",
+    "monthly_cap": "주력 5천/1만원, 보조 5천원",
+    "condition": "전월 30/60만원"
+   },
+   {
+    "category": "SELECT(택1)",
+    "text": "온라인패션(무신사·W컨셉·29CM·지그재그 등)·쇼핑몰 주중 5%·주말 10% + 음식점 5%",
+    "rate_or_amount": "5%/10%",
+    "monthly_cap": "주력 5천/1만원, 보조 5천원",
+    "condition": "전월 30/60만원"
+   },
+   {
+    "category": "SELECT(택1)",
+    "text": "온라인 간편결제 1%",
+    "rate_or_amount": "1%",
+    "monthly_cap": "없음",
+    "condition": "실적 무관"
+   },
+   {
+    "category": "배달",
+    "text": "배민·쿠팡이츠·요기요 5%",
+    "rate_or_amount": "5%",
+    "monthly_cap": "5,000원",
+    "condition": "전월 30만원"
+   },
+   {
+    "category": "커피",
+    "text": "스타벅스·메가MGC·컴포즈 등 5%",
+    "rate_or_amount": "5%",
+    "monthly_cap": "5,000원",
+    "condition": "전월 30만원"
+   },
+   {
+    "category": "모빌리티",
+    "text": "택시·쏘카 5%",
+    "rate_or_amount": "5%",
+    "monthly_cap": "5,000원",
+    "condition": "전월 30만원"
+   },
+   {
+    "category": "디지털",
+    "text": "구글플레이·앱스토어 인앱결제(생성형 AI 포함), 넷플릭스·디즈니+·유튜브·티빙 50%",
+    "rate_or_amount": "50%",
+    "monthly_cap": "5,000/10,000원",
+    "condition": "전월 30/60만원"
+   },
+   {
+    "category": "해외",
+    "text": "해외 2%",
+    "rate_or_amount": "2%",
+    "monthly_cap": "없음",
+    "condition": "실적 무관"
+   }
+  ],
+  "exclusions": [
+   "무이자할부 이용금액",
+   "삼성카드 다른 할인이 적용된 이용금액",
+   "기프트/선불카드 구매·충전, 상품권 구매",
+   "자체 가맹점번호로 승인되는 일부 간편결제·키오스크 결제건",
+   "혜택 받은 금액은 전월실적 제외"
+  ],
+  "promotions": [],
+  "recent_changes": [],
+  "target_text": null,
+  "issuance": "모니모·삼성카드 앱/홈페이지",
+  "app_features": [
+   "모니모 앱·삼성카드 앱에서 옵션 매월 변경"
+  ],
+  "design_note": "모던·펑키(LED)·스탬프 + '나만의 카드 꾸미기'",
+  "tags": [
+   "select_item",
+   "monthly_switch",
+   "common_plus_select",
+   "time_slot",
+   "dining_cafe",
+   "online_shop",
+   "delivery",
+   "transit",
+   "subscription_ott",
+   "travel_fx",
+   "reward_discount",
+   "tiered_perf"
+  ],
+  "genz_fit": "high",
+  "genz_fit_reason": "저가 커피·배달·택시·쏘카·생성형 AI 인앱결제·온라인패션몰을 묶었고 주말 2배·매월 변경 구조다. 카드 꾸미기도 지원.",
+  "source_url": "https://www.samsungcard.com/home/card/cardinfo/PGHPPCCCardCardinfoDetails001?code=AAP1877",
+  "source_urls": [
+   "https://www.samsungcard.com/home/card/cardinfo/PGHPPCCCardCardinfoDetails001?code=AAP1877"
+  ],
+  "checked": "2026-10-27",
+  "confidence": "high",
+  "note": "심의필 2025-C1h-16905(2025-11-21~2026-11-20). 기존 DB gc13: 출처 기사 2025-08-28, 전월실적 null → 30만원 확인. '외식/쇼핑 5%, 주말 10%'에 보조 영역 5% 동시 제공을 보강."
+ },
+ {
+  "id": "msamsung08",
+  "name": "삼성 iD SELECT ALL",
+  "official_name": "삼성 iD SELECT ALL 카드",
+  "issuer": "삼성카드",
+  "type": "credit",
+  "on_sale": true,
+  "role": "flagship",
+  "launched": "2025-07-02(상세 페이지 내장 날짜)",
+  "annual_fee_won": {
+   "domestic": 20000,
+   "overseas": 20000
+  },
+  "tiers": [
+   {
+    "min_prev_month_spend_won": 0,
+    "benefit_summary": "옵션 '국내 0.7%' 선택 시 무한도, 해외 2%"
+   },
+   {
+    "min_prev_month_spend_won": 400000,
+    "benefit_summary": "SELECT1·SELECT2 각 월 7천원, 생활편의 5% 월 5천원, 디지털 50% 월 5천원"
+   },
+   {
+    "min_prev_month_spend_won": 800000,
+    "benefit_summary": "SELECT 각 월 1만원"
+   },
+   {
+    "min_prev_month_spend_won": 1200000,
+    "benefit_summary": "SELECT 각 월 1.5만원"
+   }
+  ],
+  "benefits": [
+   {
+    "category": "SELECT1(택1)",
+    "text": "국내 가맹점 0.7%(무한도) / 아파트관리비·통신 10% / 교육 10%",
+    "rate_or_amount": "0.7%/10%",
+    "monthly_cap": "7천/1만/1.5만원",
+    "condition": "전월 40/80/120만원"
+   },
+   {
+    "category": "SELECT2(택1)",
+    "text": "온라인쇼핑몰·의료·배달앱 7% / 음식점·편의점·할인점·주유 7%",
+    "rate_or_amount": "7%",
+    "monthly_cap": "7천/1만/1.5만원",
+    "condition": "전월 40/80/120만원"
+   },
+   {
+    "category": "생활편의",
+    "text": "다이소·NOL 티켓·알라딘·와인앤모어 5%",
+    "rate_or_amount": "5%",
+    "monthly_cap": "5,000원",
+    "condition": "전월 40만원"
+   },
+   {
+    "category": "디지털·멤버십",
+    "text": "넷플릭스·디즈니+·유튜브·티빙, 쿠팡 와우·네이버플러스 50%",
+    "rate_or_amount": "50%",
+    "monthly_cap": "5,000원",
+    "condition": "전월 40만원"
+   },
+   {
+    "category": "해외",
+    "text": "해외 2%",
+    "rate_or_amount": "2%",
+    "monthly_cap": "확인 불가",
+    "condition": "실적 무관"
+   }
+  ],
+  "exclusions": [
+   "무이자할부 이용금액",
+   "삼성카드 다른 할인이 적용된 이용금액",
+   "기프트/선불카드 구매·충전, 상품권 구매",
+   "자체 가맹점번호로 승인되는 일부 간편결제·키오스크 결제건",
+   "혜택 받은 금액 전월실적 제외"
+  ],
+  "promotions": [],
+  "recent_changes": [],
+  "target_text": null,
+  "issuance": "모니모·삼성카드 앱/홈페이지",
+  "app_features": [
+   "옵션 매월 변경(다음 달 1일 반영)"
+  ],
+  "design_note": "모던·펑키·스탬프(홀로그램) + '나만의 카드 꾸미기'",
+  "tags": [
+   "select_item",
+   "monthly_switch",
+   "common_plus_select",
+   "fixed_bills",
+   "dining_cafe",
+   "mart_daily",
+   "fuel",
+   "online_shop",
+   "delivery",
+   "subscription_ott",
+   "travel_fx",
+   "reward_discount",
+   "tiered_perf"
+  ],
+  "genz_fit": "mid",
+  "genz_fit_reason": "생활비 전반 선택형 대표 카드지만 전월 40만원 구간과 관리비·교육 옵션은 가구 지출 중심이다.",
+  "source_url": "https://www.samsungcard.com/home/card/cardinfo/PGHPPCCCardCardinfoDetails001?code=AAP1875",
+  "source_urls": [
+   "https://www.samsungcard.com/home/card/cardinfo/PGHPPCCCardCardinfoDetails001?code=AAP1875"
+  ],
+  "checked": "2026-10-27",
+  "confidence": "high",
+  "note": "심의필 2026-C1h-07094(2026-05-14~2027-05-13). 카드고릴라 주간 신용 순위 3위(2026-10-27). 기존 DB c07의 '수치·실적 null'을 보강: 40/80/120만원 구간 월 7천/1만/1.5만원. 해외 2% 한도는 확인 못 함."
+ },
+ {
+  "id": "msamsung09",
+  "name": "삼성 iD SELECT UP",
+  "official_name": "삼성 iD SELECT UP 카드",
+  "issuer": "삼성카드",
+  "type": "credit",
+  "on_sale": true,
+  "role": "other",
+  "launched": "2026-04-21(상세 페이지 내장 날짜) / 출시 보도 2026-07-06",
+  "annual_fee_won": {
+   "domestic": 18000,
+   "overseas": 18000
+  },
+  "tiers": [
+   {
+    "min_prev_month_spend_won": 0,
+    "benefit_summary": "국내 0.5%, 쇼핑 1%, 여가 2%(월 50만원), 해외수수료 할인"
+   },
+   {
+    "min_prev_month_spend_won": 500000,
+    "benefit_summary": "의료 20% 또는 생활(보험·주유·통신) 10% 월 7천원"
+   },
+   {
+    "min_prev_month_spend_won": 1000000,
+    "benefit_summary": "월 1만원"
+   },
+   {
+    "min_prev_month_spend_won": 1500000,
+    "benefit_summary": "월 1.5만원"
+   }
+  ],
+  "benefits": [
+   {
+    "category": "SELECT(택1, 매월 변경)",
+    "text": "병·의원·약국·한의원·동물병원 20%",
+    "rate_or_amount": "20%",
+    "monthly_cap": "7천/1만/1.5만원",
+    "condition": "전월 50/100/150만원"
+   },
+   {
+    "category": "SELECT(택1)",
+    "text": "보험·주유·이동통신 10%",
+    "rate_or_amount": "10%",
+    "monthly_cap": "7천/1만/1.5만원",
+    "condition": "전월 50/100/150만원"
+   },
+   {
+    "category": "기본",
+    "text": "국내 가맹점 0.5%",
+    "rate_or_amount": "0.5%",
+    "monthly_cap": "없음",
+    "condition": "실적 무관"
+   },
+   {
+    "category": "쇼핑",
+    "text": "백화점·할인점·온라인몰·홈쇼핑·컬리·오아시스·아울렛 1%",
+    "rate_or_amount": "1%",
+    "monthly_cap": "없음",
+    "condition": "실적 무관"
+   },
+   {
+    "category": "여가",
+    "text": "골프·항공·면세점·철도·NOL 티켓 2%",
+    "rate_or_amount": "2%",
+    "monthly_cap": "50만원",
+    "condition": "실적 무관"
+   },
+   {
+    "category": "해외",
+    "text": "해외수수료 할인",
+    "rate_or_amount": "수수료",
+    "monthly_cap": "없음",
+    "condition": "실적 무관"
+   }
+  ],
+  "exclusions": [
+   "무이자할부 이용금액",
+   "삼성카드 다른 할인이 적용된 이용금액",
+   "기프트/선불카드 구매·충전, 상품권 구매",
+   "자체 가맹점번호로 승인되는 일부 간편결제·키오스크 결제건",
+   "아파트 관리비는 전월실적에 포함(혜택 금액은 제외)"
+  ],
+  "promotions": [
+   {
+    "text": "출시 이벤트(8~9월 이용 시 캐시백·상품권, 보도·비교사이트 기준)",
+    "ends": "2026-09-30(종료)"
+   }
+  ],
+  "recent_changes": [
+   "2026-07 출시 보도(의료/생활 택1)"
+  ],
+  "target_text": null,
+  "issuance": "모니모·삼성카드 앱/홈페이지",
+  "app_features": [
+   "옵션 매월 변경"
+  ],
+  "design_note": "확인 불가(디자인 설명 미추출)",
+  "tags": [
+   "select_item",
+   "monthly_switch",
+   "common_plus_select",
+   "insurance_link",
+   "fuel",
+   "fixed_bills",
+   "simple_flat",
+   "reward_discount",
+   "tiered_perf"
+  ],
+  "genz_fit": "low",
+  "genz_fit_reason": "의료·보험·주유 중심이고 전월 50만원부터 시작해 20대 지출 구조와 맞지 않는다.",
+  "source_url": "https://www.samsungcard.com/home/card/cardinfo/PGHPPCCCardCardinfoDetails001?code=AAP1913",
+  "source_urls": [
+   "https://www.samsungcard.com/home/card/cardinfo/PGHPPCCCardCardinfoDetails001?code=AAP1913",
+   "https://www.heraldk.com/article/2026070601524511396"
+  ],
+  "checked": "2026-10-27",
+  "confidence": "high",
+  "note": "심의필 2026-C1h-07356(2026-05-19~2027-05-18). 신규 흐름(SELECT 시리즈 확장) 확인용으로 포함."
+ },
+ {
+  "id": "msamsung10",
+  "name": "삼성 iD ON",
+  "official_name": "삼성 iD ON 카드",
+  "issuer": "삼성카드",
+  "type": "credit",
+  "on_sale": true,
+  "role": "flagship",
+  "launched": "2021-09-01(상세 페이지 내장 날짜)",
+  "annual_fee_won": {
+   "domestic": 20000,
+   "overseas": 20000
+  },
+  "tiers": [
+   {
+    "min_prev_month_spend_won": 0,
+    "benefit_summary": "온라인 간편결제·해외 1%"
+   },
+   {
+    "min_prev_month_spend_won": 300000,
+    "benefit_summary": "많이 쓴 영역 30% 자동(월 1만원), 교통·통신·스트리밍 10% 월 1만원, 간편결제·해외 3% 월 5천원"
+   },
+   {
+    "min_prev_month_spend_won": 600000,
+    "benefit_summary": "교통·통신·스트리밍 월 2만원, 3% 월 1만원"
+   }
+  ],
+  "benefits": [
+   {
+    "category": "자동 맞춤",
+    "text": "커피전문점·배달앱(배민·요기요)·델리(쉐이크쉑·써브웨이·파리바게뜨·배스킨·던킨) 중 월 이용 최대 1개 영역 30%",
+    "rate_or_amount": "30%",
+    "monthly_cap": "10,000원",
+    "condition": "전월 30만원, 선택 없이 자동"
+   },
+   {
+    "category": "교통·통신·스트리밍",
+    "text": "대중교통·택시, 이동통신(알뜰폰 일부), 스트리밍 정기결제 10%",
+    "rate_or_amount": "10%",
+    "monthly_cap": "1만/2만원",
+    "condition": "전월 30/60만원"
+   },
+   {
+    "category": "온라인·해외",
+    "text": "온라인 간편결제·해외 3%(미달·한도 초과 시 1%)",
+    "rate_or_amount": "3%/1%",
+    "monthly_cap": "5천/1만원",
+    "condition": "전월 30/60만원"
+   }
+  ],
+  "exclusions": [
+   "무이자할부 이용금액",
+   "삼성카드 다른 할인이 적용된 이용금액",
+   "기프트/선불카드 구매·충전, 상품권 구매",
+   "자체 가맹점번호로 승인되는 일부 간편결제·키오스크 결제건",
+   "3%/10% 할인 이용금액은 전월실적 제외"
+  ],
+  "promotions": [],
+  "recent_changes": [],
+  "target_text": null,
+  "issuance": "실물 20,000원 / 모바일 15,000원(모니모페이)",
+  "app_features": [
+   "모바일카드",
+   "자동 최적 영역 선택(신청 불필요)"
+  ],
+  "design_note": "뉴블루(재생 플라스틱·노치)·모던·펑키",
+  "tags": [
+   "auto_best",
+   "dining_cafe",
+   "delivery",
+   "transit",
+   "fixed_bills",
+   "subscription_ott",
+   "online_shop",
+   "travel_fx",
+   "reward_discount",
+   "tiered_perf"
+  ],
+  "genz_fit": "mid",
+  "genz_fit_reason": "커피·배달·교통·스트리밍 구성은 20대에 맞지만 연회비 2만원이고 2021년 설계다.",
+  "source_url": "https://www.samsungcard.com/home/card/cardinfo/PGHPPCCCardCardinfoDetails001?code=AAP1731",
+  "source_urls": [
+   "https://www.samsungcard.com/home/card/cardinfo/PGHPPCCCardCardinfoDetails001?code=AAP1731"
+  ],
+  "checked": "2026-10-27",
+  "confidence": "high",
+  "note": "심의필 2026-C1h-09061(2026-06-18~2027-06-17). 2021년 숫자카드→iD 브랜드 개편 때 나온 대표 iD 카드(보조: 카드고릴라 기사 2021). 숫자카드(삼성카드 4 등)는 공식 페이지에서 '발급이 중단되었습니다'로 표시."
+ },
+ {
+  "id": "msamsung11",
+  "name": "taptap DIGITAL",
+  "official_name": "taptap DIGITAL",
+  "issuer": "삼성카드",
+  "type": "credit",
+  "on_sale": true,
+  "role": "youth",
+  "launched": "2020-07-06(상세 페이지 내장 날짜)",
+  "annual_fee_won": {
+   "domestic": 10000,
+   "overseas": 10000
+  },
+  "tiers": [
+   {
+    "min_prev_month_spend_won": 0,
+    "benefit_summary": "해외 1.5%(월 50만원)"
+   },
+   {
+    "min_prev_month_spend_won": 300000,
+    "benefit_summary": "간편결제 5% 월 1만원, 스트리밍 50% 월 5천원, 편의점·뷰티·다이소 10% 월 5천원"
+   },
+   {
+    "min_prev_month_spend_won": 600000,
+    "benefit_summary": "간편결제 1.5만원, 스트리밍 7천원"
+   },
+   {
+    "min_prev_month_spend_won": 900000,
+    "benefit_summary": "간편결제 2만원, 스트리밍 1만원"
+   }
+  ],
+  "benefits": [
+   {
+    "category": "간편결제",
+    "text": "삼성페이·네이버페이·카카오페이·PAYCO 등 온라인 간편결제 5%",
+    "rate_or_amount": "5%",
+    "monthly_cap": "1만/1.5만/2만원",
+    "condition": "전월 30/60/90만원"
+   },
+   {
+    "category": "스트리밍",
+    "text": "스트리밍 정기결제 50%",
+    "rate_or_amount": "50%",
+    "monthly_cap": "5천/7천/1만원",
+    "condition": "전월 30/60/90만원"
+   },
+   {
+    "category": "편의점·뷰티",
+    "text": "편의점·올리브영/롭스/랄라블라·다이소 10%",
+    "rate_or_amount": "10%",
+    "monthly_cap": "5,000원",
+    "condition": "전월 30만원"
+   },
+   {
+    "category": "해외",
+    "text": "해외 1.5%",
+    "rate_or_amount": "1.5%",
+    "monthly_cap": "50만원",
+    "condition": "실적 무관"
+   }
+  ],
+  "exclusions": [
+   "무이자할부 이용금액",
+   "삼성카드 다른 할인이 적용된 이용금액",
+   "기프트/선불카드 구매·충전, 상품권 구매",
+   "자체 가맹점번호로 승인되는 일부 간편결제·키오스크 결제건"
+  ],
+  "promotions": [],
+  "recent_changes": [],
+  "target_text": null,
+  "issuance": "실물 10,000원 / 모바일 5,000원",
+  "app_features": [
+   "모바일카드"
+  ],
+  "design_note": "확인 불가",
+  "tags": [
+   "online_shop",
+   "subscription_ott",
+   "mart_daily",
+   "travel_fx",
+   "reward_discount",
+   "tiered_perf"
+  ],
+  "genz_fit": "high",
+  "genz_fit_reason": "간편결제·스트리밍·편의점·올리브영·다이소에 몰린 디지털 소비형이고 모바일 연회비 5천원이다.",
+  "source_url": "https://www.samsungcard.com/home/card/cardinfo/PGHPPCCCardCardinfoDetails001?code=AAP1666",
+  "source_urls": [
+   "https://www.samsungcard.com/home/card/cardinfo/PGHPPCCCardCardinfoDetails001?code=AAP1666"
+  ],
+  "checked": "2026-10-27",
+  "confidence": "high",
+  "note": "심의필 2025-C1h-15937(2025-11-03~2026-11-02, 곧 만료). 헬스&뷰티에 롭스·랄라블라 등 철수 브랜드가 남아 있어 설계가 오래됨."
+ },
+ {
+  "id": "msamsung12",
+  "name": "삼성 iD GLOBAL",
+  "official_name": "삼성 iD GLOBAL 카드",
+  "issuer": "삼성카드",
+  "type": "credit",
+  "on_sale": true,
+  "role": "other",
+  "launched": "2024-01-30(상세 페이지 내장 날짜)",
+  "annual_fee_won": {
+   "domestic": 20000,
+   "overseas": 20000
+  },
+  "tiers": [
+   {
+    "min_prev_month_spend_won": 0,
+    "benefit_summary": "해외수수료 전액 할인, 해외 2%(월 30만원), 일상필수 1%, 국내 0.5%"
+   },
+   {
+    "min_prev_month_spend_won": 500000,
+    "benefit_summary": "삼성페이 해외 오프라인 5% 월 1만원, 인앱/디지털/멤버십 50% 월 1만원, 라운지 연 2회"
+   },
+   {
+    "min_prev_month_spend_won": 1000000,
+    "benefit_summary": "5%·50% 각 월 2만원"
+   }
+  ],
+  "benefits": [
+   {
+    "category": "해외",
+    "text": "해외수수료 결제일할인",
+    "rate_or_amount": "전액",
+    "monthly_cap": "없음",
+    "condition": "실적 무관"
+   },
+   {
+    "category": "해외",
+    "text": "해외 온·오프라인 2%",
+    "rate_or_amount": "2%",
+    "monthly_cap": "300,000원",
+    "condition": "실적 무관"
+   },
+   {
+    "category": "해외",
+    "text": "해외 오프라인 삼성페이(NFC) 5%",
+    "rate_or_amount": "5%",
+    "monthly_cap": "1만/2만원",
+    "condition": "전월 50/100만원"
+   },
+   {
+    "category": "라운지",
+    "text": "The Lounge 국내외 공항 라운지 본인 무료",
+    "rate_or_amount": "연 2회",
+    "monthly_cap": "월 1회",
+    "condition": "전월 50만원"
+   },
+   {
+    "category": "디지털",
+    "text": "구글플레이·앱스토어, 넷플릭스·디즈니+·유튜브, 쿠팡 와우·네이버플러스 50%",
+    "rate_or_amount": "50%",
+    "monthly_cap": "1만/2만원",
+    "condition": "전월 50/100만원"
+   },
+   {
+    "category": "일상필수",
+    "text": "간편결제·항공·여행사·면세점·크림/솔드아웃·온라인몰·백화점·홈쇼핑·편의점·커피·주유 1%",
+    "rate_or_amount": "1%",
+    "monthly_cap": "없음",
+    "condition": "실적 무관"
+   }
+  ],
+  "exclusions": [
+   "무이자할부 이용금액",
+   "삼성카드 다른 할인이 적용된 이용금액",
+   "기프트/선불카드 구매·충전, 상품권 구매",
+   "자체 가맹점번호로 승인되는 일부 간편결제·키오스크 결제건",
+   "해외 전체 이용금액은 전월실적 제외"
+  ],
+  "promotions": [],
+  "recent_changes": [],
+  "target_text": null,
+  "issuance": "모니모·삼성카드 앱/홈페이지",
+  "app_features": [
+   "The Lounge 앱 연동"
+  ],
+  "design_note": "딜리버리(3D)·토글·글로브 + '나만의 카드 고르기'(세계 20개 도시 일러스트)",
+  "tags": [
+   "travel_fx",
+   "lounge",
+   "subscription_ott",
+   "online_shop",
+   "reward_discount",
+   "paymethod_bonus",
+   "tiered_perf"
+  ],
+  "genz_fit": "mid",
+  "genz_fit_reason": "해외 직구·여행·리셀(크림·솔드아웃)을 노리지만 연 2회 라운지·5% 구간이 전월 50만원부터다.",
+  "source_url": "https://www.samsungcard.com/home/card/cardinfo/PGHPPCCCardCardinfoDetails001?code=AAP1824",
+  "source_urls": [
+   "https://www.samsungcard.com/home/card/cardinfo/PGHPPCCCardCardinfoDetails001?code=AAP1824"
+  ],
+  "checked": "2026-10-27",
+  "confidence": "high",
+  "note": "심의필 2025-C1h-16941(2025-11-21~2026-11-20). 카드고릴라 주간 신용 순위 20위(2026-10-27)."
+ },
+ {
+  "id": "msamsung13",
+  "name": "삼성 iD 해외 3.5",
+  "official_name": "삼성 iD 해외 3.5 카드",
+  "issuer": "삼성카드",
+  "type": "credit",
+  "on_sale": true,
+  "role": "other",
+  "launched": "2026-08-04(상세 페이지 내장 날짜)",
+  "annual_fee_won": {
+   "domestic": 15000,
+   "overseas": 15000
+  },
+  "tiers": [
+   {
+    "min_prev_month_spend_won": 0,
+    "benefit_summary": "해외 3.5%, 국내 0.7% (실적·한도 없음)"
+   }
+  ],
+  "benefits": [
+   {
+    "category": "해외",
+    "text": "해외 온·오프라인 가맹점 3.5% 결제일할인",
+    "rate_or_amount": "3.5%",
+    "monthly_cap": "없음",
+    "condition": "실적 무관, PG 경유 해외 온라인은 국내로 분류되어 제외"
+   },
+   {
+    "category": "국내",
+    "text": "국내 가맹점 0.7%",
+    "rate_or_amount": "0.7%",
+    "monthly_cap": "없음",
+    "condition": "실적 무관"
+   }
+  ],
+  "exclusions": [
+   "무이자할부 이용금액",
+   "삼성카드 다른 할인이 적용된 이용금액",
+   "기프트/선불카드 구매·충전, 상품권 구매",
+   "자체 가맹점번호로 승인되는 일부 간편결제·키오스크 결제건",
+   "매출전표 접수일 환율 적용"
+  ],
+  "promotions": [],
+  "recent_changes": [
+   "2026-08 신규(심의 2026-08-14)"
+  ],
+  "target_text": null,
+  "issuance": "모니모·삼성카드 앱/홈페이지",
+  "app_features": [],
+  "design_note": "글로브·커넥트 + '나만의 카드 꾸미기'",
+  "tags": [
+   "travel_fx",
+   "simple_flat",
+   "spend_free",
+   "no_cap",
+   "reward_discount"
+  ],
+  "genz_fit": "high",
+  "genz_fit_reason": "무실적·무한도 해외 3.5%는 해외여행·직구가 잦은 20대에 단순하게 먹힌다. 체크 트래블카드(환전 무료)와 다른 신용 해법.",
+  "source_url": "https://www.samsungcard.com/home/card/cardinfo/PGHPPCCCardCardinfoDetails001?code=AAP1921",
+  "source_urls": [
+   "https://www.samsungcard.com/home/card/cardinfo/PGHPPCCCardCardinfoDetails001?code=AAP1921"
+  ],
+  "checked": "2026-10-27",
+  "confidence": "high",
+  "note": "심의필 2026-C1h-12228(2026-08-14~2027-08-13). 언론 출시 기사는 찾지 못함(검색 결과 없음)."
+ },
+ {
+  "id": "msamsung14",
+  "name": "무신사 삼성카드",
+  "official_name": "무신사 삼성카드",
+  "issuer": "삼성카드",
+  "type": "credit",
+  "on_sale": true,
+  "role": "plcc",
+  "launched": "2026-02-25(상세 페이지 내장 날짜) / 협약 2026-04-15, 4월 말 출시 보도",
+  "annual_fee_won": {
+   "domestic": 10000,
+   "overseas": 10000
+  },
+  "tiers": [
+   {
+    "min_prev_month_spend_won": 0,
+    "benefit_summary": "무신사 2%(월 2만P), 국내외 1% 무한도"
+   },
+   {
+    "min_prev_month_spend_won": 300000,
+    "benefit_summary": "무신사 10%(월 4만P)"
+   }
+  ],
+  "benefits": [
+   {
+    "category": "무신사",
+    "text": "무신사·29CM·솔드아웃·무신사 스탠다드·무신사 엠프티 온·오프라인 무신사머니리워드",
+    "rate_or_amount": "10%/2%",
+    "monthly_cap": "40,000P/20,000P",
+    "condition": "전월 30만원 이상/미만"
+   },
+   {
+    "category": "기본",
+    "text": "국내외 가맹점 1% 무신사머니리워드",
+    "rate_or_amount": "1%",
+    "monthly_cap": "없음",
+    "condition": "실적 무관, 무신사 제외"
+   }
+  ],
+  "exclusions": [
+   "PG·간편결제로 결제 시(예: 네이버페이) 무신사 적립 제외",
+   "무신사 회원·무신사페이먼츠 미가입 시 포인트 전환 불가"
+  ],
+  "promotions": [
+   {
+    "text": "출시 시점 무신사 '멤버스데이' 연계(보도)",
+    "ends": "확인 불가"
+   }
+  ],
+  "recent_changes": [
+   "2026-04 무신사 PLCC 파트너가 현대카드에서 삼성카드로 교체(보도)"
+  ],
+  "target_text": null,
+  "issuance": "무신사/29CM/솔드아웃 회원 가입 필요, 무신사페이 자동 등록",
+  "app_features": [
+   "무신사·29CM·솔드아웃 앱에서 카드 정보·전월실적·한도 확인",
+   "적립금 무신사머니 포인트 자동 전환"
+  ],
+  "design_note": "무신사·패션·슈즈·뷰티·라이프스타일 5종(무신사 플랫폼 테마)",
+  "tags": [
+   "plcc_brand",
+   "online_shop",
+   "reward_point",
+   "tiered_perf",
+   "spend_free"
+  ],
+  "genz_fit": "high",
+  "genz_fit_reason": "10~30대가 회원 절반 이상인 무신사(보도) 전용이고 기본 1%가 무실적·무한도다. 출시 보도에 '2030 취향' 플레이트 문구.",
+  "source_url": "https://www.samsungcard.com/home/card/cardinfo/PGHPPCCCardCardinfoDetails001?code=AAP1911",
+  "source_urls": [
+   "https://www.samsungcard.com/home/card/cardinfo/PGHPPCCCardCardinfoDetails001?code=AAP1911",
+   "https://www.heraldk.com/article/2026041516245749478",
+   "https://dealsite.co.kr/articles/158500"
+  ],
+  "checked": "2026-10-27",
+  "confidence": "high",
+  "note": "심의필 2026-C1h-05832(2026-04-23~2027-04-22). 가족카드 있음(실적·한도 합산). '출시 1주일 1만 매'는 검색 요약에만 보여 미확인. 기존 DB gc12 정정 대상(on_sale·연회비·혜택)."
+ },
+ {
+  "id": "msamsung15",
+  "name": "토스 삼성카드",
+  "official_name": "토스 삼성카드",
+  "issuer": "삼성카드",
+  "type": "credit",
+  "on_sale": true,
+  "role": "plcc",
+  "launched": "2025-07-07(상세 페이지 내장 날짜)",
+  "annual_fee_won": {
+   "domestic": 15000,
+   "overseas": 15000
+  },
+  "tiers": [
+   {
+    "min_prev_month_spend_won": 0,
+    "benefit_summary": "해외 2% 무한도"
+   },
+   {
+    "min_prev_month_spend_won": 300000,
+    "benefit_summary": "토스 15%/온라인 10% 통합 월 1만원, 토스프라임/인앱/디지털 50% 월 5천원, 스타벅스 50% 월 5천원"
+   },
+   {
+    "min_prev_month_spend_won": 600000,
+    "benefit_summary": "월 2만원 / 7천원"
+   },
+   {
+    "min_prev_month_spend_won": 1000000,
+    "benefit_summary": "월 3만원 / 1만원"
+   }
+  ],
+  "benefits": [
+   {
+    "category": "토스",
+    "text": "토스페이(국내 온·오프라인)·토스쇼핑 15%",
+    "rate_or_amount": "15%",
+    "monthly_cap": "1만/2만/3만원(온라인 10%와 통합)",
+    "condition": "전월 30/60/100만원"
+   },
+   {
+    "category": "온라인",
+    "text": "온라인 간편결제·온라인쇼핑몰(쿠팡·네이버플러스스토어 등) 10%",
+    "rate_or_amount": "10%",
+    "monthly_cap": "통합",
+    "condition": "전월 30/60/100만원"
+   },
+   {
+    "category": "구독",
+    "text": "토스프라임·구글플레이/앱스토어·넷플릭스/디즈니+/유튜브/티빙 50%",
+    "rate_or_amount": "50%",
+    "monthly_cap": "5천/7천/1만원",
+    "condition": "전월 30/60/100만원"
+   },
+   {
+    "category": "카페",
+    "text": "스타벅스 50%",
+    "rate_or_amount": "50%",
+    "monthly_cap": "5,000원",
+    "condition": "전월 30만원"
+   },
+   {
+    "category": "해외",
+    "text": "해외 2%",
+    "rate_or_amount": "2%",
+    "monthly_cap": "없음",
+    "condition": "실적 무관"
+   }
+  ],
+  "exclusions": [
+   "무이자할부 이용금액",
+   "삼성카드 다른 할인이 적용된 이용금액",
+   "기프트/선불카드 구매·충전, 상품권 구매",
+   "자체 가맹점번호로 승인되는 일부 간편결제·키오스크 결제건",
+   "간편결제 경유 구독결제 제외",
+   "혜택 받은 금액 전월실적 제외"
+  ],
+  "promotions": [],
+  "recent_changes": [],
+  "target_text": null,
+  "issuance": "토스 앱 경유 신청(보도) / 삼성카드",
+  "app_features": [
+   "토스 앱 연계(토스페이·토스쇼핑·토스프라임)"
+  ],
+  "design_note": "확인 불가",
+  "tags": [
+   "plcc_brand",
+   "paymethod_bonus",
+   "online_shop",
+   "subscription_ott",
+   "dining_cafe",
+   "travel_fx",
+   "reward_discount",
+   "tiered_perf"
+  ],
+  "genz_fit": "high",
+  "genz_fit_reason": "토스 사용자층과 간편결제·구독·스타벅스 혜택이 겹친다. 연회비 1.5만원.",
+  "source_url": "https://www.samsungcard.com/home/card/cardinfo/PGHPPCCCardCardinfoDetails001?code=AAP1882",
+  "source_urls": [
+   "https://www.samsungcard.com/home/card/cardinfo/PGHPPCCCardCardinfoDetails001?code=AAP1882",
+   "https://toss.im/tossfeed/article/39673"
+  ],
+  "checked": "2026-10-27",
+  "confidence": "high",
+  "note": "심의필 2025-C1h-12246(2025-08-25). 기존 DB gc03 on_sale null → 판매 중."
+ },
+ {
+  "id": "msamsung16",
+  "name": "스타벅스 삼성카드",
+  "official_name": "스타벅스 삼성카드",
+  "issuer": "삼성카드",
+  "type": "credit",
+  "on_sale": true,
+  "role": "plcc",
+  "launched": "2025-07-11(상세 페이지 내장 날짜)",
+  "annual_fee_won": {
+   "domestic": 30000,
+   "overseas": 30000
+  },
+  "tiers": [
+   {
+    "min_prev_month_spend_won": 0,
+    "benefit_summary": "스타벅스 3만원당 별 1개, 선불 충전 3만원당 별 1개(월 30개)"
+   },
+   {
+    "min_prev_month_spend_won": 500000,
+    "benefit_summary": "스타벅스 1만원당 별 5개(한도 50개), 국내외 가맹점 3만원당 별 1개(월 100개)"
+   }
+  ],
+  "benefits": [
+   {
+    "category": "스타벅스",
+    "text": "스타벅스 누적 1만원당 별 5개(50만원 이상) / 3만원당 1개(미만)",
+    "rate_or_amount": "별 5개/1만원",
+    "monthly_cap": "50개",
+    "condition": "전월 50만원"
+   },
+   {
+    "category": "충전",
+    "text": "스타벅스 선불카드 충전 3만원당 별 1개",
+    "rate_or_amount": "별 1개/3만원",
+    "monthly_cap": "30개",
+    "condition": "실적 무관"
+   },
+   {
+    "category": "일반",
+    "text": "국내외 가맹점 3만원당 별 1개",
+    "rate_or_amount": "별 1개/3만원",
+    "monthly_cap": "100개",
+    "condition": "전월 50만원"
+   }
+  ],
+  "exclusions": [
+   "스타벅스 앱 회원·휴면 아닐 것",
+   "임대매장 제외(사이렌오더 포함)"
+  ],
+  "promotions": [],
+  "recent_changes": [],
+  "target_text": null,
+  "issuance": "스타벅스 멤버십 인증 후 신청",
+  "app_features": [
+   "별 리워드가 스타벅스 앱 '별'로 1~3영업일 내 자동 전환"
+  ],
+  "design_note": "모노·스타라이트(LED, 발급수수료 1만원)·홀로그린",
+  "tags": [
+   "plcc_brand",
+   "dining_cafe",
+   "reward_point",
+   "tiered_perf"
+  ],
+  "genz_fit": "mid",
+  "genz_fit_reason": "스타벅스는 20대 선호 브랜드지만 연회비 3만원·전월 50만원은 부담이 크다.",
+  "source_url": "https://www.samsungcard.com/home/card/cardinfo/PGHPPCCCardCardinfoDetails001?code=AAP1870",
+  "source_urls": [
+   "https://www.samsungcard.com/home/card/cardinfo/PGHPPCCCardCardinfoDetails001?code=AAP1870"
+  ],
+  "checked": "2026-10-27",
+  "confidence": "medium",
+  "note": "심의필 2026-C1h-10419(2026-07-10~2027-07-09). 50만원 미만 구간의 스타벅스 적립 한도는 표에서 읽지 못함."
+ },
+ {
+  "id": "msamsung17",
+  "name": "스타벅스 삼성체크카드",
+  "official_name": "스타벅스 삼성체크카드",
+  "issuer": "삼성카드",
+  "type": "debit",
+  "on_sale": true,
+  "role": "plcc",
+  "launched": "2025-07-29(상세 페이지 내장 날짜)",
+  "annual_fee_won": {
+   "domestic": 0,
+   "overseas": null
+  },
+  "tiers": [
+   {
+    "min_prev_month_spend_won": 300000,
+    "benefit_summary": "스타벅스 1만원당 별 2개(월 10개), 온라인몰·통신·올리브영/다이소·백화점 2만원당 별 1개(각 월 4개)"
+   }
+  ],
+  "benefits": [
+   {
+    "category": "스타벅스",
+    "text": "스타벅스 누적 1만원당 별 2개",
+    "rate_or_amount": "별 2개/1만원",
+    "monthly_cap": "10개",
+    "condition": "전월 30만원"
+   },
+   {
+    "category": "생활",
+    "text": "쿠팡 등 온라인몰·이동통신·올리브영/다이소·백화점 2만원당 별 1개",
+    "rate_or_amount": "별 1개/2만원",
+    "monthly_cap": "영역별 4개",
+    "condition": "전월 30만원"
+   }
+  ],
+  "exclusions": [
+   "스타벅스 선불카드 충전 제외",
+   "만 19세 이상 발급"
+  ],
+  "promotions": [],
+  "recent_changes": [],
+  "target_text": null,
+  "issuance": "스타벅스 멤버십 인증 후 신청, 국내전용",
+  "app_features": [
+   "스타벅스 앱 별 자동 전환"
+  ],
+  "design_note": "확인 불가",
+  "tags": [
+   "plcc_brand",
+   "check_card",
+   "dining_cafe",
+   "reward_point",
+   "online_shop",
+   "mart_daily"
+  ],
+  "genz_fit": "high",
+  "genz_fit_reason": "연회비 없는 체크카드로 스타벅스 별을 모을 수 있어 신용 이력이 짧은 20대 초반에 맞다.",
+  "source_url": "https://www.samsungcard.com/home/card/cardinfo/PGHPPCCCardCardinfoDetails001?code=ABP1871",
+  "source_urls": [
+   "https://www.samsungcard.com/home/card/cardinfo/PGHPPCCCardCardinfoDetails001?code=ABP1871"
+  ],
+  "checked": "2026-10-27",
+  "confidence": "high",
+  "note": "준법심의필 S3117-26-2575(2026-05-18). 삼성카드 체크카드 목록 첫 번째에 노출."
+ },
+ {
+  "id": "msamsung18",
+  "name": "번개장터 삼성카드",
+  "official_name": "번개장터 삼성카드",
+  "issuer": "삼성카드",
+  "type": "credit",
+  "on_sale": true,
+  "role": "plcc",
+  "launched": "2025-07-29(상세 페이지 내장 날짜)",
+  "annual_fee_won": {
+   "domestic": 20000,
+   "overseas": 20000
+  },
+  "tiers": [
+   {
+    "min_prev_month_spend_won": 0,
+    "benefit_summary": "국내외 1% 번개포인트 무한도"
+   },
+   {
+    "min_prev_month_spend_won": 300000,
+    "benefit_summary": "번개장터 2% 추가(월 3만P)"
+   },
+   {
+    "min_prev_month_spend_won": 1000000,
+    "benefit_summary": "추가 월 4만P"
+   }
+  ],
+  "benefits": [
+   {
+    "category": "기본",
+    "text": "국내외 가맹점 1% 번개포인트",
+    "rate_or_amount": "1%",
+    "monthly_cap": "없음",
+    "condition": "실적 무관"
+   },
+   {
+    "category": "번개장터",
+    "text": "번개장터 결제 2% 추가(총 3%)",
+    "rate_or_amount": "+2%",
+    "monthly_cap": "30,000/40,000P",
+    "condition": "전월 30/100만원"
+   }
+  ],
+  "exclusions": [
+   "번개장터 홈페이지·앱 결제만 추가 적립"
+  ],
+  "promotions": [],
+  "recent_changes": [],
+  "target_text": null,
+  "issuance": "확인 불가",
+  "app_features": [
+   "번개포인트 다음 달 20일 적립, 번개장터에서 현금처럼 사용"
+  ],
+  "design_note": "확인 불가",
+  "tags": [
+   "plcc_brand",
+   "online_shop",
+   "reward_point",
+   "spend_free",
+   "no_cap",
+   "value_spend_reward"
+  ],
+  "genz_fit": "mid",
+  "genz_fit_reason": "중고거래 플랫폼 제휴로 20대 이용층과 겹치지만 연회비 2만원에 혜택은 포인트 3%뿐이다.",
+  "source_url": "https://www.samsungcard.com/home/card/cardinfo/PGHPPCCCardCardinfoDetails001?code=AAP1873",
+  "source_urls": [
+   "https://www.samsungcard.com/home/card/cardinfo/PGHPPCCCardCardinfoDetails001?code=AAP1873"
+  ],
+  "checked": "2026-10-27",
+  "confidence": "medium",
+  "note": "심의필 2026-C1h-11665(2026-08-04). 페이지에서 확인된 혜택은 두 가지뿐(추가 혜택 존재 여부 확인 못 함)."
+ },
+ {
+  "id": "msamsung19",
+  "name": "네이버웹툰 삼성 iD",
+  "official_name": "네이버웹툰 삼성 iD 카드",
+  "issuer": "삼성카드",
+  "type": "credit",
+  "on_sale": true,
+  "role": "plcc",
+  "launched": "2022-12-23(상세 페이지 내장 날짜)",
+  "annual_fee_won": {
+   "domestic": 10000,
+   "overseas": 10000
+  },
+  "tiers": [
+   {
+    "min_prev_month_spend_won": 0,
+    "benefit_summary": "네이버페이 결제 1%, 해외 1% 무한도"
+   },
+   {
+    "min_prev_month_spend_won": 300000,
+    "benefit_summary": "웹툰·시리즈·치지직·네이버플러스 50% 월 1만P, 온라인몰 5% 월 5천P, 배달·스타벅스 5% 월 5천P"
+   },
+   {
+    "min_prev_month_spend_won": 600000,
+    "benefit_summary": "50% 월 2만P, 온라인몰 7천P"
+   },
+   {
+    "min_prev_month_spend_won": 900000,
+    "benefit_summary": "50% 월 3만P, 온라인몰 1만P"
+   }
+  ],
+  "benefits": [
+   {
+    "category": "디지털",
+    "text": "네이버웹툰·시리즈 쿠키, 치지직 구독, 네이버플러스 멤버십(스튜던트 포함) 50% 네이버페이 포인트",
+    "rate_or_amount": "50%",
+    "monthly_cap": "1만/2만/3만P",
+    "condition": "전월 30/60/90만원, 제3자 인앱은 안드로이드만"
+   },
+   {
+    "category": "간편결제",
+    "text": "국내 가맹점 네이버페이 결제 1%",
+    "rate_or_amount": "1%",
+    "monthly_cap": "없음",
+    "condition": "실적 무관"
+   },
+   {
+    "category": "배달·카페",
+    "text": "배민·쿠팡이츠·스타벅스 5%",
+    "rate_or_amount": "5%",
+    "monthly_cap": "5,000P",
+    "condition": "전월 30만원"
+   },
+   {
+    "category": "온라인",
+    "text": "쿠팡·G마켓·11번가 등 5%",
+    "rate_or_amount": "5%",
+    "monthly_cap": "5천/7천/1만P",
+    "condition": "전월 30/60/90만원"
+   },
+   {
+    "category": "해외",
+    "text": "해외 1%",
+    "rate_or_amount": "1%",
+    "monthly_cap": "없음",
+    "condition": "실적 무관"
+   }
+  ],
+  "exclusions": [
+   "Google Play 내 네이버페이 결제 제외",
+   "혜택 받은 금액 전월실적 제외"
+  ],
+  "promotions": [],
+  "recent_changes": [],
+  "target_text": null,
+  "issuance": "확인 불가",
+  "app_features": [
+   "네이버페이 포인트 다음 달 20일 적립"
+  ],
+  "design_note": "베이직(네이버 그린)·유미의 세포들 캐릭터 플레이트",
+  "tags": [
+   "plcc_brand",
+   "subscription_ott",
+   "paymethod_bonus",
+   "delivery",
+   "dining_cafe",
+   "online_shop",
+   "reward_point",
+   "tiered_perf"
+  ],
+  "genz_fit": "high",
+  "genz_fit_reason": "웹툰·치지직·네이버플러스 스튜던트 등 10~20대 콘텐츠 소비에 50% 적립과 IP 캐릭터 디자인을 붙였다.",
+  "source_url": "https://www.samsungcard.com/home/card/cardinfo/PGHPPCCCardCardinfoDetails001?code=AAP1785",
+  "source_urls": [
+   "https://www.samsungcard.com/home/card/cardinfo/PGHPPCCCardCardinfoDetails001?code=AAP1785"
+  ],
+  "checked": "2026-10-27",
+  "confidence": "high",
+  "note": "심의필 2026-C1h-09060(2026-06-18) 갱신. 공식 문구 '네이버웹툰 애독자를 위해 준비한 첫 카드'."
+ },
+ {
+  "id": "msamsung20",
+  "name": "W컨셉 삼성카드",
+  "official_name": "W컨셉 삼성카드",
+  "issuer": "삼성카드",
+  "type": "credit",
+  "on_sale": null,
+  "role": "plcc",
+  "launched": "2023-10-24(상세 페이지 내장 날짜)",
+  "annual_fee_won": {
+   "domestic": 10000,
+   "overseas": 10000
+  },
+  "tiers": [
+   {
+    "min_prev_month_spend_won": 0,
+    "benefit_summary": "해외 1.5% 무한도"
+   },
+   {
+    "min_prev_month_spend_won": 300000,
+    "benefit_summary": "W컨셉 7% 월 1만P, 커피·올리브영·컬리·통신 7% 월 5천P, 디지털 20% 월 5천P"
+   },
+   {
+    "min_prev_month_spend_won": 600000,
+    "benefit_summary": "W컨셉 1.5만P, 생활 7천P"
+   },
+   {
+    "min_prev_month_spend_won": 900000,
+    "benefit_summary": "W컨셉 3만P, 생활 1만P"
+   }
+  ],
+  "benefits": [
+   {
+    "category": "W컨셉",
+    "text": "W컨셉 7% W POINT",
+    "rate_or_amount": "7%",
+    "monthly_cap": "1만/1.5만/3만P",
+    "condition": "전월 30/60/90만원"
+   },
+   {
+    "category": "생활",
+    "text": "커피전문점·올리브영·컬리·이동통신 7%",
+    "rate_or_amount": "7%",
+    "monthly_cap": "5천/7천/1만P",
+    "condition": "전월 30/60/90만원"
+   },
+   {
+    "category": "디지털",
+    "text": "OTT·음원 정기결제 20%",
+    "rate_or_amount": "20%",
+    "monthly_cap": "5,000P",
+    "condition": "전월 30만원, 인앱 제외"
+   },
+   {
+    "category": "해외",
+    "text": "해외 1.5%",
+    "rate_or_amount": "1.5%",
+    "monthly_cap": "없음",
+    "condition": "실적 무관"
+   }
+  ],
+  "exclusions": [
+   "공식 홈페이지·앱 결제만"
+  ],
+  "promotions": [],
+  "recent_changes": [],
+  "target_text": null,
+  "issuance": "확인 불가",
+  "app_features": [
+   "W POINT 다음 달 25일 적립"
+  ],
+  "design_note": "확인 불가",
+  "tags": [
+   "plcc_brand",
+   "online_shop",
+   "dining_cafe",
+   "subscription_ott",
+   "fixed_bills",
+   "travel_fx",
+   "reward_point",
+   "tiered_perf"
+  ],
+  "genz_fit": "mid",
+  "genz_fit_reason": "2030 여성 패션 플랫폼 제휴지만 심의가 2023년에 멈춰 있다.",
+  "source_url": "https://www.samsungcard.com/home/card/cardinfo/PGHPPCCCardCardinfoDetails001?code=AAP1812",
+  "source_urls": [
+   "https://www.samsungcard.com/home/card/cardinfo/PGHPPCCCardCardinfoDetails001?code=AAP1812"
+  ],
+  "checked": "2026-10-27",
+  "confidence": "low",
+  "note": "심의필 2023-C1a-11848(2023-10-30) 이후 갱신 없음. 페이지에 발급 중단 문구는 없으나 판매 여부 확인 불가(on_sale null)."
+ },
+ {
+  "id": "msamsung21",
+  "name": "카카오페이신용카드",
+  "official_name": "카카오페이신용카드",
+  "issuer": "삼성카드",
+  "type": "credit",
+  "on_sale": null,
+  "role": "plcc",
+  "launched": "2021-03-24(상세 페이지 내장 날짜)",
+  "annual_fee_won": {
+   "domestic": 10000,
+   "overseas": 10000
+  },
+  "tiers": [
+   {
+    "min_prev_month_spend_won": 0,
+    "benefit_summary": "카카오페이 결제 2%, 선물하기 3%, 국내 1%, 해외 1% (무한도)"
+   },
+   {
+    "min_prev_month_spend_won": 300000,
+    "benefit_summary": "+ 통신 5만원 이상 3,000P(월 1회), 스트리밍 10% 월 2천P"
+   }
+  ],
+  "benefits": [
+   {
+    "category": "선물하기",
+    "text": "카카오톡 선물하기 카카오페이 결제 3%",
+    "rate_or_amount": "3%",
+    "monthly_cap": "없음",
+    "condition": "실적 무관"
+   },
+   {
+    "category": "간편결제",
+    "text": "카카오페이 결제 2%",
+    "rate_or_amount": "2%",
+    "monthly_cap": "없음",
+    "condition": "실적 무관"
+   },
+   {
+    "category": "기본",
+    "text": "국내 가맹점 1%",
+    "rate_or_amount": "1%",
+    "monthly_cap": "없음",
+    "condition": "실적 무관"
+   },
+   {
+    "category": "통신",
+    "text": "이동통신 건별 5만원 이상 3,000P",
+    "rate_or_amount": "3,000P",
+    "monthly_cap": "월 1회",
+    "condition": "전월 30만원"
+   },
+   {
+    "category": "스트리밍",
+    "text": "넷플릭스·웨이브·티빙·왓챠 10%",
+    "rate_or_amount": "10%",
+    "monthly_cap": "2,000P",
+    "condition": "전월 30만원"
+   },
+   {
+    "category": "해외",
+    "text": "해외 1%",
+    "rate_or_amount": "1%",
+    "monthly_cap": "없음",
+    "condition": "실적 무관"
+   }
+  ],
+  "exclusions": [
+   "카카오페이에 연동된 다른 간편결제(삼성페이 등) 제외"
+  ],
+  "promotions": [],
+  "recent_changes": [],
+  "target_text": null,
+  "issuance": "카카오페이 앱(카드번호도 카카오톡 페이홈에서 확인)",
+  "app_features": [
+   "카카오톡 > 페이홈에서 카드 정보 확인",
+   "포인트 다음 날 적립"
+  ],
+  "design_note": "확인 불가(특수 소재 플레이트 존재)",
+  "tags": [
+   "plcc_brand",
+   "paymethod_bonus",
+   "spend_free",
+   "no_cap",
+   "online_shop",
+   "subscription_ott",
+   "reward_point"
+  ],
+  "genz_fit": "mid",
+  "genz_fit_reason": "카카오페이·선물하기 무실적 적립은 20대에 익숙하지만 심의가 2023년이고 혜택 폭이 좁다.",
+  "source_url": "https://www.samsungcard.com/home/card/cardinfo/PGHPPCCCardCardinfoDetails001?code=AAP1712",
+  "source_urls": [
+   "https://www.samsungcard.com/home/card/cardinfo/PGHPPCCCardCardinfoDetails001?code=AAP1712"
+  ],
+  "checked": "2026-10-27",
+  "confidence": "low",
+  "note": "심의필 2023-C1h-04160(2023-04-24) 이후 갱신 없음. 판매 여부 확인 불가."
+ },
+ {
+  "id": "msamsung22",
+  "name": "다이소 삼성카드",
+  "official_name": "다이소 삼성카드",
+  "issuer": "삼성카드",
+  "type": "credit",
+  "on_sale": true,
+  "role": "plcc",
+  "launched": "2020-04-01(상세 페이지 내장 날짜)",
+  "annual_fee_won": {
+   "domestic": 8000,
+   "overseas": 8000
+  },
+  "tiers": [
+   {
+    "min_prev_month_spend_won": 0,
+    "benefit_summary": "다이소몰 1%, 할인점·온라인몰·편의점·의료 1%, 다이소 멤버십 0.5% 추가"
+   },
+   {
+    "min_prev_month_spend_won": 300000,
+    "benefit_summary": "다이소·다이소몰 1만원 이상 2천원/2만원 이상 3천원, 커피 2천원, 배달 2천원(각 일 1회·월 5회)"
+   },
+   {
+    "min_prev_month_spend_won": 600000,
+    "benefit_summary": "다이소 3천/4천원"
+   }
+  ],
+  "benefits": [
+   {
+    "category": "다이소",
+    "text": "다이소 오프라인·다이소몰 건별 1만원 이상 2,000~4,000원",
+    "rate_or_amount": "2천~4천원",
+    "monthly_cap": "일 1회·월 5회",
+    "condition": "전월 30/60만원"
+   },
+   {
+    "category": "커피",
+    "text": "커피전문점 1만원 이상 2,000원",
+    "rate_or_amount": "2,000원",
+    "monthly_cap": "통합 월 5회",
+    "condition": "전월 30만원"
+   },
+   {
+    "category": "배달",
+    "text": "배민·요기요·쿠팡이츠 2만원 이상 2,000원",
+    "rate_or_amount": "2,000원",
+    "monthly_cap": "통합 월 5회",
+    "condition": "전월 30만원"
+   },
+   {
+    "category": "기본",
+    "text": "할인점·온라인몰·편의점·의료·다이소몰 1%",
+    "rate_or_amount": "1%",
+    "monthly_cap": "없음",
+    "condition": "실적 무관"
+   }
+  ],
+  "exclusions": [
+   "무이자할부 이용금액",
+   "삼성카드 다른 할인이 적용된 이용금액",
+   "기프트/선불카드 구매·충전, 상품권 구매",
+   "자체 가맹점번호로 승인되는 일부 간편결제·키오스크 결제건"
+  ],
+  "promotions": [],
+  "recent_changes": [],
+  "target_text": null,
+  "issuance": "확인 불가",
+  "app_features": [],
+  "design_note": "확인 불가",
+  "tags": [
+   "plcc_brand",
+   "mart_daily",
+   "dining_cafe",
+   "delivery",
+   "online_shop",
+   "reward_flat_refund",
+   "count_based",
+   "txn_threshold",
+   "reward_discount",
+   "tiered_perf"
+  ],
+  "genz_fit": "mid",
+  "genz_fit_reason": "다이소·커피·배달 건당 정액 할인은 20대 소액 소비에 맞고 연회비 8천원으로 낮다.",
+  "source_url": "https://www.samsungcard.com/home/card/cardinfo/PGHPPCCCardCardinfoDetails001?code=AAP1653",
+  "source_urls": [
+   "https://www.samsungcard.com/home/card/cardinfo/PGHPPCCCardCardinfoDetails001?code=AAP1653"
+  ],
+  "checked": "2026-10-27",
+  "confidence": "high",
+  "note": "심의필 2026-C1h-15171(2026-10-02~2027-10-01), 최근 갱신."
+ },
+ {
+  "id": "msamsung23",
+  "name": "K-패스 삼성체크카드",
+  "official_name": "K-패스 삼성체크카드",
+  "issuer": "삼성카드",
+  "type": "debit",
+  "on_sale": true,
+  "role": "youth",
+  "launched": "2023-05-26(상세 페이지 출시일자, 알뜰교통플러스 체크에서 전환된 것으로 보임)",
+  "annual_fee_won": {
+   "domestic": 0,
+   "overseas": 0
+  },
+  "tiers": [
+   {
+    "min_prev_month_spend_won": 300000,
+    "benefit_summary": "대중교통 10% 월 2,500원, 통신 10% 월 2,500원, 편의점·커피·제과 1만원 이상 1,000원(월 3회), CGV 3,000원(연 6회)"
+   }
+  ],
+  "benefits": [
+   {
+    "category": "교통",
+    "text": "버스·지하철 10% 캐시백",
+    "rate_or_amount": "10%",
+    "monthly_cap": "2,500원",
+    "condition": "전월 30만원"
+   },
+   {
+    "category": "통신",
+    "text": "이동통신 정기결제 10% 캐시백",
+    "rate_or_amount": "10%",
+    "monthly_cap": "2,500원",
+    "condition": "전월 30만원"
+   },
+   {
+    "category": "편의점·카페",
+    "text": "편의점·커피전문점·제과 1만원 이상 1,000원 캐시백",
+    "rate_or_amount": "1,000원",
+    "monthly_cap": "월 3회",
+    "condition": "전월 30만원"
+   },
+   {
+    "category": "영화",
+    "text": "CGV 5천원 이상 3,000원",
+    "rate_or_amount": "3,000원",
+    "monthly_cap": "연 6회",
+    "condition": "전월 30만원"
+   },
+   {
+    "category": "정부 환급",
+    "text": "K-패스 환급(청년 만 19~34세 30%, 모두의 카드 정액 초과분 100% 환급 등)",
+    "rate_or_amount": "20~53%",
+    "monthly_cap": "정책 기준",
+    "condition": "K-패스 정책"
+   }
+  ],
+  "exclusions": [
+   "시외·고속버스 제외",
+   "이동통신요금 납부건 실적 제외"
+  ],
+  "promotions": [
+   {
+    "text": "K-패스 환급금 확대(출퇴근 시차 시간대 청년 30%→60% 등)",
+    "ends": "2026-09-30"
+   }
+  ],
+  "recent_changes": [],
+  "target_text": null,
+  "issuance": "확인 불가(후불교통 탑재)",
+  "app_features": [
+   "K-패스 앱 연동 환급"
+  ],
+  "design_note": "확인 불가",
+  "tags": [
+   "check_card",
+   "govt_link",
+   "transit",
+   "fixed_bills",
+   "mart_daily",
+   "dining_cafe",
+   "reward_cashback",
+   "count_based",
+   "txn_threshold"
+  ],
+  "genz_fit": "high",
+  "genz_fit_reason": "청년(만 19~34세) K-패스 환급을 그대로 받는 체크카드라 대중교통 통학·통근 20대에 맞는다.",
+  "source_url": "https://www.samsungcard.com/home/card/cardinfo/PGHPPCCCardCardinfoDetails001?code=ABP1800",
+  "source_urls": [
+   "https://www.samsungcard.com/home/card/cardinfo/PGHPPCCCardCardinfoDetails001?code=ABP1800"
+  ],
+  "checked": "2026-10-27",
+  "confidence": "medium",
+  "note": "준법심의필 S3893-24-1103(2024-03-05). 카드 혜택 이름에 '(알뜰교통플러스 삼성체크카드)'가 남아 있어 알뜰교통 체크를 K-패스로 전환한 상품으로 보임(해석). 체크카드 목록 페이지에는 노출되지 않음."
+ },
+ {
+  "id": "msamsung24",
+  "name": "SC제일은행 삼성체크카드 YOUNG",
+  "official_name": "SC제일은행 삼성체크카드 YOUNG",
+  "issuer": "삼성카드",
+  "type": "debit",
+  "on_sale": null,
+  "role": "youth",
+  "launched": "2016-05-30(상세 페이지 내장 날짜)",
+  "annual_fee_won": {
+   "domestic": 0,
+   "overseas": 0
+  },
+  "tiers": [
+   {
+    "min_prev_month_spend_won": 300000,
+    "benefit_summary": "통신 10% 월 2,500원, 대중교통 10% 월 2,500원, 편의점·커피·제과 1,000원 월 3회"
+   }
+  ],
+  "benefits": [
+   {
+    "category": "통신",
+    "text": "SKT·KT·LG U+ 자동결제 10% 캐시백",
+    "rate_or_amount": "10%",
+    "monthly_cap": "2,500원",
+    "condition": "전월 30만원(교통·통신 제외)"
+   },
+   {
+    "category": "교통",
+    "text": "버스·지하철 후불교통 10%",
+    "rate_or_amount": "10%",
+    "monthly_cap": "2,500원",
+    "condition": "전월 30만원"
+   },
+   {
+    "category": "편의점·카페",
+    "text": "편의점·커피·제과 1만원 이상 1,000원",
+    "rate_or_amount": "1,000원",
+    "monthly_cap": "월 3회",
+    "condition": "전월 30만원"
+   },
+   {
+    "category": "영화",
+    "text": "CGV 현장·온라인 3,000원",
+    "rate_or_amount": "3,000원",
+    "monthly_cap": "각 연 3회",
+    "condition": "직전 3개월 월평균 30만원"
+   },
+   {
+    "category": "레저",
+    "text": "놀이공원 자유이용권 50%, 워터파크 30%",
+    "rate_or_amount": "50%/30%",
+    "monthly_cap": "연 5회",
+    "condition": "확인 불가"
+   }
+  ],
+  "exclusions": [
+   "결제계좌 SC제일은행"
+  ],
+  "promotions": [],
+  "recent_changes": [],
+  "target_text": "20대를 위한 실속있는 캐시백",
+  "issuance": "SC제일은행 계좌 필요",
+  "app_features": [],
+  "design_note": "확인 불가",
+  "tags": [
+   "check_card",
+   "transit",
+   "fixed_bills",
+   "mart_daily",
+   "dining_cafe",
+   "reward_cashback",
+   "count_based",
+   "txn_threshold",
+   "bank_bundle"
+  ],
+  "genz_fit": "mid",
+  "genz_fit_reason": "공식 페이지에 '20대를 위한' 문구가 있는 유일한 삼성카드 상품이지만 2016년 설계에 한도가 몇천 원이다.",
+  "source_url": "https://www.samsungcard.com/home/card/cardinfo/PGHPPCCCardCardinfoDetails001?code=ABP1457",
+  "source_urls": [
+   "https://www.samsungcard.com/home/card/cardinfo/PGHPPCCCardCardinfoDetails001?code=ABP1457",
+   "https://www.samsungcard.com/personal/card/check-card/UHPPCA0206M0.jsp"
+  ],
+  "checked": "2026-10-27",
+  "confidence": "medium",
+  "note": "심의필 H3121-16-1135(2016-05-26). 체크카드 목록에 노출되나 신규 발급 여부 확인 못 함. 이번에 페이지 내장 데이터에서 '20대를 위한 실속있는 캐시백'(혜택 요약 제목)과 키워드 '20대, young' 확인 → 기존 B의 '연령 문구 0개' 정정."
+ },
+ {
+  "id": "msamsung25",
+  "name": "KB국민은행 모니모 삼성체크카드",
+  "official_name": "KB국민은행 모니모 삼성체크카드",
+  "issuer": "삼성카드",
+  "type": "debit",
+  "on_sale": true,
+  "role": "other",
+  "launched": "2025-04-03(상세 페이지 내장 날짜)",
+  "annual_fee_won": {
+   "domestic": 0,
+   "overseas": null
+  },
+  "tiers": [
+   {
+    "min_prev_month_spend_won": 0,
+    "benefit_summary": "국내 0.3% 빅포인트, 실적·한도 없음"
+   }
+  ],
+  "benefits": [
+   {
+    "category": "기본",
+    "text": "국내 가맹점 0.3% 빅포인트",
+    "rate_or_amount": "0.3%",
+    "monthly_cap": "없음",
+    "condition": "실적 무관"
+   }
+  ],
+  "exclusions": [
+   "삼성카드 할인 적용 금액"
+  ],
+  "promotions": [],
+  "recent_changes": [],
+  "target_text": null,
+  "issuance": "모니모 앱에서만 신청, '모니모 KB 매일이자 통장' 개설 고객용",
+  "app_features": [
+   "모니모 KB 매일이자 통장 결제계좌",
+   "후불교통 신청 가능"
+  ],
+  "design_note": "확인 불가",
+  "tags": [
+   "check_card",
+   "bank_bundle",
+   "simple_flat",
+   "spend_free",
+   "no_cap",
+   "reward_point"
+  ],
+  "genz_fit": "mid",
+  "genz_fit_reason": "파킹통장과 묶인 무실적 체크라 사회초년생 첫 통장 수요와 맞지만 혜택이 0.3%로 얇다.",
+  "source_url": "https://www.samsungcard.com/home/card/cardinfo/PGHPPCCCardCardinfoDetails001?code=ABP1853",
+  "source_urls": [
+   "https://www.samsungcard.com/home/card/cardinfo/PGHPPCCCardCardinfoDetails001?code=ABP1853"
+  ],
+  "checked": "2026-10-27",
+  "confidence": "high",
+  "note": "준법심의필 S3728-25-1518(2025-03-20). 은행이 없는 삼성카드가 모니모로 은행 계좌(KB)를 붙인 사례."
+ },
+ {
+  "id": "msamsung26",
+  "name": "기후동행 삼성카드",
+  "official_name": "기후동행 삼성카드",
+  "issuer": "삼성카드",
+  "type": "credit",
+  "on_sale": false,
+  "role": "youth",
+  "launched": "2024-11-14(상세 페이지 내장 날짜)",
+  "annual_fee_won": {
+   "domestic": 7000,
+   "overseas": 7000
+  },
+  "tiers": [
+   {
+    "min_prev_month_spend_won": 400000,
+    "benefit_summary": "커피·편의점 10% 월 3천원, 통신 5% 월 3천원, 생활편의 5%"
+   },
+   {
+    "min_prev_month_spend_won": 800000,
+    "benefit_summary": "커피·편의점 월 6천원, 통신 7% 월 6천원, 생활편의 7%"
+   }
+  ],
+  "benefits": [
+   {
+    "category": "카페·편의점",
+    "text": "커피전문점·편의점 10%",
+    "rate_or_amount": "10%",
+    "monthly_cap": "3천/6천원",
+    "condition": "전월 40/80만원"
+   },
+   {
+    "category": "통신",
+    "text": "이동통신 5%/7%",
+    "rate_or_amount": "5%/7%",
+    "monthly_cap": "3천/6천원",
+    "condition": "전월 40/80만원"
+   },
+   {
+    "category": "생활편의",
+    "text": "배달앱·온라인쇼핑몰·올리브영·다이소 5%/7%",
+    "rate_or_amount": "5%/7%",
+    "monthly_cap": "확인 불가",
+    "condition": "전월 40/80만원"
+   },
+   {
+    "category": "해외",
+    "text": "해외 1%",
+    "rate_or_amount": "1%",
+    "monthly_cap": "확인 불가",
+    "condition": "확인 불가"
+   }
+  ],
+  "exclusions": [
+   "대중교통(후불·모바일교통)·택시는 실적 제외"
+  ],
+  "promotions": [],
+  "recent_changes": [
+   "2026-09-30 서울시 기후동행카드 30일권 운영 종료로 후불 교통카드로 서비스 명칭 변경",
+   "공식 페이지 '해당 카드는 발급 중단됐으며' 표기(중단일 확인 불가, 2026)"
+  ],
+  "target_text": null,
+  "issuance": "발급 중단",
+  "app_features": [],
+  "design_note": "피카부(해치, 재생 R-PVC 50%+)·스카이코랄·해치 LED·티켓(지하철 승차권 모티브)",
+  "tags": [
+   "transit",
+   "dining_cafe",
+   "mart_daily",
+   "fixed_bills",
+   "delivery",
+   "online_shop",
+   "esg_green",
+   "reward_discount",
+   "tiered_perf"
+  ],
+  "genz_fit": "mid",
+  "genz_fit_reason": "서울 정기권과 친환경 디자인을 묶은 청년 통근용이었으나 기후동행 30일권 종료로 발급 중단.",
+  "source_url": "https://www.samsungcard.com/home/card/cardinfo/PGHPPCCCardCardinfoDetails001?code=AAP1846",
+  "source_urls": [
+   "https://www.samsungcard.com/home/card/cardinfo/PGHPPCCCardCardinfoDetails001?code=AAP1846"
+  ],
+  "checked": "2026-10-27",
+  "confidence": "medium",
+  "note": "단종(2026). 심의필 2026-C1h-12356(2026-08-18~2027-08-17)이 있으나 페이지에 발급 중단 문구. 같은 페이지에서 확인된 다른 단종: 삼성카드 2·3·4·5·6 숫자카드, 알뜰교통플러스 삼성카드(단종일 확인 불가로 목록 제외)."
+ }
+]

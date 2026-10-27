@@ -1,152 +1,181 @@
 {
-  "run_id": "v2rec",
-  "request_id": "v2rec-trend-r2",
+  "run_id": "m3",
+  "request_id": "m3-trend-r2",
   "agent": "trend",
   "contract_version": "1.0",
   "model": "claude-sonnet-5-5",
   "status": "ok",
-  "answer": "근거 팩 docs에는 3개 주제를 직접 다룬 사실이 없어 인접 근거로 시그널 T1~T3을 낮은 강도와 신뢰도로 만들고, 모임 상품 시그널 T4를 더했다. 3개 주제 모두 근거 팩에 없음으로 unresolved에 남겼다. 디자인·마케팅은 이를 근거 없음으로 이어 받는다.",
+  "answer": "제공된 근거 팩에서 규제, 모임형 결제, 해외 신용 형성 경로, 조건부 추첨 프로모션의 4개 시그널(T1~T4)을 정리했다. 요청한 3개 주제(숏폼 채널별 이용, 카드 정보 탐색 경로, 조건부 혜택 광고 심의 기준)는 직접 근거가 없어 모두 unresolved로 남겼다. 시그널은 간접 근거이며 일부는 해외 사례와 체크카드 사례다.",
   "result": {
     "signals": [
       {
-        "id": "T1",
-        "title": "카드사 마라톤·러닝 제휴 이벤트의 응모형 프로모션(직접 근거 아님, 인접 근거)",
-        "topic": "promo",
-        "direction": "unknown",
-        "period": "2026-09",
-        "strength": 0.25,
-        "reliability": 0.3,
-        "impl": "확인한 것: KB국민카드가 9월 한 달 100만원 이상 이용·응모 고객 중 추첨 20명에게 도쿄 마라톤 참가 자격을 준다(FSS11). 해석: 직접 근거 아님, 인접 근거로 숏폼 플랫폼 비중과 광고 반응은 확인하지 못했다.",
-        "source_ids": [
-          "FSS11"
-        ],
-        "research_topic": "카드 이용이 처음인 만 19~29세의 숏폼·동영상 플랫폼별 이용 비중과 카드 광고 반응(입력 근거 없음)"
-      },
-      {
-        "id": "T2",
-        "title": "해외 첫 카드의 은행 데이터 연동 신용 준비도 안내와 6개월 한도 상향 경로(직접 근거 아님, 인접 근거)",
-        "topic": "digital",
-        "direction": "unknown",
-        "period": "시점 미확인",
-        "strength": 0.25,
-        "reliability": 0.3,
-        "impl": "확인한 것: Petal은 은행 데이터 연동으로 신용 준비도를 보여주고 정시 납부 시 6개월 만에 한도 상향을 안내한다(PFS16). 해석: 직접 근거 아님, 인접 근거로 미국 사례이며 국내 정보 채널과 연령별 수치는 확인하지 못했다.",
-        "source_ids": [
-          "PFS16",
-          "LNS12"
-        ],
-        "research_topic": "첫 신용카드 고객이 카드를 고를 때 참고하는 정보 채널(비교 앱, 커뮤니티, 은행 앱 등)과 연령별 수치"
-      },
-      {
-        "id": "T3",
-        "title": "해외투자 이벤트·광고 중단과 거래금액 비례 이벤트 금지, 연회비 초과 경제적 이익 모집 금지(간접 사례)",
+        "id": "T6",
+        "title": "여신전문금융업법 시행령 시행(2026.5.6) 신용카드 결제 금지 대상과 모집 경제적 이익 상한",
         "topic": "regulation",
-        "direction": "rising",
+        "direction": "unknown",
         "period": "2025-12~2026-05",
-        "strength": 0.45,
-        "reliability": 0.5,
-        "impl": "확인한 것: 금감원은 해외투자 신규 현금성 이벤트·광고를 2026년 3월까지 중단시켰고(IVS20), 시행령은 연회비 100분의 100 초과 경제적 이익 모집을 금지한다(IVS19). 해석: 조건부 혜택 광고의 심의 사례는 아니며 병기 기준은 사람 확인 필요다.",
+        "strength": 0.7,
+        "reliability": 0.9,
+        "impl": "확인한 것: 금융투자상품·가상자산 관련 지급은 신용카드 결제 금지 대상이고 모집 시 연회비 100% 초과 경제적 이익은 금지된다(IVS19). 해석: 혜택 설계와 모집 경품은 이 한도 안에서 짜야 하며 적용 해석은 사람 확인 필요다.",
         "source_ids": [
-          "IVS20",
-          "IVS19"
+          "IVS19",
+          "IVS20"
         ],
-        "research_topic": "조건부 혜택·단계형 실적 조건을 알리는 카드 광고의 심의 사례와 병기 기준"
+        "research_topic": null
       },
       {
-        "id": "T4",
-        "title": "모임 체크카드 누적 100만장, 모임통장 3개월 40만 회원 등 모임 기반 상품의 확산",
+        "id": "T7",
+        "title": "모임 체크카드·모임통장의 가입 확대와 캐시백·지원금 이벤트(2025)",
         "topic": "group",
         "direction": "rising",
         "period": "2025-02~2025-08",
-        "strength": 0.4,
+        "strength": 0.5,
         "reliability": 0.7,
-        "impl": "확인한 것: 카카오뱅크 모임 체크카드가 누적 100만장을 넘었고(GTS3), 신한은행 SOL모임통장은 출시 3개월 만에 회원 40만을 넘었다(GTS4). 해석: 모임 단위 혜택은 검토할 만하나 연령 범위는 문서에 없다.",
+        "impl": "확인한 것: 카카오뱅크 모임 체크카드는 누적 100만장, 신한 SOL모임통장은 출시 3개월 만에 회원 40만을 넘었다(GTS3, GTS4). 해석: 함께 쓰는 정산형 혜택을 검토할 만하나 체크카드·통장 사례이며 연령 구성은 확인하지 못했다.",
         "source_ids": [
           "GTS3",
           "GTS4"
+        ],
+        "research_topic": null
+      },
+      {
+        "id": "T8",
+        "title": "해외 첫 신용카드의 신용 형성 경로: 한도 증액·상위 카드 전환·졸업 후 유지(해외 사례)",
+        "topic": "benefit",
+        "direction": "unknown",
+        "period": "기간 미확인",
+        "strength": 0.4,
+        "reliability": 0.7,
+        "impl": "확인한 것: 미국 카드사는 약 6개월 후 한도 증액 검토, 보증금 환급, 상위 카드 업그레이드, 졸업 후 혜택 유지를 안내한다(LNS12, LNS14, LNS15, PFS16). 해석: 한국 적용은 별도 확인이 필요하다.",
+        "source_ids": [
+          "LNS12",
+          "LNS14",
+          "LNS15",
+          "LNS16",
+          "PFS16"
+        ],
+        "research_topic": null
+      },
+      {
+        "id": "T9",
+        "title": "KB국민카드 마라톤카드 추첨 이벤트와 업종 할인(2026-09)",
+        "topic": "promo",
+        "direction": "unknown",
+        "period": "2026-09",
+        "strength": 0.3,
+        "reliability": 0.7,
+        "impl": "확인한 것: 9월 한 달 100만원 이상 이용·응모 고객 중 추첨 20명에게 참가 자격을 주고 스포츠·OTT 등에서 할인한다(FSS11). 해석: 이용 조건부 추첨 프로모션 사례이며 20대 반응은 확인하지 못했다.",
+        "source_ids": [
+          "FSS11"
         ],
         "research_topic": null
       }
     ],
     "regulatory_changes": [
       {
-        "title": "여신전문금융업법 시행령 개정: 금융투자상품·가상자산 관련 지급의 신용카드 결제 금지, 연회비 초과 경제적 이익 모집 금지",
+        "title": "여신전문금융업법 시행령 개정 시행(결제 금지 대상, 모집 경제적 이익 상한)",
         "effective_date": "2026-05-06",
-        "scope": "신용카드 결제 금지 대상과 모집 시 경제적 이익 한도",
+        "scope": "신용카드 결제 금지 대상(금융투자상품, 가상자산 관련 지급, 월 100만원 초과 선불수단 구입)과 연회비 100% 초과 경제적 이익 모집 금지",
         "source_id": "IVS19"
+      },
+      {
+        "title": "미성년 자녀 가족카드 발급 허용 시행령·감독규정 개정안 입법예고(2026.1.23~3.4)",
+        "effective_date": null,
+        "scope": "부모 신청에 따른 만 12세 이상 자녀의 가족카드 발급. 만 19~29세 대상은 아니며 시행일은 자료에 없음",
+        "source_id": "SNS7"
       }
     ]
   },
   "findings": [
     {
       "id": "trend#0",
-      "claim": "KB국민카드 KB 마라톤카드는 9월 한 달 100만원 이상 이용·응모 고객 중 추첨 20명에게 도쿄 마라톤 2027 참가 자격을 준다.",
-      "type": "fact",
-      "source_id": "FSS11",
-      "confidence": "medium"
-    },
-    {
-      "id": "trend#1",
-      "claim": "Petal은 은행 데이터를 연동해 신용점수 이력과 무관하게 신용 준비도를 보여줄 수 있다고 안내한다.",
-      "type": "fact",
-      "source_id": "PFS16",
-      "confidence": "low"
-    },
-    {
-      "id": "trend#2",
-      "claim": "Petal은 Leap 프로그램에서 적격한 정시 납부를 하면 6개월 만에 신용한도 상향을 받을 수 있다고 안내한다.",
-      "type": "fact",
-      "source_id": "PFS16",
-      "confidence": "low"
-    },
-    {
-      "id": "trend#3",
-      "claim": "Freedom Rise는 첫 신용카드로 신용 형성 경로를 잡아주도록 설계된 starter 카드다.",
-      "type": "fact",
-      "source_id": "LNS12",
-      "confidence": "medium"
-    },
-    {
-      "id": "trend#4",
-      "claim": "금감원은 해외투자 관련 신규 현금성 이벤트·광고를 2026년 3월까지 중단하도록 했고 주식(1주) 제공도 포함했다.",
-      "type": "fact",
-      "source_id": "IVS20",
-      "confidence": "high"
-    },
-    {
-      "id": "trend#5",
-      "claim": "금감원은 거래금액 비례 이벤트를 원천 금지하는 방향으로 제도개선을 추진한다고 밝혔다.",
-      "type": "fact",
-      "source_id": "IVS20",
-      "confidence": "high"
-    },
-    {
-      "id": "trend#6",
-      "claim": "여신전문금융업법 시행령은 신용카드 모집 시 연회비의 100분의 100을 넘는 경제적 이익을 주는 모집을 금지한다.",
+      "claim": "여신전문금융업법 시행령(2026.5.6 시행)은 금융투자상품 결제와 가상자산 관련 금전 지급을 신용카드 결제 금지 대상으로 정한다.",
       "type": "fact",
       "source_id": "IVS19",
       "confidence": "high"
     },
     {
-      "id": "trend#7",
-      "claim": "카카오뱅크 모임 체크카드 누적 발급량이 100만장을 돌파했다.",
+      "id": "trend#1",
+      "claim": "같은 시행령은 신용카드 모집 시 연회비의 100분의 100을 넘는 경제적 이익을 주는 모집을 금지한다.",
+      "type": "fact",
+      "source_id": "IVS19",
+      "confidence": "high"
+    },
+    {
+      "id": "trend#2",
+      "claim": "금감원은 해외투자 관련 신규 현금성 이벤트·광고를 2026년 3월까지 중단하도록 했고 거래금액 비례 이벤트를 원천 금지하는 제도개선을 추진한다고 밝혔다.",
+      "type": "fact",
+      "source_id": "IVS20",
+      "confidence": "high"
+    },
+    {
+      "id": "trend#3",
+      "claim": "카카오뱅크 모임 체크카드 누적 발급량이 100만장을 돌파했고 캐시백은 2025년 7월 말까지 누적 30억원이다.",
       "type": "fact",
       "source_id": "GTS3",
       "confidence": "medium"
     },
     {
-      "id": "trend#8",
-      "claim": "신한은행 SOL모임통장이 2025년 2월 출시 후 3개월 만에 회원 40만을 돌파했다.",
+      "id": "trend#4",
+      "claim": "신한은행 SOL모임통장은 2025년 2월 출시 후 3개월 만에 회원 40만을 돌파했다.",
       "type": "fact",
       "source_id": "GTS4",
+      "confidence": "medium"
+    },
+    {
+      "id": "trend#5",
+      "claim": "Freedom Rise는 약 6개월 후 한도 증액 대상이 될 수 있고 12개월마다 Freedom Unlimited 업그레이드 대상으로 평가된다.",
+      "type": "fact",
+      "source_id": "LNS12",
+      "confidence": "medium"
+    },
+    {
+      "id": "trend#6",
+      "claim": "Platinum Secured는 책임 있는 이용 시 6개월 정도에 한도 증액이 고려될 수 있고 보증금 환급 후 일반 카드로 업그레이드될 수 있다.",
+      "type": "fact",
+      "source_id": "LNS14",
+      "confidence": "medium"
+    },
+    {
+      "id": "trend#7",
+      "claim": "Quicksilver Rewards for Students는 졸업 후에도 카드와 혜택이 유지되고 연회비는 $0이다.",
+      "type": "fact",
+      "source_id": "LNS15",
+      "confidence": "medium"
+    },
+    {
+      "id": "trend#8",
+      "claim": "Petal은 적격한 정시 납부 시 6개월 만에 신용한도 상향이 가능하다고 안내하며 이는 업체 자체 안내다.",
+      "type": "fact",
+      "source_id": "PFS16",
+      "confidence": "low"
+    },
+    {
+      "id": "trend#9",
+      "claim": "KB 마라톤카드는 9월 한 달 100만원 이상 이용·응모 고객 중 추첨 20명에게 도쿄 마라톤 2027 참가 자격을 준다.",
+      "type": "fact",
+      "source_id": "FSS11",
       "confidence": "medium"
     }
   ],
   "sources": [
     {
+      "id": "IVS19",
+      "title": "여신전문금융업법 시행령 [시행 2026.5.6.] 대통령령 제36314호",
+      "url": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=285799",
+      "publisher": "법제처",
+      "kind": "official",
+      "published": "2026-05-06",
+      "retrieved_at": "2026-10-23",
+      "reliability": 0.9,
+      "tier": "A",
+      "stale": false
+    },
+    {
       "id": "FSS11",
       "title": "KB국민카드, 마스터카드와 '도쿄 마라톤 2027' 출전권 이벤트",
       "url": "https://biz.sbs.co.kr/amp/article/20000335175",
+      "publisher": "SBS Biz",
       "kind": "news",
       "published": "2026-09-17",
       "retrieved_at": "2026-10-23",
@@ -155,19 +184,10 @@
       "stale": false
     },
     {
-      "id": "PFS16",
-      "title": "Petal 공식 페이지",
-      "url": "https://www.petalcard.com/",
-      "kind": "web",
-      "published": null,
-      "retrieved_at": "2026-10-23",
-      "reliability": 0.5,
-      "tier": "C"
-    },
-    {
       "id": "LNS12",
       "title": "Freedom Rise credit limit increases",
       "url": "https://www.chase.com/personal/credit-cards/education/basics/freedom-rise-credit-limit-increase",
+      "publisher": "Chase",
       "kind": "official",
       "published": null,
       "retrieved_at": "2026-10-23",
@@ -178,6 +198,7 @@
       "id": "LNS14",
       "title": "Platinum Secured Credit Card",
       "url": "https://www.capitalone.com/credit-cards/platinum-secured/",
+      "publisher": "Capital One",
       "kind": "official",
       "published": null,
       "retrieved_at": "2026-10-23",
@@ -185,31 +206,32 @@
       "tier": "A"
     },
     {
-      "id": "IVS20",
-      "title": "투자자 보호 및 리스크관리 강화를 위한 해외투자 실태점검 중간 결과 및 향후 대응방향",
-      "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?menuNo=200218&nttId=208246",
-      "kind": "official",
-      "published": "2025-12-19",
+      "id": "PFS14",
+      "title": "Bilt Mastercard / Bilt Card 2.0 공식 페이지",
+      "url": "https://www.biltrewards.com/card",
+      "publisher": "Bilt",
+      "kind": "web",
+      "published": null,
       "retrieved_at": "2026-10-23",
-      "reliability": 0.9,
-      "tier": "A",
-      "stale": false
+      "reliability": 0.5,
+      "tier": "C"
     },
     {
-      "id": "IVS19",
-      "title": "여신전문금융업법 시행령 [시행 2026.5.6.] 대통령령 제36314호",
-      "url": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=285799",
-      "kind": "official",
-      "published": "2026-05-06",
+      "id": "PFS16",
+      "title": "Petal 공식 페이지",
+      "url": "https://www.petalcard.com/",
+      "publisher": "Petal",
+      "kind": "web",
+      "published": null,
       "retrieved_at": "2026-10-23",
-      "reliability": 0.9,
-      "tier": "A",
-      "stale": false
+      "reliability": 0.5,
+      "tier": "C"
     },
     {
       "id": "GTS3",
       "title": "카카오뱅크, ‘모임 체크카드’ 출시 1년여 만에 누적 100만장 돌파",
       "url": "https://www.heraldk.com/article/2025081317211700327",
+      "publisher": "헤럴드경제",
       "kind": "news",
       "published": "2025-08-13",
       "retrieved_at": "2026-10-23",
@@ -221,29 +243,76 @@
       "id": "GTS4",
       "title": "신한은행, SOL모임통장 회원수 40만 돌파",
       "url": "https://www.smarttoday.co.kr/ko-kr/articles/80716",
+      "publisher": "스마트투데이",
       "kind": "news",
       "published": "2025-05-14",
       "retrieved_at": "2026-10-23",
       "reliability": 0.7,
       "tier": "B",
       "stale": false
+    },
+    {
+      "id": "IVS20",
+      "title": "투자자 보호 및 리스크관리 강화를 위한 해외투자 실태점검 중간 결과 및 향후 대응방향",
+      "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?menuNo=200218&nttId=208246",
+      "publisher": "금융감독원",
+      "kind": "official",
+      "published": "2025-12-19",
+      "retrieved_at": "2026-10-23",
+      "reliability": 0.9,
+      "tier": "A",
+      "stale": false
+    },
+    {
+      "id": "LNS15",
+      "title": "Quicksilver Rewards for Students",
+      "url": "https://www.capitalone.com/credit-cards/quicksilver-student/",
+      "publisher": "Capital One",
+      "kind": "official",
+      "published": null,
+      "retrieved_at": "2026-10-23",
+      "reliability": 0.9,
+      "tier": "A"
+    },
+    {
+      "id": "LNS16",
+      "title": "Discover it Student Cash Back",
+      "url": "https://www.discover.com/credit-cards/student/it-card.html",
+      "publisher": "Discover",
+      "kind": "official",
+      "published": null,
+      "retrieved_at": "2026-10-23",
+      "reliability": 0.9,
+      "tier": "A"
+    },
+    {
+      "id": "SNS7",
+      "title": "미성년 자녀의 가족카드 발급허용 등 혁신금융서비스를 제도화하겠습니다 (입법예고 보도자료)",
+      "url": "https://www.fsc.go.kr/po010105/86116?curPage=2",
+      "publisher": "금융위원회",
+      "kind": "official",
+      "published": "2026-01-22",
+      "retrieved_at": "2026-10-23",
+      "reliability": 0.9,
+      "tier": "A",
+      "stale": false
     }
   ],
   "assumptions": [
-    "근거 팩 모드로 payload.docs의 facts만 근거로 썼고 웹 검색은 하지 않았다.",
-    "GenZ를 만 19~29세로 보되 docs의 연령 범위는 문서별로 다르거나 명시되지 않아 대리 지표로만 썼다."
+    "GenZ를 만 19~29세로 보되 자료에 연령 구분이 없는 사실은 전 연령 또는 범위 미확인으로 취급",
+    "웹 검색 없이 입력 docs의 facts만 사용"
   ],
   "unresolved": [
-    "근거 팩에 없음: 카드 이용이 처음인 만 19~29세의 숏폼·동영상 플랫폼별 이용 비중과 카드 광고 반응(입력 근거 없음)",
-    "근거 팩에 없음: 첫 신용카드 고객이 카드를 고를 때 참고하는 정보 채널(비교 앱, 커뮤니티, 은행 앱 등)과 연령별 수치",
-    "근거 팩에 없음: 조건부 혜택·단계형 실적 조건을 알리는 카드 광고의 심의 사례와 병기 기준"
+    "근거 없음: 만 19~29세의 숏폼·동영상 채널별 이용 실태와 카드 광고 반응(reels·youtube 집행 채널 근거)",
+    "근거 없음: 첫 신용카드 발급 의향자가 카드를 고를 때 쓰는 정보 탐색 경로(앱, 커뮤니티, 지인 등)",
+    "근거 없음: 카드 광고 심의에서 전월실적·월 한도 같은 조건부 혜택 병기 기준과 사례(IVS19, IVS20은 모집 경제적 이익 상한과 해외투자 이벤트 중단이며 병기 기준이 아님)"
   ],
   "limits": [
-    "T1~T3은 주제를 직접 다룬 사실이 아니라 인접 근거이며 strength와 reliability를 낮게 두었다.",
-    "T2의 Petal, Freedom Rise는 미국 상품 사례이고 발행일이 null이다.",
-    "T3의 금감원 자료는 해외투자 광고 기준이고 시행령은 모집 이익 한도로, 조건부 혜택 카드 광고 병기 기준에 바로 적용할 수 없다. 적용 여부는 사람 확인 필요.",
-    "T4 문서에는 이용자 연령 범위가 없다.",
-    "내부 성과, 회원, 결제 데이터는 볼 수 없다."
+    "입력 docs 13건의 발췌 facts만 읽었고 원문은 열람하지 않았다.",
+    "LNS12, LNS14, LNS15, LNS16, PFS14, PFS16은 발행일이 null이고 미국 사례이며, PFS는 신뢰도 0.5의 업체 공식 페이지다.",
+    "GTS3, GTS4는 체크카드·통장 사례이고 연령 구성이 없다. FSS11은 단일 이벤트 보도다.",
+    "내부 데이터 확인 필요: 고객사 회원·결제 데이터는 볼 수 없다.",
+    "채택 의향과 손익은 이 단계에서 추정하지 않았다."
   ],
   "clarifications": [],
   "out_of_scope": {
@@ -251,11 +320,21 @@
     "suggested_agent": null
   },
   "followups": [
-    "여신금융협회 광고 심의 기준에서 조건부 혜택 표기 병기 기준 확인",
-    "20대 숏폼 플랫폼별 이용률과 카드 정보 채널 조사 자료를 근거 팩에 추가",
-    "카드 광고 반응은 consumer 에이전트 시뮬레이션으로 보완"
+    "숏폼 채널별 이용과 카드 광고 반응은 별도 자료 확보 후 재조사",
+    "조건부 혜택 병기 기준은 심의 담당 확인 필요(사람 확인)"
   ],
   "input_refs": [
-    "02-trend-evidence/in.json"
+    "IVS19",
+    "FSS11",
+    "LNS12",
+    "LNS14",
+    "PFS14",
+    "PFS16",
+    "GTS3",
+    "GTS4",
+    "IVS20",
+    "LNS15",
+    "LNS16",
+    "SNS7"
   ]
 }

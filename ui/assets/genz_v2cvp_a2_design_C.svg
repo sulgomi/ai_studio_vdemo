@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 560" width="360" height="560" font-family="Pretendard Variable, Pretendard, Apple SD Gothic Neo, Noto Sans KR, sans-serif">
+<defs>
+<clipPath id="c"><rect width="360" height="560" rx="28"/></clipPath>
+<linearGradient id="t" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#FFB09A" stop-opacity=".72"/><stop offset=".55" stop-color="#FF8A6B" stop-opacity=".62"/><stop offset="1" stop-color="#FF7A58" stop-opacity=".74"/></linearGradient>
+<linearGradient id="gl" x1="0" y1="0" x2="1" y2="0.45"><stop offset="0" stop-color="#fff" stop-opacity=".5"/><stop offset=".3" stop-color="#fff" stop-opacity=".08"/><stop offset=".62" stop-color="#fff" stop-opacity="0"/><stop offset=".78" stop-color="#fff" stop-opacity=".22"/><stop offset="1" stop-color="#fff" stop-opacity=".05"/></linearGradient>
+<linearGradient id="win" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff" stop-opacity=".2"/><stop offset="1" stop-color="#fff" stop-opacity=".06"/></linearGradient>
+<filter id="grain" x="0" y="0" width="100%" height="100%"><feTurbulence type="fractalNoise" baseFrequency="1.2" numOctaves="2" seed="3"/><feColorMatrix values="0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  0 0 0 0.08 0"/></filter>
+<linearGradient id="chip" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#EEF1F4"/><stop offset=".5" stop-color="#B8BEC6"/><stop offset="1" stop-color="#98A0AA"/></linearGradient>
+</defs>
+<g clip-path="url(#c)">
+<rect width="360" height="560" fill="#fff" fill-opacity=".22"/>
+<rect width="360" height="560" fill="url(#t)"/>
+<rect width="360" height="560" filter="url(#grain)"/>
+<rect width="360" height="560" fill="url(#gl)"/>
+<!-- clear inner window edge -->
+<rect x="14" y="14" width="332" height="532" rx="16" fill="url(#win)" stroke="#fff" stroke-opacity=".35" stroke-width="1"/>
+<rect x="1.5" y="1.5" width="357" height="557" rx="26.5" fill="none" stroke="#fff" stroke-opacity=".85" stroke-width="3"/>
+</g>
+<rect x=".5" y=".5" width="359" height="559" rx="27.5" fill="none" stroke="#1C1F24" stroke-opacity=".22"/>
+<!-- contactless top center -->
+<g transform="translate(172 66)" fill="none" stroke="#1C1F24" stroke-width="2.2" stroke-linecap="round">
+<path d="M-6 -5A8 8 0 0 1 -6 5"/><path d="M-1 -10A13 13 0 0 1 -1 10"/><path d="M6 -15A19 19 0 0 1 6 15"/><path d="M12 -20A25 25 0 0 1 12 20" opacity=".4"/>
+</g>
+<!-- chip -->
+<g transform="translate(36 120)">
+<rect width="52" height="40" rx="7" fill="url(#chip)" stroke="#7C838D" stroke-width=".8"/>
+<g fill="none" stroke="#7F8791" stroke-width=".8"><path d="M0 14H16Q20 14 20 20T16 26H0M52 14H36Q32 14 32 20T36 26H52M20 0V8M32 0V8M20 32V40M32 32V40M26 8V32"/><rect x="16" y="8" width="20" height="24" rx="5"/></g>
+</g>
+<!-- vertical logo + lime underline -->
+<g fill="#1C1F24">
+<text transform="translate(262 482) rotate(-90)" font-size="76" font-weight="800" letter-spacing="2">디딤</text>
+<g transform="translate(218 296)"><rect x="0" y="14" width="14" height="14" rx="4"/><rect x="18" y="0" width="14" height="28" rx="4"/></g>
+</g>
+<rect x="276" y="352" width="6" height="130" rx="3" fill="#C6F45A" stroke="#1C1F24" stroke-width="1"/>
+<!-- small CREDIT near edge -->
+<text transform="translate(334 520) rotate(-90)" font-size="7.5" letter-spacing="3" font-weight="600" fill="#1C1F24" fill-opacity=".75">CREDIT</text>
+<g font-family="Space Mono, Menlo, monospace" font-size="7.5" letter-spacing="2" fill="#1C1F24" fill-opacity=".75"><text x="40" y="530">[ISSUER]</text><text x="40" y="516" fill-opacity=".0">.</text></g>
+</svg>

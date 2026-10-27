@@ -1,0 +1,3168 @@
+{
+ "as_of": "2026-10-23",
+ "candidates": [
+  {
+   "id": "TPC1",
+   "title": "결제수단 선택 직전(페이 앱 결제창)에 카드 혜택·쿠폰·포인트 중 가장 큰 쪽을 건별로 비교해 안내/자동 선택하는 구조가 없다",
+   "gap_type": "touchpoint",
+   "unmet_need": "20대는 간편결제 주 지급수단으로 카드를 쓰고(90.6%) 결제 경험자는 평균 3.9개 수단을 쓰지만, 결제 순간 어떤 카드·쿠폰·포인트 조합이 유리한지 알려주는 카드 쪽 장치는 DB에서 확인되지 않는다. 해석: 쇼핑몰별 최저가·혜택 비교를 AI에 기대하는 비중(46.2%)은 비교 수요가 크다는 신호이나, 카드 결제창 안의 비교 수요를 직접 묻는 근거는 없다.",
+   "genz_basis": [
+    {
+     "fact_id": "STF12",
+     "says": "20대 간편결제 주 지급수단의 90.6%가 카드",
+     "age_scope": "20대",
+     "weight": "핵심"
+    },
+    {
+     "fact_id": "MHF16",
+     "says": "결제 경험자 1인 평균 3.9개 결제수단, 간편결제 이용률 89.3%",
+     "age_scope": "전연령",
+     "weight": "핵심"
+    },
+    {
+     "fact_id": "MHF34",
+     "says": "온라인 쇼핑에서 AI가 도움 된 상황으로 쇼핑몰별 최저가·혜택 비교 46.2%",
+     "age_scope": "전연령",
+     "weight": "보조"
+    },
+    {
+     "fact_id": "TRF15",
+     "says": "대학생이 페이 앱 굿딜로 신용카드 못지않은 혜택을 받는다고 말한 사례(low)",
+     "age_scope": "대학생 1인 사례",
+     "weight": "보조"
+    }
+   ],
+   "existing_check": {
+    "db_cards_compared": [
+     "카카오뱅크 K-패스 프렌즈 체크",
+     "NEED Pay",
+     "삼성 iD SELECT ON",
+     "토스 삼성카드",
+     "디지로카 London"
+    ],
+    "similar": [
+     {
+      "card": "카카오뱅크 K-패스 프렌즈 체크",
+      "how_similar": "auto_best 태그: 주중/주말 이용 구간별 캐시백 자동 적용",
+      "difference": "카드 내부 규칙 자동화일 뿐 앱 쿠폰·포인트와 비교하지 않음"
+     },
+     {
+      "card": "NEED Pay",
+      "how_similar": "간편결제 KB Pay 15%/네이버·카카오·토스페이 10% 택1, 월 1회 변경",
+      "difference": "월 단위 수동 선택이며 건별 비교·쿠폰 고려 없음"
+     },
+     {
+      "card": "삼성 iD SELECT ON",
+      "how_similar": "발급 후 매월 선택 변경",
+      "difference": "월 단위 선택, 결제 시점 안내 없음"
+     }
+    ],
+    "web_checked": [
+     "웹 검색 예산 소진으로 DB 밖 카드 확인 못 함(DB 판정)"
+    ],
+    "verdict": "partial",
+    "note": "자동 선택은 카드 내부 혜택(주중/주말)에 한정. 앱 쿠폰·포인트까지 아우르는 결제창 비교는 DB에서 발견 못 함."
+   },
+   "mechanism_tags": [
+    "auto_best",
+    "ai_personalize"
+   ],
+   "need_key": "saving",
+   "domain_key": "online",
+   "strength": "중",
+   "strength_reason": "20대 특정 근거는 STF12 하나와 사례 1건이고, 나머지는 전연령. 결제창 비교 수요 자체는 해석.",
+   "counter_evidence": "네이버페이 선택 이유가 이미 포인트·할인(MHF18)이라 페이 앱이 스스로 최적화할 수 있어 카드사가 끼어들 여지가 작을 수 있음. 페이사 결제창 제어권은 카드사에 없음.",
+   "risks": [
+    "결제창 제어권은 페이사에 있어 제휴 필수",
+    "혜택 비교 안내의 표시·광고 규제 부담(가정)",
+    "CSF5: 카드 이용에서 소비 통제 64.4%가 혜택 설계 19.2%보다 높아 혜택 극대화만으로는 약할 수 있음"
+   ],
+   "invest_related": false,
+   "cvp_seed": {
+    "target": "페이 앱으로 온라인 결제가 잦은 20대",
+    "offer": "페이 앱 결제 직전 카드 혜택·쿠폰·포인트 중 유리한 조합을 건별 안내하고 선택",
+    "key_benefit": "결제 순간 혜택을 놓치지 않음",
+    "alternative": "NEED Pay(월 1회 택1), 삼성 iD SELECT ON, 페이 앱 자체 쿠폰",
+    "differentiator": "가장 비슷한 NEED Pay는 월 단위 수동 택1이고 이쪽은 건별 비교",
+    "reason_to_believe": [
+     "STF12",
+     "MHF16",
+     "가정: 페이사 제휴로 결제창 연동 가능"
+    ]
+   },
+   "grades": {
+    "risk": 1,
+    "existing": 1,
+    "evidence": 1
+   },
+   "killed_by": [],
+   "dropped": false,
+   "merged_into": null,
+   "tier": "후보(약)",
+   "rank": 13
+  },
+  {
+   "id": "TPC2",
+   "title": "페이 앱 쿠폰·포인트와 카드 혜택이 겹칠 때 어느 쪽이 적용되고 실적에 잡히는지 보장하는 합산 구조가 없다",
+   "gap_type": "benefit_structure",
+   "unmet_need": "Z세대는 구매처 선택 기준으로 쿠폰·할인 45.7%, 포인트·혜택 28.0%를 꼽는다. 카드 혜택과 앱 쿠폰이 서로 대체재처럼 비교된다는 사례가 있다(TRF15). 해석: 쿠폰 사용 시 카드 할인 제외나 실적 제외 같은 조건이 걸리면 혜택이 줄어드는데, DB 카드 문구는 쿠폰과의 중복 처리를 대부분 적지 않는다.",
+   "genz_basis": [
+    {
+     "fact_id": "MHF3",
+     "says": "Z세대 구매 채널 선택 기준: 쿠폰·할인 45.7%, 포인트·혜택 28.0%",
+     "age_scope": "Z세대",
+     "weight": "핵심"
+    },
+    {
+     "fact_id": "TRF15",
+     "says": "페이 앱 굿딜 타임어택 8600원 결제 후 신용카드 못지않은 혜택이라는 대학생 사례(low)",
+     "age_scope": "대학생 1인 사례",
+     "weight": "보조"
+    },
+    {
+     "fact_id": "MHF18",
+     "says": "온라인쇼핑 네이버페이 1순위 선택 이유가 포인트 적립과 할인",
+     "age_scope": "전연령",
+     "weight": "보조"
+    },
+    {
+     "fact_id": "MHF5",
+     "says": "'오늘만 할인/타임 세일' 문구 반응 39.2%로 최고",
+     "age_scope": "Z세대",
+     "weight": "보조"
+    }
+   ],
+   "existing_check": {
+    "db_cards_compared": [
+     "네이버 현대카드 Edition2",
+     "토스 삼성카드",
+     "쿠팡 와우카드",
+     "CU Npay 카드",
+     "디지로카 London"
+    ],
+    "similar": [
+     {
+      "card": "네이버 현대카드 Edition2",
+      "how_similar": "네이버페이 포인트 7% 적립에 멤버십 5% 합산 시 12%",
+      "difference": "멤버십과의 합산이지 쿠폰·타임딜과의 중복 규칙은 아님"
+     },
+     {
+      "card": "쿠팡 와우카드",
+      "how_similar": "쿠팡 프로모션 포함 최대 4%, 쿠팡+외부 합산 월 최대 6만4000원",
+      "difference": "자사 프로모션 합산 한도 명시, 외부 쿠폰 중복은 언급 없음"
+     },
+     {
+      "card": "토스 삼성카드",
+      "how_similar": "토스페이·토스쇼핑 최대 15%",
+      "difference": "쿠폰과의 관계 문구 없음"
+     }
+    ],
+    "web_checked": [
+     "웹 검색 예산 소진으로 DB 밖 카드 확인 못 함(DB 판정)"
+    ],
+    "verdict": "partial",
+    "note": "PLCC가 자사 포인트·멤버십 합산은 제공. 외부 쿠폰·타임딜과 카드 혜택의 중복·실적 처리를 보장하는 문구는 DB에서 못 찾음(문구 미기재일 뿐 약관엔 있을 수 있음)."
+   },
+   "mechanism_tags": [
+    "paymethod_bonus",
+    "discount_counts"
+   ],
+   "need_key": "saving",
+   "domain_key": "online",
+   "strength": "약",
+   "strength_reason": "쿠폰 선호는 Z세대 수치(MHF3)가 있으나 겹침 문제는 low 사례 1건과 해석뿐.",
+   "counter_evidence": "쿠폰 중복 불가는 가맹점·페이사 정책이라 카드사가 보장하기 어렵고, 중복 허용 시 마케팅 비용이 급증.",
+   "risks": [
+    "수익성: 중복 보장은 비용 증가(가정)",
+    "페이사·가맹점 약관 의존",
+    "TRF15는 confidence low"
+   ],
+   "invest_related": false,
+   "cvp_seed": {
+    "target": "페이 앱 쿠폰·타임딜을 자주 쓰는 20대",
+    "offer": "쿠폰을 쓴 결제에도 카드 혜택과 실적을 그대로 인정",
+    "key_benefit": "쿠폰과 카드 혜택 중 하나를 포기하지 않음",
+    "alternative": "네이버 현대카드 Edition2, 토스 삼성카드",
+    "differentiator": "네이버 현대카드는 멤버십 합산만 하고 외부 쿠폰·타임딜은 다루지 않음",
+    "reason_to_believe": [
+     "MHF3",
+     "TRF15",
+     "가정: 쿠폰 사용분 실적 인정 가능"
+    ]
+   },
+   "grades": {
+    "risk": 1,
+    "existing": 1,
+    "evidence": 0
+   },
+   "killed_by": [
+    "evidence"
+   ],
+   "dropped": true,
+   "merged_into": null,
+   "tier": "후보(약)"
+  },
+  {
+   "id": "TPC3",
+   "title": "간편결제 직후(결제 성공 화면) 카드 앱이 월 예산 대비 잔여를 보여주고 초과 전 알림을 주는 소비 경계심 장치가 없다",
+   "gap_type": "experience",
+   "unmet_need": "간편결제를 쓴 뒤 소비 경계심이 줄었다는 응답이 56.8%, 소비 금액이 늘었다는 응답이 51.3%이고 MZ세대는 카드 사용에서 소비 통제(64.4%)를 혜택 설계(19.2%)보다 중요하게 본다. 재단은 예산 초과 알림 도입을 권했다(발언). 해석: 결제 직후의 예산 대비 현황 표시가 비어 있다. 단 응답은 전연령 또는 MZ 범위 미기재다.",
+   "genz_basis": [
+    {
+     "fact_id": "MHF39",
+     "says": "간편결제 후 소비 경계심 감소 경험 56.8%",
+     "age_scope": "전연령(19세 이상)",
+     "weight": "핵심"
+    },
+    {
+     "fact_id": "MHF40",
+     "says": "간편결제 후 실제 소비금액 증가 51.3%",
+     "age_scope": "전연령(19세 이상)",
+     "weight": "핵심"
+    },
+    {
+     "fact_id": "CSF5",
+     "says": "카드 활용에 필요한 요소로 소비 통제 64.4%, 카드 혜택 설계 19.2%",
+     "age_scope": "MZ(연령 범위 미기재)",
+     "weight": "핵심"
+    },
+    {
+     "fact_id": "MHF41",
+     "says": "재단 관계자가 예산 초과 알림 도입 필요 발언(조사 응답 아님)",
+     "age_scope": "전연령",
+     "weight": "보조"
+    },
+    {
+     "fact_id": "CSF3",
+     "says": "MZ세대 53.6%가 카드 결제일에 부담을 느낀 적 있음",
+     "age_scope": "MZ(연령 범위 미기재)",
+     "weight": "보조"
+    }
+   ],
+   "existing_check": {
+    "db_cards_compared": [
+     "카카오뱅크 줍줍 신한카드",
+     "디지로카 London",
+     "토심이 첵첵",
+     "토스뱅크 체크카드",
+     "케이뱅크 ONE 체크"
+    ],
+    "similar": [
+     {
+      "card": "카카오뱅크 줍줍 신한카드",
+      "how_similar": "앱에서 즉시결제·내역 조회 원스톱",
+      "difference": "예산 알림이 아닌 조회와 선결제 기능"
+     },
+     {
+      "card": "디지로카 London",
+      "how_similar": "즉시결제 시 추가 캐시백",
+      "difference": "결제 직후 정산을 유도할 뿐 예산 개념 없음"
+     }
+    ],
+    "web_checked": [
+     "웹 검색 예산 소진으로 DB 밖 카드 확인 못 함(DB 판정)"
+    ],
+    "verdict": "none",
+    "note": "DB 50종 혜택 문구에 예산 대비 현황·초과 알림 구조는 없음. 카드사 앱 부가기능은 혜택 문구에 안 나올 수 있어 none은 DB 한정 판정이며 반증 약함."
+   },
+   "mechanism_tags": [
+    "challenge",
+    "ai_personalize"
+   ],
+   "need_key": "safety",
+   "domain_key": null,
+   "strength": "중",
+   "strength_reason": "독립 출처 2건(MHS14, CSS4)이 같은 방향이지만 모두 연령 범위가 넓거나 미기재. DB 문구 한계로 none 신뢰도는 낮음.",
+   "counter_evidence": "알림은 혜택 구조가 아니라 앱 기능이라 카드 상품 차별화로 약하고 이미 카드사·가계부 앱이 제공할 수 있음.",
+   "risks": [
+    "카드 상품 설계보다 앱 기능이라 상품 기획과 거리 있음",
+    "예산 알림이 사용액 감소로 이어져 수익성과 충돌(가정)"
+   ],
+   "invest_related": false,
+   "cvp_seed": {
+    "target": "간편결제로 지출이 늘었다고 느끼는 20대",
+    "offer": "결제 직후 월 예산 대비 잔여 표시와 초과 전 알림, 예산 내 사용 시 혜택",
+    "key_benefit": "혜택보다 먼저 소비 통제",
+    "alternative": "카드사 앱 이용내역 조회, 가계부 앱",
+    "differentiator": "비교한 DB 카드는 조회·선결제까지만 하고 예산 현황 표시는 없음",
+    "reason_to_believe": [
+     "MHF39",
+     "MHF40",
+     "CSF5"
+    ]
+   },
+   "grades": {
+    "risk": 1,
+    "existing": 1,
+    "evidence": 1
+   },
+   "killed_by": [],
+   "dropped": false,
+   "merged_into": "CTC1",
+   "tier": "후보(약)"
+  },
+  {
+   "id": "TPC4",
+   "title": "모바일카드로 결제하는 순간 이번 달 전월실적·월 한도 소진 상태를 보여주고 소진 시 다른 혜택으로 넘기는 장치가 없다",
+   "gap_type": "condition",
+   "unmet_need": "20대는 모바일카드를 선호 지급수단 36.8%로 꼽고 향후 사용 확대 예상도 55.5%로 가장 높다. MZ세대의 신용카드 사용 이유 1위가 실적·할인 혜택(44.0%)이다. 해석: 앱카드 결제는 실적·한도에 걸린 혜택을 쓰는 접점인데, 그 순간 잔여를 알려주는 구조가 DB 문구에서 보이지 않는다.",
+   "genz_basis": [
+    {
+     "fact_id": "STF2",
+     "says": "선호 지급수단으로 20대 36.8%가 모바일카드",
+     "age_scope": "20대",
+     "weight": "핵심"
+    },
+    {
+     "fact_id": "STF16",
+     "says": "향후 사용 늘 지급수단으로 20대 55.5%가 모바일카드",
+     "age_scope": "20대",
+     "weight": "핵심"
+    },
+    {
+     "fact_id": "CSF1",
+     "says": "MZ 신용카드 사용 이유로 실적·할인 혜택 44.0%(중복응답)",
+     "age_scope": "MZ(연령 범위 미기재)",
+     "weight": "핵심"
+    },
+    {
+     "fact_id": "STF4",
+     "says": "20대 월평균 오프라인 이용 건수 중 모바일카드 8.3건",
+     "age_scope": "20대",
+     "weight": "보조"
+    }
+   ],
+   "existing_check": {
+    "db_cards_compared": [
+     "My WE:SH",
+     "NEED Pay",
+     "카드의정석2",
+     "LOCA 365",
+     "Discount Plan+"
+    ],
+    "similar": [
+     {
+      "card": "My WE:SH",
+      "how_similar": "perf_recharge: 생일 전월실적 채워드림",
+      "difference": "실적 대신 채워주는 이벤트, 결제 시 잔여 안내 아님"
+     },
+     {
+      "card": "NEED Pay",
+      "how_similar": "perf_recharge 태그",
+      "difference": "실적 보전이며 소진 안내 구조는 문구에 없음"
+     }
+    ],
+    "web_checked": [
+     "웹 검색 예산 소진으로 DB 밖 카드 확인 못 함(DB 판정)"
+    ],
+    "verdict": "partial",
+    "note": "실적 보전은 있으나 결제 시점 잔여·소진 안내는 DB 문구에 없음. 카드사 앱 기능으로 존재할 수 있어 실제는 더 높은 exists 가능성."
+   },
+   "mechanism_tags": [
+    "anti_cap",
+    "miss_refund"
+   ],
+   "need_key": "simple",
+   "domain_key": null,
+   "strength": "약",
+   "strength_reason": "모바일카드 선호는 20대 통계로 두텁지만 '잔여 안내' 수요 자체를 직접 보여주는 근거가 없음.",
+   "counter_evidence": "카드사 앱 대부분이 실적 현황 화면을 이미 제공하므로 새롭지 않을 수 있음.",
+   "risks": [
+    "이미 제공 기능일 가능성",
+    "CSF23: 통합 할인 한도 축소 사례처럼 한도 구조 변경이 불만으로 이어짐"
+   ],
+   "invest_related": false,
+   "cvp_seed": {
+    "target": "앱카드 위주로 결제하는 20대",
+    "offer": "결제 순간 실적·한도 잔여 표시와 소진 시 대체 혜택 전환",
+    "key_benefit": "혜택 한도를 놓치지 않고 쓴다",
+    "alternative": "My WE:SH, NEED Pay",
+    "differentiator": "비교 카드는 실적 보전 이벤트이고 이쪽은 결제 시점 안내",
+    "reason_to_believe": [
+     "STF2",
+     "STF16",
+     "CSF1"
+    ]
+   },
+   "grades": {
+    "risk": 1,
+    "existing": 1,
+    "evidence": 1
+   },
+   "killed_by": [],
+   "dropped": false,
+   "merged_into": "CTC6",
+   "tier": "후보(약)"
+  },
+  {
+   "id": "TPC5",
+   "title": "소액 간편결제·타임딜 결제에서 건당 최소금액이나 인앱결제 제외 조건 때문에 혜택이 빠지는 문제를 없앤 카드가 드물다",
+   "gap_type": "condition",
+   "unmet_need": "20대 모바일카드 오프라인 건수는 월 8.3건이고 온라인 쇼핑에서 간편결제를 많이 쓰며(58.7%), 페이 앱 타임어택 결제 사례는 8600원이다. 해석: 소액이 많은 결제 패턴에 건당 하한(1만원, 2만원 등)이 걸리면 체감 혜택이 줄 수 있으나 20대 건당 결제액 근거는 없다.",
+   "genz_basis": [
+    {
+     "fact_id": "STF13",
+     "says": "20대 간편결제 이용자의 58.7%는 주로 온라인 쇼핑 시 이용",
+     "age_scope": "20대",
+     "weight": "핵심"
+    },
+    {
+     "fact_id": "STF4",
+     "says": "20대 월평균 오프라인 이용 건수 27.8건 중 모바일카드 8.3건",
+     "age_scope": "20대",
+     "weight": "보조"
+    },
+    {
+     "fact_id": "TRF15",
+     "says": "8600원 타임어택 결제 사례(low)",
+     "age_scope": "대학생 1인 사례",
+     "weight": "보조"
+    }
+   ],
+   "existing_check": {
+    "db_cards_compared": [
+     "케이뱅크 ONE 체크",
+     "LOCA 365",
+     "NEED Pay",
+     "토심이 첵첵",
+     "ZERO Edition3(할인형)",
+     "LOCA LIKIT 1.2"
+    ],
+    "similar": [
+     {
+      "card": "케이뱅크 ONE 체크",
+      "how_similar": "지정 가맹점 5%는 건당 1만원 이상",
+      "difference": "하한이 있음"
+     },
+     {
+      "card": "LOCA 365",
+      "how_similar": "건당 2만원 이상 결제 조건",
+      "difference": "하한이 있음"
+     },
+     {
+      "card": "NEED Pay",
+      "how_similar": "멤버십 인앱·단건결제 제외, 건당 한도 3000원",
+      "difference": "조건이 많음"
+     },
+     {
+      "card": "ZERO Edition3(할인형)",
+      "how_similar": "전 가맹점 0.8% 청구할인, 실적·한도 없음",
+      "difference": "건당 조건은 없으나 페이 앱 소액 특화 아님"
+     }
+    ],
+    "web_checked": [
+     "웹 검색 예산 소진으로 DB 밖 카드 확인 못 함(DB 판정)"
+    ],
+    "verdict": "partial",
+    "note": "조건 없는 균일 정률 카드가 있어 완전한 공백은 아님. 소액 간편결제 특화 구조만 비어 있음."
+   },
+   "mechanism_tags": [
+    "anti_cap",
+    "paymethod_bonus"
+   ],
+   "need_key": "simple",
+   "domain_key": "online",
+   "strength": "약",
+   "strength_reason": "건당 하한 카드 3종은 확인되나 20대 건당 결제액 근거가 없어 수요는 추정.",
+   "counter_evidence": "균일 정률 카드가 이미 하한 없이 혜택을 주므로 차별점이 작음.",
+   "risks": [
+    "소액 건 처리 비용 증가(가정)",
+    "TRF15 low"
+   ],
+   "invest_related": false,
+   "cvp_seed": {
+    "target": "소액 온라인 결제가 잦은 20대",
+    "offer": "건당 하한과 인앱 제외 없이 페이 앱 결제 전체에 혜택",
+    "key_benefit": "작은 결제도 혜택에서 빠지지 않음",
+    "alternative": "ZERO Edition3, 케이뱅크 ONE 체크",
+    "differentiator": "ZERO는 전 가맹점 균일 0.8%, 이쪽은 페이 앱 소액 결제에 가산",
+    "reason_to_believe": [
+     "STF13",
+     "가정: 소액 결제 비중이 큼"
+    ]
+   },
+   "grades": {
+    "risk": 1,
+    "existing": 1,
+    "evidence": 0
+   },
+   "killed_by": [
+    "evidence"
+   ],
+   "dropped": true,
+   "merged_into": null,
+   "tier": "후보(약)"
+  },
+  {
+   "id": "TPC6",
+   "title": "신용카드 결제 직후 건별로 바로 정산·결제일을 정하게 해 결제일 부담을 줄이는 구조가 즉시결제 캐시백 수준에 머문다",
+   "gap_type": "experience",
+   "unmet_need": "MZ세대의 53.6%가 카드 결제일에 부담을 느꼈고, 20대의 결제성 계좌 잔액은 0~100만원 미만이 45.5%다. 핀테크 소액 후불결제(BNPL) 잔액은 줄었다. 해석: 결제 후 자금 부담을 앱에서 조절하려는 수요가 있을 수 있으나, 선결제 인센티브 카드는 이미 있다.",
+   "genz_basis": [
+    {
+     "fact_id": "CSF3",
+     "says": "MZ 53.6%가 카드 결제일 부담 경험",
+     "age_scope": "MZ(연령 범위 미기재)",
+     "weight": "핵심"
+    },
+    {
+     "fact_id": "STF22",
+     "says": "결제성 예금계좌 잔액 0~100만원 미만 20대 45.5%",
+     "age_scope": "20대",
+     "weight": "핵심"
+    },
+    {
+     "fact_id": "MHF35",
+     "says": "핀테크 3사 BNPL 잔액이 2023년 1분기 대비 53% 감소",
+     "age_scope": "전연령",
+     "weight": "보조"
+    },
+    {
+     "fact_id": "MHF38",
+     "says": "BNPL 월 한도 토스·네이버페이 최대 30만원",
+     "age_scope": "전연령",
+     "weight": "보조"
+    }
+   ],
+   "existing_check": {
+    "db_cards_compared": [
+     "디지로카 London",
+     "카카오뱅크 줍줍 신한카드",
+     "LOCA 365"
+    ],
+    "similar": [
+     {
+      "card": "디지로카 London",
+      "how_similar": "일시불 5영업일 내 즉시결제 시 추가 1% 캐시백, LOCA 나누기",
+      "difference": "즉시결제 인센티브와 분할은 이미 있음"
+     },
+     {
+      "card": "카카오뱅크 줍줍 신한카드",
+      "how_similar": "승인 후 5일 내 선결제 시 1%(월 2만원), 앱 원스톱 즉시결제",
+      "difference": "같은 구조"
+     }
+    ],
+    "web_checked": [
+     "웹 검색 예산 소진으로 DB 밖 카드 확인 못 함(DB 판정)"
+    ],
+    "verdict": "exists",
+    "note": "선결제 캐시백 구조는 2종에서 확인. 남는 공백은 결제일 분산 같은 세부 변형뿐."
+   },
+   "mechanism_tags": [
+    "auto_best",
+    "anti_cap"
+   ],
+   "need_key": "safety",
+   "domain_key": null,
+   "strength": "약",
+   "strength_reason": "CSF3는 범위 미기재, 구조는 이미 존재.",
+   "counter_evidence": "디지로카·줍줍이 이미 같은 구조를 제공.",
+   "risks": [
+    "여전법 발급 요건 STF24",
+    "후불 한도 규제",
+    "BNPL 시장 축소 MHF35"
+   ],
+   "invest_related": false,
+   "cvp_seed": {
+    "target": "결제일 부담을 느끼는 20대",
+    "offer": "결제 직후 건별 선결제와 결제일 선택",
+    "key_benefit": "결제일 부담 완화",
+    "alternative": "디지로카 London, 줍줍 신한카드",
+    "differentiator": "둘은 선결제 캐시백이고 이쪽은 결제일 선택 중심",
+    "reason_to_believe": [
+     "CSF3",
+     "STF22"
+    ]
+   },
+   "grades": {
+    "risk": 0,
+    "existing": 0,
+    "evidence": 0
+   },
+   "killed_by": [
+    "risk",
+    "existing",
+    "evidence"
+   ],
+   "dropped": true,
+   "merged_into": null,
+   "tier": "후보(약)"
+  },
+  {
+   "id": "CTC1",
+   "title": "사용자가 정한 월 소비 한도·예산 초과 알림과 혜택을 한 카드 안에서 묶은 '소비 통제형' 구조 없음",
+   "gap_type": "experience",
+   "unmet_need": "MZ 설문에서 카드 활용에 필요한 요소로 소비 통제(64.4%)가 혜택 설계(19.2%)보다 높고, 간편결제 후 소비 경계심이 줄었다는 응답이 56.8%, 실제 소비 증가 51.3%. 해석: 혜택 경쟁보다 통제 장치를 카드 상품의 핵심 가치로 올릴 여지.",
+   "genz_basis": [
+    {
+     "fact_id": "CSF5",
+     "says": "필요 요소로 소비 통제 64.4%, 혜택 설계 19.2%.",
+     "age_scope": "MZ(설문, 20대 한정 아님)",
+     "weight": "핵심"
+    },
+    {
+     "fact_id": "MHF39",
+     "says": "간편결제 후 소비 경계심 감소를 접했다는 응답 56.8%.",
+     "age_scope": "전연령",
+     "weight": "핵심"
+    },
+    {
+     "fact_id": "MHF40",
+     "says": "간편결제 후 소비 금액 증가 응답 51.3%.",
+     "age_scope": "전연령",
+     "weight": "핵심"
+    },
+    {
+     "fact_id": "MHF41",
+     "says": "재단 관계자가 예산 초과 알림 등 과소비 예방 기능 도입 필요를 언급.",
+     "age_scope": "전연령",
+     "weight": "보조"
+    },
+    {
+     "fact_id": "CSF3",
+     "says": "MZ 53.6%가 결제일 부담을 느낀 적 있음.",
+     "age_scope": "MZ(설문, 20대 한정 아님)",
+     "weight": "보조"
+    }
+   ],
+   "existing_check": {
+    "db_cards_compared": [
+     "처음(ANNIVERSE)",
+     "디지로카 London",
+     "카카오뱅크 줍줍 신한카드",
+     "NEED Pay",
+     "토스뱅크 체크카드"
+    ],
+    "similar": [
+     {
+      "card": "처음(ANNIVERSE)",
+      "how_similar": "'소비관리 보너스: 목표 입력 500P, 달성 5천P, 일시불 당월 즉시결제 0.3% 추가'로 목표 입력과 달성 보상을 둠",
+      "difference": "사후 달성 보상(월 최대 1만P 수준)이며 한도 하드캡·초과 시 알림·혜택 연동 차단은 없음"
+     }
+    ],
+    "web_checked": [],
+    "verdict": "partial",
+    "note": "웹 검색 한도 소진으로 DB만 판정. 처음 카드가 목표 입력형 보상을 이미 일부 제공."
+   },
+   "mechanism_tags": [
+    "challenge",
+    "auto_best"
+   ],
+   "need_key": "safety",
+   "domain_key": "daily",
+   "strength": "중",
+   "strength_reason": "출처 4건(어피티 설문, 재단 설문 인용)이지만 둘 다 MZ/전연령이고 20대 특정 수치가 아님. 64.4%는 가계부·한도설정을 한데 묶은 문항이라 한도 기능 단독 수요는 불명.",
+   "counter_evidence": "소비 통제 수요는 카드가 아니라 토스·카카오뱅크 등 앱 가계부로 이미 충족되고 있을 수 있음. 설문 응답은 선언적이라 실제 카드 선택 요인(CSF1 실적·할인 혜택 44.0%)과 다를 수 있음.",
+   "risks": [
+    "통제 기능이 약한 혜택 가시성을 낮춰 사용액 감소, 카드사 수익 충돌",
+    "한도 설정 자체는 앱 기능이라 상품 차별화가 쉽게 복제됨",
+    "MZ 설문 표본이 어피티 구독자 중심일 가능성(CSS4, medium)"
+   ],
+   "invest_related": false,
+   "cvp_seed": {
+    "target": "결제일 부담과 과소비 경계심을 느끼는 20대 카드 이용자",
+    "offer": "본인이 정한 월 한도·카테고리 예산을 카드에 설정하고, 한도 도달 시 알림과 신규 승인 확인 단계를 두며 한도 내 사용에만 혜택을 쌓는 구조",
+    "key_benefit": "혜택보다 먼저 '이번 달 결제일에 얼마 나올지'를 통제",
+    "alternative": "처음(ANNIVERSE), 토스·카카오뱅크 가계부 기능",
+    "differentiator": "처음의 소비관리 보너스는 사후 보상인 반면 한도·알림을 결제 시점에 걸어 둔다",
+    "reason_to_believe": [
+     "CSF5",
+     "MHF39",
+     "MHF40",
+     "가정: 한도 도달 알림이 결제일 부담을 낮춤"
+    ]
+   },
+   "grades": {
+    "risk": 2,
+    "existing": 1,
+    "evidence": 1
+   },
+   "killed_by": [],
+   "dropped": false,
+   "merged_into": null,
+   "tier": "후보(약)",
+   "rank": 3
+  },
+  {
+   "id": "CTC2",
+   "title": "결제일 부담(53.6%)에 대응해 결제 주기를 쪼개거나 결제일을 고객이 정하는 구조에 혜택을 연결한 카드 없음",
+   "gap_type": "condition",
+   "unmet_need": "MZ의 53.6%가 결제일에 부담을 느낀 적이 있고, 리볼빙은 88.0%가 앞으로도 이용하지 않겠다고 답했다. 20대는 카드론 연체율이 2025년 말 대비 0.41%p 올랐다. 해석: 빚 없이 결제일 충격을 줄이는 수단이 비어 있음.",
+   "genz_basis": [
+    {
+     "fact_id": "CSF3",
+     "says": "MZ 53.6%가 결제일 부담 경험(가끔 41.3%, 자주 12.3%).",
+     "age_scope": "MZ(설문, 20대 한정 아님)",
+     "weight": "핵심"
+    },
+    {
+     "fact_id": "CSF6",
+     "says": "리볼빙 인지 91.2%, 앞으로도 이용하지 않겠다 88.0%.",
+     "age_scope": "MZ(설문, 20대 한정 아님)",
+     "weight": "핵심"
+    },
+    {
+     "fact_id": "STF49",
+     "says": "카드론 연체율 2026년 7월 2.49%, 20대 연체율 2025년 말 대비 0.41%p 상승.",
+     "age_scope": "20대(연체율 상승 폭)",
+     "weight": "핵심"
+    },
+    {
+     "fact_id": "STF22",
+     "says": "결제성 예금 잔액 0~100만원 미만 20대 45.5%.",
+     "age_scope": "20대",
+     "weight": "보조"
+    }
+   ],
+   "existing_check": {
+    "db_cards_compared": [
+     "디지로카 London",
+     "카카오뱅크 줍줍 신한카드",
+     "처음(ANNIVERSE)",
+     "LOCA 365",
+     "taptap O"
+    ],
+    "similar": [
+     {
+      "card": "디지로카 London",
+      "how_similar": "일시불 5영업일 내 즉시결제 시 1% 추가 캐시백, 주간 5만원 이상 자동결제 시 추가 캐시백, 건당 3만원 이상 무수수료 분할",
+      "difference": "선결제를 보상하는 가산 혜택이며 결제일 선택·분할 주기 조정 자체가 상품 핵심은 아님"
+     },
+     {
+      "card": "카카오뱅크 줍줍 신한카드",
+      "how_similar": "승인 후 5일 이내 선결제 시 추가 캐시백, 앱에서 즉시결제",
+      "difference": "역시 가산 혜택이고 결제일 조정 없음"
+     }
+    ],
+    "web_checked": [],
+    "verdict": "partial",
+    "note": "선결제 보상은 3종이 있으나 결제일 선택·월 내 분할 결제를 핵심 구조로 한 카드는 DB에 없음. 웹 미확인."
+   },
+   "mechanism_tags": [
+    "paymethod_bonus",
+    "perf_recharge"
+   ],
+   "need_key": "safety",
+   "domain_key": "fixed",
+   "strength": "중",
+   "strength_reason": "설문 1건(CSS4)과 금감원 자료 보도(STS14)와 한국은행 통계 조합. 결제일 부담 수치는 MZ 한정이며 '선택'에 대한 수요 직접 근거는 없음.",
+   "counter_evidence": "카드사들이 이미 결제일 변경과 선결제를 일반 서비스로 제공할 가능성이 있고(DB 밖, 미확인), 고객 부담이 결제일이 아니라 금액일 수 있음.",
+   "risks": [
+    "선결제·분할 유도는 이자수익 구조와 충돌, 할부 수수료 수익 감소",
+    "결제일 다변화 시 카드사 자금 운용·정산 부담(가정)",
+    "리볼빙 비이용 88.0%가 선언적 응답일 수 있음"
+   ],
+   "invest_related": false,
+   "cvp_seed": {
+    "target": "결제일에 현금 흐름이 빠듯한 사회초년생·대학생",
+    "offer": "주간·반월 자동 정산 또는 결제일 선택을 기본 제공하고, 정산 주기를 지키면 혜택을 유지하는 구조",
+    "key_benefit": "리볼빙·카드론 없이 결제일 충격 완화",
+    "alternative": "디지로카 London의 즉시결제 캐시백, 카카오뱅크 줍줍 신한카드",
+    "differentiator": "선결제 가산이 아니라 정산 주기를 고객이 설계",
+    "reason_to_believe": [
+     "CSF3",
+     "CSF6",
+     "STF49",
+     "가정: 주간 정산이 결제일 부담을 낮춤"
+    ]
+   },
+   "grades": {
+    "risk": 1,
+    "existing": 0,
+    "evidence": 1
+   },
+   "killed_by": [
+    "existing"
+   ],
+   "dropped": true,
+   "merged_into": null,
+   "tier": "후보(약)"
+  },
+  {
+   "id": "CTC3",
+   "title": "혜택 단종·축소가 일상화된 시장에서 발급 시 혜택 조건을 고정하고 변경 시 고객 선택권을 주는 '혜택 신뢰' 카드 없음",
+   "gap_type": "trust",
+   "unmet_need": "전업 카드사 단종 카드가 2022년 101종에서 2024년 595종으로 늘었고, 하나카드 MG+W는 연회비 2000원 인상과 월 통합할인한도 6만원에서 4만원 감소 사례가 보도됐다. 카드사 연회비 수익은 2019년 9893억원에서 2024년 1조4331억원으로 증가. 해석: 혜택 안정성이 비어 있는 신뢰 접점.",
+   "genz_basis": [
+    {
+     "fact_id": "CSF22",
+     "says": "단종 카드 2022년 101종, 2023년 458종, 2024년 595종, 2025년 상반기 400종.",
+     "age_scope": "전연령",
+     "weight": "핵심"
+    },
+    {
+     "fact_id": "CSF23",
+     "says": "하나카드 MG+W 연회비 인상과 통합할인한도 6만원에서 4만원 감소.",
+     "age_scope": "전연령",
+     "weight": "핵심"
+    },
+    {
+     "fact_id": "CSF25",
+     "says": "7개 카드사 연회비 수익 2019년 9893억원에서 2024년 1조4331억원.",
+     "age_scope": "전연령",
+     "weight": "보조"
+    },
+    {
+     "fact_id": "TRF19",
+     "says": "2024~2025년 단종 신용카드 1120종.",
+     "age_scope": "전연령",
+     "weight": "보조"
+    },
+    {
+     "fact_id": "CSF21",
+     "says": "2026년 1~5월 해지 회원 320만3000여명, 전년 동기 대비 7.4% 증가.",
+     "age_scope": "전연령",
+     "weight": "보조"
+    }
+   ],
+   "existing_check": {
+    "db_cards_compared": [
+     "카드의정석2",
+     "LOCA LIKIT 1.2",
+     "ZERO Edition3(할인형)",
+     "현대카드 M",
+     "Mr.Life",
+     "토스뱅크 하나카드 WIDE"
+    ],
+    "similar": [
+     {
+      "card": "ZERO Edition3(할인형)",
+      "how_similar": "전월 실적·할인 한도 없는 0.8% 청구할인으로 변경 여지 있는 조건이 적음",
+      "difference": "혜택 유지 보증이나 변경 시 해지·대체 선택권은 문구에 없음"
+     }
+    ],
+    "web_checked": [],
+    "verdict": "none",
+    "note": "DB 50종 혜택 문구에서 '혜택 유지 보장·변경 시 보호'를 명시한 카드를 찾지 못함. 웹 검색 한도 소진으로 DB 밖 확인 못 함."
+   },
+   "mechanism_tags": [
+    "benefit_rental",
+    "auto_best"
+   ],
+   "need_key": "safety",
+   "domain_key": "null",
+   "strength": "중",
+   "strength_reason": "단종·축소 근거는 출처 4건 이상으로 두껍지만 모두 전연령이고 GenZ가 이를 불신한다는 직접 근거는 없음. 해석에 의존.",
+   "counter_evidence": "20대는 신용카드 이용이 줄고 체크카드로 이동해(STF9, CSF18) 장기 혜택 보장에 가치를 덜 둘 수 있음. 청년은 카드를 오래 쓰기보다 갈아타는 쪽일 가능성.",
+   "risks": [
+    "의무유지기간 3년 규제가 있어(STF69, 구 보도라 현행 조문 재확인 필요) 최소 3년 혜택 유지는 규제상 이미 요구되는 수준이며, 그 이상의 '보장'은 카드사 수익성 부담",
+    "혜택 고정은 고정 비용으로 역선택·체리피킹(혜택 높은 소비자만 남음) 위험",
+    "부가서비스 변경 절차와 고지 기준은 근거 팩에 없으므로 별도 확인 필요(가정)",
+    "의무유지기간 이후에 변경하는 것은 합법이라 '보장'은 계약상 상품 설계로만 가능(해석)"
+   ],
+   "invest_related": false,
+   "cvp_seed": {
+    "target": "단종·혜택 축소를 경험했거나 걱정하는 카드 이용자",
+    "offer": "발급 시 핵심 혜택(율·한도)을 문서로 고정하고, 축소 시 사전 고지와 대체 혜택 선택 또는 연회비 환급을 제공",
+    "key_benefit": "혜택이 줄어들지 않는다는 예측 가능성",
+    "alternative": "ZERO Edition3, LOCA LIKIT 1.2 같은 단순 정률 카드",
+    "differentiator": "단순 정률 카드는 조건이 단순할 뿐 유지 약속은 없음",
+    "reason_to_believe": [
+     "CSF22",
+     "CSF23",
+     "CSF25",
+     "가정: GenZ가 혜택 유지를 선택 기준으로 봄"
+    ]
+   },
+   "grades": {
+    "risk": 1,
+    "existing": 2,
+    "evidence": 1
+   },
+   "killed_by": [],
+   "dropped": false,
+   "merged_into": null,
+   "tier": "후보(약)",
+   "rank": 4
+  },
+  {
+   "id": "CTC4",
+   "title": "구독 예산 한도·일시정지를 지원하는 정기결제 전용 통제 구조 없음(구독은 할인만 존재)",
+   "gap_type": "benefit_structure",
+   "unmet_need": "구독 이용자의 67.2%가 구독 예산을 따로 설정하지 않고, 비용 부담 시 해지 대신 계정 공유·일시정지·연간 결제로 버틴다. 20~30대가 가장 다양한 카테고리를 유료 구독하며 20대 유료 OTT 이용률 83.6%. 해석: 정기결제 총액을 통제하는 카드 기능이 비어 있음.",
+   "genz_basis": [
+    {
+     "fact_id": "MHF25",
+     "says": "67.2%가 구독 예산을 따로 설정하지 않음.",
+     "age_scope": "전연령",
+     "weight": "핵심"
+    },
+    {
+     "fact_id": "MHF24",
+     "says": "비용 부담 시 계정 공유·일시정지·연간 결제 전환 행동.",
+     "age_scope": "전연령",
+     "weight": "보조"
+    },
+    {
+     "fact_id": "TRF11",
+     "says": "유료 구독형 OTT 이용률 20대 83.6%.",
+     "age_scope": "20대",
+     "weight": "핵심"
+    },
+    {
+     "fact_id": "TRF13",
+     "says": "가장 다양한 카테고리를 유료 구독하는 연령은 20~30대.",
+     "age_scope": "20~30대",
+     "weight": "핵심"
+    },
+    {
+     "fact_id": "MHF23",
+     "says": "쇼핑 멤버십 이용자 월평균 구독 지출 33,400원.",
+     "age_scope": "전연령",
+     "weight": "보조"
+    }
+   ],
+   "existing_check": {
+    "db_cards_compared": [
+     "NEED Pay",
+     "zgm.streaming",
+     "처음(ANNIVERSE)",
+     "taptap O",
+     "BC 바로 K-패스 카드",
+     "iM A 체크카드"
+    ],
+    "similar": [
+     {
+      "card": "NEED Pay",
+      "how_similar": "넷플릭스·유튜브·디즈니플러스 등 정기결제 30% 할인(건당 3,000원, 월 통합 5,000원)",
+      "difference": "할인 혜택만 있고 구독 총액 한도·일시정지 알림 없음"
+     },
+     {
+      "card": "zgm.streaming",
+      "how_similar": "멤버십·스트리밍 이용요금 할인(월 할인한도 7,000원)",
+      "difference": "할인 혜택뿐 통제 기능 없음"
+     }
+    ],
+    "web_checked": [],
+    "verdict": "none",
+    "note": "구독 혜택 카드는 다수지만 구독 지출 상한·알림을 핵심으로 한 카드는 DB에 없음. 웹 미확인."
+   },
+   "mechanism_tags": [
+    "subscription_ott",
+    "challenge"
+   ],
+   "need_key": "fixed_cost",
+   "domain_key": "sub",
+   "strength": "중",
+   "strength_reason": "20대 OTT 수치(TRF11)와 전연령 예산 미설정(MHF25)을 결합한 추론. 구독 통제 수요를 20대에서 직접 측정한 근거는 없음.",
+   "counter_evidence": "구독 관리는 앱(구독 관리 서비스)이나 간편결제 구독 목록으로도 가능. 통제 기능이 혜택 대비 카드 선택 요인이 될지는 불명.",
+   "risks": [
+    "정기결제 가맹점 식별과 일시정지는 카드사가 아닌 가맹점 권한이라 기술·운영 제약",
+    "구독 할인 수익 구조(할인 상환)와 해지 유도가 충돌",
+    "MHF25는 전연령(재단 설문)"
+   ],
+   "invest_related": false,
+   "cvp_seed": {
+    "target": "구독 3개 이상을 쓰는 20~30대",
+    "offer": "정기결제 월 예산을 설정하면 초과·신규 정기결제 시 알림, 구독별 할인과 월 한도 안에서만 적용",
+    "key_benefit": "구독비 새는 곳을 줄이면서 할인도 받음",
+    "alternative": "NEED Pay, zgm.streaming",
+    "differentiator": "할인 카드가 아니라 구독 총액 통제 카드",
+    "reason_to_believe": [
+     "MHF25",
+     "TRF11",
+     "TRF13",
+     "가정: 구독 예산 알림이 해지 부담 없이 지출을 줄임"
+    ]
+   },
+   "grades": {
+    "risk": 1,
+    "existing": 1,
+    "evidence": 1
+   },
+   "killed_by": [],
+   "dropped": false,
+   "merged_into": null,
+   "tier": "후보(약)",
+   "rank": 7
+  },
+  {
+   "id": "CTC5",
+   "title": "후불결제(BNPL)·소액 신용 이용 20대를 위해 본인이 정한 하드캡 한도로 시작하는 입문 신용 구조 없음",
+   "gap_type": "condition",
+   "unmet_need": "3사 BNPL 잔액 중 20대가 131억1900만원(63%)이며, 소액 후불 월 한도는 토스·네이버페이 최대 30만원. 2026년 12월부터 청년 등 금융이력부족자의 카드 발급 문턱이 낮아지고, 보증금 담보 신용카드(보증금 100만~200만원 거론)가 도입된다. 해석: 소액·자기 제한형 신용의 수요가 있으며 카드 쪽 상품은 한도 자기 설정이 비어 있음.",
+   "genz_basis": [
+    {
+     "fact_id": "MHF36",
+     "says": "3사 BNPL 이용 잔액 중 20대 131억1900만원(63%).",
+     "age_scope": "20대",
+     "weight": "핵심"
+    },
+    {
+     "fact_id": "MHF38",
+     "says": "소액 후불 월 한도 토스·네이버페이 최대 30만원.",
+     "age_scope": "전연령",
+     "weight": "핵심"
+    },
+    {
+     "fact_id": "STF61",
+     "says": "2026년 12월부터 청년 등 금융이력부족자 카드 발급 문턱 완화.",
+     "age_scope": "청년",
+     "weight": "핵심"
+    },
+    {
+     "fact_id": "STF64",
+     "says": "보증금 담보 신용카드 보증금 100만~200만원 거론, 한도 미정.",
+     "age_scope": "청년·외국인",
+     "weight": "보조"
+    },
+    {
+     "fact_id": "STF66",
+     "says": "2026년 10월 21일 신한카드 보증금 기반 비대면 신용카드 발급이 혁신금융서비스로 지정.",
+     "age_scope": "청년·외국인",
+     "weight": "핵심"
+    }
+   ],
+   "existing_check": {
+    "db_cards_compared": [
+     "Youth Club 체크",
+     "카카오뱅크 줍줍 신한카드",
+     "토스뱅크 하나카드 WIDE",
+     "토스 삼성카드",
+     "하나 나라사랑카드 체크"
+    ],
+    "similar": [
+     {
+      "card": "토스뱅크 체크카드",
+      "how_similar": "실적 조건 없는 체크 구조로 잔액 안에서만 결제(한도=잔액)",
+      "difference": "신용(후불)이 아니며 신용이력 쌓기 기능 없음"
+     }
+    ],
+    "web_checked": [
+     "신한카드 보증금 기반 신용카드는 STF66 근거로만 확인(웹 직접 검색은 한도 소진으로 불가)"
+    ],
+    "verdict": "partial",
+    "note": "DB 신용카드 중 사용자 설정 하드캡을 제공하는 문구는 없음. 보증금 기반 카드는 출시 예정으로 DB 밖이며 상세 미확인."
+   },
+   "mechanism_tags": [
+    "spend_free",
+    "bank_bundle"
+   ],
+   "need_key": "safety",
+   "domain_key": "online",
+   "strength": "약",
+   "strength_reason": "20대 특정 근거(MHF36)와 정책 근거는 있으나 BNPL 잔액이 2023년 1분기 대비 53% 감소(MHF35)해 시장이 축소 중이고, 신규 상품은 규제 일정에 의존.",
+   "counter_evidence": "BNPL 잔액이 줄고(MHF35) 연체율이 카드사보다 낮아(MHF37) 수요·위험 모두 작을 수 있음. 보증금 카드는 한도가 담보로 정해져 '자기 설정'과 다른 구조.",
+   "risks": [
+    "보증금 카드 세부(한도·이용 조건)가 미정이라 상품 설계 근거가 약함(STF64)",
+    "소액 한도 상품은 건당 수익이 낮아 수익성 불확실",
+    "신용카드 발급은 소득·신용 요건(STF24, STF70)이 있어 대상이 제한"
+   ],
+   "invest_related": false,
+   "cvp_seed": {
+    "target": "신용이력이 없고 소액 후불을 쓰는 만 19세 이상 사회초년생",
+    "offer": "월 이용한도를 본인이 낮게 설정하는 입문 신용카드로 시작하고, 한도 준수 이력에 따라 한도를 올리는 구조",
+    "key_benefit": "BNPL보다 넓게 쓰면서 과소비 없이 신용 쌓기",
+    "alternative": "토스·네이버페이 후불결제, 보증금 담보 신용카드",
+    "differentiator": "담보나 외부 한도가 아닌 본인 설정 한도",
+    "reason_to_believe": [
+     "MHF36",
+     "STF61",
+     "STF66",
+     "가정: 자기 한도 설정 수요 존재"
+    ]
+   },
+   "grades": {
+    "risk": 1,
+    "existing": 1,
+    "evidence": 1
+   },
+   "killed_by": [],
+   "dropped": false,
+   "merged_into": null,
+   "tier": "후보(약)",
+   "rank": 8
+  },
+  {
+   "id": "CTC6",
+   "title": "전월실적 구간 미달 시 혜택이 급락하는 구조에 대해, 미달 예정 알림과 단계적 완충을 핵심으로 한 카드 없음",
+   "gap_type": "condition",
+   "unmet_need": "캐릭터 체크카드에 전월 실적 조건이 붙어 '소장용'으로만 발급하는 불만이 보도됐고, 카드 혜택 한도 축소 사례도 있다. 해석: 실적 조건의 불투명성과 예측 불가능성이 불만이며, 진행 표시·미달 완충 장치는 비어 있음.",
+   "genz_basis": [
+    {
+     "fact_id": "VRF23",
+     "says": "캐릭터 체크카드에 전월 실적 조건이 붙어 소장용으로만 발급한다는 불만.",
+     "age_scope": "MZ",
+     "weight": "핵심"
+    },
+    {
+     "fact_id": "CSF23",
+     "says": "하나카드 MG+W 월 통합할인한도 6만원에서 4만원 감소.",
+     "age_scope": "전연령",
+     "weight": "보조"
+    },
+    {
+     "fact_id": "CSF1",
+     "says": "MZ 신용카드 사용 이유 1위가 실적·할인 혜택 44.0%.",
+     "age_scope": "MZ(설문, 20대 한정 아님)",
+     "weight": "보조"
+    }
+   ],
+   "existing_check": {
+    "db_cards_compared": [
+     "My WE:SH",
+     "NEED Pay",
+     "ZERO Edition3(할인형)",
+     "카카오뱅크 줍줍 신한카드",
+     "토스뱅크 하나카드 WIDE",
+     "LOCA 365"
+    ],
+    "similar": [
+     {
+      "card": "My WE:SH",
+      "how_similar": "생일 혜택으로 '전월실적 채워드림'",
+      "difference": "생일 한정 1회성이며 상시 미달 완충 아님"
+     },
+     {
+      "card": "LOCA 365",
+      "how_similar": "최초 발급 고객은 발급 후 다음 달 말일까지 실적 무관 혜택",
+      "difference": "신규 발급 한정"
+     },
+     {
+      "card": "토스뱅크 하나카드 WIDE",
+      "how_similar": "실적 없이 1%, 40만원 이상 2%의 단계 구조",
+      "difference": "실적 미달 시 하한이 있어 단계적이나 진행 표시·알림은 문구에 없음"
+     }
+    ],
+    "web_checked": [],
+    "verdict": "partial",
+    "note": "실적 완화 카드는 다수(무실적 계열). 미달 완충 상시 제공은 보이지 않음. 웹 미확인."
+   },
+   "mechanism_tags": [
+    "anti_cap",
+    "miss_refund"
+   ],
+   "need_key": "saving",
+   "domain_key": "null",
+   "strength": "약",
+   "strength_reason": "불만 근거는 KPI뉴스 1건(VRF23, medium)이며 실적 조건 불만의 규모를 보여 주는 수치가 없음. 해석 비중이 큼.",
+   "counter_evidence": "무실적·낮은 실적 카드(ZERO Edition3, 줍줍, WIDE, 쿠팡 와우카드)가 이미 다수 존재해 시장이 '실적 없음'으로 해결 중. 알림 기능은 카드사 앱이 이미 제공할 수 있음.",
+   "risks": [
+    "실적 보전은 혜택 비용 증가로 카드사 수익 압박",
+    "My WE:SH의 생일 '전월실적 채워드림'처럼 유사 시도가 있어 신규성 낮음"
+   ],
+   "invest_related": false,
+   "cvp_seed": {
+    "target": "전월 실적 때문에 혜택을 못 받는 신규 직장인·대학생",
+    "offer": "실적 달성 현황을 실시간 표시하고 미달 시 직전 구간 혜택의 일부를 완충하는 구조",
+    "key_benefit": "실적 걱정 없이 예측 가능한 혜택",
+    "alternative": "ZERO Edition3, 토스뱅크 하나카드 WIDE",
+    "differentiator": "무실적 계열은 혜택률이 낮은 대신 구간제 카드의 상위 혜택과 실적 알림을 결합",
+    "reason_to_believe": [
+     "VRF23",
+     "CSF1",
+     "가정: 실적 미달 불만이 카드 이탈 요인"
+    ]
+   },
+   "grades": {
+    "risk": 1,
+    "existing": 1,
+    "evidence": 1
+   },
+   "killed_by": [],
+   "dropped": false,
+   "merged_into": null,
+   "tier": "후보(약)",
+   "rank": 9
+  },
+  {
+   "id": "SOC1",
+   "title": "모임통장·정산과 묶인 '신용카드' 모임 결제: 총무 1인 후불 결제 + 모임원별 자동 분할 청구가 되는 카드가 없다",
+   "gap_type": "experience",
+   "unmet_need": "모임 결제는 체크카드·모임통장으로는 풀렸지만(모임통장 순이용자 1200만, 모임 체크카드 100만장), 총무가 먼저 결제하고 나중에 모임원에게 받는 '후불·분할' 흐름을 신용카드 수준의 한도·할부·실적 위에서 해주는 상품은 확인되지 않았다. 해석: 이 공백은 모임 수요가 아니라 '선결제 부담과 정산 번거로움'이 있다는 가정에 기대며 그 직접 근거는 없다.",
+   "genz_basis": [
+    {
+     "fact_id": "GTF6",
+     "says": "카카오뱅크 모임통장 순이용자가 2025년 6월 말 1200만명을 돌파했다",
+     "age_scope": "전연령",
+     "weight": "핵심"
+    },
+    {
+     "fact_id": "GTF10",
+     "says": "카카오뱅크 모임 체크카드 누적 발급이 100만장을 돌파했다",
+     "age_scope": "전연령",
+     "weight": "핵심"
+    },
+    {
+     "fact_id": "GTF7",
+     "says": "모임통장 이용자 중 20대 이하는 16.5%로 젊은층 한정이 아니다",
+     "age_scope": "20대",
+     "weight": "보조"
+    },
+    {
+     "fact_id": "GTF22",
+     "says": "배달의민족이 2026-06-16부터 배민페이 내 더치페이(정산 요청)를 도입한다",
+     "age_scope": "전연령",
+     "weight": "보조"
+    },
+    {
+     "fact_id": "CSF4",
+     "says": "MZ세대가 가장 많이 쓰는 결제수단은 신용카드 49.6%, 체크카드 42.6%다",
+     "age_scope": "MZ",
+     "weight": "보조"
+    }
+   ],
+   "existing_check": {
+    "db_cards_compared": [
+     "카카오뱅크 K-패스 프렌즈 체크",
+     "토스뱅크 체크카드",
+     "케이뱅크 ONE 체크",
+     "카카오뱅크 줍줍 신한카드",
+     "토스뱅크 하나카드 WIDE",
+     "토스 삼성카드"
+    ],
+    "similar": [
+     {
+      "card": "토스뱅크 체크카드",
+      "how_similar": "DB 혜택 문구에는 모임 기능이 없고 은행 결합형 체크카드",
+      "difference": "모임 단위 결제·정산 구조가 아님"
+     },
+     {
+      "card": "카카오뱅크 줍줍 신한카드",
+      "how_similar": "은행 결합 신용카드, 전월 실적 조건 없는 캐시백",
+      "difference": "모임통장·모임원 분할과 연결되지 않은 개인 카드"
+     }
+    ],
+    "web_checked": [
+     "WebSearch: 카카오뱅크 모임카드의 2금융권·카드사 확산 보도(2025-08), NH올원모임체크카드(1인 최대 5장), 신한카드 SOL모임 체크카드(건당 최대 1% 적립), 토스뱅크 모임카드(1만원 이상 500원 캐시백, 모임원 각자 발급) 모두 체크카드형",
+     "WebSearch: 모임 단위 신용카드 시판 사례는 찾지 못함(과거 2007 삼성카드 가족 포인트 합산, 1993 동호회 제휴카드 기사만 확인)",
+     "모임 체크카드는 exists, 모임 신용카드는 none"
+    ],
+    "verdict": "partial",
+    "note": "모임 결제 자체는 체크카드·모임통장으로 이미 풀리고 있다(exists). 비어 있는 것은 신용카드 층위의 후불·분할뿐이며, 그것을 20대가 원한다는 근거는 없다."
+   },
+   "mechanism_tags": [
+    "group_pooling",
+    "social"
+   ],
+   "need_key": "social",
+   "domain_key": "dining",
+   "strength": "약",
+   "strength_reason": "모임 결제 수요는 출처가 여럿이고 최신(2025~2026)이나 전연령이다. 후불 분할형 신용카드에 대한 수요 근거와 20대 한정 근거는 없다.",
+   "counter_evidence": "모임 수요는 체크카드·모임통장으로 이미 흡수되고 있다. 20대 이하 신용카드 이용액은 감소(CSF18)하며 MZ는 카드 결제일 부담을 53.6% 느낀다(CSF3). 모임원 간 후불 채권 구조는 신용카드에서 오히려 부담이 될 수 있다.",
+   "risks": [
+    "여신 심사·한도 부담이 20대 모임 총무에게 쏠림(가정)",
+    "MZ 53.6%가 결제일 부담 경험(CSF3)",
+    "모임 정산 서비스의 연령별 이용 수치는 없음(gatherings gaps)"
+   ],
+   "invest_related": false,
+   "cvp_seed": {
+    "target": "여러 모임의 총무 역할을 하는 20대 후반 직장인·대학생",
+    "offer": "모임 단위 결제를 신용한도로 먼저 처리하고 정산 요청 건을 모임원별로 분리해 청구·상환 표시하는 모임 연동 신용카드",
+    "key_benefit": "선결제 부담을 개인 현금흐름에서 분리하고 결제 실적은 총무가 인정받음",
+    "alternative": "카카오뱅크 모임 체크카드 + 모임통장, 토스뱅크 모임카드",
+    "differentiator": "모임 체크카드는 입금된 잔액만 쓰는 선입금 구조이고 이 제안은 후불·한도 구조",
+    "reason_to_believe": [
+     "GTF6",
+     "GTF10",
+     "가정: 총무 선결제 부담 존재"
+    ]
+   },
+   "grades": {
+    "risk": 1,
+    "existing": 1,
+    "evidence": 1
+   },
+   "killed_by": [],
+   "dropped": false,
+   "merged_into": null,
+   "tier": "후보(약)",
+   "rank": 11
+  },
+  {
+   "id": "SOC2",
+   "title": "전월실적을 모임원과 합산·공유하는 혜택 풀: 50종 어디에도 없다",
+   "gap_type": "benefit_structure",
+   "unmet_need": "신용카드 혜택은 개인 전월실적에 묶이는데, 모임에서 각자 쓰는 돈을 실적·혜택 한도로 합산하는 카드는 DB와 웹검색에서 찾지 못했다. 모임 체크카드는 실적 조건 자체를 없애는 방식(카카오뱅크: 5만원 이상 결제마다 3000원/300원 무작위, 실적·업종 제한 없음)으로 풀고 있다. 해석: '실적 합산'은 설계 아이디어이며 수요 근거는 없다.",
+   "genz_basis": [
+    {
+     "fact_id": "GTF17",
+     "says": "카카오뱅크 모임 체크카드는 전월 실적·업종 제한이 없다",
+     "age_scope": "전연령",
+     "weight": "핵심"
+    },
+    {
+     "fact_id": "GTF11",
+     "says": "모임 체크카드 캐시백 누적 30억원(2025-07 말)",
+     "age_scope": "전연령",
+     "weight": "보조"
+    },
+    {
+     "fact_id": "GTF9",
+     "says": "모임통장 연결 체크카드 결제액이 2025년 상반기에만 2조원이다",
+     "age_scope": "전연령",
+     "weight": "보조"
+    },
+    {
+     "fact_id": "GTF16",
+     "says": "토스뱅크 모임통장 약 16%는 구성원 모두가 공동모임장이 되어 권한을 공유한다",
+     "age_scope": "전연령",
+     "weight": "보조"
+    },
+    {
+     "fact_id": "CSF1",
+     "says": "MZ 신용카드 사용 이유 1위가 실적·할인 혜택 44.0%다",
+     "age_scope": "MZ",
+     "weight": "보조"
+    }
+   ],
+   "existing_check": {
+    "db_cards_compared": [
+     "카카오뱅크 K-패스 프렌즈 체크",
+     "토스뱅크 체크카드",
+     "LOCA LIKIT 1.2",
+     "ZERO Edition3(할인형)",
+     "토스뱅크 하나카드 WIDE",
+     "카카오뱅크 줍줍 신한카드",
+     "BC 바로 K-패스 카드"
+    ],
+    "similar": [
+     {
+      "card": "토스뱅크 하나카드 WIDE",
+      "how_similar": "전월 실적과 상관없이 전 가맹점 기본 청구할인 1%",
+      "difference": "개인 단위이며 모임원 합산 없음"
+     },
+     {
+      "card": "ZERO Edition3(할인형)",
+      "how_similar": "무실적 0.8% 청구할인",
+      "difference": "개인 단위, 합산 없음"
+     }
+    ],
+    "web_checked": [
+     "WebSearch: 카카오뱅크 모임카드의 2금융권·카드사 확산 보도(2025-08), NH올원모임체크카드(1인 최대 5장), 신한카드 SOL모임 체크카드(건당 최대 1% 적립), 토스뱅크 모임카드(1만원 이상 500원 캐시백, 모임원 각자 발급) 모두 체크카드형",
+     "WebSearch: 모임 단위 신용카드 시판 사례는 찾지 못함(과거 2007 삼성카드 가족 포인트 합산, 1993 동호회 제휴카드 기사만 확인)"
+    ],
+    "verdict": "none",
+    "note": "합산 구조 자체는 none이다. 다만 '모임 결제 때 실적 걱정이 없다'는 효익은 무실적 카드와 모임 체크카드가 이미 제공한다. 차별점이 합산이어야만 성립한다."
+   },
+   "mechanism_tags": [
+    "group_pooling",
+    "anti_cap"
+   ],
+   "need_key": "social",
+   "domain_key": "dining",
+   "strength": "약",
+   "strength_reason": "모임 결제 규모(GTF9)는 두껍지만 실적 합산 수요를 직접 보여주는 근거가 없고 전연령이다.",
+   "counter_evidence": "모임 체크카드가 실적 조건 제거로 이미 100만장 발급을 얻었다(GTF10). 무실적 카드가 같은 효익을 준다. 20대가 모임 실적 합산을 원한다는 설문이 없다.",
+   "risks": [
+    "실적을 타인 결제로 채우는 체리피킹·가입 유도 악용(가정)",
+    "한도 보전 재원 비용(CSF25 연회비 의존 구조와 충돌 가능)",
+    "모임원 개인정보·결제내역 공유 동의"
+   ],
+   "invest_related": false,
+   "cvp_seed": {
+    "target": "월 모임 지출이 크고 개인 전월실적을 못 채우는 20대",
+    "offer": "모임 구성원 결제를 합산해 실적 구간을 푸는 혜택 풀",
+    "key_benefit": "혼자 실적을 못 채워도 모임 전체로 혜택 구간 도달",
+    "alternative": "카카오뱅크 모임 체크카드, LOCA LIKIT 1.2",
+    "differentiator": "무실적 카드는 혜택이 낮고 고정이며 이 제안은 합산으로 구간 혜택을 올림",
+    "reason_to_believe": [
+     "GTF17",
+     "GTF9",
+     "가정"
+    ]
+   },
+   "grades": {
+    "risk": 0,
+    "existing": 1,
+    "evidence": 1
+   },
+   "killed_by": [
+    "risk"
+   ],
+   "dropped": true,
+   "merged_into": null,
+   "tier": "후보(약)"
+  },
+  {
+   "id": "SOC3",
+   "title": "더치페이로 돌려받은 금액이 카드 실적·혜택에 어떻게 반영되는지 설계한 카드가 없다(정산 후 순소비 기준 혜택)",
+   "gap_type": "condition",
+   "unmet_need": "먼저 계산한 사람의 카드에는 전체 금액이 실적으로 잡히고 정산으로 돌려받는 금액은 반영되지 않는 것이 일반적이라는 점은 해석이다. 이를 다루는 카드 혜택 문구는 DB에서 확인되지 않았다. 정산 요청 기능은 배민페이 등 결제 앱이 도입 중이다.",
+   "genz_basis": [
+    {
+     "fact_id": "GTF22",
+     "says": "배달의민족이 2026-06-16부터 배민페이 내 더치페이 기능을 도입한다",
+     "age_scope": "전연령",
+     "weight": "핵심"
+    },
+    {
+     "fact_id": "MHF10",
+     "says": "20대는 카카오톡을 송금·결제 51.4%, 선물하기 40.4%에도 쓴다",
+     "age_scope": "20대",
+     "weight": "보조"
+    },
+    {
+     "fact_id": "MHF19",
+     "says": "송금에서는 카카오페이 45.2%, 토스페이 32.6%다",
+     "age_scope": "전연령",
+     "weight": "보조"
+    }
+   ],
+   "existing_check": {
+    "db_cards_compared": [
+     "토스 삼성카드",
+     "배민 신한카드 밥친구",
+     "카카오뱅크 줍줍 신한카드",
+     "네이버 현대카드 Edition2"
+    ],
+    "similar": [
+     {
+      "card": "배민 신한카드 밥친구",
+      "how_similar": "배달앱 이용금액 5% 할인, 월 최대 3만원",
+      "difference": "더치페이 정산과 무관"
+     }
+    ],
+    "web_checked": [
+     "WebSearch: 모임카드·모임통장 연결·정산 기능 관련 직접 자료 없음(검색 결과 신뢰 낮음)"
+    ],
+    "verdict": "none",
+    "note": "카드 혜택에서 정산 반영을 다룬 곳은 확인 못했다. 단, 이는 '못 찾았다'일 뿐이며 약관 수준의 내용은 확인하지 못했다."
+   },
+   "mechanism_tags": [
+    "social",
+    "anti_cap"
+   ],
+   "need_key": "social",
+   "domain_key": "dining",
+   "strength": "약",
+   "strength_reason": "정산 수요는 배민의 도입(GTF22) 한 건의 간접 근거뿐이고 정산 서비스의 연령별 이용 수치는 없다(gatherings gaps).",
+   "counter_evidence": "정산 문제를 겪는 빈도·불만 설문이 없다. 정산 기능은 결제 앱이 제공하고 있어 카드가 아니라 앱 영역일 수 있다.",
+   "risks": [
+    "정산 환수에 따른 실적 정정은 카드사 시스템·약관 변경 필요(가정)",
+    "원 결제자 실적 부풀리기 악용(가정)"
+   ],
+   "invest_related": false,
+   "cvp_seed": {
+    "target": "모임에서 먼저 결제하는 20대",
+    "offer": "정산 요청 완료 건을 제외한 순소비 기준이 아니라, 선결제 전체 금액을 실적으로 인정하는 조건",
+    "key_benefit": "대신 결제해도 내 실적과 혜택이 손해 보지 않음",
+    "alternative": "카카오페이·토스 정산 + 개인 신용카드",
+    "differentiator": "기존 카드는 정산 개념이 없는 일반 실적 구조",
+    "reason_to_believe": [
+     "GTF22",
+     "가정"
+    ]
+   },
+   "grades": {
+    "risk": 1,
+    "existing": 1,
+    "evidence": 0
+   },
+   "killed_by": [
+    "evidence"
+   ],
+   "dropped": true,
+   "merged_into": null,
+   "tier": "후보(약)"
+  },
+  {
+   "id": "SOC4",
+   "title": "친구 추천이 1회성 보상이 아니라 '함께 쓸수록 둘 다 커지는' 지속형 구조인 카드는 없다",
+   "gap_type": "benefit_structure",
+   "unmet_need": "신한카드는 '함께 쓰면 커지는 혜택' 문구의 친구추천 이벤트(추천인 월 최대 25만원 캐시백, 피추천 연회비 100% 지원)를 내세운다. 이는 이벤트이며 카드 상시 구조가 아니다. 상시 사용 과정에서 친구와 함께 쓴 결제에 가산되는 구조는 DB에서 확인되지 않았다.",
+   "genz_basis": [
+    {
+     "fact_id": "GTF25",
+     "says": "신한카드 친구추천 이벤트로 추천인 월 최대 25만원 캐시백, 피추천인 연회비 100% 지원",
+     "age_scope": "전연령",
+     "weight": "핵심"
+    },
+    {
+     "fact_id": "GTF20",
+     "says": "Z세대 친구·지인 평균 15.2명, 친한 친구 5.8명으로 비교 세대 중 많은 편",
+     "age_scope": "Z세대",
+     "weight": "보조"
+    },
+    {
+     "fact_id": "VRF20",
+     "says": "Z세대 91.7%가 나이가 달라도 비슷한 라이프스타일이면 같은 트렌드를 공유한다고 동의",
+     "age_scope": "Z세대",
+     "weight": "보조"
+    }
+   ],
+   "existing_check": {
+    "db_cards_compared": [
+     "처음(ANNIVERSE)",
+     "카카오뱅크 줍줍 신한카드",
+     "토스 삼성카드",
+     "삼성 iD SELECT ON"
+    ],
+    "similar": [
+     {
+      "card": "신한카드 친구추천 이벤트(DB 밖)",
+      "how_similar": "함께 쓰면 커지는 혜택 문구와 양방향 보상",
+      "difference": "이벤트성 1회·기간 보상이며 상시 혜택 구조가 아님"
+     }
+    ],
+    "web_checked": [
+     "gatherings 근거: 신한카드 1:1 친구추천 보상 확인",
+     "WebSearch: 친구 결제 연동 상시 혜택 사례는 찾지 못함"
+    ],
+    "verdict": "partial",
+    "note": "1:1 친구추천 보상이 이미 있어 '추천 보상' 자체는 exists. 비어 있는 것은 상시 구조다. 효과(전환·유지)를 보여주는 근거는 없다."
+   },
+   "mechanism_tags": [
+    "social"
+   ],
+   "need_key": "social",
+   "domain_key": null,
+   "strength": "약",
+   "strength_reason": "Z세대 관계 크기(GTF20)는 보조 근거이고 추천 보상 반응 수치는 없다. GTF20은 medium 신뢰다.",
+   "counter_evidence": "추천 이벤트는 모집 비용 소진 방식이라 유지에 효과가 없을 수 있다. 연회비 수익 의존(CSF25)과 카드 단종 증가(CSF22) 환경에서 상시 비용을 감당하기 어렵다.",
+   "risks": [
+    "다단계·모집 과열 및 금융당국 마케팅 규제(가정)",
+    "체리피킹(받고 해지): 해지 회원 증가 CSF21"
+   ],
+   "invest_related": false,
+   "cvp_seed": {
+    "target": "친구와 자주 결제하는 20대",
+    "offer": "친구 연결 카드 간 동일 가맹점 동반 결제에 공동 가산",
+    "key_benefit": "같이 쓸수록 둘 다 혜택 증가",
+    "alternative": "신한카드 친구추천 이벤트, 일반 무실적 카드",
+    "differentiator": "이벤트 1회성이 아니라 사용 과정의 상시 가산",
+    "reason_to_believe": [
+     "GTF25",
+     "GTF20",
+     "가정"
+    ]
+   },
+   "grades": {
+    "risk": 0,
+    "existing": 1,
+    "evidence": 0
+   },
+   "killed_by": [
+    "risk",
+    "evidence"
+   ],
+   "dropped": true,
+   "merged_into": null,
+   "tier": "후보(약)"
+  },
+  {
+   "id": "SOC5",
+   "title": "러닝크루·독서·맛집 모임 등 취미모임 활동 결제(참가비·장비·모임 후 식사)에 대한 모임 목적 혜택이 없다",
+   "gap_type": "partnership",
+   "unmet_need": "당근·밴드 러닝 모임이 급증하고(WTF4) 러닝 소비가 20대에서도 늘었다(WTF2). 그러나 50종의 혜택 업종은 외식·카페·주유·교통·쇼핑·구독 중심이며, 취미모임 활동 결제를 묶은 카드는 확인되지 않았다. 해석: 20대 모임 활동 참여율은 근거가 없고 당근모임 이용자 중 20대는 14%뿐이다.",
+   "genz_basis": [
+    {
+     "fact_id": "GTF1",
+     "says": "당근모임 2026 상반기 모임 수 +74%, 가입자 +128%",
+     "age_scope": "전연령",
+     "weight": "핵심"
+    },
+    {
+     "fact_id": "GTF3",
+     "says": "당근모임 연령 구성은 20대 14%, 30대 26%, 40대 27%",
+     "age_scope": "20대",
+     "weight": "핵심"
+    },
+    {
+     "fact_id": "WTF2",
+     "says": "2024년 러닝 관련 소비 증가율은 20대 177%, 30대 232%, 40대 225%",
+     "age_scope": "20대",
+     "weight": "보조"
+    },
+    {
+     "fact_id": "WTF4",
+     "says": "당근 러닝 모임은 2024년 1월 대비 4배 넘게 늘었다",
+     "age_scope": "전연령",
+     "weight": "보조"
+    },
+    {
+     "fact_id": "WTF5",
+     "says": "크림 러닝 상품 구매자의 72%가 2030세대",
+     "age_scope": "MZ",
+     "weight": "보조"
+    },
+    {
+     "fact_id": "WTF41",
+     "says": "N놀러: 사소한 즐거움을 다양하게 누리는 여가 트렌드",
+     "age_scope": "Z세대",
+     "weight": "보조"
+    }
+   ],
+   "existing_check": {
+    "db_cards_compared": [
+     "Youth Club 체크",
+     "노리2 체크",
+     "처음(ANNIVERSE)",
+     "청춘대로 톡톡카드",
+     "iM A 체크카드",
+     "삼성 iD SELECT ON"
+    ],
+    "similar": [
+     {
+      "card": "Youth Club 체크",
+      "how_similar": "여가 20% 할인(A팩)",
+      "difference": "모임 단위 아니고 체크카드"
+     },
+     {
+      "card": "처음(ANNIVERSE)",
+      "how_similar": "멤버십·OTT·통신 적립 중심",
+      "difference": "취미모임 활동 업종 없음"
+     }
+    ],
+    "web_checked": [
+     "WebSearch: 모임카드 검색 결과에 취미모임 목적 카드 없음(전용 검색은 하지 않음)"
+    ],
+    "verdict": "none",
+    "note": "DB 기준 none. 웹은 간접 확인뿐이다."
+   },
+   "mechanism_tags": [
+    "social",
+    "target_special"
+   ],
+   "need_key": "social",
+   "domain_key": "daily",
+   "strength": "약",
+   "strength_reason": "모임 성장과 러닝 소비는 최신(2025~2026)이지만 20대 모임 이용은 14%로 낮고 모임 결제 규모의 근거가 없다.",
+   "counter_evidence": "당근모임 사용자 중 20대는 14%뿐이다(GTF3). 참가비는 대부분 현금·계좌이체일 가능성이 있다(가정).",
+   "risks": [
+    "취미모임 가맹점이 영세·분산이어서 제휴 구현이 어려움(가정)",
+    "러닝 열풍의 지속성: 유행 단발 위험(VRF5, VRF6는 디저트 사례)"
+   ],
+   "invest_related": false,
+   "cvp_seed": {
+    "target": "러닝크루·소모임 활동 20대",
+    "offer": "참가비·장비·모임 후 식사 결제를 모임 활동 카테고리로 묶은 혜택",
+    "key_benefit": "취미 활동에 쓴 돈이 한 카테고리로 환급",
+    "alternative": "일반 외식·쇼핑 혜택 카드, Youth Club 체크",
+    "differentiator": "업종이 아니라 활동 목적 기준",
+    "reason_to_believe": [
+     "GTF1",
+     "WTF2",
+     "WTF4",
+     "가정"
+    ]
+   },
+   "grades": {
+    "risk": 1,
+    "existing": 1,
+    "evidence": 1
+   },
+   "killed_by": [],
+   "dropped": false,
+   "merged_into": "VLC4",
+   "tier": "후보(약)"
+  },
+  {
+   "id": "SOC6",
+   "title": "카카오톡 선물하기 등 선물 결제·자기 선물 구매에 맞춘 카드 혜택이 비어 있다",
+   "gap_type": "partnership",
+   "unmet_need": "20대 선물 채널은 카카오톡이 93.2%로 수렴하고(MHF8), 선물하기 자기 구매가 2026 2분기 +39%로 전체의 약 20%다(GTF18). DB 50종 혜택에 선물하기 결제 혜택은 보이지 않았다. 해석: 선물 구매 시 어떤 결제수단을 쓰는지는 근거가 없다.",
+   "genz_basis": [
+    {
+     "fact_id": "MHF8",
+     "says": "20대 선물 채널은 카카오톡이 93.2%",
+     "age_scope": "20대",
+     "weight": "핵심"
+    },
+    {
+     "fact_id": "GTF18",
+     "says": "선물하기 자기 구매 거래액 2026 2분기 +39%, 전체의 약 20%",
+     "age_scope": "전연령",
+     "weight": "핵심"
+    },
+    {
+     "fact_id": "GTF19",
+     "says": "자기 구매는 20·30세대 이용 비중이 상대적으로 높다(수치 없음)",
+     "age_scope": "20대",
+     "weight": "보조"
+    },
+    {
+     "fact_id": "MHF11",
+     "says": "선물 앱 선택 이유 중 혜택·할인은 토스 17.0%, 카카오톡 10.8%",
+     "age_scope": "잘파",
+     "weight": "보조"
+    }
+   ],
+   "existing_check": {
+    "db_cards_compared": [
+     "카카오뱅크 줍줍 신한카드",
+     "토스 삼성카드",
+     "네이버 현대카드 Edition2",
+     "iD SELECT ALL",
+     "삼성 iD SELECT ON"
+    ],
+    "similar": [
+     {
+      "card": "카카오뱅크 줍줍 신한카드",
+      "how_similar": "카카오뱅크 결합 PLCC, 국내외 가맹점 캐시백",
+      "difference": "선물하기 결제 특화 아님"
+     }
+    ],
+    "web_checked": [
+     "WebSearch 미실시(선물 카드 전용 검색 없음). DB 기준 판정"
+    ],
+    "verdict": "none",
+    "note": "search 한계: 카카오페이 계열 제휴 카드는 DB에 없음. DB 밖 카카오페이 신용카드 혜택은 확인하지 못했다."
+   },
+   "mechanism_tags": [
+    "plcc_brand",
+    "social"
+   ],
+   "need_key": "social",
+   "domain_key": "online",
+   "strength": "약",
+   "strength_reason": "20대 선물 채널 수치(MHF8)는 특정성이 높지만 결제수단·카드 혜택 수요 근거가 없다.",
+   "counter_evidence": "카카오톡 선물하기 결제는 대부분 카카오페이·카카오 포인트 등 간편결제를 거칠 수 있어 카드 혜택이 가시화되기 어렵다(가정). 선물은 예산 대비 소액이다.",
+   "risks": [
+    "플랫폼사 제휴 조건·수수료 협상",
+    "DB 밖 카드 미확인으로 exists 가능성"
+   ],
+   "invest_related": false,
+   "cvp_seed": {
+    "target": "선물을 자주 주고받는 20대",
+    "offer": "선물하기 결제와 생일·기념일 알림 연동 적립",
+    "key_benefit": "선물 지출 환급",
+    "alternative": "카카오뱅크 줍줍 신한카드",
+    "differentiator": "선물 결제 특화",
+    "reason_to_believe": [
+     "MHF8",
+     "GTF18",
+     "가정"
+    ]
+   },
+   "grades": {
+    "risk": 1,
+    "existing": 1,
+    "evidence": 1
+   },
+   "killed_by": [],
+   "dropped": false,
+   "merged_into": null,
+   "tier": "후보(약)",
+   "rank": 12
+  },
+  {
+   "id": "VLC1",
+   "title": "3~6개월짜리 유행 품목에 올라타는 '시즌 윈도우' 혜택(유행 품목을 분기·월 단위로 교체)이 신용카드에 없다",
+   "gap_type": "benefit_structure",
+   "unmet_need": "두바이 디저트처럼 SNS 인증 후 오픈런·품절을 거쳐 편의점 PB로 흡수되는 유행은 업계가 3~6개월로 본다(VRF5, VRF8, VRF9, VRF12). 고객이 유행 소비를 하는 달에 맞춰 혜택 대상이 바뀌는 카드는 확인되지 않는다. 해석: 고정 업종 할인은 유행이 바뀌면 쓸모가 사라지고, 수명이 짧은 유행에 맞춘 카드는 카드 수명이 더 길어 수익 구조상 만들기 어려운 것으로 보인다.",
+   "genz_basis": [
+    {
+     "fact_id": "VRF5",
+     "says": "업계는 두쫀쿠 열풍 지속을 짧게는 3개월 길게는 6개월로 본다.",
+     "age_scope": "젊은층(범위 미기재)",
+     "weight": "핵심"
+    },
+    {
+     "fact_id": "VRF6",
+     "says": "SNS 디저트는 상품보다 이벤트에 가깝고 관심 집중 순간이 짧다는 전문가 분석.",
+     "age_scope": "전연령",
+     "weight": "핵심"
+    },
+    {
+     "fact_id": "VRF8",
+     "says": "GS25 11월 두바이 관련 디저트 매출이 지난 1월 동기 대비 144.9% 증가.",
+     "age_scope": "Z세대",
+     "weight": "보조"
+    },
+    {
+     "fact_id": "VRF9",
+     "says": "CU 두바이 초콜릿 3종 누적 판매량 82만 개.",
+     "age_scope": "Z세대",
+     "weight": "보조"
+    },
+    {
+     "fact_id": "VRF15",
+     "says": "두바이 초콜릿은 유행 후 식었다가 2세대 상품으로 Z세대 중심 재열풍.",
+     "age_scope": "Z세대",
+     "weight": "보조"
+    },
+    {
+     "fact_id": "WTF13",
+     "says": "Z세대의 73.8%가 광고·프로모션 문구로 구매한 경험이 있다.",
+     "age_scope": "Z세대",
+     "weight": "보조"
+    }
+   ],
+   "existing_check": {
+    "db_cards_compared": [
+     "삼성 iD SELECT ON",
+     "Youth Club 체크",
+     "토스뱅크 체크카드",
+     "케이뱅크 ONE 체크",
+     "Discount Plan+",
+     "My WE:SH"
+    ],
+    "similar": [
+     {
+      "card": "삼성 iD SELECT ON",
+      "how_similar": "외식 또는 온라인패션·쇼핑몰 택1, 발급 시 선택, 매월 변경 가능",
+      "difference": "선택지가 업종 고정이고 유행 품목·시즌 단위가 아니며 고객이 직접 바꿔야 한다"
+     },
+     {
+      "card": "Youth Club 체크",
+      "how_similar": "A팩/B팩 택1, 매월 변경 가능",
+      "difference": "팩 구성은 OTT·편의점 등 상설 업종, 유행 교체 없음"
+     },
+     {
+      "card": "토스뱅크 체크카드",
+      "how_similar": "스위치 캐시백 시즌 6, 기간 2026.04.01~2027.01.20",
+      "difference": "시즌 약 9개월이고 업종 묶음(편의점·서점·즉석사진 등)이며 유행 품목 대응이 아니다"
+     },
+     {
+      "card": "케이뱅크 ONE 체크",
+      "how_similar": "2026.10~12 한정 교통비 월 5,000원 캐시백 확대",
+      "difference": "한시 혜택이지만 유행과 무관한 교통"
+     }
+    ],
+    "web_checked": [],
+    "verdict": "partial",
+    "note": "월 변경·기간 한정 구조 자체는 있어 구조 신규성은 낮다. 비어 있는 것은 교체 주기를 유행 수명(3~6개월)에 맞추고 유행 품목을 대상으로 삼는 설계. 웹 검색은 세션 한도로 못 했다(DB 판정)."
+   },
+   "mechanism_tags": [
+    "period_bonus",
+    "benefit_rental"
+   ],
+   "need_key": "saving",
+   "domain_key": "daily",
+   "strength": "중",
+   "strength_reason": "유행 수명 근거는 업계 전망과 전문가 발언뿐이고 통계가 아니다(VRF5, VRF6, 보도 기반). 판매 증가는 편의점 2사로 확인되나 연령은 Z세대·MZ·젊은층이 섞여 20대 특정성이 낮다. 지속성 판정: 한시 유행(수명 짧음). 따라서 혜택 대상은 유행 품목이 아닌 '카테고리 슬롯'으로 설계해야 지속된다.",
+   "counter_evidence": "유행 품목(SKU)은 카드 업종 코드로 구분되지 않아 편의점·카페 단위로만 걸 수 있다(가정). 두바이 상품은 가격이 5,000원~1만원대 소액이라(VRF4, VRF10) 건당 최소금액 조건과 충돌한다. 이미 월 변경형 카드가 있어 고객이 직접 고르는 것으로 충분하다는 반론이 가능하다.",
+   "risks": [
+    "유행 예측 실패 시 혜택 대상이 이미 식은 품목이 됨(VRF15: 2세대 재열풍은 사전 예측 어려움)",
+    "유행 소비는 미끼 상품·한정 수량·리셀과 얽혀 있어(VRF7, VRF10, VRF12) 제휴 가맹점 분쟁 소지",
+    "월 변경이 잦으면 고객 인지 부담(가정)"
+   ],
+   "invest_related": false,
+   "cvp_seed": {
+    "target": "SNS 유행을 따라 소비하는 20대(편의점·카페·배달 이용 잦음)",
+    "offer": "분기마다 혜택 슬롯 1~2개가 그 시즌 유행 카테고리(예: 디저트·팝업·취미)로 자동 교체되는 슬롯형 혜택",
+    "key_benefit": "유행이 바뀌어도 카드를 바꾸지 않고 지금 유행하는 소비에서 혜택을 받는다",
+    "alternative": "삼성 iD SELECT ON(월 택1), Youth Club 체크(팩 택1), 토스뱅크 체크카드 스위치 캐시백",
+    "differentiator": "가장 비슷한 iD SELECT ON은 고객이 업종을 직접 고르는 상설 구조, 이 안은 카드사가 시즌 단위로 유행 카테고리를 교체해 주는 구조",
+    "reason_to_believe": [
+     "VRF5",
+     "VRF8",
+     "VRF9",
+     "가정: 편의점·카페 업종 코드로 대상 구분 가능"
+    ]
+   },
+   "grades": {
+    "risk": 1,
+    "existing": 1,
+    "evidence": 1
+   },
+   "killed_by": [],
+   "dropped": false,
+   "merged_into": null,
+   "tier": "후보(약)",
+   "rank": 14
+  },
+  {
+   "id": "VLC2",
+   "title": "캐릭터·한정판 플레이트를 전월실적 없이 실사용 혜택과 묶은 '소장용이 아닌 쓰는 캐릭터 카드'(특히 신용형)가 없다",
+   "gap_type": "condition",
+   "unmet_need": "캐릭터 체크카드는 수십만 장 발급되지만(VRF22, VRF24, VRF33, VRF35) 전월 실적 조건 때문에 소장용으로만 발급받는다는 불만이 있다(VRF23). 플레이트 디자인 때문에 카드를 발급한 경험은 10명 중 7명(VRF36, 전연령 설문). 해석: 발급 폭발력은 입증됐으나 사용 지속(실사용) 설계는 비어 있다.",
+   "genz_basis": [
+    {
+     "fact_id": "VRF22",
+     "says": "카카오뱅크 프렌즈 체크카드(춘식이)는 출시 두 달 만에 누적 발급 30만 장 돌파.",
+     "age_scope": "젊은층(범위 미기재)",
+     "weight": "핵심"
+    },
+    {
+     "fact_id": "VRF24",
+     "says": "케이뱅크 깜자 에디션 체크카드는 4만장 한정 후 3주 만에 완판, 1만장 추가.",
+     "age_scope": "젊은층(범위 미기재)",
+     "weight": "핵심"
+    },
+    {
+     "fact_id": "VRF23",
+     "says": "캐릭터 체크카드에 전월 실적 조건이 많아 소장용으로만 발급한다는 불만.",
+     "age_scope": "MZ",
+     "weight": "핵심"
+    },
+    {
+     "fact_id": "VRF37",
+     "says": "KB 마이 위시카드의 MZ 발급 비중은 79.8%로 기본 디자인(60.0%)보다 19.8%p 높았다.",
+     "age_scope": "MZ",
+     "weight": "보조"
+    },
+    {
+     "fact_id": "VRF36",
+     "says": "카드고릴라 설문에서 10명 중 7명이 플레이트 디자인 때문에 카드를 발급한 경험.",
+     "age_scope": "전연령",
+     "weight": "보조"
+    },
+    {
+     "fact_id": "VRF25",
+     "says": "깜자 에디션 발급자의 70%가 여성, 2030 여성이 전체의 44%.",
+     "age_scope": "20대",
+     "weight": "보조"
+    }
+   ],
+   "existing_check": {
+    "db_cards_compared": [
+     "카카오뱅크 줍줍 신한카드",
+     "카카오뱅크 K-패스 프렌즈 체크",
+     "케이뱅크 ONE 체크",
+     "LOCA LIKIT 1.2",
+     "ZERO Edition3(할인형)",
+     "토스뱅크 하나카드 WIDE"
+    ],
+    "similar": [
+     {
+      "card": "카카오뱅크 줍줍 신한카드",
+      "how_similar": "캐릭터 PLCC 신용카드, 국내외 캐시백 최대 2%(월 4만원), 전월 실적 조건 없음",
+      "difference": "무실적은 충족하나 혜택이 일반 캐시백이고 한정판·에디션 소장 요소(IP 시즌 교체)는 없다. 캐릭터가 2030 소장 욕구 자극용이라는 점은 GCF1이 확인"
+     },
+     {
+      "card": "카카오뱅크 K-패스 프렌즈 체크",
+      "how_similar": "프렌즈 캐릭터 체크, 주중 0.2%/주말 0.4% 한도 없음",
+      "difference": "체크카드이고 캐릭터 IP가 혜택과 연결되지 않음"
+     }
+    ],
+    "web_checked": [],
+    "verdict": "partial",
+    "note": "캐릭터 카드와 무실적 카드는 각각 존재한다. 공백은 둘의 결합을 넘어 '캐릭터 사용 빈도에 따라 IP 굿즈·에디션이 열리는' 사용 연동 구조. 웹 검색 불가로 DB 판정."
+   },
+   "mechanism_tags": [
+    "spend_free",
+    "plcc_brand"
+   ],
+   "need_key": "social",
+   "domain_key": null,
+   "strength": "중",
+   "strength_reason": "발급량 근거는 5건 이상(VRF22, VRF24, VRF33, VRF35, VRF27)으로 두껍지만 모두 체크카드이고 연령이 젊은층·MZ로 섞여 20대 특정성이 약하다. 실적 불만(VRF23)은 인터뷰 2건 수준(medium). 지속성: 캐릭터 IP는 유행보다 길지만 개별 IP 인기는 수명이 짧을 수 있어 IP 교체 설계가 필요(가정).",
+   "counter_evidence": "VRF23 자체가 반대 증거다: 소장용 발급은 카드사 입장에서 발급 수는 늘리나 이용 매출이 안 나온다. 발급 폭발이 혜택 때문이 아니라 디자인 때문이라는 설문(VRF36, VRF37)도 있어 혜택을 얹는 것이 추가 가치인지 불확실하다. 미성년(만 7~18)은 신용카드 불가(SNF16)이고 가족카드는 업종·한도 제한이 커서(SNF19) 신용형 캐릭터는 19세 이상으로 좁아진다.",
+   "risks": [
+    "소장용 다량 발급 후 휴면(VRF23): 발급 비용 대비 매출 낮음",
+    "IP 라이선스 비용과 한정 수량 운영 부담(가정)",
+    "미성년 신용카드 발급 제약(SNF16, SNF19)"
+   ],
+   "invest_related": false,
+   "cvp_seed": {
+    "target": "캐릭터 카드를 모으는 19~29세(특히 여성 2030)",
+    "offer": "전월 실적 없이 월 결제 횟수에 따라 플레이트 에디션·굿즈가 열리는 캐릭터 신용카드",
+    "key_benefit": "소장하려고 만든 카드를 실제로 쓸 이유(실적 조건 없는 혜택)",
+    "alternative": "카카오뱅크 줍줍 신한카드, 카카오뱅크 프렌즈 체크카드, 케이뱅크 깜자 에디션 체크카드",
+    "differentiator": "줍줍 신한카드는 캐릭터 디자인 + 일반 캐시백, 이 안은 사용량에 연동해 캐릭터 에디션이 열린다",
+    "reason_to_believe": [
+     "VRF22",
+     "VRF23",
+     "VRF24",
+     "가정: 사용 연동 에디션이 휴면 발급을 줄인다"
+    ]
+   },
+   "grades": {
+    "risk": 1,
+    "existing": 1,
+    "evidence": 1
+   },
+   "killed_by": [],
+   "dropped": false,
+   "merged_into": null,
+   "tier": "후보(약)",
+   "rank": 15
+  },
+  {
+   "id": "VLC3",
+   "title": "팝업·IP 팝업 방문을 돕는 카드 접점(사전예약·우선입장·팝업 결제 가산)이 비어 있다",
+   "gap_type": "touchpoint",
+   "unmet_need": "2026 상반기 팝업스토어는 2130건으로 44.9% 늘었고 IP 팝업은 384.6% 급증했으며(WTF18, WTF19), 방문 경험자의 71.6%가 굿즈를 구매했다(WTF21). 비교한 50종 카드 헤드라인 혜택에 팝업이 언급된 곳은 없다. 해석: 신규 브랜드 경험이 방문 동기 1위(WTF20)인데 카드는 그 접점에서 혜택·접근권을 주지 못하는 것으로 보인다.",
+   "genz_basis": [
+    {
+     "fact_id": "WTF18",
+     "says": "2026년 상반기 팝업스토어 2130건, 전년 동기(1470건) 대비 44.9% 증가.",
+     "age_scope": "전연령",
+     "weight": "핵심"
+    },
+    {
+     "fact_id": "WTF19",
+     "says": "IP 기반 팝업스토어는 2026 상반기 전년 동기 대비 384.6% 급증.",
+     "age_scope": "전연령",
+     "weight": "핵심"
+    },
+    {
+     "fact_id": "WTF17",
+     "says": "더현대 서울 2025년 매출 중 2030 비중은 58%이고 팝업스토어 660여 개가 열렸다.",
+     "age_scope": "젊은층(범위 미기재)",
+     "weight": "핵심"
+    },
+    {
+     "fact_id": "WTF20",
+     "says": "팝업 방문 동기 1위는 새로운 브랜드 경험(31.1%), 2위는 할인·이벤트 참여(29.5%).",
+     "age_scope": "젊은층(범위 미기재)",
+     "weight": "보조"
+    },
+    {
+     "fact_id": "WTF21",
+     "says": "팝업 방문 경험자의 71.6%가 상품이나 굿즈를 구매했다.",
+     "age_scope": "전연령",
+     "weight": "보조"
+    },
+    {
+     "fact_id": "GTF23",
+     "says": "2025년 1~11월 전국 팝업스토어는 전년 대비 79% 성장, 성동구(성수) 비중 35.38%.",
+     "age_scope": "전연령",
+     "weight": "보조"
+    }
+   ],
+   "existing_check": {
+    "db_cards_compared": [
+     "무신사 삼성카드",
+     "올바른 FLEX",
+     "BC 바로 에어 맥스",
+     "NEED Pay",
+     "토스뱅크 체크카드",
+     "Discount Plan+"
+    ],
+    "similar": [
+     {
+      "card": "올바른 FLEX",
+      "how_similar": "영화/공연 20% 할인",
+      "difference": "공연·영화 업종이고 팝업 접점 아님"
+     },
+     {
+      "card": "토스뱅크 체크카드",
+      "how_similar": "스위치 캐시백 대상에 즉석사진·영화관·서점 등 오프라인 취향 업종",
+      "difference": "팝업·IP 행사 대상 아님, 금액 100~500원 정액"
+     },
+     {
+      "card": "무신사 삼성카드",
+      "how_similar": "무신사 계열 패션 플랫폼 특화(출시 예정 기사 기준)",
+      "difference": "혜택 수치 미공개, 오프라인 팝업 접점 확인 안 됨"
+     }
+    ],
+    "web_checked": [],
+    "verdict": "none",
+    "note": "DB 50종 헤드라인에서 팝업 언급 0건(키워드 검색). 웹 검색은 세션 한도로 못 해 카드사의 팝업 제휴 이벤트(단발 프로모션)는 확인하지 못했다. 단발 이벤트가 있을 수 있어 none은 상설 카드 혜택 기준."
+   },
+   "mechanism_tags": [
+    "period_bonus",
+    "target_special"
+   ],
+   "need_key": "social",
+   "domain_key": null,
+   "strength": "중",
+   "strength_reason": "팝업 건수 증가는 2출처(WTF18, GTF24 동일 수치) 이상이나 연령이 대부분 전연령·범위 미기재이고 2030 특정 근거는 더현대 1건(WTF17, medium)이다. 지속성: 팝업은 개별은 단발이나 팝업 시장 자체는 증가 추세(2025 79%, 2026 상반기 44.9%), 증가율은 둔화.",
+   "counter_evidence": "팝업 방문 동기 2위가 할인·이벤트(29.5%)라 혜택 수요는 있으나, 팝업 현장 결제는 소액 굿즈 위주라 카드 수익 기여가 작을 수 있다(가정). 팝업 개별 수명이 짧아 상설 제휴가 어렵고, 팝업 시장 증가율이 둔화(79%→44.9%, 기간·기준 다름)되었을 수 있다.",
+   "risks": [
+    "IP 라이선스·팝업 운영사와 제휴 구조 복잡(가정)",
+    "팝업은 현금성 결제·간편결제가 많아 카드 결제 식별 어려움(가정)",
+    "한정 수량 우선입장은 형평성·악용 이슈(VRF10 리셀 사례)"
+   ],
+   "invest_related": false,
+   "cvp_seed": {
+    "target": "성수·더현대 등 팝업을 자주 가는 2030",
+    "offer": "카드 보유자 대상 팝업 사전예약·우선입장 + 팝업 결제 가산 적립",
+    "key_benefit": "줄 서기와 품절 스트레스 없이 팝업 굿즈 접근",
+    "alternative": "단발 카드 이벤트(없음), 무신사 삼성카드, 올바른 FLEX 공연 할인",
+    "differentiator": "가장 비슷한 올바른 FLEX는 공연 할인, 이 안은 팝업 접근권(경험)을 주는 구조",
+    "reason_to_believe": [
+     "WTF18",
+     "WTF19",
+     "WTF20",
+     "가정: 팝업 운영사가 카드사 제휴를 수용"
+    ]
+   },
+   "grades": {
+    "risk": 1,
+    "existing": 2,
+    "evidence": 1
+   },
+   "killed_by": [],
+   "dropped": false,
+   "merged_into": null,
+   "tier": "후보(약)",
+   "rank": 5
+  },
+  {
+   "id": "VLC4",
+   "title": "러닝(대회 참가비·러닝화·웨어·러닝 앱) 소비에 맞춘 취미 특화 혜택이 없다",
+   "gap_type": "benefit_structure",
+   "unmet_need": "러닝 관련 소비 증가율은 20대 177%(WTF2), 크림 러닝 구매자의 72%가 2030(WTF5), 대회는 연 400개(WTF44). 비교 카드 50종의 헤드라인 혜택에 러닝·마라톤은 없고 가장 가까운 것은 학원·피트니스 10%(굿데이카드)다. 해석: 20대가 쓰는 취미 지출이 업종 코드 밖(스포츠 용품·대회 참가비)에 있어 혜택이 닿지 않는 것으로 보인다.",
+   "genz_basis": [
+    {
+     "fact_id": "WTF2",
+     "says": "신한카드 빅데이터연구소: 2024년 러닝 소비 증가율 30대 232%, 40대 225%, 20대 177%.",
+     "age_scope": "20대",
+     "weight": "핵심"
+    },
+    {
+     "fact_id": "WTF5",
+     "says": "크림 러닝 관련 상품 전체 구매자의 72%가 2030세대.",
+     "age_scope": "MZ",
+     "weight": "핵심"
+    },
+    {
+     "fact_id": "WTF6",
+     "says": "크림에서 20대 여성 러닝 구매자 수 161%, 거래액 195% 증가.",
+     "age_scope": "20대",
+     "weight": "핵심"
+    },
+    {
+     "fact_id": "WTF1",
+     "says": "국민생활체육조사에서 참여 체육활동 중 달리기가 0.5%에서 6.8%로 늘었다.",
+     "age_scope": "전연령",
+     "weight": "보조"
+    },
+    {
+     "fact_id": "WTF3",
+     "says": "인스타그램 러닝 해시태그 게시물이 2025년 9월 400만건 초과, 2023년 말 약 200만건.",
+     "age_scope": "젊은층(범위 미기재)",
+     "weight": "보조"
+    },
+    {
+     "fact_id": "WTF44",
+     "says": "2025년 서울국제마라톤 역대 최대 4만명, 전국 마라톤 대회 연 400개(2022년 346개).",
+     "age_scope": "전연령",
+     "weight": "보조"
+    }
+   ],
+   "existing_check": {
+    "db_cards_compared": [
+     "굿데이카드",
+     "Discount Plan+",
+     "BC 바로 에어 맥스",
+     "NEED Pay",
+     "무신사 삼성카드",
+     "노리2 체크"
+    ],
+    "similar": [
+     {
+      "card": "굿데이카드",
+      "how_similar": "학원·피트니스 10% 추가 청구할인(월 한도 3만원, 이용 30만원까지)",
+      "difference": "헬스장·학원 업종으로 러닝 용품·대회 참가비와 다름"
+     },
+     {
+      "card": "Discount Plan+",
+      "how_similar": "카테고리 선택 구조에 피트니스 언급",
+      "difference": "러닝 특화 아님"
+     },
+     {
+      "card": "NEED Pay",
+      "how_similar": "무신사 등 온라인패션몰 5% 할인",
+      "difference": "패션 일반이며 러닝 전문 채널 아님"
+     }
+    ],
+    "web_checked": [],
+    "verdict": "partial",
+    "note": "러닝·마라톤 키워드 DB 헤드라인 0건, 피트니스 업종 혜택은 존재. 웹 검색 불가로 러닝 특화 카드 유무는 확인하지 못함."
+   },
+   "mechanism_tags": [
+    "target_special",
+    "count_based"
+   ],
+   "need_key": "saving",
+   "domain_key": "daily",
+   "strength": "중",
+   "strength_reason": "출처 3곳 이상(신한 빅데이터, 크림, 체육조사, 인스타)과 20대 특정 수치(WTF2, WTF6)가 있고 2023~2025 연속 증가라 최신성도 양호하다. 지속성: 한시 유행이 아니라 지속 추세에 가깝다(체육활동 참여·대회 수 증가). 다만 소비 증가율은 2024년 데이터이고 2026 지속성 직접 근거는 없다.",
+   "counter_evidence": "러닝 소비는 30대 증가율(232%)이 20대(177%)보다 높아 20대 전용 근거가 아니다. 증가율은 낮은 기저에서의 비율일 수 있다(WTF1: 0.5%→6.8%). 러닝 용품은 크림·나이키·무신사 등 특정 채널에 몰려 있어 PLCC 제휴 없이는 혜택 대상 한정이 어렵다.",
+   "risks": [
+    "러닝 유행 둔화 시 혜택 폐기 부담(WTF1 추세가 꺾이면 미사용 혜택)",
+    "대회 참가비는 대회 플랫폼별 결제여서 식별 어려움(가정)",
+    "크림 같은 리셀 플랫폼 결제를 대상에 넣으면 리셀 조장 위험(VRF16)"
+   ],
+   "invest_related": false,
+   "cvp_seed": {
+    "target": "러닝을 시작한 20대(대회 참가·러닝화 구매 포함)",
+    "offer": "러닝 용품·마라톤 대회 참가비·러닝 앱 구독 결제를 묶은 취미 슬롯 혜택",
+    "key_benefit": "헬스장이 아니라 러닝에 쓴 돈에 돌려받는 혜택",
+    "alternative": "굿데이카드 학원·피트니스 10%, NEED Pay 온라인패션몰 5%",
+    "differentiator": "굿데이카드는 피트니스 업종 할인, 이 안은 러닝 용품·대회 결제를 대상으로 함",
+    "reason_to_believe": [
+     "WTF2",
+     "WTF5",
+     "WTF44",
+     "가정: 대회·용품 가맹점 식별 가능"
+    ]
+   },
+   "grades": {
+    "risk": 1,
+    "existing": 2,
+    "evidence": 1
+   },
+   "killed_by": [],
+   "dropped": false,
+   "merged_into": null,
+   "tier": "후보(약)",
+   "rank": 6
+  },
+  {
+   "id": "VLC5",
+   "title": "생성형 AI·클라우드 구독을 포함하고 구독 낭비를 막아주는(알림·미사용 환급) 구독 카드가 없다",
+   "gap_type": "benefit_structure",
+   "unmet_need": "20대 OTT 이용률 99.1%, 유료 구독형 OTT 이용률 83.6%로 연령 중 최고(TRF10, TRF11). 20대가 새로 이용하고 싶은 구독 1위는 생성형 AI 23.0%(WTF7). 반면 구독의 단점으로 월정액 관리 부족으로 인한 낭비가 77.4%(WTF9), 구독 예산을 따로 설정하지 않는 비율 67.2%(MHF25). 해석: OTT 할인은 흔하지만 AI 구독 혜택과 구독 낭비 방지는 카드 혜택으로 채워져 있지 않다.",
+   "genz_basis": [
+    {
+     "fact_id": "TRF10",
+     "says": "2025 콘텐츠 이용행태 조사에서 OTT 이용률은 20대가 99.1%로 가장 높다.",
+     "age_scope": "20대",
+     "weight": "핵심"
+    },
+    {
+     "fact_id": "TRF11",
+     "says": "유료 구독형 OTT 이용률은 20대(83.6%)가 가장 높다.",
+     "age_scope": "20대",
+     "weight": "핵심"
+    },
+    {
+     "fact_id": "WTF7",
+     "says": "20대가 새롭게 이용하고 싶은 구독 서비스 1위는 생성형 AI(23.0%).",
+     "age_scope": "20대",
+     "weight": "핵심"
+    },
+    {
+     "fact_id": "MHF22",
+     "says": "생성형 AI 구독은 전년 대비 8.4%p 늘어 9개 카테고리 중 상승폭 1위, 콘텐츠 멤버십은 5.7%p 줄었다.",
+     "age_scope": "전연령",
+     "weight": "핵심"
+    },
+    {
+     "fact_id": "WTF9",
+     "says": "구독 서비스 단점: 월정액 관리 부족으로 인한 낭비 77.4%, 해지 어려움 47.2%.",
+     "age_scope": "전연령",
+     "weight": "보조"
+    },
+    {
+     "fact_id": "MHF25",
+     "says": "응답자의 67.2%는 구독 예산을 따로 설정하지 않는다.",
+     "age_scope": "전연령",
+     "weight": "보조"
+    },
+    {
+     "fact_id": "TRF13",
+     "says": "가장 다양한 카테고리를 유료 구독하는 연령은 20~30대이며 생성형 AI·클라우드에도 지갑을 연다.",
+     "age_scope": "20대",
+     "weight": "보조"
+    }
+   ],
+   "existing_check": {
+    "db_cards_compared": [
+     "NEED Pay",
+     "zgm.streaming",
+     "삼성 iD SELECT ON",
+     "처음(ANNIVERSE)",
+     "Youth Club 체크",
+     "iM A 체크카드",
+     "BC 바로 K-패스 카드"
+    ],
+    "similar": [
+     {
+      "card": "NEED Pay",
+      "how_similar": "넷플릭스·유튜브·디즈니플러스·티빙·웨이브·스포티파이 및 네이버플러스·컬리멤버스·배민클럽 정기결제 30% 할인",
+      "difference": "OTT·쇼핑 멤버십이며 생성형 AI 없음, 건당 3,000원·월 5,000원 한도, 구독 관리 기능 없음"
+     },
+     {
+      "card": "zgm.streaming",
+      "how_similar": "넷플릭스·웨이브·티빙·디즈니+·유튜브프리미엄·멜론, 멤버십 할인",
+      "difference": "전월 40만원, 월 한도 5,000~7,000원, 생성형 AI 없음"
+     },
+     {
+      "card": "삼성 iD SELECT ON",
+      "how_similar": "구글플레이·앱스토어·디지털콘텐츠 50%",
+      "difference": "앱스토어 결제 경유로 AI 앱 구독이 부분 해당될 수 있으나 AI 구독을 명시하지 않고 구독 관리 기능 없음"
+     }
+    ],
+    "web_checked": [],
+    "verdict": "partial",
+    "note": "OTT 구독 할인은 이미 다수 존재(exists). 공백은 생성형 AI·클라우드 구독 대상 포함과 구독 낭비 방지(miss_refund 성격). AI 구독 키워드는 DB 헤드라인에서 0건. 웹 검색 불가로 AI 구독 제휴 카드는 확인하지 못함."
+   },
+   "mechanism_tags": [
+    "subscription_ott",
+    "miss_refund"
+   ],
+   "need_key": "digital",
+   "domain_key": "sub",
+   "strength": "강",
+   "strength_reason": "20대 특정 수치 3건(TRF10, TRF11, WTF7)과 3개 이상 출처가 있고 AI 구독 증가는 지속 추세(MHF22 상승폭 1위, WTF25/26 챗GPT 앱 MAU 5배). 지속성: 구독 소비는 한시 유행이 아닌 지속 추세. 다만 WTF7은 medium, 낭비 77.4%는 전연령이다.",
+   "counter_evidence": "MHF22는 콘텐츠 멤버십이 5.7%p 줄었다고 하므로 OTT 중심 설계는 위험하다. 구독 비용이 부담되면 해지 대신 계정 공유·일시정지·연간 전환으로 유지하는 행동(MHF24)이 있어 할인보다 관리 기능이 핵심일 수 있다. AI 서비스는 해외 결제 비중이 높아 해외 수수료가 실제 비용일 수 있다(가정).",
+   "risks": [
+    "AI 서비스 해외 가맹점 결제로 국내 업종 할인 적용 어려움(가정)",
+    "구독 알림·정지는 카드가 아닌 앱 기능이라 카드사 자체 앱 필요(가정)",
+    "구독 할인 상한이 낮아 체감 낮음(NEED Pay 월 5,000원, zgm 월 5,000~7,000원)"
+   ],
+   "invest_related": false,
+   "cvp_seed": {
+    "target": "OTT와 생성형 AI를 함께 구독하는 20대",
+    "offer": "OTT·AI·클라우드 구독을 한 슬롯으로 묶은 정기결제 할인 + 한 달 내 미이용 구독 알림",
+    "key_benefit": "쓰지 않는 구독에 나가는 돈을 줄이고 AI 구독까지 할인",
+    "alternative": "NEED Pay 정기결제 30% 할인, zgm.streaming, 삼성 iD SELECT ON 디지털콘텐츠",
+    "differentiator": "NEED Pay는 OTT·쇼핑 멤버십 한도 5,000원, 이 안은 AI 구독 포함과 구독 정리 기능",
+    "reason_to_believe": [
+     "TRF10",
+     "TRF11",
+     "WTF7",
+     "WTF9"
+    ]
+   },
+   "grades": {
+    "risk": 2,
+    "existing": 1,
+    "evidence": 2
+   },
+   "killed_by": [],
+   "dropped": false,
+   "merged_into": "CTC4",
+   "tier": "유력(중)"
+  },
+  {
+   "id": "VLC6",
+   "title": "게임형·챌린지 경험을 카드 결제와 직접 연결한 구조(결제 연동 미션·연속 보상)가 거의 없다",
+   "gap_type": "experience",
+   "unmet_need": "토스뱅크 게임 저금통은 약 15시간 만에 10만 계좌(VRF28), 케이뱅크 돈나무 키우기는 1년 누적 2천만 그루(VRF29), 31일 적금은 한 달 30만좌(VRF32). 이 게임형 경험은 적금·앱테크에 머물고 카드 결제로 이어지는 구조는 케이뱅크 ONE 체크의 369 캐시백 정도다. 해석: 재미·보상이 결합된 도파민 뱅킹(VRF30) 수요가 카드 쪽에서는 비어 있다.",
+   "genz_basis": [
+    {
+     "fact_id": "VRF28",
+     "says": "토스뱅크 게임 저금통은 출시 후 약 15시간 동안 1초에 2명꼴로 가입해 10만 계좌 달성.",
+     "age_scope": "Z세대",
+     "weight": "핵심"
+    },
+    {
+     "fact_id": "VRF29",
+     "says": "케이뱅크 돈나무 키우기는 출시 1년 만에 누적 2천만 그루, 232만 고객이 1인당 평균 8.6그루.",
+     "age_scope": "Z세대",
+     "weight": "핵심"
+    },
+    {
+     "fact_id": "VRF32",
+     "says": "토스뱅크 키워봐요 31일적금은 첫 만기 시점 누적 개설 30만좌 돌파.",
+     "age_scope": "젊은층(범위 미기재)",
+     "weight": "핵심"
+    },
+    {
+     "fact_id": "VRF30",
+     "says": "KB금융 경영연구소가 도파민 뱅킹 보고서에서 Z세대 대상 재미·보상 결합 금융 사례를 정리.",
+     "age_scope": "Z세대",
+     "weight": "보조"
+    },
+    {
+     "fact_id": "MHF45",
+     "says": "성인 남녀 1,707명 중 75%가 앱테크를 하고 68.5%는 매일 하며 일 평균 수익은 312원.",
+     "age_scope": "전연령",
+     "weight": "보조"
+    },
+    {
+     "fact_id": "MHF46",
+     "says": "앱테크 경험 소비자 1,000명 중 43%가 이용 과정에 불만.",
+     "age_scope": "전연령",
+     "weight": "보조"
+    }
+   ],
+   "existing_check": {
+    "db_cards_compared": [
+     "처음(ANNIVERSE)",
+     "케이뱅크 ONE 체크",
+     "토스뱅크 체크카드",
+     "디지로카 London",
+     "카카오뱅크 K-패스 프렌즈 체크"
+    ],
+    "similar": [
+     {
+      "card": "케이뱅크 ONE 체크",
+      "how_similar": "369 캐시백: 결제 횟수가 3의 배수가 될 때마다 1,000원(건당 1만원 이상)",
+      "difference": "횟수 기반 보너스이며 서사·진행 상태·연속 미션 같은 게임 요소 없음"
+     },
+     {
+      "card": "토스뱅크 체크카드",
+      "how_similar": "스위치 캐시백 시즌제(영역별 월 5,000원 한도)",
+      "difference": "시즌 업종 전환이지 미션·연속 보상 아님"
+     },
+     {
+      "card": "처음(ANNIVERSE)",
+      "how_similar": "challenge 태그 보유, 오늘도 5% 적립(매일 최대 1천P)",
+      "difference": "일일 적립 구조이며 게임형 진행 상태 없음, 전월 30만원 조건"
+     }
+    ],
+    "web_checked": [],
+    "verdict": "partial",
+    "note": "challenge 태그 카드는 50종 중 1종, count_based 보너스는 1종. 웹 검색 불가로 카드 결제 연동 챌린지 카드는 확인하지 못함."
+   },
+   "mechanism_tags": [
+    "challenge",
+    "count_based"
+   ],
+   "need_key": "digital",
+   "domain_key": null,
+   "strength": "중",
+   "strength_reason": "가입 규모 근거 4건(VRF28, VRF29, VRF31, VRF32)으로 두껍고 Z세대 특정이다. 그러나 모두 적금·앱테크이지 카드 결제 근거가 아니다(해석 한계). 지속성: 개별 게임 앱은 수명이 짧을 수 있으나 앱테크 습관(MHF45 75%)은 지속적.",
+   "counter_evidence": "VRF31~VRF32의 토스뱅크 31일 적금은 최고 연 10% 금리가 함께 있어 게임 요소가 가입의 원인이라 단정할 수 없다(viral.json gaps). 앱테크는 일 평균 수익 312원(MHF45)으로 보상이 작고 43%가 불만(MHF46)이다. 결제 횟수 보상은 소액 쪼개기 결제(체리피킹)를 유도할 수 있다.",
+   "risks": [
+    "소액 반복 결제 쪼개기 악용(케이뱅크 369도 건당 1만원 이상 조건으로 방어)",
+    "과소비 유도: 간편결제 후 소비 증가 응답 51.3%(MHF40)",
+    "17세 미만 부정 가입 여부 미확인(VRF31)"
+   ],
+   "invest_related": false,
+   "cvp_seed": {
+    "target": "앱테크·게임형 저금통을 쓰는 Z세대",
+    "offer": "결제 횟수·연속일 진행도에 따라 단계 보상이 열리는 챌린지형 카드 혜택(실적과 별도)",
+    "key_benefit": "쓰는 과정 자체가 게임이 되고 단계별 보상 확정",
+    "alternative": "토스뱅크 게임 저금통/31일 적금, 케이뱅크 돈나무 키우기, 케이뱅크 ONE 체크 369 캐시백",
+    "differentiator": "369 캐시백은 단순 횟수 보너스, 이 안은 진행 상태와 연속 보상이 있다",
+    "reason_to_believe": [
+     "VRF28",
+     "VRF29",
+     "VRF32",
+     "가정: 결제 연동으로 재방문이 늘어난다"
+    ]
+   },
+   "grades": {
+    "risk": 1,
+    "existing": 1,
+    "evidence": 1
+   },
+   "killed_by": [],
+   "dropped": false,
+   "merged_into": null,
+   "tier": "후보(약)",
+   "rank": 16
+  },
+  {
+   "id": "VLC7",
+   "title": "'오늘만·한정 수량' 반응이 큰 Z세대를 위한 깜짝 드롭형 카드 혜택(예고 없는 한시 우대)이 없다",
+   "gap_type": "experience",
+   "unmet_need": "Z세대의 73.8%가 광고·프로모션 문구로 구매한 경험이 있고 오늘만 할인/타임세일 반응이 39.2%로 가장 높다(WTF13). 두쫀쿠는 품절·수량 제한이 오히려 열기를 키웠다(VRF12, VRF14). 해석: 카드 혜택은 상설 정률이고 희소성·긴박감을 파는 혜택이 없다.",
+   "genz_basis": [
+    {
+     "fact_id": "WTF13",
+     "says": "Z세대 73.8%가 프로모션 문구로 구매한 경험, 오늘만 할인/타임 세일 반응 39.2%로 최고.",
+     "age_scope": "Z세대",
+     "weight": "핵심"
+    },
+    {
+     "fact_id": "MHF3",
+     "says": "Z세대 구매처 선택 기준은 가격 78.5%, 판매자 신뢰도 52.6%, 쿠폰·할인 45.7%.",
+     "age_scope": "Z세대",
+     "weight": "보조"
+    },
+    {
+     "fact_id": "VRF14",
+     "says": "YTN은 희소성을 즐기고 SNS에 인증하려는 MZ 심리 속에 품절 대란이 이어진다고 전했다.",
+     "age_scope": "MZ",
+     "weight": "보조"
+    },
+    {
+     "fact_id": "VRF12",
+     "says": "쿠팡이츠 1위 두쫀쿠 입점 카페 대부분이 구매 수량을 2~4개로 제한하고 품절 표시.",
+     "age_scope": "MZ",
+     "weight": "보조"
+    },
+    {
+     "fact_id": "WTF16",
+     "says": "Z세대의 저렴한 가격 중시 응답은 2025년 76.0%로 높게 유지.",
+     "age_scope": "Z세대",
+     "weight": "보조"
+    }
+   ],
+   "existing_check": {
+    "db_cards_compared": [
+     "Mr.Life",
+     "Discount Plan+",
+     "디지로카 London",
+     "케이뱅크 ONE 체크",
+     "토스뱅크 체크카드"
+    ],
+    "similar": [
+     {
+      "card": "Mr.Life",
+      "how_similar": "TIME 할인(편의점·병원·세탁소 24시간)",
+      "difference": "고정 시간대 상설 혜택이며 예고 없는 드롭이 아님"
+     },
+     {
+      "card": "Discount Plan+",
+      "how_similar": "07:00~15:00 카페·음식점 10%, 18:00~22:00 편의점·배달앱 10% (시간대 선택)",
+      "difference": "반복되는 시간대, 희소성·긴박감 없음"
+     },
+     {
+      "card": "디지로카 London",
+      "how_similar": "일시불 후 5영업일 내 즉시결제 시 추가 캐시백 1%",
+      "difference": "결제 습관 유도이며 한정 수량 드롭 아님"
+     }
+    ],
+    "web_checked": [],
+    "verdict": "partial",
+    "note": "시간대 상설 혜택은 있으나 한정 수량·예고 없는 드롭형은 DB에서 확인되지 않음. 웹 검색 불가. 카카오페이 굿딜 타임어택 사례(TRF15, low)는 카드가 아닌 간편결제."
+   },
+   "mechanism_tags": [
+    "time_slot",
+    "count_based"
+   ],
+   "need_key": "saving",
+   "domain_key": "daily",
+   "strength": "약",
+   "strength_reason": "핵심 근거는 Z세대 설문 1건(WTF13, MHF4 동일 출처)이고 카드 혜택 수요가 아닌 쇼핑 프로모션 반응이다. 두쫀쿠 품절 사례는 MZ 범위. 지속성: 오늘만 할인 선호는 구조적이나 카드 적용 근거는 없다.",
+   "counter_evidence": "절약이 대세(WTF10 71.6%, WTF43)이고 신뢰도(52.6%)도 중시해 예고 없는 한시 혜택이 불신으로 비칠 수 있다. 간편결제 후 소비 증가 51.3%(MHF40)로 긴박감 혜택은 과소비 유도 비판 위험이 크다.",
+   "risks": [
+    "과소비 유도 비판(MHF39, MHF40)",
+    "한정 수량 혜택의 공정성 민원(가정)",
+    "카드사 수익 구조와 한정 혜택 비용 계산(가정)"
+   ],
+   "invest_related": false,
+   "cvp_seed": {
+    "target": "할인 이벤트에 반응이 큰 Z세대",
+    "offer": "월 몇 번 앱 알림으로 열리는 한정 수량 드롭 우대(실적 무관)",
+    "key_benefit": "오늘만 열리는 우대를 놓치지 않고 받는 재미",
+    "alternative": "Discount Plan+의 시간대 할인, 카카오페이 굿딜",
+    "differentiator": "시간대 할인은 상설 반복, 이 안은 수량·시간 한정 드롭",
+    "reason_to_believe": [
+     "WTF13",
+     "VRF14",
+     "가정: 한정 드롭이 카드 활성도를 높인다"
+    ]
+   },
+   "grades": {
+    "risk": 0,
+    "existing": 1,
+    "evidence": 1
+   },
+   "killed_by": [
+    "risk"
+   ],
+   "dropped": true,
+   "merged_into": null,
+   "tier": "후보(약)"
+  },
+  {
+   "id": "ENC1",
+   "title": "체크카드 이용 이력이 첫 신용카드의 한도·혜택 문턱으로 이어지는 '체크→신용 졸업' 구조가 없다",
+   "gap_type": "condition",
+   "unmet_need": "20대는 체크카드 선호가 전 연령 최고이고 신용카드 보유는 1.3장으로 적다. 체크카드로 쌓은 소비 이력이 첫 신용카드 발급·혜택에 쓰이는 경로는 시판 카드 혜택 문구에서 확인되지 않는다. 해석: 체크카드를 오래 쓴 사람도 신용카드 앞에서는 신규 고객으로 시작해, 카드사는 쌓인 거래 이력을 쓰지 못하고 고객은 졸업 계기가 없다.",
+   "genz_basis": [
+    {
+     "fact_id": "STF3",
+     "says": "20대의 19.5%가 체크카드를 선호 1순위로 꼽아 전 연령 최고다.",
+     "age_scope": "20대",
+     "weight": "핵심"
+    },
+    {
+     "fact_id": "STF8",
+     "says": "20대의 최근 1년 사용 신용카드는 1.3장으로 30~50대(2장 이상)보다 적다.",
+     "age_scope": "20대",
+     "weight": "핵심"
+    },
+    {
+     "fact_id": "SNF22",
+     "says": "카드업계 관계자는 수험생이 신용카드보다 체크카드를 많이 써 마케팅에 한계가 있다고 말했다.",
+     "age_scope": "10대후반(고3·수험생 포함)",
+     "weight": "핵심"
+    },
+    {
+     "fact_id": "VRF26",
+     "says": "카카오뱅크 K-패스 프렌즈 체크카드가 출시 8개월 만에 누적 발급 100만 장을 넘었다.",
+     "age_scope": "젊은층(범위 미기재)",
+     "weight": "보조"
+    },
+    {
+     "fact_id": "STF54",
+     "says": "KB Youth Club 체크카드(만 18~29세)가 출시 8개월 만에 누적 발급 20만좌를 넘었다.",
+     "age_scope": "청년(만 18~29세)",
+     "weight": "보조"
+    },
+    {
+     "fact_id": "STF51",
+     "says": "2026년 1~5월 신용카드 개인 신규 회원은 전년 동기 대비 2.2% 줄었다.",
+     "age_scope": "전연령",
+     "weight": "보조"
+    }
+   ],
+   "existing_check": {
+    "db_cards_compared": [
+     "Youth Club 체크",
+     "노리2 체크",
+     "카카오뱅크 K-패스 프렌즈 체크",
+     "토스뱅크 체크카드",
+     "케이뱅크 ONE 체크",
+     "청춘대로 톡톡카드",
+     "처음(ANNIVERSE)",
+     "My WE:SH",
+     "카카오뱅크 줍줍 신한카드"
+    ],
+    "similar": [
+     {
+      "card": "처음(ANNIVERSE)",
+      "how_similar": "입문 연상 이름과 목표 입력 500P·달성 5천P 챌린지 적립 구조",
+      "difference": "체크카드 이력과 연결되지 않고 처음 신용카드를 받는 고객의 신용 문턱을 다루지 않는다"
+     },
+     {
+      "card": "카카오뱅크 줍줍 신한카드",
+      "how_similar": "은행 앱에서 신청·내역 조회·즉시결제를 처리하는 은행 결합 신용카드",
+      "difference": "체크 이용 이력 기반 한도·혜택 승계 구조는 문구에 없다"
+     }
+    ],
+    "web_checked": [
+     "현대카드 M HYBRID: 계좌 잔액 안에서는 체크, 부족하면 신용으로 자동 전환되는 하이브리드(결제 방식 전환일 뿐 이력 승계는 아님)",
+     "검색 결과에서 체크카드 이용 실적을 신용카드 발급·혜택에 연결하는 카드는 찾지 못함"
+    ],
+    "verdict": "partial",
+    "note": "하이브리드 카드가 체크/신용 결합을 일부 하나 '졸업·이력 승계' 구조는 못 찾았다. 발급 심사 활용은 카드사 내부 심사 사항이라 공개 문구로 확인 불가."
+   },
+   "mechanism_tags": [
+    "life_event",
+    "check_card"
+   ],
+   "need_key": "simple",
+   "domain_key": null,
+   "strength": "중",
+   "strength_reason": "한국은행 통계(STF3, STF8)와 체크카드 대량 발급 사례(VRF26, STF54)로 체크 선호와 졸업 수요의 전제는 두껍다. 다만 체크 이력이 심사에 반영되는 방식은 카드사 내부 영역이라 출처가 직접 말하는 것이 없고 해석이 많다.",
+   "counter_evidence": "한국은행은 20대가 체크를 많이 쓴다고만 분석했고(STF9) 20대 선호 1순위는 여전히 신용카드 38.0%다(STF1). 졸업 수요가 크지 않을 수 있다. 심사 반영은 신용정보법·모범규준 범위를 확인해야 한다.",
+   "risks": [
+    "월 가처분소득 50만원 이상과 신용평점 기준 충족이 발급 요건이다(STF24).",
+    "청년 카드론 연체율 상승(STF49)으로 첫 카드 한도를 넓히는 설계는 건전성 부담이 있다.",
+    "체크 이력 활용은 대안신용평가 방침(STF62, STF65)이 구체화돼야 한다. 확정되지 않은 부분이다."
+   ],
+   "invest_related": false,
+   "cvp_seed": {
+    "target": "체크카드를 1년 이상 쓴 만 19세 이상 첫 신용카드 후보",
+    "offer": "체크카드 이용 기간·건수를 첫 신용카드 한도 및 첫 6개월 혜택 구간 설정에 반영하는 졸업 카드",
+    "key_benefit": "신규 고객이 아닌 이력 있는 고객으로 시작한다",
+    "alternative": "현대카드 M HYBRID, KB Youth Club 체크, 카카오뱅크 K-패스 프렌즈 체크",
+    "differentiator": "하이브리드 카드는 결제 방식만 합친다. 이 카드는 체크 이용 이력을 신용 시작점에 연결한다",
+    "reason_to_believe": [
+     "STF3",
+     "STF8",
+     "SNF22",
+     "가정: 체크 이력 심사 반영 가능"
+    ]
+   },
+   "grades": {
+    "risk": 1,
+    "existing": 2,
+    "evidence": 2
+   },
+   "killed_by": [],
+   "dropped": false,
+   "merged_into": null,
+   "tier": "유력(중)",
+   "rank": 2
+  },
+  {
+   "id": "ENC2",
+   "title": "금융이력이 없어 신용카드를 못 받는 청년을 위한 보증금 기반 소액 첫 카드가 시판 카드로는 아직 없다",
+   "gap_type": "condition",
+   "unmet_need": "신용카드는 월 가처분소득 50만원 이상과 신용평점 기준을 충족해야 발급된다. 금융이력부족 청년용 발급 문턱 완화와 보증금 담보 신용카드는 제도로 막 열리는 중이다. 해석: 처음 신용을 쌓으려는 사람이 쓸 수 있는 카드가 DB 50종에는 없고, 처음 출시하는 카드사가 카드 혜택 구조를 선점할 여지가 있다.",
+   "genz_basis": [
+    {
+     "fact_id": "STF24",
+     "says": "신용카드는 월 가처분소득 50만원 이상과 개인신용평점 기준을 충족해야 발급된다.",
+     "age_scope": "전연령",
+     "weight": "핵심"
+    },
+    {
+     "fact_id": "STF61",
+     "says": "2026년 12월부터 청년·외국인 등 금융이력부족자의 신용카드 발급 문턱이 낮아진다.",
+     "age_scope": "청년 포함",
+     "weight": "핵심"
+    },
+    {
+     "fact_id": "STF62",
+     "says": "카드 발급 시 대안신용평가를 활용하고 보증금 담보 신용카드 제도를 도입한다.",
+     "age_scope": "청년 포함",
+     "weight": "핵심"
+    },
+    {
+     "fact_id": "STF66",
+     "says": "금융위가 2026년 10월 21일 신한카드의 보증금 기반 비대면 신용카드 발급 서비스를 혁신금융서비스로 지정했다.",
+     "age_scope": "청년 포함",
+     "weight": "핵심"
+    },
+    {
+     "fact_id": "STF65",
+     "says": "발급 심사에 통신요금 납부 이력, 온라인 쇼핑몰 이용 내역 등 비금융정보를 반영할 방침이다.",
+     "age_scope": "청년 포함",
+     "weight": "보조"
+    },
+    {
+     "fact_id": "CSF2",
+     "says": "MZ세대의 32.0%가 신용카드 사용 이유로 신용점수 관리를 꼽았다.",
+     "age_scope": "MZ",
+     "weight": "보조"
+    },
+    {
+     "fact_id": "MHF49",
+     "says": "자신의 신용점수를 아는 비율은 청년도약계좌 가입자 64.3%, 미가입자 51%다.",
+     "age_scope": "청년(19~34)",
+     "weight": "보조"
+    }
+   ],
+   "existing_check": {
+    "db_cards_compared": [
+     "카카오뱅크 줍줍 신한카드",
+     "ZERO Edition3(할인형)",
+     "LOCA LIKIT 1.2",
+     "디지로카 London",
+     "쿠팡 와우카드",
+     "토스뱅크 하나카드 WIDE"
+    ],
+    "similar": [
+     {
+      "card": "카카오뱅크 줍줍 신한카드",
+      "how_similar": "실적 조건 없이 캐시백, 은행 앱에서 신청",
+      "difference": "일반 심사 통과자 대상이며 보증금·대안신용평가 문구가 없다"
+     }
+    ],
+    "web_checked": [
+     "신한카드 보증금 기반 비대면 신용카드: 혁신금융서비스 지정(2026-10-21) 보도 확인, 발급 시점은 12월 도입 계획으로 보도되며 보증금 규모·한도는 미정",
+     "우리카드 외국인 대상 보증금 카드 지정 확인(청년 대상 아님)",
+     "시판 중인 보증금 기반 청년 신용카드는 찾지 못함"
+    ],
+    "verdict": "partial",
+    "note": "제도와 신한 서비스는 지정됐으나 출시 전이다. 시장에 풀린 카드는 없으므로 공백이지만 신한이 선점하는 중이라 차별화 시간이 짧다."
+   },
+   "mechanism_tags": [
+    "life_event",
+    "spend_free"
+   ],
+   "need_key": "safety",
+   "domain_key": null,
+   "strength": "강",
+   "strength_reason": "요건(STF24)과 제도 변경(STF61, STF62, STF66)이 공식 보도에서 상호 확인되고 최신이다. 다만 금융이력부족자 중 20대 규모를 보여주는 수치는 없다.",
+   "counter_evidence": "신한이 지정을 받았으므로 가장 먼저 시장에 나온다. 청년 평균 신용점수는 814.1점으로 높아(STF45) 금융이력이 아예 없는 사람은 청년 중 소수일 수 있다.",
+   "risks": [
+    "보증금 규모와 이용한도는 미정이며 100만~200만원은 업계 거론 수준일 뿐이다(STF64). 확정 전 수치로 쓰면 안 된다.",
+    "혁신금융서비스는 조건부 지정이며 발급 대상이 개인신용평점 확인 불가자로 한정된다(웹 확인).",
+    "20대 연체 상승(STF49)과 보증금 회수 구조는 수익성에 부담이 된다.",
+    "비금융정보 평가 기준은 회사마다 달라 기준이 먼저 필요하다는 지적이 있다(웹 확인)."
+   ],
+   "invest_related": false,
+   "cvp_seed": {
+    "target": "신용이력이 없는 만 19세 이상 대학 신입생·사회초년생",
+    "offer": "보증금 기반 소액 한도 + 납부 이력이 한도 확대와 보증금 일부 환급으로 이어지는 단계 구조",
+    "key_benefit": "신용카드를 못 받던 사람이 첫 이력을 쌓는다",
+    "alternative": "체크카드, 부모 가족카드, 신한카드 보증금 서비스(출시 예정)",
+    "differentiator": "신한은 발급 방식이다. 이 후보는 쌓은 이력에 따른 혜택·한도 졸업 구조까지 설계한다",
+    "reason_to_believe": [
+     "STF24",
+     "STF61",
+     "STF66",
+     "가정: 보증금 규모는 미정"
+    ]
+   },
+   "grades": {
+    "risk": 2,
+    "existing": 2,
+    "evidence": 2
+   },
+   "killed_by": [],
+   "dropped": false,
+   "merged_into": null,
+   "tier": "유력(중)",
+   "rank": 1
+  },
+  {
+   "id": "ENC3",
+   "title": "알바 첫 소득자의 월 25만원 미만 소액 이용에 맞춘 낮은 실적 구간·소액 정액 혜택 구조가 없다",
+   "gap_type": "benefit_structure",
+   "unmet_need": "청년 카드 이용액의 절반(50.4%)이 월 25만원 미만이고, 첫 알바 희망 월급은 51만~100만원 구간이 가장 많다. DB 신용카드는 대부분 전월 실적 30만~50만원 이상 구간이다. 해석: 소액 이용자는 실적을 채우지 못해 혜택을 받지 못한다.",
+   "genz_basis": [
+    {
+     "fact_id": "STF48",
+     "says": "청년 카드사용액 분포에서 25만원 미만 구간이 50.4%로 절반이다.",
+     "age_scope": "청년(19~34)",
+     "weight": "핵심"
+    },
+    {
+     "fact_id": "SNF2",
+     "says": "첫 알바 희망 월급으로 51만~100만원이 33.9%로 가장 많았다.",
+     "age_scope": "10대후반(고3·수험생 포함)",
+     "weight": "핵심"
+    },
+    {
+     "fact_id": "SNF4",
+     "says": "수능 후 알바 이유로 스스로 돈을 벌어보고 싶어서가 71.1%다.",
+     "age_scope": "10대후반(고3·수험생 포함)",
+     "weight": "핵심"
+    },
+    {
+     "fact_id": "STF17",
+     "says": "20대의 1인당 현금 보유액은 2.7만원으로 전 연령 최저다.",
+     "age_scope": "20대",
+     "weight": "보조"
+    },
+    {
+     "fact_id": "STF22",
+     "says": "결제성 예금계좌 잔액이 0~100만원 미만인 20대는 45.5%다.",
+     "age_scope": "20대",
+     "weight": "보조"
+    },
+    {
+     "fact_id": "VRF23",
+     "says": "캐릭터 체크카드에 전월 실적 조건이 달려 소장용으로만 발급받는다는 불만이 보도됐다.",
+     "age_scope": "MZ",
+     "weight": "보조"
+    }
+   ],
+   "existing_check": {
+    "db_cards_compared": [
+     "ZERO Edition3(할인형)",
+     "LOCA LIKIT 1.2",
+     "taptap O",
+     "Youth Club 체크",
+     "디지로카 London",
+     "카카오뱅크 줍줍 신한카드",
+     "토스뱅크 체크카드",
+     "케이뱅크 ONE 체크",
+     "RPM+ Platinum#"
+    ],
+    "similar": [
+     {
+      "card": "ZERO Edition3(할인형)",
+      "how_similar": "전월 실적 0, 국내외 가맹점 청구 할인",
+      "difference": "소액 이용자에게 정액 최소 보장이나 실적 구간 개별 설계는 없고 연회비 15,000원이 소액 이용에 부담이다"
+     },
+     {
+      "card": "토스뱅크 체크카드",
+      "how_similar": "실적 0, 건당 정액 환급형",
+      "difference": "체크카드라 첫 신용카드 졸업 경로가 아니다"
+     }
+    ],
+    "web_checked": [],
+    "verdict": "partial",
+    "note": "무실적 카드는 다수 있으나 대부분 정률 소액 할인이다. 실적이 월 5만~10만원대인 저실적 신용카드는 DB에서 못 찾았다. 웹 검색은 하지 않아 DB만으로 판정."
+   },
+   "mechanism_tags": [
+    "anti_cap",
+    "spend_free"
+   ],
+   "need_key": "saving",
+   "domain_key": null,
+   "strength": "중",
+   "strength_reason": "청년 이용액 분포(STF48)와 첫 알바 소득(SNF2)이 같은 방향이다. 다만 STF48은 19~34세 전체이며 수험생·알바 조사는 10대 후반 응답이라 연령이 맞지 않는다.",
+   "counter_evidence": "실적 0 카드(ZERO Edition3 등)가 이미 있어 문턱 문제는 부분 해결돼 있다. 소액 이용자는 카드사 수익이 낮아 상품이 나오기 어렵다.",
+   "risks": [
+    "월 가처분소득 50만원 요건(STF24)이 알바 소득자에게 걸린다.",
+    "연회비 수익은 늘어나는 구조(CSF25)라 저실적 카드의 수익성은 의문이다.",
+    "단종 카드가 많다(CSF22)."
+   ],
+   "invest_related": false,
+   "cvp_seed": {
+    "target": "월 소액 이용의 알바 소득자 대학생",
+    "offer": "월 이용 5만~10만원 수준부터 정액 혜택이 열리는 저실적 구간",
+    "key_benefit": "소액을 써도 혜택이 나온다",
+    "alternative": "ZERO Edition3, LOCA LIKIT 1.2, 토스뱅크 체크카드",
+    "differentiator": "무실적 정률 할인이 아니라 소액 구간별 정액 최소 보장이다",
+    "reason_to_believe": [
+     "STF48",
+     "SNF2",
+     "가정: 구간 수익성"
+    ]
+   },
+   "grades": {
+    "risk": 1,
+    "existing": 1,
+    "evidence": 1
+   },
+   "killed_by": [],
+   "dropped": false,
+   "merged_into": null,
+   "tier": "후보(약)",
+   "rank": 10
+  },
+  {
+   "id": "ENC4",
+   "title": "2026-05 시행 만 12세 이상 부모 동의 가족카드에서 성인 신용카드로 이어지는 승계·졸업 경로와 보호자 연동이 비어 있다",
+   "gap_type": "experience",
+   "unmet_need": "만 12세 이상 가족카드는 월 10만원(부모 동의 시 50만원), 건당 5만원, 업종 한정이다. 성인이 되는 순간 이 카드의 이용 이력은 어디로도 이어지지 않는다. 해석: 가족카드로 시작한 청소년은 성인이 되면 한도·업종 제한이 없는 새 카드를 다시 시작해야 한다.",
+   "genz_basis": [
+    {
+     "fact_id": "SNF18",
+     "says": "2026년 5월 4일부터 만 12세 이상 미성년자도 부모 동의로 가족카드를 발급받을 수 있다.",
+     "age_scope": "10대",
+     "weight": "핵심"
+    },
+    {
+     "fact_id": "SNF19",
+     "says": "가족카드 기본 한도는 월 10만원, 부모 동의 시 50만원이며 건당 5만원 이내, 업종이 한정된다.",
+     "age_scope": "10대",
+     "weight": "핵심"
+    },
+    {
+     "fact_id": "SNF16",
+     "says": "금융위는 현행법상 미성년자는 원칙적으로 신용카드 발급이 불가하다고 밝혔었다.",
+     "age_scope": "전연령",
+     "weight": "보조"
+    },
+    {
+     "fact_id": "VRF34",
+     "says": "5월 시행령 개정으로 체크카드 발급 가능 연령이 만 7세 이상으로 낮아졌다.",
+     "age_scope": "10대",
+     "weight": "보조"
+    },
+    {
+     "fact_id": "VRF33",
+     "says": "KB국민카드 캐치! 티니핑 틴업 체크카드는 출시 한 달이 안 돼 10만 장 이상 발급됐다.",
+     "age_scope": "잘파(Z+알파)",
+     "weight": "보조"
+    }
+   ],
+   "existing_check": {
+    "db_cards_compared": [
+     "Youth Club 체크",
+     "토심이 첵첵",
+     "노리2 체크",
+     "청춘대로 톡톡카드",
+     "카카오뱅크 K-패스 프렌즈 체크"
+    ],
+    "similar": [
+     {
+      "card": "토심이 첵첵",
+      "how_similar": "청소년 대상 체크카드, 대중교통·온라인 간편결제 정액 할인",
+      "difference": "체크카드라 성인 신용카드로의 연결이 없다"
+     }
+    ],
+    "web_checked": [
+     "미성년 가족카드 상품 출시 사례는 이번 검색에서 확인하지 못함(시행 직후라 상품 현황 불명)"
+    ],
+    "verdict": "none",
+    "note": "DB 50종에 미성년 가족카드나 만 19세 승계 구조를 가진 카드는 없다. 웹에서는 상품 출시 자체를 확인하지 못했으므로 '없다'가 아니라 '확인 못 함'일 수 있다."
+   },
+   "mechanism_tags": [
+    "life_event",
+    "target_special"
+   ],
+   "need_key": "safety",
+   "domain_key": null,
+   "strength": "약",
+   "strength_reason": "제도 근거(SNF18, SNF19)는 최신이고 신뢰도가 높다. 그러나 10대가 대상이라 GenZ 신용카드 타깃(만 19~29세)과 연령이 맞지 않고, SNF19는 보도 기반 medium이다.",
+   "counter_evidence": "카드업계는 수험생이 체크카드 중심이라 마케팅에 한계가 있다고 본다(SNF22). 미성년 신용 마케팅은 규제 부담이 크다.",
+   "risks": [
+    "한도·업종 제한은 시행령 보도 기준이며 카드사별 세부는 달라질 수 있다(SNF19 medium).",
+    "미성년 대상 신용 유도 마케팅은 규제·평판 위험이 크다.",
+    "실제 발급이 얼마나 되는지 근거가 없다."
+   ],
+   "invest_related": false,
+   "cvp_seed": {
+    "target": "가족카드를 가진 만 17~18세 및 만 19세 직전 자녀와 부모",
+    "offer": "부모 동의로 시작하고 만 19세에 본인 카드로 이력과 한도 이어받기",
+    "key_benefit": "성인이 돼도 처음부터 시작하지 않는다",
+    "alternative": "부모 신용카드 가족카드, 청소년 체크카드(토심이 첵첵 등)",
+    "differentiator": "청소년 카드는 체크로 끝난다. 이 후보는 성인 전환까지 설계한다",
+    "reason_to_believe": [
+     "SNF18",
+     "SNF19",
+     "가정: 승계 가능"
+    ]
+   },
+   "grades": {
+    "risk": 0,
+    "existing": 1,
+    "evidence": 1
+   },
+   "killed_by": [
+    "risk"
+   ],
+   "dropped": true,
+   "merged_into": null,
+   "tier": "후보(약)"
+  },
+  {
+   "id": "ENC5",
+   "title": "캐릭터 체크카드의 소장 수요를 실적 조건 없는 첫 신용카드로 이어받는 상품이 없다",
+   "gap_type": "experience",
+   "unmet_need": "캐릭터·한정 에디션 체크카드는 단기간 대량 발급되지만 전월 실적 조건 때문에 소장용에 그친다는 불만이 있다. 해석: 성인이 되는 순간 이 디자인 소비가 신용카드 쪽에서는 이어지지 않는다.",
+   "genz_basis": [
+    {
+     "fact_id": "VRF22",
+     "says": "카카오뱅크 프렌즈 체크카드는 출시 두 달 만에 누적 발급 30만 장을 넘었다.",
+     "age_scope": "젊은층(범위 미기재)",
+     "weight": "핵심"
+    },
+    {
+     "fact_id": "VRF24",
+     "says": "케이뱅크 깜자 에디션 체크카드는 4만장 한정 출시 3주 만에 완판됐다.",
+     "age_scope": "젊은층(범위 미기재)",
+     "weight": "핵심"
+    },
+    {
+     "fact_id": "VRF35",
+     "says": "신한카드 플리 체크(산리오)는 출시 4영업일 만에 5만장 이상 신청이 몰렸다.",
+     "age_scope": "잘파(Z+알파)",
+     "weight": "보조"
+    },
+    {
+     "fact_id": "VRF37",
+     "says": "KB 마이 위시카드의 MZ세대 발급 비중은 79.8%로 기본 디자인보다 19.8%p 높았다.",
+     "age_scope": "MZ",
+     "weight": "보조"
+    },
+    {
+     "fact_id": "VRF23",
+     "says": "캐릭터 체크카드에 전월 실적 조건이 달려 소장용으로만 발급받는다는 불만이 있다.",
+     "age_scope": "MZ",
+     "weight": "핵심"
+    },
+    {
+     "fact_id": "VRF36",
+     "says": "카드고릴라 설문에서 소비자 10명 중 7명이 디자인 때문에 카드를 발급한 경험이 있다.",
+     "age_scope": "전연령",
+     "weight": "보조"
+    }
+   ],
+   "existing_check": {
+    "db_cards_compared": [
+     "카카오뱅크 줍줍 신한카드",
+     "My WE:SH",
+     "무신사 삼성카드",
+     "신한카드 하루(Haru)",
+     "Youth Club 체크",
+     "케이뱅크 ONE 체크"
+    ],
+    "similar": [
+     {
+      "card": "카카오뱅크 줍줍 신한카드",
+      "how_similar": "무실적 캐시백 PLCC",
+      "difference": "캐릭터 디자인과 한정 에디션 문구는 없다"
+     },
+     {
+      "card": "My WE:SH",
+      "how_similar": "사회초년생·1인가구 대상으로 소개되고 디자인 선택 가능한 마이 위시",
+      "difference": "DB 문구에서는 캐릭터 IP 제휴 구조 없음"
+     }
+    ],
+    "web_checked": [],
+    "verdict": "partial",
+    "note": "캐릭터 신용카드 자체는 있을 수 있다. DB 안에서는 무실적 캐릭터 신용카드를 찾지 못함. 웹 검색은 하지 않음."
+   },
+   "mechanism_tags": [
+    "plcc_brand",
+    "spend_free"
+   ],
+   "need_key": "digital",
+   "domain_key": null,
+   "strength": "약",
+   "strength_reason": "디자인 발급 사례는 여러 출처(VRF22, VRF24, VRF35)로 두껍지만 대상이 10대~젊은층이고 신용카드 전환 수요는 직접 근거가 없다. 불만 근거(VRF23)는 KPI뉴스 한 건이다.",
+   "counter_evidence": "캐릭터 카드는 소장 목적이라 이용 실적을 만들지 않을 수 있다. 캐릭터 IP는 어린 층 중심으로 보이며 20대 신용카드 수요로 이어진다는 증거가 없다.",
+   "risks": [
+    "IP 로열티와 무실적 구조는 수익성이 낮다.",
+    "캐릭터 카드 열풍은 유행이라 짧을 수 있다(VRF6의 단기 유행 분석 참조)."
+   ],
+   "invest_related": false,
+   "cvp_seed": {
+    "target": "캐릭터 체크카드를 모은 만 19~24세",
+    "offer": "실적 조건 없이 디자인이 바뀌는 첫 신용카드",
+    "key_benefit": "소장 욕구가 그대로 이용으로 이어진다",
+    "alternative": "카카오뱅크 프렌즈 체크, 신한 플리 체크",
+    "differentiator": "체크 소장용 카드와 달리 신용 이력도 쌓는다",
+    "reason_to_believe": [
+     "VRF22",
+     "VRF23",
+     "가정: 신용 전환 수요"
+    ]
+   },
+   "grades": {
+    "risk": 0,
+    "existing": 0,
+    "evidence": 1
+   },
+   "killed_by": [
+    "risk",
+    "existing"
+   ],
+   "dropped": true,
+   "merged_into": "VLC2",
+   "tier": "후보(약)"
+  },
+  {
+   "id": "ENC6",
+   "title": "수험표 할인·하이틴 이벤트가 카드 접점 없이 흩어져 있고 만 19세 도달 시 첫 카드로 이어지는 트리거가 없다",
+   "gap_type": "touchpoint",
+   "unmet_need": "수능 직후 올리브영, 무신사, 영화관, 테마파크, 항공사가 수험표·하이틴 혜택을 각자 제공한다. 카드사 쪽은 체크카드 이벤트 중심이다. 해석: 신용카드 발급이 가능해지는 시점(만 19세)과 이 혜택들이 연결되지 않는다.",
+   "genz_basis": [
+    {
+     "fact_id": "SNF10",
+     "says": "올리브영은 수능 다음날부터 만 14~19세 올리브 하이틴 멤버스에 4000원 할인 쿠폰을 제공했다.",
+     "age_scope": "10대",
+     "weight": "핵심"
+    },
+    {
+     "fact_id": "SNF12",
+     "says": "무신사 오프라인은 수험표 제시 시 5천원 할인을 제공했다.",
+     "age_scope": "10대후반(고3·수험생 포함)",
+     "weight": "보조"
+    },
+    {
+     "fact_id": "SNF13",
+     "says": "영화관 3사가 11월 수험표 제시 시 2D 영화를 7천원에 제공했다.",
+     "age_scope": "10대후반(고3·수험생 포함)",
+     "weight": "보조"
+    },
+    {
+     "fact_id": "SNF23",
+     "says": "신한카드는 수능 직후 루피 캐릭터 체크카드를 출시했다.",
+     "age_scope": "10대후반(고3·수험생 포함)",
+     "weight": "보조"
+    },
+    {
+     "fact_id": "SNF25",
+     "says": "BNK부산은행은 만 17~21세가 체크카드 또는 청약저축에 가입하면 경품을 주는 이벤트를 했다.",
+     "age_scope": "10대후반(고3·수험생 포함)",
+     "weight": "보조"
+    },
+    {
+     "fact_id": "SNF16",
+     "says": "미성년자는 원칙적으로 신용카드 발급이 불가하다.",
+     "age_scope": "전연령",
+     "weight": "핵심"
+    }
+   ],
+   "existing_check": {
+    "db_cards_compared": [
+     "Youth Club 체크",
+     "토심이 첵첵",
+     "청춘대로 톡톡카드",
+     "무신사 삼성카드",
+     "하나 나라사랑카드 체크"
+    ],
+    "similar": [
+     {
+      "card": "하나 나라사랑카드 체크",
+      "how_similar": "특정 신분(군인) 대상 한정 혜택",
+      "difference": "신분이 수험생·신입생이 아니다"
+     },
+     {
+      "card": "무신사 삼성카드",
+      "how_similar": "무신사 브랜드 제휴",
+      "difference": "수험표·입문 이벤트 문구 없음"
+     }
+    ],
+    "web_checked": [],
+    "verdict": "none",
+    "note": "DB에서 수험생·신입생 대상 신용카드 혜택은 없다. 이벤트성이라 상시 상품 구조는 아니다. 웹 검색은 하지 않음."
+   },
+   "mechanism_tags": [
+    "life_event",
+    "target_special"
+   ],
+   "need_key": "saving",
+   "domain_key": "daily",
+   "strength": "약",
+   "strength_reason": "이벤트 사례는 많으나 대부분 일회성 홍보 기사로 수치 근거가 아니다(SNF12, SNF13 medium). 수능 직후 대상이 만 19세 미만인 경우가 많아 신용카드와 직접 맞닿지 않는다.",
+   "counter_evidence": "수험생은 체크카드 중심이라 신용카드 마케팅 한계가 있다(SNF22). 일회성 이벤트는 카드 혜택 구조로 옮기기 어렵다.",
+   "risks": [
+    "미성년자 대상 신용 마케팅 불가(SNF16).",
+    "수능 이벤트 정보는 연도별로 달라 stale 위험이 있다(SNF14)."
+   ],
+   "invest_related": false,
+   "cvp_seed": {
+    "target": "수능을 마친 만 18~19세, 대학 신입생",
+    "offer": "만 19세 도달 시 수험표 인증 이력과 체크카드 이력으로 첫 신용카드 혜택 구간 해제",
+    "key_benefit": "입문기 혜택이 끊기지 않는다",
+    "alternative": "올리브 하이틴 쿠폰, 수험표 할인, 신한 루피 체크",
+    "differentiator": "브랜드별 일회성 할인이 아니라 카드가 입문기 혜택을 묶는다",
+    "reason_to_believe": [
+     "SNF10",
+     "SNF23",
+     "SNF16",
+     "가정: 인증 연동"
+    ]
+   },
+   "grades": {
+    "risk": 0,
+    "existing": 1,
+    "evidence": 1
+   },
+   "killed_by": [
+    "risk"
+   ],
+   "dropped": true,
+   "merged_into": null,
+   "tier": "후보(약)"
+  }
+ ],
+ "method": "렌즈별 등급 중앙값, 어느 렌즈든 폐기면 탈락(tally.py)"
+}

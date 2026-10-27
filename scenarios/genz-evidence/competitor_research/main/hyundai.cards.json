@@ -1,0 +1,2088 @@
+[
+ {
+  "id": "mhyundai01",
+  "name": "ZERO Edition3(할인형)",
+  "official_name": "현대카드ZERO Edition3(할인형)",
+  "issuer": "현대카드",
+  "type": "credit",
+  "on_sale": true,
+  "role": "youth",
+  "launched": "2024-01-05",
+  "annual_fee_won": {
+   "domestic": 15000,
+   "overseas": 15000
+  },
+  "tiers": [
+   {
+    "min_prev_month_spend_won": 0,
+    "benefit_summary": "전월실적 조건 없음: 국내외 가맹점 0.8% 청구 할인, 횟수·한도 없음"
+   }
+  ],
+  "benefits": [
+   {
+    "category": "전 가맹점",
+    "text": "국내외 가맹점 이용액 청구 할인",
+    "rate_or_amount": "0.8%",
+    "monthly_cap": null,
+    "condition": "실적·한도 없음, 해외는 국내외겸용 카드만"
+   },
+   {
+    "category": "우대",
+    "text": "긴급할인(선지급 포인트): 앱에서 최대 50만 긴급할인 캐시를 먼저 받고 이후 할인으로 상환",
+    "rate_or_amount": "최대 50만",
+    "monthly_cap": null,
+    "condition": "10만 단위 신청"
+   }
+  ],
+  "exclusions": [
+   "장기카드대출·단기카드대출·연회비·제수수료·이자·국제브랜드/해외서비스 수수료·공과금(국세·지방세 등)은 실적·혜택 제외"
+  ],
+  "promotions": [],
+  "recent_changes": [
+   "2026년 메탈 플레이트(ZERO Metal) 발급 제공(2026.1.1~12.31, 발급수수료 10만원)"
+  ],
+  "target_text": "실적 조건 없는 20대 추천 카드, ZERO Edition3 2종으로 시작해 보세요!",
+  "issuance": "현대카드 홈페이지·앱 신청(디지털 전용 여부 확인 불가)",
+  "app_features": [
+   "현대카드 앱 발급 신청·카드 관리",
+   "Apple Pay 등록 가능(상품 페이지 표기)",
+   "3층 시스템(2층 구독팩·3층 맞춤 선물) 탑재 표기",
+   "앱에서 긴급할인 신청"
+  ],
+  "design_note": "기본 플레이트 ZERO(음각 미니멀), 메탈 플레이트·톰 삭스 크레딧 카드 추가 발급 옵션(유료)",
+  "tags": [
+   "simple_flat",
+   "spend_free",
+   "no_cap",
+   "reward_discount",
+   "travel_fx"
+  ],
+  "genz_fit": "high",
+  "genz_fit_reason": "실적·한도가 없어 지출이 들쭉날쭉한 첫 카드 사용자도 혜택이 끊기지 않고 연회비가 1.5만원이다. 현대카드 매거진이 20대 추천 카드로 직접 소개한다.",
+  "source_url": "https://www.hyundaicard.com/docfiles/resources/mo/html/carDtl/ZROE3_MO.html",
+  "source_urls": [
+   "https://www.hyundaicard.com/docfiles/resources/mo/html/carDtl/ZROE3_MO.html",
+   "https://www.hyundaicard.com/cpc/cr/CPCCR0201_01.hc?cardWcd=ZROE3",
+   "https://www.hyundaicard.com/cpc/ma/CPCMA0101_01.hc",
+   "https://card.hyundaicard.com/magazine/20%EB%8C%80-%EC%8B%A0%EC%9A%A9%EC%B9%B4%EB%93%9C-%EC%B6%94%EC%B2%9C-%EC%8B%A0%EC%9A%A9-%EC%B2%B4%ED%81%AC%EC%B9%B4%EB%93%9C-%ED%98%9C%ED%83%9D%EC%9D%84-%EC%B9%B4%EB%93%9C-%ED%95%98%EB%82%98%EB%A1%9C-%EB%88%84%EB%A6%AC%EA%B8%B0.html"
+  ],
+  "checked": "2026-10-27",
+  "confidence": "high",
+  "note": "심의필 2026-C1h-13718(2026.09.08~2027.09.07). 대상 문구는 현대카드 매거진 20대 신용카드 추천 글. 목록 페이지에 연회비 캐시백 이벤트 표기(기간 확인 불가). 기존 DB c10과 동일 카드."
+ },
+ {
+  "id": "mhyundai02",
+  "name": "ZERO Edition3(포인트형)",
+  "official_name": "현대카드ZERO Edition3(포인트형)",
+  "issuer": "현대카드",
+  "type": "credit",
+  "on_sale": true,
+  "role": "youth",
+  "launched": "2024-01-05",
+  "annual_fee_won": {
+   "domestic": 15000,
+   "overseas": 15000
+  },
+  "tiers": [
+   {
+    "min_prev_month_spend_won": 0,
+    "benefit_summary": "전월실적 조건 없음: 국내외 가맹점 1.2% M포인트 적립, 한도 없음"
+   }
+  ],
+  "benefits": [
+   {
+    "category": "전 가맹점",
+    "text": "국내외 가맹점 M포인트 적립",
+    "rate_or_amount": "1.2%",
+    "monthly_cap": null,
+    "condition": "실적·한도 없음"
+   },
+   {
+    "category": "우대",
+    "text": "M 긴급적립(선지급 포인트) 최대 50만 M포인트",
+    "rate_or_amount": "최대 50만P",
+    "monthly_cap": null,
+    "condition": "이후 적립 포인트로 상환"
+   },
+   {
+    "category": "포인트 사용",
+    "text": "M포인트 연회비 결제·H-Coin 전환(300P=200 H-Coin)·M몰·현대차/기아 신차 구매",
+    "rate_or_amount": "1P=2/3원 환산",
+    "monthly_cap": null,
+    "condition": "사용처별 연간 한도"
+   }
+  ],
+  "exclusions": [
+   "장기카드대출·단기카드대출·연회비·제수수료·이자·국제브랜드/해외서비스 수수료·공과금(국세·지방세 등)은 실적·혜택 제외",
+   "현대카드 할인 서비스·무이자할부 이용분 적립 제외"
+  ],
+  "promotions": [],
+  "recent_changes": [],
+  "target_text": "실적 조건 없는 20대 추천 카드, ZERO Edition3 2종으로 시작해 보세요!",
+  "issuance": "현대카드 홈페이지·앱 신청(디지털 전용 여부 확인 불가)",
+  "app_features": [
+   "현대카드 앱 발급 신청·카드 관리",
+   "Apple Pay 등록 가능(상품 페이지 표기)",
+   "3층 시스템(2층 구독팩·3층 맞춤 선물) 탑재 표기"
+  ],
+  "design_note": "할인형과 동일 디자인, 메탈 플레이트는 10만원 또는 10만 M포인트",
+  "tags": [
+   "simple_flat",
+   "spend_free",
+   "no_cap",
+   "reward_point"
+  ],
+  "genz_fit": "high",
+  "genz_fit_reason": "할인형과 같은 무실적 구조로 1.2% 적립이지만 M포인트 환산(1P=2/3원)을 고려하면 실질 가치는 할인형과 비슷하다.",
+  "source_url": "https://www.hyundaicard.com/docfiles/resources/mo/html/carDtl/MZROE3_MO.html",
+  "source_urls": [
+   "https://www.hyundaicard.com/docfiles/resources/mo/html/carDtl/MZROE3_MO.html",
+   "https://www.hyundaicard.com/cpc/cr/CPCCR0201_01.hc?cardWcd=MZROE3",
+   "https://www.hyundaicard.com/cpc/ma/CPCMA0101_01.hc",
+   "https://card.hyundaicard.com/magazine/20%EB%8C%80-%EC%8B%A0%EC%9A%A9%EC%B9%B4%EB%93%9C-%EC%B6%94%EC%B2%9C-%EC%8B%A0%EC%9A%A9-%EC%B2%B4%ED%81%AC%EC%B9%B4%EB%93%9C-%ED%98%9C%ED%83%9D%EC%9D%84-%EC%B9%B4%EB%93%9C-%ED%95%98%EB%82%98%EB%A1%9C-%EB%88%84%EB%A6%AC%EA%B8%B0.html"
+  ],
+  "checked": "2026-10-27",
+  "confidence": "high",
+  "note": "심의필 2026-C1h-13717. M포인트 실질 가치는 사용처에 따라 다름."
+ },
+ {
+  "id": "mhyundai03",
+  "name": "ZERO Up(할인형)",
+  "official_name": "현대카드 ZERO Up(할인형)",
+  "issuer": "현대카드",
+  "type": "credit",
+  "on_sale": true,
+  "role": "other",
+  "launched": "2025-04-10",
+  "annual_fee_won": {
+   "domestic": 30000,
+   "overseas": 30000
+  },
+  "tiers": [
+   {
+    "min_prev_month_spend_won": 0,
+    "benefit_summary": "전월실적 조건 없음: 기본 0.8%, 대상 영역 10만원 이상 결제 건 1.6%"
+   }
+  ],
+  "benefits": [
+   {
+    "category": "전 가맹점",
+    "text": "국내외 가맹점 청구 할인",
+    "rate_or_amount": "0.8%",
+    "monthly_cap": null,
+    "condition": "실적·한도 없음"
+   },
+   {
+    "category": "온라인몰·대형마트·교육·주유·통신",
+    "text": "네이버플러스 스토어·쿠팡·SSG.COM·G마켓·옥션, 이마트·하나로·롯데마트, 학원, 주유, SKT·KT·LGU+ 10만원 이상 단일 결제 시",
+    "rate_or_amount": "1.6%",
+    "monthly_cap": null,
+    "condition": "건당 10만원 이상, 국내 가맹점"
+   }
+  ],
+  "exclusions": [
+   "장기카드대출·단기카드대출·연회비·제수수료·이자·국제브랜드/해외서비스 수수료·공과금(국세·지방세 등)은 실적·혜택 제외",
+   "쿠팡이츠·LPG/전기·수소 충전·알뜰폰은 기본 0.8% 적용"
+  ],
+  "promotions": [],
+  "recent_changes": [],
+  "target_text": null,
+  "issuance": "현대카드 홈페이지·앱 신청(디지털 전용 여부 확인 불가)",
+  "app_features": [
+   "현대카드 앱 발급 신청·카드 관리",
+   "Apple Pay 등록 가능(상품 페이지 표기)",
+   "3층 시스템(2층 구독팩·3층 맞춤 선물) 탑재 표기"
+  ],
+  "design_note": null,
+  "tags": [
+   "simple_flat",
+   "spend_free",
+   "no_cap",
+   "reward_discount",
+   "txn_threshold",
+   "online_shop"
+  ],
+  "genz_fit": "mid",
+  "genz_fit_reason": "무실적 구조는 맞지만 1.6% 추가 할인이 10만원 이상 단건이라 소액 결제가 많은 20대에겐 대부분 0.8%로 끝난다.",
+  "source_url": "https://www.hyundaicard.com/docfiles/resources/mo/html/carDtl/ZRUP_MO.html",
+  "source_urls": [
+   "https://www.hyundaicard.com/docfiles/resources/mo/html/carDtl/ZRUP_MO.html",
+   "https://www.hyundaicard.com/cpc/cr/CPCCR0201_01.hc?cardWcd=ZRUP",
+   "https://www.hyundaicard.com/cpc/ma/CPCMA0101_01.hc"
+  ],
+  "checked": "2026-10-27",
+  "confidence": "high",
+  "note": "심의필 2026-C1h-13428. 포인트형(MZRUP, 1.2%/2.4%)도 연회비 3만원."
+ },
+ {
+  "id": "mhyundai04",
+  "name": "현대카드M",
+  "official_name": "현대카드M",
+  "issuer": "현대카드",
+  "type": "credit",
+  "on_sale": true,
+  "role": "flagship",
+  "launched": "2024-01-19",
+  "annual_fee_won": {
+   "domestic": 30000,
+   "overseas": 30000
+  },
+  "tiers": [
+   {
+    "min_prev_month_spend_won": 0,
+    "benefit_summary": "50만원 미만: 혜택 없음(신규 발급월 다음 달까지 예외)"
+   },
+   {
+    "min_prev_month_spend_won": 500000,
+    "benefit_summary": "국내외 가맹점 1.5% M포인트"
+   },
+   {
+    "min_prev_month_spend_won": 1000000,
+    "benefit_summary": "온라인쇼핑몰·일반음식점·해외 5% M포인트(월 1만P), 그 외 1.5%"
+   }
+  ],
+  "benefits": [
+   {
+    "category": "전 가맹점",
+    "text": "국내외 가맹점 M포인트 적립",
+    "rate_or_amount": "1.5%",
+    "monthly_cap": null,
+    "condition": "전월 50만원 이상, 한도 없음"
+   },
+   {
+    "category": "온라인쇼핑·외식·해외",
+    "text": "네이버쇼핑·쿠팡·G마켓·옥션·11번가·SSG.COM·컬리, 일반음식점, 해외 가맹점",
+    "rate_or_amount": "5%",
+    "monthly_cap": "월 1만 M포인트(본인+가족)",
+    "condition": "전월 100만원 이상"
+   },
+   {
+    "category": "우대",
+    "text": "M 긴급적립 최대 50만 M포인트",
+    "rate_or_amount": "최대 50만P",
+    "monthly_cap": null,
+    "condition": null
+   }
+  ],
+  "exclusions": [
+   "장기카드대출·단기카드대출·연회비·제수수료·이자·국제브랜드/해외서비스 수수료·공과금(국세·지방세 등)은 실적·혜택 제외",
+   "쿠팡이츠 결제 적립 제외",
+   "무이자할부·할인 서비스 이용분 적립 제외"
+  ],
+  "promotions": [],
+  "recent_changes": [
+   "상위판 현대카드MM(연회비 7만원, 추가 10%·월 2만P, 공항 라운지·발레 연2회) 병행"
+  ],
+  "target_text": null,
+  "issuance": "현대카드 홈페이지·앱 신청(디지털 전용 여부 확인 불가)",
+  "app_features": [
+   "현대카드 앱 발급 신청·카드 관리",
+   "Apple Pay 등록 가능(상품 페이지 표기)",
+   "3층 시스템(2층 구독팩·3층 맞춤 선물) 탑재 표기"
+  ],
+  "design_note": "M Core / M Grid / M Code / M Metal 4종 선택",
+  "tags": [
+   "reward_point",
+   "tiered_perf",
+   "online_shop",
+   "dining_cafe",
+   "travel_fx"
+  ],
+  "genz_fit": "mid",
+  "genz_fit_reason": "현대카드 대표 상품이고 온라인·외식 적립이 20대 소비와 맞지만 기본 혜택부터 전월 50만원, 5%는 100만원이 필요하다.",
+  "source_url": "https://www.hyundaicard.com/docfiles/resources/mo/html/carDtl/ME4_MO.html",
+  "source_urls": [
+   "https://www.hyundaicard.com/docfiles/resources/mo/html/carDtl/ME4_MO.html",
+   "https://www.hyundaicard.com/cpc/cr/CPCCR0201_01.hc?cardWcd=ME4",
+   "https://www.hyundaicard.com/cpc/ma/CPCMA0101_01.hc"
+  ],
+  "checked": "2026-10-27",
+  "confidence": "high",
+  "note": "심의필 2026-C1h-12468. 기존 DB c09와 동일. 목록 페이지 연회비 30,000원(국내전용·국내외겸용 동일)."
+ },
+ {
+  "id": "mhyundai05",
+  "name": "현대카드X",
+  "official_name": "현대카드X",
+  "issuer": "현대카드",
+  "type": "credit",
+  "on_sale": true,
+  "role": "flagship",
+  "launched": "2024-01-19",
+  "annual_fee_won": {
+   "domestic": 50000,
+   "overseas": 50000
+  },
+  "tiers": [
+   {
+    "min_prev_month_spend_won": 500000,
+    "benefit_summary": "국내외 가맹점 1% 청구 할인(한도 없음), 인천공항 라운지·발레 연 2회"
+   },
+   {
+    "min_prev_month_spend_won": null,
+    "benefit_summary": "연간 누적 500만원마다 2만원 캐시백(연 최대 10만원, 실적 무관 누적)"
+   }
+  ],
+  "benefits": [
+   {
+    "category": "전 가맹점",
+    "text": "국내외 가맹점 청구 할인",
+    "rate_or_amount": "1%",
+    "monthly_cap": null,
+    "condition": "전월 50만원 이상, 한도 없음"
+   },
+   {
+    "category": "연간 캐시백",
+    "text": "연간 누적 이용 500만원당 2만원 캐시백",
+    "rate_or_amount": "연 최대 10만원",
+    "monthly_cap": null,
+    "condition": "카드 발급월 포함 12개월 기준"
+   },
+   {
+    "category": "공항",
+    "text": "인천공항 라운지·발레파킹",
+    "rate_or_amount": "각 연 2회",
+    "monthly_cap": null,
+    "condition": "전월 50만원 이상"
+   }
+  ],
+  "exclusions": [
+   "장기카드대출·단기카드대출·연회비·제수수료·이자·국제브랜드/해외서비스 수수료·공과금(국세·지방세 등)은 실적·혜택 제외"
+  ],
+  "promotions": [],
+  "recent_changes": [],
+  "target_text": null,
+  "issuance": "현대카드 홈페이지·앱 신청(디지털 전용 여부 확인 불가)",
+  "app_features": [
+   "현대카드 앱 발급 신청·카드 관리",
+   "Apple Pay 등록 가능(상품 페이지 표기)",
+   "3층 시스템(2층 구독팩·3층 맞춤 선물) 탑재 표기"
+  ],
+  "design_note": null,
+  "tags": [
+   "simple_flat",
+   "reward_discount",
+   "reward_cashback",
+   "tiered_perf",
+   "lounge",
+   "period_bonus"
+  ],
+  "genz_fit": "low",
+  "genz_fit_reason": "연회비 5만원과 전월 50만원 조건, 연 500만원 단위 캐시백은 지출 규모가 큰 사용자에게 맞는다.",
+  "source_url": "https://www.hyundaicard.com/docfiles/resources/mo/html/carDtl/XPE4_MO.html",
+  "source_urls": [
+   "https://www.hyundaicard.com/docfiles/resources/mo/html/carDtl/XPE4_MO.html",
+   "https://www.hyundaicard.com/cpc/cr/CPCCR0201_01.hc?cardWcd=XPE4",
+   "https://www.hyundaicard.com/cpc/ma/CPCMA0101_01.hc"
+  ],
+  "checked": "2026-10-27",
+  "confidence": "high",
+  "note": "심의필 2026-C1h-13219. 목록 표기명 \"X Turbo Discount\"."
+ },
+ {
+  "id": "mhyundai06",
+  "name": "X Cut",
+  "official_name": "현대카드 X Cut",
+  "issuer": "현대카드",
+  "type": "credit",
+  "on_sale": true,
+  "role": "youth",
+  "launched": "2025-04-11",
+  "annual_fee_won": {
+   "domestic": 30000,
+   "overseas": 30000
+  },
+  "tiers": [
+   {
+    "min_prev_month_spend_won": 500000,
+    "benefit_summary": "국내외 가맹점 1% 청구 할인"
+   },
+   {
+    "min_prev_month_spend_won": 1000000,
+    "benefit_summary": "올리브영·다이소·무신사, 배민·쿠팡이츠·요기요, 편의점 4사 5%(통합 월 1만원), 그 외 1%"
+   }
+  ],
+  "benefits": [
+   {
+    "category": "전 가맹점",
+    "text": "국내외 가맹점 청구 할인",
+    "rate_or_amount": "1%",
+    "monthly_cap": null,
+    "condition": "전월 50만원 이상, 한도 없음"
+   },
+   {
+    "category": "뷰티/생활/패션·배달앱·편의점",
+    "text": "올리브영·다이소·무신사, 배달의민족·쿠팡이츠·요기요, GS25·CU·세븐일레븐·이마트24",
+    "rate_or_amount": "5%",
+    "monthly_cap": "통합 월 1만원",
+    "condition": "전월 100만원 이상, 국내 가맹점"
+   }
+  ],
+  "exclusions": [
+   "장기카드대출·단기카드대출·연회비·제수수료·이자·국제브랜드/해외서비스 수수료·공과금(국세·지방세 등)은 실적·혜택 제외",
+   "무신사 네이버페이 결제·배달원 직접결제·편의점 앱결제는 기본 1%",
+   "상품권·선불충전 실적 제외"
+  ],
+  "promotions": [],
+  "recent_changes": [],
+  "target_text": "요즘 할인 Cut으로 완성",
+  "issuance": "현대카드 홈페이지·앱 신청(디지털 전용 여부 확인 불가)",
+  "app_features": [
+   "현대카드 앱 발급 신청·카드 관리",
+   "Apple Pay 등록 가능(상품 페이지 표기)",
+   "3층 시스템(2층 구독팩·3층 맞춤 선물) 탑재 표기"
+  ],
+  "design_note": "Metal Cut / Vivid Cut / Retro Cut",
+  "tags": [
+   "simple_flat",
+   "reward_discount",
+   "tiered_perf",
+   "delivery",
+   "mart_daily",
+   "online_shop"
+  ],
+  "genz_fit": "mid",
+  "genz_fit_reason": "대상 가맹점(올리브영·다이소·무신사·배달앱·편의점)이 20대 소비와 겹치지만 5%는 전월 100만원이 있어야 열린다.",
+  "source_url": "https://www.hyundaicard.com/docfiles/resources/mo/html/carDtl/XCUT_MO.html",
+  "source_urls": [
+   "https://www.hyundaicard.com/docfiles/resources/mo/html/carDtl/XCUT_MO.html",
+   "https://www.hyundaicard.com/cpc/cr/CPCCR0201_01.hc?cardWcd=XCUT",
+   "https://www.hyundaicard.com/cpc/ma/CPCMA0101_01.hc"
+  ],
+  "checked": "2026-10-27",
+  "confidence": "high",
+  "note": "심의필 2026-C1h-13222. 목록 문구 \"요즘 할인 Cut으로 완성\". 자매 상품 X Save(온라인몰·교육·병원 5%)."
+ },
+ {
+  "id": "mhyundai07",
+  "name": "Z play",
+  "official_name": "현대카드Z play",
+  "issuer": "현대카드",
+  "type": "credit",
+  "on_sale": true,
+  "role": "youth",
+  "launched": "2024-01-19",
+  "annual_fee_won": {
+   "domestic": 20000,
+   "overseas": 20000
+  },
+  "tiers": [
+   {
+    "min_prev_month_spend_won": 500000,
+    "benefit_summary": "플레이 5개 영역 각 10% 청구 할인, 영역별 월 6천원"
+   },
+   {
+    "min_prev_month_spend_won": 1000000,
+    "benefit_summary": "영역별 월 1만원"
+   }
+  ],
+  "benefits": [
+   {
+    "category": "온라인쇼핑",
+    "text": "네이버쇼핑·쿠팡·G마켓·옥션·11번가·SSG.COM·컬리",
+    "rate_or_amount": "10%",
+    "monthly_cap": "월 6천/1만원",
+    "condition": "1일 1회"
+   },
+   {
+    "category": "외식",
+    "text": "일반음식점 업종",
+    "rate_or_amount": "10%",
+    "monthly_cap": "월 6천/1만원",
+    "condition": "1일 1회"
+   },
+   {
+    "category": "영화",
+    "text": "CGV·메가박스·롯데시네마",
+    "rate_or_amount": "10%",
+    "monthly_cap": "월 6천/1만원",
+    "condition": "1일 1회"
+   },
+   {
+    "category": "해외",
+    "text": "해외 온·오프라인 가맹점",
+    "rate_or_amount": "10%",
+    "monthly_cap": "월 6천/1만원",
+    "condition": "국내외겸용만"
+   },
+   {
+    "category": "디지털 콘텐츠",
+    "text": "넷플릭스·유튜브 프리미엄·디즈니+·멜론·지니",
+    "rate_or_amount": "10%",
+    "monthly_cap": "월 6천/1만원",
+    "condition": "공식 홈페이지·앱 결제, 인앱·통신요금 합산 제외"
+   }
+  ],
+  "exclusions": [
+   "장기카드대출·단기카드대출·연회비·제수수료·이자·국제브랜드/해외서비스 수수료·공과금(국세·지방세 등)은 실적·혜택 제외",
+   "쿠팡이츠 제외",
+   "인앱결제·통신요금 합산 청구 OTT 제외"
+  ],
+  "promotions": [],
+  "recent_changes": [],
+  "target_text": "여가용 구간 반복 할인 카드",
+  "issuance": "현대카드 홈페이지·앱 신청(디지털 전용 여부 확인 불가)",
+  "app_features": [
+   "현대카드 앱 발급 신청·카드 관리",
+   "Apple Pay 등록 가능(상품 페이지 표기)",
+   "3층 시스템(2층 구독팩·3층 맞춤 선물) 탑재 표기"
+  ],
+  "design_note": "Z core / Z play / Z Metal",
+  "tags": [
+   "reward_discount",
+   "tiered_perf",
+   "online_shop",
+   "dining_cafe",
+   "subscription_ott",
+   "travel_fx"
+  ],
+  "genz_fit": "high",
+  "genz_fit_reason": "OTT·영화·온라인쇼핑·외식 등 20대 여가 지출이 그대로 대상이고 연회비 2만원이지만, 전월 50만원 조건과 영역당 월 6천원 한도가 작다.",
+  "source_url": "https://www.hyundaicard.com/docfiles/resources/mo/html/carDtl/ZOE2_MO.html",
+  "source_urls": [
+   "https://www.hyundaicard.com/docfiles/resources/mo/html/carDtl/ZOE2_MO.html",
+   "https://www.hyundaicard.com/cpc/cr/CPCCR0201_01.hc?cardWcd=ZOE2",
+   "https://www.hyundaicard.com/cpc/ma/CPCMA0101_01.hc"
+  ],
+  "checked": "2026-10-27",
+  "confidence": "high",
+  "note": "심의필 2026-C1h-13531. 영역별 1일 1회 제한이 있어 체감 혜택은 한도보다 작을 수 있음."
+ },
+ {
+  "id": "mhyundai08",
+  "name": "Z work Edition2",
+  "official_name": "현대카드Z work Edition2",
+  "issuer": "현대카드",
+  "type": "credit",
+  "on_sale": true,
+  "role": "youth",
+  "launched": "2024-01-19",
+  "annual_fee_won": {
+   "domestic": 20000,
+   "overseas": 20000
+  },
+  "tiers": [
+   {
+    "min_prev_month_spend_won": 500000,
+    "benefit_summary": "출퇴근 5개 영역 각 10%, 영역별 월 6천원"
+   },
+   {
+    "min_prev_month_spend_won": 1000000,
+    "benefit_summary": "영역별 월 1만원"
+   }
+  ],
+  "benefits": [
+   {
+    "category": "온라인쇼핑",
+    "text": "네이버쇼핑·쿠팡·G마켓·옥션·11번가·SSG.COM·컬리",
+    "rate_or_amount": "10%",
+    "monthly_cap": "월 6천/1만원",
+    "condition": "1일 1회"
+   },
+   {
+    "category": "편의점",
+    "text": "GS25·CU·세븐일레븐·이마트24",
+    "rate_or_amount": "10%",
+    "monthly_cap": "월 6천/1만원",
+    "condition": "1일 1회"
+   },
+   {
+    "category": "커피",
+    "text": "스타벅스·투썸플레이스·커피빈·폴 바셋",
+    "rate_or_amount": "10%",
+    "monthly_cap": "월 6천/1만원",
+    "condition": "1일 1회"
+   },
+   {
+    "category": "대중교통",
+    "text": "시내버스·지하철·택시",
+    "rate_or_amount": "10%",
+    "monthly_cap": "월 6천/1만원",
+    "condition": "시외·고속버스 제외, 택시 1일 1회"
+   },
+   {
+    "category": "도서",
+    "text": "교보문고·YES24",
+    "rate_or_amount": "10%",
+    "monthly_cap": "월 6천/1만원",
+    "condition": "1일 1회"
+   },
+   {
+    "category": "정부 지원",
+    "text": "모두의카드(대중교통 이용액 일정 비율 환급) 신청 가능",
+    "rate_or_amount": "정부 환급",
+    "monthly_cap": null,
+    "condition": "참여 지자체 주민 만 19세 이상"
+   }
+  ],
+  "exclusions": [
+   "장기카드대출·단기카드대출·연회비·제수수료·이자·국제브랜드/해외서비스 수수료·공과금(국세·지방세 등)은 실적·혜택 제외",
+   "쿠팡이츠 제외"
+  ],
+  "promotions": [],
+  "recent_changes": [],
+  "target_text": "출퇴근용 구간 반복 할인 카드",
+  "issuance": "현대카드 홈페이지·앱 신청(디지털 전용 여부 확인 불가)",
+  "app_features": [
+   "현대카드 앱 발급 신청·카드 관리",
+   "Apple Pay 등록 가능(상품 페이지 표기)",
+   "3층 시스템(2층 구독팩·3층 맞춤 선물) 탑재 표기"
+  ],
+  "design_note": "Z core / Z work / Z Metal",
+  "tags": [
+   "reward_discount",
+   "tiered_perf",
+   "transit",
+   "dining_cafe",
+   "mart_daily",
+   "online_shop",
+   "govt_link"
+  ],
+  "genz_fit": "high",
+  "genz_fit_reason": "커피·편의점·교통·도서 등 사회초년생 출퇴근 지출에 맞추고 모두의카드(교통비 환급) 연계까지 붙었지만 전월 50만원이 필요하다.",
+  "source_url": "https://www.hyundaicard.com/docfiles/resources/mo/html/carDtl/ZWE2_MO.html",
+  "source_urls": [
+   "https://www.hyundaicard.com/docfiles/resources/mo/html/carDtl/ZWE2_MO.html",
+   "https://www.hyundaicard.com/cpc/cr/CPCCR0201_01.hc?cardWcd=ZWE2",
+   "https://www.hyundaicard.com/cpc/ma/CPCMA0101_01.hc"
+  ],
+  "checked": "2026-10-27",
+  "confidence": "high",
+  "note": "심의필 2026-C1h-13099. 모두의카드는 정부 교통비 환급 사업(세부 환급률은 현대카드 정부지원사업 안내 페이지, 확인 불가)."
+ },
+ {
+  "id": "mhyundai09",
+  "name": "Z everyday",
+  "official_name": "현대카드Z everyday",
+  "issuer": "현대카드",
+  "type": "credit",
+  "on_sale": true,
+  "role": "youth",
+  "launched": "2025-07-17",
+  "annual_fee_won": {
+   "domestic": 20000,
+   "overseas": 20000
+  },
+  "tiers": [
+   {
+    "min_prev_month_spend_won": 500000,
+    "benefit_summary": "9개 영역 5%(주말 외식·주유·마트 10%), 통합 월 2.5만원"
+   },
+   {
+    "min_prev_month_spend_won": 1000000,
+    "benefit_summary": "통합 월 5만원"
+   }
+  ],
+  "benefits": [
+   {
+    "category": "통신·교통",
+    "text": "SKT·KT·LGU+ / 시내버스·지하철",
+    "rate_or_amount": "5%",
+    "monthly_cap": "영역별 월 5천원",
+    "condition": null
+   },
+   {
+    "category": "온라인몰·커피·편의점·배달앱",
+    "text": "네이버플러스 스토어·쿠팡 등, 스타벅스·메가MGC 등, 편의점 4사, 배민·쿠팡이츠·요기요",
+    "rate_or_amount": "5%",
+    "monthly_cap": "건당 1천원, 월 4회",
+    "condition": "일 1회"
+   },
+   {
+    "category": "외식·주유·마트",
+    "text": "일반음식점·주유소·이마트/하나로/롯데마트(주말 10%)",
+    "rate_or_amount": "5%(주말 10%)",
+    "monthly_cap": "건당 1천~5천원, 월 2회",
+    "condition": "일 1회"
+   }
+  ],
+  "exclusions": [
+   "장기카드대출·단기카드대출·연회비·제수수료·이자·국제브랜드/해외서비스 수수료·공과금(국세·지방세 등)은 실적·혜택 제외",
+   "해외 가맹점 제외",
+   "상품권·선불충전 제외",
+   "다른 청구할인 중복 불가"
+  ],
+  "promotions": [],
+  "recent_changes": [],
+  "target_text": "다구간 반복 할인 카드",
+  "issuance": "현대카드 홈페이지·앱 신청(디지털 전용 여부 확인 불가)",
+  "app_features": [
+   "현대카드 앱 발급 신청·카드 관리",
+   "Apple Pay 등록 가능(상품 페이지 표기)",
+   "3층 시스템(2층 구독팩·3층 맞춤 선물) 탑재 표기"
+  ],
+  "design_note": "Z core / Z everyday / Z Metal",
+  "tags": [
+   "reward_discount",
+   "tiered_perf",
+   "count_based",
+   "transit",
+   "dining_cafe",
+   "delivery",
+   "mart_daily",
+   "fixed_bills",
+   "fuel",
+   "period_bonus"
+  ],
+  "genz_fit": "mid",
+  "genz_fit_reason": "영역은 넓지만 건당 1천원·월 4회 같은 횟수 제한이 촘촘해 소액 다빈도 결제에서 실제 할인액이 작다.",
+  "source_url": "https://www.hyundaicard.com/docfiles/resources/mo/html/carDtl/ZWK_MO.html",
+  "source_urls": [
+   "https://www.hyundaicard.com/docfiles/resources/mo/html/carDtl/ZWK_MO.html",
+   "https://www.hyundaicard.com/cpc/cr/CPCCR0201_01.hc?cardWcd=ZWK",
+   "https://www.hyundaicard.com/cpc/ma/CPCMA0101_01.hc"
+  ],
+  "checked": "2026-10-27",
+  "confidence": "high",
+  "note": "심의필 2026-C1h-13517. 목록 문구 \"매년 최대 60만원까지 할인\"."
+ },
+ {
+  "id": "mhyundai10",
+  "name": "알파벳카드 D",
+  "official_name": "알파벳카드D",
+  "issuer": "현대카드",
+  "type": "credit",
+  "on_sale": true,
+  "role": "youth",
+  "launched": "2025-07-17",
+  "annual_fee_won": {
+   "domestic": 15000,
+   "overseas": 15000
+  },
+  "tiers": [
+   {
+    "min_prev_month_spend_won": 400000,
+    "benefit_summary": "핵심 영역 10% 통합 월 1만원 + 커피·편의점·대중교통 5% 통합 월 5천원"
+   },
+   {
+    "min_prev_month_spend_won": 800000,
+    "benefit_summary": "10% 월 2만원 + 5% 월 1만원"
+   },
+   {
+    "min_prev_month_spend_won": 1200000,
+    "benefit_summary": "10% 월 3.5만원 + 5% 월 1.5만원"
+   }
+  ],
+  "benefits": [
+   {
+    "category": "외식·배달앱",
+    "text": "일반음식점, 배달의민족·쿠팡이츠·요기요(앱 결제)",
+    "rate_or_amount": "10%",
+    "monthly_cap": "통합 월 1만/2만/3.5만원",
+    "condition": "전월 40/80/120만원"
+   },
+   {
+    "category": "일상",
+    "text": "커피(스타벅스·투썸·폴바셋·이디야·메가MGC)·편의점 4사·대중교통(버스·지하철·택시)",
+    "rate_or_amount": "5%",
+    "monthly_cap": "통합 월 5천/1만/1.5만원(영역별 월 5천원)",
+    "condition": "전월 40만원 이상"
+   }
+  ],
+  "exclusions": [
+   "장기카드대출·단기카드대출·연회비·제수수료·이자·국제브랜드/해외서비스 수수료·공과금(국세·지방세 등)은 실적·혜택 제외",
+   "국내 가맹점만(해외 제외)",
+   "PG·간편결제·키오스크 등 별도 가맹점번호 승인 건 제외될 수 있음",
+   "상품권·선불충전 제외"
+  ],
+  "promotions": [],
+  "recent_changes": [],
+  "target_text": "D FOR DINING",
+  "issuance": "현대카드 홈페이지·앱 신청(디지털 전용 여부 확인 불가)",
+  "app_features": [
+   "현대카드 앱 발급 신청·카드 관리",
+   "Apple Pay 등록 가능(상품 페이지 표기)",
+   "3층 시스템(2층 구독팩·3층 맞춤 선물) 탑재 표기"
+  ],
+  "design_note": "D Bright / D Soft / D Metal(발급수수료 7만원). 카드 전면 CI 없이 알파벳 대형 인쇄",
+  "tags": [
+   "reward_discount",
+   "tiered_perf",
+   "dining_cafe",
+   "delivery",
+   "transit",
+   "mart_daily",
+   "common_plus_select"
+  ],
+  "genz_fit": "high",
+  "genz_fit_reason": "외식·배달 10%에 커피·편의점·교통 5%가 붙어 1인 가구 20대 지출 구조와 맞고 연회비 1.5만원, 전월 40만원으로 현대카드 라인 중 진입 문턱이 낮은 편이다.",
+  "source_url": "https://www.hyundaicard.com/docfiles/resources/mo/html/carDtl/HCD_MO.html",
+  "source_urls": [
+   "https://www.hyundaicard.com/docfiles/resources/mo/html/carDtl/HCD_MO.html",
+   "https://www.hyundaicard.com/cpc/cr/CPCCR0201_01.hc?cardWcd=HCD",
+   "https://www.hyundaicard.com/cpc/ma/CPCMA0101_01.hc",
+   "https://www.heraldk.com/article/2026070118164783332"
+  ],
+  "checked": "2026-10-27",
+  "confidence": "high",
+  "note": "알파벳카드는 2026-07-01 독자 브랜드로 재편(신규 B·P·R + BOLD 3종, 기존 D·H·O·S·T 전환, 총 11종). 카드 전면에서 현대카드 CI 제거, 세로형 패키지(헤럴드경제 2026-07-01). 심의필 2026-C1h-13730. 상품 페이지 출시일 2025-07-17(언론은 \"작년 9월 선보인 현대카드 시리즈\"로 표기)."
+ },
+ {
+  "id": "mhyundai11",
+  "name": "알파벳카드 B",
+  "official_name": "알파벳카드B",
+  "issuer": "현대카드",
+  "type": "credit",
+  "on_sale": true,
+  "role": "youth",
+  "launched": "2026-04-08",
+  "annual_fee_won": {
+   "domestic": 15000,
+   "overseas": 15000
+  },
+  "tiers": [
+   {
+    "min_prev_month_spend_won": 400000,
+    "benefit_summary": "핵심 영역 10% 통합 월 1만원 + 커피·편의점·대중교통 5% 통합 월 5천원"
+   },
+   {
+    "min_prev_month_spend_won": 800000,
+    "benefit_summary": "10% 월 2만원 + 5% 월 1만원"
+   },
+   {
+    "min_prev_month_spend_won": 1200000,
+    "benefit_summary": "10% 월 3.5만원 + 5% 월 1.5만원"
+   }
+  ],
+  "benefits": [
+   {
+    "category": "뷰티·헬스·패션",
+    "text": "올리브영·미용실·피부과·성형외과·치과 / 헬스장·필라테스·요가·테니스장·수영장 / 무신사·29CM·W컨셉·KREAM·나이키·룰루레몬",
+    "rate_or_amount": "10%",
+    "monthly_cap": "통합 월 1만/2만/3.5만원",
+    "condition": "전월 40/80/120만원"
+   },
+   {
+    "category": "일상",
+    "text": "커피(스타벅스·투썸·폴바셋·이디야·메가MGC)·편의점 4사·대중교통(버스·지하철·택시)",
+    "rate_or_amount": "5%",
+    "monthly_cap": "통합 월 5천/1만/1.5만원(영역별 월 5천원)",
+    "condition": "전월 40만원 이상"
+   }
+  ],
+  "exclusions": [
+   "장기카드대출·단기카드대출·연회비·제수수료·이자·국제브랜드/해외서비스 수수료·공과금(국세·지방세 등)은 실적·혜택 제외",
+   "국내 가맹점만(해외 제외)",
+   "PG·간편결제·키오스크 등 별도 가맹점번호 승인 건 제외될 수 있음",
+   "상품권·선불충전 제외",
+   "백화점·쇼핑몰 입점 매장 제외"
+  ],
+  "promotions": [],
+  "recent_changes": [],
+  "target_text": "B FOR BEAUTY",
+  "issuance": "현대카드 홈페이지·앱 신청(디지털 전용 여부 확인 불가)",
+  "app_features": [
+   "현대카드 앱 발급 신청·카드 관리",
+   "Apple Pay 등록 가능(상품 페이지 표기)",
+   "3층 시스템(2층 구독팩·3층 맞춤 선물) 탑재 표기"
+  ],
+  "design_note": "B Bright / B Soft / B Metal(7만원)",
+  "tags": [
+   "reward_discount",
+   "tiered_perf",
+   "online_shop",
+   "dining_cafe",
+   "transit",
+   "mart_daily",
+   "common_plus_select"
+  ],
+  "genz_fit": "high",
+  "genz_fit_reason": "올리브영·무신사·29CM·KREAM·필라테스 등 대상점이 20대 뷰티·패션·운동 소비와 정확히 겹친다.",
+  "source_url": "https://www.hyundaicard.com/docfiles/resources/mo/html/carDtl/ALB_MO.html",
+  "source_urls": [
+   "https://www.hyundaicard.com/docfiles/resources/mo/html/carDtl/ALB_MO.html",
+   "https://www.hyundaicard.com/cpc/cr/CPCCR0201_01.hc?cardWcd=ALB",
+   "https://www.hyundaicard.com/cpc/ma/CPCMA0101_01.hc",
+   "https://www.heraldk.com/article/2026070118164783332"
+  ],
+  "checked": "2026-10-27",
+  "confidence": "high",
+  "note": "알파벳카드는 2026-07-01 독자 브랜드로 재편(신규 B·P·R + BOLD 3종, 기존 D·H·O·S·T 전환, 총 11종). 카드 전면에서 현대카드 CI 제거, 세로형 패키지(헤럴드경제 2026-07-01). 심의필 2026-C1h-13307. 상품 페이지 출시일 2026-04-08, 브랜드 공개 2026-07-01."
+ },
+ {
+  "id": "mhyundai12",
+  "name": "알파벳카드 P",
+  "official_name": "알파벳카드P",
+  "issuer": "현대카드",
+  "type": "credit",
+  "on_sale": true,
+  "role": "youth",
+  "launched": "2026-04-08",
+  "annual_fee_won": {
+   "domestic": 15000,
+   "overseas": 15000
+  },
+  "tiers": [
+   {
+    "min_prev_month_spend_won": 400000,
+    "benefit_summary": "핵심 영역 10% 통합 월 1만원 + 커피·편의점·대중교통 5% 통합 월 5천원"
+   },
+   {
+    "min_prev_month_spend_won": 800000,
+    "benefit_summary": "10% 월 2만원 + 5% 월 1만원"
+   },
+   {
+    "min_prev_month_spend_won": 1200000,
+    "benefit_summary": "10% 월 3.5만원 + 5% 월 1.5만원"
+   }
+  ],
+  "benefits": [
+   {
+    "category": "온라인 간편결제",
+    "text": "네이버페이·카카오페이·토스페이·Apple Pay·삼성페이에 등록 후 국내 온라인 결제",
+    "rate_or_amount": "10%",
+    "monthly_cap": "통합 월 1만/2만/3.5만원",
+    "condition": "전월 40/80/120만원"
+   },
+   {
+    "category": "일상",
+    "text": "커피(스타벅스·투썸·폴바셋·이디야·메가MGC)·편의점 4사·대중교통(버스·지하철·택시)",
+    "rate_or_amount": "5%",
+    "monthly_cap": "통합 월 5천/1만/1.5만원(영역별 월 5천원)",
+    "condition": "전월 40만원 이상"
+   }
+  ],
+  "exclusions": [
+   "장기카드대출·단기카드대출·연회비·제수수료·이자·국제브랜드/해외서비스 수수료·공과금(국세·지방세 등)은 실적·혜택 제외",
+   "국내 가맹점만(해외 제외)",
+   "PG·간편결제·키오스크 등 별도 가맹점번호 승인 건 제외될 수 있음",
+   "상품권·선불충전 제외",
+   "간편결제 오프라인·해외 결제는 기본 혜택 제외"
+  ],
+  "promotions": [],
+  "recent_changes": [],
+  "target_text": "P FOR PAY",
+  "issuance": "현대카드 홈페이지·앱 신청(디지털 전용 여부 확인 불가)",
+  "app_features": [
+   "현대카드 앱 발급 신청·카드 관리",
+   "Apple Pay 등록 가능(상품 페이지 표기)",
+   "3층 시스템(2층 구독팩·3층 맞춤 선물) 탑재 표기"
+  ],
+  "design_note": "P Bright / P Soft / P Metal(7만원), Amex 브랜드만",
+  "tags": [
+   "reward_discount",
+   "tiered_perf",
+   "paymethod_bonus",
+   "online_shop",
+   "dining_cafe",
+   "transit",
+   "common_plus_select"
+  ],
+  "genz_fit": "high",
+  "genz_fit_reason": "가맹점이 아니라 결제수단(간편결제 5종)을 기준으로 10%를 주어 앱 결제 위주 20대의 온라인 소비를 넓게 덮는다.",
+  "source_url": "https://www.hyundaicard.com/docfiles/resources/mo/html/carDtl/ALP_MO.html",
+  "source_urls": [
+   "https://www.hyundaicard.com/docfiles/resources/mo/html/carDtl/ALP_MO.html",
+   "https://www.hyundaicard.com/cpc/cr/CPCCR0201_01.hc?cardWcd=ALP",
+   "https://www.hyundaicard.com/cpc/ma/CPCMA0101_01.hc",
+   "https://www.heraldk.com/article/2026070118164783332"
+  ],
+  "checked": "2026-10-27",
+  "confidence": "high",
+  "note": "알파벳카드는 2026-07-01 독자 브랜드로 재편(신규 B·P·R + BOLD 3종, 기존 D·H·O·S·T 전환, 총 11종). 카드 전면에서 현대카드 CI 제거, 세로형 패키지(헤럴드경제 2026-07-01). 심의필 2026-C1h-13309."
+ },
+ {
+  "id": "mhyundai13",
+  "name": "알파벳카드 R",
+  "official_name": "알파벳카드R",
+  "issuer": "현대카드",
+  "type": "credit",
+  "on_sale": true,
+  "role": "youth",
+  "launched": "2026-04-08",
+  "annual_fee_won": {
+   "domestic": 15000,
+   "overseas": 15000
+  },
+  "tiers": [
+   {
+    "min_prev_month_spend_won": 400000,
+    "benefit_summary": "핵심 영역 10% 통합 월 1만원 + 커피·편의점·대중교통 5% 통합 월 5천원"
+   },
+   {
+    "min_prev_month_spend_won": 800000,
+    "benefit_summary": "10% 월 2만원 + 5% 월 1만원"
+   },
+   {
+    "min_prev_month_spend_won": 1200000,
+    "benefit_summary": "10% 월 3.5만원 + 5% 월 1.5만원"
+   }
+  ],
+  "benefits": [
+   {
+    "category": "정기결제·구독",
+    "text": "관리비·도시가스·전기요금 / SKT·KT·LGU+ / 넷플릭스·유튜브 프리미엄·TVING·디즈니+·멜론·지니 / 네이버플러스·쿠팡 와우·컬리멤버스",
+    "rate_or_amount": "10%",
+    "monthly_cap": "통합 월 1만/2만/3.5만원",
+    "condition": "정기결제 등록 건, 전월 40/80/120만원"
+   },
+   {
+    "category": "일상",
+    "text": "커피(스타벅스·투썸·폴바셋·이디야·메가MGC)·편의점 4사·대중교통(버스·지하철·택시)",
+    "rate_or_amount": "5%",
+    "monthly_cap": "통합 월 5천/1만/1.5만원(영역별 월 5천원)",
+    "condition": "전월 40만원 이상"
+   }
+  ],
+  "exclusions": [
+   "장기카드대출·단기카드대출·연회비·제수수료·이자·국제브랜드/해외서비스 수수료·공과금(국세·지방세 등)은 실적·혜택 제외",
+   "국내 가맹점만(해외 제외)",
+   "PG·간편결제·키오스크 등 별도 가맹점번호 승인 건 제외될 수 있음",
+   "상품권·선불충전 제외",
+   "넷플릭스·유튜브·디즈니+는 PC 공식 홈페이지 등록 결제만, 인앱·간편결제 제외",
+   "알뜰폰·결합상품 제외"
+  ],
+  "promotions": [],
+  "recent_changes": [],
+  "target_text": "R FOR REPEAT",
+  "issuance": "현대카드 홈페이지·앱 신청(디지털 전용 여부 확인 불가)",
+  "app_features": [
+   "현대카드 앱 발급 신청·카드 관리",
+   "Apple Pay 등록 가능(상품 페이지 표기)",
+   "3층 시스템(2층 구독팩·3층 맞춤 선물) 탑재 표기"
+  ],
+  "design_note": "R Bright / R Soft / R Metal(7만원)",
+  "tags": [
+   "reward_discount",
+   "tiered_perf",
+   "subscription_ott",
+   "fixed_bills",
+   "dining_cafe",
+   "transit",
+   "common_plus_select"
+  ],
+  "genz_fit": "high",
+  "genz_fit_reason": "OTT·음악·쇼핑 멤버십·통신 같은 고정 구독비를 한 장에 모으는 구조로 구독 다중 보유 20대에 맞지만, 앱/인앱 결제 제외 조건이 까다롭다.",
+  "source_url": "https://www.hyundaicard.com/docfiles/resources/mo/html/carDtl/ALR_MO.html",
+  "source_urls": [
+   "https://www.hyundaicard.com/docfiles/resources/mo/html/carDtl/ALR_MO.html",
+   "https://www.hyundaicard.com/cpc/cr/CPCCR0201_01.hc?cardWcd=ALR",
+   "https://www.hyundaicard.com/cpc/ma/CPCMA0101_01.hc",
+   "https://www.heraldk.com/article/2026070118164783332"
+  ],
+  "checked": "2026-10-27",
+  "confidence": "high",
+  "note": "알파벳카드는 2026-07-01 독자 브랜드로 재편(신규 B·P·R + BOLD 3종, 기존 D·H·O·S·T 전환, 총 11종). 카드 전면에서 현대카드 CI 제거, 세로형 패키지(헤럴드경제 2026-07-01). 심의필 2026-C1h-13308."
+ },
+ {
+  "id": "mhyundai14",
+  "name": "알파벳카드 T",
+  "official_name": "알파벳카드T",
+  "issuer": "현대카드",
+  "type": "credit",
+  "on_sale": true,
+  "role": "other",
+  "launched": "2025-07-17",
+  "annual_fee_won": {
+   "domestic": 15000,
+   "overseas": 15000
+  },
+  "tiers": [
+   {
+    "min_prev_month_spend_won": 0,
+    "benefit_summary": "전월실적 조건 없음: 국내 0.7%, 해외 2% 청구 할인, 해외결제 수수료 100% 할인"
+   }
+  ],
+  "benefits": [
+   {
+    "category": "국내",
+    "text": "국내 가맹점 청구 할인",
+    "rate_or_amount": "0.7%",
+    "monthly_cap": null,
+    "condition": "실적·한도 없음"
+   },
+   {
+    "category": "해외",
+    "text": "해외 온·오프라인 가맹점 청구 할인",
+    "rate_or_amount": "2%",
+    "monthly_cap": null,
+    "condition": "실적·한도 없음"
+   },
+   {
+    "category": "해외 수수료",
+    "text": "국제브랜드·해외서비스 수수료 100% 청구 할인",
+    "rate_or_amount": "100%",
+    "monthly_cap": null,
+    "condition": "실적·한도 없음"
+   }
+  ],
+  "exclusions": [
+   "장기카드대출·단기카드대출·연회비·제수수료·이자·국제브랜드/해외서비스 수수료·공과금(국세·지방세 등)은 실적·혜택 제외"
+  ],
+  "promotions": [],
+  "recent_changes": [],
+  "target_text": "T FOR TRAVEL",
+  "issuance": "현대카드 홈페이지·앱 신청(디지털 전용 여부 확인 불가)",
+  "app_features": [
+   "현대카드 앱 발급 신청·카드 관리",
+   "Apple Pay 등록 가능(상품 페이지 표기)",
+   "3층 시스템(2층 구독팩·3층 맞춤 선물) 탑재 표기"
+  ],
+  "design_note": "T Bright / T Soft / T Metal(7만원), Visa만",
+  "tags": [
+   "travel_fx",
+   "simple_flat",
+   "spend_free",
+   "no_cap",
+   "reward_discount"
+  ],
+  "genz_fit": "mid",
+  "genz_fit_reason": "무실적·해외수수료 면제로 해외여행·직구 20대에 맞지만 은행 트래블 체크카드와 경쟁한다.",
+  "source_url": "https://www.hyundaicard.com/docfiles/resources/mo/html/carDtl/HCT_MO.html",
+  "source_urls": [
+   "https://www.hyundaicard.com/docfiles/resources/mo/html/carDtl/HCT_MO.html",
+   "https://www.hyundaicard.com/cpc/cr/CPCCR0201_01.hc?cardWcd=HCT",
+   "https://www.hyundaicard.com/cpc/ma/CPCMA0101_01.hc",
+   "https://www.heraldk.com/article/2026070118164783332"
+  ],
+  "checked": "2026-10-27",
+  "confidence": "high",
+  "note": "알파벳카드는 2026-07-01 독자 브랜드로 재편(신규 B·P·R + BOLD 3종, 기존 D·H·O·S·T 전환, 총 11종). 카드 전면에서 현대카드 CI 제거, 세로형 패키지(헤럴드경제 2026-07-01). 심의필 2026-C1h-13311. 상위판 T BOLD(연회비 5만원, 해외 연 5만원 보너스, 라운지·발레 연2회, 2026-07-01 출시)."
+ },
+ {
+  "id": "mhyundai15",
+  "name": "알파벳카드 D BOLD",
+  "official_name": "알파벳카드D BOLD",
+  "issuer": "현대카드",
+  "type": "credit",
+  "on_sale": true,
+  "role": "other",
+  "launched": "2026-07-01",
+  "annual_fee_won": {
+   "domestic": 50000,
+   "overseas": 50000
+  },
+  "tiers": [
+   {
+    "min_prev_month_spend_won": 400000,
+    "benefit_summary": "핵심 영역 10% 통합 월 1만원 + 커피·편의점·대중교통 5% 통합 월 5천원"
+   },
+   {
+    "min_prev_month_spend_won": 800000,
+    "benefit_summary": "10% 월 2만원 + 5% 월 1만원"
+   },
+   {
+    "min_prev_month_spend_won": 1200000,
+    "benefit_summary": "10% 월 3.5만원 + 5% 월 1.5만원"
+   }
+  ],
+  "benefits": [
+   {
+    "category": "외식·배달앱",
+    "text": "일반음식점, 배민·쿠팡이츠·요기요",
+    "rate_or_amount": "10%",
+    "monthly_cap": "통합 월 1만/2만/3.5만원",
+    "condition": "전월 40/80/120만원"
+   },
+   {
+    "category": "일상",
+    "text": "커피(스타벅스·투썸·폴바셋·이디야·메가MGC)·편의점 4사·대중교통(버스·지하철·택시)",
+    "rate_or_amount": "5%",
+    "monthly_cap": "통합 월 5천/1만/1.5만원(영역별 월 5천원)",
+    "condition": "전월 40만원 이상"
+   },
+   {
+    "category": "연간 보너스",
+    "text": "외식·배달앱 보너스 할인",
+    "rate_or_amount": "연 5만원",
+    "monthly_cap": null,
+    "condition": "첫해 발급 즉시, 2년차부터 전년 600만원 이상"
+   },
+   {
+    "category": "공항",
+    "text": "인천공항 라운지·발레파킹",
+    "rate_or_amount": "각 연 2회",
+    "monthly_cap": null,
+    "condition": "전월 50만원 이상"
+   }
+  ],
+  "exclusions": [
+   "장기카드대출·단기카드대출·연회비·제수수료·이자·국제브랜드/해외서비스 수수료·공과금(국세·지방세 등)은 실적·혜택 제외",
+   "국내 가맹점만(해외 제외)",
+   "PG·간편결제·키오스크 등 별도 가맹점번호 승인 건 제외될 수 있음",
+   "상품권·선불충전 제외"
+  ],
+  "promotions": [],
+  "recent_changes": [],
+  "target_text": "D BOLD FOR BOLD DINING",
+  "issuance": "현대카드 홈페이지·앱 신청(디지털 전용 여부 확인 불가)",
+  "app_features": [
+   "현대카드 앱 발급 신청·카드 관리",
+   "Apple Pay 등록 가능(상품 페이지 표기)",
+   "3층 시스템(2층 구독팩·3층 맞춤 선물) 탑재 표기"
+  ],
+  "design_note": "D BOLD Bright / Soft / Metal",
+  "tags": [
+   "reward_discount",
+   "tiered_perf",
+   "dining_cafe",
+   "delivery",
+   "lounge",
+   "period_bonus",
+   "common_plus_select"
+  ],
+  "genz_fit": "mid",
+  "genz_fit_reason": "첫해 5만원 보너스로 연회비 5만원을 상쇄하는 설계지만 2년차 유지 조건(연 600만원)이 20대에게 높다.",
+  "source_url": "https://www.hyundaicard.com/docfiles/resources/mo/html/carDtl/ALD_MO.html",
+  "source_urls": [
+   "https://www.hyundaicard.com/docfiles/resources/mo/html/carDtl/ALD_MO.html",
+   "https://www.hyundaicard.com/cpc/cr/CPCCR0201_01.hc?cardWcd=ALD",
+   "https://www.hyundaicard.com/cpc/ma/CPCMA0101_01.hc",
+   "https://www.heraldk.com/article/2026070118164783332"
+  ],
+  "checked": "2026-10-27",
+  "confidence": "high",
+  "note": "알파벳카드는 2026-07-01 독자 브랜드로 재편(신규 B·P·R + BOLD 3종, 기존 D·H·O·S·T 전환, 총 11종). 카드 전면에서 현대카드 CI 제거, 세로형 패키지(헤럴드경제 2026-07-01). 심의필 2026-C1h-13462. S BOLD(쇼핑)도 같은 구조."
+ },
+ {
+  "id": "mhyundai16",
+  "name": "the Green Edition4",
+  "official_name": "the Green Edition4",
+  "issuer": "현대카드",
+  "type": "credit",
+  "on_sale": true,
+  "role": "flagship",
+  "launched": "2026-08-24",
+  "annual_fee_won": {
+   "domestic": 200000,
+   "overseas": 200000
+  },
+  "tiers": [
+   {
+    "min_prev_month_spend_won": 500000,
+    "benefit_summary": "국내외 1.5% M포인트, 공항 라운지·발레파킹"
+   },
+   {
+    "min_prev_month_spend_won": 1000000,
+    "benefit_summary": "여행·해외·다이닝 5% M포인트(여행 월 5만·해외 월 4만·다이닝 월 1만P)"
+   }
+  ],
+  "benefits": [
+   {
+    "category": "전 가맹점",
+    "text": "국내외 가맹점 M포인트",
+    "rate_or_amount": "1.5%",
+    "monthly_cap": null,
+    "condition": "전월 50만원 이상"
+   },
+   {
+    "category": "여행·해외·다이닝",
+    "text": "여행·해외·다이닝 영역 M포인트",
+    "rate_or_amount": "5%",
+    "monthly_cap": "여행 5만/해외 4만/다이닝 1만P",
+    "condition": "전월 100만원 이상"
+   },
+   {
+    "category": "바우처",
+    "text": "백화점·호텔·여행 등 15만원권 바우처",
+    "rate_or_amount": "연 15만원",
+    "monthly_cap": null,
+    "condition": "첫해 누적 100만원, 2년차부터 전년 1,200만원"
+   },
+   {
+    "category": "공항",
+    "text": "국내외 1,000여 개 공항 라운지, 인천공항·특급호텔 발레",
+    "rate_or_amount": "무료",
+    "monthly_cap": null,
+    "condition": "전월 50만원 이상"
+   }
+  ],
+  "exclusions": [
+   "장기카드대출·단기카드대출·연회비·제수수료·이자·국제브랜드/해외서비스 수수료·공과금(국세·지방세 등)은 실적·혜택 제외"
+  ],
+  "promotions": [],
+  "recent_changes": [],
+  "target_text": "My First Luxury",
+  "issuance": "현대카드 홈페이지·앱 신청(디지털 전용 여부 확인 불가)",
+  "app_features": [
+   "현대카드 앱 발급 신청·카드 관리",
+   "Apple Pay 등록 가능(상품 페이지 표기)",
+   "3층 시스템(2층 구독팩·3층 맞춤 선물) 탑재 표기"
+  ],
+  "design_note": "Powder Green / Ombre Green / Essential Green",
+  "tags": [
+   "premium_voucher",
+   "lounge",
+   "travel_fx",
+   "reward_point",
+   "tiered_perf",
+   "dining_cafe"
+  ],
+  "genz_fit": "low",
+  "genz_fit_reason": "\"My First Luxury\"로 첫 프리미엄 카드를 내세우지만 연회비 20만원·바우처 유지 조건이 사회초년생 다수에게 높다. 다만 20대 후반 고소득·여행층 진입 상품.",
+  "source_url": "https://www.hyundaicard.com/docfiles/resources/mo/html/carDtl/TGE4_MO.html",
+  "source_urls": [
+   "https://www.hyundaicard.com/docfiles/resources/mo/html/carDtl/TGE4_MO.html",
+   "https://www.hyundaicard.com/cpc/cr/CPCCR0201_01.hc?cardWcd=TGE4",
+   "https://www.hyundaicard.com/cpc/ma/CPCMA0101_01.hc"
+  ],
+  "checked": "2026-10-27",
+  "confidence": "high",
+  "note": "심의필 2026-C1h-13291. the Pink Edition3(같은 날 출시)·the Orange도 \"My First Luxury\" 연회비 20만원. 카드고릴라 2026년 9월 급상승 1위라는 검색 요약이 있으나 본문 미확인."
+ },
+ {
+  "id": "mhyundai17",
+  "name": "네이버 현대카드 Edition3",
+  "official_name": "네이버 현대카드 Edition3",
+  "issuer": "현대카드",
+  "type": "credit",
+  "on_sale": true,
+  "role": "plcc",
+  "launched": "2026-08-26",
+  "annual_fee_won": {
+   "domestic": 15000,
+   "overseas": 15000
+  },
+  "tiers": [
+   {
+    "min_prev_month_spend_won": 400000,
+    "benefit_summary": "국내외 0.5% 네이버페이 포인트(한도 없음), 네이버플러스 멤버십 적립 대상 결제 5%(멤버십 회원, 월 1.5만P)"
+   }
+  ],
+  "benefits": [
+   {
+    "category": "네이버 쇼핑",
+    "text": "네이버플러스 멤버십 적립 대상 결제(네이버페이)",
+    "rate_or_amount": "5%(비회원 0.5%)",
+    "monthly_cap": "월 1만5천P",
+    "condition": "멤버십 회원, 전월 40만원"
+   },
+   {
+    "category": "전 가맹점",
+    "text": "국내외 가맹점 네이버페이 포인트",
+    "rate_or_amount": "0.5%",
+    "monthly_cap": null,
+    "condition": "전월 40만원, 한도 없음"
+   }
+  ],
+  "exclusions": [
+   "장기카드대출·단기카드대출·연회비·제수수료·이자·국제브랜드/해외서비스 수수료·공과금(국세·지방세 등)은 실적·혜택 제외",
+   "상품권·기프티콘·선불충전 제외",
+   "가족카드 발급 불가"
+  ],
+  "promotions": [
+   {
+    "text": "더블 적립 프로모션: 네이버플러스 스토어 최대 10%(월 최대 3만P), 멤버십 합산 최대 15%(네이버 보도자료, 상품 페이지에는 미표기)",
+    "ends": "2027-07(보도자료 \"내년 7월까지\")"
+   }
+  ],
+  "recent_changes": [
+   "Edition2(전월 50만원·연회비 미확인·멤버십 대상 7%/월 2만P) 대비 전월실적 40만원으로 하향, 카드 적립률 5%로 하향",
+   "Edition2 2026-08-26 발급 종료"
+  ],
+  "target_text": null,
+  "issuance": "현대카드 홈페이지·앱 신청(디지털 전용 여부 확인 불가)",
+  "app_features": [
+   "네이버 계정 인증으로 혜택 연결",
+   "현대카드 앱 관리"
+  ],
+  "design_note": "Logo / Plus / Neo / Metal",
+  "tags": [
+   "plcc_brand",
+   "online_shop",
+   "reward_point",
+   "tiered_perf",
+   "paymethod_bonus",
+   "period_bonus"
+  ],
+  "genz_fit": "mid",
+  "genz_fit_reason": "네이버플러스 멤버십 구독자에게는 쇼핑 적립이 중첩되지만 비회원은 0.5%뿐이고 멤버십(유료) 보유가 전제다.",
+  "source_url": "https://www.hyundaicard.com/docfiles/resources/mo/html/carDtl/NVE3_MO.html",
+  "source_urls": [
+   "https://www.hyundaicard.com/docfiles/resources/mo/html/carDtl/NVE3_MO.html",
+   "https://www.hyundaicard.com/cpc/cr/CPCCR0201_01.hc?cardWcd=NVE3",
+   "https://www.hyundaicard.com/cpc/ma/CPCMA0101_01.hc",
+   "https://navercorp.com/media/pressReleasesDetail?seq=10034610",
+   "https://www.hyundaicard.com/docfiles/resources/mo/html/carDtl/NVE2_MO.html"
+  ],
+  "checked": "2026-10-27",
+  "confidence": "high",
+  "note": "상품 페이지 부가서비스 기준 출시일은 2026-06-26, 네이버 보도자료상 신청 개시는 2026-08-26(launched는 대외 출시일 채택). 심의필 2026-C1h-10624. 기존 DB gc05의 \"5% 기본 적립\"은 멤버십 적립 대상·멤버십 회원 조건이 빠져 있음."
+ },
+ {
+  "id": "mhyundai18",
+  "name": "올리브영 현대카드 Plus",
+  "official_name": "올리브영 현대카드 Plus",
+  "issuer": "현대카드",
+  "type": "credit",
+  "on_sale": true,
+  "role": "plcc",
+  "launched": "2026-06-18",
+  "annual_fee_won": {
+   "domestic": 15000,
+   "overseas": 15000
+  },
+  "tiers": [
+   {
+    "min_prev_month_spend_won": 300000,
+    "benefit_summary": "올리브영 20% 올리브 포인트(월 1만P) + 온라인쇼핑·커피·배달앱 5%(영역별 월 2천P)"
+   }
+  ],
+  "benefits": [
+   {
+    "category": "올리브영",
+    "text": "올리브영 온·오프라인(올영PAY·일반결제)",
+    "rate_or_amount": "20%",
+    "monthly_cap": "월 1만 올리브 포인트",
+    "condition": "전월 30만원"
+   },
+   {
+    "category": "온라인쇼핑·커피·배달앱",
+    "text": "네이버플러스 스토어·쿠팡·G마켓·옥션·SSG.COM / 스타벅스·투썸·이디야·폴바셋·메가MGC / 배민·쿠팡이츠·요기요",
+    "rate_or_amount": "5%",
+    "monthly_cap": "영역별 월 2천P",
+    "condition": "전월 30만원"
+   }
+  ],
+  "exclusions": [
+   "장기카드대출·단기카드대출·연회비·제수수료·이자·국제브랜드/해외서비스 수수료·공과금(국세·지방세 등)은 실적·혜택 제외",
+   "백화점·쇼핑몰·역사 입점 올리브영 매장 제외",
+   "올리브영 기프트카드 등 선불 구매 제외",
+   "무이자할부 제외"
+  ],
+  "promotions": [
+   {
+    "text": "올리브영 적립 한도 월 2만 포인트로 확대(언론 보도, 상품 페이지 미표기)",
+    "ends": "2027-07(보도 \"내년 7월까지\")"
+   }
+  ],
+  "recent_changes": [
+   "기존 올리브영 현대카드(2024-08-19 출시, 최대 5% 리워드) 2026-08-13 발급 종료 후 Plus로 교체"
+  ],
+  "target_text": null,
+  "issuance": "현대카드 홈페이지·앱 신청(디지털 전용 여부 확인 불가)",
+  "app_features": [
+   "올리브영 앱에서 올리브 포인트 조회·사용",
+   "현대카드 앱 관리"
+  ],
+  "design_note": "Olive Energetic / Glitter Olive / Hello Shopper Bag / Metal",
+  "tags": [
+   "plcc_brand",
+   "reward_point",
+   "online_shop",
+   "dining_cafe",
+   "delivery"
+  ],
+  "genz_fit": "high",
+  "genz_fit_reason": "20대 이용 비중이 높은 올리브영에서 20% 적립, 커피·배달앱까지 붙고 연회비 1.5만원·전월 30만원으로 문턱이 낮다.",
+  "source_url": "https://www.hyundaicard.com/docfiles/resources/mo/html/carDtl/OLVYE2_MO.html",
+  "source_urls": [
+   "https://www.hyundaicard.com/docfiles/resources/mo/html/carDtl/OLVYE2_MO.html",
+   "https://www.hyundaicard.com/cpc/cr/CPCCR0201_01.hc?cardWcd=OLVYE2",
+   "https://www.hyundaicard.com/cpc/ma/CPCMA0101_01.hc",
+   "https://www.hyundaicard.com/docfiles/resources/mo/html/carDtl/OLVYHC_MO.html",
+   "https://biz.sbs.co.kr/amp/article/20000329403"
+  ],
+  "checked": "2026-10-27",
+  "confidence": "high",
+  "note": "상품 페이지 출시일 2026-06-18, 언론 보도는 2026-08-19 발표. 심의필 2026-C1h-11820. 올리브영 20% 적립 한도 1만P면 월 5만원 결제분까지 의미가 있음."
+ },
+ {
+  "id": "mhyundai19",
+  "name": "넥슨 현대카드 Edition2",
+  "official_name": "넥슨 현대카드 Edition2",
+  "issuer": "현대카드",
+  "type": "credit",
+  "on_sale": true,
+  "role": "plcc",
+  "launched": "2025-11-25",
+  "annual_fee_won": {
+   "domestic": 20000,
+   "overseas": 20000
+  },
+  "tiers": [
+   {
+    "min_prev_month_spend_won": 300000,
+    "benefit_summary": "서비스팩 택1: 넥슨팩(넥슨 게임 10% 포인트2, 월 2만) 또는 마비노기 모바일팩(100원당 1 M캐시, 월 2천)"
+   }
+  ],
+  "benefits": [
+   {
+    "category": "넥슨 게임(넥슨팩)",
+    "text": "넥슨 PC·모바일 게임 결제",
+    "rate_or_amount": "10% 넥슨 현대카드 포인트2",
+    "monthly_cap": "월 2만",
+    "condition": "전월 30만원, 본인 인증 계정"
+   },
+   {
+    "category": "PC방·온라인몰·배달앱·편의점(넥슨팩)",
+    "text": "대상점별 적립",
+    "rate_or_amount": "10%",
+    "monthly_cap": "대상점별 월 2천",
+    "condition": "국내"
+   },
+   {
+    "category": "마비노기 모바일팩",
+    "text": "100원당 1 M캐시, 마비노기 모바일 월 20만원 이상 시 500 M캐시 추가",
+    "rate_or_amount": "100원당 1",
+    "monthly_cap": "넥슨 게임 월 2천 M캐시",
+    "condition": "전월 30만원"
+   }
+  ],
+  "exclusions": [
+   "장기카드대출·단기카드대출·연회비·제수수료·이자·국제브랜드/해외서비스 수수료·공과금(국세·지방세 등)은 실적·혜택 제외",
+   "스팀·에픽·콘솔 등 넥슨 외 플랫폼 제외",
+   "넥슨 쇼핑·오프라인 행사 제외"
+  ],
+  "promotions": [
+   {
+    "text": "던전앤파이터 한정판 플레이트(Cozy, Fury) 넥슨팩 한정 발급",
+    "ends": "2026-11-30"
+   },
+   {
+    "text": "목록 페이지 \"2만원상당 이벤트\" 표기(세부 확인 불가)",
+    "ends": null
+   }
+  ],
+  "recent_changes": [],
+  "target_text": null,
+  "issuance": "현대카드 홈페이지·앱 신청(디지털 전용 여부 확인 불가)",
+  "app_features": [
+   "현대카드 앱 발급 신청·카드 관리",
+   "Apple Pay 등록 가능(상품 페이지 표기)",
+   "3층 시스템(2층 구독팩·3층 맞춤 선물) 탑재 표기"
+  ],
+  "design_note": "Cozy / Fury 한정판(던파 캐릭터), Gate·Friend Story Gate·Metal Gate",
+  "tags": [
+   "plcc_brand",
+   "select_pack",
+   "reward_point",
+   "online_shop",
+   "delivery",
+   "mart_daily"
+  ],
+  "genz_fit": "high",
+  "genz_fit_reason": "게임 결제 10%와 PC방·배달·편의점을 묶고 캐릭터 한정 플레이트를 내는 등 게이머 20대를 겨냥한 PLCC다.",
+  "source_url": "https://www.hyundaicard.com/docfiles/resources/mo/html/carDtl/NXNX_MO.html",
+  "source_urls": [
+   "https://www.hyundaicard.com/docfiles/resources/mo/html/carDtl/NXNX_MO.html",
+   "https://www.hyundaicard.com/cpc/cr/CPCCR0201_01.hc?cardWcd=NXNX",
+   "https://www.hyundaicard.com/cpc/ma/CPCMA0101_01.hc"
+  ],
+  "checked": "2026-10-27",
+  "confidence": "high",
+  "note": "심의필 2026-C1h-14342. 서비스팩 선택형(팩 택1)."
+ },
+ {
+  "id": "mhyundai20",
+  "name": "NOL 카드",
+  "official_name": "NOL 카드",
+  "issuer": "현대카드",
+  "type": "credit",
+  "on_sale": true,
+  "role": "plcc",
+  "launched": "2023-01-10",
+  "annual_fee_won": {
+   "domestic": 20000,
+   "overseas": 20000
+  },
+  "tiers": [
+   {
+    "min_prev_month_spend_won": 400000,
+    "benefit_summary": "NOL·NOL 인터파크·트리플 10%(월 1만P), 해외·커피/편의점/OTT·쇼핑/영화/골프/교통 각 10%(각 월 5천P)"
+   },
+   {
+    "min_prev_month_spend_won": 800000,
+    "benefit_summary": "NOL 월 1.2만P, 나머지 각 월 8천P(합계 최대 3.6만P)"
+   }
+  ],
+  "benefits": [
+   {
+    "category": "여행 플랫폼",
+    "text": "NOL·NOL 인터파크(투어/티켓)·트리플",
+    "rate_or_amount": "10%",
+    "monthly_cap": "월 1만/1.2만P",
+    "condition": "전월 40/80만원"
+   },
+   {
+    "category": "해외",
+    "text": "해외 온·오프라인(원화결제 제외)",
+    "rate_or_amount": "10%",
+    "monthly_cap": "월 5천/8천P",
+    "condition": null
+   },
+   {
+    "category": "커피·편의점·디지털콘텐츠",
+    "text": "스타벅스·투썸·폴바셋·이디야·커피빈, 편의점 4사, 넷플릭스·유튜브·디즈니+·왓챠·멜론·지니·리디",
+    "rate_or_amount": "10%",
+    "monthly_cap": "월 5천/8천P",
+    "condition": null
+   },
+   {
+    "category": "쇼핑·영화·골프·교통",
+    "text": "프리미엄아울렛·스타필드, CGV·롯데시네마·메가박스, 골프, 버스·지하철",
+    "rate_or_amount": "10%",
+    "monthly_cap": "월 5천/8천P",
+    "condition": null
+   },
+   {
+    "category": "공항",
+    "text": "국내 공항 라운지 무료",
+    "rate_or_amount": "무료",
+    "monthly_cap": null,
+    "condition": "조건 확인 불가"
+   }
+  ],
+  "exclusions": [
+   "장기카드대출·단기카드대출·연회비·제수수료·이자·국제브랜드/해외서비스 수수료·공과금(국세·지방세 등)은 실적·혜택 제외",
+   "간편결제명 승인 건 제외",
+   "인앱결제 OTT 제외",
+   "영화 매점·예매대행 제외"
+  ],
+  "promotions": [],
+  "recent_changes": [],
+  "target_text": null,
+  "issuance": "현대카드 홈페이지·앱 신청(디지털 전용 여부 확인 불가)",
+  "app_features": [
+   "현대카드 앱 발급 신청·카드 관리",
+   "Apple Pay 등록 가능(상품 페이지 표기)",
+   "3층 시스템(2층 구독팩·3층 맞춤 선물) 탑재 표기"
+  ],
+  "design_note": "NOL Suitcase / LET'S NOL Sunset Road / NOL TIME Surfing",
+  "tags": [
+   "plcc_brand",
+   "travel_fx",
+   "reward_point",
+   "tiered_perf",
+   "subscription_ott",
+   "dining_cafe",
+   "transit",
+   "lounge"
+  ],
+  "genz_fit": "high",
+  "genz_fit_reason": "여행 플랫폼 10%에 커피·편의점·OTT·영화·교통까지 같은 10%를 주고 연회비 2만원이라 여행·문화 소비 20대에 맞다. 전월 40만원 필요.",
+  "source_url": "https://www.hyundaicard.com/docfiles/resources/mo/html/carDtl/NOLHC_MO.html",
+  "source_urls": [
+   "https://www.hyundaicard.com/docfiles/resources/mo/html/carDtl/NOLHC_MO.html",
+   "https://www.hyundaicard.com/cpc/cr/CPCCR0201_01.hc?cardWcd=NOLHC",
+   "https://www.hyundaicard.com/cpc/ma/CPCMA0101_01.hc"
+  ],
+  "checked": "2026-10-27",
+  "confidence": "high",
+  "note": "상품 페이지 출시일 2023-01-10(야놀자·인터파크 PLCC 계열을 NOL 브랜드로 표기). 심의필 2026-C1h-04821."
+ },
+ {
+  "id": "mhyundai21",
+  "name": "쏘카카드",
+  "official_name": "쏘카카드",
+  "issuer": "현대카드",
+  "type": "credit",
+  "on_sale": true,
+  "role": "plcc",
+  "launched": "2020-11-16",
+  "annual_fee_won": {
+   "domestic": 10000,
+   "overseas": 10000
+  },
+  "tiers": [
+   {
+    "min_prev_month_spend_won": 300000,
+    "benefit_summary": "당월 이용 30만원 이상: 쏘카 앱 3%, 특별가맹점 3%(각 월 이용 30만원까지), 일반 1% 쏘카크레딧"
+   }
+  ],
+  "benefits": [
+   {
+    "category": "쏘카",
+    "text": "쏘카 앱 결제",
+    "rate_or_amount": "3%(기본1+추가2)",
+    "monthly_cap": "추가 적립 월 이용 30만원까지",
+    "condition": "당월 30만원"
+   },
+   {
+    "category": "특별가맹점",
+    "text": "외식·스타벅스/폴바셋/이디야·CGV/메가박스/롯데시네마·특급호텔·프리미엄아울렛·버스/지하철/택시",
+    "rate_or_amount": "3%",
+    "monthly_cap": "월 이용 30만원까지",
+    "condition": "당월 30만원"
+   },
+   {
+    "category": "일반",
+    "text": "일반 가맹점",
+    "rate_or_amount": "1%",
+    "monthly_cap": null,
+    "condition": "한도 없음"
+   }
+  ],
+  "exclusions": [
+   "장기카드대출·단기카드대출·연회비·제수수료·이자·국제브랜드/해외서비스 수수료·공과금(국세·지방세 등)은 실적·혜택 제외",
+   "쏘카 수리비·범칙금 제외",
+   "크레딧 유효기간 12개월"
+  ],
+  "promotions": [],
+  "recent_changes": [],
+  "target_text": null,
+  "issuance": "현대카드 홈페이지·앱 신청(디지털 전용 여부 확인 불가)",
+  "app_features": [
+   "현대카드 앱 발급 신청·카드 관리",
+   "Apple Pay 등록 가능(상품 페이지 표기)",
+   "3층 시스템(2층 구독팩·3층 맞춤 선물) 탑재 표기"
+  ],
+  "design_note": null,
+  "tags": [
+   "plcc_brand",
+   "transit",
+   "reward_point",
+   "dining_cafe"
+  ],
+  "genz_fit": "mid",
+  "genz_fit_reason": "카셰어링을 쓰는 면허 보유 20대에 맞고 연회비 1만원이지만 적립처가 쏘카 크레딧으로 묶인다.",
+  "source_url": "https://www.hyundaicard.com/docfiles/resources/mo/html/carDtl/SCHC_MO.html",
+  "source_urls": [
+   "https://www.hyundaicard.com/docfiles/resources/mo/html/carDtl/SCHC_MO.html",
+   "https://www.hyundaicard.com/cpc/cr/CPCCR0201_01.hc?cardWcd=SCHC",
+   "https://www.hyundaicard.com/cpc/ma/CPCMA0101_01.hc"
+  ],
+  "checked": "2026-10-27",
+  "confidence": "medium",
+  "note": "전월이 아닌 \"당월(결제일 청구분) 이용금액\" 기준. 목록 페이지 연회비 국내전용·국내외겸용(Visa) 10,000원. 상품 페이지에 심의필 번호 미추출."
+ },
+ {
+  "id": "mhyundai22",
+  "name": "무신사 현대카드",
+  "official_name": "무신사 현대카드",
+  "issuer": "현대카드",
+  "type": "credit",
+  "on_sale": false,
+  "role": "plcc",
+  "launched": "2021-01-29",
+  "annual_fee_won": {
+   "domestic": 10000,
+   "overseas": 10000
+  },
+  "tiers": [
+   {
+    "min_prev_month_spend_won": 300000,
+    "benefit_summary": "무신사·솔드아웃 5% 청구 할인(월 3만원), 그 외 무신사 적립금 1%"
+   }
+  ],
+  "benefits": [
+   {
+    "category": "무신사·솔드아웃",
+    "text": "무신사·솔드아웃 결제 청구 할인",
+    "rate_or_amount": "5%",
+    "monthly_cap": "월 3만원",
+    "condition": "전월 30만원, 네이버페이 결제 제외"
+   },
+   {
+    "category": "일반",
+    "text": "무신사·솔드아웃 외 국내외 가맹점 무신사 적립금",
+    "rate_or_amount": "1%",
+    "monthly_cap": null,
+    "condition": "한도 없음"
+   }
+  ],
+  "exclusions": [
+   "장기카드대출·단기카드대출·연회비·제수수료·이자·국제브랜드/해외서비스 수수료·공과금(국세·지방세 등)은 실적·혜택 제외",
+   "무이자할부·다른 할인 서비스 이용 시 제외"
+  ],
+  "promotions": [],
+  "recent_changes": [
+   "2026-04-25 신규·교체·추가·갱신 발급 종료(상품 페이지 공지)",
+   "무신사는 2026년 현대카드와 재계약하지 않고 삼성카드와 제휴 추진(딜사이트 2026-03-16)"
+  ],
+  "target_text": null,
+  "issuance": "발급 종료(보유 카드는 유효기간까지 사용)",
+  "app_features": [
+   "현대카드 앱 발급 신청·카드 관리",
+   "Apple Pay 등록 가능(상품 페이지 표기)",
+   "3층 시스템(2층 구독팩·3층 맞춤 선물) 탑재 표기"
+  ],
+  "design_note": null,
+  "tags": [
+   "plcc_brand",
+   "online_shop",
+   "reward_discount",
+   "reward_point"
+  ],
+  "genz_fit": "high",
+  "genz_fit_reason": "20대 핵심 패션 플랫폼 PLCC였으나 2026-04-25 발급이 끝나 현대카드의 20대 패션 접점이 비었다.",
+  "source_url": "https://www.hyundaicard.com/docfiles/resources/mo/html/carDtl/MSSHC_MO.html",
+  "source_urls": [
+   "https://www.hyundaicard.com/docfiles/resources/mo/html/carDtl/MSSHC_MO.html",
+   "https://img.hyundaicard.com/cms_content/cac/M_PLCC_MSSHC_00_product_info_cms_content.html",
+   "https://dealsite.co.kr/articles/158500"
+  ],
+  "checked": "2026-10-27",
+  "confidence": "high",
+  "note": "이전 조사 B(yb05)는 on_sale=true로 기록했으나 MO 상품 페이지에 \"2026년 4월 25일부터 신규ㆍ교체ㆍ추가ㆍ갱신 발급이 종료\" 공지 확인 → 정정."
+ },
+ {
+  "id": "mhyundai23",
+  "name": "스타벅스 현대카드",
+  "official_name": "스타벅스 현대카드",
+  "issuer": "현대카드",
+  "type": "credit",
+  "on_sale": false,
+  "role": "plcc",
+  "launched": "2020-08-14",
+  "annual_fee_won": {
+   "domestic": null,
+   "overseas": null
+  },
+  "tiers": [
+   {
+    "min_prev_month_spend_won": 300000,
+    "benefit_summary": "당월 이용 3만원 누적마다 스타벅스 별 1개"
+   }
+  ],
+  "benefits": [
+   {
+    "category": "스타벅스",
+    "text": "국내외 가맹점 당월 이용 3만원마다 스타벅스 별 1개(미달분 이월)",
+    "rate_or_amount": "3만원당 별 1개",
+    "monthly_cap": null,
+    "condition": "전월 30만원"
+   }
+  ],
+  "exclusions": [
+   "장기카드대출·단기카드대출·연회비·제수수료·이자·국제브랜드/해외서비스 수수료·공과금(국세·지방세 등)은 실적·혜택 제외",
+   "할인·무이자할부 이용분 제외"
+  ],
+  "promotions": [],
+  "recent_changes": [
+   "2025-10-15 신규·교체 발급 종료(상품 페이지 공지)",
+   "스타벅스 PLCC는 삼성카드로 이동(2025-07 업무협약, 카드고릴라·헤럴드경제)"
+  ],
+  "target_text": null,
+  "issuance": "발급 종료",
+  "app_features": [
+   "현대카드 앱 발급 신청·카드 관리",
+   "Apple Pay 등록 가능(상품 페이지 표기)",
+   "3층 시스템(2층 구독팩·3층 맞춤 선물) 탑재 표기"
+  ],
+  "design_note": null,
+  "tags": [
+   "plcc_brand",
+   "dining_cafe",
+   "reward_point",
+   "count_based"
+  ],
+  "genz_fit": "mid",
+  "genz_fit_reason": "20대 방문이 잦은 스타벅스 별 적립이었으나 신규 발급이 종료됐다.",
+  "source_url": "https://www.hyundaicard.com/docfiles/resources/mo/html/carDtl/SBHC_MO.html",
+  "source_urls": [
+   "https://www.hyundaicard.com/docfiles/resources/mo/html/carDtl/SBHC_MO.html",
+   "https://www.heraldk.com/article/2025072116322889242"
+  ],
+  "checked": "2026-10-27",
+  "confidence": "medium",
+  "note": "연회비는 상품 페이지 본문에서 확인 불가."
+ },
+ {
+  "id": "mhyundai24",
+  "name": "배민현대카드",
+  "official_name": "배민현대카드",
+  "issuer": "현대카드",
+  "type": "credit",
+  "on_sale": false,
+  "role": "plcc",
+  "launched": "2020-09-15",
+  "annual_fee_won": {
+   "domestic": null,
+   "overseas": null
+  },
+  "tiers": [
+   {
+    "min_prev_month_spend_won": 300000,
+    "benefit_summary": "당월 이용 30만원 이상: 배민페이 3%, 온라인쇼핑·디지털콘텐츠 2%(각 월 이용 20만원까지), 일반 0.5% 배민포인트"
+   }
+  ],
+  "benefits": [
+   {
+    "category": "배민",
+    "text": "배민 앱 배민페이 결제",
+    "rate_or_amount": "3%",
+    "monthly_cap": "월 이용 20만원까지",
+    "condition": "당월 30만원"
+   },
+   {
+    "category": "온라인쇼핑·디지털콘텐츠",
+    "text": "G마켓·11번가·쿠팡 등 / 유튜브 프리미엄·넷플릭스·멜론·지니 등",
+    "rate_or_amount": "2%",
+    "monthly_cap": "각 월 이용 20만원까지",
+    "condition": "당월 30만원"
+   },
+   {
+    "category": "일반",
+    "text": "일반 가맹점",
+    "rate_or_amount": "0.5%",
+    "monthly_cap": null,
+    "condition": null
+   },
+   {
+    "category": "연회비",
+    "text": "배민페이 연 10만원 이상 시 다음 해 연회비 면제",
+    "rate_or_amount": "면제",
+    "monthly_cap": null,
+    "condition": null
+   }
+  ],
+  "exclusions": [
+   "장기카드대출·단기카드대출·연회비·제수수료·이자·국제브랜드/해외서비스 수수료·공과금(국세·지방세 등)은 실적·혜택 제외"
+  ],
+  "promotions": [],
+  "recent_changes": [
+   "2024-07-17 신규·교체·갱신 발급 종료(상품 페이지 공지)",
+   "2024-07 후속 배민현대카드II(한그릇·곱빼기) 공개(언론), 이후 배민 PLCC는 신한카드와 제휴(딜사이트 2026-02-03)"
+  ],
+  "target_text": null,
+  "issuance": "발급 종료",
+  "app_features": [
+   "현대카드 앱 발급 신청·카드 관리",
+   "Apple Pay 등록 가능(상품 페이지 표기)",
+   "3층 시스템(2층 구독팩·3층 맞춤 선물) 탑재 표기"
+  ],
+  "design_note": null,
+  "tags": [
+   "plcc_brand",
+   "delivery",
+   "online_shop",
+   "subscription_ott",
+   "reward_point"
+  ],
+  "genz_fit": "mid",
+  "genz_fit_reason": "배달·OTT 같은 20대 지출에 맞췄지만 발급이 종료됐다.",
+  "source_url": "https://www.hyundaicard.com/docfiles/resources/mo/html/carDtl/BMHC_MO.html",
+  "source_urls": [
+   "https://www.hyundaicard.com/docfiles/resources/mo/html/carDtl/BMHC_MO.html",
+   "https://dealsite.co.kr/articles/156087"
+  ],
+  "checked": "2026-10-27",
+  "confidence": "medium",
+  "note": "이전 조사 B(yb07)는 on_sale=null이었으나 상품 페이지 본문 \"2024년 7월 17일부터 배민현대카드의 신규·교체·갱신 발급이 종료\" 확인 → 정정. 배민현대카드II의 현재 발급 여부는 확인 불가. 출시일은 B 기록(2020-09-15) 유지."
+ },
+ {
+  "id": "mhyundai25",
+  "name": "네이버 현대카드 Edition2",
+  "official_name": "네이버 현대카드 Edition2",
+  "issuer": "현대카드",
+  "type": "credit",
+  "on_sale": false,
+  "role": "plcc",
+  "launched": "2024-11-22",
+  "annual_fee_won": {
+   "domestic": null,
+   "overseas": null
+  },
+  "tiers": [
+   {
+    "min_prev_month_spend_won": 500000,
+    "benefit_summary": "국내외 0.7% 네이버페이 포인트, 네이버플러스 멤버십 대상 가맹점 최대 7%(월 2만P)"
+   }
+  ],
+  "benefits": [
+   {
+    "category": "네이버 쇼핑",
+    "text": "네이버플러스 멤버십 대상 가맹점",
+    "rate_or_amount": "최대 7%",
+    "monthly_cap": "월 2만P",
+    "condition": "전월 50만원"
+   },
+   {
+    "category": "전 가맹점",
+    "text": "국내외 가맹점",
+    "rate_or_amount": "0.7%",
+    "monthly_cap": null,
+    "condition": "전월 50만원"
+   }
+  ],
+  "exclusions": [
+   "장기카드대출·단기카드대출·연회비·제수수료·이자·국제브랜드/해외서비스 수수료·공과금(국세·지방세 등)은 실적·혜택 제외"
+  ],
+  "promotions": [],
+  "recent_changes": [
+   "2026-08-26 신규·교체·갱신·추가 발급 종료, Edition3로 교체"
+  ],
+  "target_text": null,
+  "issuance": "발급 종료",
+  "app_features": [
+   "현대카드 앱 발급 신청·카드 관리",
+   "Apple Pay 등록 가능(상품 페이지 표기)",
+   "3층 시스템(2층 구독팩·3층 맞춤 선물) 탑재 표기"
+  ],
+  "design_note": null,
+  "tags": [
+   "plcc_brand",
+   "online_shop",
+   "reward_point",
+   "tiered_perf"
+  ],
+  "genz_fit": "mid",
+  "genz_fit_reason": "후속 Edition3로 교체됨.",
+  "source_url": "https://www.hyundaicard.com/docfiles/resources/mo/html/carDtl/NVE2_MO.html",
+  "source_urls": [
+   "https://www.hyundaicard.com/docfiles/resources/mo/html/carDtl/NVE2_MO.html"
+  ],
+  "checked": "2026-10-27",
+  "confidence": "high",
+  "note": "기존 DB gc04는 2025-01-23 보도 기준 \"1.4%(0.7+0.7)·12%\"로 기록(프로모션 포함 수치로 보임). 상품 페이지 기본값은 0.7%·최대 7%. 연회비는 기존 DB 2만원, 상품 페이지 본문에서 확인 불가."
+ },
+ {
+  "id": "mhyundai26",
+  "name": "현대카드M HYBRID",
+  "official_name": "현대카드M HYBRID",
+  "issuer": "현대카드",
+  "type": "hybrid",
+  "on_sale": false,
+  "role": "youth",
+  "launched": null,
+  "annual_fee_won": {
+   "domestic": 2000,
+   "overseas": null
+  },
+  "tiers": [
+   {
+    "min_prev_month_spend_won": 0,
+    "benefit_summary": "당월 이용 100만원 미만 0.5%, 100만원 이상 1% M포인트(전월실적 없음)"
+   }
+  ],
+  "benefits": [
+   {
+    "category": "적립",
+    "text": "당월 이용액 기준 M포인트",
+    "rate_or_amount": "0.5% / 1%",
+    "monthly_cap": null,
+    "condition": "일시불만, 할부·해외 불가"
+   },
+   {
+    "category": "하이브리드",
+    "text": "계좌 잔액 내 체크결제, 부족 시 신용 자동 전환",
+    "rate_or_amount": "체크분 소득공제 30~50%",
+    "monthly_cap": null,
+    "condition": null
+   }
+  ],
+  "exclusions": [
+   "장기카드대출·단기카드대출·연회비·제수수료·이자·국제브랜드/해외서비스 수수료·공과금(국세·지방세 등)은 실적·혜택 제외"
+  ],
+  "promotions": [],
+  "recent_changes": [
+   "2026-04-28 신규·교체·추가·갱신 발급 종료(이전 조사 B가 현대카드 매거진에서 확인, 이번에 재확인 못 함)",
+   "형제 상품 X HYBRID(0.3%/0.6% X캐시백)도 동반 종료"
+  ],
+  "target_text": "신용점수 및 연말정산 환급받기 위한 관리가 필요할 때, 신용카드와 체크카드 기능을 한 번에 이용할 수 있는 하이브리드 카드를 사회 초년생 신용카드로 추천드려요.",
+  "issuance": "발급 종료(제휴은행 계좌 연결 방식이었음)",
+  "app_features": [
+   "현대카드 앱 발급 신청·카드 관리",
+   "Apple Pay 등록 가능(상품 페이지 표기)",
+   "3층 시스템(2층 구독팩·3층 맞춤 선물) 탑재 표기"
+  ],
+  "design_note": null,
+  "tags": [
+   "reward_point",
+   "spend_free",
+   "no_cap",
+   "check_card"
+  ],
+  "genz_fit": "mid",
+  "genz_fit_reason": "신용 이력 없는 첫 카드 대체재였으나 단종돼 현대카드 라인업에서 체크/하이브리드 입문 상품이 사라졌다.",
+  "source_url": "https://card.hyundaicard.com/magazine/20%EB%8C%80-%EC%8B%A0%EC%9A%A9%EC%B9%B4%EB%93%9C-%EC%B6%94%EC%B2%9C-%EC%8B%A0%EC%9A%A9-%EC%B2%B4%ED%81%AC%EC%B9%B4%EB%93%9C-%ED%98%9C%ED%83%9D%EC%9D%84-%EC%B9%B4%EB%93%9C-%ED%95%98%EB%82%98%EB%A1%9C-%EB%88%84%EB%A6%AC%EA%B8%B0.html",
+  "source_urls": [
+   "https://card.hyundaicard.com/magazine/20%EB%8C%80-%EC%8B%A0%EC%9A%A9%EC%B9%B4%EB%93%9C-%EC%B6%94%EC%B2%9C-%EC%8B%A0%EC%9A%A9-%EC%B2%B4%ED%81%AC%EC%B9%B4%EB%93%9C-%ED%98%9C%ED%83%9D%EC%9D%84-%EC%B9%B4%EB%93%9C-%ED%95%98%EB%82%98%EB%A1%9C-%EB%88%84%EB%A6%AC%EA%B8%B0.html",
+   "https://www.hyundaicard.com/cpc/cp/event/m09_hybrid.html"
+  ],
+  "checked": "2026-10-27",
+  "confidence": "medium",
+  "note": "현대카드 매거진 20대 추천 글에 여전히 M/X HYBRID 추천 문구가 남아 있음(2026-10-27 열람). 단종일은 B 조사 기록에 의존. 2016 이벤트 페이지: 연회비 국내전용 2,000원, 제휴은행 KB·신한·우리·하나·농협 등."
+ }
+]

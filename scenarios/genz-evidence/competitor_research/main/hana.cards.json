@@ -1,0 +1,2300 @@
+[
+  {
+    "id": "mhana01",
+    "name": "트래블로그 체크",
+    "official_name": "트래블로그 체크카드",
+    "issuer": "하나카드",
+    "type": "debit",
+    "on_sale": true,
+    "role": "flagship",
+    "launched": "2022-07-18",
+    "annual_fee_won": {
+      "domestic": 0,
+      "overseas": 0
+    },
+    "tiers": [
+      {
+        "min_prev_month_spend_won": 0,
+        "benefit_summary": "실적 무관: 해외 가맹점·ATM 수수료 면제, 국내 0.3% 하나머니 적립(한도 없음)"
+      }
+    ],
+    "benefits": [
+      {
+        "category": "해외결제",
+        "text": "해외 가맹점 이용 시 해외서비스수수료(건당 US$0.5)·국제브랜드수수료(1%) 면제",
+        "rate_or_amount": "면제",
+        "monthly_cap": null,
+        "condition": "외화 하나머니 잔액 결제, 실적 무관"
+      },
+      {
+        "category": "해외 ATM",
+        "text": "해외 ATM 인출수수료(건당 US$3)·국제브랜드수수료(1%) 면제",
+        "rate_or_amount": "면제",
+        "monthly_cap": null,
+        "condition": "현지 ATM 수수료(Surcharge)는 별도"
+      },
+      {
+        "category": "국내 적립",
+        "text": "국내 가맹점 이용 시 하나머니 적립",
+        "rate_or_amount": "0.3%",
+        "monthly_cap": "없음",
+        "condition": "실적 무관"
+      }
+    ],
+    "exclusions": [
+      "DCC(해외원화결제) 이용 불가",
+      "신용/체크카드로 충전한 하나머니로는 결제 불가",
+      "국내 ATM 현금인출 불가",
+      "국세·지방세·공과금·아파트관리비·4대보험료·학교 납입금·상품권·선불충전(하나머니 등)·부동산임대료 등은 실적·혜택 제외(공식 페이지 표기)"
+    ],
+    "promotions": [],
+    "recent_changes": [
+      "2025-06 트래블로그(하나머니 앱) 개편(언론, 유스데일리 2025-06-06)",
+      "2025-12-01 트래블로그 가입자 1,000만명 돌파(언론, 시사경제 2025-12-05)"
+    ],
+    "target_text": null,
+    "issuance": "하나머니 회원 전용 선불 기반 체크카드(하나머니 잔액 결제). 발급대상 만 14세 이상(내국인). PC/QR 신청",
+    "app_features": [
+      "하나머니 앱에서 원화·외화 충전(공식 페이지 기준 30여 개 통화)",
+      "2025-06 트래블로그 앱 개편: 전용 홈, 실시간 환율, 꿀머니샵(하나머니 적립), 카드 일시정지·분실신고 퀵메뉴(언론)"
+    ],
+    "design_note": null,
+    "tags": [
+      "check_card",
+      "travel_fx",
+      "reward_point",
+      "spend_free",
+      "no_cap"
+    ],
+    "genz_fit": "high",
+    "genz_fit_reason": "연회비·실적 없이 해외 수수료 면제를 주는 하나카드 간판 상품. 20대 트래블카드 선호(업계 조사)와 맞물려 첫 해외여행 카드로 쓰이기 쉽다. 단 국내 혜택은 0.3%로 약하다.",
+    "source_url": "https://www.hanacard.co.kr/OPI41000000D.web?CD_PD_SEQ=15414",
+    "source_urls": [
+      "https://www.hanacard.co.kr/OPI41000000D.web?CD_PD_SEQ=15414",
+      "https://sateconomy.co.kr/news/view/1065601663240017",
+      "https://youthdaily.co.kr/news/article.html?no=186719"
+    ],
+    "checked": "2026-10-27",
+    "confidence": "high",
+    "note": "공식 페이지 본문(EUC-KR) 직접 확인. 20대 이용 비중 통계는 찾지 못함(확인 불가)."
+  },
+  {
+    "id": "mhana02",
+    "name": "트래블로그+ 신용",
+    "official_name": "트래블로그+(플러스) 신용카드",
+    "issuer": "하나카드",
+    "type": "credit",
+    "on_sale": true,
+    "role": "flagship",
+    "launched": "2026-02-13",
+    "annual_fee_won": {
+      "domestic": 20000,
+      "overseas": 20000
+    },
+    "tiers": [
+      {
+        "min_prev_month_spend_won": 0,
+        "benefit_summary": "실적 무관: 국내외 1.0%(하나Pay 1.3%), 해외·항공·면세·여행 3%(월 통합 5만 하나머니), 외화 하나머니 설정 시 해외 수수료 면제"
+      }
+    ],
+    "benefits": [
+      {
+        "category": "전 가맹점",
+        "text": "국내외 전 가맹점 하나머니 적립(신용결제 설정 시)",
+        "rate_or_amount": "1.0%",
+        "monthly_cap": "없음",
+        "condition": "실적 무관"
+      },
+      {
+        "category": "간편결제",
+        "text": "삼성페이·네이버페이·카카오페이·SSG페이·페이코·쿠페이·SK페이 1.0%, 하나Pay 1.3%",
+        "rate_or_amount": "1.0~1.3%",
+        "monthly_cap": "없음",
+        "condition": "실적 무관"
+      },
+      {
+        "category": "해외",
+        "text": "해외 가맹점 하나머니 적립(신용결제 설정 시)",
+        "rate_or_amount": "3%",
+        "monthly_cap": "통합 5만 하나머니",
+        "condition": "실적 무관"
+      },
+      {
+        "category": "항공",
+        "text": "대한항공·아시아나·진에어·에어부산·에어서울·제주항공·티웨이·이스타",
+        "rate_or_amount": "3%",
+        "monthly_cap": "통합 5만 하나머니",
+        "condition": "공식 채널 결제, 국제선은 국내출발·원화결제"
+      },
+      {
+        "category": "면세점",
+        "text": "신라·신세계·롯데·현대백화점면세점",
+        "rate_or_amount": "3%",
+        "monthly_cap": "통합 5만 하나머니",
+        "condition": null
+      },
+      {
+        "category": "여행",
+        "text": "하나투어·아고다·익스피디아·호텔스닷컴",
+        "rate_or_amount": "3%",
+        "monthly_cap": "통합 5만 하나머니",
+        "condition": null
+      },
+      {
+        "category": "해외수수료",
+        "text": "외화 하나머니 결제 설정 시 해외 가맹점·ATM 수수료 면제",
+        "rate_or_amount": "면제",
+        "monthly_cap": null,
+        "condition": "국내전용 카드는 불가"
+      }
+    ],
+    "exclusions": [
+      "PG 하위몰 결제는 전가맹점/간편결제 적립률 적용",
+      "무이자할부·해외 하나머니 이용금액 적립 제외",
+      "국세·지방세·공과금·아파트관리비·4대보험료·학교 납입금·상품권·선불충전(하나머니 등)·부동산임대료 등은 실적·혜택 제외(공식 페이지 표기)"
+    ],
+    "promotions": [],
+    "recent_changes": [],
+    "target_text": null,
+    "issuance": "PC/QR 신청(앱 전용 여부 확인 불가)",
+    "app_features": [
+      "하나페이 > 내카드관리에서 해외결제 방식(외화 하나머니/신용) 즉시 전환"
+    ],
+    "design_note": null,
+    "tags": [
+      "travel_fx",
+      "reward_point",
+      "simple_flat",
+      "spend_free",
+      "paymethod_bonus"
+    ],
+    "genz_fit": "mid",
+    "genz_fit_reason": "실적 없이 1% 기본 적립과 해외 3%를 주는 신용형 트래블로그. 신용카드 발급 가능한 20대 중후반 여행족에 맞지만 연회비 2만원.",
+    "source_url": "https://www.hanacard.co.kr/OPI41000000D.web?CD_PD_SEQ=18956",
+    "source_urls": [
+      "https://www.hanacard.co.kr/OPI41000000D.web?CD_PD_SEQ=18956"
+    ],
+    "checked": "2026-10-27",
+    "confidence": "high",
+    "note": "목록 API에서는 CD_PD_SEQ=94350(CD_NO 18956)으로 노출. 기존 트래블로그 신용카드(2023-05-04 출시)와 혜택 구조 동일, 출시일만 다름."
+  },
+  {
+    "id": "mhana03",
+    "name": "트래블로그 신용",
+    "official_name": "트래블로그 신용카드",
+    "issuer": "하나카드",
+    "type": "credit",
+    "on_sale": true,
+    "role": "other",
+    "launched": "2023-05-04",
+    "annual_fee_won": {
+      "domestic": 20000,
+      "overseas": 20000
+    },
+    "tiers": [
+      {
+        "min_prev_month_spend_won": 0,
+        "benefit_summary": "실적 무관: 국내외 1.0%(하나Pay 1.3%), 해외·항공·면세·여행 3%(월 통합 5만 하나머니)"
+      }
+    ],
+    "benefits": [
+      {
+        "category": "전 가맹점",
+        "text": "국내외 전 가맹점",
+        "rate_or_amount": "1.0%",
+        "monthly_cap": "없음",
+        "condition": "신용결제 설정 시"
+      },
+      {
+        "category": "간편결제",
+        "text": "간편결제 1.0%, 하나Pay 1.3%",
+        "rate_or_amount": "1.0~1.3%",
+        "monthly_cap": "없음",
+        "condition": null
+      },
+      {
+        "category": "해외·항공·면세·여행",
+        "text": "해외 가맹점 및 8개 항공사·4개 면세점·4개 여행사",
+        "rate_or_amount": "3%",
+        "monthly_cap": "통합 5만 하나머니",
+        "condition": null
+      },
+      {
+        "category": "해외수수료",
+        "text": "외화 하나머니 결제 시 해외 가맹점·ATM 수수료 면제",
+        "rate_or_amount": "면제",
+        "monthly_cap": null,
+        "condition": null
+      }
+    ],
+    "exclusions": [
+      "국세·지방세·공과금·아파트관리비·4대보험료·학교 납입금·상품권·선불충전(하나머니 등)·부동산임대료 등은 실적·혜택 제외(공식 페이지 표기)"
+    ],
+    "promotions": [],
+    "recent_changes": [],
+    "target_text": null,
+    "issuance": "PC/QR 신청",
+    "app_features": [],
+    "design_note": null,
+    "tags": [
+      "travel_fx",
+      "reward_point",
+      "simple_flat",
+      "spend_free"
+    ],
+    "genz_fit": "mid",
+    "genz_fit_reason": "트래블로그+와 같은 구조의 구형 신용카드. 신규 20대 유입은 트래블로그+로 옮겨가는 것으로 보인다(해석).",
+    "source_url": "https://www.hanacard.co.kr/OPI41000000D.web?CD_PD_SEQ=16787",
+    "source_urls": [
+      "https://www.hanacard.co.kr/OPI41000000D.web?CD_PD_SEQ=16787"
+    ],
+    "checked": "2026-10-27",
+    "confidence": "high",
+    "note": "공식 목록에 여전히 노출. 트래블로그+(2026-02) 출시 후에도 판매 중."
+  },
+  {
+    "id": "mhana04",
+    "name": "트래블GO 체크",
+    "official_name": "트래블GO 체크카드",
+    "issuer": "하나카드",
+    "type": "debit",
+    "on_sale": true,
+    "role": "youth",
+    "launched": "2024-08-13",
+    "annual_fee_won": {
+      "domestic": 0,
+      "overseas": 0
+    },
+    "tiers": [
+      {
+        "min_prev_month_spend_won": 0,
+        "benefit_summary": "해외 가맹점·ATM 수수료 면제(실적 무관)"
+      },
+      {
+        "min_prev_month_spend_won": 200000,
+        "benefit_summary": "편의점·커피/베이커리·대중교통 5% 적립, 월 통합 5천 하나머니"
+      },
+      {
+        "min_prev_month_spend_won": 500000,
+        "benefit_summary": "+ 구독·생활비 5% 적립, 월 통합 5천 하나머니"
+      }
+    ],
+    "benefits": [
+      {
+        "category": "해외",
+        "text": "해외 가맹점 수수료(건당 US$0.5, 1.1%)·ATM(건당 US$3, 1.1%) 면제",
+        "rate_or_amount": "면제",
+        "monthly_cap": null,
+        "condition": "외화 하나머니, Visa"
+      },
+      {
+        "category": "편의점",
+        "text": "CU·GS25·세븐일레븐·이마트24",
+        "rate_or_amount": "5%",
+        "monthly_cap": "통합 5천 하나머니",
+        "condition": "건당 1만원 이상, 전월 20만원↑, 영역별 월 5회"
+      },
+      {
+        "category": "커피/베이커리",
+        "text": "스타벅스·커피빈·파리바게뜨·뚜레쥬르",
+        "rate_or_amount": "5%",
+        "monthly_cap": "통합 5천 하나머니",
+        "condition": "건당 1만원 이상, 전월 20만원↑"
+      },
+      {
+        "category": "대중교통",
+        "text": "버스·지하철",
+        "rate_or_amount": "5%",
+        "monthly_cap": "통합 5천 하나머니",
+        "condition": "월 통합 5만원 이상, 전월 20만원↑"
+      },
+      {
+        "category": "구독",
+        "text": "유튜브 프리미엄·넷플릭스·쿠팡와우",
+        "rate_or_amount": "5%",
+        "monthly_cap": "통합 5천 하나머니",
+        "condition": "건당 7천원 이상, 전월 50만원↑"
+      },
+      {
+        "category": "생활비",
+        "text": "SKT·KT·LG U+·전기/가스요금",
+        "rate_or_amount": "5%",
+        "monthly_cap": "통합 5천 하나머니",
+        "condition": "건당 5만원 이상, 전월 50만원↑"
+      }
+    ],
+    "exclusions": [
+      "시외·고속버스·철도 제외",
+      "편의점·커피는 오프라인, 대형시설 입점점 제외",
+      "국세·지방세·공과금·아파트관리비·4대보험료·학교 납입금·상품권·선불충전(하나머니 등)·부동산임대료 등은 실적·혜택 제외(공식 페이지 표기)"
+    ],
+    "promotions": [],
+    "recent_changes": [],
+    "target_text": null,
+    "issuance": "하나머니 회원 전용 체크카드, 만 14세 이상(내국인)",
+    "app_features": [],
+    "design_note": null,
+    "tags": [
+      "check_card",
+      "travel_fx",
+      "reward_point",
+      "tiered_perf",
+      "mart_daily",
+      "dining_cafe",
+      "transit",
+      "subscription_ott",
+      "txn_threshold",
+      "count_based"
+    ],
+    "genz_fit": "high",
+    "genz_fit_reason": "트래블로그의 Visa판으로 해외 무료 수수료에 편의점·커피·교통 5%를 얹었다. 다만 월 통합 한도 5천원이라 국내 혜택 체감은 작다.",
+    "source_url": "https://www.hanacard.co.kr/OPI41000000D.web?CD_PD_SEQ=18064",
+    "source_urls": [
+      "https://www.hanacard.co.kr/OPI41000000D.web?CD_PD_SEQ=18064"
+    ],
+    "checked": "2026-10-27",
+    "confidence": "high",
+    "note": "목록 API에서는 CD_PD_SEQ=94264(CD_NO 18064). 실적 20만/50만 구간은 영역별 진입 조건이며 한도는 동일(5천)."
+  },
+  {
+    "id": "mhana05",
+    "name": "카카오페이 트래블로그 체크",
+    "official_name": "카카오페이 트래블로그 체크카드",
+    "issuer": "하나카드",
+    "type": "debit",
+    "on_sale": true,
+    "role": "plcc",
+    "launched": "2024-11-08",
+    "annual_fee_won": {
+      "domestic": 0,
+      "overseas": 0
+    },
+    "tiers": [
+      {
+        "min_prev_month_spend_won": 0,
+        "benefit_summary": "국내 0.2% 카카오페이포인트, 해외 수수료 면제"
+      },
+      {
+        "min_prev_month_spend_won": 200000,
+        "benefit_summary": "카카오페이 등록결제 1%(월 1만원)"
+      },
+      {
+        "min_prev_month_spend_won": 400000,
+        "benefit_summary": "커피·편의점 5%(각 월 3회 3천원), 생활비·쇼핑 5%(월 1회 3천원), 구독 10%(월 1회 3천원)"
+      }
+    ],
+    "benefits": [
+      {
+        "category": "전 가맹점",
+        "text": "국내 전 가맹점 카카오페이포인트",
+        "rate_or_amount": "0.2%",
+        "monthly_cap": "없음",
+        "condition": null
+      },
+      {
+        "category": "간편결제",
+        "text": "카카오페이에 카드 등록 결제",
+        "rate_or_amount": "1%",
+        "monthly_cap": "1만원",
+        "condition": "전월 20만원↑"
+      },
+      {
+        "category": "커피",
+        "text": "커피업종",
+        "rate_or_amount": "5%",
+        "monthly_cap": "월 3회·3천원",
+        "condition": "건당 1만원↑, 전월 40만원↑"
+      },
+      {
+        "category": "편의점",
+        "text": "CU·GS25·세븐일레븐·이마트24",
+        "rate_or_amount": "5%",
+        "monthly_cap": "월 3회·3천원",
+        "condition": "건당 1만원↑, 전월 40만원↑"
+      },
+      {
+        "category": "쇼핑",
+        "text": "무신사·지그재그·W컨셉·29CM",
+        "rate_or_amount": "5%",
+        "monthly_cap": "월 1회·3천원",
+        "condition": "건당 3만원↑, 전월 40만원↑"
+      },
+      {
+        "category": "구독",
+        "text": "유튜브 프리미엄·넷플릭스·쿠팡와우",
+        "rate_or_amount": "10%",
+        "monthly_cap": "월 1회·3천원",
+        "condition": "건당 5천원↑, 전월 40만원↑"
+      },
+      {
+        "category": "생활비",
+        "text": "통신3사·전기/가스",
+        "rate_or_amount": "5%",
+        "monthly_cap": "월 1회·3천원",
+        "condition": "건당 5만원↑, 전월 40만원↑"
+      },
+      {
+        "category": "해외",
+        "text": "해외 가맹점·ATM 수수료 면제",
+        "rate_or_amount": "면제",
+        "monthly_cap": null,
+        "condition": "외화 하나머니"
+      }
+    ],
+    "exclusions": [
+      "커피·편의점은 오프라인, 대형시설 입점점 제외",
+      "구독은 월 정기결제만(인앱 제외)"
+    ],
+    "promotions": [],
+    "recent_changes": [],
+    "target_text": null,
+    "issuance": "카카오페이 앱에서만 신청, 만 17세 이상. 국내 결제는 카카오페이머니에서 출금, 해외는 외화 하나머니",
+    "app_features": [
+      "카카오페이 앱 연동(카카오페이머니 결제·포인트 적립)",
+      "최초 사용월+다음달은 40만원 구간 혜택"
+    ],
+    "design_note": null,
+    "tags": [
+      "check_card",
+      "plcc_brand",
+      "travel_fx",
+      "reward_point",
+      "tiered_perf",
+      "online_shop",
+      "subscription_ott",
+      "dining_cafe",
+      "mart_daily",
+      "txn_threshold",
+      "count_based",
+      "paymethod_bonus"
+    ],
+    "genz_fit": "high",
+    "genz_fit_reason": "카카오페이 앱 발급, 무신사·지그재그·29CM 쇼핑과 구독 10%를 넣어 20대 패션·플랫폼 소비를 겨냥했다. 횟수·한도가 작다.",
+    "source_url": "https://www.hanacard.co.kr/OPI41000000D.web?CD_PD_SEQ=18243",
+    "source_urls": [
+      "https://www.hanacard.co.kr/OPI41000000D.web?CD_PD_SEQ=18243"
+    ],
+    "checked": "2026-10-27",
+    "confidence": "high",
+    "note": ""
+  },
+  {
+    "id": "mhana06",
+    "name": "삼성월렛 트래블로그 체크",
+    "official_name": "삼성월렛 하나 트래블로그 체크카드",
+    "issuer": "하나카드",
+    "type": "debit",
+    "on_sale": true,
+    "role": "plcc",
+    "launched": "2026-06-26",
+    "annual_fee_won": {
+      "domestic": 0,
+      "overseas": 0
+    },
+    "tiers": [
+      {
+        "min_prev_month_spend_won": 0,
+        "benefit_summary": "국내 0.3% 삼성월렛 포인트, 해외 수수료 면제"
+      },
+      {
+        "min_prev_month_spend_won": 200000,
+        "benefit_summary": "삼성페이 해외 오프라인(Contactless) 10%, 삼성페이 국내 0.5%, 적립한도 1만 포인트"
+      }
+    ],
+    "benefits": [
+      {
+        "category": "삼성페이 해외",
+        "text": "삼성페이 해외 오프라인 결제(Contactless 단말)",
+        "rate_or_amount": "10%",
+        "monthly_cap": "1만 포인트",
+        "condition": "전월 20만원↑"
+      },
+      {
+        "category": "삼성페이 국내",
+        "text": "삼성페이 국내 결제",
+        "rate_or_amount": "0.5%",
+        "monthly_cap": "1만 포인트(삼성페이 영역)",
+        "condition": "전월 20만원↑"
+      },
+      {
+        "category": "국내",
+        "text": "국내 가맹점",
+        "rate_or_amount": "0.3%",
+        "monthly_cap": null,
+        "condition": null
+      },
+      {
+        "category": "해외",
+        "text": "해외 가맹점·ATM 수수료 면제",
+        "rate_or_amount": "면제",
+        "monthly_cap": null,
+        "condition": "외화 하나머니"
+      }
+    ],
+    "exclusions": [
+      "삼성월렛 머니·포인트 약관 동의 필요",
+      "본인 명의 삼성월렛 이용 시에만 적립"
+    ],
+    "promotions": [],
+    "recent_changes": [],
+    "target_text": null,
+    "issuance": "삼성월렛 앱에서만 신청, 만 14세 이상(내국인)",
+    "app_features": [
+      "삼성월렛 포인트 적립(다음달 3영업일)"
+    ],
+    "design_note": null,
+    "tags": [
+      "check_card",
+      "plcc_brand",
+      "travel_fx",
+      "reward_point",
+      "paymethod_bonus",
+      "tiered_perf"
+    ],
+    "genz_fit": "mid",
+    "genz_fit_reason": "갤럭시 사용자 한정으로 해외 탭결제 10%를 준다. 아이폰 비중이 높은 20대에게는 대상이 좁다(해석).",
+    "source_url": "https://www.hanacard.co.kr/OPI41000000D.web?CD_PD_SEQ=19227",
+    "source_urls": [
+      "https://www.hanacard.co.kr/OPI41000000D.web?CD_PD_SEQ=19227"
+    ],
+    "checked": "2026-10-27",
+    "confidence": "high",
+    "note": ""
+  },
+  {
+    "id": "mhana07",
+    "name": "MOVING카드 ONLINE모드",
+    "official_name": "MOVING카드 ONLINE모드",
+    "issuer": "하나카드",
+    "type": "credit",
+    "on_sale": true,
+    "role": "youth",
+    "launched": "2026-07-01",
+    "annual_fee_won": {
+      "domestic": 20000,
+      "overseas": 20000
+    },
+    "tiers": [
+      {
+        "min_prev_month_spend_won": 0,
+        "benefit_summary": "국내외 0.5%(3일 연속 시 1.0%, 한도 없음), 온라인 간편결제 1.5%(3일 연속 3.0%, 월 3만 하나머니)"
+      },
+      {
+        "min_prev_month_spend_won": 500000,
+        "benefit_summary": "+ AI 구독(ChatGPT·Claude·Perplexity) 50%(월 1만), 디지털 구독 50%(5천), 택시 50%(5천), 푸드(스타벅스·패스트푸드) 50%(5천)"
+      }
+    ],
+    "benefits": [
+      {
+        "category": "기본",
+        "text": "국내외 가맹점 하나머니",
+        "rate_or_amount": "0.5%→3일 연속 1.0%",
+        "monthly_cap": "없음",
+        "condition": "실적 무관"
+      },
+      {
+        "category": "온라인 간편결제",
+        "text": "하나페이·삼성페이·네이버페이·카카오페이·페이코 온라인 결제",
+        "rate_or_amount": "1.5%→3일 연속 3.0%",
+        "monthly_cap": "3만 하나머니",
+        "condition": "실적 무관, 오프라인 모바일결제 제외"
+      },
+      {
+        "category": "AI 구독",
+        "text": "ChatGPT·Claude·Perplexity",
+        "rate_or_amount": "50%",
+        "monthly_cap": "1만 하나머니",
+        "condition": "전월 50만원↑, API 종량제 제외"
+      },
+      {
+        "category": "디지털 구독",
+        "text": "넷플릭스·디즈니+·유튜브 프리미엄·웨이브·티빙·멜론·지니·FLO·스포티파이·쿠팡와우·네이버플러스·컬리멤버스·배민클럽",
+        "rate_or_amount": "50%",
+        "monthly_cap": "5천 하나머니",
+        "condition": "전월 50만원↑, 월 자동납부만"
+      },
+      {
+        "category": "택시",
+        "text": "카카오T·UT·택시업종",
+        "rate_or_amount": "50%",
+        "monthly_cap": "5천 하나머니",
+        "condition": "전월 50만원↑"
+      },
+      {
+        "category": "푸드",
+        "text": "스타벅스, 맥도날드·롯데리아·버거킹·KFC·쉐이크쉑·써브웨이·맘스터치·파이브가이즈",
+        "rate_or_amount": "50%",
+        "monthly_cap": "5천 하나머니",
+        "condition": "전월 50만원↑, 오프라인/공식앱"
+      }
+    ],
+    "exclusions": [
+      "『3일 2배』와 『ONLINE 적립』 중복 불가(ONLINE 한도 소진 후 3일 2배 적용)",
+      "무이자할부 이용금액 적립 제외",
+      "PG·간편결제 가맹점명으로 잡히면 업종 혜택 제외",
+      "국세·지방세·공과금·아파트관리비·4대보험료·학교 납입금·상품권·선불충전(하나머니 등)·부동산임대료 등은 실적·혜택 제외(공식 페이지 표기)"
+    ],
+    "promotions": [
+      {
+        "text": "출시 98일 만에 발급 10만장(언론, 2026-10-06)",
+        "ends": null
+      }
+    ],
+    "recent_changes": [],
+    "target_text": "3일 쓰면 2배 적립! 디지털 일상을 똑똑하게",
+    "issuance": "신청 시 추천 모드 선택, 하나페이 앱에서 모드 변경",
+    "app_features": [
+      "3일 연속 이용(일 실적 1원 이상) 시 다음날부터 적립률 2배",
+      "5개 모드(ALLDAY·ONLINE·PLAY·LIFE·GLOBAL) 중 선택, 발급 후 하나페이 앱에서 월 1회 변경(언론)",
+      "국내 5만원 이상 2~3개월 무이자할부",
+      "트래블로그 스위치 탑재",
+      "최초 사용등록~다음달 말일은 50만원 실적 간주"
+    ],
+    "design_note": null,
+    "tags": [
+      "reward_point",
+      "monthly_switch",
+      "select_pack",
+      "period_bonus",
+      "subscription_ott",
+      "transit",
+      "dining_cafe",
+      "paymethod_bonus",
+      "tiered_perf",
+      "spend_free",
+      "habit_conversion"
+    ],
+    "genz_fit": "high",
+    "genz_fit_reason": "AI 구독 50%(ChatGPT·Claude)·OTT·택시·패스트푸드처럼 20대 지출 목록을 정면으로 겨냥했다. 다만 핵심 50% 혜택은 전월 50만원 이상이라 사회초년생 문턱이 있다.",
+    "source_url": "https://www.hanacard.co.kr/OPI41000000D.web?CD_PD_SEQ=19150",
+    "source_urls": [
+      "https://www.hanacard.co.kr/OPI41000000D.web?CD_PD_SEQ=19150",
+      "https://biz.sbs.co.kr/amp/article/20000320013",
+      "https://supple.kr/news/cmr62t6t0000m7bu2ewpccdpz",
+      "https://sateconomy.co.kr/news/view/1065601465122736"
+    ],
+    "checked": "2026-10-27",
+    "confidence": "high",
+    "note": "공식 대상 연령 문구 없음. 모드 월 1회 변경은 이투데이(supple.kr 재게재) 기사 기준, 공식 페이지는 '발급 후 직접 변경'만 표기. ALLDAY/ONLINE/GLOBAL 적립 매출은 실적 포함, PLAY/LIFE 적립 매출은 실적 제외."
+  },
+  {
+    "id": "mhana08",
+    "name": "MOVING카드 PLAY모드",
+    "official_name": "MOVING카드 PLAY모드",
+    "issuer": "하나카드",
+    "type": "credit",
+    "on_sale": true,
+    "role": "youth",
+    "launched": "2026-07-01",
+    "annual_fee_won": {
+      "domestic": 20000,
+      "overseas": 20000
+    },
+    "tiers": [
+      {
+        "min_prev_month_spend_won": 0,
+        "benefit_summary": "무이자할부·트래블로그 스위치만(적립은 실적 조건 있음)"
+      },
+      {
+        "min_prev_month_spend_won": 500000,
+        "benefit_summary": "커피 30%(3일 연속 60%), 편의점 10%(3일 연속 20%), 온라인쇼핑·딜리버리·트렌디패션 10%, 디지털구독 30%, 영역별 월 1만 하나머니"
+      }
+    ],
+    "benefits": [
+      {
+        "category": "커피",
+        "text": "스타벅스·커피빈·이디야·투썸·메가MGC·컴포즈",
+        "rate_or_amount": "30%→3일 연속 60%",
+        "monthly_cap": "1만 하나머니",
+        "condition": "전월 50만원↑"
+      },
+      {
+        "category": "편의점",
+        "text": "GS25·CU·이마트24·세븐일레븐",
+        "rate_or_amount": "10%→3일 연속 20%",
+        "monthly_cap": "1만 하나머니",
+        "condition": "전월 50만원↑, 오프라인"
+      },
+      {
+        "category": "온라인쇼핑",
+        "text": "쿠팡·네이버플러스스토어·SSG·컬리·G마켓·옥션·11번가",
+        "rate_or_amount": "10%",
+        "monthly_cap": "1만 하나머니",
+        "condition": "전월 50만원↑"
+      },
+      {
+        "category": "딜리버리",
+        "text": "쿠팡이츠·배민·요기요",
+        "rate_or_amount": "10%",
+        "monthly_cap": "1만 하나머니",
+        "condition": "전월 50만원↑"
+      },
+      {
+        "category": "트렌디패션",
+        "text": "무신사·W컨셉·SSF SHOP·29CM·지그재그",
+        "rate_or_amount": "10%",
+        "monthly_cap": "1만 하나머니",
+        "condition": "전월 50만원↑"
+      },
+      {
+        "category": "디지털 구독",
+        "text": "OTT·음원·멤버십 13종",
+        "rate_or_amount": "30%",
+        "monthly_cap": "1만 하나머니",
+        "condition": "전월 50만원↑"
+      }
+    ],
+    "exclusions": [
+      "PLAY 모드로 적립받은 매출은 전월실적 제외",
+      "『3일 2배』와 『PLAY 적립』 중복 불가",
+      "국세·지방세·공과금·아파트관리비·4대보험료·학교 납입금·상품권·선불충전(하나머니 등)·부동산임대료 등은 실적·혜택 제외(공식 페이지 표기)"
+    ],
+    "promotions": [],
+    "recent_changes": [],
+    "target_text": "3일 쓰면 2배 적립! 혜택으로 쌓이는 직장인의 하루",
+    "issuance": "하나페이 앱에서 모드 선택·변경",
+    "app_features": [
+      "3일 연속 이용(일 실적 1원 이상) 시 다음날부터 적립률 2배",
+      "5개 모드(ALLDAY·ONLINE·PLAY·LIFE·GLOBAL) 중 선택, 발급 후 하나페이 앱에서 월 1회 변경(언론)",
+      "국내 5만원 이상 2~3개월 무이자할부",
+      "트래블로그 스위치 탑재",
+      "최초 사용등록~다음달 말일은 50만원 실적 간주"
+    ],
+    "design_note": null,
+    "tags": [
+      "reward_point",
+      "monthly_switch",
+      "select_pack",
+      "period_bonus",
+      "dining_cafe",
+      "mart_daily",
+      "online_shop",
+      "delivery",
+      "subscription_ott",
+      "tiered_perf",
+      "habit_conversion"
+    ],
+    "genz_fit": "high",
+    "genz_fit_reason": "커피 최대 60%·패션몰·배달·OTT로 구성이 가장 20대 소비에 가깝다. 공식 문구는 '직장인'이고 혜택받은 매출이 실적에서 빠져 50만원 유지가 어렵다.",
+    "source_url": "https://www.hanacard.co.kr/OPI41000000D.web?CD_PD_SEQ=19151",
+    "source_urls": [
+      "https://www.hanacard.co.kr/OPI41000000D.web?CD_PD_SEQ=19151"
+    ],
+    "checked": "2026-10-27",
+    "confidence": "high",
+    "note": ""
+  },
+  {
+    "id": "mhana09",
+    "name": "MOVING카드 ALLDAY모드",
+    "official_name": "MOVING카드 ALLDAY모드",
+    "issuer": "하나카드",
+    "type": "credit",
+    "on_sale": true,
+    "role": "flagship",
+    "launched": "2026-07-01",
+    "annual_fee_won": {
+      "domestic": 20000,
+      "overseas": 20000
+    },
+    "tiers": [
+      {
+        "min_prev_month_spend_won": 0,
+        "benefit_summary": "국내외 0.5%(3일 연속 1.0%), 온라인 간편결제 1.0%(3일 연속 2.0%, 월 2만), 장보기·딜리버리 2%, 대중교통·택시 3%(통합 5만 하나머니)"
+      }
+    ],
+    "benefits": [
+      {
+        "category": "기본",
+        "text": "국내외 가맹점",
+        "rate_or_amount": "0.5%→1.0%",
+        "monthly_cap": "없음",
+        "condition": "실적 무관"
+      },
+      {
+        "category": "온라인 간편결제",
+        "text": "하나페이·삼성페이·네이버페이·카카오페이·페이코",
+        "rate_or_amount": "1.0%→2.0%",
+        "monthly_cap": "2만 하나머니",
+        "condition": "실적 무관"
+      },
+      {
+        "category": "장보기 쇼핑",
+        "text": "쿠팡·네이버플러스스토어·SSG·컬리·오아시스, 이마트·트레이더스·롯데마트·하나로마트, 슈퍼, 3대 백화점",
+        "rate_or_amount": "2.0%",
+        "monthly_cap": "통합 5만 하나머니",
+        "condition": "실적 무관"
+      },
+      {
+        "category": "딜리버리",
+        "text": "쿠팡이츠·배민·요기요",
+        "rate_or_amount": "2.0%",
+        "monthly_cap": "통합 5만 하나머니",
+        "condition": "실적 무관"
+      },
+      {
+        "category": "대중교통·택시",
+        "text": "버스·지하철, 카카오T·UT·택시",
+        "rate_or_amount": "3.0%",
+        "monthly_cap": "통합 5만 하나머니",
+        "condition": "실적 무관"
+      }
+    ],
+    "exclusions": [
+      "『3일 2배』와 『ALLDAY 적립』 중복 불가",
+      "국세·지방세·공과금·아파트관리비·4대보험료·학교 납입금·상품권·선불충전(하나머니 등)·부동산임대료 등은 실적·혜택 제외(공식 페이지 표기)"
+    ],
+    "promotions": [],
+    "recent_changes": [],
+    "target_text": "3일 쓰면 2배 적립! 일상의 소비에 따라오는 혜택",
+    "issuance": "하나페이 앱에서 모드 선택·변경",
+    "app_features": [
+      "3일 연속 이용(일 실적 1원 이상) 시 다음날부터 적립률 2배",
+      "5개 모드(ALLDAY·ONLINE·PLAY·LIFE·GLOBAL) 중 선택, 발급 후 하나페이 앱에서 월 1회 변경(언론)",
+      "국내 5만원 이상 2~3개월 무이자할부",
+      "트래블로그 스위치 탑재",
+      "최초 사용등록~다음달 말일은 50만원 실적 간주"
+    ],
+    "design_note": null,
+    "tags": [
+      "reward_point",
+      "monthly_switch",
+      "select_pack",
+      "period_bonus",
+      "spend_free",
+      "transit",
+      "delivery",
+      "online_shop",
+      "mart_daily",
+      "anti_cap"
+    ],
+    "genz_fit": "mid",
+    "genz_fit_reason": "전월실적 없이 교통·택시 3%, 배달 2%를 준다. 실적 부담이 적어 사회초년생에게 무난하지만 적립률은 낮다.",
+    "source_url": "https://www.hanacard.co.kr/OPI41000000D.web?CD_PD_SEQ=19149",
+    "source_urls": [
+      "https://www.hanacard.co.kr/OPI41000000D.web?CD_PD_SEQ=19149"
+    ],
+    "checked": "2026-10-27",
+    "confidence": "high",
+    "note": "같은 카드의 LIFE모드(의료·학원·관리비·주유 10%, EV 30%, 전월 50만원) · GLOBAL모드(해외 2%, 월 30만 하나머니, 실적 무관)는 별도 항목으로 만들지 않음(공식 확인: CD_PD_SEQ 19152, 19153)."
+  },
+  {
+    "id": "mhana10",
+    "name": "원더카드 2.0 FREE+",
+    "official_name": "원더카드 2.0 FREE+",
+    "issuer": "하나카드",
+    "type": "credit",
+    "on_sale": true,
+    "role": "flagship",
+    "launched": "2022-11-15",
+    "annual_fee_won": {
+      "domestic": 19900,
+      "overseas": 19900
+    },
+    "tiers": [
+      {
+        "min_prev_month_spend_won": 0,
+        "benefit_summary": "국내외 0.8%, 온라인 간편결제 1.2% 청구할인(한도 없음), 쿠팡 2%(통합 5만원)"
+      },
+      {
+        "min_prev_month_spend_won": 400000,
+        "benefit_summary": "+ 딜리버리·온라인식품·오픈마켓·택시 4% (월 4천원)"
+      },
+      {
+        "min_prev_month_spend_won": 800000,
+        "benefit_summary": "4% 영역 한도 월 6천~8천원"
+      },
+      {
+        "min_prev_month_spend_won": 1200000,
+        "benefit_summary": "4% 영역 한도 월 1만~1.2만원"
+      }
+    ],
+    "benefits": [
+      {
+        "category": "전 가맹점",
+        "text": "국내·외 결제",
+        "rate_or_amount": "0.8%",
+        "monthly_cap": "없음",
+        "condition": "실적 무관"
+      },
+      {
+        "category": "간편결제",
+        "text": "하나페이 모든결제/7대 간편결제 온라인",
+        "rate_or_amount": "1.2%",
+        "monthly_cap": "없음",
+        "condition": "오프라인 모바일결제 제외(하나페이 제외)"
+      },
+      {
+        "category": "쿠팡·슈퍼마켓",
+        "text": "쿠팡",
+        "rate_or_amount": "2%",
+        "monthly_cap": "통합 5만원",
+        "condition": "실적 무관"
+      },
+      {
+        "category": "딜리버리",
+        "text": "배민·요기요·쿠팡이츠",
+        "rate_or_amount": "4%",
+        "monthly_cap": "4천/6천/1만원",
+        "condition": "전월 40만/80만/120만원"
+      },
+      {
+        "category": "온라인식품·쇼핑",
+        "text": "컬리·SSG·롯데ON·더현대닷컴",
+        "rate_or_amount": "4%",
+        "monthly_cap": "4천/8천/1.2만원",
+        "condition": "전월 40만/80만/120만원"
+      },
+      {
+        "category": "오픈마켓",
+        "text": "G마켓·옥션·11번가·티몬",
+        "rate_or_amount": "4%",
+        "monthly_cap": "4천/8천/1.2만원",
+        "condition": "전월 40만/80만/120만원"
+      },
+      {
+        "category": "택시",
+        "text": "카카오T·UT·택시업종",
+        "rate_or_amount": "4%",
+        "monthly_cap": "4천/8천/1.2만원",
+        "condition": "전월 40만/80만/120만원"
+      }
+    ],
+    "exclusions": [
+      "무이자할부 결제는 실적 포함·혜택 제외",
+      "상품권·여행·항공·티켓·도서·공연 매출 제외",
+      "국세·지방세·공과금·아파트관리비·4대보험료·학교 납입금·상품권·선불충전(하나머니 등)·부동산임대료 등은 실적·혜택 제외(공식 페이지 표기)"
+    ],
+    "promotions": [],
+    "recent_changes": [],
+    "target_text": "자유롭게 쓰고 받는 플러스 혜택",
+    "issuance": "PC/QR 신청, 혜택 조합은 하나페이 앱",
+    "app_features": [
+      "맞춤혜택조합: 발급 후 하나페이에서 기본서비스·혜택플러스 직접 변경",
+      "온가족 플러스: 가족카드당 월 1만원 캐시백(최대 4장), 차년도 연회비 1만원 지원",
+      "트래블로그 스위치(외화 하나머니 결제 시 원더 서비스 미제공)"
+    ],
+    "design_note": null,
+    "tags": [
+      "common_plus_select",
+      "select_pack",
+      "simple_flat",
+      "spend_free",
+      "reward_discount",
+      "tiered_perf",
+      "paymethod_bonus",
+      "online_shop",
+      "delivery",
+      "transit",
+      "group_pooling"
+    ],
+    "genz_fit": "mid",
+    "genz_fit_reason": "실적 없는 0.8% 기본할인 위에 배달·택시 팩을 고르는 구조라 소비가 흩어진 20대에 무난하다. 연회비 19,900원, 4% 팩은 실적 40만원부터.",
+    "source_url": "https://www.hanacard.co.kr/OPI41000000D.web?CD_PD_SEQ=16947",
+    "source_urls": [
+      "https://www.hanacard.co.kr/OPI41000000D.web?CD_PD_SEQ=16947"
+    ],
+    "checked": "2026-10-27",
+    "confidence": "high",
+    "note": "원더카드 2.0 시리즈(FREE 1.2만원, FREE+/DAILY/HAPPY/HAPPY+/LIVING/T 19,900원). FREE+는 FREE(0.7%) 기본에 혜택플러스(제휴연회비 7,900원)를 더한 조합."
+  },
+  {
+    "id": "mhana11",
+    "name": "원더카드 2.0 DAILY",
+    "official_name": "원더카드 2.0 DAILY",
+    "issuer": "하나카드",
+    "type": "credit",
+    "on_sale": true,
+    "role": "youth",
+    "launched": "2022-11-15",
+    "annual_fee_won": {
+      "domestic": 19900,
+      "overseas": 19900
+    },
+    "tiers": [
+      {
+        "min_prev_month_spend_won": 400000,
+        "benefit_summary": "딜리버리·편의점·택시·맛집·온라인식품 10%, 영상 스트리밍 40% (영역별 월 4천~8천원)"
+      },
+      {
+        "min_prev_month_spend_won": 800000,
+        "benefit_summary": "영역별 월 6천~1.2만원"
+      },
+      {
+        "min_prev_month_spend_won": 1200000,
+        "benefit_summary": "영역별 월 1만~1.5만원"
+      }
+    ],
+    "benefits": [
+      {
+        "category": "딜리버리",
+        "text": "배민·요기요·쿠팡이츠",
+        "rate_or_amount": "10%",
+        "monthly_cap": "4천/6천/1만원",
+        "condition": "전월 40만/80만/120만원"
+      },
+      {
+        "category": "편의점",
+        "text": "CU·GS25·세븐일레븐·이마트24",
+        "rate_or_amount": "10%",
+        "monthly_cap": "4천/8천/1.2만원",
+        "condition": "오프라인"
+      },
+      {
+        "category": "영상 스트리밍",
+        "text": "넷플릭스·디즈니+·웨이브·유튜브 프리미엄",
+        "rate_or_amount": "40%",
+        "monthly_cap": "8천/1.2만/1.5만원",
+        "condition": "월 정기결제"
+      },
+      {
+        "category": "택시",
+        "text": "카카오T·UT·택시업종",
+        "rate_or_amount": "10%",
+        "monthly_cap": "4천/8천/1.2만원",
+        "condition": null
+      },
+      {
+        "category": "대중교통",
+        "text": "버스·지하철",
+        "rate_or_amount": "3%(주요혜택 표기) / 10%(상세표 표기)",
+        "monthly_cap": "4천/8천/1.2만원",
+        "condition": "표기 불일치"
+      },
+      {
+        "category": "하나페이 맛집",
+        "text": "하나페이 앱 '원더카드 맛집' 가맹점",
+        "rate_or_amount": "10%",
+        "monthly_cap": "4천/8천/1.2만원",
+        "condition": "오프라인"
+      },
+      {
+        "category": "온라인식품·쇼핑",
+        "text": "컬리·SSG·롯데ON·더현대닷컴",
+        "rate_or_amount": "10%",
+        "monthly_cap": "4천/8천/1.2만원",
+        "condition": null
+      }
+    ],
+    "exclusions": [
+      "무이자할부 혜택 제외",
+      "국세·지방세·공과금·아파트관리비·4대보험료·학교 납입금·상품권·선불충전(하나머니 등)·부동산임대료 등은 실적·혜택 제외(공식 페이지 표기)"
+    ],
+    "promotions": [],
+    "recent_changes": [],
+    "target_text": "매일의 즐거움을 책임지는 실용적인 혜택",
+    "issuance": "PC/QR 신청, 혜택 조합은 하나페이 앱",
+    "app_features": [
+      "맞춤혜택조합: 발급 후 하나페이에서 기본서비스·혜택플러스 직접 변경",
+      "온가족 플러스: 가족카드당 월 1만원 캐시백(최대 4장), 차년도 연회비 1만원 지원",
+      "트래블로그 스위치(외화 하나머니 결제 시 원더 서비스 미제공)",
+      "하나페이 앱 데이터 기반 맛집 추천과 할인 연결"
+    ],
+    "design_note": null,
+    "tags": [
+      "select_pack",
+      "common_plus_select",
+      "reward_discount",
+      "tiered_perf",
+      "delivery",
+      "mart_daily",
+      "subscription_ott",
+      "transit",
+      "dining_cafe",
+      "ai_personalize"
+    ],
+    "genz_fit": "high",
+    "genz_fit_reason": "배달·편의점·OTT 40%·택시로 1인 가구 20대 생활비에 맞다. 실적 40만원부터 시작한다.",
+    "source_url": "https://www.hanacard.co.kr/OPI41000000D.web?CD_PD_SEQ=15857",
+    "source_urls": [
+      "https://www.hanacard.co.kr/OPI41000000D.web?CD_PD_SEQ=15857"
+    ],
+    "checked": "2026-10-27",
+    "confidence": "medium",
+    "note": "대중교통 할인율이 주요혜택 요약(3%)과 상세표(10%)에서 다르게 표기됨(공식 페이지 내 불일치)."
+  },
+  {
+    "id": "mhana12",
+    "name": "Young Hana+ 체크",
+    "official_name": "Young Hana+ 체크카드",
+    "issuer": "하나카드",
+    "type": "debit",
+    "on_sale": true,
+    "role": "youth",
+    "launched": "2021-06-14",
+    "annual_fee_won": {
+      "domestic": 0,
+      "overseas": 0
+    },
+    "tiers": [
+      {
+        "min_prev_month_spend_won": 100000,
+        "benefit_summary": "영역별 월 1천원, 통합 3천원"
+      },
+      {
+        "min_prev_month_spend_won": 300000,
+        "benefit_summary": "영역별 월 2천원, 통합 1만원"
+      },
+      {
+        "min_prev_month_spend_won": 600000,
+        "benefit_summary": "영역별 월 4천원, 통합 2만원"
+      }
+    ],
+    "benefits": [
+      {
+        "category": "페이결제",
+        "text": "하나페이·삼성페이·네이버페이 등 9개 페이 등록 결제",
+        "rate_or_amount": "0.5%",
+        "monthly_cap": "통합 한도 내",
+        "condition": null
+      },
+      {
+        "category": "편의점",
+        "text": "GS25·CU·이마트24·세븐일레븐",
+        "rate_or_amount": "5%",
+        "monthly_cap": "1천/2천/4천원",
+        "condition": "건당 1만원 이상"
+      },
+      {
+        "category": "딜리버리",
+        "text": "배달의민족·요기요",
+        "rate_or_amount": "5%",
+        "monthly_cap": "1천/2천/4천원",
+        "condition": "건당 2만원 이상"
+      },
+      {
+        "category": "대중교통",
+        "text": "시내·마을·광역·공항버스, 지하철, 공항철도",
+        "rate_or_amount": "10%",
+        "monthly_cap": "1천/2천/4천원",
+        "condition": "월 3만원 이상"
+      },
+      {
+        "category": "커피",
+        "text": "스타벅스·투썸플레이스",
+        "rate_or_amount": "20%",
+        "monthly_cap": "1천/2천/4천원",
+        "condition": "건당 1만원 이상"
+      }
+    ],
+    "exclusions": [
+      "시외·고속버스 제외",
+      "가맹점명이 페이로 잡히면 페이결제 0.5% 적용"
+    ],
+    "promotions": [],
+    "recent_changes": [],
+    "target_text": "영(Young)한 당신과 어울리는 체크카드",
+    "issuance": "비교통 만 14세 이상, 후불교통 만 18세 이상. 발급수수료 2,000원(다음달 말까지 1만원 이용 시 환급). MULTI 플라스틱 연결 가능",
+    "app_features": [
+      "하나원큐페이 앱 '멀티서비스'로 한 장의 플라스틱에 결제카드 교체",
+      "클리어 옵션: 카드번호·CVV 미표기, 앱에서 확인"
+    ],
+    "design_note": "클리어 옵션(번호 미표기 카드) 선택 가능. 같은 상품의 '금쪽이 Young Hana+' 에디션(CD_NO 16143) 존재",
+    "tags": [
+      "check_card",
+      "reward_cashback",
+      "tiered_perf",
+      "dining_cafe",
+      "transit",
+      "mart_daily",
+      "delivery",
+      "paymethod_bonus",
+      "txn_threshold"
+    ],
+    "genz_fit": "mid",
+    "genz_fit_reason": "전월 10만원부터 시작해 첫 카드로 쉽지만 통합 한도가 최대 월 2만원이고 출시 5년 차 상품이다.",
+    "source_url": "https://www.hanacard.co.kr/OPI41000000D.web?CD_PD_SEQ=13798",
+    "source_urls": [
+      "https://www.hanacard.co.kr/OPI41000000D.web?CD_PD_SEQ=13798"
+    ],
+    "checked": "2026-10-27",
+    "confidence": "high",
+    "note": "A.cards.json(ya06)은 카드고릴라 기반이었으나 공식 페이지로 확인. 딜리버리 조건은 건당 2만원 이상(기존 1만원 표기 정정)."
+  },
+  {
+    "id": "mhana13",
+    "name": "달달 하나 체크",
+    "official_name": "달달 하나 체크카드",
+    "issuer": "하나카드",
+    "type": "debit",
+    "on_sale": true,
+    "role": "youth",
+    "launched": "2024-08-08",
+    "annual_fee_won": {
+      "domestic": 0,
+      "overseas": 0
+    },
+    "tiers": [
+      {
+        "min_prev_month_spend_won": 300000,
+        "benefit_summary": "영역별 월 2천원, 통합 1만원"
+      },
+      {
+        "min_prev_month_spend_won": 700000,
+        "benefit_summary": "영역별 월 4천원, 통합 2만원"
+      },
+      {
+        "min_prev_month_spend_won": 1000000,
+        "benefit_summary": "영역별 월 6천원, 통합 3만원"
+      }
+    ],
+    "benefits": [
+      {
+        "category": "간편결제",
+        "text": "하나페이·삼성페이·네이버페이 등 8개 페이",
+        "rate_or_amount": "0.3%",
+        "monthly_cap": null,
+        "condition": null
+      },
+      {
+        "category": "쇼핑",
+        "text": "3대 백화점·대형마트·SSM·편의점",
+        "rate_or_amount": "5%",
+        "monthly_cap": "2천/4천/6천원",
+        "condition": "오프라인"
+      },
+      {
+        "category": "딜리버리",
+        "text": "배민·요기요",
+        "rate_or_amount": "5%",
+        "monthly_cap": "2천/4천/6천원",
+        "condition": "공식 앱 결제"
+      },
+      {
+        "category": "교통",
+        "text": "버스·지하철·카카오T·주유/LPG·EV충전",
+        "rate_or_amount": "5%",
+        "monthly_cap": "2천/4천/6천원",
+        "condition": "통합 월 3만원 이상"
+      },
+      {
+        "category": "커피전문점",
+        "text": "커피전문점 업종",
+        "rate_or_amount": "5%",
+        "monthly_cap": "2천/4천/6천원",
+        "condition": "오프라인"
+      },
+      {
+        "category": "생활비",
+        "text": "통신3사·전기/가스",
+        "rate_or_amount": "5%",
+        "monthly_cap": "2천/4천/6천원",
+        "condition": "건당 3만원 이상"
+      },
+      {
+        "category": "구독",
+        "text": "넷플릭스·디즈니+·웨이브·왓챠·유튜브 프리미엄·쿠팡와우",
+        "rate_or_amount": "10%",
+        "monthly_cap": "2천/4천/6천원",
+        "condition": "월 정기결제"
+      }
+    ],
+    "exclusions": [
+      "시외·고속버스·철도 제외",
+      "택시는 카카오T 앱 선결제만",
+      "알뜰폰 통신요금 제외"
+    ],
+    "promotions": [],
+    "recent_changes": [],
+    "target_text": "카드혜택까지 이렇게 달달 하나",
+    "issuance": "비교통 만 14세 이상, 후불교통 만 18세 이상, 발급수수료 2,000원(조건부 환급). 하나은행 달달하나통장 연계(언론)",
+    "app_features": [
+      "트래블로그 스위치(Visa): 해외결제를 외화 하나머니로 전환"
+    ],
+    "design_note": null,
+    "tags": [
+      "check_card",
+      "reward_point",
+      "tiered_perf",
+      "bank_bundle",
+      "subscription_ott",
+      "delivery",
+      "transit",
+      "fixed_bills",
+      "mart_daily",
+      "dining_cafe",
+      "travel_fx"
+    ],
+    "genz_fit": "high",
+    "genz_fit_reason": "20대 급여통장 연계 상품으로 구독 10%·생활비 5%를 묶었다. 첫 구간이 30만원으로 Young Hana+보다 높다.",
+    "source_url": "https://www.hanacard.co.kr/OPI41000000D.web?CD_PD_SEQ=18058",
+    "source_urls": [
+      "https://www.hanacard.co.kr/OPI41000000D.web?CD_PD_SEQ=18058"
+    ],
+    "checked": "2026-10-27",
+    "confidence": "high",
+    "note": "목록 API CD_PD_SEQ=94257(CD_NO 18058). 트래블로그 스위치는 국내외겸용(VISA)만 대상(기존 'VISA·Mastercard' 표기 정정). 20대 타깃 문구는 공식 페이지에 없고 카드고릴라 기사 제목 기준."
+  },
+  {
+    "id": "mhana14",
+    "name": "Young Hana 체크 with OKcashbag",
+    "official_name": "Young Hana 체크카드 with OKcashbag",
+    "issuer": "하나카드",
+    "type": "debit",
+    "on_sale": true,
+    "role": "youth",
+    "launched": "2016-09-01",
+    "annual_fee_won": {
+      "domestic": 0,
+      "overseas": 0
+    },
+    "tiers": [
+      {
+        "min_prev_month_spend_won": null,
+        "benefit_summary": "확인 불가(공식 페이지에 횟수 한도 중심 표기)"
+      }
+    ],
+    "benefits": [
+      {
+        "category": "커피",
+        "text": "스타벅스",
+        "rate_or_amount": "20%",
+        "monthly_cap": "월 1회/연 6회",
+        "condition": "건당 1만원 이상"
+      },
+      {
+        "category": "편의점",
+        "text": "GS25",
+        "rate_or_amount": "10%",
+        "monthly_cap": "월 2회",
+        "condition": "건당 1만원 이상"
+      },
+      {
+        "category": "대중교통",
+        "text": "버스·지하철",
+        "rate_or_amount": "1천 하나머니",
+        "monthly_cap": null,
+        "condition": "월 5만원 이상"
+      },
+      {
+        "category": "외식",
+        "text": "아웃백·온더보더·VIPS",
+        "rate_or_amount": "5%",
+        "monthly_cap": "월 1회/연 6회",
+        "condition": "건당 3만원 이상"
+      },
+      {
+        "category": "놀이공원",
+        "text": "롯데월드·에버랜드 자유이용권",
+        "rate_or_amount": "50%",
+        "monthly_cap": "월 1회/연 6회",
+        "condition": null
+      },
+      {
+        "category": "OK캐쉬백",
+        "text": "OK캐쉬백 가맹점에서 OCB 사용 시 사용액의 30% 하나머니",
+        "rate_or_amount": "30%",
+        "monthly_cap": null,
+        "condition": null
+      }
+    ],
+    "exclusions": [],
+    "promotions": [],
+    "recent_changes": [],
+    "target_text": "영(Young)한 당신을 위한 체크카드",
+    "issuance": "비교통 만 14세 이상, 발급수수료 2,000원(조건부 환급). 국제학생증(ISIC) 겸용 선택 가능",
+    "app_features": [],
+    "design_note": "국제학생증(ISIC) 결합 디자인 존재",
+    "tags": [
+      "check_card",
+      "reward_point",
+      "dining_cafe",
+      "transit",
+      "count_based",
+      "txn_threshold",
+      "target_special"
+    ],
+    "genz_fit": "mid",
+    "genz_fit_reason": "대학생 국제학생증 겸용이 차별점이지만 2016년 상품이라 혜택 구성이 낡았다.",
+    "source_url": "https://www.hanacard.co.kr/OPI41000000D.web?CD_PD_SEQ=5463",
+    "source_urls": [
+      "https://www.hanacard.co.kr/OPI41000000D.web?CD_PD_SEQ=5463"
+    ],
+    "checked": "2026-10-27",
+    "confidence": "medium",
+    "note": "목록 API CD_PD_SEQ=10024(CD_NO 5463). 실적 구간·통합 한도는 본문에서 확인하지 못함. K리그 축덕 에디션(94210)도 목록에 있음."
+  },
+  {
+    "id": "mhana15",
+    "name": "하나 나라사랑카드(체크)",
+    "official_name": "하나 나라사랑카드(체크)",
+    "issuer": "하나카드",
+    "type": "debit",
+    "on_sale": true,
+    "role": "youth",
+    "launched": "2025-12-15",
+    "annual_fee_won": {
+      "domestic": 0,
+      "overseas": 0
+    },
+    "tiers": [
+      {
+        "min_prev_month_spend_won": 0,
+        "benefit_summary": "Easy(실적 무관): 군마트(PX) 20~30%, 쿠팡/네이버플러스스토어 20%(월 3천원), CU 행사품목 10%. 군 급여이체 시 Desire: 택시·딜리버리 20%, 디지털라이프 10%, CGV 팝콘"
+      },
+      {
+        "min_prev_month_spend_won": 100000,
+        "benefit_summary": "Basic 통합 월 5천원(대중교통·스타벅스·레스토랑 20%, 온라인쇼핑 10% 등) + Desire와 같은 택시·배달·디지털 혜택, 놀이공원 50%"
+      },
+      {
+        "min_prev_month_spend_won": 200000,
+        "benefit_summary": "Basic 통합 월 1만원"
+      },
+      {
+        "min_prev_month_spend_won": 300000,
+        "benefit_summary": "Basic 통합 월 2만원"
+      },
+      {
+        "min_prev_month_spend_won": 500000,
+        "benefit_summary": "Basic 통합 월 3만원"
+      },
+      {
+        "min_prev_month_spend_won": 1000000,
+        "benefit_summary": "Basic 통합 월 5만원"
+      }
+    ],
+    "benefits": [
+      {
+        "category": "군마트(PX)",
+        "text": "건당 3만원 미만 30%(일 5천/월 1만), 3만원 이상 20%(일 2만/월 10만)",
+        "rate_or_amount": "20~30%",
+        "monthly_cap": "월 1만/10만원",
+        "condition": "실적 무관"
+      },
+      {
+        "category": "온라인",
+        "text": "쿠팡/네이버플러스스토어",
+        "rate_or_amount": "20%",
+        "monthly_cap": "일 1천/월 3천원",
+        "condition": "실적 무관"
+      },
+      {
+        "category": "택시",
+        "text": "택시·카카오T",
+        "rate_or_amount": "20%",
+        "monthly_cap": "5천원",
+        "condition": "군 급여이체 또는 전월 10만원↑"
+      },
+      {
+        "category": "딜리버리",
+        "text": "배민·쿠팡이츠·요기요",
+        "rate_or_amount": "20%",
+        "monthly_cap": "5천원(국군의날·현충일 일 1만원)",
+        "condition": "군 급여이체 또는 전월 10만원↑"
+      },
+      {
+        "category": "디지털라이프",
+        "text": "App Store·구글플레이·유튜브 프리미엄·넷플릭스·네이버플러스·쿠팡와우·네이버웹툰",
+        "rate_or_amount": "10%",
+        "monthly_cap": "2천원",
+        "condition": "군 급여이체 또는 전월 10만원↑"
+      },
+      {
+        "category": "대중교통",
+        "text": "버스·지하철",
+        "rate_or_amount": "20%",
+        "monthly_cap": "1만원(통합한도 내)",
+        "condition": "Basic, 전월 10만원↑"
+      },
+      {
+        "category": "스타벅스",
+        "text": "스타벅스",
+        "rate_or_amount": "20%",
+        "monthly_cap": "건당 4천원(통합한도 내)",
+        "condition": "건당 1만원↑"
+      },
+      {
+        "category": "온라인쇼핑",
+        "text": "무신사·29CM·G마켓·옥션·11번가",
+        "rate_or_amount": "10%",
+        "monthly_cap": "5천원(통합한도 내)",
+        "condition": "건당 1만원↑"
+      },
+      {
+        "category": "어학시험",
+        "text": "TOEIC·OPIc·TEPS·JPT·HSK",
+        "rate_or_amount": "5%",
+        "monthly_cap": "5천원(통합한도 내)",
+        "condition": null
+      },
+      {
+        "category": "금융",
+        "text": "현역병 상해보험 무료, 휴대폰 파손 보상(20개월), 트래블로그 스위치",
+        "rate_or_amount": "무료",
+        "monthly_cap": null,
+        "condition": null
+      }
+    ],
+    "exclusions": [
+      "시외·고속버스·철도는 대중교통 제외(광역교통 5% 별도)",
+      "대형시설물 입점점포 제외"
+    ],
+    "promotions": [],
+    "recent_changes": [],
+    "target_text": "나라를 사랑하는 마음, 혜택으로 돌아옵니다.",
+    "issuance": "군 입대자 대상(병역 연계), 후불교통 18세 이상. 하나은행 나라사랑통장 급여이체 연계",
+    "app_features": [
+      "트래블로그 스위치",
+      "NICE 신용부스트 연계(휴대폰케어 패키지)"
+    ],
+    "design_note": null,
+    "tags": [
+      "check_card",
+      "target_special",
+      "reward_cashback",
+      "tiered_perf",
+      "bank_bundle",
+      "delivery",
+      "transit",
+      "subscription_ott",
+      "online_shop",
+      "insurance_link",
+      "life_event"
+    ],
+    "genz_fit": "high",
+    "genz_fit_reason": "20대 초반 남성 입대자 거의 전원이 접하는 채널. 복무 중 생활 혜택과 신용 관리 기능으로 제대 후 하나 고객으로 붙잡는 장치다(해석).",
+    "source_url": "https://www.hanacard.co.kr/OPI41000000D.web?CD_PD_SEQ=18813",
+    "source_urls": [
+      "https://www.hanacard.co.kr/OPI41000000D.web?CD_PD_SEQ=18813",
+      "https://www.hanacard.co.kr/OPI22000000D.web?schID=pcd&mID=OPI22000000P"
+    ],
+    "checked": "2026-10-27",
+    "confidence": "high",
+    "note": "목록 API CD_PD_SEQ=94334(CD_NO 18813). 기존 DB c34의 혜택 내용은 공식과 일치. Basic 실적 구간별 통합 한도(5천~5만원)는 이번에 보강."
+  },
+  {
+    "id": "mhana16",
+    "name": "K-패스 하나 체크",
+    "official_name": "K-패스 하나 체크카드",
+    "issuer": "하나카드",
+    "type": "debit",
+    "on_sale": true,
+    "role": "youth",
+    "launched": "2023-07-04",
+    "annual_fee_won": {
+      "domestic": 0,
+      "overseas": 0
+    },
+    "tiers": [
+      {
+        "min_prev_month_spend_won": 300000,
+        "benefit_summary": "대중교통 10% 월 3천원, 드럭스토어 1% 월 1만원, 커피 1% 월 5천원"
+      },
+      {
+        "min_prev_month_spend_won": 600000,
+        "benefit_summary": "대중교통 10% 월 6천원"
+      }
+    ],
+    "benefits": [
+      {
+        "category": "대중교통",
+        "text": "버스·지하철(후불교통)",
+        "rate_or_amount": "10%",
+        "monthly_cap": "3천/6천원",
+        "condition": "전월 30만/60만원"
+      },
+      {
+        "category": "드럭스토어",
+        "text": "올리브영·다이소",
+        "rate_or_amount": "1%",
+        "monthly_cap": "1만원",
+        "condition": "전월 30만원"
+      },
+      {
+        "category": "커피",
+        "text": "스타벅스·커피빈",
+        "rate_or_amount": "1%",
+        "monthly_cap": "5천원",
+        "condition": "전월 30만원"
+      }
+    ],
+    "exclusions": [
+      "시외·고속버스, 교통카드 충전 제외"
+    ],
+    "promotions": [],
+    "recent_changes": [],
+    "target_text": null,
+    "issuance": "후불교통 만 18세 이상",
+    "app_features": [
+      "정부 K-패스 환급과 별도 중복"
+    ],
+    "design_note": null,
+    "tags": [
+      "check_card",
+      "govt_link",
+      "transit",
+      "reward_cashback",
+      "tiered_perf"
+    ],
+    "genz_fit": "mid",
+    "genz_fit_reason": "K-패스 환급(청년 우대)에 카드 할인 10%를 얹는 교통용 카드. 카드 자체 혜택은 작다.",
+    "source_url": "https://www.hanacard.co.kr/OPI41000000D.web?CD_PD_SEQ=17033",
+    "source_urls": [
+      "https://www.hanacard.co.kr/OPI41000000D.web?CD_PD_SEQ=17033"
+    ],
+    "checked": "2026-10-27",
+    "confidence": "high",
+    "note": ""
+  },
+  {
+    "id": "mhana17",
+    "name": "K-패스 하나 신용",
+    "official_name": "K-패스 하나 신용카드",
+    "issuer": "하나카드",
+    "type": "credit",
+    "on_sale": true,
+    "role": "other",
+    "launched": "2023-07-04",
+    "annual_fee_won": {
+      "domestic": 17000,
+      "overseas": 17000
+    },
+    "tiers": [
+      {
+        "min_prev_month_spend_won": 500000,
+        "benefit_summary": "대중교통 10% 월 1만원, 드럭스토어 10%(일 1천/월 1만원), 커피 10%(월 5천원)"
+      },
+      {
+        "min_prev_month_spend_won": 1000000,
+        "benefit_summary": "대중교통 10% 월 2만원"
+      }
+    ],
+    "benefits": [
+      {
+        "category": "대중교통",
+        "text": "버스·지하철",
+        "rate_or_amount": "10%",
+        "monthly_cap": "1만/2만원",
+        "condition": "전월 50만/100만원"
+      },
+      {
+        "category": "드럭스토어",
+        "text": "올리브영·다이소",
+        "rate_or_amount": "10%",
+        "monthly_cap": "일 1천/월 1만원",
+        "condition": "전월 50만원"
+      },
+      {
+        "category": "커피",
+        "text": "스타벅스·커피빈",
+        "rate_or_amount": "10%",
+        "monthly_cap": "5천원",
+        "condition": "전월 50만원"
+      }
+    ],
+    "exclusions": [
+      "무이자할부 할인 제외"
+    ],
+    "promotions": [],
+    "recent_changes": [],
+    "target_text": null,
+    "issuance": "일반 신청",
+    "app_features": [],
+    "design_note": null,
+    "tags": [
+      "govt_link",
+      "transit",
+      "reward_discount",
+      "tiered_perf",
+      "dining_cafe"
+    ],
+    "genz_fit": "mid",
+    "genz_fit_reason": "올리브영·다이소 10%가 20대 소비와 맞지만 전월 50만원 문턱이 높다.",
+    "source_url": "https://www.hanacard.co.kr/OPI41000000D.web?CD_PD_SEQ=17016",
+    "source_urls": [
+      "https://www.hanacard.co.kr/OPI41000000D.web?CD_PD_SEQ=17016"
+    ],
+    "checked": "2026-10-27",
+    "confidence": "high",
+    "note": ""
+  },
+  {
+    "id": "mhana18",
+    "name": "토스뱅크 하나카드 Day",
+    "official_name": "토스뱅크 하나카드 Day",
+    "issuer": "하나카드",
+    "type": "credit",
+    "on_sale": true,
+    "role": "plcc",
+    "launched": "2025-07-03",
+    "annual_fee_won": {
+      "domestic": 20000,
+      "overseas": 20000
+    },
+    "tiers": [
+      {
+        "min_prev_month_spend_won": 500000,
+        "benefit_summary": "8개 생활영역 10%, 영역별 월 5천원, 통합 월 3만원"
+      },
+      {
+        "min_prev_month_spend_won": 1000000,
+        "benefit_summary": "영역별 월 1만원, 통합 월 5만원"
+      }
+    ],
+    "benefits": [
+      {
+        "category": "생활 8영역",
+        "text": "커피(스타벅스·커피빈·이디야·투썸·할리스)·쇼핑(이마트·롯데마트·홈플러스·토스쇼핑)·보험·통신(알뜰폰 포함)·아파트관리비·학원·병원·골프",
+        "rate_or_amount": "10%",
+        "monthly_cap": "영역별 5천/1만, 통합 3만/5만원",
+        "condition": "전월 50만/100만원"
+      }
+    ],
+    "exclusions": [
+      "무이자할부(부분 포함) 할인 제외",
+      "창고형 매장 제외"
+    ],
+    "promotions": [],
+    "recent_changes": [],
+    "target_text": null,
+    "issuance": "토스뱅크 앱에서만 신청",
+    "app_features": [],
+    "design_note": null,
+    "tags": [
+      "plcc_brand",
+      "bank_bundle",
+      "reward_discount",
+      "tiered_perf",
+      "dining_cafe",
+      "fixed_bills",
+      "mart_daily",
+      "insurance_link"
+    ],
+    "genz_fit": "low",
+    "genz_fit_reason": "관리비·학원·병원·골프 등 가구 생활비 중심이라 20대 1인 소비와 거리가 있다. 채널(토스뱅크)만 젊다.",
+    "source_url": "https://www.hanacard.co.kr/OPI41000000D.web?CD_PD_SEQ=18669",
+    "source_urls": [
+      "https://www.hanacard.co.kr/OPI41000000D.web?CD_PD_SEQ=18669",
+      "https://www.card-gorilla.com/contents/detail/3975"
+    ],
+    "checked": "2026-10-27",
+    "confidence": "high",
+    "note": "기존 DB gc07 수치와 일치. 출시일 2025-07-03(공식 표기)로 보강, 판매 중 확인."
+  },
+  {
+    "id": "mhana19",
+    "name": "토스뱅크 하나카드 Wide",
+    "official_name": "토스뱅크 하나카드 Wide",
+    "issuer": "하나카드",
+    "type": "credit",
+    "on_sale": false,
+    "role": "plcc",
+    "launched": "2024-04-19",
+    "annual_fee_won": {
+      "domestic": 20000,
+      "overseas": 20000
+    },
+    "tiers": [
+      {
+        "min_prev_month_spend_won": 0,
+        "benefit_summary": "국내외 전 가맹점 1% 청구할인(일시불)"
+      },
+      {
+        "min_prev_month_spend_won": 400000,
+        "benefit_summary": "2% 청구할인, 월 한도 10만원"
+      }
+    ],
+    "benefits": [
+      {
+        "category": "전 가맹점",
+        "text": "국내/해외 전 가맹점 신용 일시불",
+        "rate_or_amount": "1%/2%",
+        "monthly_cap": "10만원",
+        "condition": "전월 40만원 기준"
+      }
+    ],
+    "exclusions": [
+      "할부 거래 할인 제외(선결제해도 제외)"
+    ],
+    "promotions": [],
+    "recent_changes": [
+      "공식 페이지: '토스뱅크 하나카드 Wide는 발급이 중단되었습니다'(중단 시점 확인 불가)",
+      "2025-04 앱에서 할인율이 사전공지 없이 1%로 표시되는 오류 논란, 양사는 전산 표기 오류라 해명(뉴스토마토 2025-04-23)"
+    ],
+    "target_text": null,
+    "issuance": "토스뱅크 앱 발급(중단)",
+    "app_features": [],
+    "design_note": null,
+    "tags": [
+      "plcc_brand",
+      "bank_bundle",
+      "simple_flat",
+      "spend_free",
+      "reward_discount",
+      "tiered_perf",
+      "zero_floor"
+    ],
+    "genz_fit": "mid",
+    "genz_fit_reason": "실적 없는 1% 단순 할인이라 20대에 쉬웠으나 발급이 중단됐다.",
+    "source_url": "https://www.hanacard.co.kr/OPI41000000D.web?CD_PD_SEQ=18023",
+    "source_urls": [
+      "https://www.hanacard.co.kr/OPI41000000D.web?CD_PD_SEQ=18023",
+      "https://www.newstomato.com/ReadNews.aspx?no=1259919",
+      "https://www.ajunews.com/view/20240802102148272"
+    ],
+    "checked": "2026-10-27",
+    "confidence": "high",
+    "note": "단종(발급 중단). 공식 출시 시기 표기 2024-04-19, 언론 출시 보도는 2024-08-02로 차이. 기존 DB gc06 on_sale=null → false 정정."
+  },
+  {
+    "id": "mhana20",
+    "name": "토스 하나카드 Ver 2.0",
+    "official_name": "토스(Toss)하나카드 Ver 2.0",
+    "issuer": "하나카드",
+    "type": "credit",
+    "on_sale": true,
+    "role": "plcc",
+    "launched": "2023-06-27",
+    "annual_fee_won": {
+      "domestic": 15000,
+      "overseas": 15000
+    },
+    "tiers": [
+      {
+        "min_prev_month_spend_won": 0,
+        "benefit_summary": "해외 모든 가맹점 2% 토스포인트(월 1만), 해외 ATM 건당 $3 면제"
+      }
+    ],
+    "benefits": [
+      {
+        "category": "해외",
+        "text": "해외 모든 가맹점 토스포인트",
+        "rate_or_amount": "2%",
+        "monthly_cap": "1만 토스포인트",
+        "condition": "실적 무관, Visa만"
+      },
+      {
+        "category": "해외 ATM",
+        "text": "해외인출수수료 건당 US$3 면제(1.1%는 부과)",
+        "rate_or_amount": "면제",
+        "monthly_cap": null,
+        "condition": "하나은행 결제계좌"
+      }
+    ],
+    "exclusions": [
+      "국내 PG 경유 해외사이트 결제는 해외 아님",
+      "해외 현금서비스 제외"
+    ],
+    "promotions": [],
+    "recent_changes": [],
+    "target_text": null,
+    "issuance": "토스 앱에서만 신청",
+    "app_features": [],
+    "design_note": null,
+    "tags": [
+      "plcc_brand",
+      "travel_fx",
+      "spend_free",
+      "reward_point"
+    ],
+    "genz_fit": "mid",
+    "genz_fit_reason": "토스 앱 채널은 20대 친화적이지만 혜택이 해외 2% 하나뿐이다.",
+    "source_url": "https://www.hanacard.co.kr/OPI41000000D.web?CD_PD_SEQ=17669",
+    "source_urls": [
+      "https://www.hanacard.co.kr/OPI41000000D.web?CD_PD_SEQ=17669"
+    ],
+    "checked": "2026-10-27",
+    "confidence": "high",
+    "note": ""
+  },
+  {
+    "id": "mhana21",
+    "name": "런데이 하나카드",
+    "official_name": "런데이 하나카드",
+    "issuer": "하나카드",
+    "type": "credit",
+    "on_sale": true,
+    "role": "plcc",
+    "launched": "2026-07-03",
+    "annual_fee_won": {
+      "domestic": 20000,
+      "overseas": 20000
+    },
+    "tiers": [
+      {
+        "min_prev_month_spend_won": 400000,
+        "benefit_summary": "러닝 1km당 200 하나머니(월 5천), 구독 40%(월 5천), 커피/베이커리·편의점·올리브영/다이소 10%(영역별 월 5천)"
+      },
+      {
+        "min_prev_month_spend_won": 800000,
+        "benefit_summary": "각 영역 월 1만 하나머니"
+      }
+    ],
+    "benefits": [
+      {
+        "category": "러닝",
+        "text": "런데이 앱 기록 월 누적 거리 1km당 200 하나머니",
+        "rate_or_amount": "200P/km",
+        "monthly_cap": "5천/1만",
+        "condition": "전월 40만/80만원"
+      },
+      {
+        "category": "구독",
+        "text": "넷플릭스·디즈니+·웨이브·유튜브 프리미엄·멜론·벅스·FLO·스포티파이",
+        "rate_or_amount": "40%",
+        "monthly_cap": "5천/1만",
+        "condition": "월 자동납부"
+      },
+      {
+        "category": "커피/베이커리",
+        "text": "투썸·폴바셋·이디야·커피빈·스타벅스·파리바게뜨·뚜레쥬르·파리크라상",
+        "rate_or_amount": "10%",
+        "monthly_cap": "5천/1만",
+        "condition": null
+      },
+      {
+        "category": "편의점",
+        "text": "CU·GS25·세븐일레븐·이마트24",
+        "rate_or_amount": "10%",
+        "monthly_cap": "5천/1만",
+        "condition": "오프라인"
+      },
+      {
+        "category": "생활/뷰티",
+        "text": "올리브영·다이소",
+        "rate_or_amount": "10%",
+        "monthly_cap": "5천/1만",
+        "condition": null
+      }
+    ],
+    "exclusions": [
+      "런데이 앱 탈퇴 시 러닝 적립 미제공"
+    ],
+    "promotions": [],
+    "recent_changes": [],
+    "target_text": null,
+    "issuance": "런데이 앱에서만 신청",
+    "app_features": [
+      "런데이 앱에서 월 누적 거리와 예상 적립 하나머니 확인"
+    ],
+    "design_note": null,
+    "tags": [
+      "plcc_brand",
+      "challenge",
+      "reward_point",
+      "tiered_perf",
+      "subscription_ott",
+      "dining_cafe",
+      "mart_daily"
+    ],
+    "genz_fit": "high",
+    "genz_fit_reason": "러닝 크루 붐과 운동 기록 보상을 결합해 2030 취미 소비를 겨냥했다. 공식 연령 문구는 없다.",
+    "source_url": "https://www.hanacard.co.kr/OPI41000000D.web?CD_PD_SEQ=19357",
+    "source_urls": [
+      "https://www.hanacard.co.kr/OPI41000000D.web?CD_PD_SEQ=19357",
+      "https://ceoscoredaily.com/page/view/2026081313561028598"
+    ],
+    "checked": "2026-10-27",
+    "confidence": "high",
+    "note": "공식 출시 시기 표기 2026-07-03, 신청 개시 보도는 2026-08-13(CEO스코어데일리)."
+  },
+  {
+    "id": "mhana22",
+    "name": "HoYoverse 체크",
+    "official_name": "HoYoverse 체크카드",
+    "issuer": "하나카드",
+    "type": "debit",
+    "on_sale": true,
+    "role": "plcc",
+    "launched": "2022-05-09",
+    "annual_fee_won": {
+      "domestic": 0,
+      "overseas": 0
+    },
+    "tiers": [
+      {
+        "min_prev_month_spend_won": null,
+        "benefit_summary": "확인 불가(편의점·베이커리·커피 건당 1만원↑ 5%, 대중교통 월 5만원↑ 5%, 통합 월 5천 하나머니)"
+      }
+    ],
+    "benefits": [
+      {
+        "category": "생활",
+        "text": "CU·GS25·세븐일레븐, 파리바게뜨·뚜레쥬르, 스타벅스·커피빈",
+        "rate_or_amount": "5%",
+        "monthly_cap": "통합 5천 하나머니",
+        "condition": "건당 1만원 이상, 업종별 월 5회"
+      },
+      {
+        "category": "대중교통",
+        "text": "버스·지하철·철도(KTX/SRT 포함)",
+        "rate_or_amount": "5%",
+        "monthly_cap": "통합 5천 하나머니",
+        "condition": "월 5만원 이상"
+      }
+    ],
+    "exclusions": [
+      "승차권 판매대리점 결제 제외"
+    ],
+    "promotions": [],
+    "recent_changes": [],
+    "target_text": "HoYoverse 게임을 즐기는 분이라면 누구나",
+    "issuance": "비교통 만 14세 이상, 발급수수료 2,000원(조건부 환급)",
+    "app_features": [],
+    "design_note": "원신 스라임랜드·통통폭탄, 미해결사건부, 붕괴3rd 등 게임 IP 디자인 선택",
+    "tags": [
+      "check_card",
+      "plcc_brand",
+      "reward_point",
+      "dining_cafe",
+      "mart_daily",
+      "transit",
+      "txn_threshold",
+      "count_based"
+    ],
+    "genz_fit": "mid",
+    "genz_fit_reason": "게임 IP 디자인으로 팬덤을 끌지만 혜택은 월 5천원 수준이다.",
+    "source_url": "https://www.hanacard.co.kr/OPI41000000D.web?CD_PD_SEQ=15000",
+    "source_urls": [
+      "https://www.hanacard.co.kr/OPI41000000D.web?CD_PD_SEQ=15000"
+    ],
+    "checked": "2026-10-27",
+    "confidence": "medium",
+    "note": "목록 API CD_PD_SEQ=19064(CD_NO 15000). 전월실적 조건 원문 확인 불가."
+  },
+  {
+    "id": "mhana23",
+    "name": "PBA 하나 체크",
+    "official_name": "PBA 하나 체크카드",
+    "issuer": "하나카드",
+    "type": "debit",
+    "on_sale": true,
+    "role": "plcc",
+    "launched": "2026-10-01",
+    "annual_fee_won": {
+      "domestic": 0,
+      "overseas": 0
+    },
+    "tiers": [
+      {
+        "min_prev_month_spend_won": 300000,
+        "benefit_summary": "당구장 50% 월 5천원, 음식점·편의점·택시·주유·병원 5% 영역별 2천원, 통합 1만원"
+      },
+      {
+        "min_prev_month_spend_won": 700000,
+        "benefit_summary": "당구장 월 1만원, 5% 영역 4천원, 통합 2만원"
+      }
+    ],
+    "benefits": [
+      {
+        "category": "당구장",
+        "text": "당구장 업종(오프라인)",
+        "rate_or_amount": "50%",
+        "monthly_cap": "5천/1만원",
+        "condition": null
+      },
+      {
+        "category": "생활",
+        "text": "음식점·편의점·택시(카카오T 포함)·주유/LPG·병원/약국",
+        "rate_or_amount": "5%",
+        "monthly_cap": "영역별 2천/4천원",
+        "condition": "오프라인"
+      }
+    ],
+    "exclusions": [
+      "온라인 예약 결제 제외",
+      "배달앱 결제 제외"
+    ],
+    "promotions": [],
+    "recent_changes": [],
+    "target_text": "응원하는 마음을 카드에 담다! 스타선수 에디션",
+    "issuance": "일반 신청",
+    "app_features": [],
+    "design_note": "프로당구(PBA) 스타선수 에디션 디자인",
+    "tags": [
+      "check_card",
+      "plcc_brand",
+      "reward_cashback",
+      "tiered_perf",
+      "dining_cafe",
+      "fuel",
+      "transit"
+    ],
+    "genz_fit": "low",
+    "genz_fit_reason": "스포츠 팬덤 에디션이지만 당구 팬층은 20대 중심이 아니다(해석).",
+    "source_url": "https://www.hanacard.co.kr/OPI41000000D.web?CD_PD_SEQ=19522",
+    "source_urls": [
+      "https://www.hanacard.co.kr/OPI41000000D.web?CD_PD_SEQ=19522"
+    ],
+    "checked": "2026-10-27",
+    "confidence": "high",
+    "note": "2026-10 신상품. 팬덤 에디션 전략 사례로 수록."
+  },
+  {
+    "id": "mhana24",
+    "name": "#MY WAY 카드",
+    "official_name": "#MY WAY(샵 마이웨이) 카드",
+    "issuer": "하나카드",
+    "type": "credit",
+    "on_sale": true,
+    "role": "other",
+    "launched": "2022-08-26",
+    "annual_fee_won": {
+      "domestic": 20000,
+      "overseas": 20000
+    },
+    "tiers": [
+      {
+        "min_prev_month_spend_won": 200000,
+        "benefit_summary": "교통·커피·편의점 건당 300원 각 월 10회, 구독·주유·쇼핑·생활요금 건당 3천원 각 월 1회"
+      },
+      {
+        "min_prev_month_spend_won": 600000,
+        "benefit_summary": "각 20회 / 2회"
+      },
+      {
+        "min_prev_month_spend_won": 1000000,
+        "benefit_summary": "각 30회 / 3회"
+      }
+    ],
+    "benefits": [
+      {
+        "category": "대중교통",
+        "text": "버스·지하철",
+        "rate_or_amount": "건당 300원",
+        "monthly_cap": "10/20/30회",
+        "condition": null
+      },
+      {
+        "category": "커피",
+        "text": "스타벅스·커피빈·이디야·투썸",
+        "rate_or_amount": "건당 300원",
+        "monthly_cap": "10/20/30회",
+        "condition": null
+      },
+      {
+        "category": "편의점",
+        "text": "GS25·CU·이마트24·세븐일레븐",
+        "rate_or_amount": "건당 300원",
+        "monthly_cap": "10/20/30회",
+        "condition": null
+      },
+      {
+        "category": "디지털 구독",
+        "text": "유튜브 프리미엄·넷플릭스·쿠팡와우",
+        "rate_or_amount": "건당 3천원",
+        "monthly_cap": "1/2/3회",
+        "condition": null
+      },
+      {
+        "category": "주유/EV충전",
+        "text": "4대 정유사·EV",
+        "rate_or_amount": "건당 3천원",
+        "monthly_cap": "1/2/3회",
+        "condition": null
+      },
+      {
+        "category": "쇼핑",
+        "text": "대형마트·백화점·쿠팡·G마켓·옥션·11번가·GS SHOP·롯데홈쇼핑",
+        "rate_or_amount": "건당 3천원",
+        "monthly_cap": "1/2/3회",
+        "condition": null
+      },
+      {
+        "category": "생활요금",
+        "text": "통신·전기·도시가스 자동이체",
+        "rate_or_amount": "건당 3천원",
+        "monthly_cap": "1/2/3회",
+        "condition": null
+      }
+    ],
+    "exclusions": [
+      "대중교통 이용금액은 실적 제외"
+    ],
+    "promotions": [],
+    "recent_changes": [],
+    "target_text": "출근에서 퇴근까지 나의 하루를 함께하는 카드",
+    "issuance": "일반 신청",
+    "app_features": [],
+    "design_note": null,
+    "tags": [
+      "reward_flat_refund",
+      "count_based",
+      "tiered_perf",
+      "transit",
+      "dining_cafe",
+      "mart_daily",
+      "subscription_ott",
+      "fuel",
+      "fixed_bills"
+    ],
+    "genz_fit": "mid",
+    "genz_fit_reason": "소액 결제가 잦은 출퇴근 사회초년생에게 건당 정액이 직관적이다. 실적 20만원부터.",
+    "source_url": "https://www.hanacard.co.kr/OPI41000000D.web?CD_PD_SEQ=15444",
+    "source_urls": [
+      "https://www.hanacard.co.kr/OPI41000000D.web?CD_PD_SEQ=15444"
+    ],
+    "checked": "2026-10-27",
+    "confidence": "high",
+    "note": "목록 API CD_PD_SEQ=19109(CD_NO 15444)."
+  },
+  {
+    "id": "mhana25",
+    "name": "하나 원큐 카드",
+    "official_name": "하나 원큐 카드",
+    "issuer": "하나카드",
+    "type": "credit",
+    "on_sale": true,
+    "role": "other",
+    "launched": "2020-11-27",
+    "annual_fee_won": {
+      "domestic": 15000,
+      "overseas": 15000
+    },
+    "tiers": [
+      {
+        "min_prev_month_spend_won": 0,
+        "benefit_summary": "국내 0.8%(한도 없음), 하나페이 1.8%(월 10만), 해외 1.8%(월 1만)"
+      }
+    ],
+    "benefits": [
+      {
+        "category": "전 가맹점",
+        "text": "국내 전 가맹점",
+        "rate_or_amount": "0.8%",
+        "monthly_cap": "없음",
+        "condition": "실적·횟수 무관"
+      },
+      {
+        "category": "하나페이",
+        "text": "하나페이 등록 결제",
+        "rate_or_amount": "1.8%",
+        "monthly_cap": "10만 하나머니",
+        "condition": null
+      },
+      {
+        "category": "해외",
+        "text": "해외 전 가맹점",
+        "rate_or_amount": "1.8%",
+        "monthly_cap": "1만 하나머니",
+        "condition": null
+      }
+    ],
+    "exclusions": [
+      "무이자할부 적립 제외",
+      "국세·지방세·공과금·아파트관리비·4대보험료·학교 납입금·상품권·선불충전(하나머니 등)·부동산임대료 등은 실적·혜택 제외(공식 페이지 표기)"
+    ],
+    "promotions": [],
+    "recent_changes": [],
+    "target_text": null,
+    "issuance": "일반 신청",
+    "app_features": [],
+    "design_note": null,
+    "tags": [
+      "simple_flat",
+      "spend_free",
+      "reward_point",
+      "paymethod_bonus",
+      "no_cap"
+    ],
+    "genz_fit": "mid",
+    "genz_fit_reason": "실적 걱정 없는 단순 적립형으로 하나페이 결제를 1.8%로 유도한다.",
+    "source_url": "https://www.hanacard.co.kr/OPI41000000D.web?CD_PD_SEQ=12942",
+    "source_urls": [
+      "https://www.hanacard.co.kr/OPI41000000D.web?CD_PD_SEQ=12942"
+    ],
+    "checked": "2026-10-27",
+    "confidence": "high",
+    "note": ""
+  }
+]

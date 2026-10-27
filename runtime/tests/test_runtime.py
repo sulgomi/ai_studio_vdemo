@@ -414,15 +414,23 @@ class E2ETests(unittest.TestCase):
     def test_v2_main_path_replays(self):
         res, o = self.run_e2e("genz-credit-v2-alt", "_unit_v2a", {"H2": {"id": 1, "choice": 0}})
         try:
-            self.assertEqual(res["twin_adopt"], 0.43)
+            self.assertEqual(res["twin_adopt"], 0.437)
             self.assertEqual(res["counters"]["concept_rework"], 1)       # 가드레일 문구 fix 로 1회
+        finally:
+            shutil.rmtree(o.run.dir, ignore_errors=True)
+
+    def test_v2_second_cell_replays(self):
+        res, o = self.run_e2e("genz-credit-v2-p2", "_unit_v2b", {"H2": {"id": 1, "choice": 1}})
+        try:
+            self.assertEqual(res["twin_adopt"], 0.387)
+            self.assertEqual(res["counters"]["concept_rework"], 1)
         finally:
             shutil.rmtree(o.run.dir, ignore_errors=True)
 
     def test_v2_graduation_branch_replays(self):
         res, o = self.run_e2e("genz-credit-v2", "_unit_v2", {"H2": {"id": 1, "choice": 2}})
         try:
-            self.assertEqual(res["twin_adopt"], 0.438)
+            self.assertEqual(res["twin_adopt"], 0.392)
             self.assertTrue(os.path.exists(f"{o.run.dir}/final/기획서.md"))
         finally:
             shutil.rmtree(o.run.dir, ignore_errors=True)

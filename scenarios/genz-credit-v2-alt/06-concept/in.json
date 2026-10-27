@@ -1,6 +1,6 @@
 {
-  "run_id": "v2alt",
-  "request_id": "v2alt-concept-r2",
+  "run_id": "m1",
+  "request_id": "m1-concept-r2",
   "agent": "concept",
   "contract_version": "1.0",
   "mode": "workflow",
@@ -26,36 +26,33 @@
       "seg": "genz",
       "need": "digital",
       "engine_rank": 1,
-      "rationale": "코드 1위이고 rank_stability가 1.0으로 12개 영역 중 유일하게 가중치를 흔들어도 상위 3에서 빠지지 않는다. 구독·디지털은 소비자 조사 1순위 니즈이고 must_have 첫 항목이 간편결제·모바일카드 등록과 앱 내 발급·관리다. 경쟁 DB 50종 중 auto_best 카드는 1종이고 가장 비슷한 카카오뱅크 K-패스 프렌즈 체크와 유사도 0.29다. 외식·배달은 세그먼트 월 소비 가정치 24로 가장 큰 영역이고, 방식과 니즈의 연결에 PM 가정(assumed_links)이 없다.",
-      "evidence_ids": [
-        "T2",
-        "tag:auto_best",
-        "need:digital",
-        "tag:dining_cafe",
-        "ev:STF15",
-        "ev:TRF15"
-      ],
-      "deviates_from_engine": false,
-      "deviation_reason": null,
-      "risk": "외식·카페 혜택 카드가 이미 17종 몰린 영역이라 자동 배정 외의 차별점이 약하고, 대학생이 페이 할인을 신용카드 못지않은 혜택으로 본 사례(ev:TRF15, 신뢰도 low)처럼 페이 앱 자체 혜택과 겹치면 카드가 휴면화될 수 있으며, 코드도 이 영역을 가정 의존으로 표시했다.",
-      "origin": "score",
-      "ceiling": 0.528,
-      "feasible": true,
       "area_id": "A-genz-digital-auto_best-dining",
       "mechanisms": [
         "auto_best"
       ],
       "domain": "dining",
-      "statement": "외식·배달을 간편결제로 가장 많이 쓰는 GenZ가 카드·페이별 혜택 조건을 스스로 비교하지 않아도, 그 달 이용 패턴에 맞는 혜택이 자동으로 적용되는 방식이 시장에 거의 없다.",
-      "unmet_gap": "경쟁 DB 50종 중 auto_best 카드는 1종이고 가장 비슷한 카카오뱅크 K-패스 프렌즈 체크와 유사도 0.29다. 외식·카페 혜택은 17종, 청구할인형은 24종으로 혜택 자체는 많다. 소비자 조사 must_have는 앱 내 관리를 요구하지만 혜택 비교의 번거로움에 대한 고객 불만을 확인한 근거는 없다.",
-      "why_now": "20대 간편결제 이용자의 90.6%가 주 지급수단으로 카드를 쓰고 2025년 간편지급 일평균 이용이 늘었다(T2). 20대는 지급수단 선택에서 편리성을 가장 중시한다(ev:STF15, 44.8%). 자동 최적 혜택 수요를 직접 보여 주는 시그널은 없어 근거는 중간 수준이다.",
+      "origin": "score",
+      "deviates_from_engine": false,
+      "deviation_reason": null,
+      "statement": "GenZ가 외식·배달에서 카드를 쓸 때, 구독·디지털 니즈는 높은데 혜택을 직접 골라 관리해야 하는 부담이 남아 있다. 이용 패턴에 따라 혜택을 자동 배정하는 방식(auto_best)으로 풀 수 있다.",
+      "unmet_gap": "auto_best를 쓰는 카드는 130종 중 2종이고 가장 비슷한 카드는 카카오뱅크 K-패스 프렌즈 체크(유사도 0.29)다. 소비자 조사 1순위 니즈이나 고객이 현재 카드에 불만족한다는 직접 근거는 입력에 없다. 구독 단점 1위가 관리 부족 낭비 77.4%다(ev:WTT6).",
+      "why_now": "T2에서 간편지급 이용이 늘고 20대 간편결제 의존이 크다. 20대 OTT 이용률 99.1%, 유료 구독형 83.6%로 20대 수치가 있다(ev:TRF10, ev:TRF11).",
       "hypotheses_to_validate": [
-        "GenZ는 같은 원가라면 업종을 미리 정한 청구할인보다 이용 패턴에 따라 자동 적용되는 혜택을 더 선호한다(반대 결과면 기각).",
-        "카드를 페이 앱에 등록해 써도 자동 최적 혜택이 페이 앱 자체 할인과 구별된다고 느낀다.",
-        "자동 배정 결과를 앱에서 확인할 수 있으면 혜택 구조가 단순하다고 평가한다(복잡하다는 평가가 다수면 기각)."
+        "혜택 자동 배정을 GenZ가 직접 고르는 방식보다 선호하는가(자동 배정에 대한 통제감 상실 우려가 없는가)",
+        "외식·배달 영역에서 auto_best가 기존 외식 혜택 카드와 구분되어 인식되는가"
       ],
-      "kill_criteria": "가상 고객 검증에서 자동 최적 안의 채택 의향이 목표 0.38 미만이거나 이탈 사유 1위가 '페이 앱 혜택과 차이 없음'이면, 또는 컨셉 3안이 모두 가장 비슷한 기존 카드와 유사도 0.5를 넘으면 접는다.",
+      "kill_criteria": "컨셉 3안 모두 가상 고객 채택 의향이 목표 0.38 미만이거나, 가장 비슷한 기존 카드와의 유사도 0.5를 넘는 안만 나옴.",
       "confidence": "medium",
+      "rationale": "코드 1순위이고 중요도, 미충족 축이 높으며 흔들림 검사 안정도가 1.0이다. 소비자 조사 1순위 니즈(digital)에 방식 공백이 겹친다.",
+      "evidence_ids": [
+        "T2",
+        "tag:auto_best",
+        "need:digital",
+        "ev:TRF10",
+        "ev:TRF11",
+        "ev:WTT6"
+      ],
+      "risk": "근거 자료(ev:TRF10, ev:WTT6)는 구독·OTT 이용 사실이고 외식·배달 영역의 직접 근거는 아니며, 외식·카페 태그 카드가 67종으로 붐비고 점수가 PM 가정치에 의존한다.",
       "evidence_refs": [
         "ev:TRF10",
         "ev:TRF11",
@@ -187,96 +184,86 @@
     },
     "comp_empty": [
       {
-        "tag": "social",
-        "count": 0,
-        "reason": "50종 중 0종. 친구·지인과 혜택을 주고받는 소셜 구조를 가진 카드가 없다."
-      },
-      {
-        "tag": "group_pooling",
-        "count": 0,
-        "reason": "50종 중 0종. 여러 사람이 혜택을 모아 나눠 쓰는 구조가 없다."
-      },
-      {
-        "tag": "ai_personalize",
-        "count": 0,
-        "reason": "50종 중 0종. 유사한 auto_best(자동 최적 혜택)도 1종뿐이다."
-      },
-      {
-        "tag": "anti_cap",
-        "count": 0,
-        "reason": "50종 중 0종. 실적 구간제가 14종인 데 비해 실적조건 완화 태그는 없고, 실적 부족분 보전도 2종이다."
-      },
-      {
         "tag": "miss_refund",
         "count": 0,
-        "reason": "50종 중 0종. 놓친 혜택을 돌려주는 구조를 가진 카드가 없다."
+        "reason": "130종 중 0종. 쓰지 못한 혜택을 돌려주는 구조를 가진 경쟁 카드가 없음"
       },
       {
-        "tag": "life_event",
+        "tag": "social",
         "count": 0,
-        "reason": "50종 중 0종. 취업, 독립 같은 생애 전환 시점에 혜택이 바뀌는 카드가 없다."
+        "reason": "130종 중 0종. 친구·지인과 혜택을 주고받는 소셜형 구조가 없음"
       },
       {
         "tag": "benefit_rental",
         "count": 0,
-        "reason": "50종 중 0종. 유사한 월 변경형(monthly_switch)은 3종이다."
+        "reason": "130종 중 0종. 혜택을 바꿔 쓰는 구독형 구조가 없음(자사는 Deep Once 1종 보유)"
+      },
+      {
+        "tag": "ai_personalize",
+        "count": 1,
+        "reason": "130종 중 1종(하나 원더카드 2.0 DAILY)뿐. 개인화 혜택을 전면에 둔 카드가 거의 없음"
+      },
+      {
+        "tag": "group_pooling",
+        "count": 1,
+        "reason": "130종 중 1종(하나 원더카드 2.0 FREE+)뿐. 혜택 한도를 나눠 쓰는 구조가 거의 없음"
+      },
+      {
+        "tag": "anti_cap",
+        "count": 2,
+        "reason": "130종 중 2종. 130종의 80종이 실적 구간제인 데 비해 실적조건 완화를 내세운 카드는 드묾"
+      },
+      {
+        "tag": "life_event",
+        "count": 2,
+        "reason": "130종 중 2종. 졸업·입사 같은 생애 이벤트 전환 혜택은 거의 없음"
       },
       {
         "tag": "challenge",
-        "count": 1,
-        "reason": "50종 중 1종(처음(ANNIVERSE))뿐이며 target에 young이 있는 카드에는 없다."
-      },
-      {
-        "tag": "subscription_ledger",
-        "count": 0,
-        "reason": "50종 중 0종. 구독/OTT 혜택은 12종이 갖고 있으나 구독 장부와 결제 예정 알림 기능을 갖춘 카드는 없다."
-      },
-      {
-        "tag": "esg_green",
-        "count": 0,
-        "reason": "50종 중 0종. 친환경 소비 혜택을 가진 카드가 없다."
+        "count": 4,
+        "reason": "130종 중 4종. 챌린지형 혜택은 소수 카드에 한정되고 young 신용카드에서는 일부(모니모페이카드 등)에만 있음"
       }
     ],
     "comp_crowded": [
       {
-        "tag": "reward_discount",
-        "count": 24,
-        "reason": "50종 중 24종으로 태그 집계 1위. 청구할인형은 대부분의 발급사가 이미 채택한 보상 방식이다."
-      },
-      {
-        "tag": "travel_fx",
-        "count": 20,
-        "reason": "50종 중 20종으로 집계 2위. 해외결제·환전 혜택이 신용카드와 체크카드에 넓게 퍼져 있다."
-      },
-      {
-        "tag": "online_shop",
-        "count": 19,
-        "reason": "50종 중 19종으로 집계 3위. 온라인쇼핑 할인·적립은 PLCC 제휴 카드와 생활형 카드에 공통으로 들어 있다."
+        "tag": "tiered_perf",
+        "count": 80,
+        "reason": "경쟁 카드 130종 중 80종으로 1위. 전월실적 구간에 따라 혜택이 달라지는 구조가 표준이라 차별 여지가 작음"
       },
       {
         "tag": "dining_cafe",
-        "count": 17,
-        "reason": "50종 중 17종으로 집계 4위. 외식·카페는 생활 소비 혜택의 기본 구성이다."
+        "count": 67,
+        "reason": "130종 중 67종으로 2위. 외식·카페는 GenZ 생활 소비의 기본 영역이라 대부분 카드가 이미 포함"
+      },
+      {
+        "tag": "reward_discount",
+        "count": 60,
+        "reason": "130종 중 60종으로 3위. 청구할인형은 가장 흔한 보상 방식"
+      },
+      {
+        "tag": "online_shop",
+        "count": 53,
+        "reason": "130종 중 53종으로 4위. 온라인쇼핑 할인·적립은 young 타깃 카드 다수가 보유"
+      },
+      {
+        "tag": "transit",
+        "count": 52,
+        "reason": "130종 중 52종으로 5위. 대중교통·모빌리티 혜택은 체크카드와 K-패스 연계 카드에 폭넓게 퍼져 있음"
+      },
+      {
+        "tag": "travel_fx",
+        "count": 48,
+        "reason": "130종 중 48종으로 6위. 해외결제·환전은 트래블 체크카드와 PLCC 제휴 카드에 널리 분포"
       },
       {
         "tag": "mart_daily",
-        "count": 14,
-        "reason": "50종 중 14종으로 집계 5위(실적 구간제와 동률). 편의점·마트 혜택은 생활형 카드에 고정적으로 포함된다."
-      },
-      {
-        "tag": "tiered_perf",
-        "count": 14,
-        "reason": "50종 중 14종이 실적 구간제를 쓰고 있어 전월실적 조건 구조가 서로 비슷하다."
-      },
-      {
-        "tag": "reward_point",
-        "count": 13,
-        "reason": "50종 중 13종으로 집계 7위. 포인트 적립형은 PLCC 제휴 카드와 트래블 카드에서 흔하다."
+        "count": 45,
+        "reason": "130종 중 45종으로 7위. 편의점·마트는 생활형 카드의 기본 구성"
       },
       {
         "tag": "subscription_ott",
-        "count": 12,
-        "reason": "50종 중 12종으로 집계 공동 8위(대중교통, 공과금과 동률). 상위 8개 경계가 동률이라 구독/OTT를 포함했다."
+        "count": 44,
+        "reason": "130종 중 44종으로 8위. 구독/OTT 할인은 GenZ 대상 카드 다수가 공통으로 넣고 있음"
       }
     ],
     "consumer": {
@@ -381,17 +368,21 @@
       "guardrail_fixes": [
         {
           "item": "이름·한 줄 약속과 실제 작동 방식 일치(과장·불일치)",
-          "suggestion": "one_liner 끝에 조건을 넣는다. 예: '구독 결제 목록과 결제 예정일을 앱 장부로 보여 주고, 직전 3개월 이용액이 더 큰 영역(외식·배달 또는 구독·디지털)에 1.2%, 다른 영역에 0.8%를 다음 달 청구 시 캐시백하는 카드(고객이 설정한 월 예산 이내 이용액 기준, 영역별 월 한도 5천원, 연회비 5천원)'. 이름이나 핵심 혜택이 나오는 지면에는 '영역은 직전 3개월 이용액 합계로 정해지며 직접 고를 수 없음'을 함께 쓴다."
+          "suggestion": "hook을 '결제 내역으로 정해진 1위 영역에 적립하고, 정한 월 예산 안에서 쓰면 다음 달 1위 영역 적립률에 0.2%p가 더해집니다(전월 이용실적 10만원 이상, 영역별 월 한도 5천원 안)'처럼 다음 달 적용, 실적 조건, 한도를 함께 쓴다. 혜택 형태는 mechanics 기준인 포인트 적립으로 one_liner, key_benefit, hook을 통일하거나, 캐시백으로 부를 경우 포인트의 현금성 전환 방식을 mechanics에 추가한다. 가칭의 '지킴'이 소비 절제를 약속하는 것으로 읽히지 않는지 이름 후보를 함께 검토한다."
         },
         {
           "item": "광고 표현 위험(단정·과장·오인 소지, 합산 혜택 오인)",
-          "suggestion": "혜택률을 쓸 때마다 '영역별 1.2% 또는 0.8%, 영역별 월 한도 5천원, 월 예산 이내 이용액 기준'을 한 문장에 함께 쓰고, 1.2%만 단독으로 강조하지 않는다. hook은 '이용액이 큰 영역으로 자동 배정되는 구조'로 바꾸고 '혜택이 붙는'은 '캐시백 비율이 정해지는'으로 고친다. 앱 화면의 예산 사용률과 배정 결과에는 '매월 말일 판정 전 중간 집계이며 바뀔 수 있음'을 표시한다."
+          "suggestion": "광고 문구에서 1.0%와 0.2%p를 합쳐 하나의 비율로 쓰지 않고, '1위 영역 1.0%(조건 충족 시 다음 달 0.2%p 가산), 나머지 두 영역 0.4%, 영역별 월 한도 5천원, 전월 이용실적 10만원 이상인 달 한정'을 한 문장 안에 함께 쓴다. '예산 지킴'은 '예산 이내 이용 시 가산'처럼 조건을 서술하는 문구로 바꾸고 소비 절제나 소비 관리 효과를 암시하는 표현은 쓰지 않는다. 안내 시 1.0%가 외식·배달이 1위일 때의 기본값 기준임을 함께 밝힌다."
+        },
+        {
+          "item": "체리피킹·역선택 대비(채택 고객 유형별 손익 참고)",
+          "suggestion": "혜택 규모를 줄이는 대신 가산 조건을 조인다. 예산에 상한(예: 고객의 직전 3개월 월평균 이용액 대비 일정 비율, 비율값은 재무가 정함)을 두거나, 예산 이내 판정에 '이용액이 예산 하한을 넘는 달'만 인정하는 조건을 두는 안을 상품팀이 설계값으로 정한다. 재무는 체리피커 0.37와 휴면 위험형 0.18 비중에서 현 한도 5천원, 분기 1회 변경 제한이 충분한지 판단해 기획서 리스크에 남기고, 시뮬레이션에 예산 설정 행동이 반영되지 않았다면 그 한계를 함께 적는다."
         }
       ],
       "metrics": {
-        "adopt": 0.43,
-        "adopterProfit": 1.55,
-        "cherry": 0.38,
+        "adopt": 0.437,
+        "adopterProfit": 2.61,
+        "cherry": 0.37,
         "topReject": "inertia"
       },
       "human_note": "needs_human 항목은 H3에서 담당 부서 지정. 재작업 대상 아님"
@@ -553,115 +544,349 @@
           }
         ],
         "explicit_target_text": null,
-        "source_url": "https://card.nonghyup.com/servlet/IpCc1411R.act"
+        "source_url": "https://card.nonghyup.com/servlet/IpCc1411R.act",
+        "is_own": false
       },
       {
-        "id": "c11",
-        "name": "American Express Gold Edition2",
-        "official_name": "American Express® Gold Card Edition2",
-        "issuer": "현대",
+        "id": "mhyundai21",
+        "name": "쏘카카드",
+        "official_name": "쏘카카드",
+        "issuer": "현대카드",
         "type": "credit",
-        "similarity": 0.17,
+        "similarity": 0.2,
         "annual_fee_won": {
-          "domestic": null,
-          "overseas": null
+          "domestic": 10000,
+          "overseas": 10000
         },
-        "min_prev_month_spend_won": 500000,
+        "min_prev_month_spend_won": 300000,
         "on_sale": true,
         "headline_benefits": [
           {
-            "category": "연간 바우처",
-            "text": "연 25만원 상당 바우처(20만원권 1매, 5만원권 1매)",
-            "rate_or_amount": "25만원",
-            "condition": "발급 첫해 누적 250만원 이상, 2차년도 이후 전년 2,400만원 이상"
+            "category": "쏘카",
+            "text": "쏘카 앱 결제",
+            "rate_or_amount": "3%(기본1+추가2)",
+            "condition": "월 한도 추가 적립 월 이용 30만원까지; 당월 30만원"
           },
           {
-            "category": "공항 라운지",
-            "text": "전 세계 공항 라운지 연 10회 무료",
-            "rate_or_amount": "연 10회",
-            "condition": "본인 회원, 전월 50만원 이상"
+            "category": "특별가맹점",
+            "text": "외식·스타벅스/폴바셋/이디야·CGV/메가박스/롯데시네마·특급호텔·프리미엄아울렛·버스/지하철/택시",
+            "rate_or_amount": "3%",
+            "condition": "월 한도 월 이용 30만원까지; 당월 30만원"
           },
           {
-            "category": "멤버십 리워즈 추가",
-            "text": "해외·특급호텔·여행·항공·골프·면세점 1,000원당 3MR",
-            "rate_or_amount": "1,000원당 3MR",
-            "condition": "영역별 월 4,500MR"
+            "category": "일반",
+            "text": "일반 가맹점",
+            "rate_or_amount": "1%",
+            "condition": "한도 없음"
           }
         ],
         "explicit_target_text": null,
-        "source_url": "https://www.hyundaicard.com/docfiles/resources/mo/html/carDtl/AMGLE2_MO.html"
+        "source_url": "https://www.hyundaicard.com/docfiles/resources/mo/html/carDtl/SCHC_MO.html",
+        "is_own": false
       },
       {
-        "id": "c30",
-        "name": "BC 바로 에어 맥스",
-        "official_name": "BC 바로 에어 맥스",
-        "issuer": "BC",
+        "id": "msamsung10",
+        "name": "삼성 iD ON",
+        "official_name": "삼성 iD ON 카드",
+        "issuer": "삼성카드",
         "type": "credit",
-        "similarity": 0.17,
+        "similarity": 0.2,
         "annual_fee_won": {
-          "domestic": 43000,
-          "overseas": 43000
+          "domestic": 20000,
+          "overseas": 20000
         },
-        "min_prev_month_spend_won": 500000,
+        "min_prev_month_spend_won": 0,
         "on_sale": true,
         "headline_benefits": [
           {
-            "category": "기본 적립",
-            "text": "카드 사용액 1,500원당 1 스카이패스 마일리지",
-            "rate_or_amount": "1,500원당 1마일리지",
-            "condition": "한도 명시 없음"
+            "category": "자동 맞춤",
+            "text": "커피전문점·배달앱(배민·요기요)·델리(쉐이크쉑·써브웨이·파리바게뜨·배스킨·던킨) 중 월 이용 최대 1개 영역 30%",
+            "rate_or_amount": "30%",
+            "condition": "월 한도 10,000원; 전월 30만원, 선택 없이 자동"
           },
           {
-            "category": "MAX 적립 #1",
-            "text": "쿠팡·컬리·다이소·올리브영·스타벅스·투썸플레이스·해외 가맹점 1,500원당 1마일리지 추가",
-            "rate_or_amount": "1,500원당 +1마일리지",
-            "condition": "전월 국내 가맹점 50만원 이상, 월 최대 2,000마일리지"
+            "category": "교통·통신·스트리밍",
+            "text": "대중교통·택시, 이동통신(알뜰폰 일부), 스트리밍 정기결제 10%",
+            "rate_or_amount": "10%",
+            "condition": "월 한도 1만/2만원; 전월 30/60만원"
           },
           {
-            "category": "MAX 적립 #2",
-            "text": "아파트관리비 자동납부 1,500원당 1마일리지",
-            "rate_or_amount": "1,500원당 +1마일리지",
-            "condition": "전월실적 조건, 월 최대 500마일리지"
+            "category": "온라인·해외",
+            "text": "온라인 간편결제·해외 3%(미달·한도 초과 시 1%)",
+            "rate_or_amount": "3%/1%",
+            "condition": "월 한도 5천/1만원; 전월 30/60만원"
           }
         ],
         "explicit_target_text": null,
-        "source_url": "https://m.bccard.com/app/mobileweb/CardDetail.do?exec=cardDetail&cardGdsNo=104453"
+        "source_url": "https://www.samsungcard.com/home/card/cardinfo/PGHPPCCCardCardinfoDetails001?code=AAP1731",
+        "is_own": false
       },
       {
-        "id": "gc08",
-        "name": "청춘대로 톡톡카드",
-        "official_name": "청춘대로 톡톡카드",
-        "issuer": "KB국민카드",
+        "id": "msamsung16",
+        "name": "스타벅스 삼성카드",
+        "official_name": "스타벅스 삼성카드",
+        "issuer": "삼성카드",
         "type": "credit",
-        "similarity": 0.17,
+        "similarity": 0.2,
         "annual_fee_won": {
-          "domestic": null,
-          "overseas": null
+          "domestic": 30000,
+          "overseas": 30000
         },
-        "min_prev_month_spend_won": null,
-        "on_sale": null,
+        "min_prev_month_spend_won": 0,
+        "on_sale": true,
         "headline_benefits": [
+          {
+            "category": "스타벅스",
+            "text": "스타벅스 누적 1만원당 별 5개(50만원 이상) / 3만원당 1개(미만)",
+            "rate_or_amount": "별 5개/1만원",
+            "condition": "월 한도 50개; 전월 50만원"
+          },
+          {
+            "category": "충전",
+            "text": "스타벅스 선불카드 충전 3만원당 별 1개",
+            "rate_or_amount": "별 1개/3만원",
+            "condition": "월 한도 30개; 실적 무관"
+          },
+          {
+            "category": "일반",
+            "text": "국내외 가맹점 3만원당 별 1개",
+            "rate_or_amount": "별 1개/3만원",
+            "condition": "월 한도 100개; 전월 50만원"
+          }
+        ],
+        "explicit_target_text": null,
+        "source_url": "https://www.samsungcard.com/home/card/cardinfo/PGHPPCCCardCardinfoDetails001?code=AAP1870",
+        "is_own": false
+      }
+    ],
+    "own_refs": [
+      {
+        "id": "mshinhan06",
+        "name": "Pick E 체크",
+        "official_name": "신한카드 Pick E 체크",
+        "issuer": "신한카드",
+        "type": "debit",
+        "similarity": 0.22,
+        "annual_fee_won": {
+          "domestic": 0,
+          "overseas": 0
+        },
+        "min_prev_month_spend_won": 0,
+        "on_sale": true,
+        "headline_benefits": [
+          {
+            "category": "편의점",
+            "text": "GS25·CU·세븐일레븐·이마트24(오프라인)",
+            "rate_or_amount": "10%",
+            "condition": "월 한도 1회 1천P, 일 1회·월 3회; 전월 20만원 이상"
+          },
           {
             "category": "커피",
-            "text": "[Great 서비스] 스타벅스 청구할인",
-            "rate_or_amount": "50%",
-            "condition": ""
-          },
-          {
-            "category": "패스트푸드",
-            "text": "[Enjoy 서비스] 버거/패스트푸드 청구할인",
-            "rate_or_amount": "20%",
-            "condition": ""
-          },
-          {
-            "category": "간편결제",
-            "text": "[Check 서비스] 간편결제(Pay) 청구할인",
+            "text": "커피전문점 업종",
             "rate_or_amount": "10%",
-            "condition": ""
+            "condition": "월 한도 1회 1천P, 일 1회·월 3회; 전월 20만원 이상"
+          },
+          {
+            "category": "해외",
+            "text": "해외 일시불(해외겸용 Master)",
+            "rate_or_amount": "1%",
+            "condition": "월 한도 1만P; 전월 20만원 이상"
+          }
+        ],
+        "explicit_target_text": "E들은 이 카드를 픽하지!",
+        "source_url": "https://www.shinhancard.com/pconts/html/card/apply/check/1221536_2206.html",
+        "is_own": true
+      },
+      {
+        "id": "mshinhan05",
+        "name": "Deep Dream 체크",
+        "official_name": "신한카드 Deep Dream 체크",
+        "issuer": "신한카드",
+        "type": "debit",
+        "similarity": 0.2,
+        "annual_fee_won": {
+          "domestic": 0,
+          "overseas": 0
+        },
+        "min_prev_month_spend_won": 0,
+        "on_sale": true,
+        "headline_benefits": [
+          {
+            "category": "모두드림",
+            "text": "국내외 전 가맹점",
+            "rate_or_amount": "0.2%",
+            "condition": "월 한도 한도 없음; 실적 무관"
+          },
+          {
+            "category": "더해드림",
+            "text": "DREAM 영역(할인점·편의점/올리브영/다이소·CGV/롯데시네마/커피·해외·이동통신)",
+            "rate_or_amount": "0.6%",
+            "condition": "월 한도 통합 한도; 전월 20만원 이상"
+          },
+          {
+            "category": "챙겨드림",
+            "text": "DREAM 영역 중 당월 최다 이용 1개 영역 자동 선정",
+            "rate_or_amount": "1.0%",
+            "condition": "월 한도 통합 한도; 전월 20만원 이상"
           }
         ],
         "explicit_target_text": null,
-        "source_url": "https://m.kbcard.com/CRD/DVIEW/MCAMCXHIACRC0002?allianceCode=09174&mainCC=b"
+        "source_url": "https://www.shinhancard.com/pconts/html/card/apply/check/1188313_2206.html",
+        "is_own": true
+      },
+      {
+        "id": "mshinhan07",
+        "name": "Pick I 체크",
+        "official_name": "신한카드 Pick I 체크",
+        "issuer": "신한카드",
+        "type": "debit",
+        "similarity": 0.2,
+        "annual_fee_won": {
+          "domestic": 0,
+          "overseas": 0
+        },
+        "min_prev_month_spend_won": 0,
+        "on_sale": true,
+        "headline_benefits": [
+          {
+            "category": "편의점",
+            "text": "GS25·CU·세븐일레븐·이마트24(오프라인)",
+            "rate_or_amount": "10%",
+            "condition": "월 한도 1회 1천P, 일 1회·월 3회; 전월 20만원 이상"
+          },
+          {
+            "category": "커피",
+            "text": "커피전문점 업종",
+            "rate_or_amount": "10%",
+            "condition": "월 한도 1회 1천P, 일 1회·월 3회; 전월 20만원 이상"
+          },
+          {
+            "category": "해외",
+            "text": "해외 일시불(해외겸용 Master)",
+            "rate_or_amount": "1%",
+            "condition": "월 한도 1만P; 전월 20만원 이상"
+          }
+        ],
+        "explicit_target_text": null,
+        "source_url": "https://www.shinhancard.com/pconts/html/card/apply/check/1223966_2206.html",
+        "is_own": true
+      },
+      {
+        "id": "mshinhan01",
+        "name": "처음",
+        "official_name": "신한카드 처음",
+        "issuer": "신한카드",
+        "type": "credit",
+        "similarity": 0.21,
+        "annual_fee_won": {
+          "domestic": 15000,
+          "overseas": 18000
+        },
+        "min_prev_month_spend_won": 0,
+        "on_sale": true,
+        "headline_benefits": [
+          {
+            "category": "오늘도 5%",
+            "text": "음식점(한·중·일·양식·일반대중·패스트푸드·뷔페)·카페(스타벅스·블루보틀·투썸·이디야·폴바셋·빽다방 등)·편의점 4사·쿠팡·컬리",
+            "rate_or_amount": "5% 마이신한포인트",
+            "condition": "월 한도 5천/1만/2만P(구간별); 1회 이용금액 1만원까지, 일 최대 1천P, 편의점·음식점·카페는 오프라인, 배달앱 제외"
+          },
+          {
+            "category": "일상 속 5%",
+            "text": "올리브영·다이소(오프라인)·오늘의집, 택시·KTX·해외 일시불, 무신사·지그재그·W컨셉·29CM·에이블리",
+            "rate_or_amount": "5% 마이신한포인트",
+            "condition": "월 한도 5천/1만/2만P; 1회 5만원까지, 패션은 공식 앱·웹만"
+          },
+          {
+            "category": "정기결제",
+            "text": "통신(SKT·KT·LGU+) 10%, OTT(넷플릭스·유튜브프리미엄·티빙·디즈니+·SPOTV NOW) 15%, 멤버십(쿠팡와우·네이버플러스) 20%",
+            "rate_or_amount": "10~20% 마이신한포인트",
+            "condition": "월 한도 5천/1만/2만P; 통신 월 1회 3만원까지 자동납부, OTT는 공식 홈페이지 정기결제(인앱결제 제외)"
+          },
+          {
+            "category": "소비관리 보너스①계획소비",
+            "text": "매월 1~5일 목표 소비금액 설정 시 500P, 실제 이용금액이 목표 ±5만원 이내면 5,000P",
+            "rate_or_amount": "500P+5,000P",
+            "condition": "월 한도 3천/6천/1만P(구간별 통합); 다음 달 25일 적립"
+          }
+        ],
+        "explicit_target_text": "고민없이 적립받고 소비도 관리하는 나의 첫 신용카드.",
+        "source_url": "https://www.shinhancard.com/pconts/html/card/apply/credit/1227020_2207.html",
+        "is_own": true
+      },
+      {
+        "id": "mshinhan08",
+        "name": "플리",
+        "official_name": "신한카드 플리",
+        "issuer": "신한카드",
+        "type": "credit",
+        "similarity": 0.2,
+        "annual_fee_won": {
+          "domestic": 15000,
+          "overseas": 18000
+        },
+        "min_prev_month_spend_won": 0,
+        "on_sale": true,
+        "headline_benefits": [
+          {
+            "category": "Daily",
+            "text": "국내 신판 결제일 할인",
+            "rate_or_amount": "SOL페이 결제 0.9%, 그 외 0.5%, 해외 0.5%",
+            "condition": "월 한도 한도 없음; 실적 무관"
+          },
+          {
+            "category": "Weekly 쿠폰",
+            "text": "신한 SOL페이에서 매주 쿠폰 '받기' 후 국내 5천원 이상 결제 시 자동 적용",
+            "rate_or_amount": "월 3천원 1회 + 1천원 3회",
+            "condition": "월 한도 월 6천원; 전월 40만원 이상"
+          },
+          {
+            "category": "Monthly 단골",
+            "text": "전월 최다 이용 오프라인 가맹점(My Pick) 3·6·9번째 이용",
+            "rate_or_amount": "1천P×3",
+            "condition": "월 한도 3천P; 전월 40만원 이상, 건당 5천원"
+          }
+        ],
+        "explicit_target_text": "내 취향 가득 담은 나만의 플레이리스트.",
+        "source_url": "https://www.shinhancard.com/pconts/html/card/apply/credit/1216829_2207.html",
+        "is_own": true
+      },
+      {
+        "id": "mshinhan20",
+        "name": "Simple Plan",
+        "official_name": "신한카드 Simple Plan",
+        "issuer": "신한카드",
+        "type": "credit",
+        "similarity": 0.2,
+        "annual_fee_won": {
+          "domestic": 15000,
+          "overseas": 18000
+        },
+        "min_prev_month_spend_won": 0,
+        "on_sale": true,
+        "headline_benefits": [
+          {
+            "category": "심플 할인",
+            "text": "국내 이용금액",
+            "rate_or_amount": "1%",
+            "condition": "월 한도 한도 없음; 실적 무관"
+          },
+          {
+            "category": "심플 할인",
+            "text": "해외 이용금액",
+            "rate_or_amount": "2%",
+            "condition": "월 한도 한도 없음; 실적 무관, Master"
+          },
+          {
+            "category": "무이자",
+            "text": "국내 5만원 이상 2~3개월 무이자",
+            "rate_or_amount": "-",
+            "condition": "무이자 적용 건은 할인 제외"
+          }
+        ],
+        "explicit_target_text": "실적 없이 한도 없이 Simple하게.",
+        "source_url": "https://www.shinhancard.com/pconts/html/card/apply/credit/1237253_2207.html",
+        "is_own": true
       }
     ],
     "invest_rules": []

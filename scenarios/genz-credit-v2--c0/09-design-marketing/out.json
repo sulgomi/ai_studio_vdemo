@@ -1,0 +1,1291 @@
+{
+  "run_id": "c0",
+  "request_id": "c0-design_marketing-r2",
+  "agent": "design_marketing",
+  "contract_version": "1.0",
+  "model": "opus",
+  "status": "ok",
+  "answer": "이름 후보 3개 중 '졸업반'을 추천하고, 열두 달 연체 없이 쓰면 13개월 차부터 전월실적 조건이 해제되는 구조를 졸업 비유로 푼 전략, 세로형 시안 3종(CHALK, GLASS, TASSEL), 릴스 18초·유튜브 25초·홍보 20초 스토리보드를 만들었습니다. 이 카드는 사람이 고른 대안 후보로, 가상 고객 시뮬레이션에서 채택 의향 0.27이 목표 0.38에 못 미치고 체리피커(0.58) 손익 1.01이 하한 1.5 아래라 리스크에 그대로 적었습니다(실제 전환율 아님). 재조사 신호(간편결제, 교통 환급 중복, 20대 연체 부담)를 채널과 리스크에 반영했으나 숏폼·동영상 채널 근거는 여전히 없어 needs_research로 남겼고 영상은 H5 승인 전이라 렌더하지 않았습니다.",
+  "result": {
+    "naming": {
+      "candidates": [
+        {
+          "name": "졸업반",
+          "rationale": "발급 후 12개월을 졸업을 앞둔 한 해로 비유한다. 아직 졸업 전이라는 뜻이라 연습 구간 조건이 적용되는 실제 작동 방식과 맞고, 해제를 약속하는 말이 들어 있지 않다(G1).",
+          "similarity_max": 0.0,
+          "similar_to": null
+        },
+        {
+          "name": "열두달",
+          "rationale": "연습 구간 12개월을 그대로 이름으로 쓴다. 기간을 먼저 보여 줘 조건이 해제되는 시점이 요건 충족 이후라는 점을 오해하기 어렵다.",
+          "similarity_max": 0.0,
+          "similar_to": null
+        },
+        {
+          "name": "다음학기",
+          "rationale": "연체 없이 한 해를 마치면 다음 단계로 넘어간다는 구조를 학기에 빗댄다. 졸업 후 연체 시 연습 구간으로 돌아가는 규칙과도 어울린다.",
+          "similarity_max": 0.0,
+          "similar_to": null
+        }
+      ],
+      "recommended": "졸업반"
+    },
+    "strategy": {
+      "positioning": {
+        "statement": "첫 신용카드를 쓰는 만 19~29세에게, 열두 달 연체 없이 쓰면 13개월 차부터 전월실적 조건이 해제되는 졸업형 카드다.",
+        "for_whom": "첫 신용카드를 쓰는 만 19~29세",
+        "what_it_is": "12개월 연습 후 실적조건이 해제되는 카드",
+        "why_different": "매달 구간을 다시 판정하지 않고 이력으로 조건이 해제되는 구조"
+      },
+      "insight": {
+        "tension": "매달 전월실적을 맞춰야 혜택이 나와 첫 신용카드부터 계산이 피곤하다",
+        "truth": "연체 없이 써 온 기록을 인정받아 조건 걱정 없이 쓰고 싶다",
+        "assumed": true,
+        "validate_with": "첫 카드 발급 예정자 대상 짧은 설문과 가입 화면 졸업 요건 문구 A/B 시험"
+      },
+      "personas": [
+        {
+          "name": "아침 편의점 사회초년생",
+          "variant": "CHALK",
+          "moment": "출근 전 편의점 계산대에서 탭 결제할 때",
+          "need": "첫 카드의 실적 규칙을 매달 계산하지 않고 쓰고 싶다"
+        },
+        {
+          "name": "통학하는 졸업반 학생",
+          "variant": "GLASS",
+          "moment": "버스 정류장에서 앱 진행률을 확인할 때",
+          "need": "졸업까지 남은 조건을 한눈에 보고 싶다"
+        },
+        {
+          "name": "밤 배달 직장인",
+          "variant": "TASSEL",
+          "moment": "퇴근 후 방에서 배달을 주문할 때",
+          "need": "조건 해제 뒤에도 한도가 같다는 걸 미리 알고 싶다"
+        }
+      ],
+      "pillars": [
+        {
+          "title": "한 해는 연습",
+          "message": "첫 12개월은 전월실적을 채운 달에 고른 두 영역 할인",
+          "proof": "연습 구간 12개월, 선택 2개 영역 할인, 영역별 월 한도 적용"
+        },
+        {
+          "title": "기록이 조건을 연다",
+          "message": "연체 없이 쓰면 13개월 차부터 실적조건이 해제된다",
+          "proof": "12개월 연체 0회, 9개월 이상 월 1건 이상 이용 시 해제"
+        },
+        {
+          "title": "규칙은 그대로 보인다",
+          "message": "해제 뒤에도 한도는 같고 연체하면 연습 구간으로",
+          "proof": "졸업 후 한도·변경 제한 유지, 연체 시 복귀, 3개월 전 앱 알림"
+        }
+      ],
+      "tone": {
+        "summary": "첫 카드 곁에서 규칙을 차분히 알려 주는 선배 말투",
+        "do": [
+          "조건 해제와 졸업 요건을 같은 크기로 쓴다",
+          "한도 4천원 유지를 함께 말한다",
+          "연체 시 복귀 규칙을 숨기지 않는다"
+        ],
+        "dont": [
+          "실적 걱정 끝 식의 단정 표현",
+          "할인과 적립을 더한 비율 표현",
+          "다른 카드와 비교하거나 이름 언급"
+        ]
+      },
+      "channels": [
+        {
+          "channel": "자사 앱 가입 화면",
+          "role": "졸업 요건·복귀 규칙·한도를 가입 전에 같은 크기로 고지",
+          "asset": "boards 시안과 조건 고지 화면",
+          "phase": "런칭"
+        },
+        {
+          "channel": "간편결제 등록 안내",
+          "role": "발급 직후 간편결제 등록과 탭 결제 안내(S2, 트렌드 T2)",
+          "asset": "앱 푸시와 등록 안내 화면",
+          "phase": "런칭"
+        },
+        {
+          "channel": "숏폼 채널(시험 집행)",
+          "role": "세로형 카드와 12칸 눈금 노출. 채널 근거 없어 시험 집행",
+          "asset": "reels",
+          "phase": "예열"
+        },
+        {
+          "channel": "동영상 채널(시험 집행)",
+          "role": "생활 장면 속 선택 영역 사용 모습. 채널 근거 없어 시험 집행",
+          "asset": "youtube",
+          "phase": "런칭"
+        },
+        {
+          "channel": "브랜드 소재(디지털)",
+          "role": "열두 달 연습이라는 태도를 짧게 전달",
+          "asset": "promo",
+          "phase": "예열"
+        },
+        {
+          "channel": "앱 진행률 화면",
+          "role": "이번 달 실적 진행률과 졸업까지 남은 달 수를 보여 줌",
+          "asset": "앱 진행 화면",
+          "phase": "연습 관리"
+        },
+        {
+          "channel": "결제일 납부 알림",
+          "role": "결제일 전 납부와 연체 시 복귀 규칙을 알림",
+          "asset": "앱 알림",
+          "phase": "정착"
+        }
+      ],
+      "phases": [
+        {
+          "name": "예열",
+          "start_day": -28,
+          "end_day": -1,
+          "goal": "이름과 열두 달 졸업 구조 알리기",
+          "actions": [
+            "reels·promo 시험 집행(광고심의 후)",
+            "졸업 요건 사전 고지 페이지 준비"
+          ]
+        },
+        {
+          "name": "런칭",
+          "start_day": 0,
+          "end_day": 14,
+          "goal": "앱 가입과 간편결제 등록 완료",
+          "actions": [
+            "가입 화면에 졸업 요건·복귀·한도 고지",
+            "발급 직후 간편결제 등록 안내",
+            "youtube 생활 장면 소재 집행"
+          ]
+        },
+        {
+          "name": "정착",
+          "start_day": 15,
+          "end_day": 90,
+          "goal": "선택 영역 첫 할인과 연체 0회 유지",
+          "actions": [
+            "결제일 전 납부 알림",
+            "선택 영역 6개월 1회 변경 규칙 안내",
+            "결제일 전 납부 알림에 연체 시 복귀 규칙 병기"
+          ]
+        },
+        {
+          "name": "연습 관리",
+          "start_day": 91,
+          "end_day": 180,
+          "goal": "월 1건 이상 이용 유지와 진행률 확인",
+          "actions": [
+            "앱 진행률 화면으로 남은 조건 안내",
+            "이용이 끊긴 회원에게 진행률 안내(수신 동의 시)"
+          ]
+        }
+      ],
+      "kpis": [
+        {
+          "stage": "인지",
+          "metric": "reels 완주율",
+          "target": "[목표값]",
+          "source": "광고 플랫폼 리포트"
+        },
+        {
+          "stage": "관심",
+          "metric": "졸업 요건 안내 화면 열람률",
+          "target": "[목표값]",
+          "source": "자사 앱 로그"
+        },
+        {
+          "stage": "전환",
+          "metric": "발급 신청 완료율",
+          "target": "[목표값]",
+          "source": "자사 앱 가입 퍼널"
+        },
+        {
+          "stage": "전환",
+          "metric": "발급 후 14일 내 간편결제 등록률",
+          "target": "[목표값]",
+          "source": "내부 데이터 확인 필요"
+        },
+        {
+          "stage": "확산",
+          "metric": "연습 구간 월 1건 이상 이용 유지율",
+          "target": "[목표값]",
+          "source": "내부 데이터 확인 필요"
+        },
+        {
+          "stage": "확산",
+          "metric": "연체 0회 유지 회원 비율",
+          "target": "[목표값]",
+          "source": "내부 데이터 확인 필요"
+        }
+      ],
+      "risks": [
+        {
+          "risk": "G1 이름·태그라인이 조건 없는 해제로 읽힐 위험",
+          "mitigation": "이름 옆과 모든 소재에 '조건 해제는 졸업 요건 충족 시'와 9개월 이용·복귀 규칙 병기"
+        },
+        {
+          "risk": "G2 단정·합산 표현과 졸업식·학교 연상 광고 위험",
+          "mitigation": "해제 문구에 한도 4천원 유지 같은 크기 병기, 1%와 0.5% 합산 금지, 실존 학교 상징 미사용, 전 소재 광고심의"
+        },
+        {
+          "risk": "G3 졸업 요건·복귀·변경 제한 고지 누락",
+          "mitigation": "약관·상품설명서 초안에 졸업 요건, 복귀, 한도, 6개월 1회 변경 제한을 적어 준법에 전달"
+        },
+        {
+          "risk": "G6 체리피커 0.58·손익 1.01, 채택 의향 0.27(시뮬레이션)",
+          "mitigation": "비교형 메시지·신규 혜택 강조 미사용. 월 1건 기준 보완과 손익 재평가는 상품·재무, 채택 의향 차이는 컨셉 단계 소관"
+        },
+        {
+          "risk": "교통 혜택의 정책 환급 중복(T3), 20대 연체 부담(T5)",
+          "mitigation": "교통 소재는 졸업 구조를 앞세우고 복귀 규칙·납부 알림을 함께 고지. 영역 구성은 상품팀 판단"
+        }
+      ],
+      "next_steps": [
+        "광고심의 담당자와 해제 문구·legal_footer 검토(G2)",
+        "준법과 약관·상품설명서 졸업 요건 초안 검토(G3)",
+        "상품·재무가 월 1건 기준과 체리피커 손익 재평가(G6)",
+        "needs_research 3개 주제로 채널 근거 재조사",
+        "졸업 3개월 전 앱 알림 화면 설계(런칭 후 약 9개월 차)"
+      ],
+      "targets_from_customer": false
+    },
+    "boards": {
+      "brand": {
+        "name": "졸업반",
+        "card_type": "credit",
+        "issuer_placeholder": "[ISSUER]"
+      },
+      "target": {
+        "segment": "만 19~29세, 첫 신용카드를 쓰는 사회초년생·대학생",
+        "contexts": [
+          "출근 전 편의점",
+          "통학 버스·지하철",
+          "밤 배달 주문",
+          "매달 구독 결제",
+          "결제일 전 앱 확인"
+        ],
+        "assumed": true
+      },
+      "concept": {
+        "tagline": "열두 달 연습하고 졸업.",
+        "statement": "첫 신용카드를 연체 없이 쓰는 열두 달을 연습 기간으로 둔다. 요건을 채우면 13개월 차부터 전월실적 조건이 해제된다.",
+        "keywords": [
+          "세로형",
+          "번호 없는 앞면",
+          "가장자리 12칸 눈금",
+          "뒷면 졸업 요건",
+          "한도 같은 크기 표기",
+          "앱이 채우는 12칸"
+        ],
+        "front_rule_note": "조건 해제는 졸업 요건 충족 시, 영역별 월 한도 4,000원 유지. 연체 시 연습 구간 복귀"
+      },
+      "palette": [
+        {
+          "name": "분필흰",
+          "hex": "#F4F1EA",
+          "role": "ground"
+        },
+        {
+          "name": "연습지",
+          "hex": "#E2E6DC",
+          "role": "ground"
+        },
+        {
+          "name": "먹남색",
+          "hex": "#1C2333",
+          "role": "ink"
+        },
+        {
+          "name": "수술노랑",
+          "hex": "#F2C230",
+          "role": "accent"
+        },
+        {
+          "name": "학기회색",
+          "hex": "#8C95A4",
+          "role": "support"
+        },
+        {
+          "name": "졸업금",
+          "hex": "#B8995A",
+          "role": "metal"
+        }
+      ],
+      "typography": {
+        "display": "Syne",
+        "body": "Noto Sans KR",
+        "mono": "JetBrains Mono"
+      },
+      "layout": {
+        "orientation": "vertical",
+        "front_shows": [
+          "chip",
+          "contactless",
+          "logo",
+          "type_label"
+        ],
+        "orientation_reason": "만 19~29세 첫 카드, 탭 결제와 앱 확인이 주라 세로형으로 정했다"
+      },
+      "variants": [
+        {
+          "code": "CHALK",
+          "name": "분필",
+          "material": {
+            "preset": "matte",
+            "tint": "분필흰",
+            "chip": "silver",
+            "logo_color": "먹남색"
+          },
+          "story": {
+            "headline": "아침 계산대의 연습",
+            "lead": "출근 전 편의점에서 꺼내는 무광 카드. 가장자리 눈금 12칸이 연습 기간을 조용히 보여 준다.",
+            "points": [
+              {
+                "title": "가장자리 12칸",
+                "body": "카드 긴 변에 12칸 눈금을 찍었다. 한 칸이 한 달, 연습 기간이 손끝에 걸린다.",
+                "anchor": "edge"
+              },
+              {
+                "title": "무광 분필 면",
+                "body": "아침 형광등 아래서도 반사가 없다. 계산대 앞에서 꺼내도 차분하다.",
+                "anchor": "material"
+              },
+              {
+                "title": "번호 없는 앞면",
+                "body": "앞면에는 이름과 칩만 둔다. 번호는 뒷면과 앱에서 확인한다.",
+                "anchor": "front"
+              },
+              {
+                "title": "탭 자리 표시",
+                "body": "휴대폰 결제가 익숙한 손에 맞춰 탭 자리를 위쪽에 둔다.",
+                "anchor": "contactless"
+              }
+            ],
+            "persona": "첫 월급 뒤 처음 신용카드를 만든 사회초년생",
+            "mood": [
+              "아침",
+              "조용함",
+              "연필"
+            ],
+            "life_scene": "출근 전 편의점 계산대에서 탭 결제하는 순간"
+          }
+        },
+        {
+          "code": "GLASS",
+          "name": "유리",
+          "material": {
+            "preset": "clear",
+            "tint": "연습지",
+            "chip": "graphite",
+            "logo_color": "먹남색"
+          },
+          "story": {
+            "headline": "비치는 한 해",
+            "lead": "햇빛에 비치는 투명 카드. 뒷면의 졸업 요건이 앞에서도 비쳐 규칙을 숨기지 않는다.",
+            "points": [
+              {
+                "title": "비치는 뒷면",
+                "body": "뒷면에 적은 졸업 요건과 복귀 규칙이 앞면으로 비친다. 조건을 감추지 않는 카드다.",
+                "anchor": "back"
+              },
+              {
+                "title": "연습지 틴트",
+                "body": "옅은 회녹색 틴트가 버스 창가 햇빛을 받아 가볍게 보인다.",
+                "anchor": "material"
+              },
+              {
+                "title": "세로 로고",
+                "body": "로고를 세로로 길게 세웠다. 손에 쥐고 찍어도 이름이 읽힌다.",
+                "anchor": "logo"
+              },
+              {
+                "title": "흑연 칩",
+                "body": "투명 면 위에서 칩만 짙게 남겨 카드 윤곽을 잡는다.",
+                "anchor": "chip"
+              }
+            ],
+            "persona": "통학길에 앱으로 이번 달 진행률을 보는 졸업반 학생",
+            "mood": [
+              "한낮",
+              "투명",
+              "가벼움"
+            ],
+            "life_scene": "등굣길 버스 정류장 햇빛 아래 카드를 비춰 보는 순간"
+          }
+        },
+        {
+          "code": "TASSEL",
+          "name": "술",
+          "material": {
+            "preset": "metal",
+            "base": "black",
+            "edge": "수술노랑",
+            "chip": "gold",
+            "logo_color": "수술노랑"
+          },
+          "story": {
+            "headline": "밤에 보는 노란 선",
+            "lead": "검은 메탈 카드 가장자리에 졸업모 술 같은 노란 선 하나. 밤 조명 아래서 단정하게 빛난다.",
+            "points": [
+              {
+                "title": "노란 옆선",
+                "body": "검은 면 가장자리에만 수술노랑을 둘렀다. 지갑에 꽂아도 선 하나가 보인다.",
+                "anchor": "edge"
+              },
+              {
+                "title": "검은 메탈",
+                "body": "배달 앱을 여는 늦은 밤, 방 조명 아래서 무게감 있게 놓인다.",
+                "anchor": "material"
+              },
+              {
+                "title": "금색 칩",
+                "body": "칩만 금색으로 남겨 졸업 이후 단계의 차분한 분위기를 낸다.",
+                "anchor": "chip"
+              },
+              {
+                "title": "작은 종류 표기",
+                "body": "CREDIT 표기를 작게 둬 검은 면을 넓게 남긴다.",
+                "anchor": "type_label"
+              }
+            ],
+            "persona": "퇴근 후 배달과 구독 결제를 한 장으로 정리하는 직장인",
+            "mood": [
+              "밤",
+              "단정",
+              "어른스러움"
+            ],
+            "life_scene": "퇴근 후 어두운 방에서 배달을 주문하는 순간"
+          }
+        }
+      ],
+      "benefits": [
+        {
+          "category": "외식·배달",
+          "headline": "1% 캐시백",
+          "condition": "월 한도 4,000원 · 전월실적 20만원 이상",
+          "source": "winner.card.rates",
+          "variant": "TASSEL"
+        },
+        {
+          "category": "편의점·마트",
+          "headline": "1% 캐시백",
+          "condition": "월 한도 4,000원 · 전월실적 20만원 이상",
+          "source": "winner.card.rates",
+          "variant": "CHALK"
+        },
+        {
+          "category": "교통·모빌리티",
+          "headline": "1% 캐시백",
+          "condition": "월 한도 4,000원 · 전월실적 20만원 이상",
+          "source": "winner.card.rates",
+          "variant": "GLASS"
+        },
+        {
+          "category": "구독·디지털",
+          "headline": "1% 캐시백",
+          "condition": "월 한도 4,000원 · 전월실적 20만원 이상",
+          "source": "winner.card.rates",
+          "variant": "TASSEL"
+        }
+      ],
+      "needs_compliance_review": true,
+      "assumptions": [
+        "일상 맥락 5개와 페르소나는 브리프에서 추론한 가설이다",
+        "혜택 영역은 brief.benefits 표기를 그대로 따랐다",
+        "30세 미만 타깃, 탭 결제 중심이라 세로형으로 정했다",
+        "카드 번호는 자리표시 0427 1017 2026 000N을 쓴다"
+      ]
+    },
+    "storyboards": {
+      "reels": {
+        "format": "reels",
+        "aspect": "9:16",
+        "fps": 30,
+        "duration_s": 18,
+        "hero_variant": "CHALK",
+        "scenes": [
+          {
+            "id": "reveal",
+            "preset": "hero_reveal",
+            "start_s": 0,
+            "duration_s": 1.5,
+            "variant": "CHALK",
+            "captions": [
+              {
+                "words": [
+                  "첫 신용카드,",
+                  "열두 달 연습"
+                ],
+                "start_s": 0.2,
+                "end_s": 1.5,
+                "position": "bottom",
+                "emphasis": [
+                  1
+                ]
+              }
+            ]
+          },
+          {
+            "id": "float",
+            "preset": "hero_float",
+            "start_s": 1.5,
+            "duration_s": 2.5,
+            "variant": "CHALK",
+            "captions": [
+              {
+                "words": [
+                  "골라 둔",
+                  "두 영역에서"
+                ],
+                "start_s": 0.2,
+                "end_s": 2.3,
+                "position": "bottom",
+                "emphasis": [
+                  1
+                ]
+              }
+            ]
+          },
+          {
+            "id": "close_edge",
+            "preset": "detail_closeup",
+            "start_s": 4.0,
+            "duration_s": 2.5,
+            "variant": "CHALK",
+            "params": {
+              "focus": "material",
+              "note": "가장자리 12칸 눈금 클로즈업"
+            },
+            "captions": [
+              {
+                "words": [
+                  "한 칸에 한 달,",
+                  "열두 칸"
+                ],
+                "start_s": 0.2,
+                "end_s": 2.3,
+                "position": "top",
+                "emphasis": [
+                  1
+                ],
+                "style": "pill"
+              }
+            ]
+          },
+          {
+            "id": "close_logo",
+            "preset": "detail_closeup",
+            "start_s": 6.5,
+            "duration_s": 2.5,
+            "variant": "CHALK",
+            "params": {
+              "focus": "logo"
+            },
+            "captions": [
+              {
+                "words": [
+                  "연체 0회,",
+                  "9개월 이상 이용"
+                ],
+                "start_s": 0.2,
+                "end_s": 2.3,
+                "position": "top",
+                "emphasis": [
+                  1
+                ],
+                "style": "pill"
+              }
+            ]
+          },
+          {
+            "id": "flip",
+            "preset": "flip",
+            "start_s": 9.0,
+            "duration_s": 2.0,
+            "variant": "CHALK",
+            "captions": [
+              {
+                "words": [
+                  "13개월 차 해제,",
+                  "한도는 그대로"
+                ],
+                "start_s": 0.2,
+                "end_s": 1.9,
+                "position": "bottom",
+                "emphasis": [
+                  1
+                ]
+              }
+            ]
+          },
+          {
+            "id": "fan",
+            "preset": "fan_merge",
+            "start_s": 11.0,
+            "duration_s": 2.0,
+            "captions": [
+              {
+                "words": [
+                  "연체하면",
+                  "연습 구간으로"
+                ],
+                "start_s": 0.2,
+                "end_s": 1.9,
+                "position": "bottom",
+                "emphasis": [
+                  1
+                ]
+              }
+            ]
+          },
+          {
+            "id": "benefit",
+            "preset": "benefit_card",
+            "start_s": 13.0,
+            "duration_s": 2.5,
+            "variant": "CHALK",
+            "params": {
+              "benefits": [
+                {
+                  "category": "외식·배달",
+                  "headline": "1% 캐시백",
+                  "condition": "월 한도 4,000원 · 전월실적 20만원 이상"
+                },
+                {
+                  "category": "편의점·마트",
+                  "headline": "1% 캐시백",
+                  "condition": "월 한도 4,000원 · 전월실적 20만원 이상"
+                },
+                {
+                  "category": "교통·모빌리티",
+                  "headline": "1% 캐시백",
+                  "condition": "월 한도 4,000원 · 전월실적 20만원 이상"
+                },
+                {
+                  "category": "구독·디지털",
+                  "headline": "1% 캐시백",
+                  "condition": "월 한도 4,000원 · 전월실적 20만원 이상"
+                }
+              ],
+              "extra_lines": [
+                "선택한 2개 영역만 적용, 6개월에 1회 변경",
+                "전월 20만원 미달 월은 국내 가맹점 기본 적립 0.5%",
+                "연회비 1.5만원"
+              ],
+              "note": "헤드라인과 조건, 미달 월 0.5%, 연회비를 같은 크기로 표시. 1%와 0.5% 합산 표기 금지"
+            },
+            "captions": [
+              {
+                "words": [
+                  "조건과 한도를",
+                  "함께 확인"
+                ],
+                "start_s": 0.2,
+                "end_s": 2.4,
+                "position": "top",
+                "emphasis": [
+                  1
+                ]
+              }
+            ]
+          },
+          {
+            "id": "end",
+            "preset": "stack_lockup",
+            "start_s": 15.5,
+            "duration_s": 2.5
+          }
+        ],
+        "ending": {
+          "type": "stack_lockup",
+          "copy_words": [
+            "열두",
+            "달",
+            "연습하고",
+            "졸업."
+          ],
+          "cta": "COMING SOON"
+        },
+        "audio": {
+          "mood": "잔잔한 어쿠스틱 로파이",
+          "file": null
+        },
+        "legal_footer": "전월 20만원 이상 시 선택 2개 영역 1%, 영역별 월 4천원 한도(미달 월 기본 0.5% 적립). 12개월 연체 0회·9개월 이상 이용 시 13개월 차 실적조건 해제, 연체 시 복귀. 연회비 1.5만원"
+      },
+      "youtube": {
+        "format": "youtube",
+        "aspect": "16:9",
+        "fps": 30,
+        "duration_s": 25,
+        "hero_variant": "CHALK",
+        "scenes": [
+          {
+            "id": "life_chalk",
+            "preset": "life_tap_pay",
+            "start_s": 0,
+            "duration_s": 6.5,
+            "variant": "CHALK",
+            "label": "01 · MORNING STORE",
+            "params": {
+              "note": "출근 전 편의점 계산대 탭 결제"
+            },
+            "captions": [
+              {
+                "words": [
+                  "출근 전 편의점,",
+                  "골라 둔 영역"
+                ],
+                "start_s": 0.4,
+                "end_s": 3.2,
+                "position": "left",
+                "emphasis": [
+                  1
+                ]
+              },
+              {
+                "words": [
+                  "편의점·마트",
+                  "1% 캐시백"
+                ],
+                "start_s": 3.4,
+                "end_s": 6.3,
+                "position": "left",
+                "emphasis": [
+                  1
+                ]
+              }
+            ]
+          },
+          {
+            "id": "life_glass",
+            "preset": "life_daylight_seethrough",
+            "start_s": 6.5,
+            "duration_s": 6.5,
+            "variant": "GLASS",
+            "label": "02 · BUS STOP",
+            "params": {
+              "note": "등굣길 버스 정류장, 앱 진행률 확인"
+            },
+            "captions": [
+              {
+                "words": [
+                  "등굣길 정류장,",
+                  "남은 칸 확인"
+                ],
+                "start_s": 0.4,
+                "end_s": 3.2,
+                "position": "left",
+                "emphasis": [
+                  1
+                ]
+              },
+              {
+                "words": [
+                  "교통·모빌리티",
+                  "1% 캐시백"
+                ],
+                "start_s": 3.4,
+                "end_s": 6.3,
+                "position": "left",
+                "emphasis": [
+                  1
+                ]
+              }
+            ]
+          },
+          {
+            "id": "life_tassel",
+            "preset": "life_night_light",
+            "start_s": 13.0,
+            "duration_s": 6.5,
+            "variant": "TASSEL",
+            "label": "03 · LATE DELIVERY",
+            "params": {
+              "note": "퇴근 후 어두운 방, 배달 주문"
+            },
+            "captions": [
+              {
+                "words": [
+                  "퇴근 후 배달,",
+                  "한도는 그대로"
+                ],
+                "start_s": 0.4,
+                "end_s": 3.2,
+                "position": "left",
+                "emphasis": [
+                  1
+                ]
+              },
+              {
+                "words": [
+                  "외식·배달",
+                  "1% 캐시백"
+                ],
+                "start_s": 3.4,
+                "end_s": 6.3,
+                "position": "left",
+                "emphasis": [
+                  1
+                ]
+              }
+            ]
+          },
+          {
+            "id": "merge",
+            "preset": "split_merge",
+            "start_s": 19.5,
+            "duration_s": 3.0,
+            "params": {
+              "panels": [
+                "life_chalk",
+                "life_glass",
+                "life_tassel"
+              ]
+            },
+            "captions": [
+              {
+                "words": [
+                  "연체 없이 열두 달,",
+                  "그다음 졸업"
+                ],
+                "start_s": 0.2,
+                "end_s": 2.8,
+                "position": "bottom",
+                "emphasis": [
+                  1
+                ]
+              }
+            ]
+          },
+          {
+            "id": "end",
+            "preset": "stack_lockup",
+            "start_s": 22.5,
+            "duration_s": 2.5
+          }
+        ],
+        "ending": {
+          "type": "stack_lockup",
+          "copy_words": [
+            "열두",
+            "달",
+            "연습하고",
+            "졸업."
+          ],
+          "cta": "COMING SOON"
+        },
+        "audio": {
+          "mood": "따뜻한 기타 팝",
+          "file": null
+        },
+        "legal_footer": "전월 20만원 이상 시 선택 2개 영역 1%, 영역별 월 4천원 한도(미달 월 기본 0.5% 적립). 12개월 연체 0회·9개월 이상 이용 시 13개월 차 실적조건 해제, 연체 시 복귀. 연회비 1.5만원"
+      },
+      "promo": {
+        "format": "promo",
+        "aspect": "16:9",
+        "fps": 30,
+        "duration_s": 20,
+        "bpm": 116,
+        "hero_variant": "TASSEL",
+        "scenes": [
+          {
+            "id": "intro",
+            "preset": "heartbeat_intro",
+            "start_s": 0,
+            "duration_s": 2.0,
+            "variant": "TASSEL"
+          },
+          {
+            "id": "beats",
+            "preset": "beat_words",
+            "start_s": 2.0,
+            "duration_s": 6.0,
+            "params": {
+              "words": [
+                "첫",
+                "신용카드",
+                "열두 달",
+                "연습",
+                "두 영역",
+                "1%",
+                "캐시백",
+                "연체 0회",
+                "기록",
+                "13개월 차",
+                "졸업",
+                "졸업반"
+              ],
+              "card_every": 4,
+              "benefit_words": [
+                "두 영역",
+                "1%",
+                "캐시백"
+              ]
+            }
+          },
+          {
+            "id": "mq_chalk",
+            "preset": "material_marquee",
+            "start_s": 8.0,
+            "duration_s": 2.5,
+            "variant": "CHALK",
+            "label": "CHALK 아침 무광"
+          },
+          {
+            "id": "mq_glass",
+            "preset": "material_marquee",
+            "start_s": 10.5,
+            "duration_s": 2.5,
+            "variant": "GLASS",
+            "label": "GLASS 비치는 규칙"
+          },
+          {
+            "id": "mq_tassel",
+            "preset": "material_marquee",
+            "start_s": 13.0,
+            "duration_s": 2.5,
+            "variant": "TASSEL",
+            "label": "TASSEL 밤의 노란 선"
+          },
+          {
+            "id": "lineup",
+            "preset": "lineup_pulse",
+            "start_s": 15.5,
+            "duration_s": 2.0,
+            "captions": [
+              {
+                "words": [
+                  "세 시안,",
+                  "같은 졸업 요건"
+                ],
+                "start_s": 0.2,
+                "end_s": 1.8,
+                "position": "bottom",
+                "emphasis": [
+                  1
+                ]
+              }
+            ]
+          },
+          {
+            "id": "end",
+            "preset": "stack_lockup",
+            "start_s": 17.5,
+            "duration_s": 2.5
+          }
+        ],
+        "ending": {
+          "type": "stack_lockup",
+          "copy_words": [
+            "열두",
+            "달",
+            "연습하고",
+            "졸업."
+          ],
+          "cta": "COMING SOON"
+        },
+        "audio": {
+          "mood": "단정한 미니멀 하우스",
+          "file": null
+        },
+        "legal_footer": "전월 20만원 이상 시 선택 2개 영역 1%, 영역별 월 4천원 한도(미달 월 기본 0.5% 적립). 12개월 연체 0회·9개월 이상 이용 시 13개월 차 실적조건 해제, 연체 시 복귀. 연회비 1.5만원"
+      }
+    },
+    "segment_plays": [
+      {
+        "type": "일반형",
+        "share_and_profit": "채택자 중 비중 0.24, 손익 3.27(만원/년, 가상 고객 시뮬레이션, 가정 기반)",
+        "play": "발급 직후 선택 영역 2곳 고르기와 간편결제 등록을 안내하고, 앱 진행률 화면으로 졸업까지 남은 달을 보여 준다.",
+        "guardrail": "조건 해제는 졸업 요건과 한도 4천원 유지를 함께만 쓰고 1%와 0.5%를 더한 비율을 쓰지 않는다(G1, G2)."
+      },
+      {
+        "type": "체리피커",
+        "share_and_profit": "채택자 중 비중 0.58, 손익 1.01(만원/년, 가상 고객 시뮬레이션, 가정 기반)",
+        "play": "혜택 비교 커뮤니티용 '조건 맞추면 이득' 메시지와 신규 발급 혜택 강조를 쓰지 않고, 연체 없이 쓰는 첫 카드라는 일상 사용 메시지만 쓴다.",
+        "guardrail": "월 1건 소액 결제로 졸업 요건을 채우는 경로는 상품팀이 최소 이용금액 기준 등으로 보완할지 정한다(G6). 모집 시 연회비를 넘는 경제적 이익을 주지 않는다(S1). 한도 도달 직후 이용 급감과 소액 반복 결제 비율을 운영 지표로 본다."
+      },
+      {
+        "type": "충성형",
+        "share_and_profit": "채택자 중 비중 0.03, 손익 5.36(만원/년, 가상 고객 시뮬레이션, 가정 기반)",
+        "play": "월별 할인 내역과 졸업 진행률을 꾸준히 보여 줘 규칙에 대한 신뢰를 유지한다.",
+        "guardrail": "추천·초대 보상은 입력에 없으므로 만들지 않는다. 혜택 변경은 사전 고지한다."
+      },
+      {
+        "type": "휴면 위험형",
+        "share_and_profit": "채택자 중 비중 0.15, 손익 1.9(만원/년, 가상 고객 시뮬레이션, 가정 기반)",
+        "play": "이용이 끊긴 달이 생기면 졸업까지 필요한 이용 월 수(12개월 중 9개월)와 남은 달을 앱 진행률로 안내하고, 졸업 후 이용 유지 장치는 상품팀 검토 결과를 따른다(G6).",
+        "guardrail": "마케팅 수신 동의가 없는 회원에게는 마케팅성 메시지를 보내지 않고, 할인을 재활성화 미끼로 쓰지 않는다(G2, G6)."
+      }
+    ],
+    "compliance": [
+      {
+        "item": "이름·태그라인과 실제 작동 방식 일치",
+        "handling": "이름 '졸업반'은 졸업 전 단계를 뜻해 해제를 약속하지 않는다. 이름 옆 front_rule_note와 릴스 첫 장면 이후 자막에 '조건 해제는 졸업 요건 충족 시', 9개월 이상 이용, 연체 시 복귀를 함께 쓴다.",
+        "needs_human": false,
+        "guard_ref": "G1"
+      },
+      {
+        "item": "단정·과장, 합산 혜택, 선점 단정 표현",
+        "handling": "해제 문구에는 한도 유지를 같은 크기로 붙였고 1%와 0.5%를 더한 비율·배수와 선점 단정 표현을 쓰지 않았다. 0.5%는 미달 월 조건과 함께 legal_footer와 benefit_card에만 쓴다. 다른 카드 비교 문구는 없다. 집행 전 전 소재 광고심의 필요.",
+        "needs_human": true,
+        "guard_ref": "G2"
+      },
+      {
+        "item": "부가서비스 변경 제한·지급 조건 고지",
+        "handling": "졸업 요건, 복귀 조건, 영역별 월 한도 4천원, 선택 영역 6개월 1회 변경 제한을 상품설명서·가입 화면에 적은 초안을 준법에 전달한다. 소재 legal_footer는 최종 문구에 맞춰 다시 맞춘다.",
+        "needs_human": true,
+        "guard_ref": "G3"
+      },
+      {
+        "item": "체리피킹·역선택 대비",
+        "handling": "비교형 메시지와 신규 발급 혜택 강조를 쓰지 않았다. 월 1건 기준 보완, 졸업 후 체리피커 손익 재평가, 휴면 위험형 유지 장치는 상품·재무가 정한다. 채택 의향 0.27(목표 0.38 미달), 체리피커 0.58·손익 1.01(시뮬레이션)은 기획서 리스크에 그대로 적는다.",
+        "needs_human": true,
+        "guard_ref": "G6"
+      },
+      {
+        "item": "혜택 표기 용어·영역 불일치",
+        "handling": "brief.benefits는 '캐시백'과 외식·배달·편의점·마트·교통·모빌리티·구독·디지털로, mechanics와 필수 고지는 '청구할인'과 카페·편의점·대중교통·구독으로 적혀 있다. 소재는 brief.benefits를 그대로 복사했고 최종 용어는 상품팀 확인 후 일괄 수정한다.",
+        "needs_human": true,
+        "guard_ref": null
+      },
+      {
+        "item": "연회비·모집 시 경제적 이익 한도",
+        "handling": "연회비 1.5만원과 혜택 변경 사전 고지를 legal_footer와 benefit_card에 넣었다. 런칭 프로모션을 붙이면 연회비를 넘는 경제적 이익 제공 금지 규정(S1)을 준법이 확인한다.",
+        "needs_human": true,
+        "guard_ref": null
+      }
+    ],
+    "needs_research": [
+      "만 19~29세의 숏폼·동영상 채널별 이용 비중과 카드 광고 반응(재조사 결과에 없음)",
+      "첫 신용카드 발급 예정자의 상품 정보 탐색 경로(앱, 검색, 커뮤니티)",
+      "카드 부가서비스 조건 해제·단계형 혜택 표현의 광고심의 사례"
+    ],
+    "render_jobs": []
+  },
+  "findings": [
+    {
+      "id": "design_marketing#0",
+      "claim": "이름 후보 3개(졸업반, 열두달, 다음학기)의 기존 카드명과의 글자쌍 유사도는 가장 높은 값이 0.0로 반려선 0.5와 경고선 0.3 아래다.",
+      "type": "estimate",
+      "source_id": null,
+      "confidence": "medium"
+    },
+    {
+      "id": "design_marketing#1",
+      "claim": "오프라인 결제 10회 중 모바일 결제가 4.54회이고 간편결제 이용률이 89.3%라는 조사를 근거로 발급 직후 간편결제 등록 안내를 런칭 채널에 두었다. 20대 연령별 수치는 이 출처에서 확인하지 못했다.",
+      "type": "fact",
+      "source_id": "S2",
+      "confidence": "medium"
+    },
+    {
+      "id": "design_marketing#2",
+      "claim": "신용카드 모집 시 연회비의 100분의 100을 넘는 경제적 이익을 주는 모집이 금지되어, 체리피커 대응에서 신규 발급 혜택 강조를 쓰지 않고 런칭 프로모션은 준법 확인 항목으로 남겼다.",
+      "type": "fact",
+      "source_id": "S1",
+      "confidence": "high"
+    },
+    {
+      "id": "design_marketing#3",
+      "claim": "해외 첫 카드 상품은 12개월마다 상위 카드 업그레이드 대상으로 평가하는 경로를 둔다. 이력으로 단계를 넘는 졸업 비유가 낯설지 않다는 참고로만 썼고 소재에는 쓰지 않았다.",
+      "type": "fact",
+      "source_id": "S6",
+      "confidence": "low"
+    },
+    {
+      "id": "design_marketing#4",
+      "claim": "이 카드는 선정안이 아닌 대안 후보로, 채택 의향 0.27이 목표 0.38에 못 미치고 체리피커 비중 0.58·손익 1.01이 하한 1.5에 못 미친다(가상 고객 시뮬레이션, 실제 전환율·손익 아님). 채택 고객 1인당 손익 1.82는 하한 1.5를 넘는다.",
+      "type": "estimate",
+      "source_id": null,
+      "confidence": "low"
+    },
+    {
+      "id": "design_marketing#5",
+      "claim": "시나리오별 채택 의향(경쟁사 모방 0.243, 혜택 20% 축소 0.183, 시장 위축 0.205)도 모두 목표 아래라 소재·채널만으로 목표를 맞추기 어렵다고 보았다(시뮬레이션).",
+      "type": "estimate",
+      "source_id": null,
+      "confidence": "low"
+    },
+    {
+      "id": "design_marketing#6",
+      "claim": "숏폼·동영상 채널 선택을 뒷받침하는 자료가 입력에 없어 reels·youtube 채널은 시험 집행으로 두고 needs_research에 주제를 남겼다.",
+      "type": "estimate",
+      "source_id": null,
+      "confidence": "medium"
+    },
+    {
+      "id": "design_marketing#7",
+      "claim": "트렌드 T2는 20대 간편결제 이용자의 90.6%가 주 지급수단으로 카드를 쓴다고 전한다. 발급 직후 간편결제 등록 안내를 런칭 채널에 둔 판단을 뒷받침한다. 출처 id STS1은 research_pack에 없어 sources에 옮기지 못했다.",
+      "type": "estimate",
+      "source_id": null,
+      "confidence": "medium"
+    },
+    {
+      "id": "design_marketing#8",
+      "claim": "트렌드 T3는 청년 교통 환급 정책이 교통 혜택과 겹친다고 해석한다. 교통·모빌리티 영역은 혜택 크기보다 졸업 구조를 앞세우고 리스크에 적었다.",
+      "type": "estimate",
+      "source_id": null,
+      "confidence": "medium"
+    },
+    {
+      "id": "design_marketing#9",
+      "claim": "트렌드 T5는 카드론 연체율의 20대 상승폭 0.41%p를 전한다. 연체 0회 요건 메시지가 부담으로 읽히지 않도록 복귀 규칙과 납부 알림을 함께 두었다. 내부 데이터 확인 필요.",
+      "type": "estimate",
+      "source_id": null,
+      "confidence": "low"
+    }
+  ],
+  "sources": [
+    {
+      "id": "S1",
+      "title": "여신전문금융업법 시행령 [시행 2026.5.6.] 대통령령 제36314호",
+      "url": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=285799",
+      "kind": "official",
+      "published": "2026-05-06",
+      "retrieved_at": "2026-10-23",
+      "reliability": 0.9,
+      "stale": false
+    },
+    {
+      "id": "S2",
+      "title": "네이버·카카오·토스페이 각축전, 다음 승부처는 페이스페이가 될까? — 2026 결제 서비스 트렌드",
+      "url": "https://blog.opensurvey.co.kr/article/payment-2026-2/",
+      "kind": "report",
+      "published": "2026-07-06",
+      "retrieved_at": "2026-10-23",
+      "reliability": 0.7,
+      "stale": false
+    },
+    {
+      "id": "S3",
+      "title": "은행 대출금리 감면 카드 이용실적 산정 기준 개선 (체크카드 써도 대출금리 낮아진다)",
+      "url": "https://www.fnnews.com/news/202607221419101661",
+      "kind": "news",
+      "published": "2026-07-22",
+      "retrieved_at": "2026-10-23",
+      "reliability": 0.7,
+      "stale": false
+    },
+    {
+      "id": "S4",
+      "title": "KB국민카드, 마스터카드와 '도쿄 마라톤 2027' 출전권 이벤트",
+      "url": "https://biz.sbs.co.kr/amp/article/20000335175",
+      "kind": "news",
+      "published": "2026-09-17",
+      "retrieved_at": "2026-10-23",
+      "reliability": 0.7,
+      "stale": false
+    },
+    {
+      "id": "S5",
+      "title": "카카오뱅크 ‘모임통장’ 잔액 10조 돌파",
+      "url": "https://www.heraldk.com/article/2025072418320391278",
+      "kind": "news",
+      "published": "2025-07-24",
+      "retrieved_at": "2026-10-23",
+      "reliability": 0.7,
+      "stale": false
+    },
+    {
+      "id": "S6",
+      "title": "Freedom Rise credit limit increases",
+      "url": "https://www.chase.com/personal/credit-cards/education/basics/freedom-rise-credit-limit-increase",
+      "kind": "official",
+      "published": null,
+      "retrieved_at": "2026-10-23",
+      "reliability": 0.9
+    },
+    {
+      "id": "S7",
+      "title": "Platinum Secured Credit Card",
+      "url": "https://www.capitalone.com/credit-cards/platinum-secured/",
+      "kind": "official",
+      "published": null,
+      "retrieved_at": "2026-10-23",
+      "reliability": 0.9
+    },
+    {
+      "id": "S8",
+      "title": "Bilt Mastercard / Bilt Card 2.0 공식 페이지",
+      "url": "https://www.biltrewards.com/card",
+      "kind": "official",
+      "published": null,
+      "retrieved_at": "2026-10-23",
+      "reliability": 0.5
+    },
+    {
+      "id": "S9",
+      "title": "Petal 공식 페이지",
+      "url": "https://www.petalcard.com/",
+      "kind": "official",
+      "published": null,
+      "retrieved_at": "2026-10-23",
+      "reliability": 0.5
+    },
+    {
+      "id": "S10",
+      "title": "카카오뱅크, ‘모임 체크카드’ 출시 1년여 만에 누적 100만장 돌파",
+      "url": "https://www.heraldk.com/article/2025081317211700327",
+      "kind": "news",
+      "published": "2025-08-13",
+      "retrieved_at": "2026-10-23",
+      "reliability": 0.7,
+      "stale": false
+    },
+    {
+      "id": "S11",
+      "title": "신한은행, SOL모임통장 회원수 40만 돌파",
+      "url": "https://www.smarttoday.co.kr/ko-kr/articles/80716",
+      "kind": "news",
+      "published": "2025-05-14",
+      "retrieved_at": "2026-10-23",
+      "reliability": 0.7,
+      "stale": false
+    },
+    {
+      "id": "S12",
+      "title": "투자자 보호 및 리스크관리 강화를 위한 해외투자 실태점검 중간 결과 및 향후 대응방향",
+      "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?menuNo=200218&nttId=208246",
+      "kind": "official",
+      "published": "2025-12-19",
+      "retrieved_at": "2026-10-23",
+      "reliability": 0.9,
+      "stale": false
+    }
+  ],
+  "assumptions": [
+    "일상 맥락 5개, 페르소나 3명, 인사이트는 브리프에서 추론한 가설이다(assumed)",
+    "30세 미만 타깃과 탭 결제 중심이라 카드 방향은 세로형으로 정했다",
+    "출시일이 없어 단계는 런칭일 0 기준 상대 일수로 썼고 영상 끝 화면은 COMING SOON으로 두었다",
+    "혜택 헤드라인·조건은 brief.benefits를 그대로 복사했고 영역별 시안 짝은 생활 장면 기준으로 정했다",
+    "선정안의 이름·시안을 쓰지 않고 이 후보의 12개월 졸업 구조에 맞춰 새로 만들었다"
+  ],
+  "unresolved": [
+    "brief.benefits(캐시백, 외식·배달·편의점·마트·교통·모빌리티·구독·디지털)와 mechanics·필수 고지(청구할인, 카페·편의점·대중교통·구독) 용어·영역 불일치(상품팀 확인)",
+    "월 1건 졸업 기준 보완, 졸업 후 체리피커 손익 재평가, 휴면 위험형 유지 장치(G6, 상품·재무)",
+    "약관·상품설명서 졸업 요건 고지 문구(G3, 준법)",
+    "채택 의향 0.27이 목표 0.38에 못 미치는 점(시뮬레이션). 상품 구조 보완은 컨셉 단계 소관",
+    "KPI 목표값(내부 데이터 확인 필요)"
+  ],
+  "limits": [
+    "영상 MP4는 H5 승인 전이라 렌더하지 않았다(render_jobs 비어 있음)",
+    "legal_footer는 120자 제한이라 필수 고지 중 핵심만 담았고 선택 영역 변경 제한·혜택 변경 사전 고지는 benefit_card와 가입 화면·상품설명서로 넘겼다",
+    "이름 유사도는 글자쌍 기준이라 상표 조회를 대신하지 못한다",
+    "채택 의향과 손익은 가상 고객 시뮬레이션 결과이며 실제 전환율이 아니다",
+    "졸업 3개월 전 알림(약 9개월 차)은 단계 범위(180일) 밖이라 next_steps로만 적었다",
+    "재조사 trend_signals의 출처 id(STS 계열)는 research_pack에 없어 sources에 옮기지 못했고 트렌드 id(T2, T3, T5)로만 인용했다. 숏폼·동영상 채널 근거는 재조사에도 없다"
+  ],
+  "clarifications": [],
+  "out_of_scope": {
+    "detected": false,
+    "suggested_agent": null
+  },
+  "followups": [
+    "스토리보드 미리보기를 보고 MP4로 렌더할까요?",
+    "혜택 표기를 캐시백과 청구할인 중 어느 쪽으로 쓸지 정해 주시겠어요?",
+    "needs_research 3개 주제로 재조사를 요청할까요?"
+  ],
+  "input_refs": [
+    "09-design-marketing/in.json"
+  ]
+}

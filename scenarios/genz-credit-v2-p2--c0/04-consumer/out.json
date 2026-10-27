@@ -1,0 +1,516 @@
+{
+  "run_id": "v2rec",
+  "request_id": "v2rec-consumer-r1",
+  "agent": "consumer",
+  "contract_version": "1.0",
+  "model": "claude-sonnet-5-5",
+  "status": "ok",
+  "answer": "GenZ 니즈는 구독·디지털(0.85), 절약·캐시백(0.75), 소비 통제(0.7) 순이며 가중치는 PM 가정치다. 공개 자료 23건에서 결제일 부담과 혜택 축소 우려가 확인되어, 필수 항목은 앱 중심 발급·관리, 명확한 할인 구조, 소비 통제 장치로 정리했다. 반응 비율은 MZ세대 설문 등 문서 원문 범위의 언급 경향이며 실제 이용 비중이 아니다.",
+  "result": {
+    "top_needs": [
+      {
+        "need": "digital",
+        "priority": 1,
+        "evidence": "니즈 가중치 0.85(PM 가정치)로 가장 높다. 간편지급 이용이 늘고(T2) 20대 모바일금융 이용경험은 96.5%다(STS3).",
+        "signal_ids": [
+          "T2"
+        ]
+      },
+      {
+        "need": "saving",
+        "priority": 2,
+        "evidence": "니즈 가중치 0.75(PM 가정치). MZ세대 신용카드 사용 이유 1위가 실적·할인 혜택 44.0%(CSS4, 중복 응답). 외식·온라인 비중 확대(T4).",
+        "signal_ids": [
+          "T4"
+        ]
+      },
+      {
+        "need": "control",
+        "priority": 3,
+        "evidence": "니즈 가중치 0.7(PM 가정치). MZ세대 53.6%가 결제일 부담 경험, 필요 요소로 소비 통제 64.4%가 혜택 설계 19.2%보다 높다(CSS4). 연체 신호(T5).",
+        "signal_ids": [
+          "T5"
+        ]
+      },
+      {
+        "need": "simple",
+        "priority": 4,
+        "evidence": "니즈 가중치 0.7, 복잡도 허용도 0.5(PM 가정치). 혜택 축소와 한도 인하 사례가 이어져(CSS13) 이해하기 쉬운 구조가 필요하다. 해석은 추정.",
+        "signal_ids": []
+      },
+      {
+        "need": "social",
+        "priority": 5,
+        "evidence": "니즈 가중치 0.7(PM 가정치). 이번 자료에서 소속감·소셜을 직접 뒷받침하는 문서는 없어 추정이다. 청년 전용 카드의 수요(T3, STS27)는 간접 신호다.",
+        "signal_ids": [
+          "T3"
+        ]
+      },
+      {
+        "need": "travel",
+        "priority": 6,
+        "evidence": "니즈 가중치 0.55, 여행 월 소비 가정치 6(PM 가정치). 이번 자료에 여행 관련 반응 문서가 없어 보조 혜택 수준으로 둔다.",
+        "signal_ids": []
+      },
+      {
+        "need": "fixed_cost",
+        "priority": 7,
+        "evidence": "니즈 가중치 0.4, 고정비 월 소비 가정치 5(PM 가정치). 실속·고정비 절감형 체크카드 인기(STS27)는 체크카드 사례다.",
+        "signal_ids": [
+          "T3"
+        ]
+      }
+    ],
+    "must_have": [
+      "간편결제·모바일카드 등록과 앱 내 발급·관리(구독·디지털 0.85, T2, STS1)",
+      "주 소비 영역에서 체감되는 할인·적립과 실적 조건의 명확한 안내(절약·캐시백 0.75, CSS4)",
+      "한도 설정, 결제일 알림 등 소비 통제 장치(소비 통제 0.7, CSS4 64.4%, T5)",
+      "혜택 변경 시 사전 고지와 지속 가능한 혜택 설계(단순함 0.7, CSS13, CSS11)"
+    ],
+    "can_give_up": [
+      "투자·자산형성 연계(니즈 점수 0.3, 이번 범위에서도 제외)",
+      "보장·안전 부가서비스(니즈 점수 0.25)",
+      "고정비 절감 중심 혜택(니즈 점수 0.4, 보조 혜택으로만 검토)",
+      "프리미엄 여행 서비스(여행·해외 니즈 점수 0.55, 반응 근거 없음)"
+    ],
+    "barriers": [
+      "금융이력이 짧아 발급 심사 문턱이 있다. 완화 방안은 진행 중이나 세부 기준은 사람 확인 필요(T1).",
+      "결제일 부담 경험이 MZ세대 53.6%이고 리볼빙 이용 거부가 88.0%라 부채 부담에 민감하다(CSS4). 20대 카드론 연체율도 올랐다(T5, STS14).",
+      "혜택 축소, 연회비 인상, 인기 카드 단종 보도로 혜택 지속성에 대한 신뢰가 낮을 수 있다(CSS13, CSS14, CSS11). 신뢰 수준 자체는 내부 데이터 확인 필요.",
+      "20대 이하 신용카드 이용액이 줄었고 모바일카드·체크카드 선호가 커 신용카드를 새로 쓸 동기가 약하다(CSS9, CSS3, STS1).",
+      "MZ세대의 K-패스류 혜택 지속에 대한 우려가 53.0%(응답 366명)라 정책성 교통 혜택과 겹치면 차별성이 약하다(CSS5, T3)."
+    ],
+    "evidence_signal_ids": [
+      "T1",
+      "T2",
+      "T3",
+      "T4",
+      "T5"
+    ],
+    "sentiment": {
+      "positive_ratio": null,
+      "negative_ratio": null,
+      "sample_size": 24,
+      "period": "2022-07~2026-10(CSS4 발행일 미확인, 대부분 2024-09 이후)",
+      "sources": [
+        "CSS13",
+        "CSS5",
+        "STS27",
+        "CSS4",
+        "STS1",
+        "CSS11",
+        "STS11",
+        "STS2",
+        "STS26",
+        "STS15",
+        "STS25",
+        "STS3",
+        "STS14",
+        "CSS1",
+        "CSS10",
+        "CSS14",
+        "CSS15",
+        "CSS9",
+        "CSS3",
+        "CSS7",
+        "STS16",
+        "CSS6",
+        "CSS2",
+        "CSS8"
+      ]
+    },
+    "themes": [
+      {
+        "theme": "신용카드 이용 감소와 해지 증가",
+        "mention_trend": "rising",
+        "representative_opinion": "20대 이하 신용카드 이용액이 감소했다는 보도가 반복된다(CSS7, CSS9, STS16)."
+      },
+      {
+        "theme": "혜택 축소와 카드 단종",
+        "mention_trend": "rising",
+        "representative_opinion": "혜택 절벽, 알짜카드 단종 보도(CSS13, CSS14, CSS11)."
+      },
+      {
+        "theme": "모바일카드·간편결제 중심 결제",
+        "mention_trend": "rising",
+        "representative_opinion": "20대의 모바일카드 선호가 가장 높다(CSS3, STS1)."
+      },
+      {
+        "theme": "결제일 부담과 소비 통제",
+        "mention_trend": "unknown",
+        "representative_opinion": "MZ세대 설문에서 소비 통제를 꼽은 비율이 높다(CSS4)."
+      }
+    ],
+    "purchase_drivers": [
+      "고르는 이유(MZ세대 설문, 중복 응답): 실적·할인 혜택 44.0%, 할부 활용 44.0%, 캐시백·부가서비스 32.0%, 신용점수 관리 32.0%(CSS4)",
+      "고르는 이유: 20대는 지급수단 선택 시 편리성을 가장 중요하게 본다(44.8%, STS1)",
+      "많이 쓰는 곳(선택 동기와 구분): 대학생 이용금액 비중은 음식점 29%, 전자상거래 21%, 대중교통·택시 9% 순(CSS6, 2022년 자료)"
+    ],
+    "churn_reasons": [
+      "혜택 축소, 연회비 인상, 통합할인한도 축소(CSS13)",
+      "소득 흐름이 안정적이지 않아 소비를 줄이는 20대 이하(CSS8). 해지 사유를 직접 묻는 문서는 아니어서 추정이다.",
+      "모바일카드와 체크카드로의 이동 가능성(CSS3, STS27). 추정이다."
+    ],
+    "bias_warning": "언급·반응 경향이며 실제 이용 비중이 아님. 설문 비율은 문서 원문 범위(MZ세대, 20대, 전체)를 따르며 GenZ 전체 수치로 읽지 않는다. 표본 정보는 CSS5(366명)만 확인되고 나머지는 없다. 월 소비·니즈 가중치는 PM 가정치다."
+  },
+  "findings": [
+    {
+      "id": "consumer#0",
+      "claim": "니즈 우선순위는 구독·디지털 0.85, 절약·캐시백 0.75, 소비 통제 0.7 순이며 PM 가정치 가중치와 T2, T4, T5에 근거한 추정이다.",
+      "type": "estimate",
+      "source_id": null,
+      "confidence": "medium"
+    },
+    {
+      "id": "consumer#1",
+      "claim": "MZ세대 설문(어피티)에서 신용카드 사용 이유는 실적·할인 혜택과 할부 활용이 각 44.0%(중복 응답)였고, 53.6%가 결제일 부담을 느낀 적이 있으며 필요 요소로 소비 통제 64.4%가 카드 혜택 설계 19.2%보다 높았다. 발행일은 확인하지 못했다.",
+      "type": "fact",
+      "source_id": "CSS4",
+      "confidence": "medium"
+    },
+    {
+      "id": "consumer#2",
+      "claim": "20대는 지급수단 선택 시 편리성을 가장 중요하게 보고(44.8%), 간편결제 이용 시 90.6%가 카드를 주 지급수단으로 쓴다.",
+      "type": "fact",
+      "source_id": "STS1",
+      "confidence": "high"
+    },
+    {
+      "id": "consumer#3",
+      "claim": "20대는 모바일카드 선호가 36.8%로 가장 높다(30대 34.9%).",
+      "type": "fact",
+      "source_id": "CSS3",
+      "confidence": "medium"
+    },
+    {
+      "id": "consumer#4",
+      "claim": "20대 이하 신용카드 이용금액은 2025년 조사에서 전년 대비 4.3% 감소해 유일하게 줄어든 계층이었다(전체 +6.9%).",
+      "type": "fact",
+      "source_id": "CSS9",
+      "confidence": "medium"
+    },
+    {
+      "id": "consumer#5",
+      "claim": "하나카드 MG+W는 연회비가 2000원 올라 1만9000원이 되고 월 통합할인한도가 6만원에서 4만원으로 줄었다.",
+      "type": "fact",
+      "source_id": "CSS13",
+      "confidence": "medium"
+    },
+    {
+      "id": "consumer#6",
+      "claim": "MZ세대 응답자 366명 중 53.0%가 K-패스류 혜택 지속이 정부 재정 부담으로 어려울 것 같다고 우려했다.",
+      "type": "fact",
+      "source_id": "CSS5",
+      "confidence": "medium"
+    },
+    {
+      "id": "consumer#7",
+      "claim": "KB Youth Club 체크카드는 출시 8개월 만에 누적 발급 20만좌를 넘었다. 체크카드 사례이며 신용카드 수요로 바로 옮겨 읽지 않는다.",
+      "type": "fact",
+      "source_id": "STS27",
+      "confidence": "medium"
+    },
+    {
+      "id": "consumer#8",
+      "claim": "소속감·소셜 니즈를 직접 뒷받침하는 공개 문서는 이번 자료에 없다.",
+      "type": "estimate",
+      "source_id": null,
+      "confidence": "low"
+    }
+  ],
+  "sources": [
+    {
+      "id": "CSS13",
+      "title": "\"오늘 신청 안하면 손해 본다\"…신용카드 혜택 절벽 시대 '성큼'",
+      "url": "https://news.tf.co.kr/read/economy/2256838.htm",
+      "kind": "news",
+      "published": "2025-10-29",
+      "retrieved_at": "2026-10-23",
+      "reliability": 0.7,
+      "tier": "B",
+      "stale": false
+    },
+    {
+      "id": "CSS5",
+      "title": "K-패스 '모두의 카드'에 대한 MZ들의 두 가지 시선 (어피티 설문 366명)",
+      "url": "https://gonggam.korea.kr/newsContentView.es?mid=a12601000000&section_id=NCCD_CULTURE&content=NC002&news_id=9e3531c3-3409-46ef-9d01-122b6b409afb&code_cd=0103000000",
+      "kind": "news",
+      "published": "2026-01-09",
+      "retrieved_at": "2026-10-23",
+      "reliability": 0.7,
+      "tier": "B",
+      "stale": false
+    },
+    {
+      "id": "STS27",
+      "title": "실속·고정비 절감형 체크카드가 뜬다",
+      "url": "https://www.goodkyung.com/news/articleView.html?idxno=292240",
+      "kind": "news",
+      "published": "2026-10-12",
+      "retrieved_at": "2026-10-23",
+      "reliability": 0.7,
+      "tier": "B",
+      "stale": false
+    },
+    {
+      "id": "CSS4",
+      "title": "MZ세대가 신용카드 쓰는 법 (어피티 설문)",
+      "url": "https://v.daum.net/v/8GBqet5T5e?f=p",
+      "kind": "web",
+      "published": null,
+      "retrieved_at": "2026-10-23",
+      "reliability": 0.7,
+      "tier": "B"
+    },
+    {
+      "id": "STS1",
+      "title": "[지급결제조사자료 2025-2] 2024년 지급수단 및 모바일금융서비스 이용행태 조사결과",
+      "url": "https://www.bok.or.kr/portal/bbs/B0000232/view.do?menuNo=200706&nttId=10090464",
+      "kind": "official",
+      "published": "2025-03",
+      "retrieved_at": "2026-10-23",
+      "reliability": 0.9,
+      "tier": "A",
+      "stale": true
+    },
+    {
+      "id": "CSS11",
+      "title": "수익 악화에 카드 단종 속도…주기 축소·규모 확대",
+      "url": "https://ceoscoredaily.com/page/view/2026010817004707618",
+      "kind": "news",
+      "published": "2026-01-13",
+      "retrieved_at": "2026-10-23",
+      "reliability": 0.7,
+      "tier": "B",
+      "stale": false
+    },
+    {
+      "id": "STS11",
+      "title": "\"연봉 3천만원에, 카드값 147만원\"…청년들 지갑 텅텅 (서민금융진흥원 2024년 청년금융 실태조사)",
+      "url": "https://biz.sbs.co.kr/amp/article/20000225803",
+      "kind": "news",
+      "published": "2025-03-31",
+      "retrieved_at": "2026-10-23",
+      "reliability": 0.7,
+      "tier": "B",
+      "stale": true
+    },
+    {
+      "id": "STS2",
+      "title": "모바일금융, 5명 중 4명이 이용…60대도 절반이 활용",
+      "url": "https://www.newsis.com/view/NISX20250325_0003111896",
+      "kind": "news",
+      "published": "2025-03-25",
+      "retrieved_at": "2026-10-23",
+      "reliability": 0.7,
+      "tier": "B",
+      "stale": true
+    },
+    {
+      "id": "STS26",
+      "title": "카드결제 하루 3.8조원…비실물 결제 두자릿수 증가 (한국은행 2026년 상반기 국내 지급결제동향)",
+      "url": "https://biz.sbs.co.kr/amp/article/20000337230",
+      "kind": "news",
+      "published": "2026-09-29",
+      "retrieved_at": "2026-10-23",
+      "reliability": 0.7,
+      "tier": "B",
+      "stale": false
+    },
+    {
+      "id": "STS15",
+      "title": "\"이제 카드 안 써요\"…신용카드 해지회원 증가 (여신금융협회 통계 인용)",
+      "url": "https://v.daum.net/v/20260625080105851",
+      "kind": "news",
+      "published": "2026-06-25",
+      "retrieved_at": "2026-10-23",
+      "reliability": 0.7,
+      "tier": "B",
+      "stale": false
+    },
+    {
+      "id": "STS25",
+      "title": "2025년중 전자지급서비스 이용현황 (경제정책자료)",
+      "url": "https://eiec.kdi.re.kr/policy/materialView.do?num=278263",
+      "kind": "official",
+      "published": "2026-03-21",
+      "retrieved_at": "2026-10-23",
+      "reliability": 0.9,
+      "tier": "A",
+      "stale": false
+    },
+    {
+      "id": "STS3",
+      "title": "아주경제: 한국은행 2024년 지급수단 및 모바일금융서비스 이용행태 조사 보도",
+      "url": "https://www.ajunews.com/view/20250325105045842",
+      "kind": "news",
+      "published": "2025-03-25",
+      "retrieved_at": "2026-10-23",
+      "reliability": 0.7,
+      "tier": "B",
+      "stale": true
+    },
+    {
+      "id": "STS14",
+      "title": "5060세대 카드빚 1년 새 1조 늘어…연체율은 20대가 최고 (뉴스1, 금감원 제출자료)",
+      "url": "https://www.fnnews.com/news/202609061336564405",
+      "kind": "news",
+      "published": "2026-09-06",
+      "retrieved_at": "2026-10-23",
+      "reliability": 0.7,
+      "tier": "B",
+      "stale": false
+    },
+    {
+      "id": "CSS1",
+      "title": "[데이터] 금융·재테크 정기조사 2025 (주 이용 신용카드 순위, 뉴스와이어 보도)",
+      "url": "https://www.newswire.co.kr/newsRead.php?no=1025753",
+      "kind": "news",
+      "published": "2025-12-22",
+      "retrieved_at": "2026-10-23",
+      "reliability": 0.7,
+      "tier": "B",
+      "stale": false
+    },
+    {
+      "id": "CSS10",
+      "title": "카드사 8곳 개인 신용카드 해지 회원 증가 (2026.1~5월)",
+      "url": "https://www.metroseoul.co.kr/article/20260625500029",
+      "kind": "news",
+      "published": "2026-06-25",
+      "retrieved_at": "2026-10-23",
+      "reliability": 0.7,
+      "tier": "B",
+      "stale": false
+    },
+    {
+      "id": "CSS14",
+      "title": "\"지금 바로 발급 받아야\"…인기폭발 '알짜카드' 줄줄이 단종",
+      "url": "https://www.hankyung.com/article/202501158271i",
+      "kind": "news",
+      "published": "2025-01-15",
+      "retrieved_at": "2026-10-23",
+      "reliability": 0.7,
+      "tier": "B",
+      "stale": true
+    },
+    {
+      "id": "CSS15",
+      "title": "2025년 여전사 실적 (신용·체크카드 이용액, 금융감독원 인용)",
+      "url": "https://www.sidae.com/article/2026031909533890943",
+      "kind": "news",
+      "published": "2026-03-19",
+      "retrieved_at": "2026-10-23",
+      "reliability": 0.7,
+      "tier": "B",
+      "stale": false
+    },
+    {
+      "id": "CSS9",
+      "title": "신용카드 사용액 20대만 줄었다",
+      "url": "https://www.munhwa.com/article/11526455",
+      "kind": "news",
+      "published": "2025-08-18",
+      "retrieved_at": "2026-10-23",
+      "reliability": 0.7,
+      "tier": "B",
+      "stale": false
+    },
+    {
+      "id": "CSS3",
+      "title": "2024년 지급수단 및 모바일금융서비스 이용행태 설문조사 결과 (뉴시스 보도)",
+      "url": "https://www.newsis.com/view/NISX20250325_0003111896",
+      "kind": "news",
+      "published": "2025-03-25",
+      "retrieved_at": "2026-10-23",
+      "reliability": 0.7,
+      "tier": "B",
+      "stale": true
+    },
+    {
+      "id": "CSS7",
+      "title": "20대 이하 신용카드 이용액 전 연령 중 최대 감소 (경향신문)",
+      "url": "https://www.khan.co.kr/article/202409020733001",
+      "kind": "news",
+      "published": "2024-09-02",
+      "retrieved_at": "2026-10-23",
+      "reliability": 0.7,
+      "tier": "B",
+      "stale": true
+    },
+    {
+      "id": "STS16",
+      "title": "지갑 닫는 20대…신용카드 이용액 전 연령대서 가장 큰 폭 감소 (우리금융경영연구소 분석)",
+      "url": "https://www.etoday.co.kr/news/view/2396937",
+      "kind": "news",
+      "published": "2024-09-03",
+      "retrieved_at": "2026-10-23",
+      "reliability": 0.7,
+      "tier": "B",
+      "stale": true
+    },
+    {
+      "id": "CSS6",
+      "title": "KB국민카드 \"Z세대, 음식점·편의점·전자상거래에 돈 썼다\"",
+      "url": "https://news.mtn.co.kr/news-detail/2022071914245099911",
+      "kind": "news",
+      "published": "2022-07-19",
+      "retrieved_at": "2026-10-23",
+      "reliability": 0.7,
+      "tier": "B",
+      "stale": true
+    },
+    {
+      "id": "CSS2",
+      "title": "[데이터] 금융·재테크 정기조사 2024 (결제수단·주거래은행 세대별)",
+      "url": "https://www.20slab.org/Archives/38785",
+      "kind": "news",
+      "published": "2024-10-16",
+      "retrieved_at": "2026-10-23",
+      "reliability": 0.7,
+      "tier": "B",
+      "stale": true
+    },
+    {
+      "id": "CSS8",
+      "title": "지갑 닫는 20대…신용카드 이용액 전 연령대서 가장 큰 폭 감소",
+      "url": "https://www.etoday.co.kr/news/view/2396937",
+      "kind": "news",
+      "published": "2024-09-03",
+      "retrieved_at": "2026-10-23",
+      "reliability": 0.7,
+      "tier": "B",
+      "stale": true
+    }
+  ],
+  "assumptions": [
+    "세그먼트 월 소비·니즈 가중치는 PM 가정치이며 고객사 집계로 교체 대상이다.",
+    "설문 비율은 MZ세대, 20대, 전체 등 문서 원문 범위이며 GenZ 만 19~29세 전체의 비율로 보지 않는다.",
+    "순위가 같은 소비 통제·단순함·소속감(0.7)은 공개 문서 근거의 양으로 순서를 정했다."
+  ],
+  "unresolved": [
+    "소속감·소셜, 여행 니즈에 대한 GenZ 대상 반응 자료가 없다.",
+    "CSS4 발행일과 대부분 문서의 표본 규모를 확인하지 못했다.",
+    "자사 회원·결제 데이터 기반 선호는 내부 데이터 확인 필요."
+  ],
+  "limits": [
+    "감성 데이터와 커뮤니티 API는 미연동(stub)이라 긍정·부정 비율을 계산하지 않았다.",
+    "근거 문서 23건 중 소비자 반응 설문은 일부이고 나머지는 시장 통계 보도다.",
+    "CSS6은 2022년 자료로 18개월을 넘긴 오래된 출처다."
+  ],
+  "clarifications": [],
+  "out_of_scope": {
+    "detected": false,
+    "suggested_agent": null
+  },
+  "followups": [
+    "whitespace에서 소비 통제 니즈를 채우는 혜택 구조 후보 검토",
+    "자사 회원 데이터로 소비 통제·결제일 부담 가설 확인(내부 데이터 확인 필요)"
+  ],
+  "input_refs": [
+    "payload.segment",
+    "payload.need_labels",
+    "payload.trend_signals",
+    "payload.docs"
+  ]
+}

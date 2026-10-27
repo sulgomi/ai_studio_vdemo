@@ -8,7 +8,7 @@
   ],
   "domain": "dining",
   "domain_label": "외식·배달",
-  "score": 0.705,
+  "score": 0.704,
   "rank": 1,
   "ceiling": 0.528,
   "feasible": true,
@@ -17,7 +17,7 @@
   "rank_stability": 1.0,
   "parts": {
    "I": 0.91,
-   "U": 0.844,
+   "U": 0.84,
    "M": 0.493,
    "D": 0.714,
    "Q": 0.5,
@@ -26,11 +26,11 @@
    "R": 0.0
   },
   "facts": {
-   "cards_total": 50,
+   "cards_total": 130,
    "cards_with_mechanism": [
-    1
+    2
    ],
-   "need_gap": 0.76,
+   "need_gap": 0.72,
    "nearest_card": "카카오뱅크 K-패스 프렌즈 체크",
    "nearest_sim": 0.29,
    "signal_ids": [
@@ -38,7 +38,7 @@
    ],
    "consumer_priority": 1,
    "assumed_links": [],
-   "domain_card_share": 0.42,
+   "domain_card_share": 0.58,
    "domain_spend": 24
   },
   "tension": false,
@@ -59,7 +59,7 @@
   ],
   "domain": "dining",
   "domain_label": "외식·배달",
-  "score": 0.697,
+  "score": 0.689,
   "rank": 2,
   "ceiling": 0.528,
   "feasible": true,
@@ -68,7 +68,7 @@
   "rank_stability": 0.62,
   "parts": {
    "I": 0.91,
-   "U": 0.904,
+   "U": 0.863,
    "M": 0.493,
    "D": 0.8,
    "Q": 0.5,
@@ -77,11 +77,11 @@
    "R": 0.25
   },
   "facts": {
-   "cards_total": 50,
+   "cards_total": 130,
    "cards_with_mechanism": [
-    0
+    1
    ],
-   "need_gap": 0.76,
+   "need_gap": 0.72,
    "nearest_card": "디지로카 London",
    "nearest_sim": 0.2,
    "signal_ids": [
@@ -89,7 +89,7 @@
    ],
    "consumer_priority": 1,
    "assumed_links": [],
-   "domain_card_share": 0.42,
+   "domain_card_share": 0.58,
    "domain_spend": 24
   },
   "tension": false,
@@ -102,15 +102,15 @@
   ]
  },
  {
-  "id": "A-genz-saving-life_event-dining",
+  "id": "A-genz-saving-miss_refund-dining",
   "seg": "genz",
   "need": "saving",
   "mechanisms": [
-   "life_event"
+   "miss_refund"
   ],
   "domain": "dining",
   "domain_label": "외식·배달",
-  "score": 0.692,
+  "score": 0.685,
   "rank": 3,
   "ceiling": 0.528,
   "feasible": true,
@@ -119,31 +119,29 @@
   "rank_stability": 0.0,
   "parts": {
    "I": 0.793,
-   "U": 0.808,
+   "U": 0.889,
    "M": 0.543,
-   "D": 0.8,
+   "D": 0.75,
    "Q": 0.5,
    "V": 0.4,
    "F": 1.0,
-   "R": 0.0
+   "R": 0.15
   },
   "facts": {
-   "cards_total": 50,
+   "cards_total": 130,
    "cards_with_mechanism": [
     0
    ],
-   "need_gap": 0.74,
-   "nearest_card": "zgm.streaming",
-   "nearest_sim": 0.2,
+   "need_gap": 0.72,
+   "nearest_card": "LOCA LIKIT Play",
+   "nearest_sim": 0.25,
    "signal_ids": [
     "T3",
     "T4"
    ],
    "consumer_priority": 2,
-   "assumed_links": [
-    "life_event"
-   ],
-   "domain_card_share": 0.42,
+   "assumed_links": [],
+   "domain_card_share": 0.58,
    "domain_spend": 24
   },
   "tension": false,
@@ -151,21 +149,21 @@
   "evidence_ids": [
    "T3",
    "T4",
-   "tag:life_event",
+   "tag:miss_refund",
    "need:saving",
    "tag:dining_cafe"
   ]
  },
  {
-  "id": "A-genz-saving-miss_refund-online",
+  "id": "A-genz-saving-perf_recharge-online",
   "seg": "genz",
   "need": "saving",
   "mechanisms": [
-   "miss_refund"
+   "perf_recharge"
   ],
   "domain": "online",
   "domain_label": "온라인쇼핑",
-  "score": 0.683,
+  "score": 0.672,
   "rank": 4,
   "ceiling": 0.528,
   "feasible": true,
@@ -174,29 +172,29 @@
   "rank_stability": 0.0,
   "parts": {
    "I": 0.793,
-   "U": 0.898,
+   "U": 0.843,
    "M": 0.543,
-   "D": 0.8,
-   "Q": 0.442,
+   "D": 0.667,
+   "Q": 0.417,
    "V": 0.4,
    "F": 1.0,
-   "R": 0.15
+   "R": 0.0
   },
   "facts": {
-   "cards_total": 50,
+   "cards_total": 130,
    "cards_with_mechanism": [
-    0
+    2
    ],
-   "need_gap": 0.74,
-   "nearest_card": "zgm.streaming",
-   "nearest_sim": 0.2,
+   "need_gap": 0.72,
+   "nearest_card": "NEED Pay",
+   "nearest_sim": 0.33,
    "signal_ids": [
     "T3",
     "T4"
    ],
    "consumer_priority": 2,
    "assumed_links": [],
-   "domain_card_share": 0.38,
+   "domain_card_share": 0.41,
    "domain_spend": 20
   },
   "tension": false,
@@ -204,7 +202,7 @@
   "evidence_ids": [
    "T3",
    "T4",
-   "tag:miss_refund",
+   "tag:perf_recharge",
    "need:saving",
    "tag:online_shop"
   ]
@@ -219,7 +217,7 @@
   ],
   "domain": "daily",
   "domain_label": "편의점·마트",
-  "score": 0.647,
+  "score": 0.632,
   "rank": 5,
   "ceiling": 0.528,
   "feasible": true,
@@ -231,20 +229,20 @@
    "U": 0.65,
    "M": 0.543,
    "D": 0.65,
-   "Q": 0.4,
+   "Q": 0.317,
    "V": 0.667,
    "F": 1.0,
    "R": 0.1
   },
   "facts": {
-   "cards_total": 50,
+   "cards_total": 130,
    "cards_with_mechanism": [
     0,
     0
    ],
-   "need_gap": 0.74,
-   "nearest_card": "zgm.streaming",
-   "nearest_sim": 0.17,
+   "need_gap": 0.72,
+   "nearest_card": "LOCA LIKIT Play",
+   "nearest_sim": 0.2,
    "signal_ids": [
     "T3",
     "T4"
@@ -254,7 +252,7 @@
     "seasonal_slot",
     "evergreen_fallback"
    ],
-   "domain_card_share": 0.28,
+   "domain_card_share": 0.35,
    "domain_spend": 12
   },
   "tension": false,
@@ -410,14 +408,14 @@
    "R": 0.3
   },
   "facts": {
-   "cards_total": 50,
+   "cards_total": 130,
    "cards_with_mechanism": [
     0,
-    0
+    1
    ],
-   "need_gap": 0.78,
-   "nearest_card": "zgm.streaming",
-   "nearest_sim": 0.17,
+   "need_gap": 0.73,
+   "nearest_card": "LOCA LIKIT Play",
+   "nearest_sim": 0.2,
    "signal_ids": [
     "T3"
    ],
@@ -540,165 +538,6 @@
   }
  },
  {
-  "id": "IDEA-PRI3",
-  "seg": "genz",
-  "need": "simple",
-  "mechanisms": [
-   "single_exclusion_perf"
-  ],
-  "domain": "daily",
-  "domain_label": "편의점·마트",
-  "score": 0.598,
-  "rank": 7,
-  "ceiling": 0.602,
-  "feasible": true,
-  "type": "보조 후보",
-  "confidence": "low",
-  "rank_stability": 0.0,
-  "parts": {
-   "I": 0.649,
-   "U": 0.65,
-   "M": 0.421,
-   "D": 0.65,
-   "Q": 0.4,
-   "V": 0.667,
-   "F": 1.0,
-   "R": 0.1
-  },
-  "facts": {
-   "cards_total": 50,
-   "cards_with_mechanism": [
-    0
-   ],
-   "need_gap": 0.78,
-   "nearest_card": "zgm.streaming",
-   "nearest_sim": 0.2,
-   "signal_ids": [
-    "T3"
-   ],
-   "consumer_priority": 4,
-   "assumed_links": [
-    "single_exclusion_perf"
-   ],
-   "domain_card_share": 0.28,
-   "domain_spend": 12
-  },
-  "tension": false,
-  "assumption_dependent": true,
-  "evidence_ids": [
-   "T3",
-   "tag:single_exclusion_perf",
-   "need:simple",
-   "tag:mart_daily"
-  ],
-  "idea": {
-   "id": "PRI3",
-   "name": "제외 항목 1개 카드(투명 실적)",
-   "one_liner": "2026년 금감원이 은행 대출금리 감면용 카드 실적에 적용한 개선 원칙(제외 항목은 1개까지, 할부 분할 인정, 취소·선결제 귀속월 안내)을 카드 혜택 실적에 그대로 옮긴다.",
-   "what_is_new": "Mr.Life와 LOCA 365는 관리비·공과금·할인액을 실적으로 인정하는 '혜자' 사례지만(PFC15) 할부·취소·결제일 변경 시 인정 방식까지 상품의 약속으로 내세우지는 않는다. 은행권은 2026-07 대출금리 감면용 카드 실적의 제외 항목을 4~8개에서 최대 1개로 줄이고 할부를 분할 인정하며 산정 방식을 앱에 안내하기로 했다(PFF22~PFF26, PFF29). 그러나 이 개선은 카드 혜택 실적에는 해당하지 않는다(PFC17, gaps). 카드 혜택 실적에 이 기준을 스스로 적용하고 '제외 항목 1개'를 카드의 대표 문구로 쓰는 점이 새롭다.",
-   "nearest_cards": [
-    {
-     "card": "Mr.Life",
-     "similarity": "전월 30만원에 관리비·공과금·할인액을 실적으로 인정(PFC15)",
-     "difference": "Mr.Life는 인정 항목을 넓힌 것이고, 이 안은 제외 항목을 1개로 줄이는 원칙과 할부 분할·취소 귀속월·결제일 변경 기준을 함께 공개한다"
-    },
-    {
-     "card": "LOCA 365",
-     "similarity": "관리비·할인액도 실적 인정, 최초 발급 시 실적 무관 기간",
-     "difference": "LOCA 365는 실적 기준을 50만원으로 올려 균형을 맞췄다(PFF7). 이 안은 기준 금액을 올리지 않고 산정 방식 공개를 약속으로 삼는다"
-    },
-    {
-     "card": "카드의정석2 SHOPPING+",
-     "similarity": "전월 이용실적 30만원 이상 조건",
-     "difference": "제외 항목·할인액 처리 기준이 혜택 문구에 드러나 있지 않다"
-    }
-   ],
-   "concept": {
-    "offer": "내가 쓴 돈이 실적에 들어가는지 결제 순간 알 수 있고, 빠지는 항목은 1개뿐이다.",
-    "mechanism": [
-     "인정: 할인·캐시백 받은 이용액, 관리비·공과금·통신, 정기결제, 할부(매월 분할 인정)를 모두 실적에 넣는다. 제외는 1개 항목(예: 상품권·선불충전)으로 정한다.",
-     "실시간 표시: 결제 직후 알림에 '실적 반영 O/X'와 이번 달 누적을 표시한다.",
-     "취소·선결제·결제일 변경: 어느 달 실적에서 빠지는지 약관과 앱에 같은 문장으로 적는다(PFF28, PFF29의 은행 안내 항목과 같은 범위).",
-     "미달 예보: 월말 7일 전 '현재 페이스로는 미달' 예보와 부족 금액을 알린다(추가 결제를 권하는 문구는 쓰지 않는다)."
-    ],
-    "performance_rule": {
-     "type": "spend",
-     "description": "금액 실적은 유지하되 인정 범위를 최대로 넓히고 산정 규칙을 공개해 '체감 실적'을 명목 실적에 맞춘다."
-    },
-    "growth_path": null,
-    "design_values": [
-     {
-      "what": "실적 기준",
-      "value": "전월 30만원",
-      "design_value": true
-     },
-     {
-      "what": "제외 항목 수",
-      "value": "1개(상품권·선불충전)",
-      "design_value": true
-     },
-     {
-      "what": "미달 예보 시점",
-      "value": "월말 7일 전",
-      "design_value": true
-     }
-    ]
-   },
-   "evidence_ids": [
-    "PFF4",
-    "PFF5",
-    "PFF6",
-    "PFF7",
-    "PFF8",
-    "PFF9",
-    "PFF22",
-    "PFF23",
-    "PFF24",
-    "PFF25",
-    "PFF26",
-    "PFF27",
-    "PFF28",
-    "PFF29",
-    "PFC15",
-    "PFC16",
-    "PFC17",
-    "PFT1",
-    "PFT2",
-    "PFA2",
-    "CSF1",
-    "VRF23"
-   ],
-   "risks": [
-    "수익성: 할인액을 실적에 넣으면 같은 기준에서 실적을 채우기 쉬워지고 혜택 지급 대상이 늘어난다. LOCA 365는 기준을 50만원으로 올려 균형을 맞췄다(PFF7, PFA2). 기준을 유지하면 혜택 비용(PFF35)이 늘어난다.",
-    "악용: 관리비·공과금처럼 가맹점수수료가 낮거나 없는 결제로 실적을 채우는 경우, 수수료 재원 없이 혜택만 나간다. 영세가맹점 우대수수료(PFF37)도 같은 방향의 부담이다(해석).",
-    "규제: 실적 산정 기준은 약관 사항이라 출시 후 축소가 어렵다(STF69).",
-    "새로움 한계: 경쟁사가 쉽게 따라 할 수 있는 운영 개선이라 차별 기간이 짧을 수 있다."
-   ],
-   "open_questions": [
-    "가상 고객이 '실적 30만원(제외 1개)'과 '실적 20만원(제외 6개)' 중 무엇을 더 유리하게 보는가?",
-    "미달 예보가 불필요한 추가 결제를 부르는지, 혜택 포기를 돕는지?"
-   ],
-   "platform_hook": "2026-07 은행권 실적 기준 개선(PFT1)이 관측되었고 카드 혜택 실적에는 아직 적용되지 않았다는 차이를 근거로 제안한다.",
-   "durability": "지속 추세",
-   "verification": {
-    "grades": {
-     "evidence": 2,
-     "risk": 2,
-     "novelty": 2
-    },
-    "novelty_verdict": "부분 참신",
-    "corrections": [
-     "why_genz의 GenZ 근거가 MZ 단일 설문과 인터뷰 2명뿐임을 앞에 쓴다.",
-     "hook의 '카드 혜택 실적에는 아직 적용되지 않았다'는 별개 제도(PFC17)임을 한 문장으로 덧붙인다.",
-     "금감원 개선 원칙(PFF23·PFF25·PFF29)은 은행 대출금리 감면 실적 대상이다. '금감원 원칙을 카드 혜택에 옮긴다'는 표현은 규제 요구로 오해될 수 있어 '참고'로 낮춘다.",
-     "실적 기준(설계값 30만원)을 유지한 채 인정 범위를 넓히는 조합은 PFF7의 사례와 반대 방향이라는 점을 명시한다.",
-     "새로움의 대부분은 혜택 구조가 아니라 '산정 규칙 공개 약속'과 앱 표시 기능이다. 경쟁사가 약관 표기만 바꾸면 따라 할 수 있다.",
-     "Mr.Life가 '할인액 전부 실적 인정'으로 이미 제외 항목을 크게 줄였으므로 '제외 1개'와의 실제 차이는 할부 분할 인정과 취소 귀속월 안내 정도다."
-    ]
-   }
-  }
- },
- {
   "id": "IDEA-GRI1",
   "seg": "genz",
   "need": "simple",
@@ -709,7 +548,7 @@
   "domain": null,
   "domain_label": null,
   "score": 0.59,
-  "rank": 8,
+  "rank": 7,
   "ceiling": 0.707,
   "feasible": true,
   "type": "보조 후보",
@@ -726,14 +565,14 @@
    "R": 0.1
   },
   "facts": {
-   "cards_total": 50,
+   "cards_total": 130,
    "cards_with_mechanism": [
     0,
     1
    ],
-   "need_gap": 0.78,
-   "nearest_card": "zgm.streaming",
-   "nearest_sim": 0.17,
+   "need_gap": 0.73,
+   "nearest_card": "LOCA LIKIT Play",
+   "nearest_sim": 0.2,
    "signal_ids": [
     "T3"
    ],
@@ -875,6 +714,165 @@
   }
  },
  {
+  "id": "IDEA-PRI3",
+  "seg": "genz",
+  "need": "simple",
+  "mechanisms": [
+   "single_exclusion_perf"
+  ],
+  "domain": "daily",
+  "domain_label": "편의점·마트",
+  "score": 0.584,
+  "rank": 8,
+  "ceiling": 0.602,
+  "feasible": true,
+  "type": "보조 후보",
+  "confidence": "low",
+  "rank_stability": 0.0,
+  "parts": {
+   "I": 0.649,
+   "U": 0.65,
+   "M": 0.421,
+   "D": 0.65,
+   "Q": 0.317,
+   "V": 0.667,
+   "F": 1.0,
+   "R": 0.1
+  },
+  "facts": {
+   "cards_total": 130,
+   "cards_with_mechanism": [
+    0
+   ],
+   "need_gap": 0.73,
+   "nearest_card": "LOCA LIKIT Play",
+   "nearest_sim": 0.25,
+   "signal_ids": [
+    "T3"
+   ],
+   "consumer_priority": 4,
+   "assumed_links": [
+    "single_exclusion_perf"
+   ],
+   "domain_card_share": 0.35,
+   "domain_spend": 12
+  },
+  "tension": false,
+  "assumption_dependent": true,
+  "evidence_ids": [
+   "T3",
+   "tag:single_exclusion_perf",
+   "need:simple",
+   "tag:mart_daily"
+  ],
+  "idea": {
+   "id": "PRI3",
+   "name": "제외 항목 1개 카드(투명 실적)",
+   "one_liner": "2026년 금감원이 은행 대출금리 감면용 카드 실적에 적용한 개선 원칙(제외 항목은 1개까지, 할부 분할 인정, 취소·선결제 귀속월 안내)을 카드 혜택 실적에 그대로 옮긴다.",
+   "what_is_new": "Mr.Life와 LOCA 365는 관리비·공과금·할인액을 실적으로 인정하는 '혜자' 사례지만(PFC15) 할부·취소·결제일 변경 시 인정 방식까지 상품의 약속으로 내세우지는 않는다. 은행권은 2026-07 대출금리 감면용 카드 실적의 제외 항목을 4~8개에서 최대 1개로 줄이고 할부를 분할 인정하며 산정 방식을 앱에 안내하기로 했다(PFF22~PFF26, PFF29). 그러나 이 개선은 카드 혜택 실적에는 해당하지 않는다(PFC17, gaps). 카드 혜택 실적에 이 기준을 스스로 적용하고 '제외 항목 1개'를 카드의 대표 문구로 쓰는 점이 새롭다.",
+   "nearest_cards": [
+    {
+     "card": "Mr.Life",
+     "similarity": "전월 30만원에 관리비·공과금·할인액을 실적으로 인정(PFC15)",
+     "difference": "Mr.Life는 인정 항목을 넓힌 것이고, 이 안은 제외 항목을 1개로 줄이는 원칙과 할부 분할·취소 귀속월·결제일 변경 기준을 함께 공개한다"
+    },
+    {
+     "card": "LOCA 365",
+     "similarity": "관리비·할인액도 실적 인정, 최초 발급 시 실적 무관 기간",
+     "difference": "LOCA 365는 실적 기준을 50만원으로 올려 균형을 맞췄다(PFF7). 이 안은 기준 금액을 올리지 않고 산정 방식 공개를 약속으로 삼는다"
+    },
+    {
+     "card": "카드의정석2 SHOPPING+",
+     "similarity": "전월 이용실적 30만원 이상 조건",
+     "difference": "제외 항목·할인액 처리 기준이 혜택 문구에 드러나 있지 않다"
+    }
+   ],
+   "concept": {
+    "offer": "내가 쓴 돈이 실적에 들어가는지 결제 순간 알 수 있고, 빠지는 항목은 1개뿐이다.",
+    "mechanism": [
+     "인정: 할인·캐시백 받은 이용액, 관리비·공과금·통신, 정기결제, 할부(매월 분할 인정)를 모두 실적에 넣는다. 제외는 1개 항목(예: 상품권·선불충전)으로 정한다.",
+     "실시간 표시: 결제 직후 알림에 '실적 반영 O/X'와 이번 달 누적을 표시한다.",
+     "취소·선결제·결제일 변경: 어느 달 실적에서 빠지는지 약관과 앱에 같은 문장으로 적는다(PFF28, PFF29의 은행 안내 항목과 같은 범위).",
+     "미달 예보: 월말 7일 전 '현재 페이스로는 미달' 예보와 부족 금액을 알린다(추가 결제를 권하는 문구는 쓰지 않는다)."
+    ],
+    "performance_rule": {
+     "type": "spend",
+     "description": "금액 실적은 유지하되 인정 범위를 최대로 넓히고 산정 규칙을 공개해 '체감 실적'을 명목 실적에 맞춘다."
+    },
+    "growth_path": null,
+    "design_values": [
+     {
+      "what": "실적 기준",
+      "value": "전월 30만원",
+      "design_value": true
+     },
+     {
+      "what": "제외 항목 수",
+      "value": "1개(상품권·선불충전)",
+      "design_value": true
+     },
+     {
+      "what": "미달 예보 시점",
+      "value": "월말 7일 전",
+      "design_value": true
+     }
+    ]
+   },
+   "evidence_ids": [
+    "PFF4",
+    "PFF5",
+    "PFF6",
+    "PFF7",
+    "PFF8",
+    "PFF9",
+    "PFF22",
+    "PFF23",
+    "PFF24",
+    "PFF25",
+    "PFF26",
+    "PFF27",
+    "PFF28",
+    "PFF29",
+    "PFC15",
+    "PFC16",
+    "PFC17",
+    "PFT1",
+    "PFT2",
+    "PFA2",
+    "CSF1",
+    "VRF23"
+   ],
+   "risks": [
+    "수익성: 할인액을 실적에 넣으면 같은 기준에서 실적을 채우기 쉬워지고 혜택 지급 대상이 늘어난다. LOCA 365는 기준을 50만원으로 올려 균형을 맞췄다(PFF7, PFA2). 기준을 유지하면 혜택 비용(PFF35)이 늘어난다.",
+    "악용: 관리비·공과금처럼 가맹점수수료가 낮거나 없는 결제로 실적을 채우는 경우, 수수료 재원 없이 혜택만 나간다. 영세가맹점 우대수수료(PFF37)도 같은 방향의 부담이다(해석).",
+    "규제: 실적 산정 기준은 약관 사항이라 출시 후 축소가 어렵다(STF69).",
+    "새로움 한계: 경쟁사가 쉽게 따라 할 수 있는 운영 개선이라 차별 기간이 짧을 수 있다."
+   ],
+   "open_questions": [
+    "가상 고객이 '실적 30만원(제외 1개)'과 '실적 20만원(제외 6개)' 중 무엇을 더 유리하게 보는가?",
+    "미달 예보가 불필요한 추가 결제를 부르는지, 혜택 포기를 돕는지?"
+   ],
+   "platform_hook": "2026-07 은행권 실적 기준 개선(PFT1)이 관측되었고 카드 혜택 실적에는 아직 적용되지 않았다는 차이를 근거로 제안한다.",
+   "durability": "지속 추세",
+   "verification": {
+    "grades": {
+     "evidence": 2,
+     "risk": 2,
+     "novelty": 2
+    },
+    "novelty_verdict": "부분 참신",
+    "corrections": [
+     "why_genz의 GenZ 근거가 MZ 단일 설문과 인터뷰 2명뿐임을 앞에 쓴다.",
+     "hook의 '카드 혜택 실적에는 아직 적용되지 않았다'는 별개 제도(PFC17)임을 한 문장으로 덧붙인다.",
+     "금감원 개선 원칙(PFF23·PFF25·PFF29)은 은행 대출금리 감면 실적 대상이다. '금감원 원칙을 카드 혜택에 옮긴다'는 표현은 규제 요구로 오해될 수 있어 '참고'로 낮춘다.",
+     "실적 기준(설계값 30만원)을 유지한 채 인정 범위를 넓히는 조합은 PFF7의 사례와 반대 방향이라는 점을 명시한다.",
+     "새로움의 대부분은 혜택 구조가 아니라 '산정 규칙 공개 약속'과 앱 표시 기능이다. 경쟁사가 약관 표기만 바꾸면 따라 할 수 있다.",
+     "Mr.Life가 '할인액 전부 실적 인정'으로 이미 제외 항목을 크게 줄였으므로 '제외 1개'와의 실제 차이는 할부 분할 인정과 취소 귀속월 안내 정도다."
+    ]
+   }
+  }
+ },
+ {
   "id": "IDEA-FRI4",
   "seg": "genz",
   "need": "social",
@@ -884,7 +882,7 @@
   ],
   "domain": "daily",
   "domain_label": "편의점·마트",
-  "score": 0.58,
+  "score": 0.567,
   "rank": 9,
   "ceiling": 0.528,
   "feasible": true,
@@ -896,26 +894,26 @@
    "U": 0.9,
    "M": 0.15,
    "D": 0.9,
-   "Q": 0.4,
+   "Q": 0.317,
    "V": 0.667,
    "F": 1.0,
    "R": 0.1
   },
   "facts": {
-   "cards_total": 50,
+   "cards_total": 130,
    "cards_with_mechanism": [
     0,
-    0
+    2
    ],
-   "need_gap": 0.99,
-   "nearest_card": "zgm.streaming",
-   "nearest_sim": 0.17,
+   "need_gap": 0.98,
+   "nearest_card": "LOCA LIKIT Play",
+   "nearest_sim": 0.2,
    "signal_ids": [],
    "consumer_priority": 5,
    "assumed_links": [
     "experience_category_pack"
    ],
-   "domain_card_share": 0.28,
+   "domain_card_share": 0.35,
    "domain_spend": 12
   },
   "tension": true,
@@ -1038,7 +1036,7 @@
   ],
   "domain": "daily",
   "domain_label": "편의점·마트",
-  "score": 0.546,
+  "score": 0.532,
   "rank": 10,
   "ceiling": 0.528,
   "feasible": true,
@@ -1050,27 +1048,27 @@
    "U": 0.9,
    "M": 0.15,
    "D": 0.9,
-   "Q": 0.4,
+   "Q": 0.317,
    "V": 0.556,
    "F": 1.0,
    "R": 0.3
   },
   "facts": {
-   "cards_total": 50,
+   "cards_total": 130,
    "cards_with_mechanism": [
     0,
-    0
+    2
    ],
-   "need_gap": 0.99,
-   "nearest_card": "zgm.streaming",
-   "nearest_sim": 0.17,
+   "need_gap": 0.98,
+   "nearest_card": "LOCA LIKIT Play",
+   "nearest_sim": 0.2,
    "signal_ids": [],
    "consumer_priority": 5,
    "assumed_links": [
     "first_try_reward",
     "habit_conversion"
    ],
-   "domain_card_share": 0.28,
+   "domain_card_share": 0.35,
    "domain_spend": 12
   },
   "tension": true,
@@ -1216,14 +1214,14 @@
    "R": 0.1
   },
   "facts": {
-   "cards_total": 50,
+   "cards_total": 130,
    "cards_with_mechanism": [
     0,
     0
    ],
-   "need_gap": 0.99,
-   "nearest_card": "zgm.streaming",
-   "nearest_sim": 0.17,
+   "need_gap": 1.0,
+   "nearest_card": "처음",
+   "nearest_sim": 0.25,
    "signal_ids": [],
    "consumer_priority": 3,
    "assumed_links": [],
@@ -1355,7 +1353,7 @@
   ],
   "domain": "sub",
   "domain_label": "구독·디지털",
-  "score": 0.425,
+  "score": 0.405,
   "rank": 12,
   "ceiling": 0.508,
   "feasible": true,
@@ -1367,27 +1365,27 @@
    "U": 0.65,
    "M": 0.15,
    "D": 0.65,
-   "Q": 0.325,
+   "Q": 0.202,
    "V": 0.667,
    "F": 1.0,
    "R": 0.1
   },
   "facts": {
-   "cards_total": 50,
+   "cards_total": 130,
    "cards_with_mechanism": [
-    0,
+    1,
     0
    ],
-   "need_gap": 0.55,
-   "nearest_card": "zgm.streaming",
-   "nearest_sim": 0.17,
+   "need_gap": 0.43,
+   "nearest_card": "ROUTINE",
+   "nearest_sim": 0.22,
    "signal_ids": [],
    "consumer_priority": 7,
    "assumed_links": [
     "subscription_slot",
     "subscription_ledger"
    ],
-   "domain_card_share": 0.24,
+   "domain_card_share": 0.34,
    "domain_spend": 6
   },
   "tension": false,

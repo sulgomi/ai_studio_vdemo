@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 560" width="360" height="560" font-family="Pretendard Variable, Pretendard, Apple SD Gothic Neo, Noto Sans KR, sans-serif">
+<defs>
+<clipPath id="c"><rect width="360" height="560" rx="28"/></clipPath>
+<linearGradient id="g" x1="0" y1="1" x2="0" y2="0"><stop offset="0" stop-color="#8FC3FF"/><stop offset=".42" stop-color="#A9DCC8"/><stop offset=".78" stop-color="#C0EF7C"/><stop offset="1" stop-color="#C6F45A"/></linearGradient>
+<linearGradient id="sheen" x1="0" y1="0" x2="1" y2="0.6"><stop offset="0" stop-color="#fff" stop-opacity=".38"/><stop offset=".35" stop-color="#fff" stop-opacity="0"/><stop offset=".7" stop-color="#fff" stop-opacity="0"/><stop offset="1" stop-color="#fff" stop-opacity=".12"/></linearGradient>
+<filter id="grain" x="0" y="0" width="100%" height="100%"><feTurbulence type="fractalNoise" baseFrequency="1.1" numOctaves="2" seed="9"/><feColorMatrix values="0 0 0 0 0.11  0 0 0 0 0.12  0 0 0 0 0.14  0 0 0 0.07 0"/></filter>
+<linearGradient id="chip" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#5A6069"/><stop offset=".5" stop-color="#3A3F47"/><stop offset="1" stop-color="#2A2E35"/></linearGradient>
+</defs>
+<g clip-path="url(#c)">
+<rect width="360" height="560" fill="url(#g)"/>
+<rect width="360" height="560" filter="url(#grain)"/>
+<rect width="360" height="560" fill="url(#sheen)"/>
+<rect x="1" y="1" width="358" height="558" rx="27" fill="none" stroke="#fff" stroke-opacity=".55" stroke-width="2"/>
+</g>
+<rect x=".5" y=".5" width="359" height="559" rx="27.5" fill="none" stroke="#1C1F24" stroke-opacity=".2"/>
+<!-- chip -->
+<g transform="translate(36 60)">
+<rect width="52" height="40" rx="7" fill="url(#chip)" stroke="#1C1F24" stroke-width=".8"/>
+<g fill="none" stroke="#8D939C" stroke-width=".8"><path d="M0 14H16Q20 14 20 20T16 26H0M52 14H36Q32 14 32 20T36 26H52M20 0V8M32 0V8M20 32V40M32 32V40M26 8V32"/><rect x="16" y="8" width="20" height="24" rx="5"/></g>
+</g>
+<!-- contactless -->
+<g transform="translate(296 80)" fill="none" stroke="#1C1F24" stroke-width="2.2" stroke-linecap="round">
+<path d="M-6 -5A8 8 0 0 1 -6 5"/><path d="M-1 -10A13 13 0 0 1 -1 10"/><path d="M6 -15A19 19 0 0 1 6 15"/><path d="M12 -20A25 25 0 0 1 12 20" opacity=".35"/>
+</g>
+<!-- edge ticks: six, right long side, debossed -->
+<g stroke-linecap="round" stroke-width="3">
+<g stroke="#fff" stroke-opacity=".55" transform="translate(0 1.4)"><path id="t1" d="M338 190h14M338 232h14M338 274h14M338 316h14M338 358h14M338 400h14"/></g>
+<g stroke="#1C1F24" stroke-opacity=".75"><path d="M338 190h14M338 232h14M338 274h14M338 316h14M338 358h14M338 400h14"/></g>
+</g>
+<!-- vertical logo -->
+<g fill="#1C1F24">
+<text transform="translate(98 470) rotate(-90)" font-size="76" font-weight="800" letter-spacing="2">디딤</text>
+<g transform="translate(54 302)"><rect x="0" y="14" width="14" height="14" rx="4"/><rect x="18" y="0" width="14" height="28" rx="4"/></g>
+</g>
+<text x="40" y="150" font-size="9" font-weight="600" letter-spacing="3" fill="#1C1F24" fill-opacity=".7">CREDIT</text>
+<g font-family="Space Mono, Menlo, monospace" font-size="7.5" letter-spacing="2" fill="#1C1F24" fill-opacity=".7">
+<text x="40" y="530">[ISSUER]</text><text x="318" y="530" text-anchor="end">NETWORK</text></g>
+</svg>

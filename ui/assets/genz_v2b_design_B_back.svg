@@ -1,0 +1,105 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 560" width="360" height="560">
+  <defs>
+    <clipPath id="card"><rect x="0" y="0" width="360" height="560" rx="28"/></clipPath>
+    <linearGradient id="body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#EEF7D2" stop-opacity="0.58"/>
+      <stop offset="1" stop-color="#DCEDA8" stop-opacity="0.68"/>
+    </linearGradient>
+    <linearGradient id="streak" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity="0"/>
+      <stop offset="0.4" stop-color="#FFFFFF" stop-opacity="0.26"/>
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
+    </linearGradient>
+    <pattern id="hatch" width="4" height="4" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+      <rect width="4" height="4" fill="#F2EFE6"/>
+      <rect width="1" height="4" fill="#15151A" fill-opacity="0.07"/>
+    </pattern>
+    <filter id="grain" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" seed="11"/>
+      <feColorMatrix values="0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  0 0 0 0.05 0"/>
+    </filter>
+    <filter id="soft" x="-10%" y="-10%" width="120%" height="120%">
+      <feGaussianBlur stdDeviation="0.9"/>
+    </filter>
+  </defs>
+
+  <g clip-path="url(#card)">
+    <rect width="360" height="560" fill="url(#body)"/>
+    <rect width="360" height="560" filter="url(#grain)"/>
+
+    <!-- through the plastic: back of the chip module (front chip, mirrored) -->
+    <g filter="url(#soft)">
+      <rect x="274" y="114" width="46" height="58" rx="9" fill="#BFC3CA" opacity="0.55"/>
+      <rect x="284" y="124" width="26" height="38" rx="4" fill="#15151A" opacity="0.28"/>
+    </g>
+
+    <polygon points="236,0 300,0 120,560 56,560" fill="url(#streak)"/>
+
+    <rect x="1.2" y="1.2" width="357.6" height="557.6" rx="26.8" fill="none" stroke="#FFFFFF" stroke-opacity="0.85" stroke-width="2.4"/>
+    <rect x="4" y="4" width="352" height="552" rx="24" fill="none" stroke="#9BB548" stroke-opacity="0.35" stroke-width="1"/>
+  </g>
+  <rect x="0.5" y="0.5" width="359" height="559" rx="27.5" fill="none" stroke="#7E9440" stroke-opacity="0.55" stroke-width="1"/>
+
+  <g font-family="Pretendard Variable, Pretendard, Apple SD Gothic Neo, Noto Sans KR, sans-serif" fill="#15151A">
+    <!-- header -->
+    <text x="40" y="48" font-size="10" font-weight="600" letter-spacing="0.6">[ISSUER]</text>
+    <text x="320" y="48" text-anchor="end" font-family="Space Mono, Menlo, Courier New, monospace" font-size="9" letter-spacing="2.2">CREDIT</text>
+    <rect x="40" y="58" width="280" height="0.8" fill-opacity="0.35"/>
+
+    <!-- card data placeholders -->
+    <g font-family="Space Mono, Menlo, Courier New, monospace">
+      <text x="40" y="92" font-size="7" letter-spacing="1.4" fill-opacity="0.55">CARD NO.</text>
+      <text x="40" y="112" font-size="16" letter-spacing="0.4">0427 1017 2026 000N</text>
+      <text x="40" y="136" font-size="7" letter-spacing="1.4" fill-opacity="0.55">VALID THRU</text>
+      <text x="40" y="150" font-size="11" letter-spacing="1">MM/YY</text>
+      <text x="124" y="136" font-size="7" letter-spacing="1.4" fill-opacity="0.55">CVC</text>
+      <text x="124" y="150" font-size="11" letter-spacing="1">&#x2022;&#x2022;&#x2022;</text>
+      <text x="40" y="172" font-size="10" letter-spacing="1.6">NAME SURNAME</text>
+    </g>
+
+    <!-- receipt rows: seven days, one picked -->
+    <g id="receipt">
+      <text x="40" y="206" font-family="Space Mono, Menlo, Courier New, monospace" font-size="7" letter-spacing="1.4" fill-opacity="0.55">D+1 ── D+7</text>
+      <text x="320" y="206" text-anchor="end" font-family="Space Mono, Menlo, Courier New, monospace" font-size="7" letter-spacing="1.4" fill-opacity="0.55">PICK 1</text>
+      <rect x="40" y="212" width="280" height="0.8" fill-opacity="0.35"/>
+      <g font-size="9.5" fill-opacity="0.78">
+        <text x="40" y="230"><tspan font-family="Space Mono, Menlo, monospace" font-size="8.5">D+1</tspan><tspan x="76">점심 · 식당</tspan></text>
+        <text x="40" y="252"><tspan font-family="Space Mono, Menlo, monospace" font-size="8.5">D+2</tspan><tspan x="76">배달 · 야식</tspan></text>
+        <text x="40" y="274"><tspan font-family="Space Mono, Menlo, monospace" font-size="8.5">D+3</tspan><tspan x="76">카페</tspan></text>
+        <text x="40" y="318"><tspan font-family="Space Mono, Menlo, monospace" font-size="8.5">D+5</tspan><tspan x="76">점심 · 분식</tspan></text>
+        <text x="40" y="340"><tspan font-family="Space Mono, Menlo, monospace" font-size="8.5">D+6</tspan><tspan x="76">배달 · 저녁</tspan></text>
+        <text x="40" y="362"><tspan font-family="Space Mono, Menlo, monospace" font-size="8.5">D+7</tspan><tspan x="76">점심 · 식당</tspan></text>
+      </g>
+      <g fill="none" stroke="#15151A" stroke-opacity="0.3" stroke-width="0.8" stroke-dasharray="1 2.5">
+        <path d="M150 227 H300 M150 249 H300 M120 271 H300 M150 315 H300 M150 337 H300 M150 359 H300"/>
+      </g>
+      <!-- the picked line, printed lime -->
+      <rect x="34" y="282" width="292" height="22" rx="2" fill="#C6F24E"/>
+      <text x="40" y="296" font-size="9.5" font-weight="700"><tspan font-family="Space Mono, Menlo, monospace" font-size="8.5" font-weight="400">D+4</tspan><tspan x="76">푸드트럭 · 점심</tspan></text>
+      <path d="M296 293 l5 5 l11 -12" fill="none" stroke="#15151A" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+      <rect x="40" y="374" width="280" height="0.8" fill-opacity="0.35"/>
+    </g>
+
+    <!-- signature panel -->
+    <rect x="40" y="394" width="280" height="34" rx="3" fill="url(#hatch)"/>
+    <rect x="40" y="394" width="280" height="34" rx="3" fill="none" stroke="#15151A" stroke-opacity="0.2" stroke-width="0.6"/>
+    <text x="46" y="404" font-family="Space Mono, Menlo, monospace" font-size="5.5" letter-spacing="1.2" fill-opacity="0.5">AUTHORIZED SIGNATURE · 서명</text>
+
+    <!-- condition line -->
+    <text x="40" y="452" font-size="9" font-weight="600">월 1건, 결제 후 7일 안에 앱에서 직접 지정합니다.</text>
+    <text x="40" y="466" font-size="9" fill-opacity="0.72">한도와 조건은 [ISSUER] 앱에서 확인하세요.</text>
+
+    <!-- fine print -->
+    <g font-size="7" fill-opacity="0.6">
+      <text x="40" y="498">본인 외 사용 금지 · 분실·도난 시 즉시 신고</text>
+      <text x="40" y="511">이 카드는 [ISSUER]의 자산이며 요청 시 반환합니다.</text>
+      <text x="40" y="524">고객센터 0000-0000 · 해외 +00-0-0000-0000</text>
+    </g>
+    <g transform="translate(256 498)">
+      <rect width="64" height="28" rx="5" fill="none" stroke="#15151A" stroke-opacity="0.55" stroke-width="1" stroke-dasharray="3 2"/>
+      <text x="32" y="17.5" text-anchor="middle" font-family="Space Mono, Menlo, monospace" font-size="7.5" letter-spacing="1.2" fill-opacity="0.7">NETWORK</text>
+    </g>
+  </g>
+
+  <text x="320" y="546" text-anchor="end" font-family="Space Mono, Menlo, monospace" font-size="6" letter-spacing="1.6" fill="#15151A" fill-opacity="0.35">CLEAR · B</text>
+</svg>

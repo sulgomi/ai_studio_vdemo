@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 560" width="360" height="560" font-family="Pretendard Variable, Pretendard, Apple SD Gothic Neo, Noto Sans KR, sans-serif">
+<defs>
+<clipPath id="c"><rect width="360" height="560" rx="28"/></clipPath>
+<linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#7FE3C4" stop-opacity=".42"/><stop offset=".55" stop-color="#7FE3C4" stop-opacity=".2"/><stop offset="1" stop-color="#BFD8F2" stop-opacity=".3"/></linearGradient>
+<linearGradient id="sheen" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#fff" stop-opacity="0"/><stop offset=".38" stop-color="#fff" stop-opacity="0"/><stop offset=".46" stop-color="#fff" stop-opacity=".3"/><stop offset=".54" stop-color="#fff" stop-opacity="0"/><stop offset=".62" stop-color="#fff" stop-opacity=".18"/><stop offset=".7" stop-color="#fff" stop-opacity="0"/></linearGradient>
+<linearGradient id="silver" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#F4F6F8"/><stop offset=".5" stop-color="#B9BEC5"/><stop offset="1" stop-color="#E6E9ED"/></linearGradient>
+<filter id="blur" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="2.6"/></filter>
+</defs>
+<g clip-path="url(#c)">
+<rect width="360" height="560" fill="url(#bg)"/>
+<rect width="360" height="560" fill="url(#sheen)"/>
+<rect x="1.5" y="1.5" width="357" height="557" rx="26.5" fill="none" stroke="#fff" stroke-opacity=".85" stroke-width="3"/>
+</g>
+<rect x=".5" y=".5" width="359" height="559" rx="27.5" fill="none" stroke="#1B1D22" stroke-opacity=".2"/>
+<!-- logo + its cast shadow -->
+<rect x="37" y="58" width="24" height="24" rx="5" fill="none" stroke="#1B1D22" stroke-opacity=".16" stroke-width="2" filter="url(#blur)"/>
+<rect x="29" y="45" width="24" height="24" rx="5" fill="none" stroke="#1B1D22" stroke-width="2.2"/>
+<text x="63" y="64" font-size="21" font-weight="700" fill="#1B1D22" letter-spacing="-.4">보류함</text>
+<g transform="translate(28 236)"><rect width="52" height="40" rx="7" fill="url(#silver)"/><rect x=".5" y=".5" width="51" height="39" rx="6.5" fill="none" stroke="#59606A" stroke-opacity=".6"/><g fill="none" stroke="#59606A" stroke-opacity=".6" stroke-width=".8"><path d="M0 14H16M0 26H16M36 14H52M36 26H52M26 0V8M26 32V40"/><rect x="16" y="8" width="20" height="24" rx="5"/></g></g>
+<g stroke="#7FE3C4" stroke-width="3.2" stroke-linecap="round" fill="none"><path d="M104 256H134"/></g>
+<g stroke="#1B1D22" stroke-width="1.5" stroke-linecap="round" opacity=".65"><path d="M332 190H348"/><path d="M332 208H348"/><path d="M332 226H348"/><path d="M332 244H348"/><path d="M322 262H348"/><path d="M332 280H348"/><path d="M332 298H348"/><path d="M332 316H348"/><path d="M332 334H348"/><path d="M322 352H348"/></g>
+<text x="28" y="496" font-size="9" font-weight="600" fill="#1B1D22" letter-spacing="2.4" font-family="JetBrains Mono, SF Mono, Menlo, monospace">CREDIT</text>
+<text x="28" y="520" font-size="11" font-weight="600" fill="#1B1D22" letter-spacing="1.2" font-family="JetBrains Mono, SF Mono, Menlo, monospace">[ISSUER]</text>
+<g opacity=".65"><rect x="262" y="506" width="70" height="20" rx="4" fill="none" stroke="#1B1D22" stroke-width=".8"/><text x="297" y="519.5" text-anchor="middle" font-size="7.5" fill="#1B1D22" letter-spacing="1.6" font-family="JetBrains Mono, SF Mono, Menlo, monospace">NETWORK</text></g>
+<text x="332" y="496" text-anchor="end" font-size="7" fill="#1B1D22" opacity=".55" letter-spacing="1.6" font-family="JetBrains Mono, SF Mono, Menlo, monospace">GLASS</text>
+</svg>

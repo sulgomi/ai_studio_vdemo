@@ -1,0 +1,140 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 560" width="360" height="560">
+  <defs>
+    <clipPath id="card"><rect x="0" y="0" width="360" height="560" rx="28"/></clipPath>
+    <!-- clear PETG with a faint lime cast: thicker-looking toward the bottom -->
+    <linearGradient id="body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#EEF7D2" stop-opacity="0.62"/>
+      <stop offset="1" stop-color="#DCEDA8" stop-opacity="0.70"/>
+    </linearGradient>
+    <!-- sharp-edged sun streak (one band, not a glow) -->
+    <linearGradient id="streak" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity="0"/>
+      <stop offset="0.35" stop-color="#FFFFFF" stop-opacity="0.38"/>
+      <stop offset="0.5" stop-color="#FFFFFF" stop-opacity="0.12"/>
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="chip" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#E4E7EB"/>
+      <stop offset="0.45" stop-color="#BFC3CA"/>
+      <stop offset="1" stop-color="#9DA2AB"/>
+    </linearGradient>
+    <filter id="grain" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" seed="7"/>
+      <feColorMatrix values="0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  0 0 0 0.05 0"/>
+    </filter>
+    <filter id="soft" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="0.6"/>
+    </filter>
+    <filter id="ghost" x="-5%" y="-5%" width="110%" height="110%">
+      <feGaussianBlur stdDeviation="1.1"/>
+    </filter>
+    <filter id="chipShadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="1.4"/>
+    </filter>
+  </defs>
+
+  <g clip-path="url(#card)">
+    <!-- plastic body -->
+    <rect width="360" height="560" fill="url(#body)"/>
+    <rect width="360" height="560" filter="url(#grain)"/>
+
+    <!-- ===== see-through: the back's receipt print, mirrored and softened by the plastic ===== -->
+    <g transform="translate(360 0) scale(-1 1)">
+      <g filter="url(#ghost)" opacity="0.17" font-family="Pretendard Variable, Pretendard, Apple SD Gothic Neo, Noto Sans KR, sans-serif" fill="#15151A">
+<g>
+      <text x="40" y="206" font-family="Space Mono, Menlo, Courier New, monospace" font-size="7" letter-spacing="1.4" fill-opacity="0.55">D+1 ── D+7</text>
+      <text x="320" y="206" text-anchor="end" font-family="Space Mono, Menlo, Courier New, monospace" font-size="7" letter-spacing="1.4" fill-opacity="0.55">PICK 1</text>
+      <rect x="40" y="212" width="280" height="0.8" fill-opacity="0.35"/>
+      <g font-size="9.5" fill-opacity="0.78">
+        <text x="40" y="230"><tspan font-family="Space Mono, Menlo, monospace" font-size="8.5">D+1</tspan><tspan x="76">점심 · 식당</tspan></text>
+        <text x="40" y="252"><tspan font-family="Space Mono, Menlo, monospace" font-size="8.5">D+2</tspan><tspan x="76">배달 · 야식</tspan></text>
+        <text x="40" y="274"><tspan font-family="Space Mono, Menlo, monospace" font-size="8.5">D+3</tspan><tspan x="76">카페</tspan></text>
+        <text x="40" y="318"><tspan font-family="Space Mono, Menlo, monospace" font-size="8.5">D+5</tspan><tspan x="76">점심 · 분식</tspan></text>
+        <text x="40" y="340"><tspan font-family="Space Mono, Menlo, monospace" font-size="8.5">D+6</tspan><tspan x="76">배달 · 저녁</tspan></text>
+        <text x="40" y="362"><tspan font-family="Space Mono, Menlo, monospace" font-size="8.5">D+7</tspan><tspan x="76">점심 · 식당</tspan></text>
+      </g>
+      <g fill="none" stroke="#15151A" stroke-opacity="0.3" stroke-width="0.8" stroke-dasharray="1 2.5">
+        <path d="M150 227 H300 M150 249 H300 M120 271 H300 M150 315 H300 M150 337 H300 M150 359 H300"/>
+      </g>
+      <!-- the picked line, printed lime -->
+      <rect x="34" y="282" width="292" height="22" rx="2" fill="none"/>
+      <text x="40" y="296" font-size="9.5" font-weight="700"><tspan font-family="Space Mono, Menlo, monospace" font-size="8.5" font-weight="400">D+4</tspan><tspan x="76">푸드트럭 · 점심</tspan></text>
+      <path d="M296 293 l5 5 l11 -12" fill="none" stroke="#15151A" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+      <rect x="40" y="374" width="280" height="0.8" fill-opacity="0.35"/>
+    </g>
+      </g>
+      <!-- picked line stays bright: printed lime reads through clearly -->
+      <g filter="url(#ghost)">
+        <rect x="34" y="282" width="292" height="22" rx="2" fill="#C6F24E" opacity="0.88"/>
+        <path d="M296 293 l5 5 l11 -12" fill="none" stroke="#15151A" stroke-opacity="0.6" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+        <text x="40" y="296" font-family="Pretendard Variable, Pretendard, Apple SD Gothic Neo, Noto Sans KR, sans-serif" font-size="9.5" font-weight="700" fill="#15151A" fill-opacity="0.3"><tspan font-family="Space Mono, Menlo, monospace" font-size="8.5" font-weight="400">D+4</tspan><tspan x="76">푸드트럭 · 점심</tspan></text>
+      </g>
+    </g>
+
+    <!-- sun streak -->
+    <polygon points="196,0 262,0 70,560 4,560" fill="url(#streak)"/>
+    <polygon points="276,0 288,0 96,560 84,560" fill="#FFFFFF" opacity="0.16"/>
+
+    <!-- polished edge: bright inner lip -->
+    <rect x="1.2" y="1.2" width="357.6" height="557.6" rx="26.8" fill="none" stroke="#FFFFFF" stroke-opacity="0.85" stroke-width="2.4"/>
+    <rect x="4" y="4" width="352" height="552" rx="24" fill="none" stroke="#9BB548" stroke-opacity="0.35" stroke-width="1"/>
+  </g>
+  <!-- outer edge read (polished side wall) -->
+  <rect x="0.5" y="0.5" width="359" height="559" rx="27.5" fill="none" stroke="#7E9440" stroke-opacity="0.55" stroke-width="1"/>
+
+  <!-- ===== contactless, large, top ===== -->
+  <g fill="none" stroke="#15151A" stroke-width="3.2" stroke-linecap="round" transform="translate(276 64)">
+    <path d="M0 -10 a14 14 0 0 1 0 20"/>
+    <path d="M10 -19 a26 26 0 0 1 0 38"/>
+    <path d="M20 -28 a38 38 0 0 1 0 56"/>
+    <path d="M30 -37 a50 50 0 0 1 0 74"/>
+  </g>
+
+  <!-- ===== floating silver chip (vertical orientation) ===== -->
+  <g transform="translate(40 114)">
+    <rect x="1" y="2.5" width="46" height="58" rx="9" fill="#15151A" opacity="0.18" filter="url(#chipShadow)"/>
+    <rect width="46" height="58" rx="9" fill="url(#chip)"/>
+    <g fill="none" stroke="#868B94" stroke-width="1">
+      <path d="M0 19 H14 M0 39 H14 M32 19 H46 M32 39 H46"/>
+      <path d="M23 0 V12 M23 46 V58"/>
+      <rect x="14" y="12" width="18" height="34" rx="5"/>
+    </g>
+    <rect x="0.5" y="0.5" width="45" height="57" rx="8.5" fill="none" stroke="#FFFFFF" stroke-opacity="0.6"/>
+  </g>
+
+  <!-- ===== vertical logo lockup: symbol over 픽 / 백, stacked upright, ink ===== -->
+  <g transform="translate(264 382) scale(0.92)">
+    <!-- symbol: a tick whose long stroke turns back at the top (pick, then back) -->
+    <g fill="none" stroke="#15151A" stroke-width="5" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M6 20 L17 31 L38 8 Q41 4 36 4 L27 4"/>
+    </g>
+  </g>
+  <g font-family="Pretendard Variable, Pretendard, Apple SD Gothic Neo, Noto Sans KR, sans-serif" font-size="56" font-weight="800" fill="#15151A" text-anchor="end">
+    <text x="322" y="466">픽</text>
+    <text x="322" y="524">백</text>
+  </g>
+
+  <!-- ===== small print, bottom ===== -->
+  <text x="40" y="506" font-family="Space Mono, Menlo, Courier New, monospace" font-size="10" letter-spacing="2.4" fill="#15151A">CREDIT</text>
+  <text x="40" y="524" font-family="Pretendard Variable, Pretendard, Apple SD Gothic Neo, Noto Sans KR, sans-serif" font-size="10" font-weight="600" letter-spacing="0.6" fill="#15151A" fill-opacity="0.7">[ISSUER]</text>
+
+  <!-- network placeholder -->
+  <g transform="translate(40 446)">
+    <rect width="64" height="30" rx="5" fill="none" stroke="#15151A" stroke-opacity="0.55" stroke-width="1" stroke-dasharray="3 2"/>
+    <text x="32" y="19" text-anchor="middle" font-family="Space Mono, Menlo, Courier New, monospace" font-size="8" letter-spacing="1.2" fill="#15151A" fill-opacity="0.7">NETWORK</text>
+  </g>
+
+  <!-- 7-day ticks engraved along the top edge (laser-etched: light cut + dark wall) -->
+  <g stroke-linecap="round">
+    <g stroke="#FFFFFF" stroke-opacity="0.9" stroke-width="1.6">
+      <path d="M40 10 v8 M56 10 v8 M72 10 v8 M88 10 v8 M104 10 v8 M120 10 v8 M136 10 v8"/>
+    </g>
+    <g stroke="#6F8433" stroke-opacity="0.45" stroke-width="0.8" transform="translate(1 0.6)">
+      <path d="M40 10 v8 M56 10 v8 M72 10 v8 M88 10 v8 M104 10 v8 M120 10 v8 M136 10 v8"/>
+    </g>
+  </g>
+
+  <!-- corner engraving: variant code -->
+  <text x="152" y="17" text-anchor="start" font-family="Space Mono, Menlo, Courier New, monospace" font-size="6.5" letter-spacing="1.6" fill="#FFFFFF" fill-opacity="0.9">CLEAR</text>
+  <text x="152.6" y="17.6" text-anchor="start" font-family="Space Mono, Menlo, Courier New, monospace" font-size="6.5" letter-spacing="1.6" fill="#6F8433" fill-opacity="0.35">CLEAR</text>
+</svg>

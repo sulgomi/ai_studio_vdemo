@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 560" width="360" height="560" font-family="Pretendard Variable, Pretendard, Apple SD Gothic Neo, Noto Sans KR, sans-serif">
+<defs>
+<clipPath id="c"><rect width="360" height="560" rx="28"/></clipPath>
+<filter id="grain" x="0" y="0" width="100%" height="100%"><feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" seed="4"/><feColorMatrix values="0 0 0 0 0.11  0 0 0 0 0.12  0 0 0 0 0.14  0 0 0 0.09 0"/></filter>
+<linearGradient id="sheen" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#fff" stop-opacity=".35"/><stop offset=".45" stop-color="#fff" stop-opacity="0"/><stop offset="1" stop-color="#1C1F24" stop-opacity=".05"/></linearGradient>
+<linearGradient id="chip" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#E4E8EC"/><stop offset=".5" stop-color="#B8BEC6"/><stop offset="1" stop-color="#9AA1AB"/></linearGradient>
+<linearGradient id="emb" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#000" stop-opacity=".18"/><stop offset="1" stop-color="#fff" stop-opacity=".8"/></linearGradient>
+</defs>
+<g clip-path="url(#c)">
+<rect width="360" height="560" fill="#F4F1EA"/>
+<rect width="360" height="560" filter="url(#grain)"/>
+<rect width="360" height="560" fill="url(#sheen)"/>
+<rect x="1" y="1" width="358" height="558" rx="27" fill="none" stroke="#fff" stroke-opacity=".7" stroke-width="2"/>
+</g>
+<rect x=".5" y=".5" width="359" height="559" rx="27.5" fill="none" stroke="#1C1F24" stroke-opacity=".18"/>
+<!-- chip -->
+<g transform="translate(36 60)">
+<rect width="52" height="40" rx="7" fill="url(#chip)" stroke="#8D949E" stroke-width=".8"/>
+<g fill="none" stroke="#7F8791" stroke-width=".8"><path d="M0 14H16Q20 14 20 20T16 26H0M52 14H36Q32 14 32 20T36 26H52M20 0V8M32 0V8M20 32V40M32 32V40M26 8V32"/><rect x="16" y="8" width="20" height="24" rx="5"/></g>
+</g>
+<!-- contactless -->
+<g transform="translate(300 80)" fill="none" stroke="#1C1F24" stroke-width="2.2" stroke-linecap="round">
+<path d="M-6 -5A8 8 0 0 1 -6 5"/><path d="M0 -10A13 13 0 0 1 0 10" transform="translate(-1 0)"/><path d="M6 -15A19 19 0 0 1 6 15"/><path d="M12 -20A25 25 0 0 1 12 20" opacity=".35"/>
+</g>
+<!-- vertical logo -->
+<g fill="#1C1F24">
+<g transform="translate(296 454)">
+<text transform="rotate(-90)" x="0" y="0" font-size="76" font-weight="800" letter-spacing="2" fill="#1C1F24">디딤</text>
+</g>
+<!-- symbol: two steps -->
+<g transform="translate(252 282)">
+<rect x="0" y="14" width="14" height="14" rx="4"/>
+<rect x="18" y="0" width="14" height="28" rx="4"/>
+</g>
+</g>
+<text transform="translate(40 150) rotate(0)" font-size="9" font-weight="600" letter-spacing="3" fill="#1C1F24" fill-opacity=".65">CREDIT</text>
+<!-- three dots stamp -->
+<g transform="translate(46 494)">
+<circle cx="0" cy="0" r="11" fill="none" stroke="#1C1F24" stroke-width="1.6"/>
+<circle cx="38" cy="0" r="11" fill="#C6F45A" stroke="#1C1F24" stroke-width="1.6"/>
+<circle cx="76" cy="0" r="11" fill="none" stroke="#1C1F24" stroke-width="1.6"/>
+</g>
+<text x="40" y="530" font-size="7.5" letter-spacing="2" fill="#1C1F24" fill-opacity=".6" font-family="Space Mono, Menlo, monospace">[ISSUER]</text>
+<text x="318" y="530" font-size="7.5" letter-spacing="2" fill="#1C1F24" fill-opacity=".6" text-anchor="end" font-family="Space Mono, Menlo, monospace">NETWORK</text>
+</svg>

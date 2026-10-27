@@ -1,197 +1,198 @@
 {
-  "run_id": "v2rec2",
-  "request_id": "v2rec2-competitor-r1",
+  "run_id": "m3",
+  "request_id": "m3-competitor-r1",
   "agent": "competitor",
   "contract_version": "1.0",
   "model": "claude-sonnet-5-5",
   "status": "ok",
-  "answer": "경쟁 카드 40종 기준으로 청구할인형(19종), 해외결제·환전(17종), 온라인쇼핑(16종), 외식·카페(14종)가 가장 붐빕니다. 소셜, 혜택 풀 공유, AI 개인화, 실적조건 완화, 놓친혜택 환급, 챌린지는 경쟁 카드에서 0종이라 공백 후보입니다. GenZ와 가까운 신용카드는 올바른 FLEX, iD SELECT ALL, LOCA 365이며 자사 카드와의 비교는 comparison_with_own_card에 따로 정리했습니다.",
+  "answer": "자사(신한카드) 33종을 뺀 경쟁 카드 130종에서 실적 구간제(80종), 외식·카페(67종), 청구할인형(60종), 온라인쇼핑(53종), 대중교통·모빌리티(52종)가 가장 붐빕니다. 놓친혜택 환급, 소셜, 혜택 교체 구독은 0종이고 AI 개인화와 혜택 풀 공유는 1종이라 공백 후보입니다. GenZ와 가장 가까운 경쟁 신용카드는 삼성 iD ON, 하나 원더카드 2.0 DAILY, 모니모카드입니다.",
   "result": {
     "crowded": [
       {
-        "tag": "reward_discount",
-        "count": 19,
-        "reason": "경쟁 카드 40종 중 19종으로 태그 집계 1위. 청구할인형은 삼성, 현대, KB국민, 롯데, NH농협 등 여러 발급사가 이미 채택"
-      },
-      {
-        "tag": "travel_fx",
-        "count": 17,
-        "reason": "40종 중 17종으로 2위. 해외결제·환전 혜택이 신용카드와 체크카드 양쪽에 넓게 퍼져 있음"
-      },
-      {
-        "tag": "online_shop",
-        "count": 16,
-        "reason": "40종 중 16종으로 3위. 온라인쇼핑 혜택은 PLCC 제휴 카드와 일반 카드 모두에 들어 있음"
+        "tag": "tiered_perf",
+        "count": 80,
+        "reason": "경쟁 카드 130종 중 80종으로 1위. 전월실적 구간에 따라 혜택이 달라지는 구조가 표준이라 차별 여지가 작음"
       },
       {
         "tag": "dining_cafe",
-        "count": 14,
-        "reason": "40종 중 14종으로 4위. 외식·카페는 GenZ 생활 소비 영역에서 가장 많은 카드가 겹치는 가맹점 태그"
+        "count": 67,
+        "reason": "130종 중 67종으로 2위. 외식·카페는 GenZ 생활 소비의 기본 영역이라 대부분 카드가 이미 포함"
+      },
+      {
+        "tag": "reward_discount",
+        "count": 60,
+        "reason": "130종 중 60종으로 3위. 청구할인형은 가장 흔한 보상 방식"
+      },
+      {
+        "tag": "online_shop",
+        "count": 53,
+        "reason": "130종 중 53종으로 4위. 온라인쇼핑 할인·적립은 young 타깃 카드 다수가 보유"
       },
       {
         "tag": "transit",
-        "count": 11,
-        "reason": "40종 중 11종으로 5위. 대중교통·모빌리티는 young 타깃 체크카드와 K-패스 연계 카드에 몰려 있음"
+        "count": 52,
+        "reason": "130종 중 52종으로 5위. 대중교통·모빌리티 혜택은 체크카드와 K-패스 연계 카드에 폭넓게 퍼져 있음"
       },
       {
-        "tag": "fixed_bills",
-        "count": 10,
-        "reason": "40종 중 10종으로 공동 6위. 공과금·통신·관리비 혜택은 생활형 카드의 기본 구성"
+        "tag": "travel_fx",
+        "count": 48,
+        "reason": "130종 중 48종으로 6위. 해외결제·환전은 트래블 체크카드와 PLCC 제휴 카드에 널리 분포"
+      },
+      {
+        "tag": "mart_daily",
+        "count": 45,
+        "reason": "130종 중 45종으로 7위. 편의점·마트는 생활형 카드의 기본 구성"
       },
       {
         "tag": "subscription_ott",
-        "count": 10,
-        "reason": "40종 중 10종으로 공동 6위. 구독/OTT는 올바른 FLEX, LOCA 365, 삼성 iD SELECT ON 등 GenZ 후보 카드가 공통으로 보유"
-      },
-      {
-        "tag": "tiered_perf",
-        "count": 9,
-        "reason": "40종 중 9종으로 상위 8개 경계의 동률 태그(paymethod_bonus, check_card도 9종). 실적 구간제 조건 구조가 서로 비슷해 상위 8개에 포함함"
+        "count": 44,
+        "reason": "130종 중 44종으로 8위. 구독/OTT 할인은 GenZ 대상 카드 다수가 공통으로 넣고 있음"
       }
     ],
     "empty": [
       {
-        "tag": "social",
+        "tag": "miss_refund",
         "count": 0,
-        "reason": "경쟁 카드 40종 중 0종. 친구·지인과 혜택을 주고받는 소셜형 구조를 가진 카드가 없음"
+        "reason": "130종 중 0종. 쓰지 못한 혜택을 돌려주는 구조를 가진 경쟁 카드가 없음"
       },
       {
-        "tag": "group_pooling",
+        "tag": "social",
         "count": 0,
-        "reason": "40종 중 0종. 여러 사람이 혜택을 모아 나눠 쓰는 구조가 없음"
+        "reason": "130종 중 0종. 친구·지인과 혜택을 주고받는 소셜형 구조가 없음"
+      },
+      {
+        "tag": "benefit_rental",
+        "count": 0,
+        "reason": "130종 중 0종. 혜택을 바꿔 쓰는 구독형 구조가 없음(자사는 Deep Once 1종 보유)"
       },
       {
         "tag": "ai_personalize",
-        "count": 0,
-        "reason": "40종 중 0종. 유사 태그인 auto_best(자동 최적 혜택)도 체크카드 1종뿐"
+        "count": 1,
+        "reason": "130종 중 1종(하나 원더카드 2.0 DAILY)뿐. 개인화 혜택을 전면에 둔 카드가 거의 없음"
+      },
+      {
+        "tag": "group_pooling",
+        "count": 1,
+        "reason": "130종 중 1종(하나 원더카드 2.0 FREE+)뿐. 혜택 한도를 나눠 쓰는 구조가 거의 없음"
       },
       {
         "tag": "anti_cap",
-        "count": 0,
-        "reason": "40종 중 0종. tiered_perf가 9종인데 실적조건 완화 태그는 없고 perf_recharge(실적 부족분 보전)도 2종"
-      },
-      {
-        "tag": "miss_refund",
-        "count": 0,
-        "reason": "40종 중 0종. 놓친 혜택을 환급해 주는 구조를 가진 경쟁 카드가 없음"
-      },
-      {
-        "tag": "challenge",
-        "count": 0,
-        "reason": "경쟁 카드 40종 중 0종. DB에서 이 태그를 쓰는 카드는 자사 처음(ANNIVERSE) 1종뿐이라 경쟁 집계에서는 공백"
+        "count": 2,
+        "reason": "130종 중 2종. 130종의 80종이 실적 구간제인 데 비해 실적조건 완화를 내세운 카드는 드묾"
       },
       {
         "tag": "life_event",
-        "count": 0,
-        "reason": "40종 중 0종. 취업, 독립 등 생활 변화에 맞춰 혜택이 전환되는 구조가 없음"
+        "count": 2,
+        "reason": "130종 중 2종. 졸업·입사 같은 생애 이벤트 전환 혜택은 거의 없음"
       },
       {
-        "tag": "subscription_slot",
-        "count": 0,
-        "reason": "40종 중 0종. subscription_ott는 10종이 쓰지만 구독 슬롯을 골라 할인받는 구조는 없음"
+        "tag": "challenge",
+        "count": 4,
+        "reason": "130종 중 4종. 챌린지형 혜택은 소수 카드에 한정되고 young 신용카드에서는 일부(모니모페이카드 등)에만 있음"
       }
     ],
     "nearest": [
       {
-        "name": "올바른 FLEX",
-        "card_id": "c26",
-        "why": "NH농협 신용카드로 target에 young이 포함되고 delivery, subscription_ott, dining_cafe, transit, fixed_bills, mart_daily, online_shop 태그가 겹침. 청구할인형에 결제수단 가산(paymethod_bonus) 구조"
+        "name": "삼성 iD ON",
+        "card_id": "msamsung10",
+        "why": "young 타깃 신용카드로 외식·카페, 배달, 대중교통, 공과금, 구독/OTT, 온라인쇼핑, 해외결제 혜택을 한 장에 담고 자동 최적 혜택 구조를 가짐. 연회비 2만원"
       },
       {
-        "name": "iD SELECT ALL",
-        "card_id": "c07",
-        "why": "삼성 신용카드로 target에 young이 포함되고 delivery, dining_cafe, mart_daily, online_shop, fixed_bills 태그가 겹침. 청구할인형에 항목 택1(select_item)로 소비 영역을 고르는 구조"
+        "name": "원더카드 2.0 DAILY",
+        "card_id": "mhana11",
+        "why": "young 타깃 신용카드로 배달, 편의점·마트, 구독/OTT, 대중교통, 외식·카페 혜택에 팩 택1과 AI 개인화 구조를 결합. 연회비 1.99만원"
       },
       {
-        "name": "LOCA 365",
-        "card_id": "c23",
-        "why": "롯데 신용카드로 target에 young이 포함되고 delivery, subscription_ott, transit, fixed_bills 태그가 겹침. 청구할인형에 할인액 실적 인정(discount_counts) 구조"
+        "name": "모니모카드",
+        "card_id": "msamsung01",
+        "why": "young 타깃 신용카드로 온라인쇼핑, 외식·카페, 구독/OTT, 편의점·마트, 배달, 대중교통 혜택에 월 변경형과 항목 택1 구조를 결합. 연회비 1만원"
       }
     ],
     "easy_to_copy": [
-      "청구할인형(reward_discount) 단순 할인: 40종 중 19종이 이미 쓰고 있어 경쟁사가 가장 쉽게 따라 할 수 있는 영역",
-      "외식·카페(dining_cafe)와 온라인쇼핑(online_shop) 가맹점 할인: 각각 14종, 16종이 보유해 차별화가 어려움",
-      "구독/OTT(subscription_ott)와 대중교통(transit) 할인: 10종, 11종이 보유하고 있어 단순 항목 추가로는 금방 따라잡힘",
-      "해외결제·환전(travel_fx) 우대: 17종이 보유한 영역이라 이 혜택만으로는 컨셉 차별이 어려움"
+      "청구할인형 + 실적 구간제 조합(reward_discount 60종, tiered_perf 80종). 구조가 표준화되어 타사가 바로 따라 할 수 있음",
+      "외식·카페, 온라인쇼핑, 편의점·마트 등 생활 가맹점 할인(각 45~67종). 업종 묶음만으로는 차별이 되지 않음",
+      "구독/OTT 할인(44종)과 배달 할인(32종). 제휴사만 바꾸면 복제가 쉬운 영역",
+      "대중교통·K-패스 연계(transit 52종, govt_link 9종). 정부 제도 기반이라 누구나 붙일 수 있음",
+      "해외결제·환전 수수료 혜택(travel_fx 48종). 트래블 체크·PLCC 카드가 이미 다수"
     ],
+    "products": [],
     "comparison_with_own_card": {
-      "own_card": "Mr.Life, Discount Plan+, 처음(ANNIVERSE), SOL트래블 체크, RPM+ Platinum#, 카카오뱅크 줍줍 신한카드, 배민 신한카드 밥친구, 신한카드 하루(Haru), 신한카드 SOL트래블J 체크, CU Npay 카드",
+      "own_card": "처음(ANNIVERSE), 처음, 플리, Discount Plan+, 신한 모두의카드(K-패스), Simple Plan, Hi-Point Plan, Deep Once",
       "differences": [
-        "자사 신용카드 중 target에 young이 있는 카드는 Discount Plan+(연회비 5만원)와 카카오뱅크 줍줍 신한카드(1.8만원) 2종이며, 경쟁 young 신용카드(올바른 FLEX 1만원, LOCA 365 2만원)와 연회비 구간이 다름",
-        "자사 time_slot(Mr.Life, Discount Plan+)과 challenge(처음(ANNIVERSE))는 경쟁 카드 40종에 없는 태그로, 자사만 보유한 구조",
-        "자사 Discount Plan+는 배달, 구독/OTT, 외식·카페, 편의점·마트, 온라인쇼핑을 한 카드에 담아 올바른 FLEX와 태그 구성이 유사하나 select_pack(팩 택1) 구조를 쓴다는 점이 다름",
-        "카카오뱅크 줍줍 신한카드는 bank_bundle, spend_free(무실적) 조합으로 경쟁의 은행 제휴 카드(토스뱅크 하나카드 WIDE 등)와 같은 영역에 있음"
+        "자사 young 신용카드는 처음, 플리, Simple Plan, Hi-Point Plan, Deep Once 등 단일 컨셉 중심인 반면, 경쟁사 nearest 3종은 생활 업종 6~7개를 한 장에 묶고 택1·월 변경 구조를 붙임",
+        "자사는 challenge(처음(ANNIVERSE), 플리, ECO Plan)와 benefit_rental(Deep Once), auto_best(플리, Pick E/I)를 이미 보유해 경쟁사 공백 태그 일부를 선점. 경쟁은 challenge 4종, benefit_rental 0종",
+        "자사 young 신용카드의 연회비는 1.5~3만원대(처음 1.5만원, 플리 1.5만원, Hi-Point Plan 2만원, Deep Once 2만원). nearest 3종은 1~2만원으로 비슷하거나 낮음",
+        "자사는 PLCC 제휴(카카오뱅크, Toss One, 지그재그, GS ALL 등 11종)가 많고 GenZ 직접 타깃은 young 표기 신용카드 일부에 한정됨"
       ],
       "gaps": [
-        "social, group_pooling, ai_personalize, anti_cap, miss_refund, life_event, subscription_slot은 경쟁 카드와 자사 카드 모두 0종이라 양쪽 공통의 공백",
-        "자사 카드 10종 중 challenge를 쓰는 카드는 처음(ANNIVERSE) 1종뿐이고 이 카드는 target에 young이 없어 GenZ 대상 챌린지 구조는 자사에도 없음",
-        "자사 young 신용카드 2종 모두 투자 연계 외 신규 공백 태그(소셜, AI 개인화 등)를 쓰지 않음. 실제 혜택률과 월 한도는 입력에 없어 확인 불가"
+        "miss_refund, social, group_pooling, life_event, anti_cap, ai_personalize는 자사 33종에도 없어 경쟁사와 같이 공백(경쟁은 각각 0~2종)",
+        "자사 Discount Plan+는 young을 포함하지만 single, family, senior 등 전 세그먼트 대상이라 GenZ 전용 포지셔닝 카드는 자사 신용카드에서 확인되지 않음",
+        "자사 GenZ 카드 중 실적조건 완화(anti_cap)와 혜택 풀 공유를 쓰는 카드가 없고, 신용카드 중 AI 개인화를 내세운 카드도 없음"
       ]
     },
-    "products": []
+    "db_as_of": "2026-10-27"
   },
   "findings": [
     {
       "id": "competitor#0",
-      "claim": "입력 tag_counts(자사 제외) 기준 reward_discount 19종, travel_fx 17종, online_shop 16종, dining_cafe 14종, transit 11종이 상위 태그다.",
+      "claim": "자사 33종을 뺀 경쟁 카드 130종의 태그 집계 상위는 tiered_perf 80, dining_cafe 67, reward_discount 60, online_shop 53, transit 52, travel_fx 48, mart_daily 45, subscription_ott 44종이다.",
       "type": "fact",
       "source_id": "DB1",
       "confidence": "high"
     },
     {
       "id": "competitor#1",
-      "claim": "입력 tag_counts 기준 social, group_pooling, ai_personalize, anti_cap, miss_refund, challenge, life_event, subscription_slot은 0종이다.",
+      "claim": "경쟁 카드 130종에서 miss_refund, social, benefit_rental은 0종, ai_personalize와 group_pooling은 1종, anti_cap과 life_event는 2종이다.",
       "type": "fact",
       "source_id": "DB1",
       "confidence": "high"
     },
     {
       "id": "competitor#2",
-      "claim": "competitor_db에서 target에 young을 포함한 경쟁 신용카드로 iD SELECT ALL, LOCA 365, 올바른 FLEX 등이 있고, young 단독 타깃 경쟁 카드는 대부분 체크카드이다.",
+      "claim": "삼성 iD ON, 원더카드 2.0 DAILY, 모니모카드는 target에 young이 있는 신용카드이며 GenZ 생활 소비 태그를 다수 겹쳐 쓴다.",
+      "type": "fact",
+      "source_id": "DB1",
+      "confidence": "medium"
+    },
+    {
+      "id": "competitor#3",
+      "claim": "자사 카드는 challenge 3종, benefit_rental 1종(Deep Once)을 갖고 있고 miss_refund, social, group_pooling, life_event, anti_cap, ai_personalize는 자사에도 없다.",
       "type": "fact",
       "source_id": "DB1",
       "confidence": "high"
     },
     {
-      "id": "competitor#3",
-      "claim": "올바른 FLEX, iD SELECT ALL, LOCA 365는 young 타깃과 생활 소비 태그가 겹쳐 GenZ 신용카드의 직접 경쟁 후보로 본다.",
+      "id": "competitor#4",
+      "claim": "생활 업종 할인과 구독/OTT, 배달, 대중교통 혜택은 경쟁사가 쉽게 복제할 수 있는 영역으로 본다.",
       "type": "estimate",
       "source_id": null,
-      "confidence": "medium"
-    },
-    {
-      "id": "competitor#4",
-      "claim": "자사 time_slot과 challenge 태그는 경쟁 카드 집계에 없어, 해당 구조는 자사만 보유한 것으로 확인된다.",
-      "type": "fact",
-      "source_id": "DB1",
       "confidence": "medium"
     }
   ],
   "sources": [
     {
       "id": "DB1",
-      "title": "경쟁 카드 DB와 태그 집계(입력 payload competitor_db, tag_counts, 기준일 2026-10-23)",
-      "url": "https://card-studio.invalid/scenarios/genz-credit-v2-alt/03-competitor/in.json",
+      "title": "경쟁 카드 DB 163종(경쟁 130종, 자사 33종)과 태그 집계(입력 payload competitor_db, tag_counts)",
+      "url": "https://card-studio.invalid/scenarios/genz-credit-v2/03-competitor/in.json",
       "publisher": "card-studio 입력 데이터",
       "kind": "db",
-      "published": "2026-10-23",
+      "published": null,
       "retrieved_at": "2026-10-23",
       "reliability": 0.6
     }
   ],
   "assumptions": [
-    "자사는 payload.own_issuer(신한카드)이며 competitor_db의 is_own=true 카드 10종은 혼잡·공백 집계, nearest, easy_to_copy에서 제외함",
-    "GenZ 근접도는 target에 young이 있는지와 생활 소비 태그 겹침으로 판단하고, 신용카드 기획이므로 nearest는 credit 카드에서 고름",
-    "태그별 카드 수는 입력 tag_counts를 그대로 인용함"
+    "GenZ 근접도는 DB의 target에 young이 있는 신용카드 중 GenZ 생활 소비 태그 겹침 수로 판단함",
+    "투자 연계 태그(invest_reward, point_to_stock)는 이번 기획 범위 밖이라 공백 후보에서 제외함",
+    "tag_counts는 자사를 제외한 130종 집계이며 입력 값을 그대로 인용함"
   ],
   "unresolved": [
-    "상품 비교표(products): depth=overview라 상세 조회를 하지 않아 비워 둠",
-    "혜택률, 월 한도, 전월실적 조건, 프로모션 종료일은 입력에 없어 확인 불가"
+    "상품 비교표(products): depth=overview라 상세 조회를 하지 않아 비어 있음",
+    "nearest 3종의 혜택률, 월 한도, 전월실적 조건, 프로모션 종료일은 입력에 없어 확인 불가"
   ],
   "limits": [
-    "경쟁 카드 DB는 기준일 2026-10-23이나 개별 카드의 상품 확인 일자와 프로모션 종료일은 없어 공시 재확인이 필요함",
-    "invest_reward, point_to_stock(투자 연계 태그)은 0종이지만 이번 기획 범위에서 제외함",
-    "tiered_perf, paymethod_bonus, check_card가 9종으로 동률이라 상위 8개 태그 경계가 모호함",
+    "DB 기준일(as_of)은 2026-10-27로 입력 요청일(2026-10-23)보다 뒤라 현재 상품 구성, 연회비, 프로모션과 같은지 공시 재확인이 필요함",
+    "challenge, anti_cap 등 일부 태그는 카드 수가 2~4종이라 공백의 정도가 약함",
     "가입자 수, 발급량, 수익성은 확인 불가"
   ],
   "clarifications": [],
@@ -200,9 +201,9 @@
     "suggested_agent": null
   },
   "followups": [
-    "nearest 3종의 연회비와 혜택 한도를 조회해 줘",
-    "소셜·챌린지 공백을 GenZ 컨셉으로 연결해 줘",
-    "자사 Discount Plan+와 올바른 FLEX를 같은 양식으로 비교해 줘"
+    "nearest 3종의 혜택률과 월 한도를 detail로 조회해 줘",
+    "miss_refund, social 공백을 GenZ 컨셉으로 연결해 줘",
+    "자사 young 신용카드와 혜택 항목별로 나란히 비교해 줘"
   ],
   "input_refs": [
     "03-competitor/in.json"

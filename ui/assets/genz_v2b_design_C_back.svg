@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 560" width="360" height="560">
+  <defs>
+    <clipPath id="card"><rect x="0" y="0" width="360" height="560" rx="28"/></clipPath>
+    <!-- brushed metal: horizontal-stretched noise -->
+    <filter id="brush" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.004 0.9" numOctaves="2" seed="7" result="n"/>
+      <feColorMatrix in="n" type="matrix" values="0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  0 0 0 0.09 0"/>
+    </filter>
+    <filter id="grain" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="1.4" numOctaves="1" seed="3"/>
+      <feColorMatrix type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 0.18 0"/>
+    </filter>
+    <linearGradient id="base" x1="0" y1="0" x2="0.25" y2="1">
+      <stop offset="0" stop-color="#1B1B21"/>
+      <stop offset="1" stop-color="#0E0E12"/>
+    </linearGradient>
+    <!-- desk lamp falloff from upper right -->
+    <radialGradient id="lamp" cx="300" cy="-40" r="420" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity="0.10"/>
+      <stop offset="0.55" stop-color="#FFFFFF" stop-opacity="0.025"/>
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="sheen" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity="0"/>
+      <stop offset="0.5" stop-color="#FFFFFF" stop-opacity="0.028"/>
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="chipG" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#4A4C52"/>
+      <stop offset="0.5" stop-color="#34363B"/>
+      <stop offset="1" stop-color="#26272B"/>
+    </linearGradient>
+    <filter id="glow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="2.2"/>
+    </filter>
+  </defs>
+  <g clip-path="url(#card)">
+    <rect width="360" height="560" fill="url(#base)"/>
+    <rect width="360" height="560" filter="url(#brush)"/>
+    <rect width="360" height="560" filter="url(#grain)"/>
+    <rect width="360" height="560" fill="url(#lamp)"/>
+  </g>
+  <rect x="1.25" y="1.25" width="357.5" height="557.5" rx="26.75" fill="none" stroke="#C6F24E" stroke-width="2.5"/>
+  <rect x="3.5" y="3.5" width="353" height="553" rx="25" fill="none" stroke="#000" stroke-opacity="0.55" stroke-width="1"/>
+
+  <g font-family="Pretendard Variable, Pretendard, Apple SD Gothic Neo, Noto Sans KR, sans-serif">
+    <!-- header -->
+    <text x="32" y="52" font-size="11" font-weight="600" letter-spacing="2.2" fill="#8E9097">[ISSUER]</text>
+    <text x="328" y="52" text-anchor="end" font-size="10" font-weight="600" letter-spacing="2.4" fill="#8E9097">CREDIT</text>
+
+    <!-- card number block -->
+    <text x="32" y="98" font-size="8" font-weight="600" letter-spacing="1.6" fill="#6A6C72">CARD NUMBER</text>
+    <text x="32" y="124" font-family="Space Mono, SF Mono, Menlo, monospace" font-size="19" letter-spacing="1.2" fill="#E4E5E8">0427 1017 2026 000N</text>
+
+    <text x="32" y="162" font-size="8" font-weight="600" letter-spacing="1.6" fill="#6A6C72">VALID THRU</text>
+    <text x="32" y="182" font-family="Space Mono, SF Mono, Menlo, monospace" font-size="14" fill="#E4E5E8">MM/YY</text>
+    <text x="140" y="162" font-size="8" font-weight="600" letter-spacing="1.6" fill="#6A6C72">CVC</text>
+    <text x="140" y="182" font-family="Space Mono, SF Mono, Menlo, monospace" font-size="14" fill="#E4E5E8">000</text>
+    <text x="32" y="216" font-size="8" font-weight="600" letter-spacing="1.6" fill="#6A6C72">NAME</text>
+    <text x="32" y="236" font-family="Space Mono, SF Mono, Menlo, monospace" font-size="13" letter-spacing="0.8" fill="#E4E5E8">CARDHOLDER NAME</text>
+
+    <!-- signature panel -->
+    <text x="32" y="276" font-size="8" font-weight="600" letter-spacing="1.6" fill="#6A6C72">AUTHORIZED SIGNATURE</text>
+    <rect x="32" y="286" width="296" height="40" rx="4" fill="#26272C" stroke="#3A3B41" stroke-width="0.8"/>
+    <g stroke="#30313A" stroke-width="1">
+      <path d="M40 296 H320 M40 306 H320 M40 316 H320"/>
+    </g>
+
+    <!-- receipt rows: one checked line -->
+    <g stroke="#3A3B41" stroke-width="1" stroke-dasharray="1.5 3.5" stroke-linecap="round">
+      <path d="M32 376 H328"/>
+      <path d="M32 428 H328"/>
+    </g>
+    <path d="M33 401 L38 406 L47 395" fill="none" stroke="#C6F24E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="57" y="405" font-size="10.5" font-weight="500" fill="#E4E5E8">혜택 없이 지나간 외식·배달 결제 중 월 1건을 고릅니다</text>
+    <text x="32" y="456" font-size="9" fill="#9A9CA2">결제 후 7일 안에 앱에서 직접 지정하며, 한도와 조건은 앱에서 확인하세요.</text>
+
+    <!-- footer -->
+    <text x="32" y="500" font-size="7.5" fill="#6A6C72">이 카드는 [ISSUER]의 소유이며 서명한 본인만 사용할 수 있습니다.</text>
+    <text x="32" y="514" font-size="7.5" fill="#6A6C72">분실·도난 시 즉시 신고해 주세요. 고객센터 [0000-0000]</text>
+    <text x="32" y="536" font-size="7" letter-spacing="1.4" fill="#4E5056">PICKBACK · NIGHT</text>
+    <g transform="translate(328 532)">
+      <rect x="-66" y="-18" width="66" height="26" rx="5" fill="none" stroke="#5C5E64" stroke-width="1"/>
+      <text x="-33" y="-1" text-anchor="middle" font-size="8.5" font-weight="700" letter-spacing="1.4" fill="#7C7E85">NETWORK</text>
+    </g>
+  </g>
+</svg>

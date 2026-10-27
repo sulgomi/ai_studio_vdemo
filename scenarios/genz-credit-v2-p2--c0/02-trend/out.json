@@ -1,0 +1,420 @@
+{
+  "run_id": "v2rec",
+  "request_id": "v2rec-trend-r1",
+  "agent": "trend",
+  "contract_version": "1.0",
+  "model": "claude-sonnet-5-5",
+  "status": "ok",
+  "answer": "입력 문서 기준으로 GenZ 신용카드 기획에 의미 있는 시그널 5개를 골랐다. 가장 영향이 큰 것은 청년 신용카드 발급 문턱 완화(T1, 강도 0.85)와 간편지급 확대(T2, 0.75)이며, 청년 교통 환급·체크카드(T3), 외식·오락 소비(T4), 신규 회원 감소와 20대 연체 신호(T5)가 뒤따른다. 제휴·그룹 관점은 입력 문서에 근거가 없어 비웠다.",
+  "result": {
+    "signals": [
+      {
+        "id": "T1",
+        "title": "청년·금융이력부족자 신용카드 발급 문턱 완화(대안신용평가, 보증금 담보 카드, 혁신금융서비스 지정)",
+        "topic": "regulation",
+        "direction": "rising",
+        "period": "2026-07~2026-12",
+        "strength": 0.85,
+        "reliability": 0.7,
+        "impl": "확인한 것: 2026년 12월부터 청년 등의 발급 문턱이 낮아지고, 10월 21일 신한카드 보증금 기반 비대면 카드가 혁신금융서비스로 지정됐다(STS17, STS19). 해석: 첫 신용카드 수요를 겨냥한 한도·심사 구조 설계가 필요하며 세부 기준은 사람 확인 필요다.",
+        "source_ids": [
+          "STS17",
+          "STS18",
+          "STS19",
+          "STS23"
+        ]
+      },
+      {
+        "id": "T2",
+        "title": "간편지급 이용 증가와 비실물 결제 확대, 20대의 간편결제 의존",
+        "topic": "digital",
+        "direction": "rising",
+        "period": "2025-01~2026-06",
+        "strength": 0.75,
+        "reliability": 0.8,
+        "impl": "확인한 것: 2025년 간편지급 일평균 이용은 건수 14.9%, 금액 14.6% 늘었고, 20대 간편결제 이용자의 90.6%가 주 지급수단으로 카드를 쓴다(STS25, STS1). 해석: 앱 등록과 간편결제 연동을 먼저 설계할 근거가 된다.",
+        "source_ids": [
+          "STS25",
+          "STS26",
+          "STS1",
+          "STS2",
+          "STS24"
+        ]
+      },
+      {
+        "id": "T3",
+        "title": "청년 대상 교통 환급(모두의 카드)과 청년 전용 체크카드 확산",
+        "topic": "benefit",
+        "direction": "rising",
+        "period": "2026-01~2026-10",
+        "strength": 0.6,
+        "reliability": 0.8,
+        "impl": "확인한 것: 2026년 모두의 카드에서 청년(만 19~34세)은 기본형 30% 정률 환급 등 유리한 방식이 적용되고, KB Youth Club 체크카드는 8개월 만에 누적 20만좌를 넘었다(STS20, STS27). 해석: 교통 혜택은 정책 환급과 겹치므로 차별 지점을 따로 정해야 한다.",
+        "source_ids": [
+          "STS20",
+          "STS27",
+          "STS13"
+        ]
+      },
+      {
+        "id": "T4",
+        "title": "외식·오락 비중 확대와 온라인 음식서비스 중심 모바일 소비",
+        "topic": "promo",
+        "direction": "rising",
+        "period": "2024-01~2026-08",
+        "strength": 0.55,
+        "reliability": 0.8,
+        "impl": "확인한 것: 30대 이하는 2014년 대비 2024년 외식·숙박과 오락·문화 비중이 각각 3.1%p 늘었고, 2026년 8월 온라인쇼핑 구성비 1위는 음식서비스 16.4%다(STS6, STS24). 해석: 외식·배달·문화 영역의 기간 한정 프로모션을 검토할 만하다. 범위는 30대 이하와 전 연령이다.",
+        "source_ids": [
+          "STS6",
+          "STS24",
+          "STS4",
+          "STS5"
+        ]
+      },
+      {
+        "id": "T5",
+        "title": "신용카드 신규 회원 감소·해지 증가와 20대 연체 부담 신호",
+        "topic": "etc",
+        "direction": "rising",
+        "period": "2026-01~2026-09",
+        "strength": 0.6,
+        "reliability": 0.7,
+        "impl": "확인한 것: 2026년 1~5월 신규 회원은 2.2% 줄고 해지 회원은 7.4% 늘었으며, 카드론 연체율의 20대 상승폭은 0.41%p다(STS15, STS14). 해석: 한도 관리와 부담 완화 장치를 상품에 넣을 필요가 있다. 내부 데이터 확인 필요.",
+        "source_ids": [
+          "STS15",
+          "STS14",
+          "STS12",
+          "STS11"
+        ]
+      }
+    ],
+    "regulatory_changes": [
+      {
+        "title": "청년·외국인 등 금융이력부족자 신용카드 발급 완화(대안신용평가 활용, 보증금 담보 신용카드 도입, 연체이력 활용 기간 단축)",
+        "effective_date": null,
+        "scope": "신용카드 발급 심사 전반, 금융이력 부족 청년·외국인(2026년 12월 시행으로 보도, 정확한 일자 미확인)",
+        "source_id": "STS17"
+      },
+      {
+        "title": "신한카드 보증금 기반 비대면 신용카드 발급 서비스 혁신금융서비스 신규 지정",
+        "effective_date": "2026-10-21",
+        "scope": "신한카드 서비스, 신용이력 부족 청년·외국인 대상(지정일 기준이며 서비스 개시일은 미확인)",
+        "source_id": "STS19"
+      },
+      {
+        "title": "2026년 모두의 카드(K-패스) 청년 환급 방식",
+        "effective_date": null,
+        "scope": "대중교통 이용 청년(만 19~34세), 2026년 적용(시행일 미확인)",
+        "source_id": "STS20"
+      }
+    ]
+  },
+  "findings": [
+    {
+      "id": "trend#0",
+      "claim": "금융위는 2026년 10월 21일 신한카드의 보증금 기반 비대면 신용카드 발급 서비스 등을 혁신금융서비스로 신규 지정했다.",
+      "type": "fact",
+      "source_id": "STS19",
+      "confidence": "high"
+    },
+    {
+      "id": "trend#1",
+      "claim": "금융위 업무보고에 따라 2026년 12월부터 청년·외국인 등 금융이력부족자의 신용카드 발급 문턱이 낮아지고, 대안신용평가 활용과 보증금 담보 신용카드 제도가 도입된다.",
+      "type": "fact",
+      "source_id": "STS17",
+      "confidence": "medium"
+    },
+    {
+      "id": "trend#2",
+      "claim": "보증금 담보 신용카드의 보증금 규모와 이용한도는 미정이며 업계에서는 100만~200만원 수준이 거론된다.",
+      "type": "fact",
+      "source_id": "STS18",
+      "confidence": "medium"
+    },
+    {
+      "id": "trend#3",
+      "claim": "2025년 간편지급 서비스 이용은 일평균 3,557만건, 1조 1,053억원으로 전년 대비 각각 14.9%, 14.6% 증가했다.",
+      "type": "fact",
+      "source_id": "STS25",
+      "confidence": "high"
+    },
+    {
+      "id": "trend#4",
+      "claim": "2026년 상반기 실물카드 미제시 결제 중 간편지급서비스 비중은 52.6%다.",
+      "type": "fact",
+      "source_id": "STS26",
+      "confidence": "medium"
+    },
+    {
+      "id": "trend#5",
+      "claim": "간편결제 이용 시 주 지급수단으로 20대의 90.6%가 카드를 쓴다.",
+      "type": "fact",
+      "source_id": "STS1",
+      "confidence": "high"
+    },
+    {
+      "id": "trend#6",
+      "claim": "2026년 모두의 카드에서 청년(만 19~34세)은 기본형 30% 정률 환급 또는 정액 기준 초과분 환급 중 유리한 방식이 적용된다.",
+      "type": "fact",
+      "source_id": "STS20",
+      "confidence": "high"
+    },
+    {
+      "id": "trend#7",
+      "claim": "KB국민카드 청년(만 18~29세) 전용 KB Youth Club 체크카드는 출시 8개월 만에 누적 발급 20만좌를 넘었다.",
+      "type": "fact",
+      "source_id": "STS27",
+      "confidence": "medium"
+    },
+    {
+      "id": "trend#8",
+      "claim": "30대 이하는 2014년 대비 2024년 식료품·음료 비중이 3.9%p 줄고 외식·숙박과 오락·문화 비중이 각각 3.1%p 늘었다(대한상의 분석 보도).",
+      "type": "fact",
+      "source_id": "STS6",
+      "confidence": "medium"
+    },
+    {
+      "id": "trend#9",
+      "claim": "2026년 8월 온라인쇼핑 상품군 구성비는 음식서비스 16.4%, 음식료품 14.6%, 여행 및 교통서비스 13.5% 순이다.",
+      "type": "fact",
+      "source_id": "STS24",
+      "confidence": "high"
+    },
+    {
+      "id": "trend#10",
+      "claim": "2026년 1~5월 8개 카드사 신용카드 개인 신규 회원은 396만1,000명으로 2.2% 줄었고 해지 회원은 7.4% 늘었다.",
+      "type": "fact",
+      "source_id": "STS15",
+      "confidence": "medium"
+    },
+    {
+      "id": "trend#11",
+      "claim": "20대 카드론 연체율은 2025년 말 대비 0.41%p 올랐다(금감원 제출자료 보도).",
+      "type": "fact",
+      "source_id": "STS14",
+      "confidence": "medium"
+    }
+  ],
+  "sources": [
+    {
+      "id": "STS17",
+      "title": "신용평가에 연체이력 기간 단축…청년·외국인 신용카드 발급 쉬워진다 [국민참여형 업무보고]",
+      "url": "https://www.heraldk.com/article/2026071419324457780",
+      "kind": "news",
+      "published": "2026-07-14",
+      "retrieved_at": "2026-10-23",
+      "reliability": 0.7,
+      "tier": "B"
+    },
+    {
+      "id": "STS18",
+      "title": "\"보증금 100만원 맡기면 신용카드 발급?\"…대학생·외국인도 신용 쌓기 길 열린다",
+      "url": "https://www.heraldk.com/article/2026091219001874110",
+      "kind": "news",
+      "published": "2026-09-12",
+      "retrieved_at": "2026-10-23",
+      "reliability": 0.7,
+      "tier": "B"
+    },
+    {
+      "id": "STS19",
+      "title": "청년·외국인, 신용이력 부족해도 보증금 내면 카드 발급받는다 (금융위 혁신금융서비스 지정)",
+      "url": "https://biz.sbs.co.kr/amp/article/20000341330",
+      "kind": "news",
+      "published": "2026-10-21",
+      "retrieved_at": "2026-10-23",
+      "reliability": 0.7,
+      "tier": "B"
+    },
+    {
+      "id": "STS23",
+      "title": "신용카드 발급조건, 나는 가능할까요?",
+      "url": "https://www.tossbank.com/articles/creditcard",
+      "kind": "web",
+      "published": null,
+      "retrieved_at": "2026-10-23",
+      "reliability": 0.5,
+      "tier": "C"
+    },
+    {
+      "id": "STS25",
+      "title": "2025년중 전자지급서비스 이용현황 (경제정책자료)",
+      "url": "https://eiec.kdi.re.kr/policy/materialView.do?num=278263",
+      "kind": "official",
+      "published": "2026-03-21",
+      "retrieved_at": "2026-10-23",
+      "reliability": 0.9,
+      "tier": "A"
+    },
+    {
+      "id": "STS26",
+      "title": "카드결제 하루 3.8조원…비실물 결제 두자릿수 증가 (한국은행 2026년 상반기 국내 지급결제동향)",
+      "url": "https://biz.sbs.co.kr/amp/article/20000337230",
+      "kind": "news",
+      "published": "2026-09-29",
+      "retrieved_at": "2026-10-23",
+      "reliability": 0.7,
+      "tier": "B"
+    },
+    {
+      "id": "STS1",
+      "title": "[지급결제조사자료 2025-2] 2024년 지급수단 및 모바일금융서비스 이용행태 조사결과",
+      "url": "https://www.bok.or.kr/portal/bbs/B0000232/view.do?menuNo=200706&nttId=10090464",
+      "kind": "official",
+      "published": "2025-03",
+      "retrieved_at": "2026-10-23",
+      "reliability": 0.9,
+      "tier": "A"
+    },
+    {
+      "id": "STS2",
+      "title": "모바일금융, 5명 중 4명이 이용…60대도 절반이 활용",
+      "url": "https://www.newsis.com/view/NISX20250325_0003111896",
+      "kind": "news",
+      "published": "2025-03-25",
+      "retrieved_at": "2026-10-23",
+      "reliability": 0.7,
+      "tier": "B"
+    },
+    {
+      "id": "STS24",
+      "title": "2026년 8월 온라인쇼핑동향 (경제정책자료)",
+      "url": "https://eiec.kdi.re.kr/policy/materialView.do?num=287670",
+      "kind": "official",
+      "published": "2026-10-01",
+      "retrieved_at": "2026-10-23",
+      "reliability": 0.9,
+      "tier": "A"
+    },
+    {
+      "id": "STS20",
+      "title": "청년을 위한 모두의 카드 (2026년 이렇게 달라집니다)",
+      "url": "https://www.korea.kr/news/policyNewsView.do?newsId=148958934",
+      "kind": "official",
+      "published": "2026-02-02",
+      "retrieved_at": "2026-10-23",
+      "reliability": 0.9,
+      "tier": "A"
+    },
+    {
+      "id": "STS27",
+      "title": "실속·고정비 절감형 체크카드가 뜬다",
+      "url": "https://www.goodkyung.com/news/articleView.html?idxno=292240",
+      "kind": "news",
+      "published": "2026-10-12",
+      "retrieved_at": "2026-10-23",
+      "reliability": 0.7,
+      "tier": "B"
+    },
+    {
+      "id": "STS13",
+      "title": "작년 청년 취업자 67.7%…부모 의존 캥거루족 청년 54% (국무조정실 2024년 청년의 삶 실태조사)",
+      "url": "https://mobile.newsis.com/view/NISX20250311_0003094021",
+      "kind": "news",
+      "published": "2025-03-11",
+      "retrieved_at": "2026-10-23",
+      "reliability": 0.7,
+      "tier": "B"
+    },
+    {
+      "id": "STS6",
+      "title": "대한상의 세대별 소비성향 변화와 시사점 보도(20·30 소득 줄어 소비액 뒷걸음)",
+      "url": "https://biz.newdaily.co.kr/site/data/html/2025/06/01/2025060100041.html",
+      "kind": "news",
+      "published": "2025-06-01",
+      "retrieved_at": "2026-10-23",
+      "reliability": 0.7,
+      "tier": "B"
+    },
+    {
+      "id": "STS4",
+      "title": "2025년 4/4분기 가계동향조사 결과(2025년 연간지출 포함) - 정책뉴스(브리핑)",
+      "url": "https://www.korea.kr/news/policyNewsView.do?newsId=156746265",
+      "kind": "official",
+      "published": "2026-02-26",
+      "retrieved_at": "2026-10-23",
+      "reliability": 0.9,
+      "tier": "A"
+    },
+    {
+      "id": "STS5",
+      "title": "2025년 4분기 및 연간(지출) 가계동향조사 결과 통계표(2025년 연간 지출 xlsx)",
+      "url": "https://mods.go.kr/board.es?act=view&bid=214&list_no=443727&mid=a10301040400",
+      "kind": "official",
+      "published": "2026-02-26",
+      "retrieved_at": "2026-10-23",
+      "reliability": 0.9,
+      "tier": "A"
+    },
+    {
+      "id": "STS15",
+      "title": "\"이제 카드 안 써요\"…신용카드 해지회원 증가 (여신금융협회 통계 인용)",
+      "url": "https://v.daum.net/v/20260625080105851",
+      "kind": "news",
+      "published": "2026-06-25",
+      "retrieved_at": "2026-10-23",
+      "reliability": 0.7,
+      "tier": "B"
+    },
+    {
+      "id": "STS14",
+      "title": "5060세대 카드빚 1년 새 1조 늘어…연체율은 20대가 최고 (뉴스1, 금감원 제출자료)",
+      "url": "https://www.fnnews.com/news/202609061336564405",
+      "kind": "news",
+      "published": "2026-09-06",
+      "retrieved_at": "2026-10-23",
+      "reliability": 0.7,
+      "tier": "B"
+    },
+    {
+      "id": "STS12",
+      "title": "저축하는 청년이 더 똑똑 (서민금융진흥원 2025년 청년금융 실태조사)",
+      "url": "https://kbmaeil.com/article/20260413500167",
+      "kind": "news",
+      "published": "2026-04-13",
+      "retrieved_at": "2026-10-23",
+      "reliability": 0.7,
+      "tier": "B"
+    },
+    {
+      "id": "STS11",
+      "title": "\"연봉 3천만원에, 카드값 147만원\"…청년들 지갑 텅텅 (서민금융진흥원 2024년 청년금융 실태조사)",
+      "url": "https://biz.sbs.co.kr/amp/article/20000225803",
+      "kind": "news",
+      "published": "2025-03-31",
+      "retrieved_at": "2026-10-23",
+      "reliability": 0.7,
+      "tier": "B"
+    }
+  ],
+  "assumptions": [
+    "GenZ를 만 19~29세로 보고, 청년(만 19~34세)·30대 이하·전 연령 자료는 흐름을 보는 대리 지표로 사용",
+    "투자 연계 주제는 H1 범위 확인에 따라 제외",
+    "pack_mode로 payload.docs의 사실만 근거로 사용하고 웹 검색은 하지 않음"
+  ],
+  "unresolved": [
+    "근거 없음: 제휴·그룹(group) 관점의 GenZ 시그널",
+    "근거 부족: 20대 단독 신용카드 이용액·연체율 절대 수치"
+  ],
+  "limits": [
+    "기준 기간은 2025-04~2026-10이며 T2의 STS1·STS2, T3의 STS13은 2025년 3월 발행으로 18개월을 넘는 자료이나 같은 시그널의 최신 자료로 보완했다.",
+    "T2의 STS25·STS26·STS1·STS2·STS24는 전 연령 또는 20대 대상이고, T3·T5의 일부는 청년(만 19~34세), T4의 STS6은 30대 이하 범위다.",
+    "보증금 규모·한도와 12월 시행 세부 기준은 미정이며 사람 확인 필요다.",
+    "STS23은 발행일 미확인 업계 안내로 신뢰도 0.5를 그대로 쓰며 보조 근거로만 인용했다.",
+    "내부 데이터 확인 필요."
+  ],
+  "clarifications": [],
+  "out_of_scope": {
+    "detected": false,
+    "suggested_agent": null
+  },
+  "followups": [
+    "제휴·그룹 관점 GenZ 근거 문서를 추가 수집",
+    "보증금 담보 카드의 한도와 시행 세부 기준 확인",
+    "경쟁사 청년 카드 혜택 비교는 competitor 에이전트에 요청"
+  ],
+  "input_refs": [
+    "02-trend/in.json"
+  ]
+}

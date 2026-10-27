@@ -1,0 +1,122 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 560" width="360" height="560">
+  <defs>
+    <clipPath id="card"><rect x="0" y="0" width="360" height="560" rx="28"/></clipPath>
+    <filter id="paper" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9 0.55" numOctaves="3" seed="11" result="n"/>
+      <feColorMatrix in="n" type="matrix" values="0 0 0 0 0.08  0 0 0 0 0.07  0 0 0 0 0.05  0 0 0 0.07 0"/>
+    </filter>
+    <filter id="fibre" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.012 0.35" numOctaves="2" seed="5" result="n"/>
+      <feColorMatrix in="n" type="matrix" values="0 0 0 0 0.1  0 0 0 0 0.09  0 0 0 0 0.06  0 0 0 0.045 0"/>
+    </filter>
+    <linearGradient id="falloff" x1="0" y1="0" x2="0.35" y2="1">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity="0.16"/>
+      <stop offset="0.55" stop-color="#FFFFFF" stop-opacity="0"/>
+      <stop offset="1" stop-color="#6E6450" stop-opacity="0.07"/>
+    </linearGradient>
+    <linearGradient id="stripe" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#26262C"/>
+      <stop offset="0.5" stop-color="#15151A"/>
+      <stop offset="1" stop-color="#1E1E24"/>
+    </linearGradient>
+    <pattern id="hatch" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+      <rect width="6" height="6" fill="#FBFAF5"/>
+      <line x1="0" y1="0" x2="0" y2="6" stroke="#15151A" stroke-opacity="0.07" stroke-width="2"/>
+    </pattern>
+  </defs>
+
+  <g clip-path="url(#card)" font-family="Pretendard Variable, Pretendard, Apple SD Gothic Neo, Noto Sans KR, sans-serif" fill="#15151A">
+    <rect width="360" height="560" fill="#F2EFE6"/>
+    <rect width="360" height="560" filter="url(#fibre)"/>
+    <rect width="360" height="560" filter="url(#paper)"/>
+    <rect width="360" height="560" fill="url(#falloff)"/>
+
+    <!-- magnetic stripe, along the long edge -->
+    <rect x="306" y="0" width="38" height="560" fill="url(#stripe)"/>
+
+    <!-- receipt header -->
+    <text x="150" y="48" text-anchor="middle" font-size="13" font-weight="800" letter-spacing="1">픽백</text>
+    <text x="150" y="63" text-anchor="middle" font-size="7.5" font-weight="500" letter-spacing="2.2" fill-opacity="0.6">[ISSUER] · CREDIT</text>
+    <line x1="28" y1="78" x2="272" y2="78" stroke="#15151A" stroke-opacity="0.45" stroke-width="1" stroke-dasharray="3 3"/>
+
+    <!-- payment list: 7 lines, one ticked -->
+    <g font-size="9.5" font-weight="500">
+      <g transform="translate(0 100)">
+        <text x="28" y="0" letter-spacing="1" fill-opacity="0.5">MON</text><text x="60" y="0">점심 · 외식</text>
+        <line x1="130" y1="-3" x2="232" y2="-3" stroke="#15151A" stroke-opacity="0.3" stroke-dasharray="1 3"/>
+        <rect x="238" y="-8" width="34" height="6" rx="1" fill="#15151A" fill-opacity="0.18"/>
+      </g>
+      <g transform="translate(0 124)">
+        <text x="28" y="0" letter-spacing="1" fill-opacity="0.5">TUE</text><text x="60" y="0">야식 · 배달</text>
+        <line x1="130" y1="-3" x2="232" y2="-3" stroke="#15151A" stroke-opacity="0.3" stroke-dasharray="1 3"/>
+        <rect x="244" y="-8" width="28" height="6" rx="1" fill="#15151A" fill-opacity="0.18"/>
+      </g>
+      <!-- the checked line -->
+      <g transform="translate(0 148)">
+        <path d="M23 -13.2 Q90 -14.6 160 -13.6 T277 -13.9 Q279.5 -4 277.2 5.6 Q200 6.6 130 5.7 T22.6 6.2 Q20.8 -3 23 -13.2 Z" fill="#C6F24E" fill-opacity="0.94"/>
+        <text x="28" y="0" letter-spacing="1" font-weight="700">WED</text><text x="60" y="0" font-weight="700">점심 · 외식</text>
+        <line x1="130" y1="-3" x2="214" y2="-3" stroke="#15151A" stroke-opacity="0.55" stroke-dasharray="1 3"/>
+        <rect x="220" y="-8" width="30" height="6" rx="1" fill="#15151A" fill-opacity="0.55"/>
+        <path d="M257 -5 L261 -1 L268 -9" fill="none" stroke="#15151A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      </g>
+      <g transform="translate(0 172)">
+        <text x="28" y="0" letter-spacing="1" fill-opacity="0.5">THU</text><text x="60" y="0">점심 · 외식</text>
+        <line x1="130" y1="-3" x2="232" y2="-3" stroke="#15151A" stroke-opacity="0.3" stroke-dasharray="1 3"/>
+        <rect x="240" y="-8" width="32" height="6" rx="1" fill="#15151A" fill-opacity="0.18"/>
+      </g>
+      <g transform="translate(0 196)">
+        <text x="28" y="0" letter-spacing="1" fill-opacity="0.5">FRI</text><text x="60" y="0">야식 · 배달</text>
+        <line x1="130" y1="-3" x2="232" y2="-3" stroke="#15151A" stroke-opacity="0.3" stroke-dasharray="1 3"/>
+        <rect x="236" y="-8" width="36" height="6" rx="1" fill="#15151A" fill-opacity="0.18"/>
+      </g>
+      <g transform="translate(0 220)">
+        <text x="28" y="0" letter-spacing="1" fill-opacity="0.5">SAT</text><text x="60" y="0">브런치 · 외식</text>
+        <line x1="130" y1="-3" x2="232" y2="-3" stroke="#15151A" stroke-opacity="0.3" stroke-dasharray="1 3"/>
+        <rect x="242" y="-8" width="30" height="6" rx="1" fill="#15151A" fill-opacity="0.18"/>
+      </g>
+      <g transform="translate(0 244)">
+        <text x="28" y="0" letter-spacing="1" fill-opacity="0.5">SUN</text><text x="60" y="0">야식 · 배달</text>
+        <line x1="130" y1="-3" x2="232" y2="-3" stroke="#15151A" stroke-opacity="0.3" stroke-dasharray="1 3"/>
+        <rect x="246" y="-8" width="26" height="6" rx="1" fill="#15151A" fill-opacity="0.18"/>
+      </g>
+    </g>
+    <line x1="28" y1="262" x2="272" y2="262" stroke="#15151A" stroke-opacity="0.45" stroke-width="1" stroke-dasharray="3 3"/>
+
+    <!-- condition line -->
+    <text x="28" y="284" font-size="9" font-weight="600">월 1건을 결제 후 7일 안에 앱에서 직접 지정합니다.</text>
+    <text x="28" y="298" font-size="9" font-weight="400" fill-opacity="0.65">한도와 세부 조건은 앱에서 확인하세요.</text>
+
+    <!-- number placeholders -->
+    <text x="28" y="334" font-size="6.5" font-weight="600" letter-spacing="1.6" fill-opacity="0.5">CARD NO.</text>
+    <text x="28" y="354" font-size="16" font-weight="600" letter-spacing="1.6">0427 1017 2026 000N</text>
+    <g font-size="6.5" font-weight="600" letter-spacing="1.6" fill-opacity="0.5">
+      <text x="28" y="378">VALID THRU</text>
+      <text x="120" y="378">CVC</text>
+    </g>
+    <g font-size="12" font-weight="600" letter-spacing="1.4">
+      <text x="28" y="394">MM/YY</text>
+      <text x="120" y="394">000</text>
+    </g>
+
+    <!-- signature panel -->
+    <text x="28" y="424" font-size="6.5" font-weight="600" letter-spacing="1.6" fill-opacity="0.5">AUTHORIZED SIGNATURE · 서명</text>
+    <rect x="28" y="430" width="244" height="30" rx="3" fill="url(#hatch)"/>
+    <rect x="28.5" y="430.5" width="243" height="29" rx="2.5" fill="none" stroke="#15151A" stroke-opacity="0.25"/>
+
+    <!-- fine print -->
+    <g font-size="7" font-weight="400" fill-opacity="0.62">
+      <text x="28" y="482">본 카드는 [ISSUER]의 소유이며 타인에게 양도·대여할 수 없습니다.</text>
+      <text x="28" y="494">서명하지 않은 카드는 사용할 수 없으며, 분실 시 즉시 신고하세요.</text>
+    </g>
+    <line x1="28" y1="508" x2="272" y2="508" stroke="#15151A" stroke-opacity="0.2" stroke-width="0.8"/>
+    <text x="28" y="526" font-size="8" font-weight="600">고객센터 [0000-0000]</text>
+    <text x="28" y="538" font-size="7" fill-opacity="0.55">분실신고 [0000-0000] · [ISSUER.CO.KR]</text>
+    <g transform="translate(222 514)">
+      <rect width="50" height="26" rx="5" fill="none" stroke="#15151A" stroke-opacity="0.5" stroke-dasharray="3 2.5"/>
+      <text x="25" y="16" text-anchor="middle" font-size="7" font-weight="600" letter-spacing="1.2" fill-opacity="0.65">NETWORK</text>
+    </g>
+  </g>
+
+  <rect x="0.5" y="0.5" width="359" height="559" rx="27.5" fill="none" stroke="#B9B2A0" stroke-width="1"/>
+  <rect x="1.5" y="1.5" width="357" height="557" rx="26.5" fill="none" stroke="#FFFFFF" stroke-opacity="0.55" stroke-width="1"/>
+</svg>

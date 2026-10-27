@@ -1,0 +1,77 @@
+{
+  "eval": [
+    {
+      "i": 0,
+      "name": "실적 졸업 카드(가칭)",
+      "profit": -5.06,
+      "novelty": 0.6,
+      "sim": 0.29,
+      "nearest": "Youth Club 체크",
+      "cx": 0.4,
+      "indepCx": 0.8,
+      "appliedCx": 0.6,
+      "adopt": 0.995,
+      "adopterProfit": -5.42,
+      "cherry": 0.17,
+      "topReject": "inertia",
+      "special_point_ok": true,
+      "errs": [],
+      "pass": false,
+      "fails": [
+        "profit<3",
+        "cx>0.5",
+        "adopterProfit<1.5"
+      ],
+      "score": 0.44
+    },
+    {
+      "i": 1,
+      "name": "소액 6개월 졸업 카드(가칭)",
+      "profit": -1.67,
+      "novelty": 0.4,
+      "sim": 0.29,
+      "nearest": "디지로카 London",
+      "cx": 0.3,
+      "indepCx": 0.8,
+      "appliedCx": 0.55,
+      "adopt": 0.968,
+      "adopterProfit": -1.38,
+      "cherry": 0.18,
+      "topReject": "inertia",
+      "special_point_ok": true,
+      "errs": [],
+      "pass": false,
+      "fails": [
+        "profit<3",
+        "cx>0.5",
+        "adopterProfit<1.5"
+      ],
+      "score": 0.472
+    },
+    {
+      "i": 2,
+      "name": "미달 월 환급 카드(가칭)",
+      "profit": -0.7,
+      "novelty": 0.4,
+      "sim": 0.18,
+      "nearest": "현대카드 M",
+      "cx": 0.35,
+      "indepCx": 0.8,
+      "appliedCx": 0.57,
+      "adopt": 0.865,
+      "adopterProfit": -0.74,
+      "cherry": 0.2,
+      "topReject": "inertia",
+      "special_point_ok": true,
+      "errs": [],
+      "pass": false,
+      "fails": [
+        "profit<3",
+        "cx>0.5",
+        "adopterProfit<1.5"
+      ],
+      "score": 0.489
+    }
+  ],
+  "winner": null
+}

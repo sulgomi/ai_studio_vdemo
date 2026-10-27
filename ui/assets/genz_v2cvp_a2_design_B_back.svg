@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 560" width="360" height="560" font-family="Pretendard Variable, Pretendard, Apple SD Gothic Neo, Noto Sans KR, sans-serif">
+<defs>
+<clipPath id="c"><rect width="360" height="560" rx="28"/></clipPath>
+<linearGradient id="g" x1="0" y1="1" x2="0" y2="0"><stop offset="0" stop-color="#8FC3FF"/><stop offset=".42" stop-color="#A9DCC8"/><stop offset=".78" stop-color="#C0EF7C"/><stop offset="1" stop-color="#C6F45A"/></linearGradient>
+<linearGradient id="sheen" x1="0" y1="0" x2="1" y2="0.6"><stop offset="0" stop-color="#fff" stop-opacity=".38"/><stop offset=".35" stop-color="#fff" stop-opacity="0"/><stop offset="1" stop-color="#fff" stop-opacity=".1"/></linearGradient>
+<filter id="grain" x="0" y="0" width="100%" height="100%"><feTurbulence type="fractalNoise" baseFrequency="1.1" numOctaves="2" seed="9"/><feColorMatrix values="0 0 0 0 0.11  0 0 0 0 0.12  0 0 0 0 0.14  0 0 0 0.07 0"/></filter>
+<linearGradient id="mag" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2a2e35"/><stop offset="1" stop-color="#1C1F24"/></linearGradient>
+</defs>
+<g clip-path="url(#c)">
+<rect width="360" height="560" fill="url(#g)"/>
+<rect width="360" height="560" filter="url(#grain)"/>
+<rect width="360" height="560" fill="url(#sheen)"/>
+<rect y="40" width="360" height="52" fill="url(#mag)"/>
+<rect x="1" y="1" width="358" height="558" rx="27" fill="none" stroke="#fff" stroke-opacity=".55" stroke-width="2"/>
+</g>
+<rect x=".5" y=".5" width="359" height="559" rx="27.5" fill="none" stroke="#1C1F24" stroke-opacity=".2"/>
+<g fill="#1C1F24" font-size="8" letter-spacing="1.6" font-family="Space Mono, Menlo, monospace">
+<text x="32" y="122" fill-opacity=".65">SIGNATURE</text>
+<rect x="32" y="128" width="210" height="30" fill="#fff" fill-opacity=".92"/>
+<rect x="250" y="128" width="78" height="30" fill="#fff" fill-opacity=".92"/>
+<text x="289" y="147" text-anchor="middle" font-size="9" letter-spacing="2" fill-opacity=".45">CVC 000</text>
+<text x="32" y="176" font-family="Pretendard Variable, Pretendard, Apple SD Gothic Neo, Noto Sans KR, sans-serif" font-size="7.5" letter-spacing="0" fill-opacity=".7">카드 뒷면에 본인 서명이 없으면 사용이 제한될 수 있습니다.</text>
+<text x="32" y="216" fill-opacity=".65">CARD NO.</text>
+<text x="32" y="240" font-size="17" letter-spacing="3" fill-opacity=".85">0000 0000 0000 0000</text>
+<text x="32" y="266" fill-opacity=".65">VALID THRU</text><text x="130" y="266" fill-opacity=".85">MM/YY</text>
+</g>
+<!-- progress boxes -->
+<g fill="#1C1F24"><text x="32" y="304" font-size="9" font-weight="700">앱에서 매월 확인</text></g>
+<g fill="#fff" fill-opacity=".55" stroke="#1C1F24" stroke-width="1.2"><rect x="32" y="314" width="40" height="40" rx="6"/><rect x="80" y="314" width="40" height="40" rx="6"/><rect x="128" y="314" width="40" height="40" rx="6"/><rect x="176" y="314" width="40" height="40" rx="6"/><rect x="224" y="314" width="40" height="40" rx="6"/><rect x="272" y="314" width="40" height="40" rx="6"/></g>
+<rect x="32" y="392" width="296" height="1" fill="#1C1F24" fill-opacity=".35"/>
+<g fill="#1C1F24" font-size="9">
+<text x="32" y="412" font-weight="700">이용 조건</text>
+<text x="32" y="431" fill-opacity=".85">실적 조건 완화 · 정상 납부 개월 기준</text>
+<text x="32" y="453" fill-opacity=".85">조건은 뒷면 표를 확인하세요.</text>
+</g>
+<path d="M32 439H328" stroke="#1C1F24" stroke-opacity=".2"/>
+<g fill="#1C1F24" font-size="7.5" letter-spacing="1.4" font-family="Space Mono, Menlo, monospace" fill-opacity=".72">
+<text x="32" y="486">CUSTOMER CENTER 0000-0000</text>
+<text x="32" y="502">[ISSUER]</text><text x="328" y="502" text-anchor="end">NETWORK</text></g>
+<g transform="translate(32 518)" fill="#1C1F24"><rect x="0" y="7" width="8" height="8" rx="2.5"/><rect x="11" y="0" width="8" height="15" rx="2.5"/><text x="27" y="14" font-size="12" font-weight="800">디딤</text></g>
+</svg>

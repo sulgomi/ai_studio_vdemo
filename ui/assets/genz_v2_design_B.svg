@@ -1,117 +1,102 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 560" width="360" height="560">
   <defs>
-    <clipPath id="card"><rect x="1" y="1" width="358" height="558" rx="27"/></clipPath>
-    <linearGradient id="body" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#E4FAF0" stop-opacity=".62"/>
-      <stop offset=".45" stop-color="#9EEBC8" stop-opacity=".30"/>
-      <stop offset="1" stop-color="#86D9B5" stop-opacity=".42"/>
-    </linearGradient>
+    <clipPath id="card"><rect x="0" y="0" width="360" height="560" rx="28"/></clipPath>
+    <!-- 투명 PET 미세 결 -->
+    <filter id="grain" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" seed="7" result="n"/>
+      <feColorMatrix in="n" type="matrix" values="0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  0 0 0 0.10 0"/>
+    </filter>
+    <filter id="soft" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="6"/></filter>
+    <filter id="soft2" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="0.6"/></filter>
     <linearGradient id="silver" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#F1F3F5"/>
-      <stop offset=".35" stop-color="#C0C4CA"/>
-      <stop offset=".62" stop-color="#A4A9B0"/>
-      <stop offset="1" stop-color="#DADDE1"/>
+      <stop offset="0" stop-color="#E4E7EB"/>
+      <stop offset="0.45" stop-color="#B9BEC6"/>
+      <stop offset="0.7" stop-color="#D3D7DD"/>
+      <stop offset="1" stop-color="#A2A8B1"/>
     </linearGradient>
-    <linearGradient id="specTL" gradientUnits="userSpaceOnUse" x1="4" y1="200" x2="220" y2="4">
-      <stop offset="0" stop-color="#FFFFFF" stop-opacity="0"/>
-      <stop offset=".45" stop-color="#FFFFFF" stop-opacity=".95"/>
-      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
+    <linearGradient id="edge" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity="0.85"/>
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0.35"/>
     </linearGradient>
-    <linearGradient id="specBR" gradientUnits="userSpaceOnUse" x1="356" y1="360" x2="160" y2="556">
-      <stop offset="0" stop-color="#FFFFFF" stop-opacity="0"/>
-      <stop offset=".5" stop-color="#FFFFFF" stop-opacity=".7"/>
-      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
-    </linearGradient>
-    <linearGradient id="rim" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#BDEFD8" stop-opacity=".75"/>
-      <stop offset=".5" stop-color="#78CFA8" stop-opacity=".8"/>
-      <stop offset="1" stop-color="#3F9E78" stop-opacity=".95"/>
-    </linearGradient>
-    <filter id="soft" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="7"/></filter>
-    <filter id="haze" x="0" y="0" width="100%" height="100%">
-      <feTurbulence type="fractalNoise" baseFrequency=".9" numOctaves="2" seed="7" result="n"/>
-      <feColorMatrix in="n" type="matrix" values="0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  0 0 0 .06 0"/>
-    </filter>
-<filter id="grain" x="0" y="0" width="100%" height="100%">
-      <feTurbulence type="fractalNoise" baseFrequency="1.4" numOctaves="2" seed="3" result="n"/>
-      <feColorMatrix in="n" type="matrix" values="0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  0 0 0 .22 -.04"/>
-    </filter>
   </defs>
 
-  <!-- clear body -->
-  <rect x="1" y="1" width="358" height="558" rx="27" fill="url(#body)"/>
   <g clip-path="url(#card)">
-    <rect x="0" y="0" width="360" height="560" filter="url(#haze)"/>
-    <!-- broad sheen across the sheet -->
-    <path d="M-40 250 L250 -40 L300 -40 L-40 300 Z" fill="#FFFFFF" fill-opacity=".16" filter="url(#soft)"/>
-    <path d="M-40 330 L330 -40 L340 -40 L-40 340 Z" fill="#FFFFFF" fill-opacity=".22" filter="url(#soft)"/>
-    <!-- embedded antenna, seen through -->
-    <g fill="none" stroke="#7E858E" stroke-opacity=".16" stroke-width=".6">
-      <rect x="14" y="14" width="332" height="532" rx="16"/>
-      <rect x="16.5" y="16.5" width="327" height="527" rx="14"/>
-      <rect x="19" y="19" width="322" height="522" rx="12"/>
-      <path d="M19 130 H34 M16.5 126 H34 M14 122 H34"/>
+    <!-- 하늘색 투명 소재 -->
+    <rect width="360" height="560" fill="#9CC3E6" fill-opacity="0.74"/>
+    <rect width="360" height="560" filter="url(#grain)"/>
+
+    <!-- 뒷면이 비쳐 보이는 층 (좌우 반전) -->
+    <g filter="url(#soft2)">
+      <rect x="294" y="0" width="44" height="560" fill="#1F2A44" opacity="0.05"/>
+      <g transform="translate(360 0) scale(-1 1)">
+        <rect x="86" y="184" width="250" height="30" rx="3" fill="#F4F1EA" opacity="0.09"/>
+        <g fill="#1F2A44" opacity="0.17" font-family="Pretendard Variable, Pretendard, Apple SD Gothic Neo, Noto Sans KR, sans-serif">
+          <text x="86" y="246" font-size="10.5" font-weight="700">이용 조건</text>
+          <text x="86" y="264" font-size="9.5">발급 후 6개월은 연습 구간입니다.</text>
+          <text x="86" y="279" font-size="9.5">기록이 쌓이면 실적 조건이 풀리고,</text>
+          <text x="86" y="294" font-size="9.5">연체 시 연습 구간으로 돌아옵니다.</text>
+          <text x="86" y="309" font-size="9.5">한도와 조건은 앱에서 확인하세요.</text>
+        </g>
+      </g>
+    </g>
+
+    <!-- 빛 반사: 곧은 띠 하나 -->
+    <polygon points="210,-20 290,-20 60,600 -20,600" fill="#FFFFFF" opacity="0.10" filter="url(#soft)"/>
+    <polygon points="300,-20 312,-20 82,600 70,600" fill="#FFFFFF" opacity="0.14" filter="url(#soft)"/>
+
+    <!-- 비접촉 표시 (위쪽) -->
+    <g transform="translate(36 40)" fill="none" stroke="#16181D" stroke-width="2" stroke-linecap="round">
+      <path d="M2 6 A10 10 0 0 1 2 22"/>
+      <path d="M8 2 A15 15 0 0 1 8 26"/>
+      <path d="M14 -2 A20 20 0 0 1 14 30"/>
+    </g>
+    <text x="324" y="58" text-anchor="end" font-family="Pretendard Variable, Pretendard, Apple SD Gothic Neo, Noto Sans KR, sans-serif" font-size="11" font-weight="600" letter-spacing="1.6" fill="#16181D">[ISSUER]</text>
+
+    <!-- 은색 칩 (세로) -->
+    <g transform="translate(36 98)">
+      <rect width="46" height="58" rx="8" fill="url(#silver)"/>
+      <rect x="0.5" y="0.5" width="45" height="57" rx="7.5" fill="none" stroke="#8C939C" stroke-width="1"/>
+      <g fill="none" stroke="#8C939C" stroke-width="1">
+        <path d="M0 20 H14 M0 38 H14 M32 20 H46 M32 38 H46"/>
+        <path d="M23 0 V12 M23 46 V58"/>
+        <rect x="14" y="12" width="18" height="34" rx="4"/>
+      </g>
+    </g>
+
+    <!-- 로고 락업: 단추 심볼 + 첫단추 -->
+    <g transform="translate(36 318)">
+      <circle cx="30" cy="30" r="30" fill="#16181D"/>
+      <circle cx="30" cy="30" r="23" fill="none" stroke="#9CC3E6" stroke-opacity="0.55" stroke-width="1.2"/>
+      <g fill="#9CC3E6">
+        <circle cx="23" cy="23" r="4"/>
+        <circle cx="37" cy="23" r="4"/>
+        <circle cx="23" cy="37" r="4"/>
+        <circle cx="37" cy="37" r="4"/>
+      </g>
+      <!-- 첫 바늘땀 하나 -->
+      <path d="M23 37 L37 23" stroke="#FFB547" stroke-width="3.2" stroke-linecap="round"/>
+    </g>
+    <text x="34" y="430" font-family="Pretendard Variable, Pretendard, Apple SD Gothic Neo, Noto Sans KR, sans-serif" font-size="44" font-weight="800" letter-spacing="-1.5" fill="#16181D">첫단추</text>
+
+    <!-- 여섯 칸 눈금 (자 눈금처럼 인쇄) -->
+    <g transform="translate(36 458)">
+      <rect x="0" y="5" width="48" height="7" fill="#FFB547"/>
+      <g stroke="#16181D" stroke-width="1.3" fill="none">
+        <path d="M0 12 H288"/>
+        <path d="M0.0 0 V12"/><path d="M48.0 0 V12"/><path d="M96.0 0 V12"/><path d="M144.0 0 V12"/><path d="M192.0 0 V12"/><path d="M240.0 0 V12"/><path d="M288.0 0 V12"/>
+      </g>
+    </g>
+
+    <!-- 하단 표기 -->
+    <text x="36" y="522" font-family="Pretendard Variable, Pretendard, Apple SD Gothic Neo, Noto Sans KR, sans-serif" font-size="10.5" font-weight="700" letter-spacing="2.4" fill="#16181D">CREDIT</text>
+    <text x="36" y="536" font-family="Pretendard Variable, Pretendard, Apple SD Gothic Neo, Noto Sans KR, sans-serif" font-size="7.5" letter-spacing="1.6" fill="#16181D" fill-opacity="0.6">CLEAR · 03</text>
+    <g transform="translate(252 506)">
+      <rect width="72" height="30" rx="6" fill="none" stroke="#16181D" stroke-opacity="0.7" stroke-width="1" stroke-dasharray="3 2"/>
+      <text x="36" y="19" text-anchor="middle" font-family="Pretendard Variable, Pretendard, Apple SD Gothic Neo, Noto Sans KR, sans-serif" font-size="8.5" font-weight="600" letter-spacing="1.4" fill="#16181D" fill-opacity="0.75">NETWORK</text>
     </g>
   </g>
 
-  <!-- sandblasted frost band (etched on the back face, seen from both sides) -->
-  <g clip-path="url(#card)">
-    <rect x="0" y="404" width="360" height="160" fill="#F4FCF8" fill-opacity=".5"/>
-    <rect x="0" y="404" width="360" height="160" filter="url(#grain)"/>
-    <path d="M0 404.5 H360" stroke="#FFFFFF" stroke-opacity=".95" stroke-width="1"/>
-    <path d="M0 405.6 H360" stroke="#3F9E78" stroke-opacity=".25" stroke-width=".6"/>
-  </g>
-
-  <!-- polished edge: acrylic rim reads darker, inner bevel catches light -->
-  <rect x="1.5" y="1.5" width="357" height="557" rx="26.5" fill="none" stroke="url(#rim)" stroke-width="2.4"/>
-  <rect x="4.5" y="4.5" width="351" height="551" rx="23.5" fill="none" stroke="#FFFFFF" stroke-opacity=".55" stroke-width="1"/>
-  <path d="M4.5 210 V28 A23.5 23.5 0 0 1 28 4.5 H230" fill="none" stroke="url(#specTL)" stroke-width="1.6"/>
-  <path d="M355.5 360 V532 A23.5 23.5 0 0 1 332 555.5 H160" fill="none" stroke="url(#specBR)" stroke-width="1.2"/>
-
-  <!-- issuer / type -->
-  <g font-family="Pretendard Variable, Pretendard, Apple SD Gothic Neo, Noto Sans KR, sans-serif" fill="#15171C">
-    <text x="34" y="60" font-size="10.5" font-weight="600" letter-spacing="2.2">[ISSUER]</text>
-    <text x="340" y="60" font-size="9" font-weight="600" letter-spacing="2.6" text-anchor="end" fill-opacity=".78">CREDIT</text>
-  </g>
-
-  <!-- silver chip -->
-  <g>
-    <rect x="34" y="106" width="56" height="44" rx="8" fill="url(#silver)" stroke="#8A8F98" stroke-width=".8"/>
-    <g fill="none" stroke="#7D838B" stroke-width=".8" stroke-opacity=".85">
-      <path d="M34 120 H52 M34 136 H52 M72 120 H90 M72 136 H90"/>
-      <rect x="52" y="114" width="20" height="28" rx="4"/>
-      <path d="M62 106 V114 M62 142 V150"/>
-    </g>
-    <rect x="35.2" y="107.2" width="53.6" height="41.6" rx="7" fill="none" stroke="#FFFFFF" stroke-opacity=".6" stroke-width=".8"/>
-  </g>
-
-  <!-- contactless -->
-  <g fill="none" stroke="#15171C" stroke-width="1.6" stroke-linecap="round" stroke-opacity=".85">
-    <path d="M108 121 A13 13 0 0 1 108 135"/>
-    <path d="M114 116.5 A19 19 0 0 1 114 139.5"/>
-    <path d="M120 112 A25 25 0 0 1 120 144"/>
-    <path d="M126 107.5 A31 31 0 0 1 126 148.5"/>
-  </g>
-
-  <!-- twelve-cell edge scale, etched -->
-  <g>
-    <rect x="332" y="96" width="6" height="25" rx="1" fill="#9EEBC8"/>
-    <g stroke="#15171C" stroke-opacity=".38" stroke-width=".9" stroke-linecap="round" transform="translate(0.6 0.6)"><path d="M338 96 V396"/><path d="M338 96 H326"/><path d="M338 121 H330"/><path d="M338 146 H330"/><path d="M338 171 H330"/><path d="M338 196 H330"/><path d="M338 221 H330"/><path d="M338 246 H330"/><path d="M338 271 H330"/><path d="M338 296 H330"/><path d="M338 321 H330"/><path d="M338 346 H330"/><path d="M338 371 H330"/><path d="M338 396 H326"/></g>
-    <g stroke="#FFFFFF" stroke-opacity=".9" stroke-width=".9" stroke-linecap="round" transform="translate(0 0)"><path d="M338 96 V396"/><path d="M338 96 H326"/><path d="M338 121 H330"/><path d="M338 146 H330"/><path d="M338 171 H330"/><path d="M338 196 H330"/><path d="M338 221 H330"/><path d="M338 246 H330"/><path d="M338 271 H330"/><path d="M338 296 H330"/><path d="M338 321 H330"/><path d="M338 346 H330"/><path d="M338 371 H330"/><path d="M338 396 H326"/></g>
-    <rect x="332" y="96" width="6" height="25" rx="1" fill="none" stroke="#15171C" stroke-opacity=".55" stroke-width=".6"/>
-  </g>
-
-  <!-- logo lockup: wordmark over a twelve-cell rule, white underprint for legibility -->
-  <g>
-    <text x="32" y="506" font-family="Pretendard Variable, Pretendard, Apple SD Gothic Neo, Noto Sans KR, sans-serif" font-size="40" font-weight="800" letter-spacing="-1.2" fill="none" stroke="#FFFFFF" stroke-opacity=".28" stroke-width="1.4" stroke-linejoin="round">꾸준</text>
-    <text x="32" y="506" font-family="Pretendard Variable, Pretendard, Apple SD Gothic Neo, Noto Sans KR, sans-serif" font-size="40" font-weight="800" letter-spacing="-1.2" fill="#15171C">꾸준</text>
-    <rect x="34" y="519" width="6.67" height="5" fill="#9EEBC8"/>
-    <g fill="none" stroke="#15171C" stroke-width="1.1" stroke-linecap="square"><path d="M34 524 H114"/><path d="M34.00 524 V519"/><path d="M40.67 524 V521"/><path d="M47.33 524 V521"/><path d="M54.00 524 V521"/><path d="M60.67 524 V521"/><path d="M67.33 524 V521"/><path d="M74.00 524 V521"/><path d="M80.67 524 V521"/><path d="M87.33 524 V521"/><path d="M94.00 524 V521"/><path d="M100.67 524 V521"/><path d="M107.33 524 V521"/><path d="M114.00 524 V519"/></g>
-  </g>
-
-  <!-- network placeholder -->
-  <text x="340" y="522" font-family="Pretendard Variable, Pretendard, Apple SD Gothic Neo, Noto Sans KR, sans-serif" font-size="10" font-weight="700" letter-spacing="2.4" text-anchor="end" fill="#15171C" fill-opacity=".8">NETWORK</text>
-
-  <!-- corner engraving -->
-  <text x="34" y="541" font-family="Pretendard Variable, Pretendard, Apple SD Gothic Neo, Noto Sans KR, sans-serif" font-size="6.5" font-weight="600" letter-spacing="3" fill="#15171C" fill-opacity=".42">CLEAR</text>
+  <!-- 가장자리: 투명 소재의 밝은 단면 -->
+  <rect x="0.75" y="0.75" width="358.5" height="558.5" rx="27.25" fill="none" stroke="#6E9CC6" stroke-width="1.5" stroke-opacity="0.8"/>
+  <rect x="2.5" y="2.5" width="355" height="555" rx="25.5" fill="none" stroke="url(#edge)" stroke-width="1.2"/>
 </svg>

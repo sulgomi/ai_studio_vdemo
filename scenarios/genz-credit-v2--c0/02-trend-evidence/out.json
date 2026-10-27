@@ -1,0 +1,347 @@
+{
+  "run_id": "c0",
+  "request_id": "c0-trend-r2",
+  "agent": "trend",
+  "contract_version": "1.0",
+  "model": "claude-sonnet-5-5",
+  "status": "ok",
+  "answer": "제공된 근거 문서 12건으로 시그널 4개(T1~T4)와 규제 변경 2건을 정리했다. 규제·이벤트 제한과 해외 starter 카드의 단계형 구조, 모임 체크카드 확대를 확인했다. 숏폼 채널별 비중, 첫 발급자의 탐색 경로, 광고심의 직접 사례는 근거를 찾지 못했다.",
+  "result": {
+    "signals": [
+      {
+        "id": "T6",
+        "title": "신용카드 결제·모집 규제 정비와 미성년 가족카드 허용 입법예고",
+        "topic": "regulation",
+        "direction": "rising",
+        "period": "2026-01~2026-05",
+        "strength": 0.7,
+        "reliability": 0.9,
+        "impl": "확인한 것: 시행령이 결제 금지 대상과 연회비 대비 경제적 이익 한도를 정했고(IVS19) 가족카드 허용안이 입법예고됐다(SNS7). 해석: 혜택 설계에 법무·준법 확인이 필요하다.",
+        "source_ids": [
+          "IVS19",
+          "SNS7"
+        ],
+        "research_topic": "카드 부가서비스 조건 해제·단계형 혜택 표현의 광고심의 사례"
+      },
+      {
+        "id": "T7",
+        "title": "금융당국의 현금성 이벤트 제한과 이용금액 조건 추첨 이벤트",
+        "topic": "promo",
+        "direction": "unknown",
+        "period": "2025-12~2026-09",
+        "strength": 0.45,
+        "reliability": 0.8,
+        "impl": "확인한 것: 금감원 조치는 해외투자 이벤트 대상이고(IVS20), 카드사는 이용금액 조건 추첨 이벤트를 운영했다(FSS11). 해석: 카드 이벤트에 직접 적용되는지는 사람 확인 필요다.",
+        "source_ids": [
+          "IVS20",
+          "FSS11"
+        ],
+        "research_topic": "카드 부가서비스 조건 해제·단계형 혜택 표현의 광고심의 사례"
+      },
+      {
+        "id": "T8",
+        "title": "첫 카드 이용자의 한도 증액·업그레이드 단계형 구조(해외 사례)",
+        "topic": "benefit",
+        "direction": "unknown",
+        "period": "시점 미확인",
+        "strength": 0.4,
+        "reliability": 0.7,
+        "impl": "확인한 것: 미국 starter 카드는 약 6개월 후 한도 증액을 안내한다(LNS12, LNS14, PFS16). 해석: 단계형 혜택 소재가 될 수 있으나 국내 근거는 없고 미국 사례다.",
+        "source_ids": [
+          "LNS12",
+          "LNS14",
+          "PFS16",
+          "LNS15"
+        ],
+        "research_topic": "카드 부가서비스 조건 해제·단계형 혜택 표현의 광고심의 사례"
+      },
+      {
+        "id": "T9",
+        "title": "모임 체크카드·모임통장의 발급 확대(체크카드·계좌 상품)",
+        "topic": "group",
+        "direction": "rising",
+        "period": "2025-02~2025-08",
+        "strength": 0.35,
+        "reliability": 0.7,
+        "impl": "확인한 것: 모임 체크카드가 100만장, 모임통장이 40만 회원을 넘었다(GTS3, GTS4). 해석: 공동 이용 수요의 참고 신호이며 신용카드·20대 근거는 아니다.",
+        "source_ids": [
+          "GTS3",
+          "GTS4"
+        ],
+        "research_topic": null
+      }
+    ],
+    "regulatory_changes": [
+      {
+        "title": "여신전문금융업법 시행령 개정(신용카드 결제 금지 대상, 모집 시 경제적 이익 한도)",
+        "effective_date": "2026-05-06",
+        "scope": "신용카드 결제 금지 대상(금융투자상품, 가상자산 관련, 선불수단 월 1백만원 초과)과 모집 시 경제적 이익 한도",
+        "source_id": "IVS19"
+      },
+      {
+        "title": "미성년 자녀 가족카드 발급 허용 시행령·감독규정 개정안 입법예고",
+        "effective_date": null,
+        "scope": "부모 신청에 따라 만 12세 이상 자녀가 쓰는 가족카드 발급, 시행일은 자료에 없음",
+        "source_id": "SNS7"
+      }
+    ]
+  },
+  "findings": [
+    {
+      "id": "trend#0",
+      "claim": "여신전문금융업법 시행령(2026.5.6. 시행)은 금융투자상품과 가상자산 관련 금전 지급을 신용카드 결제 금지 대상으로 정한다.",
+      "type": "fact",
+      "source_id": "IVS19",
+      "confidence": "high"
+    },
+    {
+      "id": "trend#1",
+      "claim": "같은 시행령은 신용카드 모집 시 연회비의 100분의 100을 넘는 경제적 이익을 주는 모집을 금지한다.",
+      "type": "fact",
+      "source_id": "IVS19",
+      "confidence": "high"
+    },
+    {
+      "id": "trend#2",
+      "claim": "금융위원회는 현행법상 미성년자는 가족카드 포함 신용카드 발급이 불가하다고 밝혔고, 만 12세 이상 자녀용 가족카드 허용 개정안을 2026.1.23~3.4 입법예고했다.",
+      "type": "fact",
+      "source_id": "SNS7",
+      "confidence": "high"
+    },
+    {
+      "id": "trend#3",
+      "claim": "금감원은 해외투자 관련 신규 현금성 이벤트·광고를 2026년 3월까지 중단하도록 했고, 거래금액 비례 이벤트를 원천 금지하는 방향으로 제도개선을 추진한다고 밝혔다.",
+      "type": "fact",
+      "source_id": "IVS20",
+      "confidence": "high"
+    },
+    {
+      "id": "trend#4",
+      "claim": "KB국민카드 KB 마라톤카드는 2026년 9월 한 달 100만원 이상 이용·응모 고객 중 추첨 20명에게 도쿄 마라톤 2027 참가 자격을 주는 이벤트를 진행했다.",
+      "type": "fact",
+      "source_id": "FSS11",
+      "confidence": "medium"
+    },
+    {
+      "id": "trend#5",
+      "claim": "Chase Freedom Rise는 약 6개월 후 한도 증액 대상이 될 수 있고 12개월마다 Freedom Unlimited 업그레이드 대상으로 평가된다.",
+      "type": "fact",
+      "source_id": "LNS12",
+      "confidence": "high"
+    },
+    {
+      "id": "trend#6",
+      "claim": "Capital One Platinum Secured는 책임 있는 이용 시 6개월 정도에 한도 증액이 고려될 수 있고 보증금 환급 후 일반 Platinum 카드로 업그레이드될 수 있다.",
+      "type": "fact",
+      "source_id": "LNS14",
+      "confidence": "high"
+    },
+    {
+      "id": "trend#7",
+      "claim": "Petal은 Leap 프로그램에서 적격한 정시 납부를 하면 6개월 만에 신용한도 상향을 받을 수 있다고 안내한다.",
+      "type": "fact",
+      "source_id": "PFS16",
+      "confidence": "low"
+    },
+    {
+      "id": "trend#8",
+      "claim": "Capital One 학생 카드(Quicksilver for Students)는 졸업 후에도 카드와 혜택이 유지된다.",
+      "type": "fact",
+      "source_id": "LNS15",
+      "confidence": "high"
+    },
+    {
+      "id": "trend#9",
+      "claim": "카카오뱅크 모임 체크카드 누적 발급량이 2025년 8월 보도 기준 100만장을 돌파했고 누적 캐시백은 2025년 7월 말까지 30억원이다.",
+      "type": "fact",
+      "source_id": "GTS3",
+      "confidence": "medium"
+    },
+    {
+      "id": "trend#10",
+      "claim": "신한은행 SOL모임통장은 2025년 2월 출시 후 3개월 만에 회원 40만을 돌파했고, 입금액에 비례해 쌓이는 모임지원금 이벤트를 진행했다.",
+      "type": "fact",
+      "source_id": "GTS4",
+      "confidence": "medium"
+    },
+    {
+      "id": "trend#11",
+      "claim": "모임 체크카드 사례는 체크카드·계좌 상품이며 신용카드 발급 및 20대 이용 비중은 자료에 없다.",
+      "type": "estimate",
+      "source_id": null,
+      "confidence": "medium"
+    },
+    {
+      "id": "trend#12",
+      "claim": "미국 starter 카드의 한도 증액·업그레이드 구조는 국내 신용카드에 직접 적용되는 사례가 아니며 국내 광고심의 기준은 사람 확인 필요다.",
+      "type": "estimate",
+      "source_id": null,
+      "confidence": "low"
+    }
+  ],
+  "sources": [
+    {
+      "id": "IVS19",
+      "title": "여신전문금융업법 시행령 [시행 2026.5.6.] 대통령령 제36314호",
+      "url": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=285799",
+      "kind": "official",
+      "published": "2026-05-06",
+      "retrieved_at": "2026-10-23",
+      "reliability": 0.9,
+      "tier": "A",
+      "stale": false
+    },
+    {
+      "id": "FSS11",
+      "title": "KB국민카드, 마스터카드와 '도쿄 마라톤 2027' 출전권 이벤트",
+      "url": "https://biz.sbs.co.kr/amp/article/20000335175",
+      "kind": "news",
+      "published": "2026-09-17",
+      "retrieved_at": "2026-10-23",
+      "reliability": 0.7,
+      "tier": "B",
+      "stale": false
+    },
+    {
+      "id": "LNS12",
+      "title": "Freedom Rise credit limit increases",
+      "url": "https://www.chase.com/personal/credit-cards/education/basics/freedom-rise-credit-limit-increase",
+      "kind": "official",
+      "published": null,
+      "retrieved_at": "2026-10-23",
+      "reliability": 0.9,
+      "tier": "A"
+    },
+    {
+      "id": "LNS14",
+      "title": "Platinum Secured Credit Card",
+      "url": "https://www.capitalone.com/credit-cards/platinum-secured/",
+      "kind": "official",
+      "published": null,
+      "retrieved_at": "2026-10-23",
+      "reliability": 0.9,
+      "tier": "A"
+    },
+    {
+      "id": "PFS14",
+      "title": "Bilt Mastercard / Bilt Card 2.0 공식 페이지",
+      "url": "https://www.biltrewards.com/card",
+      "kind": "web",
+      "published": null,
+      "retrieved_at": "2026-10-23",
+      "reliability": 0.5,
+      "tier": "C"
+    },
+    {
+      "id": "PFS16",
+      "title": "Petal 공식 페이지",
+      "url": "https://www.petalcard.com/",
+      "kind": "web",
+      "published": null,
+      "retrieved_at": "2026-10-23",
+      "reliability": 0.5,
+      "tier": "C"
+    },
+    {
+      "id": "GTS3",
+      "title": "카카오뱅크, ‘모임 체크카드’ 출시 1년여 만에 누적 100만장 돌파",
+      "url": "https://www.heraldk.com/article/2025081317211700327",
+      "kind": "news",
+      "published": "2025-08-13",
+      "retrieved_at": "2026-10-23",
+      "reliability": 0.7,
+      "tier": "B",
+      "stale": false
+    },
+    {
+      "id": "GTS4",
+      "title": "신한은행, SOL모임통장 회원수 40만 돌파",
+      "url": "https://www.smarttoday.co.kr/ko-kr/articles/80716",
+      "kind": "news",
+      "published": "2025-05-14",
+      "retrieved_at": "2026-10-23",
+      "reliability": 0.7,
+      "tier": "B",
+      "stale": false
+    },
+    {
+      "id": "IVS20",
+      "title": "투자자 보호 및 리스크관리 강화를 위한 해외투자 실태점검 중간 결과 및 향후 대응방향",
+      "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?menuNo=200218&nttId=208246",
+      "kind": "official",
+      "published": "2025-12-19",
+      "retrieved_at": "2026-10-23",
+      "reliability": 0.9,
+      "tier": "A",
+      "stale": false
+    },
+    {
+      "id": "LNS15",
+      "title": "Quicksilver Rewards for Students",
+      "url": "https://www.capitalone.com/credit-cards/quicksilver-student/",
+      "kind": "official",
+      "published": null,
+      "retrieved_at": "2026-10-23",
+      "reliability": 0.9,
+      "tier": "A"
+    },
+    {
+      "id": "LNS16",
+      "title": "Discover it Student Cash Back",
+      "url": "https://www.discover.com/credit-cards/student/it-card.html",
+      "kind": "official",
+      "published": null,
+      "retrieved_at": "2026-10-23",
+      "reliability": 0.9,
+      "tier": "A"
+    },
+    {
+      "id": "SNS7",
+      "title": "미성년 자녀의 가족카드 발급허용 등 혁신금융서비스를 제도화하겠습니다 (입법예고 보도자료)",
+      "url": "https://www.fsc.go.kr/po010105/86116?curPage=2",
+      "kind": "official",
+      "published": "2026-01-22",
+      "retrieved_at": "2026-10-23",
+      "reliability": 0.9,
+      "tier": "A",
+      "stale": false
+    }
+  ],
+  "assumptions": [
+    "입력 docs에 있는 사실만 사용했고 doc의 published와 reliability를 그대로 반영했다.",
+    "retrieved_at은 기준일(2026-10-23)로 기록했다."
+  ],
+  "unresolved": [
+    "근거 없음: 만 19~29세의 숏폼·동영상 채널별 이용 비중과 카드 광고 반응",
+    "근거 없음: 첫 신용카드 발급 예정자의 상품 정보 탐색 경로(앱, 검색, 커뮤니티)",
+    "근거 없음: 카드 부가서비스 조건 해제·단계형 혜택 표현의 광고심의 사례(규제 문서와 해외 사례만 확인)"
+  ],
+  "limits": [
+    "기준 기간은 최근 18개월(2025-04~2026-10)이나 해외 사례 문서 5건은 발행일이 null이다.",
+    "T3는 미국 카드 공식 페이지 기반이라 국내 적용성은 확인하지 못했다. T4는 체크카드·계좌 상품이다.",
+    "IVS20은 해외투자 이벤트 조치이며 카드 광고에 대한 직접 기준은 아니다. 법률 해석은 사람 확인 필요다."
+  ],
+  "clarifications": [],
+  "out_of_scope": {
+    "detected": false,
+    "suggested_agent": null
+  },
+  "followups": [
+    "숏폼 채널별 이용 비중과 첫 발급자 탐색 경로 문서를 추가 수집한다.",
+    "광고심의 사례는 준법 담당 확인 후 근거 문서를 보강한다."
+  ],
+  "input_refs": [
+    "IVS19",
+    "FSS11",
+    "LNS12",
+    "LNS14",
+    "PFS14",
+    "PFS16",
+    "GTS3",
+    "GTS4",
+    "IVS20",
+    "LNS15",
+    "LNS16",
+    "SNS7"
+  ]
+}

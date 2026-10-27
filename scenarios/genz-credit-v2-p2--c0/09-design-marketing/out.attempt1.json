@@ -1,0 +1,1235 @@
+{
+  "run_id": "b0",
+  "request_id": "b0-design_marketing-r1",
+  "agent": "design_marketing",
+  "contract_version": "1.0",
+  "model": "opus",
+  "status": "ok",
+  "answer": "대안 후보 카드에 맞춰 이름 후보 3개 중 '밥달력'을 추천하고, 외식·배달 캐시백과 앱의 월간 산정·보류 표시를 조건과 함께 말하는 전략, 세로형 시안 3종(LUNCH, LATE, WEEKEND), 릴스 20초·유튜브 25초·홍보 20초 스토리보드를 만들었습니다. 이 후보는 가상 고객 시뮬레이션에서 채택 의향 46.0%로 목표 38.0%를 넘었지만 채택 고객 손익 0.47이 하한 1.5에 못 미쳐 채택 게이트를 통과하지 못했고 체리피커 비중 0.36, 손익 -1.48이 위험 신호입니다. 환급은 헤드라인에 쓰지 않고 조건 한 문장으로만 넣었으며, 채널 근거는 조사 주제로 남기고 영상은 H5 승인 전이라 렌더하지 않았습니다.",
+  "result": {
+    "naming": {
+      "candidates": [
+        {
+          "name": "밥달력",
+          "rationale": "주 혜택인 외식·배달 결제와 앱에서 매달 확인하는 산정액·보류 표시를 함께 담았다. 이름에 환급이나 비율을 넣지 않아 작동 방식보다 강하게 읽히지 않고(G1), 세 글자라 세로 로고와 영상 끝 화면에 쓰기 쉽다.",
+          "similarity_max": 0.0,
+          "similar_to": null
+        },
+        {
+          "name": "앞뒤달",
+          "rationale": "환급 조건인 보류 달의 앞뒤 달 실적 충족을 이름에 드러내 조건부임이 보인다(G1). 다만 부수 장치인 환급을 이름의 중심에 두게 되어 주 혜택인 외식·배달 캐시백이 약하게 읽힌다.",
+          "similarity_max": 0.0,
+          "similar_to": null
+        },
+        {
+          "name": "보류함",
+          "rationale": "실적 미달 달 산정액을 앱에 '지급 보류 산정액'으로 쌓는 장치를 그대로 옮겼다. 사실에 가깝지만 보류라는 말이 혜택이 막힌 인상을 줄 수 있어 GenZ 대상 친근감은 낮다.",
+          "similarity_max": 0.0,
+          "similar_to": null
+        }
+      ],
+      "recommended": "밥달력"
+    },
+    "strategy": {
+      "positioning": {
+        "statement": "외식·배달 결제가 잦은 만 19~29세에게, 외식·배달 캐시백과 실적 미달 달의 보류 산정액을 앱에서 매달 보여 주는 신용카드로 조건이 먼저 보인다.",
+        "for_whom": "외식·배달 결제가 잦은 만 19~29세",
+        "what_it_is": "외식·배달 캐시백 신용카드(앱 발급)",
+        "why_different": "미달 달 산정액을 보류로 표시하고 앞뒤 달 충족 시 일부를 조건부 환급"
+      },
+      "insight": {
+        "tension": "한 달 실적이 기준에 못 미치면 그 달 외식·배달 캐시백이 지급되지 않고 얼마였는지도 알기 어렵다.",
+        "truth": "내 산정액과 보류 여부, 환급 조건을 매달 앱에서 또렷하게 확인하고 싶다.",
+        "assumed": true,
+        "validate_with": "만 19~29세 소수 인원 대상 앱 월간 산정 화면 시안 비교 테스트와 짧은 설문"
+      },
+      "personas": [
+        {
+          "name": "점심 계산하는 사회초년생",
+          "variant": "LUNCH",
+          "moment": "점심 식당 계산대에서 동기들 몫까지 먼저 결제할 때",
+          "need": "외식 결제를 한 장으로 모으고 조건을 한눈에 보기"
+        },
+        {
+          "name": "밤에 배달 시키는 대학생",
+          "variant": "LATE",
+          "moment": "시험 기간 밤 책상 스탠드 아래 야식 배달을 주문할 때",
+          "need": "이번 달 실적과 산정액을 앱에서 바로 확인하기"
+        },
+        {
+          "name": "주말 장바구니 정리러",
+          "variant": "WEEKEND",
+          "moment": "주말 오후 공원 벤치에서 장바구니를 결제할 때",
+          "need": "첫 신용카드를 부담 없이 주 결제수단으로 쓰기"
+        }
+      ],
+      "pillars": [
+        {
+          "title": "밥값은 한 장",
+          "message": "점심과 야식 배달 결제를 한 장으로 모으면 외식·배달 캐시백이 붙는다.",
+          "proof": "외식·배달 영역 이용액 캐시백, 전월 실적 기준 충족 달에 다음 청구 지급"
+        },
+        {
+          "title": "보이는 산정",
+          "message": "이번 달 산정액과 지급 보류 여부를 앱에서 매달 확인한다.",
+          "proof": "앱의 '지급 보류 산정액' 표시와 월별 환급 산정 근거 고지"
+        },
+        {
+          "title": "조건은 먼저",
+          "message": "보류분 환급은 앞뒤 달 실적 충족 조건과 횟수·한도와 함께만 말한다.",
+          "proof": "앞뒤 달 모두 충족 시 보류액 일부 환급, 연간 횟수와 회당 한도 제한"
+        }
+      ],
+      "tone": {
+        "summary": "담백하고 투명하게, 조건과 한도를 혜택과 같은 크기로 말한다.",
+        "do": [
+          "비율 옆에 실적 조건과 월 한도를 같은 크기로 쓴다",
+          "평소 외식·배달 결제 장면으로 설명한다",
+          "앱에서 산정 근거를 확인하는 방법을 안내한다"
+        ],
+        "dont": [
+          "실적 미달에도 혜택이 보장되는 듯한 표현",
+          "혜택 손실이 없다는 듯한 표현",
+          "캐시백 비율과 환급 비율을 더한 합산·배수 표현",
+          "환급을 헤드라인에 단독으로 쓰기"
+        ]
+      },
+      "channels": [
+        {
+          "channel": "자사 앱 발급 화면",
+          "role": "캐시백 조건, 보류·환급 조건, 연회비 고지를 발급 전에 한 화면에서 보여 준다",
+          "asset": "boards",
+          "phase": "런칭"
+        },
+        {
+          "channel": "간편결제 등록 안내",
+          "role": "20대의 간편결제 의존(T2)에 맞춰 발급 직후 등록을 안내한다",
+          "asset": "앱 안내 화면",
+          "phase": "정착"
+        },
+        {
+          "channel": "앱 월간 산정 화면",
+          "role": "매달 산정액, 지급 보류 산정액, 환급 산정 근거를 보여 준다",
+          "asset": "앱 알림과 월간 화면",
+          "phase": "정착"
+        },
+        {
+          "channel": "자사 앱 배너·브랜드 페이지",
+          "role": "세 시안과 한 달씩 확인하는 구조를 런칭 시점에 알린다",
+          "asset": "promo",
+          "phase": "런칭"
+        },
+        {
+          "channel": "숏폼 영상(시험 집행)",
+          "role": "카드 실물과 조건 병기 소재를 소규모로 시험한다. 채널 근거 없음",
+          "asset": "reels",
+          "phase": "예열"
+        },
+        {
+          "channel": "동영상 채널(시험 집행)",
+          "role": "생활 장면 속 외식·배달 결제를 보인다. 채널 근거 없음",
+          "asset": "youtube",
+          "phase": "런칭"
+        }
+      ],
+      "phases": [
+        {
+          "name": "예열",
+          "start_day": -28,
+          "end_day": -1,
+          "goal": "카드 시안과 조건 병기 소재를 미리 알린다",
+          "actions": [
+            "숏폼 소재 소규모 시험 집행",
+            "광고심의를 마친 소재만 집행",
+            "가입 전 고지 화면 문안 정리"
+          ]
+        },
+        {
+          "name": "런칭",
+          "start_day": 0,
+          "end_day": 14,
+          "goal": "앱 발급 신청을 받는다",
+          "actions": [
+            "자사 앱 배너와 브랜드 페이지 공개",
+            "발급 화면에 캐시백·보류·환급 조건 병기",
+            "생활 장면 영상 공개"
+          ]
+        },
+        {
+          "name": "정착",
+          "start_day": 15,
+          "end_day": 90,
+          "goal": "주 결제수단으로 자리 잡게 한다",
+          "actions": [
+            "간편결제 등록 안내(수신 동의 고객)",
+            "첫 월간 산정 화면 안내",
+            "한도 도달 후 이용 변화와 실적 경계 이용 점검"
+          ]
+        }
+      ],
+      "kpis": [
+        {
+          "stage": "인지",
+          "metric": "숏폼 소재 완주율",
+          "target": "[목표값]",
+          "source": "광고 집행 관리 화면"
+        },
+        {
+          "stage": "관심",
+          "metric": "발급 화면 진입 대비 가입 전 고지 확인 비율",
+          "target": "[목표값]",
+          "source": "자사 앱 로그"
+        },
+        {
+          "stage": "전환",
+          "metric": "발급 신청 완료 수",
+          "target": "[목표값]",
+          "source": "발급 시스템"
+        },
+        {
+          "stage": "전환",
+          "metric": "발급 후 간편결제 등록 비율",
+          "target": "[목표값]",
+          "source": "내부 데이터 확인 필요"
+        },
+        {
+          "stage": "전환",
+          "metric": "월간 산정 화면 확인 고객 비율",
+          "target": "[목표값]",
+          "source": "자사 앱 로그"
+        },
+        {
+          "stage": "확산",
+          "metric": "브랜드 자발 언급 수",
+          "target": "[목표값]",
+          "source": "소셜 리스닝"
+        }
+      ],
+      "risks": [
+        {
+          "risk": "G1 이름·약속과 실제 작동 불일치",
+          "mitigation": "이름에 환급을 넣지 않고, 이름이 나오는 모든 지면에 캐시백 조건과 조건부 환급 문장을 함께 쓴다"
+        },
+        {
+          "risk": "G2 비율 단독 노출, 환급 헤드라인, 합산 표현",
+          "mitigation": "비율은 실적 조건·월 한도와 같은 크기로 병기, 환급은 조건 한 문장으로만, 집행 전 광고심의"
+        },
+        {
+          "risk": "G3 연 2회 기준 시점과 보류액 소멸 시점 미정",
+          "mitigation": "상품 측 설계값을 준법에 넘긴 뒤 가입 화면 고지와 legal_footer를 다시 맞춘다(사람 확인 필요)"
+        },
+        {
+          "risk": "G6 체리피커 비중 0.36, 손익 -1.48(시뮬레이션), 채택 고객 손익 하한 미달",
+          "mitigation": "비교형·환급 강조 메시지를 쓰지 않고, 재무의 환급 횟수·한도 재시뮬레이션 결과를 따른다"
+        },
+        {
+          "risk": "실존 브랜드·배달앱 화면 연상, 영상 채널 근거 없음",
+          "mitigation": "실존 로고·앱 화면을 쓰지 않고, 숏폼·동영상은 시험 집행 후 needs_research 결과로 정한다"
+        }
+      ],
+      "next_steps": [
+        "광고심의에 이름·태그라인·세 영상 카피 제출(G2)",
+        "상품 측 연 2회 기준 시점과 보류액 소멸 시점 결정 후 고지 문안 정리(G3)",
+        "재무의 환급 횟수·한도 축소안 재시뮬레이션 결과 반영(G6)",
+        "채택 고객 손익 하한 미달을 기획서 리스크에 기재하고 진행 여부 확인",
+        "신규 발급 이벤트의 경제적 이익 한도를 준법과 확인(S1)"
+      ],
+      "targets_from_customer": false
+    },
+    "boards": {
+      "brand": {
+        "name": "밥달력",
+        "card_type": "credit",
+        "issuer_placeholder": "[ISSUER]"
+      },
+      "target": {
+        "segment": "만 19~29세, 외식·배달 결제가 잦은 GenZ",
+        "contexts": [
+          "점심 식당 계산대",
+          "밤 야식 배달 주문",
+          "주말 장바구니 결제",
+          "월말 앱 산정 확인",
+          "간편결제 등록"
+        ],
+        "assumed": true
+      },
+      "concept": {
+        "tagline": "한 달씩, 또렷하게.",
+        "statement": "점심과 야식 배달을 한 장으로 결제하고, 이번 달 산정액과 보류 여부를 앱에서 매달 확인한다.",
+        "keywords": [
+          "세로형",
+          "번호 없는 앞면",
+          "열두 칸 달력선",
+          "귤색 한 칸",
+          "뒷면 조건 한 줄",
+          "숟가락 비접촉"
+        ],
+        "front_rule_note": "앞면에는 혜택 숫자를 넣지 않는다. 비율은 실적 조건·한도와 함께 뒷면과 앱에만 쓴다."
+      },
+      "palette": [
+        {
+          "name": "쌀백색",
+          "hex": "#F6F2E9",
+          "role": "ground"
+        },
+        {
+          "name": "먹색",
+          "hex": "#1B1A1F",
+          "role": "ink"
+        },
+        {
+          "name": "귤색",
+          "hex": "#FFA94D",
+          "role": "accent"
+        },
+        {
+          "name": "가지보라",
+          "hex": "#3A2F5B",
+          "role": "support"
+        },
+        {
+          "name": "깻잎초록",
+          "hex": "#2F4A3A",
+          "role": "support"
+        },
+        {
+          "name": "스테인리스",
+          "hex": "#C2C6CC",
+          "role": "metal"
+        }
+      ],
+      "typography": {
+        "display": "Black Han Sans",
+        "body": "IBM Plex Sans KR",
+        "mono": "JetBrains Mono"
+      },
+      "layout": {
+        "orientation": "vertical",
+        "front_shows": [
+          "chip",
+          "contactless",
+          "logo",
+          "type_label"
+        ],
+        "orientation_reason": "만 19~29세가 탭 결제와 간편결제로 꺼내 쓰는 모바일 우선 카드라 세로형"
+      },
+      "variants": [
+        {
+          "code": "LUNCH",
+          "name": "점심 한 판",
+          "material": {
+            "preset": "matte",
+            "tint": "쌀백색",
+            "chip": "gold",
+            "logo_color": "먹색"
+          },
+          "story": {
+            "headline": "점심값은 한 장으로.",
+            "lead": "쌀백색 무광 위에 열두 칸 달력선과 귤색 한 칸. 점심 계산대에서 꺼내도 담백한 시안이다.",
+            "points": [
+              {
+                "title": "열두 칸 달력선",
+                "body": "앞면 아래쪽에 열두 칸 가는 선을 그었다. 한 달씩 확인하는 카드라는 걸 그림으로만 보여 준다.",
+                "anchor": "front"
+              },
+              {
+                "title": "귤색 한 칸",
+                "body": "열두 칸 중 한 칸만 귤색으로 칠했다. 이번 달을 가리킬 뿐 혜택 금액을 약속하지 않는다.",
+                "anchor": "logo"
+              },
+              {
+                "title": "금색 칩",
+                "body": "쌀백색 바탕에 금색 칩을 둬 식당 조명 아래서도 손에 쥔 카드가 또렷하다.",
+                "anchor": "chip"
+              },
+              {
+                "title": "손끝에 남는 무광",
+                "body": "지문이 덜 남는 무광 소재. 동기들 몫까지 먼저 계산하는 점심에 꺼내기 편하다.",
+                "anchor": "material"
+              }
+            ],
+            "persona": "점심값을 먼저 계산하고 나중에 나눠 받는 사회초년생",
+            "mood": [
+              "담백",
+              "한낮",
+              "산뜻"
+            ],
+            "life_scene": "점심 식당 계산대에서 카드를 탭하는 순간"
+          }
+        },
+        {
+          "code": "LATE",
+          "name": "야식 시간",
+          "material": {
+            "preset": "gradient",
+            "stops": [
+              "가지보라",
+              "먹색"
+            ],
+            "chip": "graphite",
+            "logo_color": "귤색"
+          },
+          "story": {
+            "headline": "밤에도 조건은 그대로.",
+            "lead": "가지보라에서 먹색으로 내려가는 그라데이션. 스탠드 불빛 아래 귤색 로고만 조용히 떠오른다.",
+            "points": [
+              {
+                "title": "귤색 세로 로고",
+                "body": "어두운 그라데이션 위 귤색 세로 로고. 책상 스탠드 하나로도 이름이 읽힌다.",
+                "anchor": "logo"
+              },
+              {
+                "title": "숟가락 비접촉 표시",
+                "body": "비접촉 표시를 숟가락 모양 곡선 세 줄로 그렸다. 야식 주문이 앱에서 끝나는 밤에 맞춘 절제다.",
+                "anchor": "contactless"
+              },
+              {
+                "title": "흑연색 칩",
+                "body": "칩을 흑연색으로 낮춰 밤 책상 위 노트 옆에 둬도 카드가 튀지 않는다.",
+                "anchor": "chip"
+              },
+              {
+                "title": "뒷면 조건 한 줄",
+                "body": "뒷면에 전월실적 20만원 이상 달 지급이라는 조건 한 줄을 작게 새겼다.",
+                "anchor": "back"
+              }
+            ],
+            "persona": "시험 기간 밤마다 야식 배달로 버티는 대학생",
+            "mood": [
+              "고요",
+              "깊은밤",
+              "차분"
+            ],
+            "life_scene": "밤 책상 스탠드 아래 야식 배달을 주문하는 순간"
+          }
+        },
+        {
+          "code": "WEEKEND",
+          "name": "주말 투명",
+          "material": {
+            "preset": "clear",
+            "tint": "귤색",
+            "chip": "silver",
+            "logo_color": "먹색"
+          },
+          "story": {
+            "headline": "주말 오후, 비치는 한 달.",
+            "lead": "귤빛이 살짝 도는 투명 카드. 햇빛에 비추면 열두 칸 달력선이 손바닥 위로 그림자를 만든다.",
+            "points": [
+              {
+                "title": "비치는 달력선",
+                "body": "투명 소재 안쪽에 인쇄한 열두 칸 선이 햇빛에서 그림자로 떨어진다. 구조를 숨기지 않는 카드다.",
+                "anchor": "material"
+              },
+              {
+                "title": "깻잎초록 테두리",
+                "body": "모서리를 따라 깻잎초록 테두리를 둘러 가방 속 투명 카드도 한 번에 찾는다.",
+                "anchor": "edge"
+              },
+              {
+                "title": "세로 종류 표기",
+                "body": "카드 종류 표기를 세로로 세워 오른쪽 위에 작게 두었다. 장바구니 화면 옆에서도 가볍다.",
+                "anchor": "type_label"
+              },
+              {
+                "title": "은색 칩",
+                "body": "투명 바탕에 은색 칩을 띄워 공원 벤치 햇빛 아래서도 가볍게 보이는 인상이다.",
+                "anchor": "chip"
+              }
+            ],
+            "persona": "주말 오후 벤치에서 한 주 장바구니를 정리하는 대학원생",
+            "mood": [
+              "투명",
+              "햇살",
+              "가벼움"
+            ],
+            "life_scene": "주말 오후 공원 벤치에서 장바구니를 결제하는 순간"
+          }
+        }
+      ],
+      "benefits": [
+        {
+          "category": "외식·배달",
+          "headline": "2% 캐시백",
+          "condition": "월 한도 10,000원 · 전월실적 20만원 이상",
+          "source": "winner.card.rates",
+          "variant": "LUNCH"
+        },
+        {
+          "category": "온라인쇼핑",
+          "headline": "0.5% 캐시백",
+          "condition": "월 한도 10,000원 · 전월실적 20만원 이상",
+          "source": "winner.card.rates",
+          "variant": "WEEKEND"
+        }
+      ],
+      "needs_compliance_review": true,
+      "assumptions": [
+        "타깃 일상 맥락과 페르소나 3명은 브리프에서 추론한 값이다",
+        "만 19~29세 타깃이고 탭 결제 중심이라 세로형으로 정했다",
+        "조건부 환급은 brief.benefits에 없어 혜택 목록에 넣지 않고 고지 문장으로만 쓴다",
+        "카드 번호는 앞면에 넣지 않고 자리표시 0427 1017 2026 000N만 뒷면에 쓴다",
+        "발급사 표기는 [ISSUER] 자리표시로 둔다"
+      ]
+    },
+    "storyboards": {
+      "reels": {
+        "format": "reels",
+        "aspect": "9:16",
+        "fps": 30,
+        "duration_s": 20,
+        "hero_variant": "LUNCH",
+        "scenes": [
+          {
+            "id": "reveal",
+            "preset": "hero_reveal",
+            "start_s": 0,
+            "duration_s": 2.0,
+            "variant": "LUNCH",
+            "captions": [
+              {
+                "words": [
+                  "점심도",
+                  "야식도",
+                  "한 장으로"
+                ],
+                "start_s": 0.3,
+                "end_s": 1.9,
+                "position": "top",
+                "emphasis": [
+                  2
+                ]
+              }
+            ]
+          },
+          {
+            "id": "float",
+            "preset": "hero_float",
+            "start_s": 2.0,
+            "duration_s": 2.5,
+            "variant": "LUNCH",
+            "captions": [
+              {
+                "words": [
+                  "이번 달",
+                  "산정액은",
+                  "앱에서"
+                ],
+                "start_s": 0.2,
+                "end_s": 2.3,
+                "position": "top",
+                "emphasis": [
+                  2
+                ]
+              }
+            ]
+          },
+          {
+            "id": "close_front",
+            "preset": "detail_closeup",
+            "start_s": 4.5,
+            "duration_s": 2.0,
+            "variant": "LUNCH",
+            "params": {
+              "focus": "logo"
+            },
+            "captions": [
+              {
+                "words": [
+                  "열두 칸,",
+                  "한 달씩"
+                ],
+                "start_s": 0.2,
+                "end_s": 1.8,
+                "position": "top",
+                "emphasis": [
+                  1
+                ],
+                "style": "pill"
+              }
+            ]
+          },
+          {
+            "id": "close_mat",
+            "preset": "detail_closeup",
+            "start_s": 6.5,
+            "duration_s": 2.0,
+            "variant": "LUNCH",
+            "params": {
+              "focus": "material"
+            },
+            "captions": [
+              {
+                "words": [
+                  "번호",
+                  "없는",
+                  "앞면"
+                ],
+                "start_s": 0.2,
+                "end_s": 1.8,
+                "position": "top",
+                "emphasis": [
+                  2
+                ],
+                "style": "pill"
+              }
+            ]
+          },
+          {
+            "id": "flip",
+            "preset": "flip",
+            "start_s": 8.5,
+            "duration_s": 2.5,
+            "variant": "LUNCH",
+            "captions": [
+              {
+                "words": [
+                  "조건은",
+                  "뒷면에",
+                  "먼저"
+                ],
+                "start_s": 0.3,
+                "end_s": 2.3,
+                "position": "top",
+                "emphasis": [
+                  2
+                ]
+              }
+            ]
+          },
+          {
+            "id": "fan",
+            "preset": "fan_merge",
+            "start_s": 11.0,
+            "duration_s": 2.5,
+            "captions": [
+              {
+                "words": [
+                  "점심, 야식,",
+                  "주말까지"
+                ],
+                "start_s": 0.3,
+                "end_s": 2.3,
+                "position": "top",
+                "emphasis": [
+                  1
+                ]
+              }
+            ]
+          },
+          {
+            "id": "benefit",
+            "preset": "benefit_card",
+            "start_s": 13.5,
+            "duration_s": 3.5,
+            "variant": "LUNCH",
+            "params": {
+              "benefits": [
+                {
+                  "headline": "2% 캐시백",
+                  "category": "외식·배달",
+                  "condition": "월 한도 10,000원 · 전월실적 20만원 이상"
+                },
+                {
+                  "headline": "0.5% 캐시백",
+                  "category": "온라인쇼핑",
+                  "condition": "월 한도 10,000원 · 전월실적 20만원 이상"
+                }
+              ],
+              "note": "헤드라인과 조건을 같은 크기로 표시(G2). 조건부 환급은 benefit_card에 넣지 않고 legal_footer 한 문장으로만 표시"
+            },
+            "captions": [
+              {
+                "words": [
+                  "조건과",
+                  "함께",
+                  "확인하세요"
+                ],
+                "start_s": 0.3,
+                "end_s": 3.3,
+                "position": "bottom",
+                "emphasis": [
+                  2
+                ]
+              }
+            ]
+          },
+          {
+            "id": "end",
+            "preset": "stack_lockup",
+            "start_s": 17.0,
+            "duration_s": 3.0
+          }
+        ],
+        "ending": {
+          "type": "stack_lockup",
+          "copy_words": [
+            "한 달씩,",
+            "또렷하게."
+          ],
+          "cta": "COMING SOON"
+        },
+        "audio": {
+          "mood": "가벼운 로파이 비트",
+          "file": null
+        },
+        "legal_footer": "외식·배달 2%·온라인쇼핑 0.5%는 전월실적 20만원 이상 달, 영역별 월 한도 1만원. 실적 미달 달 지급 보류분의 50%, 앞뒤 달 모두 실적 충족 시, 연 2회, 회당 3천원 한도(조건부). 연회비 1만원."
+      },
+      "youtube": {
+        "format": "youtube",
+        "aspect": "16:9",
+        "fps": 30,
+        "duration_s": 25,
+        "scenes": [
+          {
+            "id": "lunch",
+            "preset": "life_tap_pay",
+            "start_s": 0,
+            "duration_s": 6.5,
+            "variant": "LUNCH",
+            "label": "01 점심 계산대",
+            "params": {
+              "note": "점심 식당 계산대에서 동기들 몫까지 카드로 탭 결제. 실존 결제 단말·식당 로고 없음"
+            },
+            "captions": [
+              {
+                "words": [
+                  "점심 계산은",
+                  "먼저"
+                ],
+                "start_s": 0.5,
+                "end_s": 3.0,
+                "position": "left",
+                "emphasis": [
+                  1
+                ]
+              },
+              {
+                "words": [
+                  "외식·배달 2%",
+                  "전월실적",
+                  "20만원 이상 달",
+                  "월 한도",
+                  "10,000원"
+                ],
+                "start_s": 3.2,
+                "end_s": 6.2,
+                "position": "left",
+                "emphasis": [
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "id": "late",
+            "preset": "life_night_light",
+            "start_s": 6.5,
+            "duration_s": 6.5,
+            "variant": "LATE",
+            "label": "02 시험 기간 야식",
+            "params": {
+              "note": "밤 책상 스탠드 조명 아래 휴대폰으로 야식 배달 주문. 실존 배달앱 화면 없음"
+            },
+            "captions": [
+              {
+                "words": [
+                  "시험 기간",
+                  "야식 주문"
+                ],
+                "start_s": 0.5,
+                "end_s": 3.0,
+                "position": "left",
+                "emphasis": [
+                  1
+                ]
+              },
+              {
+                "words": [
+                  "산정 근거는",
+                  "앱에서",
+                  "매달"
+                ],
+                "start_s": 3.2,
+                "end_s": 6.2,
+                "position": "left",
+                "emphasis": [
+                  2
+                ]
+              }
+            ]
+          },
+          {
+            "id": "weekend",
+            "preset": "life_daylight_seethrough",
+            "start_s": 13.0,
+            "duration_s": 6.5,
+            "variant": "WEEKEND",
+            "label": "03 주말 장바구니",
+            "params": {
+              "note": "주말 오후 공원 벤치에서 휴대폰으로 장바구니 결제 후 투명 카드를 햇빛에 비춤. 실존 쇼핑몰·결제 앱 화면 없음"
+            },
+            "captions": [
+              {
+                "words": [
+                  "주말 오후",
+                  "장바구니"
+                ],
+                "start_s": 0.5,
+                "end_s": 3.0,
+                "position": "left",
+                "emphasis": [
+                  1
+                ]
+              },
+              {
+                "words": [
+                  "온라인쇼핑 0.5%",
+                  "전월실적",
+                  "20만원 이상 달",
+                  "월 한도",
+                  "10,000원"
+                ],
+                "start_s": 3.2,
+                "end_s": 6.2,
+                "position": "left",
+                "emphasis": [
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "id": "merge",
+            "preset": "split_merge",
+            "start_s": 19.5,
+            "duration_s": 2.5,
+            "params": {
+              "panels": [
+                "lunch",
+                "late",
+                "weekend"
+              ]
+            },
+            "captions": [
+              {
+                "words": [
+                  "세 장면,",
+                  "한 장으로"
+                ],
+                "start_s": 0.3,
+                "end_s": 2.3,
+                "position": "center",
+                "emphasis": [
+                  1
+                ]
+              }
+            ]
+          },
+          {
+            "id": "end",
+            "preset": "stack_lockup",
+            "start_s": 22.0,
+            "duration_s": 3.0
+          }
+        ],
+        "ending": {
+          "type": "stack_lockup",
+          "copy_words": [
+            "한 달씩,",
+            "또렷하게."
+          ],
+          "cta": "COMING SOON"
+        },
+        "audio": {
+          "mood": "따뜻한 어쿠스틱 팝",
+          "file": null
+        },
+        "legal_footer": "외식·배달 2%·온라인쇼핑 0.5%는 전월실적 20만원 이상 달, 영역별 월 한도 1만원. 실적 미달 달 지급 보류분의 50%, 앞뒤 달 모두 실적 충족 시, 연 2회, 회당 3천원 한도(조건부). 연회비 1만원."
+      },
+      "promo": {
+        "format": "promo",
+        "aspect": "16:9",
+        "fps": 30,
+        "duration_s": 20,
+        "bpm": 120,
+        "hero_variant": "LUNCH",
+        "scenes": [
+          {
+            "id": "intro",
+            "preset": "heartbeat_intro",
+            "start_s": 0,
+            "duration_s": 2.0,
+            "variant": "LUNCH"
+          },
+          {
+            "id": "beats",
+            "preset": "beat_words",
+            "start_s": 2.0,
+            "duration_s": 6.0,
+            "params": {
+              "words": [
+                "점심",
+                "야식",
+                "장바구니",
+                "한 장",
+                "외식·배달",
+                "온라인쇼핑",
+                "캐시백",
+                "한 달씩",
+                "산정 근거",
+                "앱에서",
+                "또렷하게",
+                "밥달력"
+              ],
+              "card_every": 4,
+              "benefit_words": [
+                "외식·배달",
+                "온라인쇼핑",
+                "캐시백"
+              ],
+              "note": "비율 숫자는 박자 단어에 넣지 않고 조건과 함께 legal_footer에만 표시(G2)"
+            }
+          },
+          {
+            "id": "mq_lunch",
+            "preset": "material_marquee",
+            "start_s": 8.0,
+            "duration_s": 2.5,
+            "variant": "LUNCH",
+            "label": "LUNCH 점심 한 판"
+          },
+          {
+            "id": "mq_late",
+            "preset": "material_marquee",
+            "start_s": 10.5,
+            "duration_s": 2.5,
+            "variant": "LATE",
+            "label": "LATE 야식 시간"
+          },
+          {
+            "id": "mq_weekend",
+            "preset": "material_marquee",
+            "start_s": 13.0,
+            "duration_s": 2.5,
+            "variant": "WEEKEND",
+            "label": "WEEKEND 주말 투명"
+          },
+          {
+            "id": "lineup",
+            "preset": "lineup_pulse",
+            "start_s": 15.5,
+            "duration_s": 2.0,
+            "captions": [
+              {
+                "words": [
+                  "세 시안,",
+                  "같은 조건"
+                ],
+                "start_s": 0.2,
+                "end_s": 1.8,
+                "position": "bottom",
+                "emphasis": [
+                  1
+                ]
+              }
+            ]
+          },
+          {
+            "id": "end",
+            "preset": "stack_lockup",
+            "start_s": 17.5,
+            "duration_s": 2.5
+          }
+        ],
+        "ending": {
+          "type": "stack_lockup",
+          "copy_words": [
+            "한 달씩,",
+            "또렷하게."
+          ],
+          "cta": "COMING SOON"
+        },
+        "audio": {
+          "mood": "또렷한 미니멀 하우스",
+          "file": null
+        },
+        "legal_footer": "외식·배달 2%·온라인쇼핑 0.5%는 전월실적 20만원 이상 달, 영역별 월 한도 1만원. 실적 미달 달 지급 보류분의 50%, 앞뒤 달 모두 실적 충족 시, 연 2회, 회당 3천원 한도(조건부). 연회비 1만원."
+      }
+    },
+    "segment_plays": [
+      {
+        "type": "일반형",
+        "share_and_profit": "채택자 중 비중 0.39, 손익 1.59(가상 고객 시뮬레이션, 가정 기반, 실제 손익 아님)",
+        "play": "발급 직후 간편결제 등록과 첫 월간 산정 화면 확인을 안내해 외식·배달 결제를 이 카드로 모으게 한다. 메시지는 평소 점심·야식 결제 장면 중심으로 쓴다.",
+        "guardrail": "외식·배달 캐시백 비율은 전월실적 조건과 영역별 월 한도와 같은 크기로만 쓰고 환급 비율과 더하지 않는다(G2)."
+      },
+      {
+        "type": "체리피커",
+        "share_and_profit": "채택자 중 비중 0.36, 손익 -1.48(가상 고객 시뮬레이션, 가정 기반, 실제 손익 아님)",
+        "play": "혜택 비교 커뮤니티용 메시지와 환급 단독 강조, 신규 발급 혜택 중심 노출을 하지 않고, 주 결제수단으로 쓰며 산정액을 매달 확인하는 일상 메시지만 쓴다.",
+        "guardrail": "환급 횟수·회당 한도 축소 여부는 재무 재시뮬레이션 결과를 따른다(G6). 한도 도달 직후 이용 급감, 전월실적 경계 근처 집중, 격월 충족 시도, 환급 수령 비율, 1년 내 해지 비율을 운영 지표로 본다. 손익 개선이 없으면 기획서 리스크에 역선택 위험으로 남긴다."
+      },
+      {
+        "type": "충성형",
+        "share_and_profit": "채택자 중 비중 0.09, 손익 2.69(가상 고객 시뮬레이션, 가정 기반, 실제 손익 아님)",
+        "play": "월별 산정액과 지급 내역을 앱에서 꾸준히 보여 줘 조건에 대한 신뢰를 유지한다.",
+        "guardrail": "추천·초대 보상은 입력에 없으므로 만들지 않는다. 혜택 변경은 사전 고지한다."
+      },
+      {
+        "type": "휴면 위험형",
+        "share_and_profit": "채택자 중 비중 0.16, 손익 0.82(가상 고객 시뮬레이션, 가정 기반, 실제 손익 아님)",
+        "play": "발급 후 첫 결제 전이거나 이용이 줄어든 고객에게 간편결제 등록과 이번 달 실적·산정액 확인 화면을 안내한다.",
+        "guardrail": "지급 보류 산정액을 재활성화 미끼로 쓰지 않고, 환급은 앞뒤 달 충족 조건과 횟수·한도를 함께 쓴다. 마케팅 수신 동의가 없는 고객에게는 마케팅성 메시지를 보내지 않는다(G2, G6)."
+      }
+    ],
+    "compliance": [
+      {
+        "item": "이름과 실제 작동 방식 일치",
+        "handling": "가칭의 '혜택 환급' 대신 환급을 약속하지 않는 '밥달력'을 추천했다. 이름이 나오는 발급 화면과 세 영상 legal_footer에 캐시백 조건과 '실적 미달 달 지급 보류분의 50%, 앞뒤 달 모두 실적 충족 시, 연 2회, 회당 3천원 한도(조건부)' 문장을 함께 쓴다.",
+        "needs_human": false,
+        "guard_ref": "G1"
+      },
+      {
+        "item": "비율 단독 노출, 환급 헤드라인, 합산·선점 표현",
+        "handling": "2%와 0.5%는 boards 혜택 목록, 릴스 benefit_card, 유튜브 둘째 자막에 전월실적 20만원 이상 달·월 한도 10,000원과 같은 줄로만 썼다. 환급은 헤드라인·자막·박자 단어에 넣지 않고 legal_footer 한 문장으로만 썼으며, 합산 비율, 실적 미달에도 혜택이 보장되는 듯한 표현, 경쟁 비교 결과를 선점·단독으로 옮긴 표현은 쓰지 않았다. 집행 전 전 소재 광고심의 필요.",
+        "needs_human": true,
+        "guard_ref": "G2"
+      },
+      {
+        "item": "연 2회 기준 시점과 보류 산정액 소멸 시점",
+        "handling": "상품 측이 설계값을 정해 준법에 넘긴 뒤 가입 화면 고지와 legal_footer에 반영한다. 그 전까지 소재에는 '연 2회'만 쓰고 기준 시점은 쓰지 않는다.",
+        "needs_human": true,
+        "guard_ref": "G3"
+      },
+      {
+        "item": "체리피킹·역선택 대비",
+        "handling": "비교형 메시지와 환급 강조를 쓰지 않았다. 체리피커 비중 0.36, 손익 -1.48과 채택 고객 손익 0.47(하한 1.5 미달, 시뮬레이션)은 기획서 리스크에 적고, 환급 횟수·한도 축소안 재시뮬레이션은 재무가 정한다.",
+        "needs_human": true,
+        "guard_ref": "G6"
+      },
+      {
+        "item": "필수 고지 문구",
+        "handling": "required_disclosures 7개 문장(실적·한도, 보류 표시, 조건부 환급, 제외 거래, 연회비 1만원, 혜택 변경 사전 고지, 앱 산정 근거)을 상품설명서와 발급 화면에 그대로 넣고, 영상에는 길이 제한으로 요약 legal_footer를 쓴다.",
+        "needs_human": true,
+        "guard_ref": null
+      },
+      {
+        "item": "신규 발급 이벤트의 경제적 이익 한도",
+        "handling": "여신전문금융업법 시행령상 연회비의 100분의 100을 넘는 경제적 이익 제공 모집은 금지되므로(S1), 발급 이벤트를 붙일 경우 준법 확인 후 진행한다. 이번 산출물에는 이벤트를 넣지 않았다.",
+        "needs_human": true,
+        "guard_ref": null
+      }
+    ],
+    "needs_research": [
+      "만 19~29세 신용카드 신규 발급자의 숏폼·동영상 플랫폼별 이용 비중과 카드 광고 반응",
+      "배달앱·간편결제 앱 안 카드 등록·추천 화면 노출 방식과 20대 이용 수치",
+      "조건부 캐시백·환급 혜택을 다룬 카드 광고의 심의 사례"
+    ],
+    "render_jobs": []
+  },
+  "findings": [
+    {
+      "id": "design_marketing#0",
+      "claim": "이름 후보 3개(밥달력, 앞뒤달, 보류함)의 기존 카드명과의 글자쌍 유사도 최댓값은 0.0으로 반려선 0.5와 경고선 0.3 아래다. 상표 조회를 대신하지 않는다.",
+      "type": "estimate",
+      "source_id": null,
+      "confidence": "medium"
+    },
+    {
+      "id": "design_marketing#1",
+      "claim": "이 카드는 선정안이 아닌 사람이 고른 대안 후보다. 가상 고객 시뮬레이션에서 채택 의향은 46.0%로 목표 38.0% 이상이지만 채택 고객 손익 0.47이 하한 1.5에 못 미쳐 채택 게이트를 통과하지 못했다. 실제 전환율·손익이 아니다.",
+      "type": "estimate",
+      "source_id": null,
+      "confidence": "low"
+    },
+    {
+      "id": "design_marketing#2",
+      "claim": "채택자 중 체리피커 비중 0.36, 손익 -1.48(시뮬레이션)이라 비교형 메시지와 환급 강조를 빼고 주 결제수단 사용과 월간 산정 확인 메시지로 썼다.",
+      "type": "estimate",
+      "source_id": null,
+      "confidence": "low"
+    },
+    {
+      "id": "design_marketing#3",
+      "claim": "결제 경험자의 간편결제 이용률이 89.3%이고 오프라인 결제 10회 중 모바일 결제가 4.54회라는 조사를 근거로 발급 직후 간편결제 등록 안내를 정착 단계 채널로 두었다. 20대 연령별 수치는 이 출처에서 확인하지 못했다.",
+      "type": "fact",
+      "source_id": "S2",
+      "confidence": "medium"
+    },
+    {
+      "id": "design_marketing#4",
+      "claim": "신용카드 모집 시 연회비의 100분의 100을 넘는 경제적 이익 제공은 금지되므로 신규 발급 이벤트는 준법 확인 후에만 붙이도록 compliance에 남겼다.",
+      "type": "fact",
+      "source_id": "S1",
+      "confidence": "high"
+    },
+    {
+      "id": "design_marketing#5",
+      "claim": "외식·배달 영역을 주 생활 장면(점심, 야식)으로 잡은 것은 30대 이하 외식 비중 확대와 음식서비스 중심 모바일 소비 신호(T4)를 참고한 해석이다. 해당 신호의 원 출처는 이번 payload에 URL로 들어 있지 않다.",
+      "type": "estimate",
+      "source_id": null,
+      "confidence": "low"
+    },
+    {
+      "id": "design_marketing#6",
+      "claim": "혜택 20% 축소 시나리오의 채택 의향은 31.0%로 목표 아래이므로, 환급 횟수·한도를 줄이는 G6 재설계 시 채택 의향 하락을 함께 확인해야 한다(시뮬레이션).",
+      "type": "estimate",
+      "source_id": null,
+      "confidence": "low"
+    }
+  ],
+  "sources": [
+    {
+      "id": "S1",
+      "title": "여신전문금융업법 시행령 [시행 2026.5.6.] 대통령령 제36314호",
+      "url": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=285799",
+      "kind": "official",
+      "published": "2026-05-06",
+      "retrieved_at": "2026-10-23",
+      "reliability": 0.9,
+      "stale": false
+    },
+    {
+      "id": "S2",
+      "title": "네이버·카카오·토스페이 각축전, 다음 승부처는 페이스페이가 될까? — 2026 결제 서비스 트렌드",
+      "url": "https://blog.opensurvey.co.kr/article/payment-2026-2/",
+      "kind": "report",
+      "published": "2026-07-06",
+      "retrieved_at": "2026-10-23",
+      "reliability": 0.7,
+      "stale": false
+    },
+    {
+      "id": "S3",
+      "title": "은행 대출금리 감면 카드 이용실적 산정 기준 개선 (체크카드 써도 대출금리 낮아진다)",
+      "url": "https://www.fnnews.com/news/202607221419101661",
+      "kind": "news",
+      "published": "2026-07-22",
+      "retrieved_at": "2026-10-23",
+      "reliability": 0.7,
+      "stale": false
+    },
+    {
+      "id": "S4",
+      "title": "KB국민카드, 마스터카드와 '도쿄 마라톤 2027' 출전권 이벤트",
+      "url": "https://biz.sbs.co.kr/amp/article/20000335175",
+      "kind": "news",
+      "published": "2026-09-17",
+      "retrieved_at": "2026-10-23",
+      "reliability": 0.7,
+      "stale": false
+    },
+    {
+      "id": "S5",
+      "title": "카카오뱅크 ‘모임통장’ 잔액 10조 돌파",
+      "url": "https://www.heraldk.com/article/2025072418320391278",
+      "kind": "news",
+      "published": "2025-07-24",
+      "retrieved_at": "2026-10-23",
+      "reliability": 0.7,
+      "stale": false
+    },
+    {
+      "id": "S6",
+      "title": "Freedom Rise credit limit increases",
+      "url": "https://www.chase.com/personal/credit-cards/education/basics/freedom-rise-credit-limit-increase",
+      "kind": "official",
+      "published": null,
+      "retrieved_at": "2026-10-23",
+      "reliability": 0.9
+    },
+    {
+      "id": "S7",
+      "title": "Platinum Secured Credit Card",
+      "url": "https://www.capitalone.com/credit-cards/platinum-secured/",
+      "kind": "official",
+      "published": null,
+      "retrieved_at": "2026-10-23",
+      "reliability": 0.9
+    },
+    {
+      "id": "S8",
+      "title": "Bilt Mastercard / Bilt Card 2.0 공식 페이지",
+      "url": "https://www.biltrewards.com/card",
+      "kind": "official",
+      "published": null,
+      "retrieved_at": "2026-10-23",
+      "reliability": 0.5
+    },
+    {
+      "id": "S9",
+      "title": "Petal 공식 페이지",
+      "url": "https://www.petalcard.com/",
+      "kind": "official",
+      "published": null,
+      "retrieved_at": "2026-10-23",
+      "reliability": 0.5
+    },
+    {
+      "id": "S10",
+      "title": "카카오뱅크, ‘모임 체크카드’ 출시 1년여 만에 누적 100만장 돌파",
+      "url": "https://www.heraldk.com/article/2025081317211700327",
+      "kind": "news",
+      "published": "2025-08-13",
+      "retrieved_at": "2026-10-23",
+      "reliability": 0.7,
+      "stale": false
+    },
+    {
+      "id": "S11",
+      "title": "신한은행, SOL모임통장 회원수 40만 돌파",
+      "url": "https://www.smarttoday.co.kr/ko-kr/articles/80716",
+      "kind": "news",
+      "published": "2025-05-14",
+      "retrieved_at": "2026-10-23",
+      "reliability": 0.7,
+      "stale": false
+    },
+    {
+      "id": "S12",
+      "title": "투자자 보호 및 리스크관리 강화를 위한 해외투자 실태점검 중간 결과 및 향후 대응방향",
+      "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?menuNo=200218&nttId=208246",
+      "kind": "official",
+      "published": "2025-12-19",
+      "retrieved_at": "2026-10-23",
+      "reliability": 0.9,
+      "stale": false
+    }
+  ],
+  "assumptions": [
+    "이 카드는 H2 이후 사람이 고른 대안 후보이며, 선정안의 이름·시안을 쓰지 않고 이 후보의 혜택 구조로 새로 만들었다",
+    "대상 일상 맥락과 페르소나 3명은 브리프에서 추론한 값이다(assumed)",
+    "30세 미만 타깃과 탭 결제 중심이라 카드 방향은 세로형으로 정했다",
+    "출시일이 없어 단계는 D-day 상대 일수로 썼고 영상 끝 화면은 COMING SOON으로 두었다",
+    "고객 리서치가 없어 인사이트는 가설(assumed)이다",
+    "자사 상품으로 쓰고 발급사 표기는 [ISSUER] 자리표시로 두었으며, 경쟁 카드 이름은 어떤 문구에도 쓰지 않았다"
+  ],
+  "unresolved": [
+    "채택 고객 손익 0.47이 하한 1.5에 못 미쳐 채택 게이트 미통과(시뮬레이션). 이 후보로 계속 진행할지 사람 확인 필요",
+    "연 2회 기준 시점과 보류 산정액 소멸 시점(G3, 상품·준법)",
+    "환급 횟수·회당 한도 축소안 재시뮬레이션과 체리피커 손익 개선 여부(G6, 재무)",
+    "KPI 목표값(자사 과거 신상품 데이터 필요)",
+    "숏폼·동영상 채널 선택의 직접 근거(입력에 없음)"
+  ],
+  "limits": [
+    "영상 MP4는 H5 승인 전이라 렌더하지 않았다(render_jobs 비어 있음)",
+    "이름 유사도는 글자쌍 기준이라 상표 조회를 대신하지 못한다",
+    "시뮬레이션 수치는 가정 기반 가상 고객 모형이며 실제 전환율·손익이 아니다. 유형별 반응은 역할극이며 통계가 아니다",
+    "영상 legal_footer는 길이 제한으로 필수 고지 7개를 요약했으며 전문은 상품설명서와 발급 화면에 둔다",
+    "스토리보드의 bpm과 장면 길이 배분은 템플릿 값이며 시장 근거가 없다"
+  ],
+  "clarifications": [],
+  "out_of_scope": {
+    "detected": false,
+    "suggested_agent": null
+  },
+  "followups": [
+    "스토리보드 미리보기를 보고 MP4로 렌더할까요?",
+    "추천 이름을 '앞뒤달'로 바꿔 시안을 다시 볼까요?",
+    "G6 재시뮬레이션 결과가 나오면 legal_footer와 환급 문장을 맞출까요?"
+  ],
+  "input_refs": [
+    "09-design-marketing/in.json"
+  ]
+}

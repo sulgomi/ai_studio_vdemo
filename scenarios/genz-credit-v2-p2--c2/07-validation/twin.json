@@ -1,0 +1,49 @@
+{
+  "n_personas": 1200,
+  "seed": 11,
+  "target_adopt": 0.68,
+  "all_segments_adopt": {
+    "GenZ(만 19~29세)": 0.68,
+    "사회초년생(25-29)": 0.772
+  },
+  "by_type": {
+    "일반형": {
+      "share_of_adopters": 0.49,
+      "profit": 1.07
+    },
+    "혜택 사냥꾼(체리피커)": {
+      "share_of_adopters": 0.25,
+      "profit": -1.25
+    },
+    "충성형": {
+      "share_of_adopters": 0.1,
+      "profit": 2.62
+    },
+    "휴면 위험형": {
+      "share_of_adopters": 0.17,
+      "profit": -0.03
+    }
+  },
+  "adopter_profit": 0.46,
+  "static_profit": 1.1,
+  "behav_floor": 1.5,
+  "scenarios": [
+    {
+      "name": "기본",
+      "adopt": 0.68
+    },
+    {
+      "name": "경쟁사 모방(새로움 50%↓)",
+      "adopt": 0.645
+    },
+    {
+      "name": "혜택 20% 축소",
+      "adopt": 0.523
+    },
+    {
+      "name": "시장 위축",
+      "adopt": 0.56
+    }
+  ],
+  "top_reject": "inertia"
+}

@@ -1,0 +1,51 @@
+{
+  "run_id": "v2rec",
+  "request_id": "v2rec-research_lead-r1",
+  "agent": "research_lead",
+  "contract_version": "1.0",
+  "mode": "workflow",
+  "today": "2026-10-23",
+  "question": "GenZ 특화 신용카드 만들어줘",
+  "conversation": {
+    "summary": "사용자 요청: GenZ 특화 신용카드 만들어줘. H1에서 범위 확인됨: GenZ(만 19~29세), 신용카드, 투자 연계 제외, 목표 채택 의향 0.38(가정치).",
+    "segment": "GenZ(만 19~29세)",
+    "card_type": "신용카드",
+    "period": "최근 18개월(2025-04~2026-10)",
+    "assumptions": [
+      "GenZ를 기준일 2026-10-20 기준 1997~2007년생 중 신용카드 발급이 가능한 만 19~29세로 해석",
+      "고객사 회원·결제 데이터 없이 공개 자료와 PM 가정치로 진행",
+      "목표 채택 의향 0.38은 기존 리허설과 같은 PM 가정치"
+    ],
+    "own_cards": []
+  },
+  "output_mode": "json",
+  "depth": "detail",
+  "payload": {
+    "scope": {
+      "target_segment": "GenZ(만 19~29세)",
+      "target_segment_id": "genz",
+      "card_type": "credit",
+      "target_adopt": 0.38,
+      "constraints": [
+        "신용카드 발급 가능 연령(만 19세 이상, 가족카드는 부모 동의 예외)",
+        "신용카드로 금융투자상품은 결제할 수 없다(여전법 시행령 제1조의2)",
+        "투자 연계는 이번 시나리오에서 제외(근거 팩 조사에서 특이한 공백도, 20대 수요 근거도 찾지 못함)",
+        "혜택률 0 초과 3% 이하, 연회비 0~2만원(가정치)"
+      ],
+      "assumptions": [
+        "GenZ를 기준일 2026-10-23 기준 1997~2007년생 중 신용카드 발급이 가능한 만 19~29세로 해석(조사는 잘파·Z세대·젊은층까지 넓혔고 근거마다 age_scope 표시)",
+        "고객사 회원·결제 데이터 없이 공개 자료와 PM 가정치로 진행. 20대 카테고리별 월 소비는 공개 통계로 확인하지 못해 월 소비 수치는 계속 가정치",
+        "목표 채택 의향 0.38은 기존 리허설과 같은 PM 가정치"
+      ]
+    },
+    "prior_turn_findings": [],
+    "handoff_from": null,
+    "report_requested": false,
+    "purpose": "research",
+    "limits": {
+      "max_calls": 7,
+      "max_judgments": 5,
+      "max_seconds": 240
+    }
+  }
+}

@@ -1,0 +1,238 @@
+{
+  "run_id": "genz-credit-v2-p2--c0-001",
+  "today": "2026-10-23",
+  "request": "GenZ 특화 신용카드 만들어줘",
+  "mode": "workflow",
+  "note": "E2E 상품기획 시나리오 v2. 근거는 scenarios/genz-evidence 근거 팩(사실 524건, 출처 257건)이고, 탐색 파이프라인(scenarios/genz-discovery)이 공백 후보와 컨셉 아이디어를 냈다.",
+  "scope": {
+    "target_segment": "genz",
+    "target_segment_name": "GenZ(만 19~29세)",
+    "card_type": "신용카드",
+    "target_adopt": 0.38,
+    "constraints": [
+      "신용카드 발급 가능 연령(만 19세 이상, 가족카드는 부모 동의 예외)",
+      "신용카드로 금융투자상품은 결제할 수 없다(여전법 시행령 제1조의2)",
+      "투자 연계는 이번 시나리오에서 제외(근거 팩 조사에서 특이한 공백도, 20대 수요 근거도 찾지 못함)",
+      "혜택률 0 초과 3% 이하, 연회비 0~2만원(가정치)"
+    ],
+    "allow_invest": false,
+    "assumptions": [
+      "GenZ를 기준일 2026-10-23 기준 1997~2007년생 중 신용카드 발급이 가능한 만 19~29세로 해석(조사는 잘파·Z세대·젊은층까지 넓혔고 근거마다 age_scope 표시)",
+      "고객사 회원·결제 데이터 없이 공개 자료와 PM 가정치로 진행. 20대 카테고리별 월 소비는 공개 통계로 확인하지 못해 월 소비 수치는 계속 가정치",
+      "목표 채택 의향 0.38은 기존 리허설과 같은 PM 가정치"
+    ]
+  },
+  "need_labels": {
+    "saving": "절약·캐시백",
+    "invest": "투자·자산형성",
+    "travel": "여행·해외",
+    "digital": "구독·디지털",
+    "fixed_cost": "고정비 절감",
+    "safety": "보장·안전",
+    "social": "소속감·소셜",
+    "simple": "단순함",
+    "control": "소비 통제·예측 가능성"
+  },
+  "categories": {
+    "dining": "외식·배달",
+    "online": "온라인쇼핑",
+    "sub": "구독·디지털",
+    "trans": "교통·모빌리티",
+    "travel": "여행·해외",
+    "daily": "편의점·마트",
+    "fixed": "통신·관리비"
+  },
+  "segments": [
+    {
+      "id": "genz",
+      "name": "GenZ(만 19~29세)",
+      "monthly_spend": {
+        "dining": 24,
+        "online": 20,
+        "sub": 6,
+        "trans": 7,
+        "travel": 6,
+        "daily": 12,
+        "fixed": 5
+      },
+      "complexity_tolerance": 0.5,
+      "digital_level": 0.95,
+      "need_weights": {
+        "saving": 0.75,
+        "invest": 0.3,
+        "travel": 0.55,
+        "digital": 0.85,
+        "fixed_cost": 0.4,
+        "safety": 0.25,
+        "social": 0.7,
+        "simple": 0.7,
+        "control": 0.7
+      },
+      "is_assumption": true,
+      "note": "이 시나리오에서 새로 정한 PM 가정치. 고객사 세그먼트 집계로 교체 대상"
+    },
+    {
+      "id": "young",
+      "name": "사회초년생(25-29)",
+      "monthly_spend": {
+        "dining": 28,
+        "online": 22,
+        "sub": 7,
+        "trans": 9,
+        "travel": 10,
+        "daily": 11,
+        "fixed": 8
+      },
+      "complexity_tolerance": 0.55,
+      "digital_level": 0.9,
+      "need_weights": {
+        "saving": 0.8,
+        "invest": 0.6,
+        "travel": 0.5,
+        "digital": 0.75,
+        "fixed_cost": 0.5,
+        "safety": 0.3,
+        "social": 0.6,
+        "simple": 0.65,
+        "control": 0.65
+      },
+      "is_assumption": true,
+      "note": "기존 세그먼트 목록에 있는 id. 수치는 이 시나리오에서 새로 정한 가정치(원본 수치는 저장소에 없음)"
+    }
+  ],
+  "need_tag_map": {
+    "saving": [
+      "reward_cashback",
+      "reward_point",
+      "reward_discount",
+      "miss_refund",
+      "perf_recharge",
+      "first_try_reward",
+      "habit_conversion",
+      "value_spend_reward",
+      "post_purchase_pick"
+    ],
+    "invest": [
+      "invest_reward",
+      "point_to_stock"
+    ],
+    "travel": [
+      "travel_fx",
+      "lounge",
+      "reward_mileage"
+    ],
+    "digital": [
+      "subscription_ott",
+      "ai_personalize",
+      "auto_best",
+      "online_shop",
+      "paymethod_bonus",
+      "subscription_slot",
+      "seasonal_slot",
+      "experience_category_pack",
+      "evergreen_fallback"
+    ],
+    "fixed_cost": [
+      "fixed_bills",
+      "transit",
+      "govt_link"
+    ],
+    "safety": [
+      "insurance_link"
+    ],
+    "social": [
+      "social",
+      "group_pooling",
+      "challenge",
+      "crew_vote_category"
+    ],
+    "simple": [
+      "simple_flat",
+      "spend_free",
+      "no_cap",
+      "anti_cap",
+      "perf_graduation"
+    ],
+    "control": [
+      "self_budget_cap",
+      "budget_keep_bonus",
+      "subscription_ledger",
+      "zero_floor",
+      "single_exclusion_perf"
+    ]
+  },
+  "trend_topic_need_map": {
+    "benefit": [
+      "saving",
+      "simple"
+    ],
+    "digital": [
+      "digital"
+    ],
+    "group": [
+      "social"
+    ],
+    "promo": [
+      "saving",
+      "travel"
+    ],
+    "regulation": [],
+    "invest": [
+      "invest"
+    ],
+    "etc": []
+  },
+  "sim_params": {
+    "seed": 11,
+    "n_per_segment": 600,
+    "type_mix": {
+      "일반형": 0.55,
+      "체리피커": 0.2,
+      "충성형": 0.1,
+      "휴면 위험형": 0.15
+    },
+    "card_share": {
+      "일반형": 0.6,
+      "체리피커": 0.0,
+      "충성형": 0.9,
+      "휴면 위험형": 0.3
+    },
+    "inertia_mean": {
+      "일반형": 5.05,
+      "체리피커": 2.75,
+      "충성형": 6.75,
+      "휴면 위험형": 4.15
+    },
+    "inertia_sd": 1.2,
+    "need_value": 3.0,
+    "novelty_value": 0.9,
+    "cx_penalty": 3.5,
+    "revenue_rate": 0.011,
+    "operating_cost": 1.2,
+    "behav_floor": 1.5,
+    "note": "원본 시뮬레이션 코드(A live/h.js)가 이 저장소에 없어 설계서 07의 절차(세그먼트별 가상 고객 → 효용 → 채택·거절 사유 → 유형별 손익 → 시나리오 4종)대로 다시 구현한 모형의 계수. 컨셉을 보기 전에 정했고 이후 바꾸지 않는다. 모두 PM 가정치",
+    "calibration": "컨셉을 보기 전에, 리허설 확정 카드(함께쌓기 카드)를 넣었을 때 사회초년생 채택 의향이 리허설 값(31.1%)에 가깝도록 관성 평균만 +1.75 조정했다. 이후 계수는 바꾸지 않는다."
+  },
+  "incidents": [],
+  "v2_notes": {
+    "added_need": "control(소비 통제·예측 가능성). 근거: MZ 설문 소비 통제 64.4% vs 혜택 설계 19.2%(CSF5, 표본·기간 미기재, 20대 단독 아님). 가중치 genz 0.7, young 0.65는 PM 가정치",
+    "removed_segment": "single(타깃 밖)",
+    "new_tags": "탐색 파이프라인 데모 후보가 필요로 한 혜택 방식 15개. 니즈 연결(need_tag_map)은 PM 가정치",
+    "unchanged_assumptions": "월 소비, 복잡도 허용도, 기존 니즈 가중치, 시뮬레이션 계수(sim_params)는 v1과 같은 PM 가정치"
+  },
+  "pm_directions": [
+    "새 카드는 완전히 비어 있는 영역이 아니어도 CVP(혜택 구조)나 컨셉이 참신하면 된다",
+    "'졸업'·'레벨업' 컨셉이 흥미롭다",
+    "GenZ는 개인 취미를 발굴하느라 배움에도 돈을 쓴다. 배움 카드와 고객이 직접 짜는 성장 코스와 함께 성장하는 구조",
+    "'전월실적'이라는 개념 자체를 다시 본다(무실적, 전월 30만원, 50만원처럼 채워야 받는 구조가 정말 중요한가)",
+    "지금은 러닝·AI·한정 디저트가 유행인데 다음 유행은 무엇이고, 연계한 카드는 무엇이 좋을까. 이 플랫폼이 제안해도 좋다"
+  ],
+  "own_issuer": "신한카드",
+  "own_issuers": [
+    "신한",
+    "신한카드"
+  ],
+  "winner_index": 0,
+  "parent_scenario": "genz-credit-v2-p2",
+  "parent_h2": 1
+}

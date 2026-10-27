@@ -1,0 +1,532 @@
+{
+ "scenario": "genz-credit-v2-p2",
+ "summary": "2순위 경로(절약 × 놓친 혜택 환급, 외식·배달)의 06 컨셉~10 기획서, ui_extra·ui_summary·followups 를 competitor_db.json(경쟁 130·자사 33), 06 eval.json, 07 twin.json, harness.py, 근거 팩과 대조했다. 05 선정 셀(A-genz-saving-miss_refund-dining)과 06 3안의 니즈·영역·방식 연결, 06 선정안 수치(1% 캐시백·월 한도 5천원·전월 10만원·연회비 1만원·지정 2% 상한 1천원)의 07·08·09 legal_footer·10·ui 전달, 시뮬레이션 수치(38.7%, 유형별 비중·손익, 시나리오 4종)는 대부분 맞다. 가장 큰 문제는 (1) 06 rates 설계값 1.5%가 09 브리프로 넘어가 디자인 보드 혜택 칸에 핵심 혜택 없이 온라인쇼핑 0.3%만 남고, '1.5% 바로잡기'라는 내부 공정 문제가 09·10 에 노출된 것, (2) 10 기획서의 자사 비교가 '자사 카드 목록이 비어 있다, 두 가지뿐'이라고 쓰며 배달에서 가장 겹치는 배민 밥친구·Simple Plan 을 빠뜨리고 Deep Once 를 잘못 설명한 것, (3) 163종(=경쟁 130+자사 33)과 1200명(=GenZ 600+사회초년생 600) 같은 집계 범위를 잘못 해석해 숫자가 단계마다 엇갈리는 것(07·10·followups 1200명 vs ui_summary 600명, 10 의 130/50/163 혼용)이다. 이 밖에 선정안의 비교 경쟁 카드(쏘카·zgm.streaming)가 외식·배달 대표 경쟁자가 아니고, 10 기획 의도가 탈락한 3안의 '첫 카드' 대상과 섞였으며, 08·09·10 에 내부 용어(H1~H5, card.links, inertia, young, 렌더러 등)가 남아 있다.",
+ "issues": [
+  {
+   "severity": "high",
+   "stage": "09",
+   "file": "genz-credit-v2-p2/09-design-marketing/out.json",
+   "where": "result.boards.benefits (+ answer, compliance[1], next_steps[3], unresolved[0], followups[1])",
+   "problem": "디자인 보드의 혜택 칸에 '온라인쇼핑 0.3% 캐시백' 한 줄만 나오고 핵심 혜택(외식·배달 1% 캐시백, 월 1건 지정 2% 상한 1천원)이 빠져 있다. 원인은 09-design-marketing/in.json 의 brief.benefits 가 06 winner.card.rates(dining 0.015)를 그대로 옮겨 외식·배달을 '1.5% 캐시백'으로 넣었고, 09 가 이를 G2 위반으로 보고 뺐기 때문이다. 그 결과 09 의 answer·compliance·next_steps·unresolved·followups 와 10 부록·unverified_items 까지 '1.5% 표기를 바로잡아야 한다'는 내부 공정 문제가 사용자 화면에 노출된다. 06 one_liner·08 required_disclosures·09 legal_footer 는 모두 1%로 일관된다.",
+   "fix": {
+    "type": "rerecord",
+    "new": "09 입력 brief.benefits 를 [외식·배달 '1% 캐시백'(전월실적 10만원 이상, 월 한도 5천원), 놓친 결제 지정 환급 '월 1건, 5만원까지 결제분에 2%(상한 1천원)', 온라인쇼핑 '0.3% 캐시백'] 으로 고쳐 09 를 다시 기록하고, 보드 혜택 칸에 세 줄을 같은 크기로 싣는다. 1.5% 관련 compliance·next_steps·unresolved·followups 문구와 10 부록의 같은 항목은 함께 지운다.",
+    "reason": "보드가 사용자에게 보여 주는 혜택이 실제 핵심 혜택과 다르고, 내부 설계값 문제를 사용자가 해결해야 할 일처럼 보이게 한다"
+   },
+   "id": "I01"
+  },
+  {
+   "severity": "high",
+   "stage": "10",
+   "file": "genz-credit-v2-p2/10-plan-doc/out.json",
+   "where": "result.markdown 2절 '자사 포트폴리오 분석' 첫 문장",
+   "problem": "'입력에는 자사 보유 카드 목록이 비어 있다, 확인되는 자사 카드는 두 가지'라고 쓰지만 competitor_db.json 에는 자사(is_own) 33종이 있고 ui_extra.researchSub 도 '신한카드 33종은 자사로 분리'라고 말한다. 특히 배달 영역에서 가장 직접 겹치는 자사 '배민 신한카드 밥친구'(DB: 배민 5% 월 3만원, 그 외 1% 월 1만원, 연회비 1.2만원)와 국내 1% 무실적 'Simple Plan'(연회비 1.5만원)이 기획서에 없다. followups A4·B16·A18 은 '기존 결과물은 처음만 겹침 대상으로 적었다'며 밥친구·Simple Plan 을 잠식 확인 대상으로 추가했는데 기획서 본문과 연결되지 않는다.",
+   "fix": {
+    "type": "replace",
+    "old": "이번 호출의 입력에는 자사 보유 카드 목록이 비어 있다. 입력에서 확인되는 자사 카드는 두 가지다.",
+    "new": "자사 신한카드 33종 중 이 카드와 겹칠 수 있는 카드는 세 가지다. 배민 신한카드 밥친구는 배달의민족 결제에 5%(월 3만원)를 주는 배달 특화 카드라 배달 영역에서 가장 직접 겹친다. 처음(ANNIVERSE)은 음식점·카페 등 5% 적립을 매일 한도 안에서 자동 적용하며 오프라인 외식에서 겹친다. Simple Plan은 국내 1%를 실적·한도 없이 주는 카드(연회비 1만5,000원)라 단순한 기본 혜택을 원하는 고객이 겹칠 수 있다.",
+    "reason": "자사 축 비교가 사실과 맞지 않고 확인 질문 답변과도 어긋남"
+   },
+   "id": "I02"
+  },
+  {
+   "severity": "high",
+   "stage": "10",
+   "file": "genz-credit-v2-p2/10-plan-doc/out.json",
+   "where": "result.markdown 2절 '자사 포트폴리오 분석' 163종 문장",
+   "problem": "'컨셉 단계 모집단이 공개 시판 카드 163종으로 적혀 있어 130종과 다르므로 참고값'이라고 썼지만, 163종은 competitor_db.json 의 경쟁 130종 + 자사 33종 합계다. 06 eval 의 최근접 카드가 자사 '처음'(유사도 0.07)인 것도 자사 카드를 포함해 비교했기 때문이다. 모집단이 서로 다른 것이 아니라 비교 범위가 다른 것이므로 '참고값'으로 깎을 이유가 없다.",
+   "fix": {
+    "type": "replace",
+    "old": "다만 이 비교의 모집단이 컨셉 단계에서는 공개 시판 카드 163종으로 적혀 있어 130종과 다르므로, 새로움 1.0과 유사도 0.07은 참고값으로 읽는다.",
+    "new": "새로움 비교는 경쟁 카드 130종과 자사 카드 33종을 합친 163종을 대상으로 했고, 가장 가까운 카드가 자사 처음(유사도 0.07)이라는 뜻이다. 경쟁 카드만 놓고 보면 결제 후 1건을 지정하는 방식은 0종이다.",
+    "reason": "숫자 혼용을 근거 약함으로 처리하지 말고 집계 범위를 설명해 혼란을 없앤다"
+   },
+   "id": "I03"
+  },
+  {
+   "severity": "medium",
+   "stage": "06",
+   "file": "genz-credit-v2-p2/06-concept/out.json",
+   "where": "result.options[1].cvp.alternative / differentiator, special_point.why_unusual (10 2절 '같은 외식 영역의 경쟁 카드' 문단에 그대로 전파)",
+   "problem": "선정안의 비교 경쟁 카드가 쏘카카드(현대카드 쏘카 PLCC, DB 태그 plcc_brand·transit 중심, 외식은 특별가맹점 3% 중 일부)와 zgm.streaming카드(멤버십·OTT 할인 카드, 외식은 스타벅스 사이렌오더뿐)라 '외식·배달' 대표 경쟁자로 보기 어렵다. competitor_db.json 에는 외식·배달 10%급인 현대 알파벳카드 D(연회비 1.5만원, 전월 40만원, 외식·배달앱 10% 월 1만원), 하나 MOVING카드 PLAY모드(연회비 2만원, 전월 50만원, 배달앱 10%), 삼성 iD SELECT ON(연회비 2만원, 전월 30만원, 배달 5% 월 5천원)이 있고 followups A13·B17 은 이 카드들로 비교한다. 단계마다 비교 대상이 다르다.",
+   "fix": {
+    "type": "rerecord",
+    "new": "06 선정안의 cvp.alternative 를 '현대 알파벳카드 D(전월 40만원, 외식·배달앱 10% 월 1만원), 하나 MOVING카드 PLAY모드(전월 50만원, 배달앱 10%)'로 바꾸고 differentiator 를 '두 카드는 혜택률이 높지만 전월 40만~50만원 실적이 있어야 하고, 이 안은 전월 10만원부터 시작해 놓친 1건을 결제 후 고른다'로 다시 기록한 뒤 10 2절 같은 문단도 맞춘다.",
+    "reason": "경쟁사 축 비교가 실제 외식·배달 경쟁 구도를 보여 주도록 하고 확인 질문 답변과 일치시킨다"
+   },
+   "id": "I04"
+  },
+  {
+   "severity": "medium",
+   "stage": "07",
+   "file": "genz-credit-v2-p2/07-validation/out.json",
+   "where": "result.summary 둘째 문장",
+   "problem": "harness.py 는 세그먼트마다 가상 고객 n_per_segment 명을 만들고 n_personas=1200 은 GenZ·사회초년생 두 세그먼트 합계다. GenZ 채택 의향 38.7% 는 GenZ 600명 기준인데 07 은 '1200명 기준 GenZ 채택 의향'으로 쓰고, ui_summary 는 '600명 중 약 232명'으로 써서 숫자가 엇갈린다. 10 요약·4절, followups B9 도 1200명으로 쓴다.",
+   "fix": {
+    "type": "replace",
+    "old": "가상 고객 1200명(시드 11) 기준 GenZ(만 19~29세) 채택 의향은 38.7%로",
+    "new": "가상 고객 1200명(GenZ 600명과 비교용 사회초년생 600명, 시드 11) 중 GenZ(만 19~29세) 채택 의향은 38.7%로",
+    "reason": "ui_summary 의 600명과 맞추고 채택 의향의 분모를 분명히 한다"
+   },
+   "id": "I05"
+  },
+  {
+   "severity": "medium",
+   "stage": "10",
+   "file": "genz-credit-v2-p2/10-plan-doc/out.json",
+   "where": "result.markdown 1절 '기대 효과' 문단",
+   "problem": "07 과 같은 문제. GenZ 채택 의향 38.7% 의 분모는 GenZ 600명이다(twin n_personas 1200 = 두 세그먼트 합계, ui_summary 는 600명).",
+   "fix": {
+    "type": "replace",
+    "old": "가상 고객 1200명 기준 GenZ 채택 의향은 38.7%로",
+    "new": "가상 고객 중 GenZ 600명 기준 채택 의향은 38.7%로",
+    "reason": "단계마다 같은 분모를 쓰게 한다"
+   },
+   "id": "I06"
+  },
+  {
+   "severity": "low",
+   "stage": "followups",
+   "file": "genz-credit-v2-p2/followups.json",
+   "where": "checkpoints[B].questions[B9].answer.body 첫 문장",
+   "problem": "B9 대표 일반형 고객은 GenZ 채택 고객 중에서 고른 것인데 '1,200명 중'이라고 써서 ui_summary(600명)와 다르다.",
+   "fix": {
+    "type": "replace",
+    "old": "가상 고객 1,200명 중 이 카드를 채택한 일반형 고객의 가운데 값을 골랐습니다",
+    "new": "GenZ 가상 고객 600명 중 이 카드를 채택한 일반형 고객의 가운데 값을 골랐습니다",
+    "reason": "분모를 600명으로 통일"
+   },
+   "id": "I07"
+  },
+  {
+   "severity": "medium",
+   "stage": "10",
+   "file": "genz-credit-v2-p2/10-plan-doc/out.json",
+   "where": "result.markdown 1절 '기획 의도' 문단",
+   "problem": "기획 의도를 '첫 신용카드 수요를 겨냥'으로 적었지만 선정안(06 options[1])의 대상은 '배달·외식 결제가 잦고 월 한도를 넘기는 날이 있는 만 19~29세'이고, 첫 카드 고객을 겨냥한 것은 탈락한 3안(첫 카드 실적 졸업 카드)이다. 선정 셀(05 A-genz-saving-miss_refund-dining)도 절약 니즈 × 놓친 혜택 환급이다.",
+   "fix": {
+    "type": "replace",
+    "old": "경쟁 카드 130종에 없는 놓친 혜택 환급 구조로 첫 신용카드 수요를 겨냥하는 것이다.",
+    "new": "경쟁 카드 130종에 없는 놓친 혜택 환급 구조로, 외식·배달 결제가 잦지만 한도나 실적 때문에 혜택을 놓치는 만 19~29세의 절약 수요를 겨냥하는 것이다. 발급 문턱이 낮아지면 첫 신용카드 고객도 늘어날 수 있다.",
+    "reason": "05 선정 셀·06 선정안의 대상과 기획 의도를 맞춘다"
+   },
+   "id": "I08"
+  },
+  {
+   "severity": "medium",
+   "stage": "10",
+   "file": "genz-credit-v2-p2/10-plan-doc/out.json",
+   "where": "result.markdown 5절 KPI 문단",
+   "problem": "시나리오 4종은 4절('재무 타당성과 사업 효과' 아래 '시나리오 4종')에 있는데 '3절의 시나리오 4종'이라고 잘못 가리킨다.",
+   "fix": {
+    "type": "replace",
+    "old": "대체 근거는 3절의 시나리오 4종과 같은 시뮬레이션 값뿐이다.",
+    "new": "대체 근거는 4절의 시나리오 4종과 같은 시뮬레이션 값뿐이다.",
+    "reason": "절 번호 오류"
+   },
+   "id": "I09"
+  },
+  {
+   "severity": "medium",
+   "stage": "10",
+   "file": "genz-credit-v2-p2/10-plan-doc/out.json",
+   "where": "result.markdown 2절 '자사 포트폴리오 분석' Deep Once 문장",
+   "problem": "Deep Once 를 '혜택을 바꿔 쓰는 구독형'이라고 설명하지만 competitor_db.json 의 Deep Once 혜택은 렌탈사 자동납부 건당 3천~7천P, 생활월납 2천~6천P, 디지털 구독 2천~6천P 정액 적립(연회비 2만원, 전월 40만원)이다. DB 태그 benefit_rental(라벨 '혜택 교체 구독')이 '렌탈 자동납부'를 잘못 해석해 붙은 것으로 보인다.",
+   "fix": {
+    "type": "replace",
+    "old": "Deep Once는 혜택을 바꿔 쓰는 구독형 구조를 가진 자사 카드 1종이다.",
+    "new": "Deep Once는 렌탈·생활요금·디지털 구독 자동납부에 건당 포인트를 주는 자사 카드다(연회비 2만원, 전월 40만원). 혜택을 바꿔 쓰는 구조는 아니다.",
+    "reason": "카드 정보를 DB 혜택 내용과 맞춘다(DB 태그도 함께 재검토 필요)"
+   },
+   "id": "I10"
+  },
+  {
+   "severity": "low",
+   "stage": "10",
+   "file": "genz-credit-v2-p2/10-plan-doc/out.json",
+   "where": "result.markdown 2절 '경쟁사 동향' 비어 있는 영역 문장",
+   "problem": "위와 같은 이유로 '자사는 Deep Once 1종 보유'는 사실과 다르다(Deep Once 는 렌탈·월납 자동납부 적립 카드).",
+   "fix": {
+    "type": "replace",
+    "old": "혜택을 바꿔 쓰는 구독형 0종(자사는 Deep Once 1종 보유)",
+    "new": "혜택을 바꿔 쓰는 구독형 0종",
+    "reason": "근거 없는 자사 보유 주장 삭제"
+   },
+   "id": "I11"
+  },
+  {
+   "severity": "medium",
+   "stage": "10",
+   "file": "genz-credit-v2-p2/10-plan-doc/out.json",
+   "where": "result.markdown 2절 '경쟁사 동향' 마지막 문단",
+   "problem": "01 단계의 '신용카드 50종' 집계를 기획서 본문에 끌어와 130종·50종·163종이 섞여 보인다. 기획서의 모든 카드 수는 competitor_db.json(경쟁 130종, 자사 33종) 기준으로 통일할 수 있다(01 의 50종 자체는 1순위 경로 점검 범위).",
+   "fix": {
+    "type": "replace",
+    "old": "연구 요약 단계에는 신용카드 50종 집계(청구할인형 24종, 해외결제·환전 20종, 온라인쇼핑 19종, 소셜 등 0종)가 있고, 경쟁사 분석 단계는 130종 집계다. 본 문서는 130종을 기준으로 썼으며, 두 집계의 모집단 차이는 부록의 근거 약한 항목에 올렸다.",
+    "new": "이 문서의 카드 수는 모두 경쟁 카드 130종 기준이며, 자사 신한카드 33종은 따로 셌다. 새로움 비교에 나오는 163종은 두 집계를 합친 수다.",
+    "reason": "숫자 혼용 제거"
+   },
+   "id": "I12"
+  },
+  {
+   "severity": "low",
+   "stage": "10",
+   "file": "genz-credit-v2-p2/10-plan-doc/out.json",
+   "where": "result.markdown 부록 '근거가 약한 항목' 130/50/163 항목 (unverified_items 의 같은 항목 포함)",
+   "problem": "163종은 130+33 합계이므로 '서로 다른 모집단'이 아니다. 근거 약함 항목으로 둘 이유가 없다.",
+   "fix": {
+    "type": "replace",
+    "old": "경쟁 카드 집계의 모집단 표기가 130종(경쟁사 분석), 50종(연구 요약), 163종(컨셉 단계 새로움 비교)으로 서로 다르다. 연회비와 혜택 조건은 공시 재확인이 필요하다.",
+    "new": "연회비와 혜택 조건은 경쟁 카드 DB(경쟁 130종, 자사 33종, 기준일 2026-10-27) 기준이며 공시 재확인이 필요하다.",
+    "reason": "부록과 본문 설명을 맞춘다. result.unverified_items 의 '경쟁 카드 집계 모집단 표기 불일치' 항목도 삭제"
+   },
+   "id": "I13"
+  },
+  {
+   "severity": "medium",
+   "stage": "ui_summary",
+   "file": "genz-credit-v2-p2/ui_summary.json",
+   "where": "validation.bullets[4]",
+   "problem": "'예산·졸업 조건은 반영 못 함'은 다른 경로(예산·졸업형 카드)의 문구로 보인다. 이 경로의 선정안(월 1건 지정 환급)에는 예산·졸업 조건이 없고, 07 unresolved 가 밝힌 모형 한계는 '사후 지정 행동의 번거로움이 사용률에 미치는 영향'이다.",
+   "fix": {
+    "type": "replace",
+    "old": "주의: 가정 기반 모형이라 실제 전환율이 아니며 예산·졸업 조건은 반영 못 함",
+    "new": "주의: 가정 기반 모형이라 실제 전환율이 아니며 7일 안에 직접 지정하는 번거로움은 반영 못 함",
+    "reason": "선정안과 07 의 한계 설명에 맞춘다"
+   },
+   "id": "I14"
+  },
+  {
+   "severity": "medium",
+   "stage": "ui_extra",
+   "file": "genz-credit-v2-p2/ui_extra.json",
+   "where": "summary.target 핵심 니즈",
+   "problem": "'절약(1순위)'라고 쓰지만 05 picks[1].rationale 은 '절약·캐시백은 소비자 조사 2순위 니즈'이고 1순위 니즈는 구독·디지털(need_weights digital 0.85 > saving 0.75)이다.",
+   "fix": {
+    "type": "replace",
+    "old": "절약(1순위), 어떤 결제가 혜택을 못 받았는지 보고 싶은 통제 니즈",
+    "new": "절약(소비자 조사 2순위 니즈), 어떤 결제가 혜택을 못 받았는지 보고 싶은 통제 니즈",
+    "reason": "05·scenario.json 니즈 순위와 일치"
+   },
+   "id": "I15"
+  },
+  {
+   "severity": "medium",
+   "stage": "ui_extra",
+   "file": "genz-credit-v2-p2/ui_extra.json",
+   "where": "ui.wsSub",
+   "problem": "'점수로 비교해 상위 3개를 골랐다'고 쓰지만 05 picks 는 엔진 1위, 3위(2위는 니즈 중복으로 건너뜀), 7위(PM 방향 '졸업' 반영)다. 또 '다양성을 고려해 정했다'가 이 경로의 2순위 선택 이유처럼 읽힌다.",
+   "fix": {
+    "type": "replace",
+    "old": "기회 영역 후보를 점수로 비교해 상위 3개를 골랐습니다. 이 경로에서 선택한 영역은 2순위인 절약 × 놓친 혜택을 돌려주는 방식(외식·배달)이며, 같은 니즈가 겹치지 않도록 다양성을 고려해 정했습니다. 130종 중 이 방식을 쓰는 카드는 0종이었습니다.",
+    "new": "기회 영역 후보를 점수로 비교하고, 같은 니즈가 겹치지 않게 하면서 관심 방향(실적 졸업)을 반영해 3개를 골랐습니다. 이 경로에서 선택한 영역은 2순위인 절약 × 놓친 혜택을 돌려주는 방식(외식·배달)입니다. 경쟁 카드 130종 중 이 방식을 쓰는 카드는 0종이었습니다.",
+    "reason": "05 선정 과정과 일치"
+   },
+   "id": "I16"
+  },
+  {
+   "severity": "medium",
+   "stage": "10",
+   "file": "genz-credit-v2-p2/10-plan-doc/out.json",
+   "where": "result.markdown 부록 '대안 후보와 탈락 사유' 마지막 문장",
+   "problem": "3순위(실적 졸업)가 왜 단순함 니즈와 연결되는지 설명이 없고, '입력에 적혀 있다' 같은 내부 표현만 남았다. 05 picks[2] 는 PM 방향 '졸업·전월실적 재해석' 반영으로 엔진 7위를 올렸고, 매달 실적 조건을 채우는 부담을 낮춘다는 점에서 단순함 니즈와 닿는다고 설명한다.",
+   "fix": {
+    "type": "replace",
+    "old": "1순위는 H2에서 제외됐고, 사람이 점수 순서를 따르려면 3순위 자리를 엔진 4위 영역으로 바꿀 수 있다고 입력에 적혀 있다.",
+    "new": "1순위(구독·디지털 니즈의 혜택 자동 배정)는 다른 경로에서 다룬다. 3순위(실적 졸업)는 매달 전월실적을 신경 쓰지 않아도 되게 해 단순함 니즈와 닿는다는 이유로 관심 방향을 반영해 점수 7위에서 올렸으나, 졸업형 실적에 대한 20대 선호 근거가 없다.",
+    "reason": "3순위 연결 설명 보강, 내부 표현 제거"
+   },
+   "id": "I17"
+  },
+  {
+   "severity": "medium",
+   "stage": "10",
+   "file": "genz-credit-v2-p2/10-plan-doc/out.json",
+   "where": "result.markdown 2절 '선정한 기회 셀과 이유' 둘째 문단",
+   "problem": "'H2 단계', '지정 사유 문구는 입력에 기록되어 있지 않다'는 내부 공정 표현이며, 기획서가 선택 이유를 모른다고 말하는 꼴이다. 바로 뒤에 2순위의 근거를 적고 있으므로 첫 두 문장은 필요 없다.",
+   "fix": {
+    "type": "replace",
+    "old": "H2 단계에서 사람이 2순위 셀을 지정했고 이 기획서는 그 결정을 따른다. 지정 사유 문구는 입력에 기록되어 있지 않다.",
+    "new": "이 기획서는 세 후보 중 2순위 셀(외식·배달에서 놓친 혜택 환급)을 골라 진행했다.",
+    "reason": "사용자 화면용 표현"
+   },
+   "id": "I18"
+  },
+  {
+   "severity": "medium",
+   "stage": "10",
+   "file": "genz-credit-v2-p2/10-plan-doc/out.json",
+   "where": "result.markdown 6절 '씬 구성안'",
+   "problem": "'자막 원문과 하단 고지문 원문은 이번 입력 요약에 포함되지 않아 인용하지 않는다'고 쓰지만 09 storyboards 의 legal_footer 원문이 있다(세 영상 동일).",
+   "fix": {
+    "type": "replace",
+    "old": "장면별 자막 원문과 하단 고지문(legal_footer) 원문은 이번 입력 요약에 포함되지 않아 이 문서에 인용하지 않으며, 하단 고지문에는 투자 연계 상품이 아니며 원금 손실이 생기는 구조도 아니라고 밝히는 문구와 조건 요약이 들어가도록 앞 단계에서 정했다.",
+    "new": "세 영상의 하단 고지문은 '외식·배달 1% 캐시백(전월실적 10만원 이상, 월 한도 5천원)과 지정 환급(월 1건, 5만원까지 2%, 상한 1천원)은 별도 혜택, 합산 안 함. 연회비 1만원. 투자 연계 아님(원금 손실 구조 아님).'이다.",
+    "reason": "09 결과를 그대로 인용해 단계 간 연결을 보이고 내부 표현 제거"
+   },
+   "id": "I19"
+  },
+  {
+   "severity": "medium",
+   "stage": "10",
+   "file": "genz-credit-v2-p2/10-plan-doc/out.json",
+   "where": "result.markdown 부록 '가드레일 사람 확인 필요 항목 전체' 디자인·마케팅 단락 (unverified_items 마지막 항목 포함)",
+   "problem": "혜택 목록 '1.5% 캐시백' 정정 요구는 06 rates(dining 0.015)가 09 브리프로 넘어간 공정 문제다(I01). 09 를 다시 기록하면 사라질 항목이다.",
+   "fix": {
+    "type": "note",
+    "new": "09 재기록 후 이 문장과 unverified_items 의 '혜택 목록 원본 1.5% 표기 정정' 항목을 지운다.",
+    "reason": "I01 에 따라 함께 정리"
+   },
+   "id": "I20"
+  },
+  {
+   "severity": "medium",
+   "stage": "08",
+   "file": "genz-credit-v2-p2/08-guardrail/out.json",
+   "where": "result.overall, checks[G5].finding 등",
+   "problem": "H1·H3, precheck, card.links, twin.by_type, adopterProfit, static_profit, capPerCat, one_liner, mechanics, required_disclosures 같은 내부 필드명·단계 코드가 점검 결과 문장에 그대로 나온다(G1~G6 finding, overall). 10·ui 는 같은 내용을 '출시 전 점검', '담당 부서 확인'으로 쓴다.",
+   "fix": {
+    "type": "replace",
+    "old": "현재 fix 항목이 없어 컨셉 재작업 없이 진행할 수 있고, 위 확인은 H3에서 담당자를 배정해 병행한다.",
+    "new": "현재 고쳐야 할 항목이 없어 컨셉을 다시 만들지 않고 진행할 수 있으며, 위 확인은 담당 부서를 정해 출시 준비와 함께 진행한다.",
+    "reason": "사용자 화면용 표현. 나머지 finding 의 필드명도 같은 방식으로 풀어 쓰도록 재기록 권장"
+   },
+   "id": "I21"
+  },
+  {
+   "severity": "low",
+   "stage": "08",
+   "file": "genz-credit-v2-p2/08-guardrail/out.json",
+   "where": "result.checks[G5].finding 첫 문장",
+   "problem": "내부 단계 코드(H1)와 필드명(card.links, tags)이 그대로 노출된다.",
+   "fix": {
+    "type": "replace",
+    "old": "H1에서 투자 연계 제외가 확인됐고 card.links가 비어 있으며 tags에도 투자 관련 태그가 없다.",
+    "new": "처음 범위를 정할 때 투자 연계를 제외했고, 그룹사 연계와 투자 관련 혜택이 설계에 없다.",
+    "reason": "사용자 화면용 표현"
+   },
+   "id": "I22"
+  },
+  {
+   "severity": "low",
+   "stage": "09",
+   "file": "genz-credit-v2-p2/09-design-marketing/out.json",
+   "where": "answer, compliance, limits, findings",
+   "problem": "answer 에 'brief.benefits', 'H5 승인', 'needs_research', 'T6~T9' 같은 내부 용어가 나오고, compliance·limits 에 'legal_footer', 'params.note', 'required_disclosures', 'STS' 가 나온다. 또 재조사 T7(해외투자 이벤트)·T8(모임통장)·T9(미국 입문 카드)를 다룬 문장이 이 카드와 관련이 적은데 사용자에게 길게 노출된다.",
+   "fix": {
+    "type": "rerecord",
+    "new": "I01 재기록 때 answer 를 '이름은 픽백, 세로형 시안 3종(영수증·투명·야식)과 릴스 18초·유튜브 25초·홍보 20초 스토리보드를 만들었습니다. 숏폼 채널 반응, 두 혜택 병기 광고심의 기준, 놓친 혜택 경험 빈도는 근거를 찾지 못해 추가 조사로 남겼고, 영상은 승인 전이라 만들지 않았습니다.'처럼 내부 용어 없이 쓴다.",
+    "reason": "사용자 화면용 표현"
+   },
+   "id": "I23"
+  },
+  {
+   "severity": "low",
+   "stage": "10",
+   "file": "genz-credit-v2-p2/10-plan-doc/out.json",
+   "where": "result.markdown 6절 첫 문장",
+   "problem": "'렌더 작업 0건 등록, 렌더러 연결은 2차'는 내부 개발 일정 표현이다.",
+   "fix": {
+    "type": "replace",
+    "old": "영상은 렌더하지 않았다(렌더 작업 0건 등록, 렌더러 연결은 2차). 이 절은 미리보기 스토리보드 기준이다.",
+    "new": "영상은 아직 만들지 않았고, 이 절은 스토리보드 기준이다.",
+    "reason": "사용자 화면용 표현"
+   },
+   "id": "I24"
+  },
+  {
+   "severity": "low",
+   "stage": "10",
+   "file": "genz-credit-v2-p2/10-plan-doc/out.json",
+   "where": "result.markdown 부록 '근거가 약한 항목' 발행일 미확인 항목",
+   "problem": "'신뢰도 0.5 이하 항목 없음, 최소 0.5'는 0.5 가 0.5 이하에 포함되므로 앞뒤가 맞지 않는다.",
+   "fix": {
+    "type": "replace",
+    "old": "(신뢰도 0.5 이하 항목 없음, 최소 0.5)",
+    "new": "(미국 자료의 출처 신뢰도는 0.5로 이 문서에서 가장 낮다)",
+    "reason": "모순 제거"
+   },
+   "id": "I25"
+  },
+  {
+   "severity": "low",
+   "stage": "10",
+   "file": "genz-credit-v2-p2/10-plan-doc/out.json",
+   "where": "result.markdown 2절 '경쟁사 동향' 가장 가까운 경쟁 카드 문장",
+   "problem": "'young 타깃'은 DB target 필드값을 그대로 옮긴 내부 표현이다.",
+   "fix": {
+    "type": "replace",
+    "old": "세 카드 모두 young 타깃 신용카드로",
+    "new": "세 카드 모두 20~30대 젊은 층을 겨냥한 신용카드로",
+    "reason": "사용자 화면용 표현"
+   },
+   "id": "I26"
+  },
+  {
+   "severity": "low",
+   "stage": "10",
+   "file": "genz-credit-v2-p2/10-plan-doc/out.json",
+   "where": "result.markdown 4절 '채택 의향과 유형별 손익'",
+   "problem": "거절 사유를 영문 코드 'inertia'로 쓴다(07 summary 는 'inertia(기존 카드 관성)', followups 는 '기존 카드 관성').",
+   "fix": {
+    "type": "replace",
+    "old": "가장 큰 거절 사유로 inertia가 표기돼 있다.",
+    "new": "가장 큰 거절 사유는 지금 쓰는 카드를 바꾸지 않으려는 관성이다.",
+    "reason": "단계 간 표현 통일"
+   },
+   "id": "I27"
+  },
+  {
+   "severity": "low",
+   "stage": "07",
+   "file": "genz-credit-v2-p2/07-validation/out.json",
+   "where": "result.summary 거절 사유 문장 (findings validation#4 도 같음)",
+   "problem": "영문 코드 inertia 가 사용자 문장에 나온다.",
+   "fix": {
+    "type": "replace",
+    "old": "가장 많은 거절 사유는 inertia(기존 카드 관성)다.",
+    "new": "가장 많은 거절 사유는 지금 쓰는 카드를 바꾸지 않으려는 관성이다.",
+    "reason": "사용자 화면용 표현"
+   },
+   "id": "I28"
+  },
+  {
+   "severity": "low",
+   "stage": "10",
+   "file": "genz-credit-v2-p2/10-plan-doc/out.json",
+   "where": "result.markdown 2절 '선정한 기회 셀과 이유' 첫 문장",
+   "problem": "'코드 점수', '흔들림 검사 안정도' 같은 내부 용어가 나온다. followups 도 '가중치를 흔드는 검사'로 쓴다.",
+   "fix": {
+    "type": "replace",
+    "old": "기회 후보는 3개였다. 1순위는 외식·배달 영역의 혜택 자동 배정(구독·디지털 니즈, 코드 점수 0.704, 신뢰도 medium, 흔들림 검사 안정도 1.0)이다.",
+    "new": "기회 후보는 3개였다. 1순위는 외식·배달 영역의 혜택 자동 배정(구독·디지털 니즈, 점수 0.704, 신뢰도 보통, 점수 기준을 바꿔도 순위가 유지됨)이다.",
+    "reason": "사용자 화면용 표현. 같은 문단의 2·3순위 '흔들림 검사 안정도 0.0'도 '점수 기준을 바꾸면 순위가 바뀜'으로 바꾼다"
+   },
+   "id": "I29"
+  },
+  {
+   "severity": "low",
+   "stage": "followups",
+   "file": "genz-credit-v2-p2/followups.json",
+   "where": "checkpoints[A].questions[A7].answer.body 첫 문장",
+   "problem": "1순위 셀 이름이 followups 에서는 '자동 최적 혜택'(DB 태그 라벨), 05·10·ui_summary 에서는 '혜택 자동 배정'으로 다르고, '가중치를 흔들어도'는 브리프가 지적한 어색한 표현이다.",
+   "fix": {
+    "type": "replace",
+    "old": "1순위 자동 최적 혜택은 가중치를 흔들어도 매번 1위를 지킨 가장 안정적인 셀입니다.",
+    "new": "1순위 혜택 자동 배정은 점수 기준을 바꿔도 매번 1위를 지킨 가장 안정적인 셀입니다.",
+    "reason": "영역 이름 통일, 표현 순화(A1·A7·A14 의 다른 '자동 최적 혜택'도 같은 이름으로)"
+   },
+   "id": "I30"
+  },
+  {
+   "severity": "low",
+   "stage": "followups",
+   "file": "genz-credit-v2-p2/followups.json",
+   "where": "checkpoints[A].questions[A1].answer.body",
+   "problem": "'가중치를 흔드는 검사'는 사용자에게 어색한 내부 표현이다.",
+   "fix": {
+    "type": "replace",
+    "old": "가중치를 흔드는 검사에서 이 셀은 한 번도 같은 순위를 지키지 못했습니다.",
+    "new": "점수 기준을 조금씩 바꿔 보는 검사에서 이 셀은 한 번도 같은 순위를 지키지 못했습니다.",
+    "reason": "표현 순화"
+   },
+   "id": "I31"
+  },
+  {
+   "severity": "low",
+   "stage": "ui_summary",
+   "file": "genz-credit-v2-p2/ui_summary.json",
+   "where": "opportunity.bullets[2]",
+   "problem": "1·2순위 bullet 은 '니즈 × 방식' 형식인데 3순위만 '첫 카드 × 실적 졸업'이다. 05 picks[2].need 는 simple(단순함)이다.",
+   "fix": {
+    "type": "replace",
+    "old": "3순위 첫 카드 × 실적 졸업: 실적 조건 부담을 낮추는 방향",
+    "new": "3순위 단순함 × 실적 졸업: 매달 실적 조건 부담을 낮추는 방향",
+    "reason": "05 니즈와 형식 통일"
+   },
+   "id": "I32"
+  },
+  {
+   "severity": "low",
+   "stage": "ui_summary",
+   "file": "genz-credit-v2-p2/ui_summary.json",
+   "where": "opportunity.bullets[3]",
+   "problem": "선택 기준에 3순위를 점수 7위에서 관심 방향(졸업)으로 올린 사실이 빠져 있다(05 picks[2].deviation_reason).",
+   "fix": {
+    "type": "replace",
+    "old": "선택 기준: 점수 순위와 함께 같은 니즈가 겹치지 않게 골랐음",
+    "new": "선택 기준: 점수 순위와 함께 같은 니즈가 겹치지 않게 하고, 관심 방향(실적 졸업)을 반영했음",
+    "reason": "05 선정 과정과 일치"
+   },
+   "id": "I33"
+  },
+  {
+   "severity": "low",
+   "stage": "ui_extra",
+   "file": "genz-credit-v2-p2/ui_extra.json",
+   "where": "summary.benefits['지정 조건']",
+   "problem": "06 mechanics·08 required_disclosures 의 지정 조건 중 '결제 금액 1만원 이상 5만원 이하'와 '같은 가맹점 월 1회'가 빠져 있다.",
+   "fix": {
+    "type": "replace",
+    "old": "실적 미달 달에도 지정 가능, 지정 후 변경 불가, 취소·할부 건과 상품권·선불충전 결제 제외",
+    "new": "실적 미달 달에도 지정 가능, 결제 금액 1만원 이상 5만원 이하 건만, 같은 가맹점은 월 1회, 지정 후 변경 불가, 취소·할부 건과 상품권·선불충전 결제 제외",
+    "reason": "06·08 조건과 일치"
+   },
+   "id": "I34"
+  },
+  {
+   "severity": "low",
+   "stage": "06",
+   "file": "genz-credit-v2-p2/06-concept/out.json",
+   "where": "result.options[1].tags (eval.json winner.card.tags 동일)",
+   "problem": "선정안 태그에 self_budget_cap(라벨 '자기 설정 예산 한도': 고객이 정한 월 예산을 이용한도나 알림 기준으로 적용)이 있으나 이 카드에는 예산 설정 기능이 없다. 이 태그는 자사 '처음'에만 있어 eval 최근접 카드가 '처음'으로 잡힌 데 영향을 줬을 수 있다.",
+   "fix": {
+    "type": "note",
+    "new": "태그를 [miss_refund, post_purchase_pick, dining_cafe, reward_cashback] 처럼 실제 작동 방식에 맞게 고치고 새로움·최근접 카드를 다시 계산할지 판단한다.",
+    "reason": "태그와 작동 방식 불일치"
+   },
+   "id": "I35"
+  },
+  {
+   "severity": "low",
+   "stage": "followups",
+   "file": "genz-credit-v2-p2/competitor_db.json",
+   "where": "cards[name='배민 신한카드 밥친구'].min_prev_month_spend_won",
+   "problem": "DB 는 밥친구 전월실적을 0(조건 없음)으로 적었지만 genz-evidence/competitor_research/main/shinhan.md 와 followups A4·B16 은 '전월 20만원 이상'으로 쓴다. 단계마다 같은 카드의 조건이 다르게 보일 수 있다.",
+   "fix": {
+    "type": "note",
+    "new": "공식 상품 페이지로 확인해 DB min_prev_month_spend_won 을 200000 으로 고치거나, followups 문구를 DB 와 맞춘다.",
+    "reason": "자사 카드 정보 일치"
+   },
+   "id": "I36"
+  },
+  {
+   "severity": "low",
+   "stage": "07",
+   "file": "genz-credit-v2-p2/07-validation/out.json",
+   "where": "result.voices[2] (충성형), 10 4절 '고객 반응 예시'",
+   "problem": "twin.by_type 의 충성형은 '채택자 중 4%'라는 채택 고객 유형인데, 역할극에서는 충성형이 would_adopt=false 로 나오고 10 은 '충성형과 휴면 위험형은 채택하지 않는 쪽'이라고 쓴다. 채택 고객 유형표와 나란히 보면 모순처럼 읽힌다.",
+   "fix": {
+    "type": "note",
+    "new": "10 의 해당 문장 뒤에 '역할극의 대표 반응이며, 시뮬레이션에서는 충성형 일부(채택 고객의 4%)와 휴면 위험형(17%)도 채택했다'를 덧붙이거나 07 역할극 설명에 같은 뜻을 넣는다.",
+    "reason": "유형표와 역할극의 관계를 분명히 한다"
+   },
+   "id": "I37"
+  }
+ ],
+ "verified_ok": [
+  "05 picks[1](saving × miss_refund × dining) → 06 세 안 모두 외식·배달, 1·2안 miss_refund 중심, 3안은 같은 영역을 실적 졸업으로 푼 다른 레버",
+  "06 경쟁 공백 주장: miss_refund·post_purchase_pick·perf_graduation·first_try_reward 경쟁 0종, life_event 2종, auto_best 2종, zero_floor 1종 모두 DB 와 일치",
+  "06 경쟁·자사 카드 수치: LOCA LIKIT Eat(60%, 통합 월 1.3만원, 전월 40만원, 연회비 1만원), 쏘카카드(특별가맹점 3% 월 30만원까지, 전월 30만원, 1만원), zgm.streaming(전월 40만원, 1.2만원, 가맹점별 월 1회), 처음 ANNIVERSE(1.5만원, 전월 30만원, 5% 1회 1만원·매일 1천P) DB 와 일치",
+  "06 eval: 선정안 adopt 0.387·profit 3.11·adopterProfit 2.0·cherry 0.41, 1안 0.46/1.96/0.47, 3안 0.68/1.1/0.46 이 07 twin·10 부록 표와 일치(1차안 0.39/3.11/1.86 도 eval.attempt1 과 일치)",
+  "07 twin.json ↔ 07 summary·08 G6·09 segment_plays·10 4절·ui_summary·followups: 38.7%, 31.5/26.2/29.5%, 일반형 38%·3.13, 체리피커 41%·0.82, 충성형 4%·5.32, 휴면 17%·1.55, 사회초년생 47.3% 일치",
+  "선정안 숫자(1% 캐시백, 월 한도 5천원, 전월 10만원, 연회비 1만원, 월 1건·7일·5만원·2% 상한 1천원, 1만원 하한)가 08 required_disclosures, 09 pillars·legal_footer·benefit 장면, 10 3-2절, ui_extra, ui_summary 2안에 그대로 전달됨",
+  "08 G1 '5천원 대 8천원' 1차 지적은 out.attempt1 capPerCat 0.8 과 일치",
+  "10 2절 혼잡 영역 집계(구간제 80, 외식·카페 67, 청구할인 60, 온라인 53, 교통 52, 해외 48, 편의점·마트 45, 구독 44)와 비어 있는 영역(놓친 혜택 0, 소셜 0, AI 개인화 1, 풀 공유 1, 실적조건 완화 2, 생애 이벤트 2, 챌린지 4) DB 와 일치",
+  "10 근거 인용(20대 이하 이용액 -4.3%, 64.4%/19.2%, 53.6%, 96.5%, 90.6%, KB Youth Club 20만좌, 모두의 카드 30%, 20대 연체율 +0.41%p, 외식·숙박 +3.1%p, 간편지급 14.9%/14.6%)이 evidence_items.json 과 일치, 니즈 가중치는 scenario.json 과 일치",
+  "선택 셀의 약점(신뢰도 low, 안정도 0.0, 불만 근거 없음)이 10 2절·부록·strongest_objection 으로 이어짐",
+  "followups 경쟁 카드 수치(알파벳 D, MOVING PLAY·ALLDAY, iD SELECT ON, 오하CHECK, 무신사 삼성, 줍줍, Simple Plan, 플리) DB 와 일치, A8 천장 70.7%/52.8% 는 05 입력과 일치",
+  "ui_summary 2안 혜택 줄(외식·배달 1.0%·온라인 0.3%)과 수익 환산(연 약 2만원, 8,200원) 일치",
+  "신상품·자사·경쟁사 세 축은 06 differentiator, 10 2·3절, followups A4·A12·A13·B16~B18 에서 다뤄짐(자사 축은 I02 보완 필요)"
+ ]
+}

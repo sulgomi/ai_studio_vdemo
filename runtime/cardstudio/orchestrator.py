@@ -242,6 +242,10 @@ class Orchestrator:
             ev = self.legacy.evaluate()
             top = ", ".join(f"{x['name']}{'✓' if x['pass'] else '✗'}" for x in ev["eval"])
             bus.emit("code", "orchestrator", f"eval_concepts: {top}")
+            wi = r.scenario_data.get("winner_index")      # 사람이 다른 CVP 후보를 골랐다(최종 확인에서 '다른 CVP로 변경'): 평가 통과 여부와 관계없이 그 후보로 시장성 검증부터 진행
+            if wi is not None and ev["eval"]:
+                ev = self.force_winner(ev, int(wi))
+                bus.emit("human_decision", None, f"H4: 사람이 CVP 후보 {int(wi) + 1}안을 선택(자동 선정안이 아닌 사람이 고른 후보)")
             if not ev["winner"]:
                 feedback = {"from": "eval", "target_option": None, "metrics": {"fails": {x["name"]: x["fails"] for x in ev["eval"]}}}
                 self.rework("eval 통과 0건", "06-concept", ("in.json", "out.json", "eval.json"))
@@ -249,7 +253,7 @@ class Orchestrator:
             win = ev["winner"]
             twin = self.legacy.simulate()
             bus.emit("code", "orchestrator", f"simulate_twin: 채택 의향 {twin['target_adopt']}, 채택 고객 손익 {twin['adopter_profit']}")
-            if twin["target_adopt"] < r.scope["target_adopt"] or twin["adopter_profit"] < twin["behav_floor"]:
+            if wi is None and (twin["target_adopt"] < r.scope["target_adopt"] or twin["adopter_profit"] < twin["behav_floor"]):
                 bus.emit("gate", "adopt_gate", f"미달: 채택 {twin['target_adopt']} / 손익 {twin['adopter_profit']}")
                 if r.counters["adopt_rework"] >= lim.adopt_rework:
                     raise NeedsHuman("adopt_gate", [{"code": "GATE_FAILED", "path": "adopt", "message": "채택 미달 재작업 상한. 다음 셀로 이동(whitespace 다음 순위)은 2차"}])
@@ -257,11 +261,14 @@ class Orchestrator:
                 feedback = {"from": "validation", "target_option": win["metrics"]["i"], "metrics": {"adopt": twin["target_adopt"], "topReject": twin["top_reject"]}}
                 self.rework("채택 게이트 미달", "06-concept", ("in.json", "out.json", "eval.json"), "07-validation")
                 continue
-            bus.emit("gate", "adopt_gate", f"통과: {twin['target_adopt']} ≥ {r.scope['target_adopt']}, {twin['adopter_profit']} ≥ {twin['behav_floor']}")
+            if wi is not None:
+                bus.emit("gate", "adopt_gate", f"사람이 고른 후보로 진행(자동 통과 판정 없음): 시뮬레이션 채택 의향 {twin['target_adopt']}, 채택 고객 손익 {twin['adopter_profit']}")
+            else:
+                bus.emit("gate", "adopt_gate", f"통과: {twin['target_adopt']} ≥ {r.scope['target_adopt']}, {twin['adopter_profit']} ≥ {twin['behav_floor']}")
             self.call("07-validation", "validation", self.b.validation(win, twin), "validation 가상 고객 역할극")
             gr = self.call("08-guardrail", "guardrail", self.b.guardrail(win, twin), "guardrail 재무·준법 점검")
             fixes = [c for c in gr["result"]["checks"] if c["status"] == "fix"]
-            if fixes and r.counters["guardrail_rework"] < lim.guardrail_rework:
+            if wi is None and fixes and r.counters["guardrail_rework"] < lim.guardrail_rework:
                 r.counters["guardrail_rework"] += 1
                 feedback = {"from": "guardrail", "target_option": win["metrics"]["i"],
                             "guardrail_fixes": [{"item": c["item"], "suggestion": c["suggestion"]} for c in fixes if c.get("suggestion")],
@@ -272,6 +279,18 @@ class Orchestrator:
             if fixes:
                 bus.emit("gate", "guardrail_gate", f"fix {len(fixes)}건 남음. 재작업 상한 소진 → 가장 좋은 시도로 진행하고 09·10 에 미해결로 넘김")
             return win, twin
+
+    def force_winner(self, ev: dict, i: int) -> dict:
+        """사람이 고른 후보를 승자로 한다(harness.evaluate 가 만드는 winner 와 같은 모양으로 eval.json 을 다시 쓴다)."""
+        opts = self.run.outputs["06-concept"]["result"]["options"]
+        row = ev["eval"][i]
+        ev = dict(ev)
+        ev["winner"] = {"card": opts[i], "metrics": {k: v for k, v in row.items() if k != "fails"},
+                        "ranking": [{"i": x["i"], "name": x["name"], "score": x["score"], "pass": x["pass"]} for x in sorted(ev["eval"], key=lambda x: -x["score"])],
+                        "chosen_by_human": True}
+        with open(f"{self.run.dir}/06-concept/eval.json", "w", encoding="utf-8") as f:
+            json.dump(ev, f, ensure_ascii=False, indent=2)
+        return ev
 
     def rework(self, why: str, *stages_and_files):
         """되돌림 한 번: 회귀 카운트, 이전 결과 보관, 기록."""

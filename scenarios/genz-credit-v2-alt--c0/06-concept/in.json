@@ -1,0 +1,777 @@
+{
+  "run_id": "m1",
+  "request_id": "m1-concept-r2",
+  "agent": "concept",
+  "contract_version": "1.0",
+  "mode": "workflow",
+  "today": "2026-10-23",
+  "question": "선택한 기회(genz × digital)로 카드 컨셉 3안을 만들어줘.",
+  "conversation": {
+    "summary": "사용자 요청: GenZ 특화 신용카드 만들어줘. H1에서 범위 확인됨: GenZ(만 19~29세), 신용카드, 투자 연계 제외, 목표 채택 의향 0.38(가정치).",
+    "segment": "GenZ(만 19~29세)",
+    "card_type": "신용카드",
+    "period": "최근 18개월(2025-04~2026-10)",
+    "assumptions": [
+      "GenZ를 기준일 2026-10-20 기준 1997~2007년생 중 신용카드 발급이 가능한 만 19~29세로 해석",
+      "고객사 회원·결제 데이터 없이 공개 자료와 PM 가정치로 진행",
+      "목표 채택 의향 0.38은 기존 리허설과 같은 PM 가정치"
+    ],
+    "own_cards": []
+  },
+  "output_mode": "json",
+  "depth": "detail",
+  "payload": {
+    "pick": {
+      "rank": 1,
+      "seg": "genz",
+      "need": "digital",
+      "engine_rank": 1,
+      "area_id": "A-genz-digital-auto_best-dining",
+      "mechanisms": [
+        "auto_best"
+      ],
+      "domain": "dining",
+      "origin": "score",
+      "deviates_from_engine": false,
+      "deviation_reason": null,
+      "statement": "GenZ가 외식·배달에서 카드를 쓸 때, 구독·디지털 니즈는 높은데 혜택을 직접 골라 관리해야 하는 부담이 남아 있다. 이용 패턴에 따라 혜택을 자동 배정하는 방식(auto_best)으로 풀 수 있다.",
+      "unmet_gap": "auto_best를 쓰는 카드는 130종 중 2종이고 가장 비슷한 카드는 카카오뱅크 K-패스 프렌즈 체크(유사도 0.29)다. 소비자 조사 1순위 니즈이나 고객이 현재 카드에 불만족한다는 직접 근거는 입력에 없다. 구독 단점 1위가 관리 부족 낭비 77.4%다(ev:WTT6).",
+      "why_now": "T2에서 간편지급 이용이 늘고 20대 간편결제 의존이 크다. 20대 OTT 이용률 99.1%, 유료 구독형 83.6%로 20대 수치가 있다(ev:TRF10, ev:TRF11).",
+      "hypotheses_to_validate": [
+        "혜택 자동 배정을 GenZ가 직접 고르는 방식보다 선호하는가(자동 배정에 대한 통제감 상실 우려가 없는가)",
+        "외식·배달 영역에서 auto_best가 기존 외식 혜택 카드와 구분되어 인식되는가"
+      ],
+      "kill_criteria": "컨셉 3안 모두 가상 고객 채택 의향이 목표 0.38 미만이거나, 가장 비슷한 기존 카드와의 유사도 0.5를 넘는 안만 나옴.",
+      "confidence": "medium",
+      "rationale": "코드 1순위이고 중요도, 미충족 축이 높으며 흔들림 검사 안정도가 1.0이다. 소비자 조사 1순위 니즈(digital)에 방식 공백이 겹친다.",
+      "evidence_ids": [
+        "T2",
+        "tag:auto_best",
+        "need:digital",
+        "ev:TRF10",
+        "ev:TRF11",
+        "ev:WTT6"
+      ],
+      "risk": "근거 자료(ev:TRF10, ev:WTT6)는 구독·OTT 이용 사실이고 외식·배달 영역의 직접 근거는 아니며, 외식·카페 태그 카드가 67종으로 붐비고 점수가 PM 가정치에 의존한다.",
+      "evidence_refs": [
+        "ev:TRF10",
+        "ev:TRF11",
+        "ev:WTF7",
+        "ev:TR4",
+        "ev:WTT6",
+        "ev:WTT7",
+        "ev:MHF22",
+        "ev:LNC16",
+        "ev:MHT9",
+        "ev:CST9",
+        "ev:PFC16",
+        "ev:PFC7"
+      ]
+    },
+    "segment_pack": {
+      "allowed_tags": {
+        "plcc_brand": "브랜드 제휴(PLCC)",
+        "delivery": "배달",
+        "subscription_ott": "구독/OTT",
+        "travel_fx": "해외결제·환전",
+        "lounge": "공항라운지",
+        "premium_voucher": "프리미엄 바우처",
+        "bank_bundle": "은행 결합",
+        "simple_flat": "단순 정률",
+        "miss_refund": "놓친혜택 환급",
+        "anti_cap": "실적조건 완화",
+        "life_event": "라이프이벤트 전환",
+        "ai_personalize": "AI 개인화",
+        "group_pooling": "혜택 풀 공유",
+        "social": "소셜",
+        "invest_reward": "투자 리워드",
+        "point_to_stock": "포인트→주식",
+        "insurance_link": "보험 연계",
+        "challenge": "챌린지",
+        "time_slot": "시간대 선택",
+        "esg_green": "친환경",
+        "benefit_rental": "혜택 교체 구독",
+        "dining_cafe": "외식·카페",
+        "fuel": "주유",
+        "transit": "대중교통·모빌리티",
+        "fixed_bills": "공과금·통신·관리비",
+        "mart_daily": "편의점·마트",
+        "check_card": "체크카드",
+        "govt_link": "정부 환급 연계(K-패스 등)",
+        "online_shop": "온라인쇼핑",
+        "reward_cashback": "환급(캐시백)형",
+        "reward_discount": "청구할인형",
+        "reward_point": "포인트 적립형",
+        "reward_mileage": "마일리지형",
+        "reward_flat_refund": "건당 정액 환급형",
+        "tiered_perf": "실적 구간제",
+        "spend_free": "무실적",
+        "no_cap": "한도 없음",
+        "discount_counts": "할인액 실적 인정",
+        "perf_recharge": "실적 부족분 보전",
+        "txn_threshold": "결제 건당 최소금액",
+        "select_item": "항목 택1",
+        "select_pack": "팩 택1",
+        "common_plus_select": "공통+선택",
+        "paymethod_bonus": "결제수단 가산",
+        "period_bonus": "기간 보너스",
+        "target_special": "대상 한정",
+        "monthly_switch": "월 변경형",
+        "count_based": "횟수 기준 혜택",
+        "auto_best": "자동 최적 혜택",
+        "budget_keep_bonus": "예산 지킴 가산",
+        "crew_vote_category": "크루 투표 혜택 영역",
+        "evergreen_fallback": "상설 대체 선택지",
+        "experience_category_pack": "경험 업종 혜택",
+        "first_try_reward": "첫 시도 보상",
+        "habit_conversion": "단골 전환 보상",
+        "perf_graduation": "실적 졸업",
+        "post_purchase_pick": "사후 1건 지정",
+        "seasonal_slot": "제철 슬롯",
+        "self_budget_cap": "자기 설정 예산 한도",
+        "single_exclusion_perf": "제외 항목 1개 실적",
+        "subscription_ledger": "구독 장부·결제 예정 알림",
+        "subscription_slot": "구독 슬롯 선택 할인",
+        "value_spend_reward": "가치소비 보상",
+        "zero_floor": "혜택 0 방지"
+      },
+      "categories": {
+        "dining": "외식·배달",
+        "online": "온라인쇼핑",
+        "sub": "구독·디지털",
+        "trans": "교통·모빌리티",
+        "travel": "여행·해외",
+        "daily": "편의점·마트",
+        "fixed": "통신·관리비"
+      },
+      "constraints": {
+        "max_rate": 0.03,
+        "max_cx": 0.5,
+        "fee_range": [
+          0,
+          2
+        ],
+        "links_allowed": []
+      },
+      "segment": {
+        "id": "genz",
+        "name": "GenZ(만 19~29세)",
+        "monthly_spend": {
+          "dining": 24,
+          "online": 20,
+          "sub": 6,
+          "trans": 7,
+          "travel": 6,
+          "daily": 12,
+          "fixed": 5
+        },
+        "complexity_tolerance": 0.5,
+        "digital_level": 0.95,
+        "need_weights": {
+          "saving": 0.75,
+          "invest": 0.3,
+          "travel": 0.55,
+          "digital": 0.85,
+          "fixed_cost": 0.4,
+          "safety": 0.25,
+          "social": 0.7,
+          "simple": 0.7,
+          "control": 0.7
+        },
+        "is_assumption": true,
+        "note": "이 시나리오에서 새로 정한 PM 가정치. 고객사 세그먼트 집계로 교체 대상"
+      }
+    },
+    "comp_empty": [
+      {
+        "tag": "miss_refund",
+        "count": 0,
+        "reason": "130종 중 0종. 쓰지 못한 혜택을 돌려주는 구조를 가진 경쟁 카드가 없음"
+      },
+      {
+        "tag": "social",
+        "count": 0,
+        "reason": "130종 중 0종. 친구·지인과 혜택을 주고받는 소셜형 구조가 없음"
+      },
+      {
+        "tag": "benefit_rental",
+        "count": 0,
+        "reason": "130종 중 0종. 혜택을 바꿔 쓰는 구독형 구조가 없음(자사는 Deep Once 1종 보유)"
+      },
+      {
+        "tag": "ai_personalize",
+        "count": 1,
+        "reason": "130종 중 1종(하나 원더카드 2.0 DAILY)뿐. 개인화 혜택을 전면에 둔 카드가 거의 없음"
+      },
+      {
+        "tag": "group_pooling",
+        "count": 1,
+        "reason": "130종 중 1종(하나 원더카드 2.0 FREE+)뿐. 혜택 한도를 나눠 쓰는 구조가 거의 없음"
+      },
+      {
+        "tag": "anti_cap",
+        "count": 2,
+        "reason": "130종 중 2종. 130종의 80종이 실적 구간제인 데 비해 실적조건 완화를 내세운 카드는 드묾"
+      },
+      {
+        "tag": "life_event",
+        "count": 2,
+        "reason": "130종 중 2종. 졸업·입사 같은 생애 이벤트 전환 혜택은 거의 없음"
+      },
+      {
+        "tag": "challenge",
+        "count": 4,
+        "reason": "130종 중 4종. 챌린지형 혜택은 소수 카드에 한정되고 young 신용카드에서는 일부(모니모페이카드 등)에만 있음"
+      }
+    ],
+    "comp_crowded": [
+      {
+        "tag": "tiered_perf",
+        "count": 80,
+        "reason": "경쟁 카드 130종 중 80종으로 1위. 전월실적 구간에 따라 혜택이 달라지는 구조가 표준이라 차별 여지가 작음"
+      },
+      {
+        "tag": "dining_cafe",
+        "count": 67,
+        "reason": "130종 중 67종으로 2위. 외식·카페는 GenZ 생활 소비의 기본 영역이라 대부분 카드가 이미 포함"
+      },
+      {
+        "tag": "reward_discount",
+        "count": 60,
+        "reason": "130종 중 60종으로 3위. 청구할인형은 가장 흔한 보상 방식"
+      },
+      {
+        "tag": "online_shop",
+        "count": 53,
+        "reason": "130종 중 53종으로 4위. 온라인쇼핑 할인·적립은 young 타깃 카드 다수가 보유"
+      },
+      {
+        "tag": "transit",
+        "count": 52,
+        "reason": "130종 중 52종으로 5위. 대중교통·모빌리티 혜택은 체크카드와 K-패스 연계 카드에 폭넓게 퍼져 있음"
+      },
+      {
+        "tag": "travel_fx",
+        "count": 48,
+        "reason": "130종 중 48종으로 6위. 해외결제·환전은 트래블 체크카드와 PLCC 제휴 카드에 널리 분포"
+      },
+      {
+        "tag": "mart_daily",
+        "count": 45,
+        "reason": "130종 중 45종으로 7위. 편의점·마트는 생활형 카드의 기본 구성"
+      },
+      {
+        "tag": "subscription_ott",
+        "count": 44,
+        "reason": "130종 중 44종으로 8위. 구독/OTT 할인은 GenZ 대상 카드 다수가 공통으로 넣고 있음"
+      }
+    ],
+    "consumer": {
+      "top_needs": [
+        {
+          "need": "digital",
+          "priority": 1,
+          "evidence": "니즈 가중치 0.85(PM 가정치)로 가장 높다. 간편지급 이용이 늘고(T2) 20대 모바일금융 이용경험은 96.5%다(STS3).",
+          "signal_ids": [
+            "T2"
+          ]
+        },
+        {
+          "need": "saving",
+          "priority": 2,
+          "evidence": "니즈 가중치 0.75(PM 가정치). MZ세대 신용카드 사용 이유 1위가 실적·할인 혜택 44.0%(CSS4, 중복 응답). 외식·온라인 비중 확대(T4).",
+          "signal_ids": [
+            "T4"
+          ]
+        },
+        {
+          "need": "control",
+          "priority": 3,
+          "evidence": "니즈 가중치 0.7(PM 가정치). MZ세대 53.6%가 결제일 부담 경험, 필요 요소로 소비 통제 64.4%가 혜택 설계 19.2%보다 높다(CSS4). 연체 신호(T5).",
+          "signal_ids": [
+            "T5"
+          ]
+        },
+        {
+          "need": "simple",
+          "priority": 4,
+          "evidence": "니즈 가중치 0.7, 복잡도 허용도 0.5(PM 가정치). 혜택 축소와 한도 인하 사례가 이어져(CSS13) 이해하기 쉬운 구조가 필요하다. 해석은 추정.",
+          "signal_ids": []
+        },
+        {
+          "need": "social",
+          "priority": 5,
+          "evidence": "니즈 가중치 0.7(PM 가정치). 이번 자료에서 소속감·소셜을 직접 뒷받침하는 문서는 없어 추정이다. 청년 전용 카드의 수요(T3, STS27)는 간접 신호다.",
+          "signal_ids": [
+            "T3"
+          ]
+        },
+        {
+          "need": "travel",
+          "priority": 6,
+          "evidence": "니즈 가중치 0.55, 여행 월 소비 가정치 6(PM 가정치). 이번 자료에 여행 관련 반응 문서가 없어 보조 혜택 수준으로 둔다.",
+          "signal_ids": []
+        },
+        {
+          "need": "fixed_cost",
+          "priority": 7,
+          "evidence": "니즈 가중치 0.4, 고정비 월 소비 가정치 5(PM 가정치). 실속·고정비 절감형 체크카드 인기(STS27)는 체크카드 사례다.",
+          "signal_ids": [
+            "T3"
+          ]
+        }
+      ],
+      "must_have": [
+        "간편결제·모바일카드 등록과 앱 내 발급·관리(구독·디지털 0.85, T2, STS1)",
+        "주 소비 영역에서 체감되는 할인·적립과 실적 조건의 명확한 안내(절약·캐시백 0.75, CSS4)",
+        "한도 설정, 결제일 알림 등 소비 통제 장치(소비 통제 0.7, CSS4 64.4%, T5)",
+        "혜택 변경 시 사전 고지와 지속 가능한 혜택 설계(단순함 0.7, CSS13, CSS11)"
+      ],
+      "can_give_up": [
+        "투자·자산형성 연계(니즈 점수 0.3, 이번 범위에서도 제외)",
+        "보장·안전 부가서비스(니즈 점수 0.25)",
+        "고정비 절감 중심 혜택(니즈 점수 0.4, 보조 혜택으로만 검토)",
+        "프리미엄 여행 서비스(여행·해외 니즈 점수 0.55, 반응 근거 없음)"
+      ]
+    },
+    "trend_refs": [
+      {
+        "id": "T1",
+        "title": "청년·금융이력부족자 신용카드 발급 문턱 완화(대안신용평가, 보증금 담보 카드, 혁신금융서비스 지정)",
+        "impl": "확인한 것: 2026년 12월부터 청년 등의 발급 문턱이 낮아지고, 10월 21일 신한카드 보증금 기반 비대면 카드가 혁신금융서비스로 지정됐다(STS17, STS19). 해석: 첫 신용카드 수요를 겨냥한 한도·심사 구조 설계가 필요하며 세부 기준은 사람 확인 필요다."
+      },
+      {
+        "id": "T2",
+        "title": "간편지급 이용 증가와 비실물 결제 확대, 20대의 간편결제 의존",
+        "impl": "확인한 것: 2025년 간편지급 일평균 이용은 건수 14.9%, 금액 14.6% 늘었고, 20대 간편결제 이용자의 90.6%가 주 지급수단으로 카드를 쓴다(STS25, STS1). 해석: 앱 등록과 간편결제 연동을 먼저 설계할 근거가 된다."
+      },
+      {
+        "id": "T3",
+        "title": "청년 대상 교통 환급(모두의 카드)과 청년 전용 체크카드 확산",
+        "impl": "확인한 것: 2026년 모두의 카드에서 청년(만 19~34세)은 기본형 30% 정률 환급 등 유리한 방식이 적용되고, KB Youth Club 체크카드는 8개월 만에 누적 20만좌를 넘었다(STS20, STS27). 해석: 교통 혜택은 정책 환급과 겹치므로 차별 지점을 따로 정해야 한다."
+      },
+      {
+        "id": "T4",
+        "title": "외식·오락 비중 확대와 온라인 음식서비스 중심 모바일 소비",
+        "impl": "확인한 것: 30대 이하는 2014년 대비 2024년 외식·숙박과 오락·문화 비중이 각각 3.1%p 늘었고, 2026년 8월 온라인쇼핑 구성비 1위는 음식서비스 16.4%다(STS6, STS24). 해석: 외식·배달·문화 영역의 기간 한정 프로모션을 검토할 만하다. 범위는 30대 이하와 전 연령이다."
+      },
+      {
+        "id": "T5",
+        "title": "신용카드 신규 회원 감소·해지 증가와 20대 연체 부담 신호",
+        "impl": "확인한 것: 2026년 1~5월 신규 회원은 2.2% 줄고 해지 회원은 7.4% 늘었으며, 카드론 연체율의 20대 상승폭은 0.41%p다(STS15, STS14). 해석: 한도 관리와 부담 완화 장치를 상품에 넣을 필요가 있다. 내부 데이터 확인 필요."
+      }
+    ],
+    "n_options": 3,
+    "feedback": {
+      "from": "guardrail",
+      "target_option": 1,
+      "guardrail_fixes": [
+        {
+          "item": "이름·한 줄 약속과 실제 작동 방식 일치(과장·불일치)",
+          "suggestion": "hook을 '결제 내역으로 정해진 1위 영역에 적립하고, 정한 월 예산 안에서 쓰면 다음 달 1위 영역 적립률에 0.2%p가 더해집니다(전월 이용실적 10만원 이상, 영역별 월 한도 5천원 안)'처럼 다음 달 적용, 실적 조건, 한도를 함께 쓴다. 혜택 형태는 mechanics 기준인 포인트 적립으로 one_liner, key_benefit, hook을 통일하거나, 캐시백으로 부를 경우 포인트의 현금성 전환 방식을 mechanics에 추가한다. 가칭의 '지킴'이 소비 절제를 약속하는 것으로 읽히지 않는지 이름 후보를 함께 검토한다."
+        },
+        {
+          "item": "광고 표현 위험(단정·과장·오인 소지, 합산 혜택 오인)",
+          "suggestion": "광고 문구에서 1.0%와 0.2%p를 합쳐 하나의 비율로 쓰지 않고, '1위 영역 1.0%(조건 충족 시 다음 달 0.2%p 가산), 나머지 두 영역 0.4%, 영역별 월 한도 5천원, 전월 이용실적 10만원 이상인 달 한정'을 한 문장 안에 함께 쓴다. '예산 지킴'은 '예산 이내 이용 시 가산'처럼 조건을 서술하는 문구로 바꾸고 소비 절제나 소비 관리 효과를 암시하는 표현은 쓰지 않는다. 안내 시 1.0%가 외식·배달이 1위일 때의 기본값 기준임을 함께 밝힌다."
+        },
+        {
+          "item": "체리피킹·역선택 대비(채택 고객 유형별 손익 참고)",
+          "suggestion": "혜택 규모를 줄이는 대신 가산 조건을 조인다. 예산에 상한(예: 고객의 직전 3개월 월평균 이용액 대비 일정 비율, 비율값은 재무가 정함)을 두거나, 예산 이내 판정에 '이용액이 예산 하한을 넘는 달'만 인정하는 조건을 두는 안을 상품팀이 설계값으로 정한다. 재무는 체리피커 0.37와 휴면 위험형 0.18 비중에서 현 한도 5천원, 분기 1회 변경 제한이 충분한지 판단해 기획서 리스크에 남기고, 시뮬레이션에 예산 설정 행동이 반영되지 않았다면 그 한계를 함께 적는다."
+        }
+      ],
+      "metrics": {
+        "adopt": 0.437,
+        "adopterProfit": 2.61,
+        "cherry": 0.37,
+        "topReject": "inertia"
+      },
+      "human_note": "needs_human 항목은 H3에서 담당 부서 지정. 재작업 대상 아님"
+    },
+    "evidence": [
+      {
+        "id": "ev:TRF10",
+        "kind": "fact",
+        "text": "2025 콘텐츠 이용행태 조사에서 OTT 이용률은 20대가 99.1%로 가장 높다",
+        "age_scope": "20대",
+        "source": "사실상 전 국민 보는 OTT(2025 콘텐츠 이용행태 조사 인용)",
+        "published": "2025-12-17",
+        "confidence": "high",
+        "stale": false
+      },
+      {
+        "id": "ev:TRF11",
+        "kind": "fact",
+        "text": "유료 구독형 OTT 이용률은 20대(83.6%)가 가장 높다",
+        "age_scope": "20대",
+        "source": "사실상 전 국민 보는 OTT(2025 콘텐츠 이용행태 조사 인용)",
+        "published": "2025-12-17",
+        "confidence": "high",
+        "stale": false
+      },
+      {
+        "id": "ev:WTF7",
+        "kind": "fact",
+        "text": "20대가 새롭게 이용하고 싶은 구독 서비스 1위는 생성형 AI(23.0%), 2위는 건강·생활가전(18.0%)이었다.",
+        "age_scope": "20대",
+        "source": "구독서비스 이용 실태 조사(대한상공회의소·마크로밀엠브레인) 보도",
+        "published": "2025-02-19",
+        "confidence": "medium",
+        "stale": false
+      },
+      {
+        "id": "ev:TR4",
+        "kind": "trend",
+        "text": "20대 OTT 이용률 99.1%, 유료 구독형 83.6%로 전 연령 최고. 2025 콘텐츠 이용행태 조사에서 20대 OTT 이용률은 99.1%, 유료 구독형 OTT 이용률은 83.6%로 가장 높았고 전체는 54.2%다. 오픈서베이는 20~30대가 가장 다양한 카테고리를 유료 구독한다고 정리했다.",
+        "age_scope": "high(20대 수치 있음)",
+        "source": "2025 콘텐츠 이용행태 조사 OTT 이용률 보도",
+        "published": null,
+        "confidence": null,
+        "stale": false
+      },
+      {
+        "id": "ev:WTT6",
+        "kind": "trend",
+        "text": "구독 경험 보편화와 생성형 AI 구독 의향. 구독 이용 경험은 94.8%이고 20대가 새로 쓰고 싶은 구독 1위는 생성형 AI(23.0%)이며 단점 1위는 관리 부족 낭비(77.4%)다.",
+        "age_scope": "20대",
+        "source": "구독서비스 이용 실태 조사(대한상공회의소·마크로밀엠브레인) 보도",
+        "published": "2025-02",
+        "confidence": null,
+        "stale": false
+      },
+      {
+        "id": "ev:WTT7",
+        "kind": "trend",
+        "text": "생성형 AI 앱의 일상화. 챗GPT 앱 MAU가 2031만명으로 1년 새 약 5배 늘었고 20대 비중이 24.2%로 가장 크다.",
+        "age_scope": "20대",
+        "source": "국내 챗GPT 이용자, 1년 새 5배 폭증(와이즈앱·리테일)",
+        "published": "2025-03~2025-08",
+        "confidence": null,
+        "stale": false
+      },
+      {
+        "id": "ev:MHF22",
+        "kind": "fact",
+        "text": "생성형 AI 구독은 전년 대비 8.4%p 늘어 9개 카테고리 중 상승폭 1위이고 콘텐츠 멤버십은 5.7%p 줄었다",
+        "age_scope": "전연령",
+        "source": "AI 구독은 늘고, 콘텐츠 멤버십은 빠진다 — 락인과 이탈로 갈리는 2026 구독 서비스",
+        "published": "2026-06-08",
+        "confidence": "high",
+        "stale": false
+      },
+      {
+        "id": "ev:LNC16",
+        "kind": "case",
+        "text": "클래스101 / 클래스101+(클래스101, 2018-03(서비스 시작, 2022 하반기 구독 전환), 상태 active): 취미·창작 클래스 온라인 구독 플랫폼이며 클래스101+는 월 19,000원에 6,000개+ 클래스 무제한 수강을 제공한다(데모데이 분석). 지표: 2024년 영업이익 39억원·순이익 18억원, 크리에이터 약 13만명·클래스 6000여건, 구독 론칭 6개월 만에 유료 구독자 239% 증가(2023.5) 한계: 이용자 연령 분포·결제액 비중 미공개. 카드사 제휴 사례 확인 못함",
+        "age_scope": null,
+        "source": "클래스101, 창립 이래 첫 연간 흑자 달성…영업익 39억원",
+        "published": "2018-03(서비스 시작, 2022 하반기 구독 전환)",
+        "confidence": null,
+        "stale": false
+      },
+      {
+        "id": "ev:MHT9",
+        "kind": "trend",
+        "text": "구독 목록에 생성형 AI가 추가되고 콘텐츠 멤버십이 빠지며 해지 대신 비용 최적화를 택한다. 2026년 조사에서 생성형 AI 구독은 8.4%p 늘고 콘텐츠 멤버십은 5.7%p 줄었다. 쇼핑 멤버십 월 지출 33,400원이 OTT 22,700원보다 크다. 부담이 되면 계정 공유·일시정지·연간 결제로 버틴다.",
+        "age_scope": "전연령",
+        "source": "AI 구독은 늘고, 콘텐츠 멤버십은 빠진다 — 락인과 이탈로 갈리는 2026 구독 서비스",
+        "published": "2026-06",
+        "confidence": null,
+        "stale": false
+      },
+      {
+        "id": "ev:CST9",
+        "kind": "theme",
+        "text": "대학생은 체크카드 고빈도·외식·전자상거래 중심. 카드사 내부 데이터 기준 대학생은 월 20~25건 체크카드를 쓰고 음식점 29%, 전자상거래 21% 비중이었다. 2022년 자료이고 KB국민카드 학생증 체크카드 회원 한정이다.",
+        "age_scope": null,
+        "source": null,
+        "published": null,
+        "confidence": null,
+        "stale": false
+      },
+      {
+        "id": "ev:PFC16",
+        "kind": "case",
+        "text": "삼성 모니모카드 / NH 올바른 플렉스 (할인액 실적 제외형, 비교 사례)(삼성카드 / NH농협카드, 본문 미기재, 상태 2024-06 기사 기준): 전월 30만원 조건이지만 할인받은 이용금액은 실적에서 제외. 추가 결제 없이는 실적을 채우기 어려운 구조로 소비자 혼란이 지적됨. 지표: 혜택: 모니모 관리비·통신 10%, 올바른 플렉스 스타벅스 50% 등(기사 서술). 한계: 제외 사실을 소극적으로 안내한다는 지적. 민원 건수는 확인 못함.",
+        "age_scope": null,
+        "source": "'할인된 카드 결제, 전월 실적서 제외'…소비자 혼란",
+        "published": "본문 미기재",
+        "confidence": null,
+        "stale": false
+      },
+      {
+        "id": "ev:PFC7",
+        "kind": "case",
+        "text": "하나카드 MOVING카드 ALLDAY모드(하나카드, 본문 미기재, 상태 판매 중(카드고릴라 2026 추천글 기준, 단종 여부 미확인)): 전월실적 없이 3일 연속 이용하면 영역별 2배 적립. 월 1회 앱에서 모드(혜택 묶음) 즉시 변경 가능. 지표: 국내외 0.5%→1% 무제한 적립, 간편결제 1%→2%(월 2만점), 쇼핑·배달 2%·대중교통 3%(통합 5만점). 한계: 카드고릴라 글이 500원짜리 소액 결제로 3일을 채우는 팁을 소개 → 조건이 의미 있는 소비로 이어지는지 불명. 홍보성 글 기준.",
+        "age_scope": null,
+        "source": "전월실적 없는 신용카드 추천 BEST 5",
+        "published": "본문 미기재",
+        "confidence": null,
+        "stale": false
+      }
+    ],
+    "competitor_refs": [
+      {
+        "id": "c28",
+        "name": "zgm.streaming",
+        "official_name": "zgm.streaming카드",
+        "issuer": "NH농협",
+        "type": "credit",
+        "similarity": 0.2,
+        "annual_fee_won": {
+          "domestic": 12000,
+          "overseas": 12000
+        },
+        "min_prev_month_spend_won": 400000,
+        "on_sale": true,
+        "headline_benefits": [
+          {
+            "category": "멤버십",
+            "text": "네이버플러스멤버십·쿠팡와우멤버십·컬리패스·요기패스 이용요금 할인 (7천원 미만은 결제금액만큼)",
+            "rate_or_amount": "건별 최대 7,000원",
+            "condition": "전월 40만원 이상, 월 할인한도 7,000원, 가맹점별 월 1회"
+          },
+          {
+            "category": "스트리밍",
+            "text": "넷플릭스·웨이브·티빙·디즈니+·유튜브프리미엄·멜론 건별 1만원 이상 결제 시 할인",
+            "rate_or_amount": "건별 최대 5,000원",
+            "condition": "전월 40만원 이상, 월 통합 한도 5,000원, 가맹점별 월 1회"
+          },
+          {
+            "category": "스타벅스 사이렌오더",
+            "text": "공식 앱 사이렌오더 할인 (목록 문구: 커피 50% 할인)",
+            "rate_or_amount": "50% (목록 문구)",
+            "condition": "월 한도 5,000원, 일 1회·월 2회"
+          }
+        ],
+        "explicit_target_text": null,
+        "source_url": "https://card.nonghyup.com/servlet/IpCc1411R.act",
+        "is_own": false
+      },
+      {
+        "id": "mhyundai21",
+        "name": "쏘카카드",
+        "official_name": "쏘카카드",
+        "issuer": "현대카드",
+        "type": "credit",
+        "similarity": 0.2,
+        "annual_fee_won": {
+          "domestic": 10000,
+          "overseas": 10000
+        },
+        "min_prev_month_spend_won": 300000,
+        "on_sale": true,
+        "headline_benefits": [
+          {
+            "category": "쏘카",
+            "text": "쏘카 앱 결제",
+            "rate_or_amount": "3%(기본1+추가2)",
+            "condition": "월 한도 추가 적립 월 이용 30만원까지; 당월 30만원"
+          },
+          {
+            "category": "특별가맹점",
+            "text": "외식·스타벅스/폴바셋/이디야·CGV/메가박스/롯데시네마·특급호텔·프리미엄아울렛·버스/지하철/택시",
+            "rate_or_amount": "3%",
+            "condition": "월 한도 월 이용 30만원까지; 당월 30만원"
+          },
+          {
+            "category": "일반",
+            "text": "일반 가맹점",
+            "rate_or_amount": "1%",
+            "condition": "한도 없음"
+          }
+        ],
+        "explicit_target_text": null,
+        "source_url": "https://www.hyundaicard.com/docfiles/resources/mo/html/carDtl/SCHC_MO.html",
+        "is_own": false
+      },
+      {
+        "id": "msamsung10",
+        "name": "삼성 iD ON",
+        "official_name": "삼성 iD ON 카드",
+        "issuer": "삼성카드",
+        "type": "credit",
+        "similarity": 0.2,
+        "annual_fee_won": {
+          "domestic": 20000,
+          "overseas": 20000
+        },
+        "min_prev_month_spend_won": 0,
+        "on_sale": true,
+        "headline_benefits": [
+          {
+            "category": "자동 맞춤",
+            "text": "커피전문점·배달앱(배민·요기요)·델리(쉐이크쉑·써브웨이·파리바게뜨·배스킨·던킨) 중 월 이용 최대 1개 영역 30%",
+            "rate_or_amount": "30%",
+            "condition": "월 한도 10,000원; 전월 30만원, 선택 없이 자동"
+          },
+          {
+            "category": "교통·통신·스트리밍",
+            "text": "대중교통·택시, 이동통신(알뜰폰 일부), 스트리밍 정기결제 10%",
+            "rate_or_amount": "10%",
+            "condition": "월 한도 1만/2만원; 전월 30/60만원"
+          },
+          {
+            "category": "온라인·해외",
+            "text": "온라인 간편결제·해외 3%(미달·한도 초과 시 1%)",
+            "rate_or_amount": "3%/1%",
+            "condition": "월 한도 5천/1만원; 전월 30/60만원"
+          }
+        ],
+        "explicit_target_text": null,
+        "source_url": "https://www.samsungcard.com/home/card/cardinfo/PGHPPCCCardCardinfoDetails001?code=AAP1731",
+        "is_own": false
+      },
+      {
+        "id": "msamsung16",
+        "name": "스타벅스 삼성카드",
+        "official_name": "스타벅스 삼성카드",
+        "issuer": "삼성카드",
+        "type": "credit",
+        "similarity": 0.2,
+        "annual_fee_won": {
+          "domestic": 30000,
+          "overseas": 30000
+        },
+        "min_prev_month_spend_won": 0,
+        "on_sale": true,
+        "headline_benefits": [
+          {
+            "category": "스타벅스",
+            "text": "스타벅스 누적 1만원당 별 5개(50만원 이상) / 3만원당 1개(미만)",
+            "rate_or_amount": "별 5개/1만원",
+            "condition": "월 한도 50개; 전월 50만원"
+          },
+          {
+            "category": "충전",
+            "text": "스타벅스 선불카드 충전 3만원당 별 1개",
+            "rate_or_amount": "별 1개/3만원",
+            "condition": "월 한도 30개; 실적 무관"
+          },
+          {
+            "category": "일반",
+            "text": "국내외 가맹점 3만원당 별 1개",
+            "rate_or_amount": "별 1개/3만원",
+            "condition": "월 한도 100개; 전월 50만원"
+          }
+        ],
+        "explicit_target_text": null,
+        "source_url": "https://www.samsungcard.com/home/card/cardinfo/PGHPPCCCardCardinfoDetails001?code=AAP1870",
+        "is_own": false
+      }
+    ],
+    "own_refs": [
+      {
+        "id": "mshinhan06",
+        "name": "Pick E 체크",
+        "official_name": "신한카드 Pick E 체크",
+        "issuer": "신한카드",
+        "type": "debit",
+        "similarity": 0.22,
+        "annual_fee_won": {
+          "domestic": 0,
+          "overseas": 0
+        },
+        "min_prev_month_spend_won": 0,
+        "on_sale": true,
+        "headline_benefits": [
+          {
+            "category": "편의점",
+            "text": "GS25·CU·세븐일레븐·이마트24(오프라인)",
+            "rate_or_amount": "10%",
+            "condition": "월 한도 1회 1천P, 일 1회·월 3회; 전월 20만원 이상"
+          },
+          {
+            "category": "커피",
+            "text": "커피전문점 업종",
+            "rate_or_amount": "10%",
+            "condition": "월 한도 1회 1천P, 일 1회·월 3회; 전월 20만원 이상"
+          },
+          {
+            "category": "해외",
+            "text": "해외 일시불(해외겸용 Master)",
+            "rate_or_amount": "1%",
+            "condition": "월 한도 1만P; 전월 20만원 이상"
+          }
+        ],
+        "explicit_target_text": "E들은 이 카드를 픽하지!",
+        "source_url": "https://www.shinhancard.com/pconts/html/card/apply/check/1221536_2206.html",
+        "is_own": true
+      },
+      {
+        "id": "mshinhan05",
+        "name": "Deep Dream 체크",
+        "official_name": "신한카드 Deep Dream 체크",
+        "issuer": "신한카드",
+        "type": "debit",
+        "similarity": 0.2,
+        "annual_fee_won": {
+          "domestic": 0,
+          "overseas": 0
+        },
+        "min_prev_month_spend_won": 0,
+        "on_sale": true,
+        "headline_benefits": [
+          {
+            "category": "모두드림",
+            "text": "국내외 전 가맹점",
+            "rate_or_amount": "0.2%",
+            "condition": "월 한도 한도 없음; 실적 무관"
+          },
+          {
+            "category": "더해드림",
+            "text": "DREAM 영역(할인점·편의점/올리브영/다이소·CGV/롯데시네마/커피·해외·이동통신)",
+            "rate_or_amount": "0.6%",
+            "condition": "월 한도 통합 한도; 전월 20만원 이상"
+          },
+          {
+            "category": "챙겨드림",
+            "text": "DREAM 영역 중 당월 최다 이용 1개 영역 자동 선정",
+            "rate_or_amount": "1.0%",
+            "condition": "월 한도 통합 한도; 전월 20만원 이상"
+          }
+        ],
+        "explicit_target_text": null,
+        "source_url": "https://www.shinhancard.com/pconts/html/card/apply/check/1188313_2206.html",
+        "is_own": true
+      },
+      {
+        "id": "mshinhan07",
+        "name": "Pick I 체크",
+        "official_name": "신한카드 Pick I 체크",
+        "issuer": "신한카드",
+        "type": "debit",
+        "similarity": 0.2,
+        "annual_fee_won": {
+          "domestic": 0,
+          "overseas": 0
+        },
+        "min_prev_month_spend_won": 0,
+        "on_sale": true,
+        "headline_benefits": [
+          {
+            "category": "편의점",
+            "text": "GS25·CU·세븐일레븐·이마트24(오프라인)",
+            "rate_or_amount": "10%",
+            "condition": "월 한도 1회 1천P, 일 1회·월 3회; 전월 20만원 이상"
+          },
+          {
+            "category": "커피",
+            "text": "커피전문점 업종",
+            "rate_or_amount": "10%",
+            "condition": "월 한도 1회 1천P, 일 1회·월 3회; 전월 20만원 이상"
+          },
+          {
+            "category": "해외",
+            "text": "해외 일시불(해외겸용 Master)",
+            "rate_or_amount": "1%",
+            "condition": "월 한도 1만P; 전월 20만원 이상"
+          }
+        ],
+        "explicit_target_text": null,
+        "source_url": "https://www.shinhancard.com/pconts/html/card/apply/check/1223966_2206.html",
+        "is_own": true
+      }
+    ],
+    "invest_rules": []
+  }
+}

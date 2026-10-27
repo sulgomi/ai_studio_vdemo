@@ -1,0 +1,3506 @@
+[
+ {
+  "id": "mshinhan01",
+  "name": "처음",
+  "official_name": "신한카드 처음",
+  "issuer": "신한카드",
+  "type": "credit",
+  "on_sale": true,
+  "role": "youth",
+  "launched": "2024-04-02(공식 페이지 출시일자; 보도자료 2024-06-03)",
+  "annual_fee_won": {
+   "domestic": 15000,
+   "overseas": 18000
+  },
+  "tiers": [
+   {
+    "min_prev_month_spend_won": 0,
+    "benefit_summary": "혜택 없음(신규 발급 시 등록월+1개월은 실적 무관 제공)"
+   },
+   {
+    "min_prev_month_spend_won": 300000,
+    "benefit_summary": "오늘도 5%·일상 속 5%·정기결제 영역별 각 5천P, 소비관리 보너스 3천P"
+   },
+   {
+    "min_prev_month_spend_won": 500000,
+    "benefit_summary": "영역별 각 1만P, 소비관리 보너스 6천P"
+   },
+   {
+    "min_prev_month_spend_won": 1000000,
+    "benefit_summary": "영역별 각 2만P, 소비관리 보너스 1만P"
+   }
+  ],
+  "benefits": [
+   {
+    "category": "오늘도 5%",
+    "text": "음식점(한·중·일·양식·일반대중·패스트푸드·뷔페)·카페(스타벅스·블루보틀·투썸·이디야·폴바셋·빽다방 등)·편의점 4사·쿠팡·컬리",
+    "rate_or_amount": "5% 마이신한포인트",
+    "monthly_cap": "5천/1만/2만P(구간별)",
+    "condition": "1회 이용금액 1만원까지, 일 최대 1천P, 편의점·음식점·카페는 오프라인, 배달앱 제외"
+   },
+   {
+    "category": "일상 속 5%",
+    "text": "올리브영·다이소(오프라인)·오늘의집, 택시·KTX·해외 일시불, 무신사·지그재그·W컨셉·29CM·에이블리",
+    "rate_or_amount": "5% 마이신한포인트",
+    "monthly_cap": "5천/1만/2만P",
+    "condition": "1회 5만원까지, 패션은 공식 앱·웹만"
+   },
+   {
+    "category": "정기결제",
+    "text": "통신(SKT·KT·LGU+) 10%, OTT(넷플릭스·유튜브프리미엄·티빙·디즈니+·SPOTV NOW) 15%, 멤버십(쿠팡와우·네이버플러스) 20%",
+    "rate_or_amount": "10~20% 마이신한포인트",
+    "monthly_cap": "5천/1만/2만P",
+    "condition": "통신 월 1회 3만원까지 자동납부, OTT는 공식 홈페이지 정기결제(인앱결제 제외)"
+   },
+   {
+    "category": "소비관리 보너스①계획소비",
+    "text": "매월 1~5일 목표 소비금액 설정 시 500P, 실제 이용금액이 목표 ±5만원 이내면 5,000P",
+    "rate_or_amount": "500P+5,000P",
+    "monthly_cap": "3천/6천/1만P(구간별 통합)",
+    "condition": "다음 달 25일 적립"
+   },
+   {
+    "category": "소비관리 보너스②즉시결제",
+    "text": "이번 달 일시불 이용분을 이번 달 안에 즉시결제하면 0.3%",
+    "rate_or_amount": "0.3%",
+    "monthly_cap": "소비관리 보너스 통합 한도 내",
+    "condition": "신한카드 앱·홈페이지·고객센터에서 즉시결제"
+   }
+  ],
+  "exclusions": [
+   "전월실적·혜택 제외: 현금서비스·카드론, 연회비·수수료·이자, 기프트/선불카드·상품권·선불전자지급수단 구매·충전, 국세·지방세·4대보험, 아파트관리비·도시가스·전기·수도요금·TV수신료, 학교 납입금·대학(원)등록금, 거래 취소금액",
+   "배달앱 경유 거래·상품권·선불카드 적립 제외",
+   "백화점·할인점·공항·기차역 등 임대매장 제외"
+  ],
+  "promotions": [],
+  "recent_changes": [
+   "ANNIVERSE(가상 아이돌) 디자인 버전이 별도 상품 페이지(1229296)로 판매 중, 혜택·연회비 동일"
+  ],
+  "target_text": "고민없이 적립받고 소비도 관리하는 나의 첫 신용카드.",
+  "issuance": "온라인(홈페이지·신한 SOL페이) 신청, 후불교통 기능 카드로만 신청, 가족카드 불가",
+  "app_features": [
+   "계획소비 목표 설정·진행 알림(신한 SOL페이)",
+   "즉시결제"
+  ],
+  "design_note": "New Way / Starting Line 2종 + ANNIVERSE 디자인 버전(별도 페이지)",
+  "tags": [
+   "dining_cafe",
+   "mart_daily",
+   "online_shop",
+   "subscription_ott",
+   "fixed_bills",
+   "transit",
+   "travel_fx",
+   "reward_point",
+   "tiered_perf",
+   "budget_keep_bonus",
+   "self_budget_cap",
+   "target_special"
+  ],
+  "genz_fit": "high",
+  "genz_fit_reason": "신한이 '사회초년생 첫 신용카드'로 내세운 대표 청년 카드. 카페·편의점·패션 플랫폼·OTT·멤버십 등 20대 소비처를 넓게 묶고 계획소비 목표 달성 보상이 있다. 다만 전월 30만원 실적이 필요하다.",
+  "source_url": "https://www.shinhancard.com/pconts/html/card/apply/credit/1227020_2207.html",
+  "source_urls": [
+   "https://www.shinhancard.com/pconts/html/card/apply/credit/1227020_2207.html",
+   "https://www.shinhancard.com/pconts/html/card/apply/credit/1229296_2207.html",
+   "https://www.shinhancard.com/pconts/company/html/promotion/press/1228317_3999.html"
+  ],
+  "checked": "2026-10-27",
+  "confidence": "high",
+  "note": "심의필 제2025-C1h-16946호(2025.11.21~2026.11.20). 기존 DB c03 '처음(ANNIVERSE)'와 같은 상품(디자인만 다름)."
+ },
+ {
+  "id": "mshinhan02",
+  "name": "처음 체크",
+  "official_name": "신한카드 처음 체크",
+  "issuer": "신한카드",
+  "type": "debit",
+  "on_sale": true,
+  "role": "youth",
+  "launched": "2025-07-07(공식 페이지; 보도자료 2025-08-07)",
+  "annual_fee_won": {
+   "domestic": 0,
+   "overseas": 0
+  },
+  "tiers": [
+   {
+    "min_prev_month_spend_won": 0,
+    "benefit_summary": "혜택 없음(신규 등록월+1개월은 실적 무관, 단 일상 속 적립은 다음 달부터 10만원 달성 시)"
+   },
+   {
+    "min_prev_month_spend_won": 100000,
+    "benefit_summary": "전 서비스 월 통합 5천P"
+   }
+  ],
+  "benefits": [
+   {
+    "category": "스터디",
+    "text": "독서실(스터디카페 포함)·서적·문구 업종",
+    "rate_or_amount": "5%",
+    "monthly_cap": "2천P",
+    "condition": "결제 3천원 이상, 오프라인만"
+   },
+   {
+    "category": "오늘도 적립",
+    "text": "편의점(GS25·CU·세븐일레븐)·패스트푸드·카페(투썸·이디야·메가MGC·파리바게뜨·배스킨라빈스) 5% + 방과 후(16~20시) 2% 추가",
+    "rate_or_amount": "최대 7%",
+    "monthly_cap": "영역별 1천P, 방과후 추가 통합 1천P",
+    "condition": "결제 3천원 이상, 오프라인만"
+   },
+   {
+    "category": "사진",
+    "text": "사진관 업종(포토부스 포함)",
+    "rate_or_amount": "1,000P 정액",
+    "monthly_cap": "월 1회·연 2회",
+    "condition": "결제 5천원 이상"
+   },
+   {
+    "category": "쇼핑",
+    "text": "지그재그·에이블리·무신사/29CM(온라인)·올리브영",
+    "rate_or_amount": "3,000P 정액",
+    "monthly_cap": "월 1회·연 3회",
+    "condition": "결제 1만원 이상"
+   }
+  ],
+  "exclusions": [
+   "의약품 전용몰·제약회사/약국",
+   "할인 적용 거래",
+   "간편결제 가맹점명 거래(네이버페이·카카오페이 표기 시) 제외"
+  ],
+  "promotions": [
+   {
+    "text": "빼빼로 한정판(11,111장) 발급 이벤트",
+    "ends": "2025-11-30(종료)"
+   }
+  ],
+  "recent_changes": [],
+  "target_text": "학교 끝, 혜택 시작! 나의 첫 체크카드.",
+  "issuance": "신한카드 홈페이지·신한 SOL페이·신한은행 창구, 만 7세 이상(만 14세 미만 법정대리인 동의)",
+  "app_features": [
+   "신한 SOL페이"
+  ],
+  "design_note": "Silver·춘배(네이버웹툰) 굿즈형, 마이멜로디 버전 페이지 별도, 캐릭터 디자인 최초 발급 1천원",
+  "tags": [
+   "check_card",
+   "mart_daily",
+   "dining_cafe",
+   "online_shop",
+   "reward_point",
+   "reward_flat_refund",
+   "time_slot",
+   "txn_threshold",
+   "target_special"
+  ],
+  "genz_fit": "mid",
+  "genz_fit_reason": "10대(만 12~19세) 특화로 기획됐지만 전월 10만원이라는 매우 낮은 실적, 포토부스·지그재그·올리브영 정액 적립은 19~20세 초입 고객에게도 맞는다. 한도 5천P로 혜택 규모는 작다.",
+  "source_url": "https://www.shinhancard.com/pconts/html/card/apply/check/1234710_2206.html",
+  "source_urls": [
+   "https://www.shinhancard.com/pconts/html/card/apply/check/1234710_2206.html",
+   "https://www.shinhancard.com/pconts/html/card/apply/check/1235591_2206.html",
+   "https://www.shinhancard.com/pconts/company/html/promotion/press/1235489_3999.html",
+   "https://www.shinhancard.com/pconts/company/html/promotion/press/1236754_3999.html"
+  ],
+  "checked": "2026-10-27",
+  "confidence": "high",
+  "note": "심의필 제20261007-Dpp-002호(2026.10.07)."
+ },
+ {
+  "id": "mshinhan03",
+  "name": "처음(선불)",
+  "official_name": "신한카드 처음(선불)",
+  "issuer": "신한카드",
+  "type": "debit",
+  "on_sale": true,
+  "role": "youth",
+  "launched": "2025-05-02(공식 페이지; 연혁상 2025-06 'SOL페이 처음'과 함께 출시)",
+  "annual_fee_won": {
+   "domestic": 0,
+   "overseas": null
+  },
+  "tiers": [
+   {
+    "min_prev_month_spend_won": 0,
+    "benefit_summary": "실적 개념 없음(선불)"
+   }
+  ],
+  "benefits": [
+   {
+    "category": "발급",
+    "text": "은행 계좌 없이 휴대폰만으로 발급(만 7~18세)",
+    "rate_or_amount": "-",
+    "monthly_cap": null,
+    "condition": "만 14세 미만 법정대리인 동의"
+   },
+   {
+    "category": "교통",
+    "text": "Tmoney 선불 교통 기능 탑재",
+    "rate_or_amount": "-",
+    "monthly_cap": null,
+    "condition": "충전식"
+   },
+   {
+    "category": "앱",
+    "text": "'SOL페이 처음'(10대 전용 플랫폼) 출석체크 전용 혜택",
+    "rate_or_amount": "-",
+    "monthly_cap": null,
+    "condition": "공식 요약 문구 기준, 세부 확인 불가"
+   }
+  ],
+  "exclusions": [
+   "국내 전용, 할부·ATM 불가, 정기납부(통신요금 등)·외화결제·일부 백화점/마트 사용 제한"
+  ],
+  "promotions": [],
+  "recent_changes": [],
+  "target_text": "찬란한 시작을 응원하는 '처음' 카드.",
+  "issuance": "신한 SOL페이(SOL페이 처음) 앱 신청, 우편 배송",
+  "app_features": [
+   "SOL페이 처음: 이번 달 쓴 돈·계좌 잔액 첫 화면, 출석체크 포인트(보도 기준)"
+  ],
+  "design_note": "New Way / ANNIVERSE 2종(동시 소지 불가)",
+  "tags": [
+   "check_card",
+   "target_special",
+   "transit"
+  ],
+  "genz_fit": "low",
+  "genz_fit_reason": "만 7~18세 전용이라 19~29세 타깃에는 해당하지 않는다. 다만 10대 때 신한 '처음' 브랜드에 들어온 고객이 처음 체크→처음 신용으로 이어지는 파이프라인의 입구다.",
+  "source_url": "https://www.shinhancard.com/pconts/html/card/apply/prepaid/1232625_2387.html",
+  "source_urls": [
+   "https://www.shinhancard.com/pconts/html/card/apply/prepaid/1232625_2387.html",
+   "https://biz.newdaily.co.kr/site/data/html/2025/06/18/2025061800243.amp.html"
+  ],
+  "checked": "2026-10-27",
+  "confidence": "medium",
+  "note": "선불카드(prepaid). type 필드 선택지에 prepaid가 없어 debit로 적음. 심의필 제20260127-Exi-005호."
+ },
+ {
+  "id": "mshinhan04",
+  "name": "Hey Young 체크",
+  "official_name": "신한카드 Hey Young 체크",
+  "issuer": "신한카드",
+  "type": "debit",
+  "on_sale": true,
+  "role": "youth",
+  "launched": "2020-06-12",
+  "annual_fee_won": {
+   "domestic": 0,
+   "overseas": 0
+  },
+  "tiers": [
+   {
+    "min_prev_month_spend_won": 0,
+    "benefit_summary": "해외 1.2%·해외 ATM $3 캐시백만(실적 무관)"
+   },
+   {
+    "min_prev_month_spend_won": 200000,
+    "benefit_summary": "국내 통합 캐시백 한도 5천원"
+   },
+   {
+    "min_prev_month_spend_won": 500000,
+    "benefit_summary": "1만원"
+   },
+   {
+    "min_prev_month_spend_won": 800000,
+    "benefit_summary": "2만원"
+   },
+   {
+    "min_prev_month_spend_won": 1000000,
+    "benefit_summary": "3만원"
+   }
+  ],
+  "benefits": [
+   {
+    "category": "교통",
+    "text": "마을·시내·시외·공항버스·지하철(후불교통 RF)",
+    "rate_or_amount": "5% 캐시백",
+    "monthly_cap": "3천원",
+    "condition": "통합 한도 내"
+   },
+   {
+    "category": "통신",
+    "text": "SKT·KT·LGU+ 건당 5만원 이상 자동납부",
+    "rate_or_amount": "2천원 캐시백",
+    "monthly_cap": "월 1회",
+    "condition": "알뜰폰 제외"
+   },
+   {
+    "category": "영화",
+    "text": "CGV 건당 2만원 이상",
+    "rate_or_amount": "5천원 캐시백",
+    "monthly_cap": "월 1회",
+    "condition": null
+   },
+   {
+    "category": "생활 정액",
+    "text": "편의점(GS25·CU·이마트24)·카페 8개 브랜드·패스트푸드·땡겨요·올리브영/다이소·OTT(넷플릭스·디즈니+·티빙)",
+    "rate_or_amount": "건당 1천원 캐시백",
+    "monthly_cap": "영역별 일 1회/월 5회",
+    "condition": "건당 1만원 이상"
+   },
+   {
+    "category": "온라인쇼핑",
+    "text": "쿠팡·무신사·지그재그·에이블리·크림",
+    "rate_or_amount": "건당 1천원",
+    "monthly_cap": "일 1회/월 5회",
+    "condition": "건당 2만원 이상"
+   },
+   {
+    "category": "간편결제",
+    "text": "신한 SOL페이·삼성페이·헤이영페이 국내 결제",
+    "rate_or_amount": "1% 캐시백",
+    "monthly_cap": "5천원",
+    "condition": "건당 2만원 이상, 생활서비스 우선 적용"
+   },
+   {
+    "category": "해외",
+    "text": "해외 일시불(온라인 포함)",
+    "rate_or_amount": "1.2% 캐시백",
+    "monthly_cap": "무제한",
+    "condition": "실적 무관, VISA"
+   },
+   {
+    "category": "해외 ATM",
+    "text": "해외 인출",
+    "rate_or_amount": "건당 $3 캐시백",
+    "monthly_cap": "일 1회·월 1만원",
+    "condition": "실적 무관"
+   }
+  ],
+  "exclusions": [
+   "Tmoney 사용금액",
+   "할인 적용 거래",
+   "공과금·세금·4대보험·스쿨뱅킹"
+  ],
+  "promotions": [],
+  "recent_changes": [],
+  "target_text": null,
+  "issuance": "온라인 신청(공식 페이지 버튼), 가족카드 불가, 후불교통 가능. 신한은행 협약 대학 학생증형은 별도 상품(Tmoney 선불 탑재). 세부 채널 확인 불가",
+  "app_features": [
+   "헤이영페이(신한은행 Hey Young 캠퍼스 서비스) 결제 시 1%"
+  ],
+  "design_note": "먼작귀(치이카와) 캐릭터형(발급 수수료 1천원), 학생증 연계형 별도 페이지(1224087)",
+  "tags": [
+   "check_card",
+   "transit",
+   "fixed_bills",
+   "dining_cafe",
+   "mart_daily",
+   "delivery",
+   "subscription_ott",
+   "online_shop",
+   "travel_fx",
+   "reward_cashback",
+   "reward_flat_refund",
+   "paymethod_bonus",
+   "tiered_perf",
+   "bank_bundle",
+   "target_special",
+   "txn_threshold"
+  ],
+  "genz_fit": "high",
+  "genz_fit_reason": "신한은행 20대 브랜드 'Hey Young'(보도 기준 만 18~29세)의 체크카드. 20대가 자주 쓰는 소비처마다 건당 1천원을 돌려주는 정액형이고 해외 1.2%는 실적과 무관하다.",
+  "source_url": "https://www.shinhancard.com/pconts/html/card/apply/check/1233237_2206.html",
+  "source_urls": [
+   "https://www.shinhancard.com/pconts/html/card/apply/check/1233237_2206.html"
+  ],
+  "checked": "2026-10-27",
+  "confidence": "high",
+  "note": "공식 페이지 제목은 'Hey Young 체크(먼작귀)'. 심의필 제20250408-Dpp-002호(2025.04.08). 공식 타깃 문구는 페이지에서 확인 불가."
+ },
+ {
+  "id": "mshinhan05",
+  "name": "Deep Dream 체크",
+  "official_name": "신한카드 Deep Dream 체크",
+  "issuer": "신한카드",
+  "type": "debit",
+  "on_sale": true,
+  "role": "youth",
+  "launched": "2017-09-22",
+  "annual_fee_won": {
+   "domestic": 0,
+   "overseas": 0
+  },
+  "tiers": [
+   {
+    "min_prev_month_spend_won": 0,
+    "benefit_summary": "모두드림 0.2% 무제한 적립만"
+   },
+   {
+    "min_prev_month_spend_won": 200000,
+    "benefit_summary": "DREAM 영역 0.6%·최다 1개 영역 1.0%, 통합 5천P, 주말주유·택시"
+   },
+   {
+    "min_prev_month_spend_won": 400000,
+    "benefit_summary": "통합 1만5천P"
+   },
+   {
+    "min_prev_month_spend_won": 800000,
+    "benefit_summary": "통합 3만P"
+   }
+  ],
+  "benefits": [
+   {
+    "category": "모두드림",
+    "text": "국내외 전 가맹점",
+    "rate_or_amount": "0.2%",
+    "monthly_cap": "한도 없음",
+    "condition": "실적 무관"
+   },
+   {
+    "category": "더해드림",
+    "text": "DREAM 영역(할인점·편의점/올리브영/다이소·CGV/롯데시네마/커피·해외·이동통신)",
+    "rate_or_amount": "0.6%",
+    "monthly_cap": "통합 한도",
+    "condition": "전월 20만원 이상"
+   },
+   {
+    "category": "챙겨드림",
+    "text": "DREAM 영역 중 당월 최다 이용 1개 영역 자동 선정",
+    "rate_or_amount": "1.0%",
+    "monthly_cap": "통합 한도",
+    "condition": "전월 20만원 이상"
+   },
+   {
+    "category": "아껴드림",
+    "text": "주말 주유 리터당 40원 적립, 택시 3·6·9번째 1천원 할인",
+    "rate_or_amount": "40P/ℓ, 1천원",
+    "monthly_cap": null,
+    "condition": "전월 20만원 이상"
+   },
+   {
+    "category": "금융",
+    "text": "신한은행 타행이체·ATM 출금 수수료 월 10회 면제, 신한투자증권 생애최초 온라인 수수료 우대",
+    "rate_or_amount": "-",
+    "monthly_cap": null,
+    "condition": "신한은행 결제계좌, 전월 20만원"
+   }
+  ],
+  "exclusions": [
+   "할인 적용 거래",
+   "공과금·세금·4대보험"
+  ],
+  "promotions": [
+   {
+    "text": "반겨드림: 등록일 포함 90일 내 80만원 이상 이용 시 3천P(최초 1회)",
+    "ends": null
+   }
+  ],
+  "recent_changes": [],
+  "target_text": null,
+  "issuance": "신한은행 결제계좌 연결, 간편 신청",
+  "app_features": [],
+  "design_note": "미니언즈 디자인 페이지 별도(1187959)",
+  "tags": [
+   "check_card",
+   "reward_point",
+   "auto_best",
+   "bank_bundle",
+   "invest_reward",
+   "tiered_perf",
+   "mart_daily",
+   "dining_cafe",
+   "fuel",
+   "transit"
+  ],
+  "genz_fit": "mid",
+  "genz_fit_reason": "대학생·사회초년생 체크카드로 오래 추천돼 온 카드다. '가장 많이 쓴 영역 자동 1%'라는 자동 최적화가 있다. 다만 2017년 상품이라 OTT·배달 같은 최근 소비처가 빠져 있다.",
+  "source_url": "https://www.shinhancard.com/pconts/html/card/apply/check/1188313_2206.html",
+  "source_urls": [
+   "https://www.shinhancard.com/pconts/html/card/apply/check/1188313_2206.html",
+   "https://www.shinhancard.com/pconts/html/card/apply/check/1187959_2206.html"
+  ],
+  "checked": "2026-10-27",
+  "confidence": "medium",
+  "note": "공식 페이지에 발급중단 문구가 없어 판매 중으로 판단했다. 다만 심의필이 제20200519-Dpp-001호(2020)로 오래됐다. 같은 계열인 'SOL Deep Dream 체크'와 신용 Deep Dream은 발급중단(별도 항목)."
+ },
+ {
+  "id": "mshinhan06",
+  "name": "Pick E 체크",
+  "official_name": "신한카드 Pick E 체크",
+  "issuer": "신한카드",
+  "type": "debit",
+  "on_sale": true,
+  "role": "youth",
+  "launched": "2023-04-18",
+  "annual_fee_won": {
+   "domestic": 0,
+   "overseas": 0
+  },
+  "tiers": [
+   {
+    "min_prev_month_spend_won": 0,
+    "benefit_summary": "One Pick 맛집 적립만(실적 무관)"
+   },
+   {
+    "min_prev_month_spend_won": 200000,
+    "benefit_summary": "편의점·커피·놀이 10%, 해외 1%"
+   }
+  ],
+  "benefits": [
+   {
+    "category": "편의점",
+    "text": "GS25·CU·세븐일레븐·이마트24(오프라인)",
+    "rate_or_amount": "10%",
+    "monthly_cap": "1회 1천P, 일 1회·월 3회",
+    "condition": "전월 20만원 이상"
+   },
+   {
+    "category": "커피",
+    "text": "커피전문점 업종",
+    "rate_or_amount": "10%",
+    "monthly_cap": "1회 1천P, 일 1회·월 3회",
+    "condition": "전월 20만원 이상"
+   },
+   {
+    "category": "해외",
+    "text": "해외 일시불(해외겸용 Master)",
+    "rate_or_amount": "1%",
+    "monthly_cap": "1만P",
+    "condition": "전월 20만원 이상"
+   },
+   {
+    "category": "놀이",
+    "text": "사진관·볼링장·테니스장·스키장 업종",
+    "rate_or_amount": "10%",
+    "monthly_cap": "1회 1천P, 일 1회·월 3회",
+    "condition": "전월 20만원 이상"
+   },
+   {
+    "category": "One Pick 맛집",
+    "text": "당월 가장 자주 간 요식 가맹점 1곳 자동 선정, 3·6·9회째 이용마다 1천P",
+    "rate_or_amount": "1천P×최대 3회",
+    "monthly_cap": "3천P",
+    "condition": "실적 무관, 건당 5천원 이상"
+   }
+  ],
+  "exclusions": [
+   "할인 적용 거래",
+   "상품권·선불"
+  ],
+  "promotions": [],
+  "recent_changes": [],
+  "target_text": "E들은 이 카드를 픽하지!",
+  "issuance": "온라인, 12개 은행 결제계좌 가능, 후불교통 가능",
+  "app_features": [],
+  "design_note": "캐릭터형(포켓몬스터·가비지타임·하리보 등)·학생증형 페이지 다수",
+  "tags": [
+   "check_card",
+   "mart_daily",
+   "dining_cafe",
+   "experience_category_pack",
+   "habit_conversion",
+   "count_based",
+   "auto_best",
+   "reward_point",
+   "target_special"
+  ],
+  "genz_fit": "high",
+  "genz_fit_reason": "MBTI 'E/I' 콘셉트로 10·20대 소비성향을 나눈 체크카드. 단골 맛집 횟수 보상(3·6·9회)은 실적 없이 받는다.",
+  "source_url": "https://www.shinhancard.com/pconts/html/card/apply/check/1221536_2206.html",
+  "source_urls": [
+   "https://www.shinhancard.com/pconts/html/card/apply/check/1221536_2206.html",
+   "https://www.shinhancard.com/pconts/company/html/promotion/press/1222462_3999.html"
+  ],
+  "checked": "2026-10-27",
+  "confidence": "high",
+  "note": "Pick E 체크와 Pick I 체크는 동시 소지 가능, 같은 종류의 체크+선불은 불가."
+ },
+ {
+  "id": "mshinhan07",
+  "name": "Pick I 체크",
+  "official_name": "신한카드 Pick I 체크",
+  "issuer": "신한카드",
+  "type": "debit",
+  "on_sale": true,
+  "role": "youth",
+  "launched": "2023-10-06(캐릭터형 맹구 페이지 기준; 보도자료 2023-05)",
+  "annual_fee_won": {
+   "domestic": 0,
+   "overseas": 0
+  },
+  "tiers": [
+   {
+    "min_prev_month_spend_won": 0,
+    "benefit_summary": "One Pick 쇼핑몰 적립만"
+   },
+   {
+    "min_prev_month_spend_won": 200000,
+    "benefit_summary": "편의점·커피·디지털구독 10%, 해외 1%"
+   }
+  ],
+  "benefits": [
+   {
+    "category": "편의점",
+    "text": "GS25·CU·세븐일레븐·이마트24(오프라인)",
+    "rate_or_amount": "10%",
+    "monthly_cap": "1회 1천P, 일 1회·월 3회",
+    "condition": "전월 20만원 이상"
+   },
+   {
+    "category": "커피",
+    "text": "커피전문점 업종",
+    "rate_or_amount": "10%",
+    "monthly_cap": "1회 1천P, 일 1회·월 3회",
+    "condition": "전월 20만원 이상"
+   },
+   {
+    "category": "해외",
+    "text": "해외 일시불(해외겸용 Master)",
+    "rate_or_amount": "1%",
+    "monthly_cap": "1만P",
+    "condition": "전월 20만원 이상"
+   },
+   {
+    "category": "디지털 구독",
+    "text": "음악(멜론·지니)·OTT(유튜브·티빙)·도서(리디북스)",
+    "rate_or_amount": "10%",
+    "monthly_cap": "영역별 월 2회 1회 1천P, 합산 3천P",
+    "condition": "전월 20만원 이상, 직접 결제"
+   },
+   {
+    "category": "One Pick 쇼핑몰",
+    "text": "쿠팡·롯데ON·SSG·올리브영몰·무신사/29CM·지그재그·하이버/브랜디·아이디어스·오늘의집·W컨셉 중 최다 이용 1곳, 3·6·9회째마다 1천P",
+    "rate_or_amount": "1천P×최대 3회",
+    "monthly_cap": "3천P",
+    "condition": "실적 무관, 건당 5천원 이상"
+   }
+  ],
+  "exclusions": [
+   "간편결제명 가맹점 거래 제외"
+  ],
+  "promotions": [],
+  "recent_changes": [],
+  "target_text": null,
+  "issuance": "온라인",
+  "app_features": [],
+  "design_note": "맹구·한교동·쵸파·가비지타임 등 캐릭터형",
+  "tags": [
+   "check_card",
+   "mart_daily",
+   "dining_cafe",
+   "subscription_ott",
+   "online_shop",
+   "habit_conversion",
+   "count_based",
+   "auto_best",
+   "reward_point",
+   "target_special"
+  ],
+  "genz_fit": "high",
+  "genz_fit_reason": "집순이·온라인형 'I' 소비(구독·온라인몰)를 겨냥했다. 자주 쓰는 쇼핑몰을 자동으로 골라 횟수에 따라 보상한다.",
+  "source_url": "https://www.shinhancard.com/pconts/html/card/apply/check/1223966_2206.html",
+  "source_urls": [
+   "https://www.shinhancard.com/pconts/html/card/apply/check/1223966_2206.html",
+   "https://www.shinhancard.com/pconts/html/card/apply/check/1226245_2206.html",
+   "https://www.shinhancard.com/pconts/company/html/promotion/press/1222462_3999.html"
+  ],
+  "checked": "2026-10-27",
+  "confidence": "high",
+  "note": "기본형 Pick I 체크 페이지 대신 캐릭터형(맹구) 페이지에서 수치를 읽음. 공식 문구 '맹구가 카드 안에 들어왔다!'는 캐릭터형 문구라 target_text에 쓰지 않음."
+ },
+ {
+  "id": "mshinhan08",
+  "name": "플리",
+  "official_name": "신한카드 플리",
+  "issuer": "신한카드",
+  "type": "credit",
+  "on_sale": true,
+  "role": "youth",
+  "launched": "2022-05-18",
+  "annual_fee_won": {
+   "domestic": 15000,
+   "overseas": 18000
+  },
+  "tiers": [
+   {
+    "min_prev_month_spend_won": 0,
+    "benefit_summary": "Daily 결제일 할인(SOL페이 0.9%/기타 0.5%/해외 0.5%) 무실적·무한도"
+   },
+   {
+    "min_prev_month_spend_won": 400000,
+    "benefit_summary": "Weekly 쿠폰(월 3천원 1회+1천원 3회)·Monthly 단골 적립 추가"
+   }
+  ],
+  "benefits": [
+   {
+    "category": "Daily",
+    "text": "국내 신판 결제일 할인",
+    "rate_or_amount": "SOL페이 결제 0.9%, 그 외 0.5%, 해외 0.5%",
+    "monthly_cap": "한도 없음",
+    "condition": "실적 무관"
+   },
+   {
+    "category": "Weekly 쿠폰",
+    "text": "신한 SOL페이에서 매주 쿠폰 '받기' 후 국내 5천원 이상 결제 시 자동 적용",
+    "rate_or_amount": "월 3천원 1회 + 1천원 3회",
+    "monthly_cap": "월 6천원",
+    "condition": "전월 40만원 이상"
+   },
+   {
+    "category": "Monthly 단골",
+    "text": "전월 최다 이용 오프라인 가맹점(My Pick) 3·6·9번째 이용",
+    "rate_or_amount": "1천P×3",
+    "monthly_cap": "3천P",
+    "condition": "전월 40만원 이상, 건당 5천원"
+   }
+  ],
+  "exclusions": [
+   "Weekly 쿠폰은 다른 할인과 중복 불가"
+  ],
+  "promotions": [],
+  "recent_changes": [],
+  "target_text": "내 취향 가득 담은 나만의 플레이리스트.",
+  "issuance": "온라인, 후불교통 가능, 가족카드 불가",
+  "app_features": [
+   "신한 SOL페이 쿠폰함(쿠폰 받기 필수), 푸시 알림"
+  ],
+  "design_note": "'플리' 디자인 공모 우승작 1~6회차 디자인 카드 별도 판매(1220986~1220991), 산리오 캐릭터형",
+  "tags": [
+   "simple_flat",
+   "spend_free",
+   "no_cap",
+   "paymethod_bonus",
+   "habit_conversion",
+   "count_based",
+   "auto_best",
+   "reward_discount",
+   "reward_point",
+   "challenge"
+  ],
+  "genz_fit": "high",
+  "genz_fit_reason": "무실적·무한도 기본 할인에 앱 쿠폰과 단골 보상을 얹었다. SOL페이 사용을 유도하고 디자인 공모 카드도 운영해 20대 앱 사용자와 맞는다.",
+  "source_url": "https://www.shinhancard.com/pconts/html/card/apply/credit/1216829_2207.html",
+  "source_urls": [
+   "https://www.shinhancard.com/pconts/html/card/apply/credit/1216829_2207.html",
+   "https://www.shinhancard.com/pconts/html/card/apply/credit/1220990_2207.html"
+  ],
+  "checked": "2026-10-27",
+  "confidence": "high",
+  "note": "심의필 제2026-C1a-14745호(2026.09.23). 2026-07 중앙대 총동문회 제휴형 플리도 출시(보도)."
+ },
+ {
+  "id": "mshinhan09",
+  "name": "플리(체크)",
+  "official_name": "신한카드 플리(체크)",
+  "issuer": "신한카드",
+  "type": "debit",
+  "on_sale": true,
+  "role": "youth",
+  "launched": "2022-05-18",
+  "annual_fee_won": {
+   "domestic": 0,
+   "overseas": 0
+  },
+  "tiers": [
+   {
+    "min_prev_month_spend_won": 0,
+    "benefit_summary": "Daily 할인(SOL페이 0.3%/기타 0.2%/해외 0.2%) 무실적·무한도"
+   },
+   {
+    "min_prev_month_spend_won": 300000,
+    "benefit_summary": "Weekly 쿠폰 1천원×2회·Monthly 단골 3천P"
+   }
+  ],
+  "benefits": [
+   {
+    "category": "Daily",
+    "text": "국내 결제",
+    "rate_or_amount": "SOL페이 0.3%, 그 외 0.2%, 해외 0.2%",
+    "monthly_cap": "한도 없음",
+    "condition": "실적 무관"
+   },
+   {
+    "category": "Weekly 쿠폰",
+    "text": "8~14일·22일~말일 각 1천원 쿠폰",
+    "rate_or_amount": "1천원×2",
+    "monthly_cap": "2천원",
+    "condition": "전월 30만원, 건당 1만원"
+   },
+   {
+    "category": "Monthly 단골",
+    "text": "My Pick 가맹점 3·6·9번째",
+    "rate_or_amount": "1천P×3",
+    "monthly_cap": "3천P",
+    "condition": "전월 30만원, 건당 1만원"
+   }
+  ],
+  "exclusions": [],
+  "promotions": [],
+  "recent_changes": [],
+  "target_text": "전가맹점 혜택은 기본! 내 취향 가득 담은 나만의 플레이리스트.",
+  "issuance": "온라인",
+  "app_features": [
+   "신한 SOL페이 쿠폰"
+  ],
+  "design_note": null,
+  "tags": [
+   "check_card",
+   "simple_flat",
+   "spend_free",
+   "no_cap",
+   "paymethod_bonus",
+   "habit_conversion",
+   "count_based",
+   "reward_discount"
+  ],
+  "genz_fit": "mid",
+  "genz_fit_reason": "플리 구조의 체크 버전. 무실적 기본 할인이 있지만 할인율이 0.2~0.3%로 낮다.",
+  "source_url": "https://www.shinhancard.com/pconts/html/card/apply/check/1216831_2206.html",
+  "source_urls": [
+   "https://www.shinhancard.com/pconts/html/card/apply/check/1216831_2206.html"
+  ],
+  "checked": "2026-10-27",
+  "confidence": "high",
+  "note": ""
+ },
+ {
+  "id": "mshinhan10",
+  "name": "SOL트래블 체크",
+  "official_name": "신한카드 SOL트래블 체크",
+  "issuer": "신한카드",
+  "type": "debit",
+  "on_sale": true,
+  "role": "youth",
+  "launched": "2024-01-19(연혁상 2024-02)",
+  "annual_fee_won": {
+   "domestic": 0,
+   "overseas": 0
+  },
+  "tiers": [
+   {
+    "min_prev_month_spend_won": 0,
+    "benefit_summary": "해외 수수료(브랜드 1%·서비스 0.2%)·ATM 수수료 면제, 해외 대중교통 1%(월 3천원), CU 행사상품 5%"
+   },
+   {
+    "min_prev_month_spend_won": 300000,
+    "benefit_summary": "공항라운지 반기 1회(연 2회), 국내 편의점 5%·대중교통 1%(각 월 3천원)"
+   }
+  ],
+  "benefits": [
+   {
+    "category": "해외 결제",
+    "text": "국제브랜드 수수료 1%·해외서비스 수수료 0.2% 면제, 현지통화 결제(SOL트래블 외화예금)",
+    "rate_or_amount": "면제",
+    "monthly_cap": "한도 없음",
+    "condition": "실적 무관"
+   },
+   {
+    "category": "해외 ATM",
+    "text": "건당 $3 인출 수수료·브랜드 수수료 1% 면제",
+    "rate_or_amount": "면제",
+    "monthly_cap": "횟수 제한 없음",
+    "condition": "실적 무관"
+   },
+   {
+    "category": "라운지",
+    "text": "더라운지 본인 무료",
+    "rate_or_amount": "반기 1회·연 2회",
+    "monthly_cap": null,
+    "condition": "전월 국내 30만원 이상"
+   },
+   {
+    "category": "해외 교통",
+    "text": "해외 대중교통 컨택리스",
+    "rate_or_amount": "1% 결제일 할인",
+    "monthly_cap": "3천원",
+    "condition": "실적 무관"
+   },
+   {
+    "category": "국내",
+    "text": "4대 편의점 5%(일 1회·월 3회), 국내 대중교통 1%",
+    "rate_or_amount": "5%/1%",
+    "monthly_cap": "각 3천원",
+    "condition": "전월 국내 30만원 이상"
+   },
+   {
+    "category": "CU",
+    "text": "CU 행사상품 즉시할인",
+    "rate_or_amount": "5%",
+    "monthly_cap": "1회 2천원",
+    "condition": "실적 무관"
+   }
+  ],
+  "exclusions": [
+   "해외 원화결제(DCC) 불가"
+  ],
+  "promotions": [
+   {
+    "text": "마스터 트래블 리워드(전 세계 400여 가맹점 최대 10% 캐시백)",
+    "ends": "2026-12-31"
+   }
+  ],
+  "recent_changes": [],
+  "target_text": null,
+  "issuance": "신한 슈퍼SOL 앱에서 신청, 신한은행 원화 계좌+SOL트래블 외화예금 필수, 만 14세 이상",
+  "app_features": [
+   "신한 슈퍼SOL 외화 충전·환전(42종 통화, 보도 기준)",
+   "SOL트래블+ 이벤트"
+  ],
+  "design_note": "기본형·Postcard·캐릭터형(미니언즈 등)",
+  "tags": [
+   "check_card",
+   "travel_fx",
+   "lounge",
+   "transit",
+   "mart_daily",
+   "bank_bundle",
+   "reward_discount",
+   "spend_free"
+  ],
+  "genz_fit": "high",
+  "genz_fit_reason": "2024년 빅데이터 분석에서 연령대별 해외 사용 비중이 20대 15.2%로 가장 높았다(신한카드 발표). 2026-03에 누적 발급 300만 장을 넘긴 트래블카드 1위권 상품이다.",
+  "source_url": "https://www.shinhancard.com/pconts/html/card/apply/check/1225714_2206.html",
+  "source_urls": [
+   "https://www.shinhancard.com/pconts/html/card/apply/check/1225714_2206.html",
+   "https://www.shinhancard.com/pconts/company/html/promotion/press/1227257_3999.html",
+   "https://www.dailian.co.kr/news/view/1517932"
+  ],
+  "checked": "2026-10-27",
+  "confidence": "high",
+  "note": "심의필 제20260610-Dpp-001호. 누적 300만장(2026-03, 연혁)과 350만장(2026-08, 트립앤샵·트립앤J 합산, 언론)은 집계 범위가 다르다. 기존 DB c04의 '전월 30만원'은 라운지·국내 할인에만 해당한다."
+ },
+ {
+  "id": "mshinhan11",
+  "name": "SOL트래블(신용)",
+  "official_name": "신한카드 SOL트래블",
+  "issuer": "신한카드",
+  "type": "credit",
+  "on_sale": true,
+  "role": "youth",
+  "launched": "2024-06-26(연혁상 2024-07)",
+  "annual_fee_won": {
+   "domestic": 27000,
+   "overseas": 30000
+  },
+  "tiers": [
+   {
+    "min_prev_month_spend_won": 0,
+    "benefit_summary": "해외 일시불 0.5%, 국내 기본 0.5% 적립(통합 월 5만P)"
+   },
+   {
+    "min_prev_month_spend_won": 400000,
+    "benefit_summary": "해외 수수료 면제·환율 100% 우대·ATM 수수료 면제, 국내 특정영역 1.5% 추가(총 2%), 라운지 연 3회(보도)"
+   }
+  ],
+  "benefits": [
+   {
+    "category": "해외 수수료",
+    "text": "국제브랜드 1%·해외서비스 0.18% 면제, 환율 100% 우대(매매기준율)",
+    "rate_or_amount": "면제",
+    "monthly_cap": "한도 없음",
+    "condition": "전월 국내 40만원 이상"
+   },
+   {
+    "category": "해외 적립",
+    "text": "해외 일시불",
+    "rate_or_amount": "0.5%",
+    "monthly_cap": "5만P",
+    "condition": "실적 무관"
+   },
+   {
+    "category": "국내 적립",
+    "text": "국내 0.5% + 항공 5사·호텔스닷컴/트립닷컴/아고다·KTX/SRT·카카오T·면세점 등 추가 1.5%",
+    "rate_or_amount": "최대 2%",
+    "monthly_cap": "통합 5만P",
+    "condition": "추가는 전월 국내 40만원"
+   },
+   {
+    "category": "라운지",
+    "text": "전 세계 공항라운지",
+    "rate_or_amount": "연 3회(보도자료 기준)",
+    "monthly_cap": null,
+    "condition": "전월 국내 40만원"
+   }
+  ],
+  "exclusions": [],
+  "promotions": [],
+  "recent_changes": [],
+  "target_text": "일상과 여행, 경계를 넘나드는 혜택.",
+  "issuance": "온라인, 가족카드·중복 발급 불가(보도), 외화인출계좌 연결 시 해외 ATM",
+  "app_features": [],
+  "design_note": null,
+  "tags": [
+   "travel_fx",
+   "lounge",
+   "transit",
+   "reward_point",
+   "tiered_perf",
+   "bank_bundle"
+  ],
+  "genz_fit": "mid",
+  "genz_fit_reason": "해외여행이 잦은 20대 직장인용 신용 버전이다. 수수료 면제에 전월 국내 40만원 조건이 붙어 체크 버전보다 문턱이 높다.",
+  "source_url": "https://www.shinhancard.com/pconts/html/card/apply/credit/1227751_2207.html",
+  "source_urls": [
+   "https://www.shinhancard.com/pconts/html/card/apply/credit/1227751_2207.html",
+   "https://www.shinhancard.com/pconts/company/html/promotion/press/1228808_3999.html"
+  ],
+  "checked": "2026-10-27",
+  "confidence": "medium",
+  "note": "라운지 횟수는 본문 앞부분에서 확인하지 못해 보도자료 수치를 씀."
+ },
+ {
+  "id": "mshinhan12",
+  "name": "SOL트래블J 체크",
+  "official_name": "신한카드 SOL트래블J 체크",
+  "issuer": "신한카드",
+  "type": "debit",
+  "on_sale": true,
+  "role": "youth",
+  "launched": "2025-05-02",
+  "annual_fee_won": {
+   "domestic": 0,
+   "overseas": 0
+  },
+  "tiers": [
+   {
+    "min_prev_month_spend_won": 0,
+    "benefit_summary": "해외 수수료·ATM 수수료 면제, 해외 교통 1%"
+   },
+   {
+    "min_prev_month_spend_won": 300000,
+    "benefit_summary": "돈키호테 50%(반기 2만원)·일본 스타벅스 50%(반기 5천원), 국내 편의점 5%·대중교통 1%"
+   }
+  ],
+  "benefits": [
+   {
+    "category": "해외 수수료",
+    "text": "브랜드 1%·서비스 0.2%·ATM $3 면제",
+    "rate_or_amount": "면제",
+    "monthly_cap": "무제한",
+    "condition": "실적 무관, Master"
+   },
+   {
+    "category": "일본",
+    "text": "돈키호테 50%",
+    "rate_or_amount": "50%",
+    "monthly_cap": "반기 2만원·연 4만원",
+    "condition": "전월 국내 30만원"
+   },
+   {
+    "category": "일본",
+    "text": "일본 스타벅스 50%",
+    "rate_or_amount": "50%",
+    "monthly_cap": "반기 5천원·연 1만원",
+    "condition": "전월 국내 30만원"
+   },
+   {
+    "category": "국내",
+    "text": "4개 편의점 5%, 대중교통 1%",
+    "rate_or_amount": "5%/1%",
+    "monthly_cap": "각 3천원",
+    "condition": "전월 국내 30만원"
+   }
+  ],
+  "exclusions": [],
+  "promotions": [
+   {
+    "text": "일본 3대 편의점(Familymart·Lawson·Seven-Eleven) 5% 결제일 할인 월 5천원 프로모션",
+    "ends": "확인 불가"
+   },
+   {
+    "text": "마스터 트래블 리워드",
+    "ends": "2026-12-31"
+   }
+  ],
+  "recent_changes": [],
+  "target_text": null,
+  "issuance": "신한 슈퍼SOL, SOL트래블 외화예금 필수, 만 14세 이상",
+  "app_features": [],
+  "design_note": "먼작귀 캐릭터형 등",
+  "tags": [
+   "check_card",
+   "travel_fx",
+   "transit",
+   "mart_daily",
+   "dining_cafe",
+   "reward_discount",
+   "bank_bundle"
+  ],
+  "genz_fit": "high",
+  "genz_fit_reason": "20대 해외여행 1순위인 일본에 특화했다. 돈키호테·스타벅스처럼 여행지 대표 소비처를 정액 상한으로 할인한다.",
+  "source_url": "https://www.shinhancard.com/pconts/html/card/apply/check/1232877_2206.html",
+  "source_urls": [
+   "https://www.shinhancard.com/pconts/html/card/apply/check/1232877_2206.html"
+  ],
+  "checked": "2026-10-27",
+  "confidence": "high",
+  "note": "SOL트래블 체크와 중복 소지 가능. 기존 DB gc10의 연회비 null → 0원."
+ },
+ {
+  "id": "mshinhan13",
+  "name": "SOL트립앤J 체크",
+  "official_name": "신한카드 SOL트립앤J 체크",
+  "issuer": "신한카드",
+  "type": "debit",
+  "on_sale": true,
+  "role": "youth",
+  "launched": "2026-03-30",
+  "annual_fee_won": {
+   "domestic": 0,
+   "overseas": 0
+  },
+  "tiers": [
+   {
+    "min_prev_month_spend_won": 0,
+    "benefit_summary": "해외 수수료(브랜드 1%·서비스 0.2%)·JCB ATM($2.25) 면제"
+   },
+   {
+    "min_prev_month_spend_won": 300000,
+    "benefit_summary": "돈키호테 50%(반기 2만원), 일본 편의점 3사 50%(반기 5천원), 국내 편의점 5%·대중교통 1%"
+   }
+  ],
+  "benefits": [
+   {
+    "category": "해외 수수료",
+    "text": "JCB 브랜드, 수수료 면제",
+    "rate_or_amount": "면제",
+    "monthly_cap": "무제한",
+    "condition": "실적 무관"
+   },
+   {
+    "category": "일본",
+    "text": "돈키호테 50%, Familymart·Lawson·Seven-Eleven 50%",
+    "rate_or_amount": "50%",
+    "monthly_cap": "반기 2만원/반기 5천원",
+    "condition": "전월 국내 30만원"
+   }
+  ],
+  "exclusions": [],
+  "promotions": [],
+  "recent_changes": [],
+  "target_text": null,
+  "issuance": "신한은행 SOL트래블 외화예금 연결",
+  "app_features": [],
+  "design_note": null,
+  "tags": [
+   "check_card",
+   "travel_fx",
+   "mart_daily",
+   "transit",
+   "reward_discount",
+   "bank_bundle"
+  ],
+  "genz_fit": "mid",
+  "genz_fit_reason": "SOL트래블J의 JCB 버전으로 일본 편의점 50%를 더했다. 자사 일본 카드가 3종(J·트립앤J·하루)으로 겹친다.",
+  "source_url": "https://www.shinhancard.com/pconts/html/card/apply/check/1237542_2206.html",
+  "source_urls": [
+   "https://www.shinhancard.com/pconts/html/card/apply/check/1237542_2206.html"
+  ],
+  "checked": "2026-10-27",
+  "confidence": "high",
+  "note": "심의필 제20260414-Dpi-001호. 신한은행 2026-08 발표 '누적 350만장'에 합산된 상품."
+ },
+ {
+  "id": "mshinhan14",
+  "name": "신한 모두의카드(K-패스)",
+  "official_name": "신한 모두의카드",
+  "issuer": "신한카드",
+  "type": "credit",
+  "on_sale": true,
+  "role": "youth",
+  "launched": "2024-03-27(K-패스 신한카드로 출시, 이후 명칭 변경)",
+  "annual_fee_won": {
+   "domestic": null,
+   "overseas": null
+  },
+  "tiers": [
+   {
+    "min_prev_month_spend_won": 0,
+    "benefit_summary": "대중교통 할인은 대중교통 우선 적용, 간편결제·생활 할인 혜택 없음"
+   },
+   {
+    "min_prev_month_spend_won": 300000,
+    "benefit_summary": "월 통합 할인한도 7천원"
+   },
+   {
+    "min_prev_month_spend_won": 600000,
+    "benefit_summary": "1만5천원"
+   }
+  ],
+  "benefits": [
+   {
+    "category": "대중교통",
+    "text": "버스·지하철(후불 RF)",
+    "rate_or_amount": "10%",
+    "monthly_cap": "통합 한도 내(보도: 최대 5천원)",
+    "condition": "고속·공항·시외버스, 공항철도 제외"
+   },
+   {
+    "category": "간편결제",
+    "text": "신한 SOL페이·삼성페이·네이버페이·카카오페이·쿠페이 국내 결제",
+    "rate_or_amount": "5%",
+    "monthly_cap": "통합",
+    "condition": "건당 2만원 이상, 일 1회 6만원까지"
+   },
+   {
+    "category": "생활",
+    "text": "배민·요기요, GS25·CU, 스타벅스·메가MGC·매머드, 올리브영, 병원/약국, 넷플릭스·유튜브프리미엄",
+    "rate_or_amount": "5%",
+    "monthly_cap": "통합",
+    "condition": "건당 2만원(OTT 1만원) 이상"
+   },
+   {
+    "category": "정부 환급",
+    "text": "모두의카드(K-패스) 대중교통비 환급 사업 연계",
+    "rate_or_amount": "정부 환급",
+    "monthly_cap": null,
+    "condition": "모두의카드 앱 등록, 사업 참여지역 거주자"
+   }
+  ],
+  "exclusions": [],
+  "promotions": [
+   {
+    "text": "K-패스(지역패스 포함) 신규 발급·마케팅 동의 후 슈퍼SOL 10만원 이상 이용 시 연회비 캐시백(검색 요약 기준)",
+    "ends": "2026-12-31"
+   }
+  ],
+  "recent_changes": [
+   "'K-패스 신한카드' → '신한 모두의카드'로 명칭 변경(공식 페이지 안내: 기존 교통비 환급 혜택 동일)"
+  ],
+  "target_text": null,
+  "issuance": "간편 신청, 모두의카드 앱 등록 필수, 가족카드 불가",
+  "app_features": [],
+  "design_note": null,
+  "tags": [
+   "transit",
+   "govt_link",
+   "paymethod_bonus",
+   "delivery",
+   "dining_cafe",
+   "mart_daily",
+   "subscription_ott",
+   "reward_discount",
+   "tiered_perf",
+   "txn_threshold"
+  ],
+  "genz_fit": "high",
+  "genz_fit_reason": "정부 대중교통 환급(모두의카드/K-패스)에 카드 할인을 얹은 상품. 통학·통근하는 20대에게 맞다. 지역형(인천 i-패스·경남패스 등) 체크도 있다.",
+  "source_url": "https://www.shinhancard.com/pconts/html/card/apply/credit/1225543_2207.html",
+  "source_urls": [
+   "https://www.shinhancard.com/pconts/html/card/apply/credit/1225543_2207.html",
+   "https://www.shinhancard.com/pconts/html/card/apply/check/1232509_2206.html",
+   "https://www.shinhancard.com/pconts/company/html/promotion/press/1227262_3999.html"
+  ],
+  "checked": "2026-10-27",
+  "confidence": "medium",
+  "note": "연회비는 페이지 동적 영역이라 확인 불가(카드고릴라 표기 1만원, 미확인). 대중교통 할인 상한(최대 5천원)은 2024 보도 기준. 체크 버전(인천 i-패스)은 대중교통 10%(2천/5천원), 간편결제·생활 2%."
+ },
+ {
+  "id": "mshinhan15",
+  "name": "Point Plan",
+  "official_name": "신한카드 Point Plan",
+  "issuer": "신한카드",
+  "type": "credit",
+  "on_sale": true,
+  "role": "flagship",
+  "launched": "2024-01-29",
+  "annual_fee_won": {
+   "domestic": 20000,
+   "overseas": 23000
+  },
+  "tiers": [
+   {
+    "min_prev_month_spend_won": 0,
+    "benefit_summary": "주말 외식 적립 월 2회만"
+   },
+   {
+    "min_prev_month_spend_won": 400000,
+    "benefit_summary": "일상생활비 월 1만P(5·12월 2만P), 주말 외식 5회"
+   },
+   {
+    "min_prev_month_spend_won": 800000,
+    "benefit_summary": "3만P(가족행사월 4만P)"
+   },
+   {
+    "min_prev_month_spend_won": 1200000,
+    "benefit_summary": "5만P(6만P)"
+   }
+  ],
+  "benefits": [
+   {
+    "category": "일상생활비",
+    "text": "국내 건당 결제금액별 적립: 3만원 미만 0.5%, 3만~10만 0.7%, 10만~30만 1%, 30만~100만 2%, 100만 이상 3%",
+    "rate_or_amount": "0.5~3% (+SOL페이 0.1%)",
+    "monthly_cap": "구간별",
+    "condition": "통신·가스·전기 제외, 무이자할부 제외"
+   },
+   {
+    "category": "해외",
+    "text": "해외 일시불",
+    "rate_or_amount": "1%",
+    "monthly_cap": "일상생활비 한도 내",
+    "condition": null
+   },
+   {
+    "category": "주말 외식",
+    "text": "토·일 음식점·배달앱(SOL페이 결제) 건당 2만원 이상",
+    "rate_or_amount": "1천P 정액",
+    "monthly_cap": "월 2회/5회",
+    "condition": "중복 적립"
+   },
+   {
+    "category": "정기결제",
+    "text": "도시가스·전기, 이동통신 자동납부 2만원당",
+    "rate_or_amount": "1천P",
+    "monthly_cap": "영역별 월 1회, 최대 5천P",
+    "condition": null
+   }
+  ],
+  "exclusions": [],
+  "promotions": [],
+  "recent_changes": [],
+  "target_text": "큰 소비일수록 계획이 필요한 법.",
+  "issuance": "온라인, 후불교통, 가족카드 가능",
+  "app_features": [],
+  "design_note": null,
+  "tags": [
+   "reward_point",
+   "tiered_perf",
+   "paymethod_bonus",
+   "period_bonus",
+   "txn_threshold",
+   "fixed_bills",
+   "dining_cafe",
+   "delivery"
+  ],
+  "genz_fit": "low",
+  "genz_fit_reason": "건당 결제금액이 클수록 적립률이 올라가는 구조라 소액 결제가 많은 20대에게 불리하다.",
+  "source_url": "https://www.shinhancard.com/pconts/html/card/apply/credit/1226113_2207.html",
+  "source_urls": [
+   "https://www.shinhancard.com/pconts/html/card/apply/credit/1226113_2207.html",
+   "https://www.shinhancard.com/pconts/company/html/promotion/press/1226780_3999.html"
+  ],
+  "checked": "2026-10-27",
+  "confidence": "high",
+  "note": "Plan 시리즈 첫 상품. Plan 시리즈 누적 100만매(2025-09, 연혁). 산리오·서울시다둥이 버전 별도."
+ },
+ {
+  "id": "mshinhan16",
+  "name": "Point Plan+",
+  "official_name": "신한카드 Point Plan+",
+  "issuer": "신한카드",
+  "type": "credit",
+  "on_sale": true,
+  "role": "flagship",
+  "launched": "2024-06-20(연혁 2024-08)",
+  "annual_fee_won": {
+   "domestic": 30000,
+   "overseas": 33000
+  },
+  "tiers": [
+   {
+    "min_prev_month_spend_won": 400000,
+    "benefit_summary": "월 1만P(5·12월 2만P)"
+   },
+   {
+    "min_prev_month_spend_won": 800000,
+    "benefit_summary": "3만P"
+   },
+   {
+    "min_prev_month_spend_won": 1200000,
+    "benefit_summary": "5만P"
+   }
+  ],
+  "benefits": [
+   {
+    "category": "일상생활비",
+    "text": "건당 0.7%(3만 미만)~3%(100만 이상), SOL페이 +0.5%",
+    "rate_or_amount": "0.7~3.5%",
+    "monthly_cap": "구간별",
+    "condition": "통신·가스·전기·OTT 제외"
+   },
+   {
+    "category": "주말 외식",
+    "text": "토·일 음식점·배달 건당 2만원",
+    "rate_or_amount": "1천P",
+    "monthly_cap": "월 2/5회",
+    "condition": null
+   },
+   {
+    "category": "정기결제",
+    "text": "공과금·통신·OTT(넷플릭스·유튜브·티빙)",
+    "rate_or_amount": "최대 1만2천P(LD 문구)",
+    "monthly_cap": null,
+    "condition": null
+   }
+  ],
+  "exclusions": [],
+  "promotions": [],
+  "recent_changes": [],
+  "target_text": "계획하지 않아도 계획적인.",
+  "issuance": null,
+  "app_features": [],
+  "design_note": null,
+  "tags": [
+   "reward_point",
+   "tiered_perf",
+   "paymethod_bonus",
+   "period_bonus",
+   "fixed_bills",
+   "subscription_ott",
+   "dining_cafe"
+  ],
+  "genz_fit": "low",
+  "genz_fit_reason": "고액 결제 우대 구조, 연회비 3만원대.",
+  "source_url": "https://www.shinhancard.com/pconts/html/card/apply/credit/1228407_2207.html",
+  "source_urls": [
+   "https://www.shinhancard.com/pconts/html/card/apply/credit/1228407_2207.html"
+  ],
+  "checked": "2026-10-27",
+  "confidence": "medium",
+  "note": "정기결제 세부 한도는 본문 일부만 확인."
+ },
+ {
+  "id": "mshinhan17",
+  "name": "Point Plan 체크",
+  "official_name": "신한카드 Point Plan 체크",
+  "issuer": "신한카드",
+  "type": "debit",
+  "on_sale": true,
+  "role": "flagship",
+  "launched": "2024-01-29",
+  "annual_fee_won": {
+   "domestic": 0,
+   "overseas": 0
+  },
+  "tiers": [
+   {
+    "min_prev_month_spend_won": 0,
+    "benefit_summary": "주말 배달 월 1회"
+   },
+   {
+    "min_prev_month_spend_won": 200000,
+    "benefit_summary": "일상생활비 5천P(5·12월 1만P), 편의점 5% 3천P, 주말 배달 3회"
+   },
+   {
+    "min_prev_month_spend_won": 500000,
+    "benefit_summary": "1만P(1만5천P)"
+   },
+   {
+    "min_prev_month_spend_won": 800000,
+    "benefit_summary": "1만5천P(2만P)"
+   }
+  ],
+  "benefits": [
+   {
+    "category": "일상생활비",
+    "text": "건당 2만 미만 0.2%~50만 이상 1%, SOL페이 +0.1%",
+    "rate_or_amount": "0.2~1.1%",
+    "monthly_cap": "구간별",
+    "condition": "편의점 제외"
+   },
+   {
+    "category": "편의점",
+    "text": "CU·GS25·세븐일레븐 오프라인",
+    "rate_or_amount": "5%",
+    "monthly_cap": "3천P",
+    "condition": "통합 일 1회"
+   },
+   {
+    "category": "주말 배달",
+    "text": "배민·요기요·땡겨요 SOL페이 결제 2만원 이상",
+    "rate_or_amount": "1천P",
+    "monthly_cap": "월 1/3회",
+    "condition": null
+   }
+  ],
+  "exclusions": [],
+  "promotions": [],
+  "recent_changes": [],
+  "target_text": null,
+  "issuance": null,
+  "app_features": [],
+  "design_note": null,
+  "tags": [
+   "check_card",
+   "reward_point",
+   "tiered_perf",
+   "paymethod_bonus",
+   "period_bonus",
+   "mart_daily",
+   "delivery"
+  ],
+  "genz_fit": "mid",
+  "genz_fit_reason": "체크라 문턱(20만원)은 낮지만 건당 금액 비례 적립이라 소액 위주 20대에게는 체감이 작다. 'SOL' 연계형·'SOL 모임'형 별도.",
+  "source_url": "https://www.shinhancard.com/pconts/html/card/apply/check/1226114_2206.html",
+  "source_urls": [
+   "https://www.shinhancard.com/pconts/html/card/apply/check/1226114_2206.html",
+   "https://www.shinhancard.com/pconts/html/card/apply/check/1229580_2206.html"
+  ],
+  "checked": "2026-10-27",
+  "confidence": "high",
+  "note": ""
+ },
+ {
+  "id": "mshinhan18",
+  "name": "Discount Plan",
+  "official_name": "신한카드 Discount Plan",
+  "issuer": "신한카드",
+  "type": "credit",
+  "on_sale": true,
+  "role": "flagship",
+  "launched": "2025-03-24(연혁 2025-04)",
+  "annual_fee_won": {
+   "domestic": 15000,
+   "overseas": 15000
+  },
+  "tiers": [
+   {
+    "min_prev_month_spend_won": 0,
+    "benefit_summary": "혜택 없음"
+   },
+   {
+    "min_prev_month_spend_won": 400000,
+    "benefit_summary": "Time 5천+Daily 1만+정기결제 3천+영화 5천 = 월 최대 2만3천원"
+   },
+   {
+    "min_prev_month_spend_won": 800000,
+    "benefit_summary": "1만+2만+7천+5천 = 4만2천원"
+   },
+   {
+    "min_prev_month_spend_won": 1200000,
+    "benefit_summary": "1만5천+3만+1만+5천 = 6만원"
+   }
+  ],
+  "benefits": [
+   {
+    "category": "Time Plan",
+    "text": "DAY(07~15시) 카페 6사·음식점, NIGHT(18~22시) 편의점 4사·배달앱 4사",
+    "rate_or_amount": "10% 결제일 할인",
+    "monthly_cap": "구간별",
+    "condition": "영역별 일 1회, 1회 1만원까지"
+   },
+   {
+    "category": "Daily Plan 쇼핑",
+    "text": "이마트·트레이더스·롯데마트, 네이버플러스스토어·쿠팡·SSG·무신사·29CM, 올리브영·다이소",
+    "rate_or_amount": "10%",
+    "monthly_cap": "Daily 통합",
+    "condition": "영역별 일 1회·월 5회, 1회 5만원까지"
+   },
+   {
+    "category": "Daily Plan 이동·생활",
+    "text": "주유 4사·쏘카·택시/카카오T 5%, 해외·병원약국·미용실·온라인서점 5%",
+    "rate_or_amount": "5%",
+    "monthly_cap": "Daily 통합",
+    "condition": "영역별 월 5회"
+   },
+   {
+    "category": "Monthly Plan",
+    "text": "공과금 10%, 디지털구독(넷플릭스·유튜브·티빙·디즈니+·밀리의서재)·멤버십(네이버플러스·쿠팡와우) 20%, 영화예매",
+    "rate_or_amount": "10~20%",
+    "monthly_cap": "3천/7천/1만원 + 영화 5천원",
+    "condition": "공과금 자동납부"
+   },
+   {
+    "category": "Plan Day",
+    "text": "매월 1일 Time·Daily 첫 할인 2배",
+    "rate_or_amount": "2배",
+    "monthly_cap": "서비스당 1회",
+    "condition": null
+   }
+  ],
+  "exclusions": [
+   "백화점·공항 등 임대매장",
+   "쿠팡이츠·멤버십은 온라인쇼핑 할인 제외"
+  ],
+  "promotions": [],
+  "recent_changes": [],
+  "target_text": "계획한 모든 일상에 따라오는 할인.",
+  "issuance": null,
+  "app_features": [],
+  "design_note": null,
+  "tags": [
+   "time_slot",
+   "dining_cafe",
+   "mart_daily",
+   "delivery",
+   "online_shop",
+   "fuel",
+   "transit",
+   "fixed_bills",
+   "subscription_ott",
+   "period_bonus",
+   "reward_discount",
+   "tiered_perf"
+  ],
+  "genz_fit": "mid",
+  "genz_fit_reason": "연회비 1.5만원으로 20대 소비처(카페·편의점·배달·무신사·올리브영·OTT)를 거의 다 덮는다. 다만 전월 40만원부터 혜택이 시작되고 한도표가 복잡하다.",
+  "source_url": "https://www.shinhancard.com/pconts/html/card/apply/credit/1232369_2207.html",
+  "source_urls": [
+   "https://www.shinhancard.com/pconts/html/card/apply/credit/1232369_2207.html"
+  ],
+  "checked": "2026-10-27",
+  "confidence": "high",
+  "note": ""
+ },
+ {
+  "id": "mshinhan19",
+  "name": "Discount Plan+",
+  "official_name": "신한카드 Discount Plan+",
+  "issuer": "신한카드",
+  "type": "credit",
+  "on_sale": true,
+  "role": "flagship",
+  "launched": "2025-03-24",
+  "annual_fee_won": {
+   "domestic": 50000,
+   "overseas": 50000
+  },
+  "tiers": [
+   {
+    "min_prev_month_spend_won": 400000,
+    "benefit_summary": "월 최대 3만원"
+   },
+   {
+    "min_prev_month_spend_won": 800000,
+    "benefit_summary": "5만원"
+   },
+   {
+    "min_prev_month_spend_won": 1200000,
+    "benefit_summary": "7만3천원(150만 이상 Monthly 리워드 3천원 포함)"
+   },
+   {
+    "min_prev_month_spend_won": 1800000,
+    "benefit_summary": "10만원"
+   }
+  ],
+  "benefits": [
+   {
+    "category": "Time Plan",
+    "text": "DAY(07~15시) 카페 6사·음식점, NIGHT(18~22시) 편의점 4사·배달앱 4사",
+    "rate_or_amount": "10% 결제일 할인",
+    "monthly_cap": "구간별",
+    "condition": "영역별 일 1회, 1회 1만원까지"
+   },
+   {
+    "category": "Daily Plan",
+    "text": "마트·온라인쇼핑·아울렛·잡화 10%, 주유·카셰어링·주차·택시 5%, 해외·병원·미용실·서점 5%",
+    "rate_or_amount": "5~10%",
+    "monthly_cap": "1만5천~5만원",
+    "condition": null
+   },
+   {
+    "category": "Monthly Plan",
+    "text": "공과금 10%, 디지털구독·멤버십 20%, 피트니스 5%, 영화",
+    "rate_or_amount": "5~20%",
+    "monthly_cap": "5천~2만원 + 영화",
+    "condition": null
+   },
+   {
+    "category": "Annual Plan",
+    "text": "마트 3만원 이상 결제 시 3만원 캐시백(연 1회), 스피드메이트 정비 할인",
+    "rate_or_amount": "3만원",
+    "monthly_cap": "연 1회",
+    "condition": "2차년도부터 전년 1,000만원 이상"
+   }
+  ],
+  "exclusions": [],
+  "promotions": [],
+  "recent_changes": [],
+  "target_text": "계획한 모든 일상에 따라오는 할인.",
+  "issuance": null,
+  "app_features": [],
+  "design_note": null,
+  "tags": [
+   "time_slot",
+   "dining_cafe",
+   "mart_daily",
+   "delivery",
+   "online_shop",
+   "fuel",
+   "fixed_bills",
+   "subscription_ott",
+   "period_bonus",
+   "reward_discount",
+   "tiered_perf",
+   "premium_voucher"
+  ],
+  "genz_fit": "low",
+  "genz_fit_reason": "연회비 5만원·한도 최대 구간 180만원으로 고소비 가구용.",
+  "source_url": "https://www.shinhancard.com/pconts/html/card/apply/credit/1232390_2207.html",
+  "source_urls": [
+   "https://www.shinhancard.com/pconts/html/card/apply/credit/1232390_2207.html"
+  ],
+  "checked": "2026-10-27",
+  "confidence": "high",
+  "note": "기존 DB c02와 수치 일치."
+ },
+ {
+  "id": "mshinhan20",
+  "name": "Simple Plan",
+  "official_name": "신한카드 Simple Plan",
+  "issuer": "신한카드",
+  "type": "credit",
+  "on_sale": true,
+  "role": "flagship",
+  "launched": "2026-02-04",
+  "annual_fee_won": {
+   "domestic": 15000,
+   "overseas": 18000
+  },
+  "tiers": [
+   {
+    "min_prev_month_spend_won": 0,
+    "benefit_summary": "국내 1%·해외 2% 결제일 할인, 실적·한도 없음"
+   }
+  ],
+  "benefits": [
+   {
+    "category": "심플 할인",
+    "text": "국내 이용금액",
+    "rate_or_amount": "1%",
+    "monthly_cap": "한도 없음",
+    "condition": "실적 무관"
+   },
+   {
+    "category": "심플 할인",
+    "text": "해외 이용금액",
+    "rate_or_amount": "2%",
+    "monthly_cap": "한도 없음",
+    "condition": "실적 무관, Master"
+   },
+   {
+    "category": "무이자",
+    "text": "국내 5만원 이상 2~3개월 무이자",
+    "rate_or_amount": "-",
+    "monthly_cap": null,
+    "condition": "무이자 적용 건은 할인 제외"
+   }
+  ],
+  "exclusions": [
+   "무이자할부 이용 거래, 다른 프로모션 할인 적용 거래, 신차·수입차, 약국 업종"
+  ],
+  "promotions": [],
+  "recent_changes": [],
+  "target_text": "실적 없이 한도 없이 Simple하게.",
+  "issuance": null,
+  "app_features": [],
+  "design_note": null,
+  "tags": [
+   "simple_flat",
+   "spend_free",
+   "no_cap",
+   "reward_discount",
+   "travel_fx"
+  ],
+  "genz_fit": "high",
+  "genz_fit_reason": "연회비 1.5만원, 무실적·무한도 1%다. 실적을 채우기 어려운 20대 사회초년생이 쓰기 가장 쉬운 신한 신용카드다. 다만 청년 전용 장치는 없다.",
+  "source_url": "https://www.shinhancard.com/pconts/html/card/apply/credit/1237253_2207.html",
+  "source_urls": [
+   "https://www.shinhancard.com/pconts/html/card/apply/credit/1237253_2207.html",
+   "https://www.card-gorilla.com/contents/detail/4186"
+  ],
+  "checked": "2026-10-27",
+  "confidence": "high",
+  "note": "심의필 제2026-C1h-02328호."
+ },
+ {
+  "id": "mshinhan21",
+  "name": "Simple Plan+",
+  "official_name": "신한카드 Simple Plan+",
+  "issuer": "신한카드",
+  "type": "credit",
+  "on_sale": true,
+  "role": "flagship",
+  "launched": "2026-02-04",
+  "annual_fee_won": {
+   "domestic": 47000,
+   "overseas": 50000
+  },
+  "tiers": [
+   {
+    "min_prev_month_spend_won": 0,
+    "benefit_summary": "국내 1.5%·해외 2% 무실적·무한도"
+   }
+  ],
+  "benefits": [
+   {
+    "category": "심플 할인",
+    "text": "국내 1.5%, 해외 2%",
+    "rate_or_amount": "1.5%/2%",
+    "monthly_cap": "없음",
+    "condition": "실적 무관"
+   },
+   {
+    "category": "가족카드",
+    "text": "가족카드 1매당 분기 150만원 이상 시",
+    "rate_or_amount": "1만원 캐시백",
+    "monthly_cap": "분기 1회, 최대 4매",
+    "condition": null
+   },
+   {
+    "category": "웰컴",
+    "text": "마트·병원·주유 3만원 이상 결제",
+    "rate_or_amount": "3만원 캐시백",
+    "monthly_cap": "최초 1회",
+    "condition": "발급 초년도"
+   }
+  ],
+  "exclusions": [],
+  "promotions": [],
+  "recent_changes": [],
+  "target_text": null,
+  "issuance": null,
+  "app_features": [],
+  "design_note": null,
+  "tags": [
+   "simple_flat",
+   "spend_free",
+   "no_cap",
+   "reward_discount",
+   "reward_cashback",
+   "group_pooling",
+   "first_try_reward"
+  ],
+  "genz_fit": "low",
+  "genz_fit_reason": "연회비 4.7만원이라 연 300만원 넘게 써야 기본형보다 이득이다. 가족카드 보상은 가구용이다.",
+  "source_url": "https://www.shinhancard.com/pconts/html/card/apply/credit/1237252_2207.html",
+  "source_urls": [
+   "https://www.shinhancard.com/pconts/html/card/apply/credit/1237252_2207.html"
+  ],
+  "checked": "2026-10-27",
+  "confidence": "high",
+  "note": ""
+ },
+ {
+  "id": "mshinhan22",
+  "name": "Hi-Point Plan",
+  "official_name": "신한카드 Hi-Point Plan",
+  "issuer": "신한카드",
+  "type": "credit",
+  "on_sale": true,
+  "role": "flagship",
+  "launched": "2026-06-09(연혁 2026-08)",
+  "annual_fee_won": {
+   "domestic": 20000,
+   "overseas": 23000
+  },
+  "tiers": [
+   {
+    "min_prev_month_spend_won": 0,
+    "benefit_summary": "기본 0.5%·특별 1%(통합 월 5만P)"
+   },
+   {
+    "min_prev_month_spend_won": 500000,
+    "benefit_summary": "1%/2%"
+   },
+   {
+    "min_prev_month_spend_won": 1000000,
+    "benefit_summary": "1.3%/3.5%"
+   },
+   {
+    "min_prev_month_spend_won": 1500000,
+    "benefit_summary": "1.5%/5%"
+   }
+  ],
+  "benefits": [
+   {
+    "category": "기본 적립",
+    "text": "국내외 전 가맹점",
+    "rate_or_amount": "0.5~1.5%",
+    "monthly_cap": "통합 5만P",
+    "condition": "50만원 미만도 0.5%"
+   },
+   {
+    "category": "특별 적립",
+    "text": "롯데마트·이마트, 다이소·올리브영, SK·GS칼텍스, 카페 6사, 통신 자동납부",
+    "rate_or_amount": "1~5%",
+    "monthly_cap": "통합 5만P",
+    "condition": "오프라인"
+   },
+   {
+    "category": "포인트 리필",
+    "text": "마이신한포인트 1만P 이상 사용 결제 시",
+    "rate_or_amount": "1천P",
+    "monthly_cap": "월 1회",
+    "condition": "실적 무관"
+   }
+  ],
+  "exclusions": [],
+  "promotions": [],
+  "recent_changes": [],
+  "target_text": "쓰는 만큼 쌓이고, 필요할 땐 채워지고.",
+  "issuance": "1인 1장, 후불교통",
+  "app_features": [],
+  "design_note": null,
+  "tags": [
+   "reward_point",
+   "tiered_perf",
+   "zero_floor",
+   "mart_daily",
+   "dining_cafe",
+   "fuel",
+   "fixed_bills",
+   "value_spend_reward"
+  ],
+  "genz_fit": "mid",
+  "genz_fit_reason": "실적이 없어도 0.5%가 쌓이는 '바닥 보장'이 있다. 다만 5% 구간이 150만원 이상이라 20대에게는 1~2% 수준이다.",
+  "source_url": "https://www.shinhancard.com/pconts/html/card/apply/credit/2013774_2207.html",
+  "source_urls": [
+   "https://www.shinhancard.com/pconts/html/card/apply/credit/2013774_2207.html"
+  ],
+  "checked": "2026-10-27",
+  "confidence": "high",
+  "note": "'포인트 리필'(포인트 사용 보상)은 신한이 2026년 새로 넣은 장치."
+ },
+ {
+  "id": "mshinhan23",
+  "name": "Hi-Point Plan+",
+  "official_name": "신한카드 Hi-Point Plan+",
+  "issuer": "신한카드",
+  "type": "credit",
+  "on_sale": true,
+  "role": "flagship",
+  "launched": "2026-06-09",
+  "annual_fee_won": {
+   "domestic": 50000,
+   "overseas": 53000
+  },
+  "tiers": [
+   {
+    "min_prev_month_spend_won": 0,
+    "benefit_summary": "기본 0.5%·특별 1%(통합 월 7만P)"
+   },
+   {
+    "min_prev_month_spend_won": 500000,
+    "benefit_summary": "1%/2%"
+   },
+   {
+    "min_prev_month_spend_won": 1000000,
+    "benefit_summary": "1.5%/4%"
+   },
+   {
+    "min_prev_month_spend_won": 1500000,
+    "benefit_summary": "2%/6%"
+   }
+  ],
+  "benefits": [
+   {
+    "category": "적립",
+    "text": "기본 최대 2%, 특별(마트·생활·주유·카페·통신) 최대 6%",
+    "rate_or_amount": "0.5~6%",
+    "monthly_cap": "7만P",
+    "condition": null
+   },
+   {
+    "category": "리필",
+    "text": "포인트 1만P 이상 사용 시",
+    "rate_or_amount": "3천P",
+    "monthly_cap": "월 1회",
+    "condition": null
+   },
+   {
+    "category": "웰컴",
+    "text": "마트·주유·올리브영 3만원 이상",
+    "rate_or_amount": "3만P",
+    "monthly_cap": "최초 1회",
+    "condition": "발급 초년도"
+   }
+  ],
+  "exclusions": [],
+  "promotions": [],
+  "recent_changes": [],
+  "target_text": null,
+  "issuance": null,
+  "app_features": [],
+  "design_note": null,
+  "tags": [
+   "reward_point",
+   "tiered_perf",
+   "zero_floor",
+   "first_try_reward",
+   "mart_daily",
+   "fuel"
+  ],
+  "genz_fit": "low",
+  "genz_fit_reason": "연회비 5만원, 고실적 구간 위주.",
+  "source_url": "https://www.shinhancard.com/pconts/html/card/apply/credit/2013775_2207.html",
+  "source_urls": [
+   "https://www.shinhancard.com/pconts/html/card/apply/credit/2013775_2207.html"
+  ],
+  "checked": "2026-10-27",
+  "confidence": "high",
+  "note": ""
+ },
+ {
+  "id": "mshinhan24",
+  "name": "SOL Plan",
+  "official_name": "신한카드 SOL Plan",
+  "issuer": "신한카드",
+  "type": "credit",
+  "on_sale": true,
+  "role": "flagship",
+  "launched": "2025-08-25(연혁 2025-09)",
+  "annual_fee_won": {
+   "domestic": 30000,
+   "overseas": 33000
+  },
+  "tiers": [
+   {
+    "min_prev_month_spend_won": 400000,
+    "benefit_summary": "기본 1%·특별(주유·온라인쇼핑·배달) 2.5%, 통합 5만 SOL포인트"
+   },
+   {
+    "min_prev_month_spend_won": 1000000,
+    "benefit_summary": "1.5%/5%, + 결제계좌 잔액 조건 충족 시 OTT·멤버십 100% 적립(5천/1만5천P)"
+   }
+  ],
+  "benefits": [
+   {
+    "category": "쓸수록 SOLSOL",
+    "text": "국내외 기본 + 주유(SK·GS)·온라인(쿠팡·SSG·무신사·29CM)·배달 4사 특별",
+    "rate_or_amount": "1~5%",
+    "monthly_cap": "5만P",
+    "condition": "특별 영역별 월 30만원까지"
+   },
+   {
+    "category": "담을수록 SOLSOL",
+    "text": "넷플릭스·유튜브프리미엄·티빙·디즈니+, 네이버플러스·쿠팡와우 자동납부",
+    "rate_or_amount": "100% 적립",
+    "monthly_cap": "5천P(잔액 100만원 15영업일)/1만5천P(200만원)",
+    "condition": "카드 전월 100만원 + 신한은행 결제계좌 잔액"
+   },
+   {
+    "category": "모을수록 SOLSOL",
+    "text": "적립 SOL포인트를 'SOL Plan 포인트박스' 계좌로 입금 시",
+    "rate_or_amount": "10% 추가",
+    "monthly_cap": null,
+    "condition": "포인트박스 보유"
+   }
+  ],
+  "exclusions": [],
+  "promotions": [],
+  "recent_changes": [],
+  "target_text": null,
+  "issuance": "신한은행 결제계좌 필수, SOL Plan 계열 중복 소지 불가",
+  "app_features": [
+   "신한 슈퍼SOL에서 잔액·포인트박스 확인"
+  ],
+  "design_note": null,
+  "tags": [
+   "bank_bundle",
+   "subscription_ott",
+   "fuel",
+   "online_shop",
+   "delivery",
+   "reward_point",
+   "tiered_perf",
+   "invest_reward"
+  ],
+  "genz_fit": "low",
+  "genz_fit_reason": "은행 잔액(일 100만~200만원 15영업일)과 카드 100만원 실적이 함께 필요해 자산이 적은 20대는 핵심 혜택을 받기 어렵다.",
+  "source_url": "https://www.shinhancard.com/pconts/html/card/apply/credit/1235253_2207.html",
+  "source_urls": [
+   "https://www.shinhancard.com/pconts/html/card/apply/credit/1235253_2207.html",
+   "https://www.card-gorilla.com/contents/detail/3967"
+  ],
+  "checked": "2026-10-27",
+  "confidence": "high",
+  "note": "시니어용 'SOL메이트 신한카드 SOL Plan'(1235283)은 특별영역이 병원·마트·카페. 체크형 SOL메이트 SOL Plan 체크(2026-05)는 미조사."
+ },
+ {
+  "id": "mshinhan25",
+  "name": "SOL Plan+",
+  "official_name": "신한카드 SOL Plan+",
+  "issuer": "신한카드",
+  "type": "credit",
+  "on_sale": true,
+  "role": "flagship",
+  "launched": "2026-05-29(공식 페이지; 보도·연혁 2026-06)",
+  "annual_fee_won": {
+   "domestic": 50000,
+   "overseas": 53000
+  },
+  "tiers": [
+   {
+    "min_prev_month_spend_won": 400000,
+    "benefit_summary": "기본 1%·특별 2.5%, 통합 6만P"
+   },
+   {
+    "min_prev_month_spend_won": 1000000,
+    "benefit_summary": "1.5%/5%, + 잔액 조건 시 OTT·멤버십·통신 100% 적립(최대 1만5천P)"
+   }
+  ],
+  "benefits": [
+   {
+    "category": "쓸수록",
+    "text": "SOL Plan과 같은 영역",
+    "rate_or_amount": "1~5%",
+    "monthly_cap": "6만P",
+    "condition": null
+   },
+   {
+    "category": "담을수록",
+    "text": "OTT·멤버십·통신요금",
+    "rate_or_amount": "100%",
+    "monthly_cap": "최대 1만5천P",
+    "condition": "잔액 조건"
+   },
+   {
+    "category": "웰컴",
+    "text": "주유·온라인쇼핑·배달",
+    "rate_or_amount": "캐시백(금액 확인 불가)",
+    "monthly_cap": "최초 1회",
+    "condition": "발급 초년도"
+   }
+  ],
+  "exclusions": [],
+  "promotions": [
+   {
+    "text": "SOL Plan+ 시리즈 누적 5만원 이상 이용 시 5만원 캐시백(최근 6개월 신한 개인신용 미이용자, 검색 요약 기준)",
+    "ends": "2026-10-31"
+   }
+  ],
+  "recent_changes": [],
+  "target_text": null,
+  "issuance": null,
+  "app_features": [],
+  "design_note": null,
+  "tags": [
+   "bank_bundle",
+   "subscription_ott",
+   "fixed_bills",
+   "fuel",
+   "online_shop",
+   "delivery",
+   "reward_point",
+   "tiered_perf"
+  ],
+  "genz_fit": "low",
+  "genz_fit_reason": "연회비 5만원과 은행 잔액 조건.",
+  "source_url": "https://www.shinhancard.com/pconts/html/card/apply/credit/1239171_2207.html",
+  "source_urls": [
+   "https://www.shinhancard.com/pconts/html/card/apply/credit/1239171_2207.html",
+   "https://www.segye.com/newsView/20260628508196"
+  ],
+  "checked": "2026-10-27",
+  "confidence": "medium",
+  "note": "연회비는 공식 페이지 동적 영역이라 세계일보 보도(국내 5만·해외 5.3만)로 채움. 웰컴 금액 확인 불가."
+ },
+ {
+  "id": "mshinhan26",
+  "name": "ECO Plan",
+  "official_name": "신한카드 ECO Plan",
+  "issuer": "신한카드",
+  "type": "credit",
+  "on_sale": true,
+  "role": "flagship",
+  "launched": "2026-04-13",
+  "annual_fee_won": {
+   "domestic": 20000,
+   "overseas": 23000
+  },
+  "tiers": [
+   {
+    "min_prev_month_spend_won": 0,
+    "benefit_summary": "ECO 기부 포인트 0.2%(무실적·무한도), 디지털 명세서 1천원"
+   },
+   {
+    "min_prev_month_spend_won": 300000,
+    "benefit_summary": "ECO Life 1만·Healthy 5천·Daily Vibe 5천원, 월요일 대중교통 1천원"
+   },
+   {
+    "min_prev_month_spend_won": 700000,
+    "benefit_summary": "2만/1만/1만원"
+   },
+   {
+    "min_prev_month_spend_won": 1200000,
+    "benefit_summary": "3만/1만5천/1만5천원"
+   }
+  ],
+  "benefits": [
+   {
+    "category": "ECO 기부",
+    "text": "국내외 전 가맹점 0.2%를 나무심기 기부 포인트로 적립",
+    "rate_or_amount": "0.2%",
+    "monthly_cap": "없음",
+    "condition": "자동 기부, 소득공제"
+   },
+   {
+    "category": "ECO Life",
+    "text": "쏘카·따릉이, KTX/SRT, 전기차 충전, 밀리의서재·리디·예스24, 스타벅스 사이렌오더, 아름다운가게, SSG·컬리·오아시스",
+    "rate_or_amount": "10%",
+    "monthly_cap": "1만~3만원",
+    "condition": null
+   },
+   {
+    "category": "Healthy Plan",
+    "text": "피트니스·스포츠웨어(나이키·안다르·젝시믹스·무신사 등)·그린푸드(써브웨이·샐러디)",
+    "rate_or_amount": "10%",
+    "monthly_cap": "5천~1만5천원",
+    "condition": null
+   },
+   {
+    "category": "Daily Vibe",
+    "text": "편의점 3사·올리브영·다이소·앱스토어(애플·구글)",
+    "rate_or_amount": "10%",
+    "monthly_cap": "5천~1만5천원",
+    "condition": null
+   },
+   {
+    "category": "Green Challenge",
+    "text": "매주 월요일 버스·지하철 이용일당 1천원",
+    "rate_or_amount": "1천원",
+    "monthly_cap": null,
+    "condition": "전월 30만원"
+   }
+  ],
+  "exclusions": [],
+  "promotions": [],
+  "recent_changes": [],
+  "target_text": "지구와 나를 위한 더 나은 Plan.",
+  "issuance": null,
+  "app_features": [],
+  "design_note": null,
+  "tags": [
+   "esg_green",
+   "value_spend_reward",
+   "challenge",
+   "transit",
+   "dining_cafe",
+   "mart_daily",
+   "online_shop",
+   "reward_discount",
+   "tiered_perf"
+  ],
+  "genz_fit": "high",
+  "genz_fit_reason": "따릉이·쏘카·전자책·샐러드·애슬레저·올리브영·앱스토어 등 20대 가치소비 영역을 연회비 2만원에 묶었다. 전월 30만원부터 받을 수 있다.",
+  "source_url": "https://www.shinhancard.com/pconts/html/card/apply/credit/1238499_2207.html",
+  "source_urls": [
+   "https://www.shinhancard.com/pconts/html/card/apply/credit/1238499_2207.html"
+  ],
+  "checked": "2026-10-27",
+  "confidence": "high",
+  "note": ""
+ },
+ {
+  "id": "mshinhan27",
+  "name": "Mr.Life",
+  "official_name": "신한카드 Mr.Life",
+  "issuer": "신한카드",
+  "type": "credit",
+  "on_sale": true,
+  "role": "other",
+  "launched": "2015-09-03",
+  "annual_fee_won": {
+   "domestic": 15000,
+   "overseas": 18000
+  },
+  "tiers": [
+   {
+    "min_prev_month_spend_won": 300000,
+    "benefit_summary": "월납 3천원·TIME 1만원"
+   },
+   {
+    "min_prev_month_spend_won": 500000,
+    "benefit_summary": "7천원·2만원"
+   },
+   {
+    "min_prev_month_spend_won": 1000000,
+    "benefit_summary": "1만원·3만원"
+   }
+  ],
+  "benefits": [
+   {
+    "category": "월납",
+    "text": "전기·가스·통신(인터넷·결합 포함)",
+    "rate_or_amount": "10%",
+    "monthly_cap": "3천~1만원",
+    "condition": "일 1회, 1회 5만원까지"
+   },
+   {
+    "category": "TIME All Day",
+    "text": "편의점·병원/약국·세탁소",
+    "rate_or_amount": "10%",
+    "monthly_cap": "TIME 1만~3만원",
+    "condition": "영역별 일 1회·월 5회, 1회 최대 1천원"
+   },
+   {
+    "category": "TIME Night",
+    "text": "21시~09시 온라인쇼핑(G마켓·11번가·쿠팡 등)·택시·식음료",
+    "rate_or_amount": "10%",
+    "monthly_cap": "TIME 통합",
+    "condition": "영역별 월 10회"
+   },
+   {
+    "category": "주말",
+    "text": "할인마트 10%, 주유 리터당 60원",
+    "rate_or_amount": "10%/60원",
+    "monthly_cap": null,
+    "condition": null
+   },
+   {
+    "category": "특화",
+    "text": "인테이크몰 20%",
+    "rate_or_amount": "20%",
+    "monthly_cap": "월 4회",
+    "condition": "유실적"
+   }
+  ],
+  "exclusions": [],
+  "promotions": [],
+  "recent_changes": [],
+  "target_text": "Essential For Every Lifestyle.",
+  "issuance": null,
+  "app_features": [],
+  "design_note": null,
+  "tags": [
+   "time_slot",
+   "fixed_bills",
+   "mart_daily",
+   "online_shop",
+   "transit",
+   "dining_cafe",
+   "fuel",
+   "reward_discount",
+   "tiered_perf"
+  ],
+  "genz_fit": "mid",
+  "genz_fit_reason": "1인 가구 생활비형 장수 카드. 야간 온라인쇼핑·택시·식음료 10%는 20대 자취생에게도 맞지만 1회 최대 1천원이라 효과가 작다.",
+  "source_url": "https://www.shinhancard.com/pconts/html/card/apply/credit/1187937_2207.html",
+  "source_urls": [
+   "https://www.shinhancard.com/pconts/html/card/apply/credit/1187937_2207.html"
+  ],
+  "checked": "2026-10-27",
+  "confidence": "high",
+  "note": "기존 DB c01과 일치. 심의필 제2026-C1a-09920호(2026.07.01) 갱신."
+ },
+ {
+  "id": "mshinhan28",
+  "name": "Deep Once",
+  "official_name": "신한카드 Deep Once",
+  "issuer": "신한카드",
+  "type": "credit",
+  "on_sale": true,
+  "role": "other",
+  "launched": "2020-01-30",
+  "annual_fee_won": {
+   "domestic": 20000,
+   "overseas": 23000
+  },
+  "tiers": [
+   {
+    "min_prev_month_spend_won": 400000,
+    "benefit_summary": "렌탈 건당 3천P·생활월납 2천P·디지털구독 2천P"
+   },
+   {
+    "min_prev_month_spend_won": 800000,
+    "benefit_summary": "5천/4천/4천P"
+   },
+   {
+    "min_prev_month_spend_won": 1200000,
+    "benefit_summary": "7천/6천/6천P"
+   }
+  ],
+  "benefits": [
+   {
+    "category": "렌탈",
+    "text": "10개 렌탈사 자동납부 건당",
+    "rate_or_amount": "3천~7천P 정액",
+    "monthly_cap": "월 5건",
+    "condition": "건당 1만원 이상"
+   },
+   {
+    "category": "생활월납",
+    "text": "관리비·통신·가스·전기 등 7종",
+    "rate_or_amount": "2천~6천P",
+    "monthly_cap": "월 3건",
+    "condition": null
+   },
+   {
+    "category": "디지털 구독",
+    "text": "넷플릭스·웨이브·왓챠·멜론·지니·밀리의서재·스타벅스 자동충전",
+    "rate_or_amount": "2천~6천P",
+    "monthly_cap": "월 3건",
+    "condition": "건당 6천원 이상"
+   }
+  ],
+  "exclusions": [],
+  "promotions": [],
+  "recent_changes": [],
+  "target_text": null,
+  "issuance": null,
+  "app_features": [],
+  "design_note": null,
+  "tags": [
+   "subscription_ott",
+   "fixed_bills",
+   "benefit_rental",
+   "reward_point",
+   "reward_flat_refund",
+   "count_based",
+   "tiered_perf"
+  ],
+  "genz_fit": "mid",
+  "genz_fit_reason": "정기결제 건수당 정액 적립이라 OTT·음원을 여러 개 구독하는 20대에게 맞는다. 다만 전월 40만원이 필요하고 상품이 오래됐다.",
+  "source_url": "https://www.shinhancard.com/pconts/html/card/apply/credit/1192802_2207.html",
+  "source_urls": [
+   "https://www.shinhancard.com/pconts/html/card/apply/credit/1192802_2207.html"
+  ],
+  "checked": "2026-10-27",
+  "confidence": "high",
+  "note": ""
+ },
+ {
+  "id": "mshinhan29",
+  "name": "The CLASSIC NEO",
+  "official_name": "신한카드 The CLASSIC NEO",
+  "issuer": "신한카드",
+  "type": "credit",
+  "on_sale": true,
+  "role": "flagship",
+  "launched": "2025-10-16",
+  "annual_fee_won": {
+   "domestic": 117000,
+   "overseas": 120000
+  },
+  "tiers": [
+   {
+    "min_prev_month_spend_won": 400000,
+    "benefit_summary": "국내 적립 월 3만P"
+   },
+   {
+    "min_prev_month_spend_won": 1000000,
+    "benefit_summary": "6만P"
+   },
+   {
+    "min_prev_month_spend_won": 1800000,
+    "benefit_summary": "10만P"
+   }
+  ],
+  "benefits": [
+   {
+    "category": "연간 Gift",
+    "text": "나를 위한(쿠팡·무신사/29CM·미용실·올리브영)/가족을 위한(병원·약국·주유) 중 택1, 7만원 이상 이용 시",
+    "rate_or_amount": "7만P",
+    "monthly_cap": "연 1회",
+    "condition": "연회비 납부+연 100만원 이용"
+   },
+   {
+    "category": "적립",
+    "text": "'보통의 하루' 2%(쿠팡·편의점·배달앱·병원), '선택적 Flex' 3%(백화점·무신사/29CM·미용실·레저·주유) 등 국내/해외 1.5~5%",
+    "rate_or_amount": "1.5~5%",
+    "monthly_cap": "3만~10만P",
+    "condition": null
+   },
+   {
+    "category": "브런치",
+    "text": "주중 브런치 할인",
+    "rate_or_amount": "-",
+    "monthly_cap": "2만원",
+    "condition": "전월 40만원"
+   }
+  ],
+  "exclusions": [],
+  "promotions": [],
+  "recent_changes": [],
+  "target_text": "가장 당신을 빛나게 하는 프리미엄 라이프.",
+  "issuance": null,
+  "app_features": [],
+  "design_note": null,
+  "tags": [
+   "premium_voucher",
+   "select_item",
+   "reward_point",
+   "tiered_perf",
+   "online_shop",
+   "dining_cafe"
+  ],
+  "genz_fit": "low",
+  "genz_fit_reason": "연회비 11.7만원 프리미엄. 다만 무신사·29CM·올리브영 바우처로 30대 초반 고소득 2030을 겨냥했다.",
+  "source_url": "https://www.shinhancard.com/pconts/html/card/apply/premium/1236160_2205.html",
+  "source_urls": [
+   "https://www.shinhancard.com/pconts/html/card/apply/premium/1236160_2205.html"
+  ],
+  "checked": "2026-10-27",
+  "confidence": "high",
+  "note": ""
+ },
+ {
+  "id": "mshinhan30",
+  "name": "카카오뱅크 줍줍 신한카드",
+  "official_name": "카카오뱅크 줍줍 신한카드",
+  "issuer": "신한카드",
+  "type": "credit",
+  "on_sale": true,
+  "role": "plcc",
+  "launched": "2025-04-18(공식 페이지; 보도·연혁 2025-07-01)",
+  "annual_fee_won": {
+   "domestic": 18000,
+   "overseas": 18000
+  },
+  "tiers": [
+   {
+    "min_prev_month_spend_won": 0,
+    "benefit_summary": "쓰면 1%(월 2만원) + 바로내면 1%(월 2만원), 실적 무관"
+   }
+  ],
+  "benefits": [
+   {
+    "category": "카드 쓰면",
+    "text": "국내외 이용금액",
+    "rate_or_amount": "1% 캐시백",
+    "monthly_cap": "2만원",
+    "condition": "실적 무관"
+   },
+   {
+    "category": "카드값 바로내면",
+    "text": "매입일+5일 이내 카카오뱅크 계좌에서 건별 즉시결제한 일시불",
+    "rate_or_amount": "1% 캐시백",
+    "monthly_cap": "2만원",
+    "condition": "즉시결제 1회 1만원 이상, 할부·리볼빙 제외"
+   }
+  ],
+  "exclusions": [
+   "무이자할부, 공과금·세금, 상품권·선불충전, 할인 적용 거래"
+  ],
+  "promotions": [],
+  "recent_changes": [],
+  "target_text": "실적 고민없이 쓸 때, 낼 때 2번 최대 2% 캐시백.",
+  "issuance": "카카오뱅크 앱에서만 신청, 카카오뱅크 결제계좌만, 1인 1장, 후불교통 카드만",
+  "app_features": [
+   "카카오뱅크 앱에서 신청·사용등록·이용내역·명세서·즉시결제 원스톱"
+  ],
+  "design_note": "코인춘식·골드고구마·피규어춘식·메탈라이언(메탈, 발급수수료 7만원)",
+  "tags": [
+   "plcc_brand",
+   "bank_bundle",
+   "spend_free",
+   "simple_flat",
+   "reward_cashback",
+   "paymethod_bonus"
+  ],
+  "genz_fit": "high",
+  "genz_fit_reason": "카카오뱅크(2030 주 고객) 앱에서만 발급되고 무실적 2%와 춘식이 플레이트를 준다. '즉시결제 보상'은 신용카드를 체크카드처럼 쓰게 한다.",
+  "source_url": "https://www.shinhancard.com/pconts/html/card/apply/credit/1234363_2207.html",
+  "source_urls": [
+   "https://www.shinhancard.com/pconts/html/card/apply/credit/1234363_2207.html",
+   "https://www.shinhancard.com/pconts/company/html/promotion/press/1235065_3999.html"
+  ],
+  "checked": "2026-10-27",
+  "confidence": "high",
+  "note": "즉시결제 보상은 allowed_tags에 맞는 키가 없어 paymethod_bonus로 대체. 심의필 제2026-C1a-08235호. 기존 '카카오뱅크 신한카드'(2020)와 중복 소지 불가, 그 카드는 신규발급 중단."
+ },
+ {
+  "id": "mshinhan31",
+  "name": "카카오뱅크 착붙 신한카드",
+  "official_name": "카카오뱅크 착붙 신한카드",
+  "issuer": "신한카드",
+  "type": "credit",
+  "on_sale": true,
+  "role": "plcc",
+  "launched": "2026-06-19(공식; 보도 2026-08-21)",
+  "annual_fee_won": {
+   "domestic": 20000,
+   "overseas": 23000
+  },
+  "tiers": [
+   {
+    "min_prev_month_spend_won": 0,
+    "benefit_summary": "혜택 없음"
+   },
+   {
+    "min_prev_month_spend_won": 500000,
+    "benefit_summary": "온라인 1만원 + 오프라인 1만원"
+   },
+   {
+    "min_prev_month_spend_won": 1000000,
+    "benefit_summary": "온라인 2만5천원 + 오프라인 2만5천원"
+   }
+  ],
+  "benefits": [
+   {
+    "category": "온라인 간편결제",
+    "text": "카카오페이·네이버페이·신한 SOL페이 온라인 결제",
+    "rate_or_amount": "10%",
+    "monthly_cap": "온라인 통합 1만/2만5천원",
+    "condition": "1회 5천원, 동일 가맹점 일 1회"
+   },
+   {
+    "category": "AI 구독",
+    "text": "ChatGPT·Claude 공식 웹 구독",
+    "rate_or_amount": "10%",
+    "monthly_cap": "온라인 통합",
+    "condition": "인앱·간편결제 제외"
+   },
+   {
+    "category": "멤버십",
+    "text": "네이버플러스·쿠팡와우 정기결제",
+    "rate_or_amount": "50%",
+    "monthly_cap": "온라인 통합",
+    "condition": null
+   },
+   {
+    "category": "오프라인",
+    "text": "이마트·트레이더스, 커피전문점, 올리브영·다이소",
+    "rate_or_amount": "10%",
+    "monthly_cap": "오프라인 1만/2만5천원",
+    "condition": "오프라인 현장 결제"
+   }
+  ],
+  "exclusions": [],
+  "promotions": [],
+  "recent_changes": [],
+  "target_text": "쓰면 쓸수록 내 생활에 착붙되는 신용카드.",
+  "issuance": "카카오뱅크 앱 전용, 가족카드 불가, 후불교통 카드만",
+  "app_features": [],
+  "design_note": "스틸춘식 메탈플레이트(해외겸용만, 발급수수료 8만원)",
+  "tags": [
+   "plcc_brand",
+   "bank_bundle",
+   "paymethod_bonus",
+   "online_shop",
+   "subscription_ott",
+   "mart_daily",
+   "dining_cafe",
+   "reward_discount",
+   "tiered_perf"
+  ],
+  "genz_fit": "high",
+  "genz_fit_reason": "AI 구독(ChatGPT·Claude) 할인을 국내 처음으로 넣은 2030 겨냥 카드다(언론 기준). 다만 전월 50만원부터 혜택이 시작돼 사회초년생에게는 문턱이 있다.",
+  "source_url": "https://www.shinhancard.com/pconts/html/card/apply/credit/2013453_2207.html",
+  "source_urls": [
+   "https://www.shinhancard.com/pconts/html/card/apply/credit/2013453_2207.html",
+   "https://biz.sbs.co.kr/amp/article/20000329951"
+  ],
+  "checked": "2026-10-27",
+  "confidence": "high",
+  "note": "심의필 제2026-C1a-11922호."
+ },
+ {
+  "id": "mshinhan32",
+  "name": "Toss One 신한카드",
+  "official_name": "Toss One 신한카드",
+  "issuer": "신한카드",
+  "type": "credit",
+  "on_sale": true,
+  "role": "plcc",
+  "launched": "2026-06-16(공식; 보도 2026-07-02)",
+  "annual_fee_won": {
+   "domestic": 27000,
+   "overseas": 30000
+  },
+  "tiers": [
+   {
+    "min_prev_month_spend_won": 0,
+    "benefit_summary": "혜택 없음(신규 등록월+1개월 무실적 제공)"
+   },
+   {
+    "min_prev_month_spend_won": 400000,
+    "benefit_summary": "오프라인 월 1만원(온라인 통합), 2개월 연속 40만원 시 토스프라임 5,900원"
+   },
+   {
+    "min_prev_month_spend_won": 700000,
+    "benefit_summary": "2만2천원"
+   },
+   {
+    "min_prev_month_spend_won": 1000000,
+    "benefit_summary": "3만3천원"
+   }
+  ],
+  "benefits": [
+   {
+    "category": "토스 페이스페이",
+    "text": "요식·편의점·커피·미용·스포츠 업종 얼굴결제",
+    "rate_or_amount": "17%",
+    "monthly_cap": "통합",
+    "condition": "1회 5천원, 동일 가맹점 일 1회"
+   },
+   {
+    "category": "토스 단말기/토스페이 QR",
+    "text": "대상 업종 토스 단말기 3%, 토스페이 QR/바코드 국내외 3%",
+    "rate_or_amount": "3%",
+    "monthly_cap": "통합",
+    "condition": null
+   },
+   {
+    "category": "일반 단말기",
+    "text": "대상 업종 일반 결제",
+    "rate_or_amount": "1%",
+    "monthly_cap": "통합",
+    "condition": null
+   },
+   {
+    "category": "토스페이 온라인",
+    "text": "온라인 토스페이",
+    "rate_or_amount": "3%",
+    "monthly_cap": "통합",
+    "condition": null
+   },
+   {
+    "category": "토스프라임",
+    "text": "멤버십 정기결제",
+    "rate_or_amount": "5,900원",
+    "monthly_cap": "월 1회",
+    "condition": "전전월·전월 연속 40만원"
+   }
+  ],
+  "exclusions": [],
+  "promotions": [],
+  "recent_changes": [],
+  "target_text": "토스의 모든 혜택을 카드 한 장에, 결제의 새로운 기준.",
+  "issuance": "토스 앱에서만 신청, 가족카드 불가",
+  "app_features": [],
+  "design_note": null,
+  "tags": [
+   "plcc_brand",
+   "paymethod_bonus",
+   "dining_cafe",
+   "mart_daily",
+   "subscription_ott",
+   "reward_discount",
+   "tiered_perf"
+  ],
+  "genz_fit": "high",
+  "genz_fit_reason": "토스(2030 비중 높은 슈퍼앱) 결제수단 확대용 PLCC. 얼굴결제 17%로 새 결제 습관을 보상한다.",
+  "source_url": "https://www.shinhancard.com/pconts/html/card/apply/credit/2013505_2207.html",
+  "source_urls": [
+   "https://www.shinhancard.com/pconts/html/card/apply/credit/2013505_2207.html",
+   "https://toss.im/tossfeed/article/51441"
+  ],
+  "checked": "2026-10-27",
+  "confidence": "high",
+  "note": ""
+ },
+ {
+  "id": "mshinhan33",
+  "name": "배민 신한카드 밥친구",
+  "official_name": "배민 신한카드 밥친구",
+  "issuer": "신한카드",
+  "type": "credit",
+  "on_sale": true,
+  "role": "plcc",
+  "launched": "2025-05-12(연혁 2025-08)",
+  "annual_fee_won": {
+   "domestic": 12000,
+   "overseas": 15000
+  },
+  "tiers": [
+   {
+    "min_prev_month_spend_won": 0,
+    "benefit_summary": "혜택 없음"
+   },
+   {
+    "min_prev_month_spend_won": 200000,
+    "benefit_summary": "배민 5%(월 3만원) + 배민 외 1%(월 1만원)"
+   }
+  ],
+  "benefits": [
+   {
+    "category": "배민",
+    "text": "배달의민족 앱 내 카드결제",
+    "rate_or_amount": "5%",
+    "monthly_cap": "3만원",
+    "condition": "횟수·최소금액 제한 없음, 배민페이머니·상품권·배민클럽 구독료 제외"
+   },
+   {
+    "category": "배민 외",
+    "text": "국내외 전 가맹점",
+    "rate_or_amount": "1%",
+    "monthly_cap": "1만원",
+    "condition": null
+   }
+  ],
+  "exclusions": [],
+  "promotions": [],
+  "recent_changes": [],
+  "target_text": "먹을 때마다 할인되는 카드!",
+  "issuance": "배달의민족 앱(배민 회원) 통해서만 신청, 후불교통 카드만",
+  "app_features": [],
+  "design_note": null,
+  "tags": [
+   "plcc_brand",
+   "delivery",
+   "reward_discount",
+   "simple_flat"
+  ],
+  "genz_fit": "high",
+  "genz_fit_reason": "배달 지출이 큰 20대 1인 가구를 겨냥했다. 전월 20만원으로 문턱이 낮고 한도도 커서(월 3만원) 체감 혜택이 크다.",
+  "source_url": "https://www.shinhancard.com/pconts/html/card/apply/credit/1234575_2207.html",
+  "source_urls": [
+   "https://www.shinhancard.com/pconts/html/card/apply/credit/1234575_2207.html"
+  ],
+  "checked": "2026-10-27",
+  "confidence": "high",
+  "note": "기존 DB gc02와 일치."
+ },
+ {
+  "id": "mshinhan34",
+  "name": "지그재그 신한카드",
+  "official_name": "지그재그 신한카드",
+  "issuer": "신한카드",
+  "type": "credit",
+  "on_sale": true,
+  "role": "plcc",
+  "launched": "2026-09-01(보도·연혁 2026-09)",
+  "annual_fee_won": {
+   "domestic": 20000,
+   "overseas": 20000
+  },
+  "tiers": [
+   {
+    "min_prev_month_spend_won": 0,
+    "benefit_summary": "지그재그 15% 월 1회 최대 3천P"
+   },
+   {
+    "min_prev_month_spend_won": 300000,
+    "benefit_summary": "지그재그 1만2천P + 일상 10% 3천P"
+   },
+   {
+    "min_prev_month_spend_won": 600000,
+    "benefit_summary": "지그재그 2만P + 일상 6천P"
+   }
+  ],
+  "benefits": [
+   {
+    "category": "지그재그",
+    "text": "지그재그 이용금액",
+    "rate_or_amount": "15% Z포인트",
+    "monthly_cap": "3천/1만2천/2만P",
+    "condition": "지그재그 이용액도 전월실적 포함(보도)"
+   },
+   {
+    "category": "일상",
+    "text": "스타벅스·투썸·폴바셋, 신세계·롯데·현대백화점, 이마트·롯데마트, 신라·신세계·롯데면세점(보도: 카카오T 택시 포함)",
+    "rate_or_amount": "10% Z포인트",
+    "monthly_cap": "3천/6천P",
+    "condition": null
+   },
+   {
+    "category": "구독",
+    "text": "주요 구독서비스",
+    "rate_or_amount": "청구할인",
+    "monthly_cap": "월 5천원",
+    "condition": "파트너 페이지 문구, 세부 확인 불가"
+   }
+  ],
+  "exclusions": [],
+  "promotions": [
+   {
+    "text": "지그재그 첫 결제 3만원 즉시할인·2만원 쿠폰·배송비 1,980원·3개월 10만원 이상 시 10만원 캐시백(최대 20만원 상당)",
+    "ends": "확인 불가"
+   },
+   {
+    "text": "9월 말까지 발급·10월 말까지 이용 시 지그재그 5% 추가(최대 20%)",
+    "ends": "2026-10-31"
+   }
+  ],
+  "recent_changes": [],
+  "target_text": null,
+  "issuance": "지그재그 앱(카카오스타일 모집대리) 신청, 지그재그페이 자동 등록(동의 시)",
+  "app_features": [
+   "Z포인트 10P부터 지그재그 결제에 사용, 유효기간 1년"
+  ],
+  "design_note": "Pink Edge 등 2종(파트너 페이지 '시선을 끌거나, 시선을 담거나')",
+  "tags": [
+   "plcc_brand",
+   "online_shop",
+   "dining_cafe",
+   "mart_daily",
+   "reward_point",
+   "tiered_perf",
+   "zero_floor"
+  ],
+  "genz_fit": "high",
+  "genz_fit_reason": "'2030 여성 대표 쇼핑 플랫폼'(신한 보도 문구) 전용 PLCC. 실적 미달에도 월 3천P 바닥이 있다.",
+  "source_url": "https://zigzag.kr/plcc/benefit",
+  "source_urls": [
+   "https://zigzag.kr/plcc/benefit",
+   "https://biz.sbs.co.kr/amp/article/20000331931",
+   "https://byline.network/2026/09/01_2918273/"
+  ],
+  "checked": "2026-10-27",
+  "confidence": "medium",
+  "note": "신한카드 공식 상세 페이지 URL은 찾지 못함. 파트너(카카오스타일) 공식 혜택 페이지와 언론으로 확인. 여신협회 심의필 제2026-C1h-12799호(2026.08.25~2027.08.24)."
+ },
+ {
+  "id": "mshinhan35",
+  "name": "CU Npay 카드",
+  "official_name": "CU Npay 카드",
+  "issuer": "신한카드",
+  "type": "credit",
+  "on_sale": true,
+  "role": "plcc",
+  "launched": "2024-07-31(연혁 2024-10)",
+  "annual_fee_won": {
+   "domestic": 16000,
+   "overseas": 19000
+  },
+  "tiers": [
+   {
+    "min_prev_month_spend_won": 0,
+    "benefit_summary": "혜택 없음"
+   },
+   {
+    "min_prev_month_spend_won": 400000,
+    "benefit_summary": "CU 할인 1만원·Npay 적립 1만P"
+   },
+   {
+    "min_prev_month_spend_won": 700000,
+    "benefit_summary": "1만5천원·2만P"
+   },
+   {
+    "min_prev_month_spend_won": 1000000,
+    "benefit_summary": "2만원·2만5천P"
+   }
+  ],
+  "benefits": [
+   {
+    "category": "CU",
+    "text": "네이버페이 QR 결제 20%, 실물카드·지정 간편결제 15% 현장할인",
+    "rate_or_amount": "15~20%",
+    "monthly_cap": "1만~2만원",
+    "condition": "1회 5천원, 담배·주류 등 제외"
+   },
+   {
+    "category": "네이버페이 적립",
+    "text": "CU 외 오프라인 네이버페이 QR·N×삼성페이 5%, 온라인 네이버페이 2%",
+    "rate_or_amount": "2~5%",
+    "monthly_cap": "1만~2.5만P",
+    "condition": "1회 5천P"
+   },
+   {
+    "category": "멤버십",
+    "text": "CU 멤버십 자동 가입",
+    "rate_or_amount": "-",
+    "monthly_cap": null,
+    "condition": null
+   }
+  ],
+  "exclusions": [
+   "전월실적은 간편결제(네이버페이·SOL페이)·CU·대형마트 등 지정 결제만 인정(그 외 오프라인은 간편결제만 반영)"
+  ],
+  "promotions": [],
+  "recent_changes": [],
+  "target_text": "CU에서 아끼고 네이버페이로 더 받자!",
+  "issuance": "발급 시 네이버페이 자동 등록",
+  "app_features": [],
+  "design_note": null,
+  "tags": [
+   "plcc_brand",
+   "mart_daily",
+   "online_shop",
+   "paymethod_bonus",
+   "reward_discount",
+   "reward_point",
+   "tiered_perf"
+  ],
+  "genz_fit": "mid",
+  "genz_fit_reason": "편의점·네이버페이를 자주 쓰는 20대에게 맞다. 다만 실적이 40만원부터이고, 결제수단별로 실적 인정 범위가 갈려 복잡하다.",
+  "source_url": "https://www.shinhancard.com/pconts/html/card/apply/credit/1229798_2207.html",
+  "source_urls": [
+   "https://www.shinhancard.com/pconts/html/card/apply/credit/1229798_2207.html"
+  ],
+  "checked": "2026-10-27",
+  "confidence": "high",
+  "note": "기존 DB gc14와 일치."
+ },
+ {
+  "id": "mshinhan36",
+  "name": "신한카드 Haru",
+  "official_name": "신한카드 Haru(Hoshino Resorts)",
+  "issuer": "신한카드",
+  "type": "credit",
+  "on_sale": true,
+  "role": "plcc",
+  "launched": "2025-03-13(공식; 보도 2025-06-29)",
+  "annual_fee_won": {
+   "domestic": 30000,
+   "overseas": 30000
+  },
+  "tiers": [
+   {
+    "min_prev_month_spend_won": 0,
+    "benefit_summary": "혜택 없음"
+   },
+   {
+    "min_prev_month_spend_won": 300000,
+    "benefit_summary": "해외 2%(월 3만P)+일본 1.5% 추가(월 10만P), 국내 1%(월 5만P)"
+   }
+  ],
+  "benefits": [
+   {
+    "category": "해외",
+    "text": "해외 일시불",
+    "rate_or_amount": "2%",
+    "monthly_cap": "3만P",
+    "condition": "URS(JCB)"
+   },
+   {
+    "category": "일본",
+    "text": "일본 결제 추가",
+    "rate_or_amount": "1.5%(합 3.5%)",
+    "monthly_cap": "10만P",
+    "condition": null
+   },
+   {
+    "category": "국내",
+    "text": "국내 결제",
+    "rate_or_amount": "1%",
+    "monthly_cap": "5만P",
+    "condition": null
+   },
+   {
+    "category": "호시노리조트",
+    "text": "호시노야·카이·리조나레·OMO 숙박",
+    "rate_or_amount": "최대 30%",
+    "monthly_cap": null,
+    "condition": null
+   }
+  ],
+  "exclusions": [],
+  "promotions": [
+   {
+    "text": "일본 오프라인 합산 3만엔 이상 10% 캐시백(4회차)·특정 가맹점 20% 추가",
+    "ends": "2026-06-30(종료)"
+   }
+  ],
+  "recent_changes": [],
+  "target_text": null,
+  "issuance": null,
+  "app_features": [],
+  "design_note": null,
+  "tags": [
+   "plcc_brand",
+   "travel_fx",
+   "reward_point",
+   "tiered_perf"
+  ],
+  "genz_fit": "mid",
+  "genz_fit_reason": "일본 여행 3.5%로 20대 일본 여행 수요와 맞지만 연회비 3만원, 국내 실적 30만원 조건.",
+  "source_url": "https://www.shinhancard.com/pconts/html/card/apply/credit/1233082_2207.html",
+  "source_urls": [
+   "https://www.shinhancard.com/pconts/html/card/apply/credit/1233082_2207.html",
+   "https://www.shinhancard.com/pconts/company/html/promotion/press/1234731_3999.html"
+  ],
+  "checked": "2026-10-27",
+  "confidence": "high",
+  "note": "기존 DB gc09와 일치. Local(국내전용)도 30,000원."
+ },
+ {
+  "id": "mshinhan37",
+  "name": "GS ALL 신한카드",
+  "official_name": "GS ALL 신한카드",
+  "issuer": "신한카드",
+  "type": "credit",
+  "on_sale": true,
+  "role": "plcc",
+  "launched": "2025-03-21(보도 2025-07-02)",
+  "annual_fee_won": {
+   "domestic": 15000,
+   "overseas": 18000
+  },
+  "tiers": [
+   {
+    "min_prev_month_spend_won": 0,
+    "benefit_summary": "GS Pay 결제 2% 추가(월 5천P)"
+   },
+   {
+    "min_prev_month_spend_won": 400000,
+    "benefit_summary": "GS25 10%·GS SHOP/THE FRESH 5%(월 2만P), 기타 0.1%"
+   }
+  ],
+  "benefits": [
+   {
+    "category": "GS리테일",
+    "text": "GS25 10%, GS SHOP·GS THE FRESH 5%",
+    "rate_or_amount": "5~10% GS ALL 포인트",
+    "monthly_cap": "2만P",
+    "condition": "GS25 5천원·기타 1만원 이상, 일 1만P"
+   },
+   {
+    "category": "GS Pay",
+    "text": "GS Pay 결제 추가",
+    "rate_or_amount": "2%",
+    "monthly_cap": "5천P",
+    "condition": "실적 무관"
+   }
+  ],
+  "exclusions": [],
+  "promotions": [],
+  "recent_changes": [],
+  "target_text": null,
+  "issuance": null,
+  "app_features": [],
+  "design_note": null,
+  "tags": [
+   "plcc_brand",
+   "mart_daily",
+   "online_shop",
+   "paymethod_bonus",
+   "reward_point",
+   "tiered_perf"
+  ],
+  "genz_fit": "mid",
+  "genz_fit_reason": "편의점 GS25 10%는 20대 친화적이지만 실적 40만원. 체크 버전(2025-12, 실적 20만원) 있음.",
+  "source_url": "https://www.shinhancard.com/pconts/html/card/apply/credit/1233141_2207.html",
+  "source_urls": [
+   "https://www.shinhancard.com/pconts/html/card/apply/credit/1233141_2207.html",
+   "https://www.shinhancard.com/pconts/html/card/apply/check/1236700_2206.html"
+  ],
+  "checked": "2026-10-27",
+  "confidence": "high",
+  "note": ""
+ },
+ {
+  "id": "mshinhan38",
+  "name": "신세계 신한카드 Best Fit",
+  "official_name": "신세계 신한카드 Best Fit",
+  "issuer": "신한카드",
+  "type": "credit",
+  "on_sale": true,
+  "role": "plcc",
+  "launched": "2025-10-02(연혁 2025-11)",
+  "annual_fee_won": {
+   "domestic": 15000,
+   "overseas": 18000
+  },
+  "tiers": [
+   {
+    "min_prev_month_spend_won": 300000,
+    "benefit_summary": "신세계백화점 2.5%(SSGPAY 3%)·국내 0.7%·해외 2%, 한도 없음"
+   }
+  ],
+  "benefits": [
+   {
+    "category": "백화점",
+    "text": "신세계백화점 2.5%(SSGPAY 3%)",
+    "rate_or_amount": "2.5~3%",
+    "monthly_cap": "없음",
+    "condition": null
+   },
+   {
+    "category": "적립",
+    "text": "국내 가맹점",
+    "rate_or_amount": "0.7%",
+    "monthly_cap": "없음",
+    "condition": null
+   },
+   {
+    "category": "해외",
+    "text": "해외 일시불",
+    "rate_or_amount": "2%",
+    "monthly_cap": "없음",
+    "condition": null
+   }
+  ],
+  "exclusions": [],
+  "promotions": [],
+  "recent_changes": [],
+  "target_text": "한도없이 누리는 3%의 가치.",
+  "issuance": null,
+  "app_features": [],
+  "design_note": null,
+  "tags": [
+   "plcc_brand",
+   "no_cap",
+   "simple_flat",
+   "travel_fx",
+   "reward_point",
+   "reward_discount",
+   "paymethod_bonus"
+  ],
+  "genz_fit": "low",
+  "genz_fit_reason": "백화점 고객용. 다만 '전월 30만원+무한도 0.7%/해외 2%'는 20대가 쓸 만한 단순 구조다.",
+  "source_url": "https://www.shinhancard.com/pconts/html/card/apply/credit/1236008_2207.html",
+  "source_urls": [
+   "https://www.shinhancard.com/pconts/html/card/apply/credit/1236008_2207.html"
+  ],
+  "checked": "2026-10-27",
+  "confidence": "high",
+  "note": ""
+ },
+ {
+  "id": "mshinhan39",
+  "name": "카카오뱅크 신한카드 Time",
+  "official_name": "카카오뱅크 신한카드 Time",
+  "issuer": "신한카드",
+  "type": "credit",
+  "on_sale": true,
+  "role": "plcc",
+  "launched": "2023-07-18",
+  "annual_fee_won": {
+   "domestic": 15000,
+   "overseas": 18000
+  },
+  "tiers": [
+   {
+    "min_prev_month_spend_won": 400000,
+    "benefit_summary": "Time 할인 1만원, 교통 1만원"
+   },
+   {
+    "min_prev_month_spend_won": 800000,
+    "benefit_summary": "Time 2만원"
+   },
+   {
+    "min_prev_month_spend_won": 1200000,
+    "benefit_summary": "Time 4만원"
+   }
+  ],
+  "benefits": [
+   {
+    "category": "Time",
+    "text": "07~10시 카페·편의점, 11~14시 카페·음식점, 18~22시 배달앱·쿠팡/무신사/컬리·야놀자/여기어때",
+    "rate_or_amount": "10%",
+    "monthly_cap": "1만~4만원",
+    "condition": "건별 최소금액"
+   },
+   {
+    "category": "교통",
+    "text": "버스·지하철",
+    "rate_or_amount": "10%",
+    "monthly_cap": "1만원",
+    "condition": null
+   },
+   {
+    "category": "카카오T 택시",
+    "text": "00~22시 2천원, 22~24시 4천원",
+    "rate_or_amount": "정액",
+    "monthly_cap": null,
+    "condition": "1만원 이상"
+   }
+  ],
+  "exclusions": [],
+  "promotions": [],
+  "recent_changes": [],
+  "target_text": "Time For us to Shine.",
+  "issuance": "카카오뱅크 앱",
+  "app_features": [],
+  "design_note": null,
+  "tags": [
+   "plcc_brand",
+   "bank_bundle",
+   "time_slot",
+   "dining_cafe",
+   "delivery",
+   "online_shop",
+   "transit",
+   "reward_discount",
+   "tiered_perf"
+  ],
+  "genz_fit": "high",
+  "genz_fit_reason": "20대 하루 동선(아침 커피·점심·저녁 배달·심야 택시)을 시간대로 설계했다.",
+  "source_url": "https://www.shinhancard.com/pconts/html/card/apply/credit/1223344_2207.html",
+  "source_urls": [
+   "https://www.shinhancard.com/pconts/html/card/apply/credit/1223344_2207.html"
+  ],
+  "checked": "2026-10-27",
+  "confidence": "medium",
+  "note": "심의필이 2023년이다. 판매 중으로 보이지만 최근 갱신은 확인하지 못함."
+ },
+ {
+  "id": "mshinhan40",
+  "name": "요기요 신한카드",
+  "official_name": "요기요 신한카드",
+  "issuer": "신한카드",
+  "type": "credit",
+  "on_sale": true,
+  "role": "plcc",
+  "launched": "2020-10-26",
+  "annual_fee_won": {
+   "domestic": 24000,
+   "overseas": 27000
+  },
+  "tiers": [
+   {
+    "min_prev_month_spend_won": 500000,
+    "benefit_summary": "요기요 20%(월 2만원)+OTT 동시 이용 시 10% 캐시백(5천원), 홈Life"
+   }
+  ],
+  "benefits": [
+   {
+    "category": "요기요",
+    "text": "요기요 앱",
+    "rate_or_amount": "20%",
+    "monthly_cap": "2만원",
+    "condition": "건당 2천원"
+   },
+   {
+    "category": "홈Life",
+    "text": "OTT 15%, 온라인몰 건당 2천원, 사이렌오더 10%",
+    "rate_or_amount": "-",
+    "monthly_cap": "-",
+    "condition": null
+   }
+  ],
+  "exclusions": [],
+  "promotions": [],
+  "recent_changes": [],
+  "target_text": null,
+  "issuance": null,
+  "app_features": [],
+  "design_note": null,
+  "tags": [
+   "plcc_brand",
+   "delivery",
+   "subscription_ott",
+   "reward_discount"
+  ],
+  "genz_fit": "low",
+  "genz_fit_reason": "전월 50만원·연회비 2.4만원으로 문턱이 높다. 배민 밥친구가 더 낫다.",
+  "source_url": "https://www.shinhancard.com/pconts/html/card/apply/credit/1198877_2207.html",
+  "source_urls": [
+   "https://www.shinhancard.com/pconts/html/card/apply/credit/1198877_2207.html"
+  ],
+  "checked": "2026-10-27",
+  "confidence": "medium",
+  "note": "심의필 2023. 판매 지속 여부는 발급중단 문구가 없다는 것으로만 판단."
+ },
+ {
+  "id": "mshinhan41",
+  "name": "Deep Dream(신용)",
+  "official_name": "신한카드 Deep Dream",
+  "issuer": "신한카드",
+  "type": "credit",
+  "on_sale": false,
+  "role": "youth",
+  "launched": "2017-09-22",
+  "annual_fee_won": {
+   "domestic": 8000,
+   "overseas": 10000
+  },
+  "tiers": [
+   {
+    "min_prev_month_spend_won": 0,
+    "benefit_summary": "전월실적·한도 없이 0.7% 기본 적립(카드고릴라)"
+   }
+  ],
+  "benefits": [
+   {
+    "category": "기본",
+    "text": "전 가맹점",
+    "rate_or_amount": "0.7%(보도)",
+    "monthly_cap": "없음",
+    "condition": "실적 무관"
+   },
+   {
+    "category": "DREAM 영역",
+    "text": "5개 영역 추가·최다 영역 자동 최고 적립",
+    "rate_or_amount": "-",
+    "monthly_cap": null,
+    "condition": null
+   }
+  ],
+  "exclusions": [],
+  "promotions": [],
+  "recent_changes": [
+   "2024-09-04 신규 발급 중단(언론·카드고릴라). 공식 페이지에 '신규발급이 중단' 표기"
+  ],
+  "target_text": null,
+  "issuance": null,
+  "app_features": [],
+  "design_note": null,
+  "tags": [
+   "reward_point",
+   "spend_free",
+   "no_cap",
+   "auto_best",
+   "simple_flat"
+  ],
+  "genz_fit": "high",
+  "genz_fit_reason": "사회초년생 '첫 신용카드' 1순위로 꼽히던 무실적 적립 카드. 단종 뒤 자사 청년 신용카드의 무실적 공백이 생겼고, 2026-02 Simple Plan이 일부를 메운다.",
+  "source_url": "https://www.shinhancard.com/pconts/html/card/apply/credit/1188220_2207.html",
+  "source_urls": [
+   "https://www.shinhancard.com/pconts/html/card/apply/credit/1188220_2207.html",
+   "https://www.dailian.co.kr/news/view/1402983",
+   "https://www.card-gorilla.com/contents/detail/2712"
+  ],
+  "checked": "2026-10-27",
+  "confidence": "medium",
+  "note": "Deep Dream Platinum+도 같은 날 중단(보도)."
+ },
+ {
+  "id": "mshinhan42",
+  "name": "SOL Deep Dream 체크",
+  "official_name": "SOL Deep Dream 신한카드 체크",
+  "issuer": "신한카드",
+  "type": "debit",
+  "on_sale": false,
+  "role": "youth",
+  "launched": "2018-02-22",
+  "annual_fee_won": {
+   "domestic": 0,
+   "overseas": 0
+  },
+  "tiers": [],
+  "benefits": [
+   {
+    "category": "적립",
+    "text": "국내외 0.2%, Dream 영역 최대 1%",
+    "rate_or_amount": "0.2~1%",
+    "monthly_cap": null,
+    "condition": null
+   }
+  ],
+  "exclusions": [],
+  "promotions": [],
+  "recent_changes": [
+   "공식 페이지에 '신규 발급이 중단' 표기(중단일 확인 불가, 심의필 2026.10.07)"
+  ],
+  "target_text": null,
+  "issuance": null,
+  "app_features": [],
+  "design_note": null,
+  "tags": [
+   "check_card",
+   "reward_point",
+   "auto_best",
+   "bank_bundle"
+  ],
+  "genz_fit": "mid",
+  "genz_fit_reason": "Deep Dream 체크의 SOL 연계형.",
+  "source_url": "https://www.shinhancard.com/pconts/html/card/apply/check/1188339_2206.html",
+  "source_urls": [
+   "https://www.shinhancard.com/pconts/html/card/apply/check/1188339_2206.html"
+  ],
+  "checked": "2026-10-27",
+  "confidence": "low",
+  "note": "중단 시점 확인 불가."
+ },
+ {
+  "id": "mshinhan43",
+  "name": "토스페이 플러스 신한카드",
+  "official_name": "토스페이 플러스 신한카드",
+  "issuer": "신한카드",
+  "type": "credit",
+  "on_sale": false,
+  "role": "plcc",
+  "launched": "2024-11-12",
+  "annual_fee_won": {
+   "domestic": 1000,
+   "overseas": null
+  },
+  "tiers": [],
+  "benefits": [
+   {
+    "category": "형태",
+    "text": "실물카드 없는 모바일 단독카드(토스페이)",
+    "rate_or_amount": "-",
+    "monthly_cap": null,
+    "condition": null
+   }
+  ],
+  "exclusions": [],
+  "promotions": [],
+  "recent_changes": [
+   "공식 페이지에 '신규발급 및 유효기간 연장이 중단' 표기(중단일 확인 불가). 2026-06 Toss One 신한카드로 대체된 것으로 보임(해석)"
+  ],
+  "target_text": null,
+  "issuance": "모바일 단독(실물 없음), 가족·후불교통 불가",
+  "app_features": [],
+  "design_note": null,
+  "tags": [
+   "plcc_brand",
+   "paymethod_bonus"
+  ],
+  "genz_fit": "mid",
+  "genz_fit_reason": "연회비 1천원 디지털 전용 카드였다.",
+  "source_url": "https://www.shinhancard.com/pconts/html/card/apply/credit/1231088_2207.html",
+  "source_urls": [
+   "https://www.shinhancard.com/pconts/html/card/apply/credit/1231088_2207.html"
+  ],
+  "checked": "2026-10-27",
+  "confidence": "low",
+  "note": ""
+ }
+]

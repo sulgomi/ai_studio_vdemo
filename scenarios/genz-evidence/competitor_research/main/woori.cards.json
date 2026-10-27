@@ -1,0 +1,2249 @@
+[
+ {
+  "id": "mwoori01",
+  "name": "오하CHECK",
+  "official_name": "카드의정석 오하CHECK",
+  "issuer": "우리카드",
+  "type": "debit",
+  "on_sale": true,
+  "role": "youth",
+  "launched": "2023-07-20",
+  "annual_fee_won": {
+   "domestic": 0,
+   "overseas": 0
+  },
+  "tiers": [
+   {
+    "min_prev_month_spend_won": 200000,
+    "benefit_summary": "4개 영역 5% 캐시백, 영역별 월한도 SHOPPING·EAT 2천 / PLAY·LIFE 3천(통합 1만원)"
+   },
+   {
+    "min_prev_month_spend_won": 500000,
+    "benefit_summary": "영역별 4천/4천/6천/6천(통합 2만원)"
+   },
+   {
+    "min_prev_month_spend_won": 700000,
+    "benefit_summary": "영역별 6천/6천/9천/9천(통합 3만원)"
+   }
+  ],
+  "benefits": [
+   {
+    "category": "SHOPPING",
+    "text": "쿠팡(일반결제·쿠페이)·무신사·지그재그, 네이버페이·우리WON페이 온라인, 안경/렌즈 5% 캐시백",
+    "rate_or_amount": "5%",
+    "monthly_cap": "2천~6천원(실적별)",
+    "condition": "건당 최대 1천원, 전월 국내 20만원↑"
+   },
+   {
+    "category": "EAT",
+    "text": "스타벅스 사이렌오더, 배달의민족·쿠팡이츠·B마트, 마켓컬리(컬리패스 월 1회) 5% 캐시백",
+    "rate_or_amount": "5%",
+    "monthly_cap": "2천~6천원",
+    "condition": "건당 최대 1천원, 공식 앱 결제"
+   },
+   {
+    "category": "PLAY",
+    "text": "넷플릭스(광고형 제외)·멜론 정기결제, 인터파크·YES24·티켓링크·멜론티켓 5% 캐시백",
+    "rate_or_amount": "5%",
+    "monthly_cap": "3천~9천원",
+    "condition": "건당 최대 1천원"
+   },
+   {
+    "category": "LIFE",
+    "text": "시내버스·지하철 후불, 이동통신 자동납부(알뜰폰 일부 포함), 해외(Mastercard), 어학시험(TOEIC·OPIc·HSK·TEPS·TOEFL) 5% 캐시백",
+    "rate_or_amount": "5%",
+    "monthly_cap": "3천~9천원",
+    "condition": "건당 최대 1천원"
+   }
+  ],
+  "exclusions": [
+   "국세·지방세·공과금, 대학 등록금, 상품권·선불카드·기프트카드 구매·충전, 교통카드 충전, 고속버스, 정부지원금, 아파트관리비(임대료), 수수료·이자, 매출취소는 혜택·실적 제외(공식 페이지 공통 문구)",
+   "네이버페이·우리WON페이로 승인된 매출은 업종 캐시백 제외(간편결제 항목으로만 인정)",
+   "해외 가맹점 이용금액은 전월실적 불인정",
+   "잔여 통합 한도 이월 불가"
+  ],
+  "promotions": [],
+  "recent_changes": [
+   "다이노탱 디자인 신규 오픈(2025-12-12), 오픈 후 2년간 발급(공식 유의사항)",
+   "전신 NU 오하쳌(2021, BC 브랜드)에서 카드의정석 브랜드로 재출시(카드고릴라)"
+  ],
+  "target_text": "나의 생활패턴을 알아주는 든든한 카드!",
+  "issuance": "온라인·앱·영업점. 해외겸용(Mastercard)/국내전용. 청소년 가족카드 신청 가능 표시. 체크카드 소액신용한도(하이브리드, 월 최대 30만원) 신청 가능",
+  "app_features": [
+   "우리카드 앱에서 소액신용한도 신청/해지",
+   "해외원화결제 차단 설정(MY 메뉴)"
+  ],
+  "design_note": "다이노탱(캐릭터) 콜라보 디자인 선택 가능(2025-12-12 신규 오픈, 2년 한정). 과거 다이노탱 에디션 협업 후 3개월 평균 발급좌수 4,800→20,300좌(카드고릴라 보도)",
+  "tags": [
+   "check_card",
+   "reward_cashback",
+   "online_shop",
+   "delivery",
+   "dining_cafe",
+   "subscription_ott",
+   "transit",
+   "fixed_bills",
+   "travel_fx",
+   "tiered_perf",
+   "paymethod_bonus"
+  ],
+  "genz_fit": "high",
+  "genz_fit_reason": "무신사·지그재그·사이렌오더·배민·넷플릭스·공연티켓·어학시험까지 20대 소비처를 5% 한 가지 비율로 묶었다. 실적 20만원부터 시작한다. 다만 건당 1천원 상한이라 실제 환급은 월 1만~3만원 수준이다.",
+  "source_url": "https://m.wooricard.com/dcmw/yh1/crd/crd01/M1CRD101S02.do?cdPrdCd=102716",
+  "source_urls": [
+   "https://m.wooricard.com/dcmw/yh1/crd/crd01/M1CRD101S02.do?cdPrdCd=102716",
+   "https://m.wooricard.com/llms.txt",
+   "https://www.card-gorilla.com/contents/detail/1933",
+   "https://www.card-gorilla.com/contents/detail/1851"
+  ],
+  "checked": "2026-10-27",
+  "confidence": "high",
+  "note": "공식 상세 페이지(헤드리스 브라우저 렌더링) 직접 확인. 통합 월 캐시백 한도는 페이지 내 이미지(표)로 게시돼 이미지로 판독. 페이지 하단 '2024년 12월 현재 기준' 표기, 심의필 2024-A02269(유효 2025-09-29까지) 표기라 최신 갱신 여부는 확인 불가."
+ },
+ {
+  "id": "mwoori02",
+  "name": "칼퇴 CHECK",
+  "official_name": "카드의정석2 칼퇴 CHECK",
+  "issuer": "우리카드",
+  "type": "debit",
+  "on_sale": true,
+  "role": "youth",
+  "launched": "2024-09-23",
+  "annual_fee_won": {
+   "domestic": 0,
+   "overseas": 0
+  },
+  "tiers": [
+   {
+    "min_prev_month_spend_won": 300000,
+    "benefit_summary": "통합 월 한도 1만원(칼퇴 4천 + 갓생/교통 6천)"
+   },
+   {
+    "min_prev_month_spend_won": 600000,
+    "benefit_summary": "2만원(칼퇴 8천 + 갓생/교통 1.2만)"
+   },
+   {
+    "min_prev_month_spend_won": 1200000,
+    "benefit_summary": "4만원(칼퇴 1.5만 + 갓생/교통 2.5만)"
+   }
+  ],
+  "benefits": [
+   {
+    "category": "칼퇴(저녁 6~11시)",
+    "text": "음식점·주점(건당 3만원↑, 건당 최대 3천원), 카페 5개 브랜드·편의점(건당 1만원↑, 최대 2천원) 5% 캐시백",
+    "rate_or_amount": "5%",
+    "monthly_cap": "4천~1.5만원",
+    "condition": "저녁 6~11시 결제, 일 1회·월 3회(편의점 월 2회)"
+   },
+   {
+    "category": "갓생",
+    "text": "헬스클럽(10만원↑ 월 1회 최대 5천원), 올리브영(건당 1만원↑ 최대 2천원), 밀리의서재 정기결제(최대 2천원) 5% 캐시백",
+    "rate_or_amount": "5%",
+    "monthly_cap": "갓생/교통 합산 6천~2.5만원",
+    "condition": "전월 국내외 30만원↑"
+   },
+   {
+    "category": "교통",
+    "text": "버스·지하철(월 5만원↑ 월 1회 최대 3천원), 택시·카카오T, 쏘카 5% 캐시백",
+    "rate_or_amount": "5%",
+    "monthly_cap": "갓생/교통 합산",
+    "condition": "일 1회·월 3회, 건당 최대 2천원"
+   }
+  ],
+  "exclusions": [
+   "국세·지방세·공과금, 대학 등록금, 상품권·선불카드·기프트카드 구매·충전, 교통카드 충전, 고속버스, 정부지원금, 아파트관리비(임대료), 수수료·이자, 매출취소는 혜택·실적 제외(공식 페이지 공통 문구)",
+   "간편결제 명칭으로 승인된 매출(네이버페이·카카오페이 등) 캐시백 제외",
+   "다른 프로모션과 중복 불가"
+  ],
+  "promotions": [],
+  "recent_changes": [],
+  "target_text": "다채로운 WOORI의 시간",
+  "issuance": "만 18세 이상. 모바일카드 신청 가능. VISA는 '시계', Mastercard는 '스피드' 디자인만 발급",
+  "app_features": [
+   "우리카드 앱에서 소액신용한도(하이브리드) 신청"
+  ],
+  "design_note": "디자인 스튜디오 모스그래픽(mohsgraphic) 협업 형광 패턴 2종(브랜드별 고정, 커스텀 불가)",
+  "tags": [
+   "check_card",
+   "reward_cashback",
+   "time_slot",
+   "dining_cafe",
+   "mart_daily",
+   "transit",
+   "tiered_perf",
+   "txn_threshold",
+   "count_based"
+  ],
+  "genz_fit": "high",
+  "genz_fit_reason": "'칼퇴 후 저녁', '갓생(헬스·올리브영·전자책)'처럼 사회초년생 직장인 생활을 시간대·라이프스타일 이름으로 묶었다. 시간대 조건(18~23시)이 있는 드문 체크카드다. 다만 건당 최소금액과 횟수 조건이 많아 복잡하다.",
+  "source_url": "https://m.wooricard.com/dcmw/yh1/crd/crd01/M1CRD101S02.do?cdPrdCd=102482",
+  "source_urls": [
+   "https://m.wooricard.com/dcmw/yh1/crd/crd01/M1CRD101S02.do?cdPrdCd=102482",
+   "https://m.wooricard.com/llms.txt"
+  ],
+  "checked": "2026-10-27",
+  "confidence": "high",
+  "note": "공식 페이지 직접 확인(2026년 5월 기준 표기, 심의필 2026-C00675). 공식 타깃 문구에 연령 표기는 없고 디자인 설명에 '갓생 직장인'이 나온다."
+ },
+ {
+  "id": "mwoori03",
+  "name": "T-WON 체크",
+  "official_name": "카드의정석2 T-WON 체크",
+  "issuer": "우리카드",
+  "type": "debit",
+  "on_sale": true,
+  "role": "youth",
+  "launched": "2026-04-01",
+  "annual_fee_won": {
+   "domestic": 0,
+   "overseas": 0
+  },
+  "tiers": [
+   {
+    "min_prev_month_spend_won": 200000,
+    "benefit_summary": "4개 영역 5% 캐시백, 영역별 월한도 SHOPPING·EAT 2천 / PLAY·LIFE 3천"
+   },
+   {
+    "min_prev_month_spend_won": 500000,
+    "benefit_summary": "영역별 4천·4천·6천·6천"
+   },
+   {
+    "min_prev_month_spend_won": 700000,
+    "benefit_summary": "영역별 6천·6천·9천·9천"
+   }
+  ],
+  "benefits": [
+   {
+    "category": "SHOPPING",
+    "text": "쿠팡·무신사·지그재그, 네이버페이·우리WON페이, 안경점 5% 캐시백",
+    "rate_or_amount": "5%",
+    "monthly_cap": "실적별",
+    "condition": "건당 최대 1천원"
+   },
+   {
+    "category": "EAT",
+    "text": "스타벅스 사이렌오더, 배민·쿠팡이츠·B마트·컬리패스 5% 캐시백",
+    "rate_or_amount": "5%",
+    "monthly_cap": "실적별",
+    "condition": "건당 최대 1천원"
+   },
+   {
+    "category": "PLAY",
+    "text": "넷플릭스·멜론 정기결제, NOL인터파크·YES24·티켓링크·멜론티켓 5% 캐시백",
+    "rate_or_amount": "5%",
+    "monthly_cap": "실적별",
+    "condition": "건당 최대 1천원"
+   },
+   {
+    "category": "LIFE",
+    "text": "대중교통 후불, 이동통신, 해외(Mastercard), 어학시험 5% 캐시백",
+    "rate_or_amount": "5%",
+    "monthly_cap": "실적별",
+    "condition": "건당 최대 1천원"
+   }
+  ],
+  "exclusions": [
+   "국세·지방세·공과금, 대학 등록금, 상품권·선불카드·기프트카드 구매·충전, 교통카드 충전, 고속버스, 정부지원금, 아파트관리비(임대료), 수수료·이자, 매출취소는 혜택·실적 제외(공식 페이지 공통 문구)",
+   "네이버페이·우리WON페이로 승인된 매출은 업종 캐시백 제외(간편결제 항목으로만 인정)"
+  ],
+  "promotions": [],
+  "recent_changes": [],
+  "target_text": "V6의 영광을 우리와 함께",
+  "issuance": "만 18세 이상. 해외겸용(Mastercard)/국내전용",
+  "app_features": [],
+  "design_note": "스포츠·e스포츠 팀 테마 카드로 보이나 제휴 팀명은 페이지 텍스트에서 확인 불가",
+  "tags": [
+   "check_card",
+   "reward_cashback",
+   "online_shop",
+   "delivery",
+   "subscription_ott",
+   "transit",
+   "travel_fx",
+   "tiered_perf",
+   "plcc_brand"
+  ],
+  "genz_fit": "high",
+  "genz_fit_reason": "오하CHECK와 혜택 구조가 같은 팬덤 에디션이다. 20대 소비처 5%에 팀 팬심을 얹었다.",
+  "source_url": "https://m.wooricard.com/ai-data/cardDetail_standardTwoncheck.html",
+  "source_urls": [
+   "https://m.wooricard.com/ai-data/cardDetail_standardTwoncheck.html",
+   "https://m.wooricard.com/sitemap.xml"
+  ],
+  "checked": "2026-10-27",
+  "confidence": "medium",
+  "note": "우리카드 공식 AI용 정적 페이지(ai-data) 확인. 2026-04-01 출시, 심의필 2026-C00765. 한도표(20만~50만 2/2/3/3천, 50만~70만 4/4/6/6천, 70만↑ 6/6/9/9천)는 HTML 표에서 확인. 'V6' 대상 팀은 확인 불가. llms.txt 목록에는 없어 판매 채널 범위는 확인 불가."
+ },
+ {
+  "id": "mwoori04",
+  "name": "LCK 우리체크",
+  "official_name": "카드의정석 LCK 우리체크",
+  "issuer": "우리카드",
+  "type": "debit",
+  "on_sale": true,
+  "role": "plcc",
+  "launched": "2023-08-21",
+  "annual_fee_won": {
+   "domestic": 0,
+   "overseas": 0
+  },
+  "tiers": [
+   {
+    "min_prev_month_spend_won": 0,
+    "benefit_summary": "국내외 0.2% 모아포인트 적립(한도 없음)"
+   },
+   {
+    "min_prev_month_spend_won": 300000,
+    "benefit_summary": "추가 1천P + 4대 일상영역 특별적립 1만P(월 1회·연 4회)"
+   },
+   {
+    "min_prev_month_spend_won": 600000,
+    "benefit_summary": "추가 2천P"
+   },
+   {
+    "min_prev_month_spend_won": 900000,
+    "benefit_summary": "추가 3천P"
+   }
+  ],
+  "benefits": [
+   {
+    "category": "기본",
+    "text": "국내외 가맹점 0.2% 적립",
+    "rate_or_amount": "0.2%",
+    "monthly_cap": "없음",
+    "condition": "실적 조건 없음"
+   },
+   {
+    "category": "추가",
+    "text": "월 이용실적 30/60/90만원마다 1천/2천/3천 포인트 추가 적립",
+    "rate_or_amount": "최대 3천P",
+    "monthly_cap": "3천P",
+    "condition": "다음달 20일 적립"
+   },
+   {
+    "category": "4대 일상영역 특별",
+    "text": "공연티켓(인터파크·YES24·멜론·티켓링크), 놀이공원/워터파크, 영화관(CGV·롯데·메가박스), 여행(야놀자·여기어때·마이리얼트립) 1만원 적립",
+    "rate_or_amount": "1만P",
+    "monthly_cap": "월 1회, 연 4회",
+    "condition": "건당 1만원↑, 전월 30만원↑"
+   }
+  ],
+  "exclusions": [
+   "국세·지방세·공과금, 대학 등록금, 상품권·선불카드·기프트카드 구매·충전, 교통카드 충전, 고속버스, 정부지원금, 아파트관리비(임대료), 수수료·이자, 매출취소는 혜택·실적 제외(공식 페이지 공통 문구)",
+   "특별/추가 적립은 발급 첫 달 미제공"
+  ],
+  "promotions": [],
+  "recent_changes": [],
+  "target_text": "We Make Legends",
+  "issuance": "해외겸용(Mastercard)/국내전용, 소액신용한도 신청 가능",
+  "app_features": [
+   "모아포인트 → 우리WON멤버스 가입 시 우리WON꿀머니로 전환·적립"
+  ],
+  "design_note": "LCK(리그오브레전드 챔피언스 코리아) 테마. '소울파이터' 디자인은 한정판(재발급 시 기본 디자인)",
+  "tags": [
+   "check_card",
+   "reward_point",
+   "plcc_brand",
+   "experience_category_pack",
+   "tiered_perf",
+   "count_based",
+   "txn_threshold"
+  ],
+  "genz_fit": "high",
+  "genz_fit_reason": "e스포츠(LCK) 팬덤과 공연·놀이공원·영화·여행 같은 경험 소비를 묶었다. 다만 적립률 자체는 0.2%로 낮아 팬심 의존형이다.",
+  "source_url": "https://m.wooricard.com/dcmw/yh1/crd/crd01/M1CRD101S02.do?cdPrdCd=103116",
+  "source_urls": [
+   "https://m.wooricard.com/dcmw/yh1/crd/crd01/M1CRD101S02.do?cdPrdCd=103116",
+   "https://m.wooricard.com/llms.txt"
+  ],
+  "checked": "2026-10-27",
+  "confidence": "high",
+  "note": "공식 페이지 직접 확인(2023년 8월 기준 표기, 심의필 2023-C01640). 2024년 이후 혜택 변경 기록은 페이지에 없음."
+ },
+ {
+  "id": "mwoori05",
+  "name": "KREAM 체크",
+  "official_name": "KREAM 체크카드",
+  "issuer": "우리카드",
+  "type": "debit",
+  "on_sale": true,
+  "role": "plcc",
+  "launched": "2023-12-26",
+  "annual_fee_won": {
+   "domestic": 0,
+   "overseas": 0
+  },
+  "tiers": [
+   {
+    "min_prev_month_spend_won": 0,
+    "benefit_summary": "국내외 0.2% 청구할인"
+   },
+   {
+    "min_prev_month_spend_won": 200000,
+    "benefit_summary": "KREAM 5% 청구할인(건당 1천원, 월 5천원)"
+   }
+  ],
+  "benefits": [
+   {
+    "category": "KREAM",
+    "text": "KREAM 이용금액 5% 청구할인",
+    "rate_or_amount": "5%",
+    "monthly_cap": "5천원",
+    "condition": "전월 국내외 20만원↑, 건당 최대 1천원"
+   },
+   {
+    "category": "기본",
+    "text": "국내외 가맹점 0.2% 청구할인",
+    "rate_or_amount": "0.2%",
+    "monthly_cap": "없음",
+    "condition": "실적 조건 없음"
+   }
+  ],
+  "exclusions": [
+   "국세·지방세·공과금, 대학 등록금, 상품권·선불카드·기프트카드 구매·충전, 교통카드 충전, 고속버스, 정부지원금, 아파트관리비(임대료), 수수료·이자, 매출취소는 혜택·실적 제외(공식 페이지 공통 문구)",
+   "KREAM 이용금액은 전월실적 불인정",
+   "간편결제 명칭 승인·백화점 등 입점 매장은 0.2%만 적용"
+  ],
+  "promotions": [],
+  "recent_changes": [],
+  "target_text": null,
+  "issuance": "해외겸용(VISA)/국내전용",
+  "app_features": [],
+  "design_note": null,
+  "tags": [
+   "check_card",
+   "plcc_brand",
+   "online_shop",
+   "reward_discount",
+   "tiered_perf"
+  ],
+  "genz_fit": "mid",
+  "genz_fit_reason": "리셀·스니커즈 플랫폼 KREAM은 20대 남성 수요가 큰 채널이다. 그러나 월 5천원 한도라 혜택이 상징적인 수준이다.",
+  "source_url": "https://m.wooricard.com/dcmw/yh1/crd/crd01/M1CRD101S02.do?cdPrdCd=103117",
+  "source_urls": [
+   "https://m.wooricard.com/dcmw/yh1/crd/crd01/M1CRD101S02.do?cdPrdCd=103117",
+   "https://m.wooricard.com/llms.txt"
+  ],
+  "checked": "2026-10-27",
+  "confidence": "high",
+  "note": "공식 페이지 확인(2024년 2월 기준 표기). 연령 타깃 문구 없음."
+ },
+ {
+  "id": "mwoori06",
+  "name": "위비트래블 체크",
+  "official_name": "위비트래블 체크카드",
+  "issuer": "우리카드",
+  "type": "debit",
+  "on_sale": true,
+  "role": "youth",
+  "launched": "2024-05-27",
+  "annual_fee_won": {
+   "domestic": 0,
+   "overseas": 0
+  },
+  "tiers": [
+   {
+    "min_prev_month_spend_won": 0,
+    "benefit_summary": "해외 결제 수수료(브랜드 1%·서비스 US$0.5) 면제, 외화계좌 현지통화 직접 인출"
+   },
+   {
+    "min_prev_month_spend_won": 200000,
+    "benefit_summary": "해외·간편결제·쇼핑·푸드·일상 5% 캐시백, 통합 월 1만원"
+   },
+   {
+    "min_prev_month_spend_won": 500000,
+    "benefit_summary": "통합 월 2만원"
+   },
+   {
+    "min_prev_month_spend_won": 700000,
+    "benefit_summary": "통합 월 3만원"
+   }
+  ],
+  "benefits": [
+   {
+    "category": "해외 수수료",
+    "text": "해외 가맹점 국제브랜드 수수료 1%·해외서비스 수수료 건당 US$0.5 면제",
+    "rate_or_amount": "면제",
+    "monthly_cap": "없음",
+    "condition": "실적·한도 없음"
+   },
+   {
+    "category": "해외",
+    "text": "해외 온/오프라인 5% 캐시백",
+    "rate_or_amount": "5%",
+    "monthly_cap": "2천~6천원",
+    "condition": "건당 최대 1천원"
+   },
+   {
+    "category": "쇼핑",
+    "text": "우리WON페이·네이버페이(온라인), 쿠팡·무신사·29CM(온라인), 올리브영(오프라인) 5% 캐시백",
+    "rate_or_amount": "5%",
+    "monthly_cap": "2천~6천원",
+    "condition": "건당 최대 1천원"
+   },
+   {
+    "category": "푸드",
+    "text": "스타벅스 사이렌오더, 배민·쿠팡이츠·컬리 5% 캐시백",
+    "rate_or_amount": "5%",
+    "monthly_cap": "3천~9천원",
+    "condition": "건당 최대 1천원"
+   },
+   {
+    "category": "일상",
+    "text": "시내버스·지하철, SKT·KT·LGU+ 자동납부 5% 캐시백",
+    "rate_or_amount": "5%",
+    "monthly_cap": "3천~9천원",
+    "condition": "알뜰폰 제외"
+   }
+  ],
+  "exclusions": [
+   "국세·지방세·공과금, 대학 등록금, 상품권·선불카드·기프트카드 구매·충전, 교통카드 충전, 고속버스, 정부지원금, 아파트관리비(임대료), 수수료·이자, 매출취소는 혜택·실적 제외(공식 페이지 공통 문구)",
+   "해외원화결제(DCC) 이용 불가",
+   "해외 ATM 인출 시 브랜드 1%·건당 US$3 수수료 부과",
+   "해외 가맹점 이용금액은 전월실적 불인정"
+  ],
+  "promotions": [],
+  "recent_changes": [
+   "2025-09-22 카드개편 주석 확인(페이지 HTML) — 혜택 영역이 해외·쇼핑·푸드·일상 4개 영역으로 정리됨(변경 전 내용은 확인 불가)",
+   "출시 당시 공항라운지 연 2회는 2024-12-31까지 프로모션(언론)"
+  ],
+  "target_text": "우리 해외여행의 A TO Z",
+  "issuance": "우리WON뱅킹 앱 전용 신청(PC는 QR). 만 17세 이상(가족회원 만 12세↑). 우리은행 외화·원화 2개 계좌 필수",
+  "app_features": [
+   "우리WON뱅킹 앱에서 외화 충전·외화결제계좌 연결"
+  ],
+  "design_note": null,
+  "tags": [
+   "check_card",
+   "travel_fx",
+   "bank_bundle",
+   "reward_cashback",
+   "online_shop",
+   "delivery",
+   "dining_cafe",
+   "transit",
+   "tiered_perf"
+  ],
+  "genz_fit": "high",
+  "genz_fit_reason": "20대 첫 해외여행 수요가 큰 트래블 체크 시장에 들어온 은행계 카드다. 국내 5% 캐시백까지 붙여 평소에도 쓰게 만들었다.",
+  "source_url": "https://m.wooricard.com/dcmw/yh1/crd/crd01/M1CRD101S02.do?cdPrdCd=103489",
+  "source_urls": [
+   "https://m.wooricard.com/dcmw/yh1/crd/crd01/M1CRD101S02.do?cdPrdCd=103489",
+   "https://m.wooricard.com/llms.txt",
+   "https://www.smarttoday.co.kr/ko-kr/articles/52066"
+  ],
+  "checked": "2026-10-27",
+  "confidence": "high",
+  "note": "공식 페이지 확인(2026년 8월 기준, 심의필 2026-A02435). 발급 좌수는 확인 불가."
+ },
+ {
+  "id": "mwoori07",
+  "name": "위비트래블 J 체크",
+  "official_name": "위비트래블 J 체크카드",
+  "issuer": "우리카드",
+  "type": "debit",
+  "on_sale": true,
+  "role": "youth",
+  "launched": "2025-10-13",
+  "annual_fee_won": {
+   "domestic": 0,
+   "overseas": 0
+  },
+  "tiers": [
+   {
+    "min_prev_month_spend_won": 0,
+    "benefit_summary": "해외 수수료 면제"
+   },
+   {
+    "min_prev_month_spend_won": 200000,
+    "benefit_summary": "해외 10%·국내 쇼핑/푸드/일상 5% 캐시백(통합 1만원, 건당 1천원)"
+   },
+   {
+    "min_prev_month_spend_won": 300000,
+    "benefit_summary": "일본 3대 편의점·스타벅스/맥도날드 50% 캐시백(반기 5천원·연 1만원)"
+   },
+   {
+    "min_prev_month_spend_won": 500000,
+    "benefit_summary": "통합 2만원"
+   },
+   {
+    "min_prev_month_spend_won": 700000,
+    "benefit_summary": "통합 3만원"
+   }
+  ],
+  "benefits": [
+   {
+    "category": "일본 편의점",
+    "text": "세븐일레븐·패밀리마트·로손 50% 캐시백",
+    "rate_or_amount": "50%",
+    "monthly_cap": "반기 5천원, 연 1만원",
+    "condition": "전월 국내 30만원↑"
+   },
+   {
+    "category": "일본 커피/패스트푸드",
+    "text": "일본 스타벅스·맥도날드 50% 캐시백",
+    "rate_or_amount": "50%",
+    "monthly_cap": "반기·연 한도(편의점과 별도 여부 확인 불가)",
+    "condition": "전월 국내 30만원↑"
+   },
+   {
+    "category": "해외",
+    "text": "해외 가맹점 10% 캐시백",
+    "rate_or_amount": "10%",
+    "monthly_cap": "통합한도 내",
+    "condition": "건당 최대 1천원, 일본 여행 서비스와 중복 불가"
+   },
+   {
+    "category": "국내",
+    "text": "쇼핑(쿠팡·무신사·29CM 등)·푸드(사이렌오더·배달앱)·일상 5% 캐시백",
+    "rate_or_amount": "5%",
+    "monthly_cap": "통합한도 내",
+    "condition": "건당 최대 1천원"
+   }
+  ],
+  "exclusions": [
+   "국세·지방세·공과금, 대학 등록금, 상품권·선불카드·기프트카드 구매·충전, 교통카드 충전, 고속버스, 정부지원금, 아파트관리비(임대료), 수수료·이자, 매출취소는 혜택·실적 제외(공식 페이지 공통 문구)",
+   "DCC 이용 불가"
+  ],
+  "promotions": [],
+  "recent_changes": [],
+  "target_text": "우리 일본여행의 A TO Z",
+  "issuance": "우리WON뱅킹 앱 전용, 만 17세 이상, 우리은행 외화계좌 필수",
+  "app_features": [],
+  "design_note": null,
+  "tags": [
+   "check_card",
+   "travel_fx",
+   "bank_bundle",
+   "reward_cashback",
+   "mart_daily",
+   "dining_cafe",
+   "tiered_perf"
+  ],
+  "genz_fit": "high",
+  "genz_fit_reason": "20대 해외여행지 1순위인 일본에 맞춰 편의점·커피 50%를 걸었다. 신한 SOL트래블 J체크와 정면으로 겹치는 상품이다(카드고릴라 비교 기사).",
+  "source_url": "https://m.wooricard.com/dcmw/yh1/crd/crd01/M1CRD101S02.do?cdPrdCd=103490",
+  "source_urls": [
+   "https://m.wooricard.com/dcmw/yh1/crd/crd01/M1CRD101S02.do?cdPrdCd=103490",
+   "https://m.wooricard.com/llms.txt",
+   "https://www.card-gorilla.com/contents/detail/3993",
+   "https://www.fintechtimes.co.kr/mobile/article.html?no=51860"
+  ],
+  "checked": "2026-10-27",
+  "confidence": "high",
+  "note": "공식 페이지 확인(2026년 8월 기준). 국내외 통합 한도표: 해외·쇼핑 2/4/6천, 푸드·일상 3/6/9천, 통합 1/2/3만원(20/50/70만 구간, HTML 표 확인)."
+ },
+ {
+  "id": "mwoori08",
+  "name": "ExK 체크",
+  "official_name": "카드의정석2 ExK 체크",
+  "issuer": "우리카드",
+  "type": "debit",
+  "on_sale": true,
+  "role": "youth",
+  "launched": "2026-02-06",
+  "annual_fee_won": {
+   "domestic": 0,
+   "overseas": null
+  },
+  "tiers": [
+   {
+    "min_prev_month_spend_won": 0,
+    "benefit_summary": "여행 5% 캐시백(월 5천원), 해외 ATM 인출 건당 500원·환율우대 30%"
+   },
+   {
+    "min_prev_month_spend_won": 200000,
+    "benefit_summary": "커피·편의점·배달 5%(영역별 월 3천), 공항 커피 연 2회, 아웃백 5천원 반기 1회"
+   },
+   {
+    "min_prev_month_spend_won": 500000,
+    "benefit_summary": "F&B 영역별 월 6천원"
+   }
+  ],
+  "benefits": [
+   {
+    "category": "해외 ATM",
+    "text": "해외 ATM 인출 수수료 건당 500원, 환율우대 30%, 국제브랜드 수수료 면제",
+    "rate_or_amount": "건당 500원",
+    "monthly_cap": null,
+    "condition": "미국·필리핀·베트남·태국·인도네시아 등 표기"
+   },
+   {
+    "category": "F&B",
+    "text": "메가MGC·컴포즈커피, GS25·CU, 배민·쿠팡이츠 5% 캐시백",
+    "rate_or_amount": "5%",
+    "monthly_cap": "영역별 3천/6천원",
+    "condition": "건당 최대 1천원"
+   },
+   {
+    "category": "여행",
+    "text": "항공사, 면세점(롯데·신세계·신라), NOL(야놀자) 5% 캐시백",
+    "rate_or_amount": "5%",
+    "monthly_cap": "통합 5천원",
+    "condition": "실적 조건 없음"
+   },
+   {
+    "category": "공항/외식",
+    "text": "공항 커피 이용권(더라운지 앱) 연 2회, 아웃백 건당 5만원↑ 5천원 캐시백 반기 1회",
+    "rate_or_amount": "정액",
+    "monthly_cap": null,
+    "condition": "전월 국내 20만원↑"
+   }
+  ],
+  "exclusions": [
+   "국세·지방세·공과금, 대학 등록금, 상품권·선불카드·기프트카드 구매·충전, 교통카드 충전, 고속버스, 정부지원금, 아파트관리비(임대료), 수수료·이자, 매출취소는 혜택·실적 제외(공식 페이지 공통 문구)"
+  ],
+  "promotions": [],
+  "recent_changes": [],
+  "target_text": "해외 ATM 출금은 ExK 체크!",
+  "issuance": "만 18세 이상. 국내전용 표기와 해외 ATM 혜택이 함께 있어 브랜드 구성은 확인 불가",
+  "app_features": [
+   "'더 라운지' 앱에서 공항 커피 이용권 발급"
+  ],
+  "design_note": null,
+  "tags": [
+   "check_card",
+   "travel_fx",
+   "reward_cashback",
+   "dining_cafe",
+   "mart_daily",
+   "delivery",
+   "tiered_perf",
+   "txn_threshold"
+  ],
+  "genz_fit": "mid",
+  "genz_fit_reason": "동남아·미국 현금 인출 수요(워홀·유학·배낭여행)를 겨냥했다. 국내 혜택은 저가 커피·편의점이라 20대와 맞지만 한도가 작다.",
+  "source_url": "https://m.wooricard.com/dcmw/yh1/crd/crd01/M1CRD101S02.do?cdPrdCd=103496",
+  "source_urls": [
+   "https://m.wooricard.com/dcmw/yh1/crd/crd01/M1CRD101S02.do?cdPrdCd=103496",
+   "https://m.wooricard.com/llms.txt"
+  ],
+  "checked": "2026-10-27",
+  "confidence": "medium",
+  "note": "공식 페이지 확인(2026년 6월 기준, 심의필 2026-C01813). 'ExK'의 의미와 해외 브랜드 종류는 확인 불가."
+ },
+ {
+  "id": "mwoori09",
+  "name": "EVERYDAY CHECK",
+  "official_name": "카드의정석 EVERYDAY CHECK",
+  "issuer": "우리카드",
+  "type": "debit",
+  "on_sale": true,
+  "role": "youth",
+  "launched": "2024-08-21",
+  "annual_fee_won": {
+   "domestic": 0,
+   "overseas": 0
+  },
+  "tiers": [
+   {
+    "min_prev_month_spend_won": 0,
+    "benefit_summary": "국내외 0.2% 적립(한도 없음)"
+   },
+   {
+    "min_prev_month_spend_won": 300000,
+    "benefit_summary": "우리WON페이 +0.5%(월 3천), 커피·쇼핑·교통·주유 1% 특별적립(영역별 3천, 통합 1만)"
+   },
+   {
+    "min_prev_month_spend_won": 600000,
+    "benefit_summary": "우리WON페이 월 6천, 특별 영역별 6천(통합 2만)"
+   }
+  ],
+  "benefits": [
+   {
+    "category": "기본",
+    "text": "국내외 0.2% 적립",
+    "rate_or_amount": "0.2%",
+    "monthly_cap": "없음",
+    "condition": "실적 없음"
+   },
+   {
+    "category": "우리WON페이",
+    "text": "우리WON페이 온라인 결제 0.5% 추가 적립",
+    "rate_or_amount": "0.5%",
+    "monthly_cap": "3천/6천P",
+    "condition": "건당 1만원↑"
+   },
+   {
+    "category": "생활 1% 특별",
+    "text": "스타벅스·폴바셋·투썸·매머드, 이마트·롯데마트·홈플러스 등, 버스·지하철·택시, SK주유소 1% 적립",
+    "rate_or_amount": "1%",
+    "monthly_cap": "영역별 3천/6천P, 통합 1만/2만P",
+    "condition": "건당 1만원↑, 주유 일 1회·월 3회"
+   }
+  ],
+  "exclusions": [
+   "국세·지방세·공과금, 대학 등록금, 상품권·선불카드·기프트카드 구매·충전, 교통카드 충전, 고속버스, 정부지원금, 아파트관리비(임대료), 수수료·이자, 매출취소는 혜택·실적 제외(공식 페이지 공통 문구)"
+  ],
+  "promotions": [],
+  "recent_changes": [],
+  "target_text": null,
+  "issuance": "만 17세 이상(하이브리드는 만 19세↑). 청소년 후불교통 월 10만원",
+  "app_features": [
+   "포인트는 우리WON멤버스 앱 꿀머니로 선물 가능(1모아포인트=1꿀=1원)"
+  ],
+  "design_note": null,
+  "tags": [
+   "check_card",
+   "reward_point",
+   "paymethod_bonus",
+   "dining_cafe",
+   "mart_daily",
+   "transit",
+   "fuel",
+   "tiered_perf"
+  ],
+  "genz_fit": "mid",
+  "genz_fit_reason": "기본 적립과 자사 페이 가산으로 이루어진 범용 체크카드다. 20대 특화 소비처는 적고, 우리WON페이 이용을 유도하는 장치로 보인다(해석).",
+  "source_url": "https://m.wooricard.com/dcmw/yh1/crd/crd01/M1CRD101S02.do?cdPrdCd=103734",
+  "source_urls": [
+   "https://m.wooricard.com/dcmw/yh1/crd/crd01/M1CRD101S02.do?cdPrdCd=103734",
+   "https://m.wooricard.com/llms.txt"
+  ],
+  "checked": "2026-10-27",
+  "confidence": "high",
+  "note": "공식 페이지 확인(2026년 6월 기준)."
+ },
+ {
+  "id": "mwoori10",
+  "name": "우리WON모바일 체크",
+  "official_name": "우리WON모바일 체크카드",
+  "issuer": "우리카드",
+  "type": "debit",
+  "on_sale": true,
+  "role": "plcc",
+  "launched": "2025-02-14",
+  "annual_fee_won": {
+   "domestic": 0,
+   "overseas": 0
+  },
+  "tiers": [
+   {
+    "min_prev_month_spend_won": 300000,
+    "benefit_summary": "우리WON모바일 통신요금 월 2천원 캐시백"
+   },
+   {
+    "min_prev_month_spend_won": 800000,
+    "benefit_summary": "월 4천원"
+   },
+   {
+    "min_prev_month_spend_won": 1200000,
+    "benefit_summary": "월 7천원"
+   }
+  ],
+  "benefits": [
+   {
+    "category": "통신",
+    "text": "우리WON모바일(우리금융 알뜰폰) 통신요금 자동납부 캐시백",
+    "rate_or_amount": "정액",
+    "monthly_cap": "2천/4천/7천원",
+    "condition": "자동납부 필수"
+   }
+  ],
+  "exclusions": [
+   "캐시백 받은 통신요금은 전월실적 불인정",
+   "국세·지방세·공과금, 대학 등록금, 상품권·선불카드·기프트카드 구매·충전, 교통카드 충전, 고속버스, 정부지원금, 아파트관리비(임대료), 수수료·이자, 매출취소는 혜택·실적 제외(공식 페이지 공통 문구)"
+  ],
+  "promotions": [],
+  "recent_changes": [],
+  "target_text": null,
+  "issuance": "만 18세 이상, 해외겸용(VISA)/국내전용",
+  "app_features": [],
+  "design_note": null,
+  "tags": [
+   "check_card",
+   "bank_bundle",
+   "fixed_bills",
+   "reward_cashback",
+   "tiered_perf"
+  ],
+  "genz_fit": "mid",
+  "genz_fit_reason": "알뜰폰을 쓰는 20대가 늘어난 흐름에 맞춘 그룹사(우리WON모바일) 연계 카드다. 다만 혜택이 통신비 하나뿐이다.",
+  "source_url": "https://m.wooricard.com/dcmw/yh1/crd/crd01/M1CRD101S02.do?cdPrdCd=103687",
+  "source_urls": [
+   "https://m.wooricard.com/dcmw/yh1/crd/crd01/M1CRD101S02.do?cdPrdCd=103687",
+   "https://m.wooricard.com/llms.txt"
+  ],
+  "checked": "2026-10-27",
+  "confidence": "medium",
+  "note": "출시일 표기가 페이지 안에서 다르다('2024년 02월 14일'과 '2025년 2월 14일'). 담당부서 줄과 기준일(2025년 2월)에 맞춰 2025-02-14로 기록했다. 심의필 유효기간(2026.05.27)이 지나 있어 최신성은 확인 불가."
+ },
+ {
+  "id": "mwoori11",
+  "name": "카드의정석 TEN",
+  "official_name": "카드의정석 TEN",
+  "issuer": "우리카드",
+  "type": "credit",
+  "on_sale": true,
+  "role": "youth",
+  "launched": "2024-05-30",
+  "annual_fee_won": {
+   "domestic": 12000,
+   "overseas": 12000
+  },
+  "tiers": [
+   {
+    "min_prev_month_spend_won": 400000,
+    "benefit_summary": "5대 영역 10%(영역별 5천, 통합 1만) + 음식점/간편결제 1%(통합 1만)"
+   },
+   {
+    "min_prev_month_spend_won": 800000,
+    "benefit_summary": "영역별 1만, 통합 2만 + 1% 영역 통합 2만"
+   }
+  ],
+  "benefits": [
+   {
+    "category": "TEN 10%",
+    "text": "커피 6개 브랜드, 편의점(CU·GS25·세븐), 버스·지하철·택시, 이동통신 자동납부, 해외 10% 청구할인",
+    "rate_or_amount": "10%",
+    "monthly_cap": "영역별 5천/1만, 통합 1만/2만",
+    "condition": "전월 40만원↑"
+   },
+   {
+    "category": "ONE 1%",
+    "text": "음식점·주점, 온라인 간편결제(우리WON·네이버·카카오페이) 1% 청구할인",
+    "rate_or_amount": "1%",
+    "monthly_cap": "통합 1만/2만",
+    "condition": "전월 40만원↑"
+   }
+  ],
+  "exclusions": [
+   "국세·지방세·공과금, 대학 등록금, 상품권·선불카드·기프트카드 구매·충전, 교통카드 충전, 고속버스, 정부지원금, 아파트관리비(임대료), 수수료·이자, 매출취소는 혜택·실적 제외(공식 페이지 공통 문구)",
+   "무이자할부 제외"
+  ],
+  "promotions": [],
+  "recent_changes": [],
+  "target_text": "일상에서의 특별한 혜택",
+  "issuance": "해외겸용(Mastercard)/국내전용",
+  "app_features": [],
+  "design_note": "친환경 BIG 소재 플레이트(우리카드 공통 디자인, 카드명은 뒷면 표기)",
+  "tags": [
+   "dining_cafe",
+   "mart_daily",
+   "transit",
+   "fixed_bills",
+   "travel_fx",
+   "reward_discount",
+   "tiered_perf",
+   "esg_green"
+  ],
+  "genz_fit": "high",
+  "genz_fit_reason": "연회비 1.2만원에 커피·편의점·교통·통신 10%를 담은 사회초년생형 신용카드다. 실적 40만원은 20대에게 부담이 될 수 있다.",
+  "source_url": "https://m.wooricard.com/dcmw/yh1/crd/crd01/M1CRD101S02.do?cdPrdCd=103686",
+  "source_urls": [
+   "https://m.wooricard.com/dcmw/yh1/crd/crd01/M1CRD101S02.do?cdPrdCd=103686",
+   "https://m.wooricard.com/llms.txt"
+  ],
+  "checked": "2026-10-27",
+  "confidence": "high",
+  "note": "공식 페이지 확인(2026년 9월 기준, 심의필 2026-C1h-15196). 연회비 기본 7천+제휴 5천."
+ },
+ {
+  "id": "mwoori12",
+  "name": "7CORE",
+  "official_name": "카드의정석2 7CORE(llms.txt 표기: 우리카드 7CORE)",
+  "issuer": "우리카드",
+  "type": "credit",
+  "on_sale": true,
+  "role": "other",
+  "launched": "2025-06-05",
+  "annual_fee_won": {
+   "domestic": 50000,
+   "overseas": 50000
+  },
+  "tiers": [
+   {
+    "min_prev_month_spend_won": 500000,
+    "benefit_summary": "7대 영역 10%, 영역별 4천·월 최대 2.8만원"
+   },
+   {
+    "min_prev_month_spend_won": 1000000,
+    "benefit_summary": "영역별 6천·월 4.2만원"
+   },
+   {
+    "min_prev_month_spend_won": 2000000,
+    "benefit_summary": "영역별 1.2만·월 8.4만원"
+   }
+  ],
+  "benefits": [
+   {
+    "category": "7대 영역 10%",
+    "text": "온라인쇼핑(쿠팡·SSG·컬리·인터넷면세점), 대형마트, 배달앱, 커피, 교육(학원·서점), 병원, 주유 10% 청구할인",
+    "rate_or_amount": "10%",
+    "monthly_cap": "2.8만~8.4만원",
+    "condition": "온라인쇼핑·마트·배달앱은 건당 2만원↑"
+   }
+  ],
+  "exclusions": [
+   "국세·지방세·공과금, 대학 등록금, 상품권·선불카드·기프트카드 구매·충전, 교통카드 충전, 고속버스, 정부지원금, 아파트관리비(임대료), 수수료·이자, 매출취소는 혜택·실적 제외(공식 페이지 공통 문구)",
+   "할인받은 이용금액은 실적 불인정"
+  ],
+  "promotions": [],
+  "recent_changes": [],
+  "target_text": "라이프스타일 7대 영역, 10% 할인을 쏘다",
+  "issuance": null,
+  "app_features": [],
+  "design_note": null,
+  "tags": [
+   "online_shop",
+   "mart_daily",
+   "delivery",
+   "dining_cafe",
+   "fuel",
+   "reward_discount",
+   "tiered_perf",
+   "txn_threshold"
+  ],
+  "genz_fit": "low",
+  "genz_fit_reason": "연회비 5만원, 실적 50만원 이상에 학원·병원·마트 중심이라 가족 단위 소비에 맞다.",
+  "source_url": "https://m.wooricard.com/dcmw/yh1/crd/crd01/M1CRD101S02.do?cdPrdCd=103755",
+  "source_urls": [
+   "https://m.wooricard.com/dcmw/yh1/crd/crd01/M1CRD101S02.do?cdPrdCd=103755",
+   "https://m.wooricard.com/llms.txt"
+  ],
+  "checked": "2026-10-27",
+  "confidence": "high",
+  "note": "공식 페이지 확인(2026년 6월 기준). 연회비 기본 7천+제휴 4.3만."
+ },
+ {
+  "id": "mwoori13",
+  "name": "ROUTINE",
+  "official_name": "카드의정석2 ROUTINE",
+  "issuer": "우리카드",
+  "type": "credit",
+  "on_sale": true,
+  "role": "youth",
+  "launched": "2026-05-28",
+  "annual_fee_won": {
+   "domestic": 28000,
+   "overseas": 28000
+  },
+  "tiers": [
+   {
+    "min_prev_month_spend_won": 0,
+    "benefit_summary": "2~3개월 무이자 할부(5만원↑)"
+   },
+   {
+    "min_prev_month_spend_won": 500000,
+    "benefit_summary": "생활/통신 15%·디지털구독/멤버십 30%, 영역별 월 5천원, 간편결제 1천원×월 3회, 해외 1.5%(반기 6만)"
+   },
+   {
+    "min_prev_month_spend_won": 1000000,
+    "benefit_summary": "영역별 월 1만원"
+   }
+  ],
+  "benefits": [
+   {
+    "category": "디지털구독",
+    "text": "유튜브 프리미엄·넷플릭스·디즈니+·티빙·ChatGPT 30% 청구할인",
+    "rate_or_amount": "30%",
+    "monthly_cap": "5천/1만원",
+    "condition": "공식 홈페이지/앱 정기결제, 인앱결제 제외, 영역별 월 1회"
+   },
+   {
+    "category": "멤버십",
+    "text": "쿠팡 와우·네이버플러스·배민클럽·컬리멤버스·T우주패스 30%",
+    "rate_or_amount": "30%",
+    "monthly_cap": "5천/1만원",
+    "condition": "정기결제"
+   },
+   {
+    "category": "생활/통신/교육/렌탈",
+    "text": "아파트관리비·전기·가스, 통신 3사+알뜰폰 4사, 결제선생·학습지·밀리의서재 등, 코웨이·SK인텔릭스·LG가전구독 15%",
+    "rate_or_amount": "15%",
+    "monthly_cap": "영역별 5천/1만원",
+    "condition": "자동납부·정기결제"
+   },
+   {
+    "category": "간편결제",
+    "text": "우리WON·네이버·카카오페이 건당 5만원↑ 1천원 할인",
+    "rate_or_amount": "1천원",
+    "monthly_cap": "월 3회",
+    "condition": "전월 50만원↑"
+   },
+   {
+    "category": "해외",
+    "text": "해외 온/오프라인 1.5% 청구할인",
+    "rate_or_amount": "1.5%",
+    "monthly_cap": "반기 6만원",
+    "condition": "전월 50만원↑"
+   }
+  ],
+  "exclusions": [
+   "국세·지방세·공과금, 대학 등록금, 상품권·선불카드·기프트카드 구매·충전, 교통카드 충전, 고속버스, 정부지원금, 아파트관리비(임대료), 수수료·이자, 매출취소는 혜택·실적 제외(공식 페이지 공통 문구)",
+   "인앱결제(구글·애플)·일회성 결제·업그레이드 결제 제외"
+  ],
+  "promotions": [],
+  "recent_changes": [],
+  "target_text": "숨 쉬듯 반복되는 정기결제, 매달 반복되는 할인루틴",
+  "issuance": "실물카드 2.8만원 / 모바일카드 전용 2.2만원(기본연회비 1천원) 선택",
+  "app_features": [],
+  "design_note": null,
+  "tags": [
+   "subscription_ott",
+   "fixed_bills",
+   "subscription_slot",
+   "paymethod_bonus",
+   "travel_fx",
+   "reward_discount",
+   "tiered_perf",
+   "discount_counts"
+  ],
+  "genz_fit": "high",
+  "genz_fit_reason": "ChatGPT·OTT·쿠팡와우·배민클럽 같은 20대 고정 구독료를 30% 깎아 준다. 모바일카드로 받으면 연회비가 낮아진다. 다만 실적 50만원 이상이 걸려 있다.",
+  "source_url": "https://m.wooricard.com/dcmw/yh1/crd/crd01/M1CRD101S02.do?cdPrdCd=500045",
+  "source_urls": [
+   "https://m.wooricard.com/dcmw/yh1/crd/crd01/M1CRD101S02.do?cdPrdCd=500045",
+   "https://www.card-gorilla.com/contents/detail/4321"
+  ],
+  "checked": "2026-10-27",
+  "confidence": "high",
+  "note": "공식 페이지 확인(2026년 5월 기준, 심의필 2026-C1h-08304). 할인받은 관리비도 실적에 인정된다는 점은 카드고릴라 설명 기준이며, 공식 문구로는 확인하지 못했다."
+ },
+ {
+  "id": "mwoori14",
+  "name": "DAILY",
+  "official_name": "카드의정석2 DAILY",
+  "issuer": "우리카드",
+  "type": "credit",
+  "on_sale": true,
+  "role": "youth",
+  "launched": "2026-06-02",
+  "annual_fee_won": {
+   "domestic": 25000,
+   "overseas": 25000
+  },
+  "tiers": [
+   {
+    "min_prev_month_spend_won": 0,
+    "benefit_summary": "국내외 1% 청구할인(한도 없음)"
+   },
+   {
+    "min_prev_month_spend_won": 500000,
+    "benefit_summary": "고정소비 5%(월 3천) + 정기결제 50%(월 5천), 통합 8천"
+   },
+   {
+    "min_prev_month_spend_won": 1000000,
+    "benefit_summary": "고정소비 6천 + 정기결제 5천, 통합 1.1만"
+   },
+   {
+    "min_prev_month_spend_won": 2000000,
+    "benefit_summary": "고정소비 1.2만 + 정기결제 5천, 통합 1.7만"
+   }
+  ],
+  "benefits": [
+   {
+    "category": "기본",
+    "text": "국내외 가맹점 1% 청구할인",
+    "rate_or_amount": "1%",
+    "monthly_cap": "없음",
+    "condition": "실적 조건 없음, 특별할인 한도 초과 시 기본할인 적용"
+   },
+   {
+    "category": "고정소비 5%",
+    "text": "식비(음식점·주점·배달 3사), 장보기(쿠팡·컬리·SSG·이마트·롯데마트·다이소), 교통(택시·카카오T·주유), 통신 3사",
+    "rate_or_amount": "5%",
+    "monthly_cap": "3천/6천/1.2만원",
+    "condition": "식비 건당 1만원↑, 장보기 건당 3만원↑"
+   },
+   {
+    "category": "정기결제 50%",
+    "text": "넷플릭스·유튜브 프리미엄·티빙·디즈니+·T우주패스 50% 청구할인",
+    "rate_or_amount": "50%",
+    "monthly_cap": "5천원",
+    "condition": "전월 50만원↑"
+   }
+  ],
+  "exclusions": [
+   "국세·지방세·공과금, 대학 등록금, 상품권·선불카드·기프트카드 구매·충전, 교통카드 충전, 고속버스, 정부지원금, 아파트관리비(임대료), 수수료·이자, 매출취소는 혜택·실적 제외(공식 페이지 공통 문구)"
+  ],
+  "promotions": [
+   {
+    "text": "온라인 신규발급 연회비 100% 캐시백(약관 전체 동의, 우리WON페이 등록 후 5만원↑ 이용)",
+    "ends": null
+   }
+  ],
+  "recent_changes": [],
+  "target_text": "식비부터 교통/통신비까지, 생활비 카드는 한장으로!",
+  "issuance": "모바일카드 신청 가능. 실물 2.5만원 / 모바일 1.9만원",
+  "app_features": [],
+  "design_note": null,
+  "tags": [
+   "simple_flat",
+   "spend_free",
+   "zero_floor",
+   "dining_cafe",
+   "delivery",
+   "mart_daily",
+   "transit",
+   "fixed_bills",
+   "subscription_ott",
+   "tiered_perf",
+   "reward_discount",
+   "common_plus_select"
+  ],
+  "genz_fit": "high",
+  "genz_fit_reason": "실적이 없어도 1%를 받는 바닥이 있고, 실적을 채우면 식비·장보기·구독 할인이 얹힌다. 지출이 들쑥날쑥한 20대 자취생에게 맞는다.",
+  "source_url": "https://m.wooricard.com/ai-data/cardDetail_standard2Daily.html",
+  "source_urls": [
+   "https://m.wooricard.com/ai-data/cardDetail_standard2Daily.html",
+   "https://www.card-gorilla.com/contents/detail/4321"
+  ],
+  "checked": "2026-10-27",
+  "confidence": "high",
+  "note": "공식 ai-data 정적 페이지 확인(2026년 6월 기준). 동적 상세 페이지 상품코드는 찾지 못함. llms.txt 목록에는 없음. 연회비 캐시백 이벤트 종료일은 확인 불가."
+ },
+ {
+  "id": "mwoori15",
+  "name": "EVERY DISCOUNT",
+  "official_name": "카드의정석2 EVERY DISCOUNT",
+  "issuer": "우리카드",
+  "type": "credit",
+  "on_sale": true,
+  "role": "youth",
+  "launched": "2024-07-08",
+  "annual_fee_won": {
+   "domestic": 12000,
+   "overseas": 12000
+  },
+  "tiers": [
+   {
+    "min_prev_month_spend_won": 0,
+    "benefit_summary": "국내외 0.8% 청구할인(한도 없음)"
+   },
+   {
+    "min_prev_month_spend_won": 400000,
+    "benefit_summary": "국내 온라인 간편결제 +2%(월 1만원)"
+   },
+   {
+    "min_prev_month_spend_won": 800000,
+    "benefit_summary": "간편결제 추가할인 월 2만원"
+   }
+  ],
+  "benefits": [
+   {
+    "category": "기본",
+    "text": "국내외 0.8% 청구할인",
+    "rate_or_amount": "0.8%",
+    "monthly_cap": "없음",
+    "condition": "실적 없음"
+   },
+   {
+    "category": "간편결제",
+    "text": "우리WON페이·네이버페이·카카오페이 온라인 결제 2% 추가",
+    "rate_or_amount": "+2%",
+    "monthly_cap": "1만/2만원",
+    "condition": "전월 40만원↑"
+   },
+   {
+    "category": "Two-in-One",
+    "text": "체크결제 매출(Two-in-One 결제서비스) 0.3% 청구할인",
+    "rate_or_amount": "0.3%",
+    "monthly_cap": null,
+    "condition": "앱에서 투인원결제 신청"
+   }
+  ],
+  "exclusions": [
+   "국세·지방세·공과금, 대학 등록금, 상품권·선불카드·기프트카드 구매·충전, 교통카드 충전, 고속버스, 정부지원금, 아파트관리비(임대료), 수수료·이자, 매출취소는 혜택·실적 제외(공식 페이지 공통 문구)"
+  ],
+  "promotions": [],
+  "recent_changes": [],
+  "target_text": "결제도 간편 혜택도 간편",
+  "issuance": "실물 1.2만원 / 모바일카드 6천원(기본연회비 1천원)",
+  "app_features": [],
+  "design_note": "친환경 BIG 플레이트",
+  "tags": [
+   "simple_flat",
+   "spend_free",
+   "paymethod_bonus",
+   "online_shop",
+   "reward_discount",
+   "tiered_perf",
+   "esg_green"
+  ],
+  "genz_fit": "high",
+  "genz_fit_reason": "모바일 연회비 6천원에 실적 없이 0.8%를 받고, 네이버·카카오페이 온라인 결제에 2%를 더 받는다. 간편결제를 많이 쓰는 20대에게 단순한 선택지다.",
+  "source_url": "https://m.wooricard.com/dcmw/yh1/crd/crd01/M1CRD101S02.do?cdPrdCd=103729",
+  "source_urls": [
+   "https://m.wooricard.com/dcmw/yh1/crd/crd01/M1CRD101S02.do?cdPrdCd=103729",
+   "https://m.wooricard.com/llms.txt"
+  ],
+  "checked": "2026-10-27",
+  "confidence": "high",
+  "note": "공식 페이지 확인(2026년 5월 기준, 심의필 2026-C1h-07988)."
+ },
+ {
+  "id": "mwoori16",
+  "name": "EVERY POINT",
+  "official_name": "카드의정석2 EVERY POINT",
+  "issuer": "우리카드",
+  "type": "credit",
+  "on_sale": true,
+  "role": "other",
+  "launched": "2024-02-26",
+  "annual_fee_won": {
+   "domestic": 12000,
+   "overseas": 12000
+  },
+  "tiers": [
+   {
+    "min_prev_month_spend_won": 0,
+    "benefit_summary": "국내외 0.8% 적립(한도 없음)"
+   },
+   {
+    "min_prev_month_spend_won": 400000,
+    "benefit_summary": "간편결제 온라인 +2% 적립(월 1만P)"
+   },
+   {
+    "min_prev_month_spend_won": 800000,
+    "benefit_summary": "월 2만P"
+   }
+  ],
+  "benefits": [
+   {
+    "category": "기본",
+    "text": "국내외 0.8% 모아포인트 적립",
+    "rate_or_amount": "0.8%",
+    "monthly_cap": "없음",
+    "condition": "실적 없음"
+   },
+   {
+    "category": "간편결제",
+    "text": "우리WON·네이버·카카오페이 온라인 +2% 적립",
+    "rate_or_amount": "+2%",
+    "monthly_cap": "1만/2만P",
+    "condition": "전월 40만원↑"
+   }
+  ],
+  "exclusions": [
+   "국세·지방세·공과금, 대학 등록금, 상품권·선불카드·기프트카드 구매·충전, 교통카드 충전, 고속버스, 정부지원금, 아파트관리비(임대료), 수수료·이자, 매출취소는 혜택·실적 제외(공식 페이지 공통 문구)"
+  ],
+  "promotions": [],
+  "recent_changes": [],
+  "target_text": "모두를 위한 간편한 혜택",
+  "issuance": "청소년 가족카드(만 12~18세, 본인회원 직계자녀) 발급 가능. 만 19세 이후 같은 카드 계속 사용",
+  "app_features": [],
+  "design_note": null,
+  "tags": [
+   "simple_flat",
+   "spend_free",
+   "paymethod_bonus",
+   "reward_point",
+   "tiered_perf",
+   "life_event"
+  ],
+  "genz_fit": "mid",
+  "genz_fit_reason": "본인보다는 부모가 10대 자녀에게 가족카드를 주는 구조가 특징이다. 만 19세가 되면 업종 제한이 풀린다. 20대 진입 직전 고객을 미리 확보하는 경로다(해석).",
+  "source_url": "https://m.wooricard.com/dcmw/yh1/crd/crd01/M1CRD101S02.do?cdPrdCd=102718",
+  "source_urls": [
+   "https://m.wooricard.com/dcmw/yh1/crd/crd01/M1CRD101S02.do?cdPrdCd=102718",
+   "https://m.wooricard.com/llms.txt"
+  ],
+  "checked": "2026-10-27",
+  "confidence": "high",
+  "note": "공식 페이지 확인(2026년 5월 기준). 청소년 가족카드 이용 업종 제한(생활: 음식점·카페·배달앱 등)과 월 한도 10만원(최대 50만원)이 있다."
+ },
+ {
+  "id": "mwoori17",
+  "name": "카드의정석2",
+  "official_name": "카드의정석2",
+  "issuer": "우리카드",
+  "type": "credit",
+  "on_sale": true,
+  "role": "flagship",
+  "launched": null,
+  "annual_fee_won": {
+   "domestic": 22000,
+   "overseas": 22000
+  },
+  "tiers": [
+   {
+    "min_prev_month_spend_won": 500000,
+    "benefit_summary": "국내외 1.2% 청구할인(월 이용 300만원까지, 월 3.6만원)"
+   },
+   {
+    "min_prev_month_spend_won": null,
+    "benefit_summary": "분기 300/600/900만원↑ + 매월 10만원↑ 시 분기 5천/1만/1.5만원 추가"
+   }
+  ],
+  "benefits": [
+   {
+    "category": "기본",
+    "text": "국내외 가맹점 1.2% 청구할인",
+    "rate_or_amount": "1.2%",
+    "monthly_cap": "3.6만원",
+    "condition": "전월 50만원↑"
+   },
+   {
+    "category": "분기 보너스",
+    "text": "분기 이용실적 구간별 추가 청구할인",
+    "rate_or_amount": "5천~1.5만원/분기",
+    "monthly_cap": "분기 1.5만원",
+    "condition": "분기 3개월 매월 10만원↑"
+   }
+  ],
+  "exclusions": [
+   "국세·지방세·공과금, 대학 등록금, 상품권·선불카드·기프트카드 구매·충전, 교통카드 충전, 고속버스, 정부지원금, 아파트관리비(임대료), 수수료·이자, 매출취소는 혜택·실적 제외(공식 페이지 공통 문구)",
+   "무이자할부 제외"
+  ],
+  "promotions": [
+   {
+    "text": "온라인 신규발급 연회비 100% 캐시백(우리WON페이 등록 후 5만원↑)",
+    "ends": null
+   }
+  ],
+  "recent_changes": [],
+  "target_text": "믿고쓰는 카드의정석 시즌2는 1.2% 할인이 기본",
+  "issuance": null,
+  "app_features": [],
+  "design_note": null,
+  "tags": [
+   "simple_flat",
+   "reward_discount",
+   "tiered_perf",
+   "period_bonus"
+  ],
+  "genz_fit": "low",
+  "genz_fit_reason": "많이 쓰는 사람에게 유리한 범용 할인형이다. 실적 50만원 이상, 분기 300만원 이상이 걸려 있어 20대에게는 문턱이 높다.",
+  "source_url": "https://m.wooricard.com/ai-data/cardDetail_standard2.html",
+  "source_urls": [
+   "https://m.wooricard.com/ai-data/cardDetail_standard2.html",
+   "https://m.wooricard.com/dcmw/yh1/crd/crd01/M1CRD101S02.do?cdPrdCd=102997",
+   "https://m.wooricard.com/llms.txt",
+   "https://www.card-gorilla.com/contents/detail/2193"
+  ],
+  "checked": "2026-10-27",
+  "confidence": "high",
+  "note": "공식 ai-data 페이지·동적 페이지 모두 확인. 출시일은 이번 추출에서 확인 불가. 카드고릴라 2026 상반기 우리카드 인기 2위."
+ },
+ {
+  "id": "mwoori18",
+  "name": "카드의정석2 SUPER",
+  "official_name": "카드의정석2 SUPER",
+  "issuer": "우리카드",
+  "type": "credit",
+  "on_sale": true,
+  "role": "flagship",
+  "launched": "2026-04-16",
+  "annual_fee_won": {
+   "domestic": 30000,
+   "overseas": 30000
+  },
+  "tiers": [
+   {
+    "min_prev_month_spend_won": 0,
+    "benefit_summary": "국내외 2.0% 청구할인(월 10만원), 2~3개월 무이자(5만원↑), 해외 수수료(브랜드 1%·이용 0.3%) 면제"
+   }
+  ],
+  "benefits": [
+   {
+    "category": "기본",
+    "text": "국내외 가맹점 2.0% 청구할인",
+    "rate_or_amount": "2.0%",
+    "monthly_cap": "10만원",
+    "condition": "전월 실적 조건 없음"
+   },
+   {
+    "category": "무이자",
+    "text": "국내 5만원↑ 2~3개월 무이자 할부",
+    "rate_or_amount": null,
+    "monthly_cap": null,
+    "condition": "실적 없음"
+   },
+   {
+    "category": "해외",
+    "text": "국제브랜드 수수료 1%·해외이용 수수료 0.3% 면제",
+    "rate_or_amount": "면제",
+    "monthly_cap": null,
+    "condition": "실적 없음"
+   }
+  ],
+  "exclusions": [
+   "국세·지방세·공과금, 대학 등록금, 상품권·선불카드·기프트카드 구매·충전, 교통카드 충전, 고속버스, 정부지원금, 아파트관리비(임대료), 수수료·이자, 매출취소는 혜택·실적 제외(공식 페이지 공통 문구)"
+  ],
+  "promotions": [],
+  "recent_changes": [],
+  "target_text": "2.0% SUPER Benefit",
+  "issuance": null,
+  "app_features": [],
+  "design_note": null,
+  "tags": [
+   "simple_flat",
+   "spend_free",
+   "anti_cap",
+   "travel_fx",
+   "reward_discount"
+  ],
+  "genz_fit": "mid",
+  "genz_fit_reason": "실적 없이 2%는 실적을 관리하기 어려운 20대에게 매력적이다. 다만 연회비 3만원을 넘기려면 월 약 12.5만원 이상 써야 한다(해석: 30,000÷0.02÷12).",
+  "source_url": "https://m.wooricard.com/dcmw/yh1/crd/crd01/M1CRD101S02.do?cdPrdCd=500044",
+  "source_urls": [
+   "https://m.wooricard.com/dcmw/yh1/crd/crd01/M1CRD101S02.do?cdPrdCd=500044",
+   "https://m.wooricard.com/ai-data/cardDetail_standard2Super.html",
+   "https://www.card-gorilla.com/contents/detail/4257",
+   "https://www.kgnews.co.kr/mobile/article.html?no=894758"
+  ],
+  "checked": "2026-10-27",
+  "confidence": "high",
+  "note": "공식 페이지 확인(2026년 7월 기준, 심의필 2026-C1h-09641). 언론 출시 보도는 2026년 5월. 카드고릴라 TOP3 글의 '할인한도 제한 없이' 표현은 공식 월 10만원 한도와 다르다."
+ },
+ {
+  "id": "mwoori19",
+  "name": "카드의정석2 SHOPPER",
+  "official_name": "카드의정석2 SHOPPER",
+  "issuer": "우리카드",
+  "type": "credit",
+  "on_sale": true,
+  "role": "other",
+  "launched": "2026-04-15",
+  "annual_fee_won": {
+   "domestic": 28000,
+   "overseas": 28000
+  },
+  "tiers": [
+   {
+    "min_prev_month_spend_won": 500000,
+    "benefit_summary": "쇼핑 10% 월 1만 + 주중온라인/주말오프라인 +5% 월 5천 + 멤버십 50% 월 5천"
+   },
+   {
+    "min_prev_month_spend_won": 1000000,
+    "benefit_summary": "기본 2만 + 추가 1만 + 멤버십 5천"
+   },
+   {
+    "min_prev_month_spend_won": 2000000,
+    "benefit_summary": "기본 4만 + 추가 2만 + 멤버십 5천"
+   }
+  ],
+  "benefits": [
+   {
+    "category": "쇼핑 기본",
+    "text": "쿠팡·네이버플러스 스토어·컬리 / 백화점·면세점·아울렛·스타필드·대형마트·슈퍼·올리브영·다이소 10%",
+    "rate_or_amount": "10%",
+    "monthly_cap": "1만~4만원",
+    "condition": "전월 50만원↑"
+   },
+   {
+    "category": "요일 추가",
+    "text": "온라인 주중(월~금) / 오프라인 주말 +5%",
+    "rate_or_amount": "+5%",
+    "monthly_cap": "5천~2만원",
+    "condition": null
+   },
+   {
+    "category": "멤버십",
+    "text": "쿠팡 와우·네이버플러스·컬리멤버스 50%",
+    "rate_or_amount": "50%",
+    "monthly_cap": "5천원",
+    "condition": null
+   }
+  ],
+  "exclusions": [
+   "국세·지방세·공과금, 대학 등록금, 상품권·선불카드·기프트카드 구매·충전, 교통카드 충전, 고속버스, 정부지원금, 아파트관리비(임대료), 수수료·이자, 매출취소는 혜택·실적 제외(공식 페이지 공통 문구)",
+   "가족카드 발급 불가"
+  ],
+  "promotions": [],
+  "recent_changes": [],
+  "target_text": "쇼핑의 순간, 15% 가볍게",
+  "issuance": null,
+  "app_features": [],
+  "design_note": null,
+  "tags": [
+   "online_shop",
+   "mart_daily",
+   "subscription_ott",
+   "time_slot",
+   "reward_discount",
+   "tiered_perf"
+  ],
+  "genz_fit": "mid",
+  "genz_fit_reason": "쿠팡·올리브영·다이소와 쇼핑 멤버십 50%는 20대에게도 맞는다. 다만 연회비 2.8만원·실적 50만원이 부담이다.",
+  "source_url": "https://m.wooricard.com/dcmw/yh1/crd/crd01/M1CRD101S02.do?cdPrdCd=104151",
+  "source_urls": [
+   "https://m.wooricard.com/dcmw/yh1/crd/crd01/M1CRD101S02.do?cdPrdCd=104151",
+   "https://m.wooricard.com/ai-data/cardDetail_standard2Shopper.html",
+   "https://m.wooricard.com/llms.txt",
+   "https://www.card-gorilla.com/contents/detail/4321"
+  ],
+  "checked": "2026-10-27",
+  "confidence": "high",
+  "note": "공식 페이지 확인(2026년 4월 기준)."
+ },
+ {
+  "id": "mwoori20",
+  "name": "카드의정석2 SHOPPING+",
+  "official_name": "카드의정석2 SHOPPING+",
+  "issuer": "우리카드",
+  "type": "credit",
+  "on_sale": true,
+  "role": "flagship",
+  "launched": "2023-09-04",
+  "annual_fee_won": {
+   "domestic": 10000,
+   "overseas": 12000
+  },
+  "tiers": [
+   {
+    "min_prev_month_spend_won": 300000,
+    "benefit_summary": "온라인 10% 월 4천 / 오프라인 10% 월 6천 + 간편결제 5%"
+   },
+   {
+    "min_prev_month_spend_won": 700000,
+    "benefit_summary": "온라인 8천 / 오프라인 1.2만"
+   },
+   {
+    "min_prev_month_spend_won": 1200000,
+    "benefit_summary": "온라인 1.6만 / 오프라인 2.4만"
+   }
+  ],
+  "benefits": [
+   {
+    "category": "온라인 쇼핑",
+    "text": "온라인 쇼핑 10% 청구할인",
+    "rate_or_amount": "10%",
+    "monthly_cap": "4천/8천/1.6만원",
+    "condition": "전월 국내 30만원↑"
+   },
+   {
+    "category": "오프라인 쇼핑",
+    "text": "백화점·대형마트·창고형·슈퍼·아울렛·편의점(CU·GS25·이마트24)·올리브영·다이소 등 10%",
+    "rate_or_amount": "10%",
+    "monthly_cap": "6천/1.2만/2.4만원",
+    "condition": null
+   },
+   {
+    "category": "간편결제",
+    "text": "삼성페이·네이버페이·카카오페이·PAYCO 온라인 5% 추가",
+    "rate_or_amount": "5%",
+    "monthly_cap": "확인 불가",
+    "condition": null
+   },
+   {
+    "category": "생활",
+    "text": "4대 주유소 주말 리터당 60원, 스타벅스·폴바셋 10%",
+    "rate_or_amount": "60원/L, 10%",
+    "monthly_cap": "확인 불가",
+    "condition": null
+   }
+  ],
+  "exclusions": [
+   "국세·지방세·공과금, 대학 등록금, 상품권·선불카드·기프트카드 구매·충전, 교통카드 충전, 고속버스, 정부지원금, 아파트관리비(임대료), 수수료·이자, 매출취소는 혜택·실적 제외(공식 페이지 공통 문구)",
+   "할인받은 매출의 50%만 전월실적 인정"
+  ],
+  "promotions": [
+   {
+    "text": "온라인 신규발급 연회비 100% 캐시백(기존 DB 기록, 이번 확인에서는 재확인 못 함)",
+    "ends": null
+   }
+  ],
+  "recent_changes": [],
+  "target_text": "온오프라인 쇼핑 시 10% 청구할인 간편결제 추가 할인까지!",
+  "issuance": "국내전용 1만원 / Mastercard·VISA 1.2만원 / UnionPay 1만원",
+  "app_features": [],
+  "design_note": null,
+  "tags": [
+   "online_shop",
+   "mart_daily",
+   "dining_cafe",
+   "fuel",
+   "paymethod_bonus",
+   "reward_discount",
+   "tiered_perf",
+   "discount_counts"
+  ],
+  "genz_fit": "mid",
+  "genz_fit_reason": "연회비 1만원대에 온라인 쇼핑 최대 15%이고, 실적 30만원부터 시작한다. 20대도 쓸 만하지만 공식 타깃은 연령 중립이고, 카드고릴라는 맞벌이 부부와 4인 가족을 추천 대상으로 들었다.",
+  "source_url": "https://m.wooricard.com/dcmw/yh1/crd/crd01/M1CRD101S02.do?cdPrdCd=102492",
+  "source_urls": [
+   "https://m.wooricard.com/dcmw/yh1/crd/crd01/M1CRD101S02.do?cdPrdCd=102492",
+   "https://m.wooricard.com/ai-data/cardDetail_standardShoppingPlus.html",
+   "https://www.card-gorilla.com/contents/detail/2193"
+  ],
+  "checked": "2026-10-27",
+  "confidence": "high",
+  "note": "공식 페이지 확인(2026년 9월 기준, 심의필 2026-C1h-12959). 카드고릴라 2026 상반기 우리카드 인기 1위(3~5월 고릴라차트 1위). llms.txt 목록에는 빠져 있다."
+ },
+ {
+  "id": "mwoori21",
+  "name": "UniMile",
+  "official_name": "우리카드 UniMile",
+  "issuer": "우리카드",
+  "type": "credit",
+  "on_sale": true,
+  "role": "youth",
+  "launched": "2025-11-28",
+  "annual_fee_won": {
+   "domestic": 33000,
+   "overseas": 33000
+  },
+  "tiers": [
+   {
+    "min_prev_month_spend_won": 500000,
+    "benefit_summary": "해외 특화지역 6%·기타 3%, LCC 항공 3%, 여행플랫폼·면세점 2% 적립(월 10만점, 해외 3만점) + 간편결제·인앱결제 3% 할인(월 3천) + 국내 공항라운지 연 2회"
+   }
+  ],
+  "benefits": [
+   {
+    "category": "해외",
+    "text": "일본·베트남·태국·인도네시아·말레이시아·싱가포르·필리핀 6%, 그 외 해외 3% 적립",
+    "rate_or_amount": "3~6%",
+    "monthly_cap": "해외 3만점",
+    "condition": "전월 50만원↑"
+   },
+   {
+    "category": "여행준비",
+    "text": "진에어·제주항공·티웨이·이스타·에어부산·에어서울 3%, 마이리얼트립·클룩·NOL·여기어때 2%, 면세점 2%",
+    "rate_or_amount": "2~3%",
+    "monthly_cap": "통합 10만점",
+    "condition": null
+   },
+   {
+    "category": "간편/인앱결제",
+    "text": "우리WON·네이버·카카오페이, 구글플레이·애플 앱스토어 3% 할인",
+    "rate_or_amount": "3%",
+    "monthly_cap": "3천원",
+    "condition": null
+   },
+   {
+    "category": "라운지",
+    "text": "국내 공항라운지",
+    "rate_or_amount": "연 2회",
+    "monthly_cap": null,
+    "condition": "전월 50만원↑"
+   }
+  ],
+  "exclusions": [
+   "국세·지방세·공과금, 대학 등록금, 상품권·선불카드·기프트카드 구매·충전, 교통카드 충전, 고속버스, 정부지원금, 아파트관리비(임대료), 수수료·이자, 매출취소는 혜택·실적 제외(공식 페이지 공통 문구)"
+  ],
+  "promotions": [],
+  "recent_changes": [],
+  "target_text": "해외여행 필수템, LCC 통합 포인트 카드",
+  "issuance": "해외겸용 UnionPay/국내전용",
+  "app_features": [],
+  "design_note": null,
+  "tags": [
+   "travel_fx",
+   "reward_mileage",
+   "reward_point",
+   "lounge",
+   "paymethod_bonus",
+   "tiered_perf"
+  ],
+  "genz_fit": "high",
+  "genz_fit_reason": "LCC 6개사 통합 포인트에 동남아·일본 6% 적립을 줘서 20대 단거리 여행 패턴과 맞는다. 인앱결제 할인도 있다. 연회비 3.3만원·실적 50만원이 걸림돌이다.",
+  "source_url": "https://m.wooricard.com/dcmw/yh1/crd/crd01/M1CRD101S02.do?cdPrdCd=104153",
+  "source_urls": [
+   "https://m.wooricard.com/dcmw/yh1/crd/crd01/M1CRD101S02.do?cdPrdCd=104153",
+   "https://m.wooricard.com/ai-data/cardDetail_UniMile.html",
+   "https://m.wooricard.com/llms.txt"
+  ],
+  "checked": "2026-10-27",
+  "confidence": "high",
+  "note": "공식 페이지 확인(2025년 11월 기준, 심의필 2025-C1h-17908). UniMile 포인트를 LCC로 전환하는 비율은 이번 추출에서 확인 불가. 해외 브랜드가 UnionPay뿐이다."
+ },
+ {
+  "id": "mwoori22",
+  "name": "KREAM 우리카드",
+  "official_name": "KREAM 우리카드",
+  "issuer": "우리카드",
+  "type": "credit",
+  "on_sale": true,
+  "role": "plcc",
+  "launched": "2024-01-02",
+  "annual_fee_won": {
+   "domestic": 20000,
+   "overseas": 20000
+  },
+  "tiers": [
+   {
+    "min_prev_month_spend_won": 0,
+    "benefit_summary": "국내외 0.5% 청구할인"
+   },
+   {
+    "min_prev_month_spend_won": 300000,
+    "benefit_summary": "KREAM 2% 청구할인(월 3만원, 본인+가족 합산)"
+   }
+  ],
+  "benefits": [
+   {
+    "category": "KREAM",
+    "text": "KREAM 이용금액 2% 청구할인",
+    "rate_or_amount": "2%",
+    "monthly_cap": "3만원",
+    "condition": "전월 30만원↑"
+   },
+   {
+    "category": "기본",
+    "text": "국내외 0.5% 청구할인",
+    "rate_or_amount": "0.5%",
+    "monthly_cap": "없음",
+    "condition": "실적 없음"
+   }
+  ],
+  "exclusions": [
+   "국세·지방세·공과금, 대학 등록금, 상품권·선불카드·기프트카드 구매·충전, 교통카드 충전, 고속버스, 정부지원금, 아파트관리비(임대료), 수수료·이자, 매출취소는 혜택·실적 제외(공식 페이지 공통 문구)"
+  ],
+  "promotions": [],
+  "recent_changes": [],
+  "target_text": null,
+  "issuance": null,
+  "app_features": [],
+  "design_note": "메탈 플레이트 제공",
+  "tags": [
+   "plcc_brand",
+   "online_shop",
+   "reward_discount",
+   "tiered_perf"
+  ],
+  "genz_fit": "mid",
+  "genz_fit_reason": "리셀 플랫폼 PLCC이며 메탈 카드라 상징성이 있다. 할인율은 2%로 낮다.",
+  "source_url": "https://m.wooricard.com/dcmw/yh1/crd/crd01/M1CRD101S02.do?cdPrdCd=102098",
+  "source_urls": [
+   "https://m.wooricard.com/dcmw/yh1/crd/crd01/M1CRD101S02.do?cdPrdCd=102098",
+   "https://m.wooricard.com/llms.txt"
+  ],
+  "checked": "2026-10-27",
+  "confidence": "high",
+  "note": "공식 페이지 확인(2025년 7월 기준)."
+ },
+ {
+  "id": "mwoori23",
+  "name": "KREAM Platinum",
+  "official_name": "KREAM Platinum 우리카드",
+  "issuer": "우리카드",
+  "type": "credit",
+  "on_sale": true,
+  "role": "plcc",
+  "launched": "2025-10-30",
+  "annual_fee_won": {
+   "domestic": 22000,
+   "overseas": 22000
+  },
+  "tiers": [
+   {
+    "min_prev_month_spend_won": 500000,
+    "benefit_summary": "KREAM 10%·해외 3% 통합 월 2만원 + 국내 고액매출 1%(월 3만)"
+   },
+   {
+    "min_prev_month_spend_won": 1000000,
+    "benefit_summary": "통합 3만원, 고액 2%"
+   },
+   {
+    "min_prev_month_spend_won": 2000000,
+    "benefit_summary": "통합 5만원"
+   }
+  ],
+  "benefits": [
+   {
+    "category": "KREAM",
+    "text": "KREAM 10% 청구할인",
+    "rate_or_amount": "10%",
+    "monthly_cap": "통합 2만~5만원",
+    "condition": "전월 국내외 50만원↑"
+   },
+   {
+    "category": "해외",
+    "text": "해외 이용금액 3% 청구할인",
+    "rate_or_amount": "3%",
+    "monthly_cap": "통합 한도 내",
+    "condition": null
+   },
+   {
+    "category": "고액매출",
+    "text": "국내 매출 건당 50만~100만원 1%, 100만원↑ 2%",
+    "rate_or_amount": "1~2%",
+    "monthly_cap": "3만원",
+    "condition": "전월 KREAM·해외 50만원↑"
+   }
+  ],
+  "exclusions": [
+   "국세·지방세·공과금, 대학 등록금, 상품권·선불카드·기프트카드 구매·충전, 교통카드 충전, 고속버스, 정부지원금, 아파트관리비(임대료), 수수료·이자, 매출취소는 혜택·실적 제외(공식 페이지 공통 문구)"
+  ],
+  "promotions": [],
+  "recent_changes": [],
+  "target_text": null,
+  "issuance": null,
+  "app_features": [],
+  "design_note": null,
+  "tags": [
+   "plcc_brand",
+   "online_shop",
+   "travel_fx",
+   "reward_discount",
+   "tiered_perf"
+  ],
+  "genz_fit": "mid",
+  "genz_fit_reason": "KREAM 헤비유저(스니커즈·명품 리셀)를 위한 상위 버전이다. 실적 50만원 조건이라 소수만 쓸 수 있다.",
+  "source_url": "https://m.wooricard.com/dcmw/yh1/crd/crd01/M1CRD101S02.do?cdPrdCd=104156",
+  "source_urls": [
+   "https://m.wooricard.com/dcmw/yh1/crd/crd01/M1CRD101S02.do?cdPrdCd=104156",
+   "https://m.wooricard.com/llms.txt"
+  ],
+  "checked": "2026-10-27",
+  "confidence": "high",
+  "note": "공식 페이지 확인(2026년 3월 기준)."
+ },
+ {
+  "id": "mwoori24",
+  "name": "트래블월렛 우리카드",
+  "official_name": "트래블월렛 우리카드",
+  "issuer": "우리카드",
+  "type": "credit",
+  "on_sale": true,
+  "role": "plcc",
+  "launched": "2023-07-07",
+  "annual_fee_won": {
+   "domestic": 20000,
+   "overseas": 20000
+  },
+  "tiers": [
+   {
+    "min_prev_month_spend_won": 0,
+    "benefit_summary": "해외 신용결제 수수료(서비스 0.3%·브랜드 1.1%) 면제"
+   },
+   {
+    "min_prev_month_spend_won": 400000,
+    "benefit_summary": "트래블 포인트 국내 1.0%·해외 2.0% 적립(한도 없음)"
+   }
+  ],
+  "benefits": [
+   {
+    "category": "적립",
+    "text": "국내 1.0%, 해외 2.0% 트래블 포인트 적립(트래블페이 충전에 사용)",
+    "rate_or_amount": "1~2%",
+    "monthly_cap": "없음",
+    "condition": "전월 국내 40만원↑"
+   },
+   {
+    "category": "해외",
+    "text": "해외 신용결제·트래블페이(선불 외화) 수수료 면제",
+    "rate_or_amount": "면제",
+    "monthly_cap": null,
+    "condition": null
+   }
+  ],
+  "exclusions": [
+   "국세·지방세·공과금, 대학 등록금, 상품권·선불카드·기프트카드 구매·충전, 교통카드 충전, 고속버스, 정부지원금, 아파트관리비(임대료), 수수료·이자, 매출취소는 혜택·실적 제외(공식 페이지 공통 문구)",
+   "트래블페이 이용금액은 적립 제외"
+  ],
+  "promotions": [],
+  "recent_changes": [],
+  "target_text": "트래블페이와 신용카드의 결합",
+  "issuance": "트래블월렛 회원 연계(트래블페이는 트래블월렛 앱에서 외화 충전)",
+  "app_features": [
+   "트래블월렛 앱 외화 충전 → 카드로 해외 결제 시 외화 잔액에서 차감"
+  ],
+  "design_note": null,
+  "tags": [
+   "plcc_brand",
+   "travel_fx",
+   "reward_point",
+   "no_cap",
+   "tiered_perf"
+  ],
+  "genz_fit": "high",
+  "genz_fit_reason": "20대가 많이 쓰는 핀테크 트래블월렛과 결합해 신용카드에 선불 외화 기능을 붙였다.",
+  "source_url": "https://m.wooricard.com/dcmw/yh1/crd/crd01/M1CRD101S02.do?cdPrdCd=102722",
+  "source_urls": [
+   "https://m.wooricard.com/dcmw/yh1/crd/crd01/M1CRD101S02.do?cdPrdCd=102722",
+   "https://m.wooricard.com/llms.txt"
+  ],
+  "checked": "2026-10-27",
+  "confidence": "high",
+  "note": "공식 페이지 확인(2025년 8월 기준)."
+ },
+ {
+  "id": "mwoori25",
+  "name": "스타트래블 우리카드",
+  "official_name": "스타트래블 우리카드",
+  "issuer": "우리카드",
+  "type": "credit",
+  "on_sale": true,
+  "role": "plcc",
+  "launched": "2026-01-30",
+  "annual_fee_won": {
+   "domestic": 28000,
+   "overseas": 28000
+  },
+  "tiers": [
+   {
+    "min_prev_month_spend_won": 0,
+    "benefit_summary": "해외 수수료 면제"
+   },
+   {
+    "min_prev_month_spend_won": 300000,
+    "benefit_summary": "국내 스타벅스 2만원당 별 1개(한도 없음), 해외 2만원당 별 3개(월 30개), 5개 영역 2% 포인트(월 1만점)"
+   },
+   {
+    "min_prev_month_spend_won": 600000,
+    "benefit_summary": "2% 적립 월 2만점"
+   },
+   {
+    "min_prev_month_spend_won": 900000,
+    "benefit_summary": "월 4만점"
+   }
+  ],
+  "benefits": [
+   {
+    "category": "스타벅스 별",
+    "text": "국내 스타벅스 누적 2만원당 별 1개, 해외 가맹점 2만원당 별 3개",
+    "rate_or_amount": "별 1~3개/2만원",
+    "monthly_cap": "해외 별 30개",
+    "condition": "전월 국내외 30만원↑"
+   },
+   {
+    "category": "일상 2%",
+    "text": "여행(여기어때·NOL·마이리얼트립·NOL인터파크투어), 공연티켓, 서점, 올리브영·다이소, 헬스·컬리 2% 적립",
+    "rate_or_amount": "2%",
+    "monthly_cap": "1만/2만/4만점",
+    "condition": null
+   },
+   {
+    "category": "해외",
+    "text": "해외 신용·트래블페이 수수료 면제",
+    "rate_or_amount": "면제",
+    "monthly_cap": null,
+    "condition": "실적 없음"
+   }
+  ],
+  "exclusions": [
+   "국세·지방세·공과금, 대학 등록금, 상품권·선불카드·기프트카드 구매·충전, 교통카드 충전, 고속버스, 정부지원금, 아파트관리비(임대료), 수수료·이자, 매출취소는 혜택·실적 제외(공식 페이지 공통 문구)",
+   "해지 시 적립된 별 1개당 600원 환산 청구",
+   "별 유효기간 1년"
+  ],
+  "promotions": [],
+  "recent_changes": [],
+  "target_text": "스타벅스 '별'이 쏟아진다 / 글로벌 '별' 적립의 정석!",
+  "issuance": "해외겸용 VISA/국내전용. 스타벅스 리워드 회원 연동",
+  "app_features": [
+   "스타벅스 앱 '나의 리워드'에서 별 조회·사용"
+  ],
+  "design_note": null,
+  "tags": [
+   "plcc_brand",
+   "dining_cafe",
+   "travel_fx",
+   "reward_point",
+   "experience_category_pack",
+   "tiered_perf"
+  ],
+  "genz_fit": "high",
+  "genz_fit_reason": "스타벅스 별 적립과 여행·공연·올리브영이 20대 소비와 겹친다. 다만 해지 시 별을 현금으로 돌려 청구하는 조건은 반감을 살 수 있다.",
+  "source_url": "https://m.wooricard.com/dcmw/yh1/crd/crd01/M1CRD101S02.do?cdPrdCd=104171",
+  "source_urls": [
+   "https://m.wooricard.com/dcmw/yh1/crd/crd01/M1CRD101S02.do?cdPrdCd=104171",
+   "https://m.wooricard.com/llms.txt"
+  ],
+  "checked": "2026-10-27",
+  "confidence": "high",
+  "note": "공식 페이지 확인(2026년 2월 기준)."
+ },
+ {
+  "id": "mwoori26",
+  "name": "K-패스 우리카드",
+  "official_name": "K-패스 우리카드",
+  "issuer": "우리카드",
+  "type": "credit",
+  "on_sale": true,
+  "role": "other",
+  "launched": "2024-12-30",
+  "annual_fee_won": {
+   "domestic": 15000,
+   "overseas": null
+  },
+  "tiers": [
+   {
+    "min_prev_month_spend_won": 400000,
+    "benefit_summary": "기본 0.3% + 생활(스타벅스·폴바셋·CU·GS25) 10% 월 5천 / 버스·지하철 10% 월 5천"
+   },
+   {
+    "min_prev_month_spend_won": 800000,
+    "benefit_summary": "각 월 1만원"
+   }
+  ],
+  "benefits": [
+   {
+    "category": "기본",
+    "text": "국내 가맹점 0.3% 청구할인",
+    "rate_or_amount": "0.3%",
+    "monthly_cap": "기본+생활 5천/1만원",
+    "condition": "전월 40만원↑"
+   },
+   {
+    "category": "생활",
+    "text": "스타벅스·폴바셋(건당 1만원↑), CU·GS25 10%",
+    "rate_or_amount": "10%",
+    "monthly_cap": "기본+생활 합산",
+    "condition": null
+   },
+   {
+    "category": "대중교통",
+    "text": "버스·지하철 후불 10% + K-패스 정부 환급",
+    "rate_or_amount": "10%",
+    "monthly_cap": "5천/1만원",
+    "condition": null
+   }
+  ],
+  "exclusions": [
+   "국세·지방세·공과금, 대학 등록금, 상품권·선불카드·기프트카드 구매·충전, 교통카드 충전, 고속버스, 정부지원금, 아파트관리비(임대료), 수수료·이자, 매출취소는 혜택·실적 제외(공식 페이지 공통 문구)"
+  ],
+  "promotions": [],
+  "recent_changes": [],
+  "target_text": "anytime anywhere",
+  "issuance": "국내전용만 발급",
+  "app_features": [],
+  "design_note": null,
+  "tags": [
+   "govt_link",
+   "transit",
+   "dining_cafe",
+   "mart_daily",
+   "reward_discount",
+   "tiered_perf"
+  ],
+  "genz_fit": "mid",
+  "genz_fit_reason": "K-패스는 청년 환급률 우대가 있는 정부 사업이라 20대 유입 통로다. 다만 실적 40만원 조건이 있다.",
+  "source_url": "https://m.wooricard.com/dcmw/yh1/crd/crd01/M1CRD101S02.do?cdPrdCd=102864",
+  "source_urls": [
+   "https://m.wooricard.com/dcmw/yh1/crd/crd01/M1CRD101S02.do?cdPrdCd=102864",
+   "https://m.wooricard.com/llms.txt"
+  ],
+  "checked": "2026-10-27",
+  "confidence": "medium",
+  "note": "공식 페이지 확인(2026년 1월 기준). 한도표가 칸 병합 구조라 기본+생활 할인이 한도를 공유하는지는 추정(확신 중간)."
+ },
+ {
+  "id": "mwoori27",
+  "name": "우리 동행카드(신용)",
+  "official_name": "우리 동행카드(신용) (llms.txt: 우리 기후동행카드(신용))",
+  "issuer": "우리카드",
+  "type": "credit",
+  "on_sale": true,
+  "role": "other",
+  "launched": "2025-02-12",
+  "annual_fee_won": {
+   "domestic": 12000,
+   "overseas": null
+  },
+  "tiers": [
+   {
+    "min_prev_month_spend_won": 200000,
+    "benefit_summary": "국내 가맹점 0.8% 청구할인(월 2만원)"
+   }
+  ],
+  "benefits": [
+   {
+    "category": "기본",
+    "text": "국내 가맹점 0.8% 청구할인",
+    "rate_or_amount": "0.8%",
+    "monthly_cap": "2만원",
+    "condition": "전월 국내 20만원↑, 후불교통·기후동행 요금 제외"
+   },
+   {
+    "category": "교통",
+    "text": "서울 기후동행카드 요금 후불 결제",
+    "rate_or_amount": null,
+    "monthly_cap": null,
+    "condition": "BC 국내전용"
+   }
+  ],
+  "exclusions": [
+   "국세·지방세·공과금, 대학 등록금, 상품권·선불카드·기프트카드 구매·충전, 교통카드 충전, 고속버스, 정부지원금, 아파트관리비(임대료), 수수료·이자, 매출취소는 혜택·실적 제외(공식 페이지 공통 문구)",
+   "후불교통 이용금액 전체 할인 제외"
+  ],
+  "promotions": [],
+  "recent_changes": [],
+  "target_text": null,
+  "issuance": "국내전용(BC)",
+  "app_features": [],
+  "design_note": null,
+  "tags": [
+   "govt_link",
+   "transit",
+   "simple_flat",
+   "reward_discount"
+  ],
+  "genz_fit": "mid",
+  "genz_fit_reason": "서울 청년 기후동행카드(청년 할인 정기권) 후불 결제 수단이다. 카드 자체 혜택은 약하다.",
+  "source_url": "https://m.wooricard.com/dcmw/yh1/crd/crd01/M1CRD101S02.do?cdPrdCd=104022",
+  "source_urls": [
+   "https://m.wooricard.com/dcmw/yh1/crd/crd01/M1CRD101S02.do?cdPrdCd=104022",
+   "https://m.wooricard.com/llms.txt"
+  ],
+  "checked": "2026-10-27",
+  "confidence": "medium",
+  "note": "공식 페이지 확인(2026년 9월 기준). 기후동행 청년 할인 금액은 서울시 정책으로 이 페이지에는 없다(확인 불가)."
+ },
+ {
+  "id": "mwoori28",
+  "name": "카드의정석2 MILE&POINT",
+  "official_name": "카드의정석2 MILE&POINT",
+  "issuer": "우리카드",
+  "type": "credit",
+  "on_sale": true,
+  "role": "other",
+  "launched": "2025-09-16",
+  "annual_fee_won": {
+   "domestic": 75000,
+   "overseas": 75000
+  },
+  "tiers": [
+   {
+    "min_prev_month_spend_won": 0,
+    "benefit_summary": "국내 1,500원당 1마일(한도 없음)"
+   },
+   {
+    "min_prev_month_spend_won": 500000,
+    "benefit_summary": "해외 1,500원당 기본 1+추가 1마일(추가 월 2천마일), 당월 마일리지 5배 포인트(월 3만P), 공항라운지 연 2회"
+   }
+  ],
+  "benefits": [
+   {
+    "category": "마일리지",
+    "text": "국내 1,500원당 1마일, 해외 최대 2마일",
+    "rate_or_amount": "1~2마일/1,500원",
+    "monthly_cap": "추가 2,000마일",
+    "condition": "해외는 전월 50만원↑"
+   },
+   {
+    "category": "포인트",
+    "text": "당월 적립 마일리지의 5배를 포인트로 동시 적립",
+    "rate_or_amount": "5배",
+    "monthly_cap": "3만P",
+    "condition": "전월 50만원↑"
+   },
+   {
+    "category": "라운지",
+    "text": "국내외 공항라운지(동반 1인 포함)",
+    "rate_or_amount": "연 2회",
+    "monthly_cap": null,
+    "condition": "전월 50만원↑"
+   }
+  ],
+  "exclusions": [
+   "국세·지방세·공과금, 대학 등록금, 상품권·선불카드·기프트카드 구매·충전, 교통카드 충전, 고속버스, 정부지원금, 아파트관리비(임대료), 수수료·이자, 매출취소는 혜택·실적 제외(공식 페이지 공통 문구)"
+  ],
+  "promotions": [],
+  "recent_changes": [],
+  "target_text": null,
+  "issuance": "본인 7.5만원 / 가족 2.5만원",
+  "app_features": [],
+  "design_note": null,
+  "tags": [
+   "travel_fx",
+   "reward_mileage",
+   "reward_point",
+   "lounge",
+   "tiered_perf"
+  ],
+  "genz_fit": "low",
+  "genz_fit_reason": "연회비 7.5만원짜리 마일리지 상품이다. 카드고릴라 2026 상반기 우리카드 인기 3위지만 20대 표적 근거는 없다.",
+  "source_url": "https://m.wooricard.com/dcmw/yh1/crd/crd01/M1CRD101S02.do?cdPrdCd=104154",
+  "source_urls": [
+   "https://m.wooricard.com/dcmw/yh1/crd/crd01/M1CRD101S02.do?cdPrdCd=104154",
+   "https://www.card-gorilla.com/contents/detail/2193"
+  ],
+  "checked": "2026-10-27",
+  "confidence": "high",
+  "note": "공식 페이지 확인(2026년 9월 기준). 기존 DB의 '포인트 동시 적립 원문 수치 미표기'는 '마일리지의 5배'로 확인됨."
+ }
+]
